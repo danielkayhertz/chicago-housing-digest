@@ -20,7 +20,7 @@ An email digest that keeps housing advocates current on public meetings, agendas
 | Format | Email digest, plus a public web page generated from the same data |
 | Cadence | Per subscriber: **weekly**, **weekly + alerts** (extra email when a newly posted item matches), or **daily when there is something new** |
 | Item content | Every item gets one AI plain-language summary, generated once and shared by all subscribers |
-| Preferences | Fixed **project lenses** (bundles of tags + keywords + bodies) + wards/community areas + free keywords; deterministic matching |
+| Preferences | **IFE project categories** (assigned per item by the model, plus deterministic body/keyword rules) + wards/community areas + free keywords; matching is deterministic given the categories |
 | Architecture | Hybrid: Python ingest in GitHub Actions → `items.json` contract → Cloudflare Worker + D1 for subscribers, matching, sending |
 | Sender | `housingdigest.danielkayhertz.com` via Resend; can move to an IFE domain later (sender is config; needs SPF/DKIM/DMARC on the new domain; old link host keeps redirecting) |
 | Source health | Admin-only email to **dhertz@impactforequity.org**; never shown to subscribers |
@@ -44,7 +44,7 @@ One repo:
 
 - `ingest/` — Python: adapters, normalization, diff/events, enrichment, site build.
 - `worker/` — TypeScript Cloudflare Worker: D1 schema, preferences page, matching, rendering, sending.
-- `config/` — shared YAML: `sources.yaml`, `watch.yaml` (page-change watcher list), `tags.yaml`, `lenses.yaml`, `overrides.yaml`.
+- `config/` — shared YAML: `sources.yaml`, `watch.yaml` (page-change watcher list), `categories.yaml`, `overrides.yaml`.
 - `schema/items.schema.json` — the contract. Both halves validate against it in tests.
 
 `items.json` is the only interface between the halves. Either half can be rebuilt or fixed without touching the other.
@@ -61,7 +61,7 @@ Top level: `{ generated_at, sources: [SourceStatus], meetings: [Meeting], items:
 
 **Notice** — `id`, `source_id`, `kind` (comment_period | hearing | funding_round | report | page_change), `title`, `url`, `posted_at`, `deadline` (nullable), `enrichment`, `first_seen_at`.
 
-**Enrichment** — `housing_relevant` (bool), `relevance_reason`, `summary` (≤ ~40 words, plain language), `tags: [tag_id]`, `geography: {address, ward, community_area}`, `entities: [string]`, `figures: {units, affordable_units}` (each nullable), `source_quality` (full | partial | scanned), `model`, `content_hash`, `overridden` (bool).
+**Enrichment** — `housing_relevant` (bool), `relevance_reason`, `summary` (≤ ~40 words, plain language), `categories: [category_id]`, `geography: {address, ward, community_area}`, `entities: [string]`, `figures: {units, affordable_units}` (each nullable), `source_quality` (full | partial | scanned), `model`, `content_hash`, `overridden` (bool).
 
 **ChangeEvent** — `{type: meeting_new | agenda_posted | item_added | meeting_cancelled | meeting_rescheduled | outcome_recorded | notice_new, ref_id, at}`. Drives alerts and daily mode.
 
@@ -94,55 +94,35 @@ chicago.gov blocks default clients: every chicago.gov request sends a full brows
 
 - **Unit:** each Item and Notice; cached by `(id, content_hash)` — recomputed only when source text changes.
 - **Input:** verbatim title + extracted attachment text (capped length). Scanned PDFs (no text layer) are sent as PDF documents so the model reads page images; `source_quality = scanned`.
-- **Two-step models:** `claude-haiku-5-5` for the relevance screen on long, mostly-irrelevant agendas (Committee on Finance; later suburban agendas); `claude-sonnet-5-5` for summary, tags, entities, figures on items that pass. Structured output enforced by JSON schema.
+- **Two-step models:** `claude-haiku-5-5` for the relevance screen on long, mostly-irrelevant agendas (Committee on Finance; later suburban agendas); `claude-sonnet-5-5` for summary, categories, entities, figures on items that pass. Structured output enforced by JSON schema.
 - **Geography:** prefer source fields (Plan Commission rows carry ward and community area). Otherwise geocode the extracted address and assign ward/community area by point-in-polygon against city boundary files — never model-guessed.
 - **Grounding check:** every extracted entity and figure must appear (normalized) in the source text; otherwise it is dropped and logged.
 - **Overrides:** `overrides.yaml` keyed by item/notice id; any field set there wins and survives re-runs (`overridden = true`).
 - **Labeling:** summaries are shown as "AI summary" with the source link beside them.
 - **Cost control:** the cache means each item is enriched once; the plan includes a measurement step on one month of real items to produce a cost estimate before launch.
 
-### Tags (model-assigned, `tags.yaml`)
+### Categories (`categories.yaml`)
 
-1. zoning-change (rezonings, planned developments)
-2. affordable-financing (city funds, LIHTC, bonds)
-3. aro (Affordable Requirements Ordinance)
-4. public-housing (CHA, RAD, Section 18, disposition)
-5. public-land (sale/lease of public land)
-6. tif
-7. adu-missing-middle
-8. tenant-protections (eviction, RLTO, right to counsel, relocation)
-9. homeownership-repair
-10. homelessness-shelter
-11. property-tax (incentive classes, tax sale, PILOT)
-12. demolition-landmarks
-13. building-conditions (code, lead, inspections, receivership, habitability)
-14. citywide-policy (housing ordinances and plans)
-15. housing-budget
-16. displacement-community-benefits
-17. criminal-legal-housing (background screening, Just Housing, crime-free/nuisance ordinances, reentry housing)
+The categories are IFE's housing projects. The model assigns zero or more categories to each relevant item; subscribers choose from the same list. There is no separate generic tag layer. Each category has: a `description` (the classification guidance given to the model — the scope text below), `bodies` (items from these bodies always get the category, deterministically, regardless of the model), and `keywords` (deterministic matches on title, summary, or entities, which also add the category). Changing a category definition triggers re-enrichment of affected items (a cost, not a migration).
 
-### Lenses (subscriber-facing, `lenses.yaml`)
-
-Each lens = any of (tags, keywords, bodies). Definitions are config and editable.
-
-| Lens | IFE project | Tags | Keywords (initial) | Bodies |
+| Category | IFE project | Scope (model guidance) | Keywords (initial) | Bodies |
 |---|---|---|---|---|
-| CHA & public housing | cha | public-housing | CHA, Chicago Housing Authority, RAD, Section 18, disposition, PILOT, Gautreaux, ACOP | all CHA bodies |
-| Social housing | social-housing | public-land, affordable-financing | social housing, mixed-income, land trust, revolving fund, acquisition fund, CLIHTF | CLIHTF |
-| Zoning & housing supply | ahpaa | zoning-change, adu-missing-middle | rezoning, planned development, upzoning, AHPAA, missing middle | Plan Commission, Committee on Zoning |
-| Property taxes | property-taxes | property-tax | Class 7, Class 9, Class L, tax sale, scavenger, Land Bank, PILOT | — |
-| State housing finance | state-agenda | affordable-financing | IHDA, TEFRA, QAP, volume cap, LIHTC, private activity bond | all IHDA bodies |
-| Healthy homes & tenant protections | healthy-homes | building-conditions, tenant-protections, demolition-landmarks | lead, receivership, heat, habitability, eviction, right to counsel, Keep Chicago Renting | — |
-| Affordable housing deals & policy | housing-agenda | affordable-financing, aro, tif, citywide-policy, housing-budget | Department of Housing, ARO, Low-Income Housing Trust Fund | Committee on Housing and Real Estate, CDC |
-| Criminal legal system & housing | cls-housing | criminal-legal-housing | Just Housing, criminal background, crime-free, nuisance, reentry, sealing, expungement | — |
+| CHA & public housing | cha | CHA actions, redevelopment and production, RAD and Section 18 conversions, disposition, public-housing property tax/PILOT, Gautreaux | CHA, Chicago Housing Authority, RAD, Section 18, disposition, PILOT, Gautreaux, ACOP | all CHA bodies |
+| Social housing | social-housing | Public or mixed-income developer models, acquisition and revolving funds, land trusts, disposition of public land for housing, CLIHTF | social housing, mixed-income, land trust, revolving fund, acquisition fund, CLIHTF | CLIHTF |
+| Zoning & housing supply | ahpaa | Rezonings and planned developments with residential units, city-initiated rezonings, ADUs and missing middle, zoning text amendments; suburban housing plans and AHPAA actions | rezoning, planned development, upzoning, AHPAA, missing middle | Plan Commission |
+| Property taxes | property-taxes | Property tax incentive classes for housing, tax sale and scavenger sale, Land Bank, PILOT agreements, assessment appeals | Class 7, Class 9, Class L, tax sale, scavenger, Land Bank, PILOT | — |
+| State housing finance | state-agenda | IHDA actions, tax-exempt bonds and TEFRA hearings, QAPs, private activity bond volume cap, LIHTC awards | IHDA, TEFRA, QAP, volume cap, LIHTC, private activity bond | all IHDA bodies |
+| Healthy homes & tenant protections | healthy-homes | Building code, lead, inspections, receivership, demolition, heat and habitability; eviction, right to counsel, RLTO, relocation, foreclosure tenant protections | lead, receivership, heat, habitability, eviction, right to counsel, Keep Chicago Renting | — |
+| Affordable housing deals & policy | housing-agenda | City financing for affordable deals, the ARO, TIF for housing, Department of Housing plans and RFPs, citywide housing ordinances and budget | Department of Housing, ARO, Affordable Requirements Ordinance, TIF | — |
+| Criminal legal system & housing | cls-housing | Criminal-background screening in housing, Just Housing, crime-free and nuisance-property ordinances, reentry and supportive housing, sealing/expungement as it bears on housing | Just Housing, criminal background, crime-free, nuisance, reentry, sealing, expungement | — |
 
 ## 7. Subscribers, matching, delivery (Cloudflare Worker + D1)
 
-**Tables.** `subscribers (id, email, name, status: invited|active|unsubscribed|suspended, cadence: weekly|weekly_alerts|daily, created_at)`; `preferences (subscriber_id, lenses[], wards[], community_areas[], keywords[], muted_bodies[])`; `tokens (subscriber_id, token_hash, expires_at)`; `sends (subscriber_id, ref_id, mode, sent_at)` — prevents re-sending the same item across modes; `send_log (id, subscriber_id, mode, provider_id, status, at)`.
+**Tables.** `subscribers (id, email, name, status: invited|active|unsubscribed|suspended, cadence: weekly|weekly_alerts|daily, created_at)`; `preferences (subscriber_id, categories[], wards[], community_areas[], keywords[], muted_bodies[])`; `tokens (subscriber_id, token_hash, expires_at)`; `sends (subscriber_id, ref_id, mode, sent_at)` — prevents re-sending the same item across modes; `send_log (id, subscriber_id, mode, provider_id, status, at)`.
 
-**Onboarding (invite-only v1).** Admin adds an email (admin route protected by a secret, or a CLI script against D1). The Worker emails a magic link; the link opens a one-page preferences form (lens checkboxes, ward/community-area picker, keyword box, cadence radio). No passwords. Every email footer has a fresh preferences link and one-click unsubscribe (`List-Unsubscribe` header). **Public signup later** = a form that creates an `invited` row and sends the same confirmation link.
+**Onboarding (invite-only v1).** Admin adds an email (admin route protected by a secret, or a CLI script against D1). The Worker emails a magic link; the link opens a one-page preferences form (category checkboxes, ward/community-area picker, keyword box, cadence radio). No passwords. Every email footer has a fresh preferences link and one-click unsubscribe (`List-Unsubscribe` header). **Public signup later** = a form that creates an `invited` row and sends the same confirmation link.
 
-**Matching (pure function, shared test fixtures).** An item/notice is *highlighted* for a subscriber if any of: one of its tags is in a chosen lens; its body is in a chosen lens; a lens or personal keyword matches (case-insensitive, word-boundary) the title, summary, or entities; its ward/community area is chosen. The function returns the list of reasons, rendered as "Matches **CHA & public housing**: CHA board item; keyword 'Section 18'." Muted bodies are dropped entirely.
+**Matching (pure function, shared test fixtures).** An item/notice is *highlighted* for a subscriber if any of: one of its categories is chosen; a personal keyword matches (case-insensitive, word-boundary) the title, summary, or entities; its ward/community area is chosen. Each category on an item records why it was assigned (model, body rule, or keyword) so the reason can be shown. The function returns the list of reasons, rendered as "Matches **CHA & public housing**: CHA board item; keyword 'Section 18'." Muted bodies are dropped entirely.
 
 **Modes.**
 - *Weekly* (Sunday evening, America/Chicago): window = next 8 days of meetings + notices with open deadlines + outcomes from the past 7 days.
@@ -157,14 +137,14 @@ Each lens = any of (tags, keywords, bodies). Definitions are config and editable
 
 ## 8. Public web page
 
-Built by the ingest Action to GitHub Pages from `items.json`: upcoming meetings by date, notices with deadlines, recent outcomes; filters by lens, body, ward; each entry shows the AI summary label, outcome, and source links; anchors per item so emails deep-link. Per-body `.ics` calendar feeds. Static, no tracking.
+Built by the ingest Action to GitHub Pages from `items.json`: upcoming meetings by date, notices with deadlines, recent outcomes; filters by category, body, ward; each entry shows the AI summary label, outcome, and source links; anchors per item so emails deep-link. Per-body `.ics` calendar feeds. Static, no tracking.
 
 ## 9. Testing
 
 - **Adapters:** fixture tests against saved real responses/pages for each source (including a cancelled meeting, a rescheduled meeting, an agenda with zero parseable items).
 - **Diff/events:** fixture pairs of snapshots → expected ChangeEvents.
 - **Contract:** `items.json` validated against `schema/items.schema.json` in both Python and TypeScript test suites.
-- **Enrichment eval:** ~30 real items hand-labeled by Daniel (relevance + tags); run on any prompt or model change; report precision/recall for relevance and per-tag agreement.
+- **Enrichment eval:** ~30 real items hand-labeled by Daniel (relevance + categories); run on any prompt or model change; report precision/recall for relevance and per-category agreement.
 - **Grounding check:** unit tests with planted hallucinated figures.
 - **Matching:** fixture items × fixture preferences → expected highlights and reason strings.
 - **Rendering:** snapshot tests of email HTML for each mode.
@@ -172,7 +152,7 @@ Built by the ingest Action to GitHub Pages from `items.json`: upcoming meetings 
 
 ## 10. Phasing
 
-**v1 — Chicago + state.** Sources in §5; notices (IHDA + watcher on DOH, CHA, CLIHTF pages); enrichment; 8 lenses; web page; Worker with invite-only onboarding and all three cadences; admin alerts.
+**v1 — Chicago + state.** Sources in §5; notices (IHDA + watcher on DOH, CHA, CLIHTF pages); enrichment; 8 categories; web page; Worker with invite-only onboarding and all three cadences; admin alerts.
 
 **v1.5 — Suburbs.** Survey of 35 sample jurisdictions (2026-10-13; notes in session scratchpad) found:
 - *Legistar* (keyless API): Cook, DuPage, Lake, Kane counties; Oak Park, Naperville, Aurora, Joliet. Reuse the generic Legistar adapter. Some clients have placeholder late-December events — filter by date and non-null agenda file.
@@ -183,7 +163,7 @@ Built by the ingest Action to GitHub Pages from `items.json`: upcoming meetings 
 - *Blocked to scripted fetch*: Berwyn, McHenry County, Schaumburg, Aurora main site, Waukegan.
 - City Bureau's City Scrapers covers no suburban bodies; not a data source.
 
-v1.5 adds the CivicClerk and AgendaCenter adapters, suburban Legistar clients via config, whole-agenda AI extraction behind a keyword screen (`extraction = ai_extracted`), suburban jurisdictions as a preference dimension, and a starter jurisdiction list Daniel selects from the survey. The Criminal legal system & housing lens gains most here (Cook County Board, crime-free ordinances).
+v1.5 adds the CivicClerk and AgendaCenter adapters, suburban Legistar clients via config, whole-agenda AI extraction behind a keyword screen (`extraction = ai_extracted`), suburban jurisdictions as a preference dimension, and a starter jurisdiction list Daniel selects from the survey. The Criminal legal system & housing category gains most here (Cook County Board, crime-free ordinances).
 
 **v2 candidates.** Public signup; headless-browser fetching for blocked sites; moving the sender to an IFE domain.
 
