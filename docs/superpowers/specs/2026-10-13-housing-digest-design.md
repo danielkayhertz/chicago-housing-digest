@@ -127,9 +127,9 @@ The categories are IFE's housing projects. The model assigns zero or more catego
 **Modes.**
 - *Weekly* (Sunday evening, America/Chicago): window = next 8 days of meetings + notices with open deadlines + outcomes from the past 7 days.
 - *Weekly + alerts*: weekly, plus a short email after any ingest that produces ChangeEvents that match the subscriber and haven't been sent.
-- *Daily*: one morning email if there are any new relevant ChangeEvents since the last daily send (matching or not); nothing sent on empty days.
+- *Daily*: one morning email if there are any new ChangeEvents since the last daily send that match the subscriber (their categories, wards/community areas, or keywords); nothing sent on days with no matches.
 
-**Email layout (weekly).** 1) Your highlights; 2) Coming up (by date, with body, time, location, cancellations flagged); 3) New notices and open comment periods (deadline first); 4) Last week's outcomes (only where the body publishes them); 5) Everything else — compact list grouped by body, with "+N items not about housing" counts per meeting. Every item links to the web page entry and source documents. Alerts and daily emails contain only the relevant new/changed items, highlights first.
+**Email layout (weekly).** 1) Your highlights; 2) Coming up (by date, with body, time, location, cancellations flagged); 3) New notices and open comment periods (deadline first); 4) Last week's outcomes (only where the body publishes them); 5) Everything else — compact list grouped by body, with "+N items not about housing" counts per meeting. Every item links to the web page entry and source documents. Alerts and daily emails contain only new/changed items that match the subscriber.
 
 **Sending.** Resend from `housingdigest.danielkayhertz.com`. Worker cron runs daily (morning: daily + alerts after the morning ingest; Sunday evening: weekly). Bounce/complaint webhooks mark subscribers `suspended` after repeated hard bounces. Resend free-tier limits are checked at setup against subscriber count × cadence.
 
