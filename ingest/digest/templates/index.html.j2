@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chicago Housing Meetings</title>
+<style>
+  :root { --ink: #1d1d1f; --muted: #5f6368; --line: #dadce0; --bg: #fff; --tag: #eef3f8; --warn: #a50e0e; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #e8eaed; --muted: #9aa0a6; --line: #3c4043; --bg: #202124; --tag: #2b3440; --warn: #f28b82; } }
+  body { margin: 0 auto; max-width: 860px; padding: 16px; font: 16px/1.5 system-ui, sans-serif; color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.6rem; margin-bottom: 0; } h2 { margin-top: 2rem; border-bottom: 1px solid var(--line); }
+  .meta, .hidden-count, .src { color: var(--muted); font-size: .9rem; }
+  .meeting { margin: 1.25rem 0; } .meeting h3 { margin: 0; font-size: 1.1rem; }
+  .cancelled { color: var(--warn); font-weight: 600; }
+  ul.items { padding-left: 1.1rem; } ul.items li { margin: .5rem 0; }
+  .tag { display: inline-block; background: var(--tag); border-radius: 4px; padding: 0 .4rem; font-size: .8rem; margin-right: .25rem; }
+  .ai { font-size: .75rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  .filters { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; } select { font: inherit; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<h1>Chicago Housing Meetings</h1>
+<p class="meta">Updated {{ generated.strftime('%B %d, %Y %I:%M %p') }} Chicago time. Summaries are written by AI from public documents; check the source before relying on them.</p>
+
+<div class="filters">
+  <select id="f-cat" aria-label="Category"><option value="">All categories</option>
+    {% for c in categories %}<option value="{{ c.id }}">{{ c.label }}</option>{% endfor %}</select>
+  <select id="f-body" aria-label="Body"><option value="">All bodies</option>
+    {% for b in bodies %}<option value="{{ b }}">{{ b }}</option>{% endfor %}</select>
+  <select id="f-ward" aria-label="Ward"><option value="">All wards</option>
+    {% for w in range(1, 51) %}<option value="{{ w }}">Ward {{ w }}</option>{% endfor %}</select>
+</div>
+
+{% macro item_row(i) -%}
+{% set e = i.enrichment %}
+<li id="{{ i.id | anchor }}" class="row"
+    data-categories="{{ (e.categories | map(attribute='id') | join(' ')) if e else '' }}"
+    data-ward="{{ e.geography.ward if e and e.geography.ward else '' }}">
+  <strong>{{ i.title }}</strong> <span class="src">{{ i.source_ref }}</span>
+  {% if e and e.summary %}<div><span class="ai">AI summary</span> {{ e.summary }}</div>{% endif %}
+  <div>{% if e %}{% for c in e.categories %}<span class="tag">{{ cat_labels.get(c.id, c.id) }}</span>{% endfor %}{% endif %}
+    {% if e and e.geography.ward %}<span class="tag">Ward {{ e.geography.ward }}</span>{% endif %}
+    {% for a in i.attachments[:3] %}<a href="{{ a.url }}">{{ a.label }}</a> {% endfor %}</div>
+</li>
+{%- endmacro %}
+
+<h2>Upcoming meetings</h2>
+{% for u in upcoming %}{% set m = u.m %}
+<section class="meeting" id="{{ m.id | anchor }}" data-body="{{ m.body }}">
+  <h3>{{ m.body }}</h3>
+  <div class="meta">
+    {{ m.start.strftime('%A, %B %d') }}{% if m.time_known %}, {{ m.start.strftime('%I:%M %p').lstrip('0') }}{% endif %}
+    {% if m.location %} · {{ m.location }}{% endif %}
+    {% if m.status == 'cancelled' %} · <span class="cancelled">Cancelled</span>{% endif %}
+    {% if m.agenda_url %} · <a href="{{ m.agenda_url }}">Agenda</a>{% endif %}
+    · <a href="{{ ics[m.body] }}">Calendar</a>
+  </div>
+  {% if u['items'] %}<ul class="items">{% for i in u['items'] %}{{ item_row(i) }}{% endfor %}</ul>{% endif %}
+  {% if u.hidden %}<div class="hidden-count">+{{ u.hidden }} item{{ 's' if u.hidden != 1 else '' }} not about housing</div>{% endif %}
+</section>
+{% else %}<p>No upcoming meetings found.</p>{% endfor %}
+
+<h2>Open notices</h2>
+<ul class="items">
+{% for n in notices %}
+  <li class="row" data-body="{{ n.body }}"
+      data-categories="{{ (n.enrichment.categories | map(attribute='id') | join(' ')) if n.enrichment else '' }}" data-ward="">
+    <strong><a href="{{ n.url }}">{{ n.title }}</a></strong>
+    <span class="src">{{ n.body }}{% if n.deadline %} · deadline {{ n.deadline.strftime('%B %d, %Y') }}{% endif %}</span>
+    {% if n.enrichment and n.enrichment.summary %}<div><span class="ai">AI summary</span> {{ n.enrichment.summary }}</div>{% endif %}
+  </li>
+{% else %}<li>No open notices.</li>{% endfor %}
+</ul>
+
+<h2>Recent outcomes</h2>
+<ul class="items">
+{% for r in outcomes %}
+  <li class="row" data-body="{{ r.m.body if r.m else '' }}"
+      data-categories="{{ (r.i.enrichment.categories | map(attribute='id') | join(' ')) if r.i.enrichment else '' }}"
+      data-ward="{{ r.i.enrichment.geography.ward if r.i.enrichment and r.i.enrichment.geography.ward else '' }}">
+    <strong>{{ r.i.outcome.action }}</strong> ({{ r.i.outcome.date.strftime('%B %d') }}{% if r.m %}, {{ r.m.body }}{% endif %}): {{ r.i.title }}
+  </li>
+{% else %}<li>No outcomes in the last two weeks.</li>{% endfor %}
+</ul>
+
+<p class="meta">Data: <a href="items.json">items.json</a></p>
+<script>
+  const sel = id => document.getElementById(id);
+  function apply() {
+    const cat = sel('f-cat').value, body = sel('f-body').value, ward = sel('f-ward').value;
+    document.querySelectorAll('.row').forEach(row => {
+      const section = row.closest('.meeting');
+      const rowBody = row.dataset.body || (section && section.dataset.body) || '';
+      const ok = (!cat || (row.dataset.categories || '').split(' ').includes(cat))
+        && (!body || rowBody === body) && (!ward || row.dataset.ward === ward);
+      row.hidden = !ok;
+    });
+    document.querySelectorAll('.meeting').forEach(s => {
+      const filtering = cat || body || ward;
+      const visible = [...s.querySelectorAll('.row')].some(r => !r.hidden);
+      s.hidden = filtering ? !(visible || (body && s.dataset.body === body && !cat && !ward)) : false;
+    });
+  }
+  ['f-cat', 'f-body', 'f-ward'].forEach(id => sel(id).addEventListener('change', apply));
+</script>
+</body>
+</html>
