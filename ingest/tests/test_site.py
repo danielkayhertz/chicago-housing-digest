@@ -136,3 +136,42 @@ def test_unknown_meeting_is_hidden_from_upcoming_and_cancelled_in_ics(tmp_path):
     assert "UID:cpc-2026-10-22@housingdigest.danielkayhertz.com" in cpc
     stale_event = cpc.split("UID:cpc-2026-10-22")[1].split("END:VEVENT")[0]
     assert "STATUS:CANCELLED" in stale_event
+
+
+def test_long_titles_get_a_short_headline_with_the_full_text_in_a_disclosure(tmp_path):
+    from digest.site import short_title
+    d = sample()
+    long = "A proposed Planned Development, submitted by MKR Owner LLC for the property generally located at " \
+           "1133 W. Kinzie Street. The Applicant requests a rezoning from M2-3 to DX-5."
+    d.items[0].title = long
+    src = tmp_path / "items.json"
+    dump_digest(d, src)
+    build_site(d, tmp_path / "site", src, CATS, NOW)
+    html = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
+    head = short_title(long)
+    assert len(head) <= 101 and head.endswith("…") and not head[:-1].endswith(" ")
+    assert f"<strong>{head}</strong>" in html
+    assert "<summary>Full agenda text</summary>" + long in html
+    assert short_title("Multifamily Update") == "Multifamily Update"
+
+
+def test_meeting_heading_leads_with_the_date_and_documents_are_separated(tmp_path):
+    from digest.models import Attachment
+    d = sample()
+    d.items[0].attachments = [Attachment(label="Plan", url="https://x/p.pdf"), Attachment(label="Report", url="https://x/r.pdf")]
+    src = tmp_path / "items.json"
+    dump_digest(d, src)
+    build_site(d, tmp_path / "site", src, CATS, NOW)
+    html = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
+    assert '<h3>Thursday, October 15, 10:00 AM\n    <span class="sep">·</span> <span class="body">Chicago Plan Commission</span></h3>' in html
+    assert 'Documents: <a href="https://x/p.pdf">Plan</a> · <a href="https://x/r.pdf">Report</a>' in html
+    assert "<main>" in html and 'role="status"' in html and "Updated October 5, 2026, 12:00 PM" in html
+
+
+def test_summaries_drop_sentences_that_only_say_what_the_agenda_leaves_out():
+    from digest.site import trim_summary
+    assert trim_summary("IHDA will consider bonds, presented by M. Babcock. The agenda gives no bond amount, purpose, or project details.")         == "IHDA will consider bonds, presented by M. Babcock."
+    assert trim_summary("Standing update. The provided text is only the meeting agenda and gives no details on the update's content.")         == "Standing update."
+    assert trim_summary("A $51,500,000 loan. The material gives no unit counts; it appears under Multifamily Finance.")         == "A $51,500,000 loan. It appears under Multifamily Finance."
+    assert trim_summary("Adds 120 homes near the Kinzie Green Line stop.") == "Adds 120 homes near the Kinzie Green Line stop."
+    assert trim_summary("The agenda gives no further detail.") == "The agenda gives no further detail."  # never empty a summary

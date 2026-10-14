@@ -10,18 +10,26 @@
   body { margin: 0 auto; max-width: 860px; padding: 16px; font: 16px/1.5 system-ui, sans-serif; color: var(--ink); background: var(--bg); }
   h1 { font-size: 1.6rem; margin-bottom: 0; } h2 { margin-top: 2rem; border-bottom: 1px solid var(--line); }
   .meta, .hidden-count, .src { color: var(--muted); font-size: .9rem; }
-  .meeting { margin: 1.25rem 0; } .meeting h3 { margin: 0; font-size: 1.1rem; }
+  .meeting { margin: 2rem 0; } .meeting h3 { margin: 0; font-size: 1.1rem; text-wrap: balance; }
+  .meeting h3 .body { font-weight: 400; }
+  @media (max-width: 30rem) { .meeting h3 .sep { display: none; } .meeting h3 .body { display: block; } }
   .cancelled { color: var(--warn); font-weight: 600; }
-  ul.items { padding-left: 1.1rem; } ul.items li { margin: .5rem 0; }
-  .tag { display: inline-block; background: var(--tag); border-radius: 4px; padding: 0 .4rem; font-size: .8rem; margin-right: .25rem; }
+  ul.items { padding-left: 1.1rem; } ul.items > li { margin: 1.25rem 0; max-width: 70ch; }
+  ul.items > li > * { margin: .2rem 0 0; }
+  .tag { display: inline-block; background: var(--tag); border-radius: 4px; padding: 0 .4rem; font-size: .8rem; margin-right: .25rem; white-space: nowrap; }
   .ai { font-size: .75rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
-  .filters { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; } select { font: inherit; }
+  details.full { font-size: .9rem; color: var(--muted); } details.full summary { cursor: pointer; }
+  .docs { font-size: .9rem; overflow-wrap: break-word; }
+  .filters { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin: 1rem 0 .25rem; }
+  select { font: inherit; max-width: 100%; } button { font: inherit; }
+  #f-status:empty { display: none; }
   a { color: inherit; }
 </style>
 </head>
 <body>
+<main>
 <h1>Chicago Housing Meetings</h1>
-<p class="meta">Updated {{ generated.strftime('%B %d, %Y %I:%M %p') }} Chicago time. Summaries are written by AI from public documents; check the source before relying on them.</p>
+<p class="meta">Updated {{ generated.strftime('%B') }} {{ generated.day }}, {{ generated.year }}, {{ generated.strftime('%I:%M %p').lstrip('0') }} Chicago time. Summaries are written by AI from public documents; check the source before relying on them.</p>
 
 <div class="filters">
   <select id="f-cat" aria-label="Category"><option value="">All categories</option>
@@ -30,30 +38,34 @@
     {% for b in bodies %}<option value="{{ b }}">{{ b }}</option>{% endfor %}</select>
   <select id="f-ward" aria-label="Ward"><option value="">All wards</option>
     {% for w in range(1, 51) %}<option value="{{ w }}">Ward {{ w }}</option>{% endfor %}</select>
+  <button type="button" id="f-clear" hidden>Clear filters</button>
 </div>
+<p id="f-status" class="meta" role="status"></p>
 
 {% macro item_row(i) -%}
 {% set e = i.enrichment %}
 <li id="{{ i.id | anchor }}" class="row"
     data-categories="{{ (e.categories | map(attribute='id') | join(' ')) if e else '' }}"
     data-ward="{{ e.geography.ward if e and e.geography.ward else '' }}">
-  <strong>{{ i.title }}</strong> <span class="src">{{ i.source_ref }}</span>
-  {% if e and e.summary %}<div><span class="ai">AI summary</span> {{ e.summary }}</div>{% endif %}
-  <div>{% if e %}{% for c in e.categories %}<span class="tag">{{ cat_labels.get(c.id, c.id) }}</span>{% endfor %}{% endif %}
-    {% if e and e.geography.ward %}<span class="tag">Ward {{ e.geography.ward }}</span>{% endif %}
-    {% for a in i.attachments[:3] %}{% if a.url | safe_url %}<a href="{{ a.url | safe_url }}">{{ a.label }}</a> {% endif %}{% endfor %}</div>
+  <strong>{{ i.title | short_title }}</strong> <span class="src">{{ i.source_ref }}</span>
+  {% if i.title | length > LONG_TITLE %}<details class="full"><summary>Full agenda text</summary>{{ i.title }}</details>{% endif %}
+  {% if e and e.summary %}<div><span class="ai">AI summary</span> {{ e.summary | trim_summary }}</div>{% endif %}
+  {% if e and (e.categories or e.geography.ward) %}<div>{% for c in e.categories %}<span class="tag">{{ cat_labels.get(c.id, c.id) }}</span>{% endfor %}
+    {% if e.geography.ward %}<span class="tag">Ward {{ e.geography.ward }}</span>{% endif %}</div>{% endif %}
+  {% set docs = i.attachments[:3] | selectattr('url', 'safe_url') | list %}
+  {% if docs %}<div class="docs">Documents: {% for a in docs %}<a href="{{ a.url | safe_url }}">{{ a.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</div>{% endif %}
 </li>
 {%- endmacro %}
 
 {% macro meeting_section(u) -%}{% set m = u.m %}
 <section class="meeting" id="{{ m.id | anchor }}" data-body="{{ m.body }}">
-  <h3>{{ m.body }}</h3>
+  <h3>{{ m.start.strftime('%A, %B') }} {{ m.start.day }}{% if m.time_known %}, {{ m.start.strftime('%I:%M %p').lstrip('0') }}{% endif %}
+    <span class="sep">·</span> <span class="body">{{ m.body }}</span></h3>
   <div class="meta">
-    {{ m.start.strftime('%A, %B %d') }}{% if m.time_known %}, {{ m.start.strftime('%I:%M %p').lstrip('0') }}{% endif %}
-    {% if m.location %} · {{ m.location }}{% endif %}
-    {% if m.status == 'cancelled' %} · <span class="cancelled">Cancelled</span>{% endif %}
-    {% if m.agenda_url | safe_url %} · <a href="{{ m.agenda_url | safe_url }}">Agenda</a>{% endif %}
-    · <a href="{{ ics[m.body] }}">Calendar</a>
+    {% if m.status == 'cancelled' %}<span class="cancelled">Cancelled</span> · {% endif %}
+    {% if m.location %}{{ m.location }} · {% endif %}
+    {% if m.agenda_url | safe_url %}<a href="{{ m.agenda_url | safe_url }}">Agenda</a> · {% endif %}
+    <a href="{{ ics[m.body] }}">Add to calendar</a>
   </div>
   {% if u['items'] %}<ul class="items">{% for i in u['items'] %}{{ item_row(i) }}{% endfor %}</ul>{% endif %}
   {% if u.hidden %}<div class="hidden-count">+{{ u.hidden }} item{{ 's' if u.hidden != 1 else '' }} not about housing</div>{% endif %}
@@ -86,12 +98,14 @@
   <li class="row" data-body="{{ r.m.body if r.m else '' }}"
       data-categories="{{ (r.i.enrichment.categories | map(attribute='id') | join(' ')) if r.i.enrichment else '' }}"
       data-ward="{{ r.i.enrichment.geography.ward if r.i.enrichment and r.i.enrichment.geography.ward else '' }}">
-    <strong>{{ r.i.outcome.action }}</strong> ({{ r.i.outcome.date.strftime('%B %d') }}{% if r.m %}, {{ r.m.body }}{% endif %}): {{ r.i.title }}
+    <strong>{{ r.i.outcome.action }}</strong> ({{ r.i.outcome.date.strftime('%B %d') }}{% if r.m %}, {{ r.m.body }}{% endif %}): {{ r.i.title | short_title }}
+    {% if r.i.title | length > LONG_TITLE %}<details class="full"><summary>Full agenda text</summary>{{ r.i.title }}</details>{% endif %}
   </li>
 {% else %}<li>No outcomes in the last two weeks.</li>{% endfor %}
 </ul>
 
 <p class="meta">Data: <a href="items.json">items.json</a></p>
+</main>
 <script>
   const sel = id => document.getElementById(id);
   function apply() {
@@ -108,8 +122,19 @@
       const visible = [...s.querySelectorAll('.row')].some(r => !r.hidden);
       s.hidden = filtering ? !(visible || (body && s.dataset.body === body && !cat && !ward)) : false;
     });
+    const filtering = cat || body || ward;
+    const shown = [...document.querySelectorAll('.row')].filter(r => !r.hidden && !(r.closest('.meeting') || {}).hidden).length;
+    sel('f-clear').hidden = !filtering;
+    sel('f-status').textContent = !filtering ? ''
+      : shown ? `${shown} item${shown === 1 ? '' : 's'} match these filters.`
+      : 'No items match these filters. Try another category, body, or ward, or clear filters.';
   }
   ['f-cat', 'f-body', 'f-ward'].forEach(id => sel(id).addEventListener('change', apply));
+  sel('f-clear').addEventListener('click', () => {
+    ['f-cat', 'f-body', 'f-ward'].forEach(id => { sel(id).value = ''; });
+    apply();
+    sel('f-cat').focus();
+  });
 </script>
 </body>
 </html>

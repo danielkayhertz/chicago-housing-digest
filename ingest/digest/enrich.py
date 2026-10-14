@@ -58,7 +58,7 @@ You get one agenda item or public notice: the body that will act on it, its titl
 
 housing_relevant: whether it bears on homes: building, financing, preserving, regulating, taxing, or demolishing them, or the rights of the people who live in them. Zoning changes that add or remove homes count. Signs, business licenses, and commercial-only projects do not.
 relevance_reason: one sentence.
-summary: one to three plain sentences, at most about 40 words, on what the item would do and who is behind it, using only facts in the provided material. Do not speculate about effects. If the material says little more than the title, restate the title plainly.
+summary: one to three plain sentences, at most about 40 words, on what the item would do and who is behind it, using only facts in the provided material. Do not speculate about effects. If the material says little more than the title, restate the title plainly. Never say what the material leaves out or does not state.
 categories: the ids below that the item clearly bears on. An empty list is fine.
 {categories}
 address: the street address of the site the item concerns, copied as written, or null. Never the agency's office, an address for sending comments, or the meeting location.
