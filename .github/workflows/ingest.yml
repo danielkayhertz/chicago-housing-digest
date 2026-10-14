@@ -1,6 +1,7 @@
 name: ingest
 on:
   schedule:
+    # 6:20am, 12:20pm, 6:20pm Chicago (CDT; an hour earlier in CST)
     - cron: "20 11,17,23 * * *"
   workflow_dispatch:
 
