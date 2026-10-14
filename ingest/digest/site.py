@@ -85,7 +85,7 @@ def _event(m: Meeting, now: dt.datetime) -> list[str]:
     if m.item_count_total:
         desc.append(f"{m.item_count_relevant} of {m.item_count_total} items are about housing.")
     lines += [f"DESCRIPTION:{ics_escape(chr(10).join(desc))}",
-              f"STATUS:{'CANCELLED' if m.status == 'cancelled' else 'CONFIRMED'}", "END:VEVENT"]
+              f"STATUS:{'CANCELLED' if m.status in ('cancelled', 'unknown') else 'CONFIRMED'}", "END:VEVENT"]
     return lines
 
 
@@ -107,8 +107,8 @@ def build_site(digest: Digest, out_dir: Path, items_json: Path, categories: Cate
 
     upcoming = []
     for m in digest.meetings:
-        if m.start.astimezone(CHI).date() < today:
-            continue
+        if m.start.astimezone(CHI).date() < today or m.status == "unknown":
+            continue  # unknown: moved or dropped by its source; not worth showing
         its = items_by_meeting.get(m.id, [])
         visible = [i for i in its if is_shown(i)]
         upcoming.append({"m": m, "items": visible, "hidden": len(its) - len(visible)})

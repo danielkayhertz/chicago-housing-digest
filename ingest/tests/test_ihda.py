@@ -51,3 +51,4 @@ def test_adapter_window_and_extraction_flag():
     assert board.start.isoformat() == "2026-09-18T11:00:00-05:00"
     assert board.jurisdiction == "state" and board.needs_ai_extraction and board.status == "held"
     assert len(res.notices) == 7 and res.items == []
+    assert (res.window_start, res.window_end) == (dt.date(2026, 8, 6), dt.date(2027, 1, 3))

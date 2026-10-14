@@ -39,3 +39,8 @@ def test_items_only_matters_with_attachments():
     assert iga.attachments[0].label.startswith("Approved IGA with City of Chicago")
     assert iga.attachments[0].url.endswith(".pdf")
     assert iga.outcome is None
+
+
+def test_window_is_carried_on_the_result():
+    res = LegistarAdapter(CFG).fetch(fetcher(), NOW)
+    assert (res.window_start, res.window_end) == (dt.date(2026, 9, 6), dt.date(2026, 11, 19))

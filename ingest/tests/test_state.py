@@ -163,3 +163,51 @@ def test_notice_still_returned_is_kept_past_age_limit_and_pruned_once_gone():
     assert kept.notices[0].first_seen_at == long_ago and kept.events == []
     gone = merge(kept, {"ihda": res()}, T1)
     assert gone.notices == []
+
+
+def _windowed(meetings, start, end, **kw):
+    return SourceResult(meetings=list(meetings), window_start=start, window_end=end, **kw)
+
+
+def test_in_window_future_meeting_not_returned_becomes_unknown_without_event():
+    old = mtg("cpc:2026-10-15")
+    prev = merge(None, {"cpc": res([old])}, T0)
+    moved = mtg("cpc:2026-10-22", dt.datetime(2026, 10, 22, 10, 0, tzinfo=CHI))  # date-keyed id: a move is a new id
+    d = merge(prev, {"cpc": _windowed([moved], dt.date(2026, 9, 21), dt.date(2026, 12, 4))}, T1)
+    by_id = {m.id: m for m in d.meetings}
+    assert by_id["cpc:2026-10-15"].status == "unknown" and by_id["cpc:2026-10-22"].status == "scheduled"
+    assert types(d) == [("meeting_new", "cpc:2026-10-22")]
+
+
+def test_out_of_window_and_past_meetings_are_untouched():
+    far = mtg("cpc:2027-03-18", dt.datetime(2027, 3, 18, 10, 0, tzinfo=CHI))
+    past = mtg("cpc:2026-10-05", dt.datetime(2026, 10, 5, 10, 0, tzinfo=CHI))  # earlier today than T1 (12:20)
+    prev = merge(None, {"cpc": res([far, past, mtg("cpc:2026-10-15")])}, T0)
+    d = merge(prev, {"cpc": _windowed([mtg("cpc:2026-10-15")], dt.date(2026, 9, 21), dt.date(2026, 12, 4))}, T1)
+    assert {m.id: m.status for m in d.meetings} == {
+        "cpc:2027-03-18": "scheduled", "cpc:2026-10-05": "scheduled", "cpc:2026-10-15": "scheduled"}
+    assert d.events == []
+
+
+def test_other_sources_and_windowless_results_are_untouched():
+    prev = merge(None, {"cpc": res([mtg("cpc:2026-10-15")]), "cdc": res([mtg("cdc:2026-10-13", source_id="cdc")])}, T0)
+    d = merge(prev, {"cpc": res([]), "cdc": _windowed([], dt.date(2026, 9, 21), dt.date(2026, 12, 4))}, T1)
+    status = {m.id: m.status for m in d.meetings}
+    assert status["cpc:2026-10-15"] == "scheduled"   # no window carried: the rule does not apply
+    assert status["cdc:2026-10-13"] == "unknown"     # its own source's window does
+
+
+def test_unknown_meeting_returned_again_gets_its_real_status_back():
+    prev = merge(None, {"cpc": res([mtg()])}, T0)
+    win = (dt.date(2026, 9, 21), dt.date(2026, 12, 4))
+    gone = merge(prev, {"cpc": _windowed([], *win)}, T1)
+    assert gone.meetings[0].status == "unknown"
+    back = merge(gone, {"cpc": _windowed([mtg()], *win)}, T1 + dt.timedelta(hours=6))
+    assert back.meetings[0].status == "scheduled"
+    assert back.events == []
+
+
+def test_cancelled_meeting_not_returned_stays_cancelled():
+    prev = merge(None, {"cpc": res([mtg(status="cancelled")])}, T0)
+    d = merge(prev, {"cpc": _windowed([], dt.date(2026, 9, 21), dt.date(2026, 12, 4))}, T1)
+    assert d.meetings[0].status == "cancelled"

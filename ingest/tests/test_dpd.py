@@ -101,3 +101,19 @@ def test_duplicate_address_rows_get_distinct_item_ids():
     assert [i.id for i in res.items] == ["cdc:2026-10-13#1207-w-leland-ave",
                                          "cdc:2026-10-13#1207-w-leland-ave-2"]
     assert len({i.id for i in res.items}) == len(res.items)
+
+
+def test_rescheduled_hearing_gets_a_new_id_and_the_window_is_carried():
+    cfg = {"id": "cdc", "body": "Community Development Commission", "default_time": "13:30",
+           "listing_url": "https://www.chicago.gov/content/city/en/depts/dcd/community-development-commission/meetings--agendas-and-video-archives.html"}
+    moved = read("cdc_listing.html").replace('october.html" target="_blank" rel="noopener noreferrer">Oct. 13</a>',
+                                              'october.html" target="_blank" rel="noopener noreferrer">Oct. 20</a>')
+    assert moved != read("cdc_listing.html")
+    f = FakeFetcher([
+        ("agendas/2026/october.html", "dpd/cdc_2026_10.html"),
+        ("meetings--agendas-and-video-archives.html", moved.encode("utf-8")),
+    ])
+    res = DpdAdapter(cfg).fetch(f, dt.datetime(2026, 10, 5, 12, 0, tzinfo=CHI))
+    assert [m.id for m in res.meetings] == ["cdc:2026-10-20", "cdc:2026-11-10"]
+    assert all(i.meeting_id == "cdc:2026-10-20" for i in res.items) and res.items
+    assert (res.window_start, res.window_end) == (dt.date(2026, 9, 21), dt.date(2026, 12, 4))

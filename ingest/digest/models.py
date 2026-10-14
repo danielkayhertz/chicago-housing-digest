@@ -140,6 +140,9 @@ class SourceResult(BaseModel):
     items: list[Item] = Field(default_factory=list)
     notices: list[Notice] = Field(default_factory=list)
     warnings: list[str] = Field(default_factory=list)
+    # The date range (Chicago dates, inclusive) the adapter queried; None when the source has no such window.
+    window_start: dt.date | None = None
+    window_end: dt.date | None = None
 
 
 def load_digest(path: Path) -> Digest | None:

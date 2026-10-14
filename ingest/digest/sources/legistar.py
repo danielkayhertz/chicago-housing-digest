@@ -26,7 +26,7 @@ class LegistarAdapter(BaseAdapter):
 
     def fetch(self, fetcher: Fetcher, now: dt.datetime) -> SourceResult:
         win = window_for(now, self.days)
-        res = SourceResult()
+        res = SourceResult(window_start=win.start, window_end=win.end)
         events = fetcher.get_json(f"{API}/{self.client}/events", {
             "$filter": f"EventDate ge datetime'{win.start.isoformat()}' and EventDate le datetime'{win.end.isoformat()}'",
         })

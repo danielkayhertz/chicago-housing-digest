@@ -18,7 +18,7 @@ class ClihtfAdapter(BaseAdapter):
             "end_date": f"{win.end.isoformat()} 23:59:59",
             "per_page": 50,
         })
-        res = SourceResult()
+        res = SourceResult(window_start=win.start, window_end=win.end)
         for ev in data.get("events") or []:
             title = ev.get("title") or ""
             if "board meeting" not in title.lower():

@@ -123,7 +123,7 @@ class DpdAdapter(BaseAdapter):
 
     def fetch(self, fetcher: Fetcher, now: dt.datetime) -> SourceResult:
         win = window_for(now, self.days)
-        res = SourceResult()
+        res = SourceResult(window_start=win.start, window_end=win.end)
         entries = [e for e in parse_schedule(fetcher.get_text(self.listing_url), self.listing_url)
                    if win.contains(e.date)]
         if not entries:

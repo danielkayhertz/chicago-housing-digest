@@ -4,7 +4,7 @@ from __future__ import annotations
 import datetime as dt
 from collections import defaultdict
 
-from .models import ChangeEvent, Digest, Item, Meeting, Notice, SourceResult, SourceStatus
+from .models import CHI, ChangeEvent, Digest, Item, Meeting, Notice, SourceResult, SourceStatus
 
 EVENT_DAYS = 14
 MEETING_PRUNE_DAYS = 45
@@ -54,6 +54,17 @@ def merge(prev: Digest | None, results: dict[str, SourceResult | Exception], now
         def emit(kind: str, ref: str) -> None:
             if not quiet:
                 events.append(ChangeEvent(type=kind, ref_id=ref, at=now))
+
+        returned = {m.id for m in res.meetings}
+        if res.window_start is not None and res.window_end is not None:
+            # A date-keyed id changes when a meeting moves, so the old one would linger as "scheduled" for weeks.
+            # Inside the window this adapter queried, a future meeting it no longer lists is stale. No event: the
+            # new date already produced one. If the source lists it again it gets its real status back.
+            for old_id, old_m in pm.items():
+                if (old_m.source_id == sid and old_id not in returned and old_m.start > now
+                        and old_m.status in ("scheduled", "rescheduled")
+                        and res.window_start <= old_m.start.astimezone(CHI).date() <= res.window_end):
+                    meetings[old_id] = old_m.model_copy(update={"status": "unknown"})
 
         fresh_by_meeting: dict[str, list[Item]] = defaultdict(list)
         for it in res.items:

@@ -105,3 +105,19 @@ def test_escape_and_fold():
 def test_calendar_has_timezone_block():
     cal = ics_calendar(sample().meetings[1:2], "Chicago Plan Commission", NOW)
     assert "BEGIN:VTIMEZONE\r\nTZID:America/Chicago" in cal
+
+
+def test_unknown_meeting_is_hidden_from_upcoming_and_cancelled_in_ics(tmp_path):
+    d = sample()
+    stale = Meeting(id="cpc:2026-10-22", source_id="cpc", body="Chicago Plan Commission", body_id="cpc",
+                    start=dt.datetime(2026, 10, 22, 10, 0, tzinfo=CHI), status="unknown", location="Stale Room 9Z")
+    d.meetings.append(stale)
+    src = tmp_path / "items.json"
+    dump_digest(d, src)
+    build_site(d, tmp_path / "site", src, CATS, NOW)
+    html = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
+    assert "Stale Room 9Z" not in html and "City Hall, Room 201A" in html
+    cpc = (tmp_path / "site" / "ics" / "chicago-plan-commission.ics").read_bytes().decode("utf-8")
+    assert "UID:cpc-2026-10-22@housingdigest.danielkayhertz.com" in cpc
+    stale_event = cpc.split("UID:cpc-2026-10-22")[1].split("END:VEVENT")[0]
+    assert "STATUS:CANCELLED" in stale_event

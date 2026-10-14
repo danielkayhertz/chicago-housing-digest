@@ -115,7 +115,7 @@ class IhdaAdapter(BaseAdapter):
         raw, notices = parse_page(fetcher.get_text(self.url), self.url, self.source_id)
         if not raw:
             raise ImplausibleResult(f"{self.source_id}: no meetings parsed from the page")
-        res = SourceResult(notices=notices)
+        res = SourceResult(notices=notices, window_start=win.start, window_end=win.end)
         for r in raw:
             if not win.contains(r.date):
                 continue

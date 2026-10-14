@@ -110,7 +110,7 @@ class ElmsAdapter(BaseAdapter):
 
     def fetch(self, fetcher: Fetcher, now: dt.datetime) -> SourceResult:
         win = window_for(now, self.days)
-        res = SourceResult()
+        res = SourceResult(window_start=win.start, window_end=win.end)
         for raw in self._meetings(fetcher, win):
             m = self._meeting(raw, now)
             res.meetings.append(m)

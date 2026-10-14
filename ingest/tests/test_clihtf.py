@@ -16,3 +16,4 @@ def test_board_meetings_only_with_agenda_text():
     assert m.agenda_url == "https://clihtf.org/event/board-meeting-11-7/"
     assert "I. Roll Call" in m.agenda_text and "Allocations Committee" in m.agenda_text
     assert "start_date=2026-09-21" in f.calls[0]
+    assert (res.window_start, res.window_end) == (dt.date(2026, 9, 21), dt.date(2026, 12, 4))
