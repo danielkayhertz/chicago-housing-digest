@@ -20,6 +20,7 @@ from .http import FetchError, Fetcher
 from .models import CategoryHit, Digest, Enrichment, Figures, Geography, Item, Meeting, Notice
 from .pdftext import has_text_layer, pdf_text
 from .sources.base import html_to_text
+from .units import parse_units
 
 PROMPT_VERSION = "1"  # bump to re-enrich everything after a prompt change
 MAX_FAILED_ATTEMPTS = 3  # a record that keeps failing deterministically is retried this many runs, then left failed
@@ -346,6 +347,8 @@ def _fresh(rec: Record, ctx: EnrichContext, h: str) -> Enrichment:
         figures[name] = _grounded_number(value, numbers)
         if value is not None and figures[name] is None:
             log.info("%s: dropped ungrounded figure %s=%s", rec.id, name, value)
+    if figures["units"] is None:  # the permit unit parser, on the summary first (it is about the proposal), then the text
+        figures["units"] = _grounded_number(parse_units(s.summary), numbers) or parse_units(text)
     address = _grounded_address(s.address, corpus)
     if not address or is_office(address, ctx.office_addresses):
         address = title_address(rec.title)
@@ -399,6 +402,9 @@ def enrich_record(rec: Record, ctx: EnrichContext) -> Enrichment:
                 log.warning("%s: ignoring invalid enrich cache entry: %s", rec.id, ex)
             if e is not None and is_office(e.geography.address, ctx.office_addresses):
                 e.geography = Geography()  # an agency office is never the site; dropped without a new model call
+                ctx.cache.set(rec.id, e.model_dump(mode="json"))
+            if e is not None and e.status == "ok" and e.figures.units is None and (n := parse_units(e.summary)):
+                e.figures.units = n  # free backfill from the stored summary
                 ctx.cache.set(rec.id, e.model_dump(mode="json"))
             if e is not None and e.status == "ok" and not e.geography.address and (addr := title_address(rec.title)):
                 e.geography = resolve_geography(rec.hint, addr, ctx.geo)  # free: no model call

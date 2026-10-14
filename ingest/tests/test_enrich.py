@@ -475,6 +475,32 @@ def test_spelled_out_numbers_in_document_text_ground_figures(tmp_path):
     assert e.figures.units == 6
 
 
+def test_unit_parser_fills_units_the_model_left_empty(tmp_path):
+    html = b"<html><body><p>Erect a 4 story, 8 dwelling unit building at 1133 W. Kinzie St.</p></body></html>"
+    llm = FakeLLM({"summarize": [summary(units=None, affordable_units=None)]})
+    e = enrich_record(record_for_item(pd_item(), CPC), ctx(tmp_path, llm, routes=[("pd.html", html)]))
+    assert e.figures.units == 8
+
+
+def test_unit_parser_reads_the_summary_of_a_scanned_source(tmp_path):
+    llm = FakeLLM({"summarize": [bare_summary(summary="Would allow a new 37-unit residential building.")]})
+    e = enrich_record(record_for_item(pd_item(url="https://x/scan.pdf"), CPC),
+                      ctx(tmp_path, llm, routes=[("scan.pdf", _pdf(1))]))
+    assert e.figures.units == 37
+
+
+def test_cached_record_without_units_is_backfilled_from_its_summary_without_the_llm(tmp_path):
+    llm = FakeLLM({"summarize": [summary(summary="MKR Owner LLC proposes homes.", units=None, affordable_units=None)]})
+    c = ctx(tmp_path, llm, routes=[("pd.html", b"<p>MKR Owner LLC proposes homes at 1133 W. Kinzie St.</p>")])
+    rec = record_for_item(pd_item(), CPC)
+    assert enrich_record(rec, c).figures.units is None
+    cached = c.cache.get(rec.id)
+    cached["summary"] = "Would allow a new six-unit residential building."
+    c.cache.set(rec.id, cached)
+    e = enrich_record(rec, c)
+    assert e.figures.units == 6 and len(llm.calls) == 1 and c.cache.get(rec.id)["figures"]["units"] == 6
+
+
 def test_address_grounding_ignores_street_suffix_spelling(tmp_path):
     geo = StubGeo()
     llm = FakeLLM({"screen": [Screen(housing_relevant=True, reason="Adds homes.")],
