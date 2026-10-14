@@ -59,7 +59,7 @@
   "status": "ok",
   "summary": "The Community Development Commission is asked to authorize the Department of Planning and Development to negotiate a redevelopment agreement with Chicago Neighborhood Initiatives for 758 E. 111th St. in the North Pullman area, and to recommend CNI's designation as Developer."
  },
- "clihtf:319068#3": {
+ "clihtf:319068#allocations-summary": {
   "categories": [
    {
     "detail": "CLIHTF Board of Directors",
@@ -91,38 +91,7 @@
   "status": "ok",
   "summary": "The CLIHTF Board of Directors will receive an Allocations Summary from the Allocations Committee, chaired by Adonya Little. No allocation amounts, properties, or unit counts are given beyond the agenda title."
  },
- "clihtf:319068#4": {
-  "categories": [
-   {
-    "detail": "CLIHTF Board of Directors",
-    "id": "social-housing",
-    "via": "body"
-   }
-  ],
-  "content_hash": "322c925d052867e0",
-  "entities": [
-   "Chicago Low-Income Housing Trust Fund",
-   "Patricia Johnson",
-   "Teko Properties"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": "6815 N Sheridan",
-   "community_area": "Rogers Park",
-   "ward": 49
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The item concerns an ownership change for a rental property at 6815 N Sheridan, which is handled through the Chicago Low-Income Housing Trust Fund's rental subsidy program.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "The CLIHTF Board's Allocations Committee report includes an ownership change for 6815 N Sheridan from Patricia Johnson to Teko Properties. The material gives no further details."
- },
- "clihtf:319068#5": {
+ "clihtf:319068#financial-statements-as-of-september-30-2026": {
   "categories": [
    {
     "detail": "CLIHTF Board of Directors",
@@ -153,7 +122,103 @@
   "status": "ok",
   "summary": "The CLIHTF Board's Finance and Audit Committee, with Treasurer Meredith Muir, will report on the Trust Fund's financial statements as of September 30, 2026. The same meeting includes a draft 2027 budget presentation."
  },
- "clihtf:319068#6": {
+ "clihtf:319068#new-business-tenant-outreach-initiative-presented-by-marlana-edwards-dir-079adf2": {
+  "categories": [
+   {
+    "detail": "CLIHTF Board of Directors",
+    "id": "social-housing",
+    "via": "body"
+   },
+   {
+    "detail": "",
+    "id": "housing-agenda",
+    "via": "model"
+   }
+  ],
+  "content_hash": "55699536749b791f",
+  "entities": [
+   "Chicago Low-Income Housing Trust Fund",
+   "Marlana Edwards"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The Chicago Low-Income Housing Trust Fund board will hear a Tenant Outreach Initiative, which concerns tenants in subsidized rental housing.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The CLIHTF Board of Directors will hear a new-business presentation on a Tenant Outreach Initiative from Marlana Edwards, Director of Program Development and Outreach. The material gives no further detail on the initiative."
+ },
+ "clihtf:319068#outreach-committee-update-provided-by-board-vp-sam-paler-ponce": {
+  "categories": [
+   {
+    "detail": "CLIHTF Board of Directors",
+    "id": "social-housing",
+    "via": "body"
+   }
+  ],
+  "content_hash": "56d184b86d364c77",
+  "entities": [
+   "Chicago Low-Income Housing Trust Fund",
+   "Sam Paler-Ponce"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The Chicago Low-Income Housing Trust Fund board is receiving an update on its outreach work, which supports its rental subsidy program for low-income tenants.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "Board Vice President Sam Paler-Ponce will give an Outreach Committee update at the CLIHTF Board of Directors meeting. The agenda gives no further detail on the update."
+ },
+ "clihtf:319068#ownership-change-of-6815-n-sheridan-from-patricia-johnson-to-teko-properties": {
+  "categories": [
+   {
+    "detail": "CLIHTF Board of Directors",
+    "id": "social-housing",
+    "via": "body"
+   }
+  ],
+  "content_hash": "322c925d052867e0",
+  "entities": [
+   "Chicago Low-Income Housing Trust Fund",
+   "Patricia Johnson",
+   "Teko Properties"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "6815 N Sheridan",
+   "community_area": "Rogers Park",
+   "ward": 49
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item concerns an ownership change for a rental property at 6815 N Sheridan, which is handled through the Chicago Low-Income Housing Trust Fund's rental subsidy program.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The CLIHTF Board's Allocations Committee report includes an ownership change for 6815 N Sheridan from Patricia Johnson to Teko Properties. The material gives no further details."
+ },
+ "clihtf:319068#presentation-of-draft-2027-budget": {
   "categories": [
    {
     "detail": "CLIHTF Board of Directors",
@@ -189,37 +254,7 @@
   "status": "ok",
   "summary": "The CLIHTF Board's Finance and Audit Committee, with Treasurer Meredith Muir reporting, will present a draft 2027 budget for the Chicago Low-Income Housing Trust Fund. No budget figures are provided in the material."
  },
- "clihtf:319068#7": {
-  "categories": [
-   {
-    "detail": "CLIHTF Board of Directors",
-    "id": "social-housing",
-    "via": "body"
-   }
-  ],
-  "content_hash": "56d184b86d364c77",
-  "entities": [
-   "Chicago Low-Income Housing Trust Fund",
-   "Sam Paler-Ponce"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The Chicago Low-Income Housing Trust Fund board is receiving an update on its outreach work, which supports its rental subsidy program for low-income tenants.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "Board Vice President Sam Paler-Ponce will give an Outreach Committee update at the CLIHTF Board of Directors meeting. The agenda gives no further detail on the update."
- },
- "clihtf:319068#iii": {
+ "clihtf:319068#president-s-update": {
   "categories": [
    {
     "detail": "CLIHTF Board of Directors",
@@ -249,7 +284,7 @@
   "status": "ok",
   "summary": "The President's Update is a standing item on the CLIHTF Board of Directors' October 13, 2026 agenda. The material gives no details of its content."
  },
- "clihtf:319068#iv": {
+ "clihtf:319068#reports": {
   "categories": [
    {
     "detail": "CLIHTF Board of Directors",
@@ -287,41 +322,6 @@
   "source_quality": "full",
   "status": "ok",
   "summary": "CLIHTF board receives committee reports, including an allocations summary, an ownership change of 6815 N Sheridan from Patricia Johnson to Teko Properties, financial statements through September 30, 2026, and the draft 2027 budget."
- },
- "clihtf:319068#vi": {
-  "categories": [
-   {
-    "detail": "CLIHTF Board of Directors",
-    "id": "social-housing",
-    "via": "body"
-   },
-   {
-    "detail": "",
-    "id": "housing-agenda",
-    "via": "model"
-   }
-  ],
-  "content_hash": "55699536749b791f",
-  "entities": [
-   "Chicago Low-Income Housing Trust Fund",
-   "Marlana Edwards"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The Chicago Low-Income Housing Trust Fund board will hear a Tenant Outreach Initiative, which concerns tenants in subsidized rental housing.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "The CLIHTF Board of Directors will hear a new-business presentation on a Tenant Outreach Initiative from Marlana Edwards, Director of Program Development and Outreach. The material gives no further detail on the initiative."
  },
  "cpc:2026-10-15#1133-w-kinzie-st": {
   "categories": [
@@ -2230,7 +2230,7 @@
   "status": "screened_out",
   "summary": ""
  },
- "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#1": {
+ "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#a-proposed-order-authorizing-the-corporation-counsel-to-enter-into-and-e-ed66b79": {
   "categories": [],
   "content_hash": "f58b8282165c5225",
   "entities": [],
@@ -2251,61 +2251,7 @@
   "status": "screened_out",
   "summary": ""
  },
- "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#2": {
-  "categories": [
-   {
-    "detail": "TIF",
-    "id": "housing-agenda",
-    "via": "keyword"
-   }
-  ],
-  "content_hash": "c8aa0c7bfca36d10",
-  "entities": [],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": false,
-  "model": "claude-haiku-5-5",
-  "overridden": false,
-  "relevance_reason": "The item provides TIF funds for improvements to an elementary school, which does not involve building, financing, preserving, regulating, taxing, or demolishing homes or the rights of residents.",
-  "source_quality": "none",
-  "status": "screened_out",
-  "summary": ""
- },
- "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#3": {
-  "categories": [
-   {
-    "detail": "TIF",
-    "id": "housing-agenda",
-    "via": "keyword"
-   }
-  ],
-  "content_hash": "3efa34d6fb2231bf",
-  "entities": [],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": false,
-  "model": "claude-haiku-5-5",
-  "overridden": false,
-  "relevance_reason": "The item provides TIF funds for capital improvements at an elementary school, which is an institutional use with no dwelling units or residential regulation involved.",
-  "source_quality": "none",
-  "status": "screened_out",
-  "summary": ""
- },
- "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#4": {
+ "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#a-substitute-ordinance-approving-the-execution-of-the-66th-amending-agre-7b92f60": {
   "categories": [],
   "content_hash": "024025c4b776964c",
   "entities": [],
@@ -2326,31 +2272,7 @@
   "status": "screened_out",
   "summary": ""
  },
- "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#5": {
-  "categories": [],
-  "content_hash": "39fd08a62b0fb920",
-  "entities": [
-   "BTH Development, NFP",
-   "Department of Planning and Development"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": "13122 S. Ellis Avenue",
-   "community_area": "Riverdale",
-   "ward": 10
-  },
-  "housing_relevant": false,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The item funds redevelopment of a youth center, a community facility, and the material does not mention any housing units.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "Ordinance authorizing a Redevelopment Agreement with BTH Development, NFP to provide up to $7,300,000 in Housing and Economic Development Bond funds for redevelopment of the Altgeld Gardens Youth Center at 13122 S. Ellis Avenue (10th Ward)."
- },
- "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#6": {
+ "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-a-redevelopment-agreement-with-690ee1e": {
   "categories": [
    {
     "detail": "TIF",
@@ -2380,7 +2302,31 @@
   "status": "ok",
   "summary": "Ordinance authorizing a Redevelopment Agreement with North Lawndale Catalyst Initiative, NFP for up to $5,000,000 in HED funds and up to $5,000,000 in TIF assistance for the Filmore Linen Services project at 920-922 S. Campbell Avenue (28th Ward)."
  },
- "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#7": {
+ "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-a-redevelopment-agreement-with-e11e35b": {
+  "categories": [],
+  "content_hash": "39fd08a62b0fb920",
+  "entities": [
+   "BTH Development, NFP",
+   "Department of Planning and Development"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "13122 S. Ellis Avenue",
+   "community_area": "Riverdale",
+   "ward": 10
+  },
+  "housing_relevant": false,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item funds redevelopment of a youth center, a community facility, and the material does not mention any housing units.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "Ordinance authorizing a Redevelopment Agreement with BTH Development, NFP to provide up to $7,300,000 in Housing and Economic Development Bond funds for redevelopment of the Altgeld Gardens Youth Center at 13122 S. Ellis Avenue (10th Ward)."
+ },
+ "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-a-redevelopment-agreement-with-e529a0d": {
   "categories": [
    {
     "detail": "",
@@ -2410,7 +2356,61 @@
   "status": "ok",
   "summary": "Ordinance authorizing a Redevelopment Agreement with Hudson Michigan Avenue Owner LLC for the Hudson House project at 2222 S. Michigan Avenue in the 3rd Ward. It provides up to $5,000,000 in HED city loan funds and up to $10,000,000 in HED city grant funds."
  },
- "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#8": {
+ "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-an-intergovernmental-agreement-191a042": {
+  "categories": [
+   {
+    "detail": "TIF",
+    "id": "housing-agenda",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "c8aa0c7bfca36d10",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "The item provides TIF funds for improvements to an elementary school, which does not involve building, financing, preserving, regulating, taxing, or demolishing homes or the rights of residents.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": ""
+ },
+ "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-an-intergovernmental-agreement-616e994": {
+  "categories": [
+   {
+    "detail": "TIF",
+    "id": "housing-agenda",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "3efa34d6fb2231bf",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "The item provides TIF funds for capital improvements at an elementary school, which is an institutional use with no dwelling units or residential regulation involved.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": ""
+ },
+ "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#one-1-proposed-order-authorizing-the-payment-of-various-small-claims-aga-7140ea7": {
   "categories": [],
   "content_hash": "19cb9adaed354c18",
   "entities": [],
@@ -2431,7 +2431,7 @@
   "status": "screened_out",
   "summary": ""
  },
- "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#9": {
+ "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#one-1-proposed-orders-denying-the-payment-of-various-small-claims-agains-235e13b": {
   "categories": [],
   "content_hash": "009b8de3de4c09ab",
   "entities": [],
@@ -2518,7 +2518,7 @@
   "status": "ok",
   "summary": "Authorizes a Department of Housing loan of up to $11,000,000 and up to $11,500,000 in Midwest TIF funds to Harvest Homes II Apartments, LLC. It also conveys three city lots for $1 each to PCDAC for a 50-unit affordable rental building."
  },
- "ihda:ihda-board:2026-10-16#iv-b-1": {
+ "ihda:ihda-board:2026-10-16#accounting-payments-reports": {
   "categories": [
    {
     "detail": "IHDA Board",
@@ -2526,37 +2526,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "1f9af01fd648aa01",
-  "entities": [
-   "Illinois Housing Development Authority",
-   "Mythics, Inc."
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": false,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "This is an IHDA internal procurement of business process co-sourcing services from a technology vendor, not an action on housing production, finance, or tenant matters.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "IHDA Board would authorize an agreement with Mythics, Inc. for Business Process Co-Sourcing (BPC) services in an amount not to exceed $1,194,193. Presented by S. Runkle as a procurement matter."
- },
- "ihda:ihda-board:2026-10-16#iv-c-1": {
-  "categories": [
-   {
-    "detail": "IHDA Board",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "1b85fe868c3c8e10",
+  "content_hash": "77a8c58c9c188fa8",
   "entities": [
    "Illinois Housing Development Authority"
   ],
@@ -2569,228 +2539,15 @@
    "community_area": null,
    "ward": null
   },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The resolution concerns returning and reallocating Low Income Housing Tax Credits, which finance affordable rental developments.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "IHDA Board would authorize the return and reallocation of Low Income Housing Tax Credits for nine developments (resolution 2026-10-IHDA-159, presented by D. Hilmer). The agenda text does not name the developments or give amounts."
- },
- "ihda:ihda-board:2026-10-16#iv-d-1": {
-  "categories": [
-   {
-    "detail": "IHDA Board",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "031cdd6548b839bd",
-  "entities": [
-   "Illinois Housing Development Authority",
-   "M. Babcock"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "It amends a standby bond purchase agreement tied to IHDA Housing Bonds, which finance the authority's housing programs.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "The IHDA Board would authorize a second amendment to the Standby Bond Purchase Agreement for Housing Bonds, 2017 Series A-2. The agenda gives no terms or counterparties; M. Babcock is listed as presenter (resolution 2026-10-IHDA-160)."
- },
- "ihda:ihda-board:2026-10-16#iv-d-2": {
-  "categories": [
-   {
-    "detail": "IHDA Board",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "2d91ef863dad20ad",
-  "entities": [
-   "IHDA",
-   "Illinois Housing Development Authority"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "This is an IHDA board resolution ratifying permitted financial activities under the agency's Financial Management Policy, which governs how the state housing finance agency manages its funds.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "IHDA's board will vote on a quarterly resolution ratifying 'Permitted Financial Activities' under the Authority's Financial Management Policy. The material gives no further detail; S. Bhimani is listed as presenter."
- },
- "ihda:ihda-board:2026-10-16#iv-e-1": {
-  "categories": [
-   {
-    "detail": "IHDA Board",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "5f700cdeedf1136d",
-  "entities": [
-   "IHDA",
-   "Illinois Housing Development Authority",
-   "The Glen",
-   "K. Padgitt"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The item concerns changes to ownership, the regulatory agreement, and property management of The Glen, an IHDA-financed multifamily development.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "IHDA Board would authorize a change of general partner ownership interest, an amendment to the regulatory agreement, and a change in property management for The Glen (40-2246). Staff presenter is K. Padgitt; no other details are provided."
- },
- "ihda:ihda-board:2026-10-16#iv-f-1": {
-  "categories": [
-   {
-    "detail": "IHDA Board",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "fe786dc1a536acfc",
-  "entities": [
-   "Illinois Housing Development Authority",
-   "C. McClernon"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "This is an administrative resolution about the IHDA Board's closed session minutes and does not itself concern building, financing, regulating, or occupying homes.",
+  "relevance_reason": "This is a routine informational accounting payments report on IHDA's internal finances, with no stated bearing on specific homes, financing, or tenants.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "The IHDA Board would consider a resolution regarding its closed session minutes (item 2026-10-IHDA-163), presented by C. McClernon. The retrieved text is the full October 16, 2026 agenda and gives no detail on this item."
+  "summary": "IHDA Board's new business includes an Accounting Payments Report presented by M. Jalaluddin. The retrieved text is the full October 16, 2026 meeting agenda and gives no details on the report's contents."
  },
- "ihda:ihda-board:2026-10-16#v-a-1": {
-  "categories": [
-   {
-    "detail": "IHDA Board",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "c1914a34af4cb73d",
-  "entities": [
-   "Illinois Housing Development Authority",
-   "Pheasant Ridge and Hunter Apartments"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The item authorizes IHDA to provide a $51.5 million conduit loan to finance a multifamily rental development, Pheasant Ridge and Hunter Apartments.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "IHDA Board would authorize a $51,500,000 conduit loan for Pheasant Ridge and Hunter Apartments (PID-12789). The material gives no unit counts, developer name, or site details; it appears on the October 16, 2026 agenda under Multifamily Finance, presented by T. Krouse."
- },
- "ihda:ihda-board:2026-10-16#v-b-1": {
-  "categories": [
-   {
-    "detail": "IHDA Board",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "aa806a3a9261ed23",
-  "entities": [
-   "Illinois Housing Development Authority",
-   "M. Babcock"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "IHDA revenue bond issuance finances housing programs, which bears on state housing finance.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "The IHDA Board would authorize issuing up to $500,000,000 in Revenue Bonds, Series 2026 LMNO (resolution 2026-10-IHDA-165), presented by M. Babcock as a finance matter. The material gives no detail on the projects or programs the bonds would fund."
- },
- "ihda:ihda-board:2026-10-16#vi-a": {
-  "categories": [
-   {
-    "detail": "IHDA Board",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "f2ccf40885942372",
-  "entities": [
-   "IHDA",
-   "NCSHA",
-   "K. Faust"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": false,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "This is a conference report-out presentation by IHDA staff with no stated action on housing production, financing, regulation, or tenants.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "K. Faust will report to the IHDA Board on the NCSHA Annual Conference. The retrieved text is the full October 16, 2026 board agenda and gives no details on the presentation itself."
- },
- "ihda:ihda-board:2026-10-16#viii-a": {
+ "ihda:ihda-board:2026-10-16#authority-financial-statements": {
   "categories": [
    {
     "detail": "IHDA Board",
@@ -2821,66 +2578,7 @@
   "status": "ok",
   "summary": "The IHDA Board receives the Authority Financial Statements as a written report, presented by M. Jalaluddin. The retrieved text is the full October 16, 2026 board agenda and gives no details on the statements."
  },
- "ihda:ihda-board:2026-10-16#viii-b": {
-  "categories": [
-   {
-    "detail": "IHDA Board",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "77a8c58c9c188fa8",
-  "entities": [
-   "Illinois Housing Development Authority"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": false,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "This is a routine informational accounting payments report on IHDA's internal finances, with no stated bearing on specific homes, financing, or tenants.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "IHDA Board's new business includes an Accounting Payments Report presented by M. Jalaluddin. The retrieved text is the full October 16, 2026 meeting agenda and gives no details on the report's contents."
- },
- "ihda:ihda-board:2026-10-16#viii-c": {
-  "categories": [
-   {
-    "detail": "IHDA Board",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "8349a898404dedef",
-  "entities": [
-   "IHDA",
-   "Illinois Housing Development Authority"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": false,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "This is an informational written report on IHDA's investment holdings, with no specific housing development, program, or policy action described in the material.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "Informational Investment Holdings Report to the IHDA Board, presented by S. Martin. The retrieved text is the full October 16, 2026 board agenda and gives no details about the report itself."
- },
- "ihda:ihda-board:2026-10-16#viii-d": {
+ "ihda:ihda-board:2026-10-16#communications-report": {
   "categories": [
    {
     "detail": "IHDA Board",
@@ -2910,37 +2608,7 @@
   "status": "ok",
   "summary": "A Communications Report presented by J. Frevert as an informational written report at the IHDA Board's October 16, 2026 meeting. The retrieved text is the full meeting agenda and gives no details on the report's content."
  },
- "ihda:ihda-board:2026-10-16#viii-e": {
-  "categories": [
-   {
-    "detail": "IHDA Board",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "1d440aa5e57f7d95",
-  "entities": [
-   "IHDA",
-   "B. Kiley"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": false,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The item is a routine written External Relations Report from IHDA staff, and the retrieved text is only the full board agenda outline with no housing action described for this item.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "Informational External Relations Report on the IHDA Board's October 16, 2026 agenda, presented by B. Kiley. The material provides no details about its content."
- },
- "ihda:ihda-board:2026-10-16#viii-f": {
+ "ihda:ihda-board:2026-10-16#court-based-rental-assistance-program": {
   "categories": [
    {
     "detail": "IHDA Board",
@@ -2975,7 +2643,98 @@
   "status": "ok",
   "summary": "The IHDA Board agenda lists a report on the Court-Based Rental Assistance Program, presented by P. Sellke. The retrieved text gives no details on program design, funding, or scope beyond the title."
  },
- "ihda:ihda-board:2026-10-16#viii-g": {
+ "ihda:ihda-board:2026-10-16#external-relations-report": {
+  "categories": [
+   {
+    "detail": "IHDA Board",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "1d440aa5e57f7d95",
+  "entities": [
+   "IHDA",
+   "B. Kiley"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item is a routine written External Relations Report from IHDA staff, and the retrieved text is only the full board agenda outline with no housing action described for this item.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "Informational External Relations Report on the IHDA Board's October 16, 2026 agenda, presented by B. Kiley. The material provides no details about its content."
+ },
+ "ihda:ihda-board:2026-10-16#investment-holdings-report": {
+  "categories": [
+   {
+    "detail": "IHDA Board",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "8349a898404dedef",
+  "entities": [
+   "IHDA",
+   "Illinois Housing Development Authority"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "This is an informational written report on IHDA's investment holdings, with no specific housing development, program, or policy action described in the material.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "Informational Investment Holdings Report to the IHDA Board, presented by S. Martin. The retrieved text is the full October 16, 2026 board agenda and gives no details about the report itself."
+ },
+ "ihda:ihda-board:2026-10-16#ncsha-annual-conference-report-out": {
+  "categories": [
+   {
+    "detail": "IHDA Board",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "f2ccf40885942372",
+  "entities": [
+   "IHDA",
+   "NCSHA",
+   "K. Faust"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "This is a conference report-out presentation by IHDA staff with no stated action on housing production, financing, regulation, or tenants.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "K. Faust will report to the IHDA Board on the NCSHA Annual Conference. The retrieved text is the full October 16, 2026 board agenda and gives no details on the presentation itself."
+ },
+ "ihda:ihda-board:2026-10-16#quarterly-operational-excellence-report": {
   "categories": [
    {
     "detail": "IHDA Board",
@@ -3005,7 +2764,248 @@
   "status": "ok",
   "summary": "IHDA staff (C. Jerry) will present the Quarterly Operational Excellence Report to the IHDA Board at its October 16, 2026 meeting. No further detail on the report's contents is provided."
  },
- "ihda:ihda-finance-committee:2026-10-16#ii-a": {
+ "ihda:ihda-board:2026-10-16#quarterly-resolution-ratifying-permitted-financial-activities-under-the-70070d8": {
+  "categories": [
+   {
+    "detail": "IHDA Board",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "2d91ef863dad20ad",
+  "entities": [
+   "IHDA",
+   "Illinois Housing Development Authority"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "This is an IHDA board resolution ratifying permitted financial activities under the agency's Financial Management Policy, which governs how the state housing finance agency manages its funds.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "IHDA's board will vote on a quarterly resolution ratifying 'Permitted Financial Activities' under the Authority's Financial Management Policy. The material gives no further detail; S. Bhimani is listed as presenter."
+ },
+ "ihda:ihda-board:2026-10-16#resolution-authorizing-a-change-of-general-partner-ownership-interest-am-a6e7349": {
+  "categories": [
+   {
+    "detail": "IHDA Board",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "5f700cdeedf1136d",
+  "entities": [
+   "IHDA",
+   "Illinois Housing Development Authority",
+   "The Glen",
+   "K. Padgitt"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item concerns changes to ownership, the regulatory agreement, and property management of The Glen, an IHDA-financed multifamily development.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "IHDA Board would authorize a change of general partner ownership interest, an amendment to the regulatory agreement, and a change in property management for The Glen (40-2246). Staff presenter is K. Padgitt; no other details are provided."
+ },
+ "ihda:ihda-board:2026-10-16#resolution-authorizing-a-conduit-loan-51-500-000-for-pheasant-ridge-and-e0dd243": {
+  "categories": [
+   {
+    "detail": "IHDA Board",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "c1914a34af4cb73d",
+  "entities": [
+   "Illinois Housing Development Authority",
+   "Pheasant Ridge and Hunter Apartments"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item authorizes IHDA to provide a $51.5 million conduit loan to finance a multifamily rental development, Pheasant Ridge and Hunter Apartments.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "IHDA Board would authorize a $51,500,000 conduit loan for Pheasant Ridge and Hunter Apartments (PID-12789). The material gives no unit counts, developer name, or site details; it appears on the October 16, 2026 agenda under Multifamily Finance, presented by T. Krouse."
+ },
+ "ihda:ihda-board:2026-10-16#resolution-authorizing-agreement-with-mythics-inc-for-business-process-c-c706ea5": {
+  "categories": [
+   {
+    "detail": "IHDA Board",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "1f9af01fd648aa01",
+  "entities": [
+   "Illinois Housing Development Authority",
+   "Mythics, Inc."
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "This is an IHDA internal procurement of business process co-sourcing services from a technology vendor, not an action on housing production, finance, or tenant matters.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "IHDA Board would authorize an agreement with Mythics, Inc. for Business Process Co-Sourcing (BPC) services in an amount not to exceed $1,194,193. Presented by S. Runkle as a procurement matter."
+ },
+ "ihda:ihda-board:2026-10-16#resolution-authorizing-return-and-reallocation-of-low-income-housing-tax-0b609a1": {
+  "categories": [
+   {
+    "detail": "IHDA Board",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "1b85fe868c3c8e10",
+  "entities": [
+   "Illinois Housing Development Authority"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The resolution concerns returning and reallocating Low Income Housing Tax Credits, which finance affordable rental developments.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "IHDA Board would authorize the return and reallocation of Low Income Housing Tax Credits for nine developments (resolution 2026-10-IHDA-159, presented by D. Hilmer). The agenda text does not name the developments or give amounts."
+ },
+ "ihda:ihda-board:2026-10-16#resolution-authorizing-second-amendment-of-standby-bond-purchase-agreeme-de6b625": {
+  "categories": [
+   {
+    "detail": "IHDA Board",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "031cdd6548b839bd",
+  "entities": [
+   "Illinois Housing Development Authority",
+   "M. Babcock"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "It amends a standby bond purchase agreement tied to IHDA Housing Bonds, which finance the authority's housing programs.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The IHDA Board would authorize a second amendment to the Standby Bond Purchase Agreement for Housing Bonds, 2017 Series A-2. The agenda gives no terms or counterparties; M. Babcock is listed as presenter (resolution 2026-10-IHDA-160)."
+ },
+ "ihda:ihda-board:2026-10-16#resolution-authorizing-the-issuance-of-not-to-exceed-500-000-000-revenue-633fbb6": {
+  "categories": [
+   {
+    "detail": "IHDA Board",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "aa806a3a9261ed23",
+  "entities": [
+   "Illinois Housing Development Authority",
+   "M. Babcock"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "IHDA revenue bond issuance finances housing programs, which bears on state housing finance.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The IHDA Board would authorize issuing up to $500,000,000 in Revenue Bonds, Series 2026 LMNO (resolution 2026-10-IHDA-165), presented by M. Babcock as a finance matter. The material gives no detail on the projects or programs the bonds would fund."
+ },
+ "ihda:ihda-board:2026-10-16#resolution-regarding-closed-session-minutes": {
+  "categories": [
+   {
+    "detail": "IHDA Board",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "fe786dc1a536acfc",
+  "entities": [
+   "Illinois Housing Development Authority",
+   "C. McClernon"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "This is an administrative resolution about the IHDA Board's closed session minutes and does not itself concern building, financing, regulating, or occupying homes.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The IHDA Board would consider a resolution regarding its closed session minutes (item 2026-10-IHDA-163), presented by C. McClernon. The retrieved text is the full October 16, 2026 agenda and gives no detail on this item."
+ },
+ "ihda:ihda-finance-committee:2026-10-16#information-technology-update": {
   "categories": [
    {
     "detail": "IHDA Finance Committee",
@@ -3033,213 +3033,6 @@
   "source_quality": "full",
   "status": "ok",
   "summary": "IHDA Finance Committee agenda item for an Information Technology Update, presented by F. Ghauri. The item is a routine agency IT briefing."
- },
- "ihda:ihda-finance-committee:2026-10-16#ii-b": {
-  "categories": [
-   {
-    "detail": "IHDA Finance Committee",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "f990be44b36b7e41",
-  "entities": [
-   "Illinois Housing Development Authority"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": false,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "This is an IT security briefing item on an IHDA Finance Committee agenda and does not concern building, financing, regulating, or occupying homes.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "IHDA Finance Committee agenda item for a Security Update presented by T. Hardrick, under the IT Update section. No housing programs or developments are described for this item."
- },
- "ihda:ihda-finance-committee:2026-10-16#iii-a": {
-  "categories": [
-   {
-    "detail": "IHDA Finance Committee",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "c4346b2f5cab1378",
-  "entities": [
-   "Illinois Housing Development Authority",
-   "M. Jalaluddin"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "This is a standing financial report to the board of IHDA, the state housing finance agency that funds affordable housing and homeownership programs.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "The IHDA Finance Committee will receive a presentation of the consolidated interim financial statement from M. Jalaluddin as a standing monthly update. The agenda text gives no further detail on the statement."
- },
- "ihda:ihda-finance-committee:2026-10-16#iii-b": {
-  "categories": [
-   {
-    "detail": "IHDA Finance Committee",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "e35108c7893bcc8a",
-  "entities": [
-   "Illinois Housing Development Authority"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "A standing multifamily update at IHDA's Finance Committee covers the state housing finance agency's multifamily lending and affordable housing activity.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "IHDA's Finance Committee receives a standing monthly Multifamily Update, presented by S. Bannon. The provided text is only the meeting agenda and gives no details on the update's content."
- },
- "ihda:ihda-finance-committee:2026-10-16#iii-c": {
-  "categories": [
-   {
-    "detail": "IHDA Finance Committee",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "913d67ef3cf74508",
-  "entities": [
-   "Illinois Housing Development Authority",
-   "K. Nestlehut"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "A standing IHDA Finance Committee update on single family and homeownership programs, which bears on state housing finance for homebuyers.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "Standing monthly update on IHDA's Single Family/Homeownership programs, presented by K. Nestlehut at the October 16, 2026 Finance Committee meeting. The agenda gives no further detail on the update's content."
- },
- "ihda:ihda-finance-committee:2026-10-16#iv-a-1": {
-  "categories": [
-   {
-    "detail": "IHDA Finance Committee",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "eafe6678a4c7dc1d",
-  "entities": [
-   "Illinois Housing Development Authority",
-   "S. Bhimani"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "It is an IHDA Finance Committee resolution on the authority's financial activities, which fund housing finance, though the agenda gives no detail on what activities are ratified.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "The IHDA Finance Committee will consider a resolution ratifying permitted financial activities, presented by S. Bhimani. The agenda text gives no further detail on the activities covered."
- },
- "ihda:ihda-finance-committee:2026-10-16#iv-a-2": {
-  "categories": [
-   {
-    "detail": "IHDA Finance Committee",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "a0ca4d7d982bdc6f",
-  "entities": [
-   "Illinois Housing Development Authority",
-   "M. Babcock"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The item concerns liquidity support for IHDA's Housing Bonds, Series 2017 A-2, which finance housing, so it bears on state housing finance.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "The IHDA Finance Committee will consider amending or extending a standby bond purchase agreement (SBPA) for Housing Bonds Series 2017 A-2. M. Babcock is listed as presenter. The agenda gives no further terms."
- },
- "ihda:ihda-finance-committee:2026-10-16#iv-a-3": {
-  "categories": [
-   {
-    "detail": "IHDA Finance Committee",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "e6bcb1925f15cdb3",
-  "entities": [
-   "Illinois Housing Development Authority"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "IHDA revenue bond issuance is a state housing finance action that funds housing programs.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "The IHDA Finance Committee will consider a resolution authorizing Revenue Bonds, 2026 Series LMNO, presented by M. Babcock. The agenda gives no bond amount, purpose, or project details."
  },
  "ihda:ihda-finance-committee:2026-10-16#iv-a-4": {
   "categories": [
@@ -3271,7 +3064,36 @@
   "status": "ok",
   "summary": "The IHDA Finance Committee will consider a resolution authorizing Revenue Bonds, 2026 Series LMNO, presented by M. Babcock. The agenda gives no amounts, purposes, or properties for the bonds."
  },
- "ihda:ihda-finance-committee:2026-10-16#iv-b-1": {
+ "ihda:ihda-finance-committee:2026-10-16#multifamily-update": {
+  "categories": [
+   {
+    "detail": "IHDA Finance Committee",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "e35108c7893bcc8a",
+  "entities": [
+   "Illinois Housing Development Authority"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "A standing multifamily update at IHDA's Finance Committee covers the state housing finance agency's multifamily lending and affordable housing activity.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "IHDA's Finance Committee receives a standing monthly Multifamily Update, presented by S. Bannon. The provided text is only the meeting agenda and gives no details on the update's content."
+ },
+ "ihda:ihda-finance-committee:2026-10-16#pheasant-ridge": {
   "categories": [
    {
     "detail": "IHDA Finance Committee",
@@ -3299,6 +3121,184 @@
   "source_quality": "full",
   "status": "ok",
   "summary": "The IHDA Finance Committee lists Pheasant Ridge under Multifamily Finance, presented by S. Bannon. The agenda gives no details on the financing, unit counts, or location."
+ },
+ "ihda:ihda-finance-committee:2026-10-16#presentation-of-consolidated-interim-financial-statement": {
+  "categories": [
+   {
+    "detail": "IHDA Finance Committee",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "c4346b2f5cab1378",
+  "entities": [
+   "Illinois Housing Development Authority",
+   "M. Jalaluddin"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "This is a standing financial report to the board of IHDA, the state housing finance agency that funds affordable housing and homeownership programs.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The IHDA Finance Committee will receive a presentation of the consolidated interim financial statement from M. Jalaluddin as a standing monthly update. The agenda text gives no further detail on the statement."
+ },
+ "ihda:ihda-finance-committee:2026-10-16#resolution-authorizing-revenue-bonds-2026-series-lmno": {
+  "categories": [
+   {
+    "detail": "IHDA Finance Committee",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "e6bcb1925f15cdb3",
+  "entities": [
+   "Illinois Housing Development Authority"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "IHDA revenue bond issuance is a state housing finance action that funds housing programs.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The IHDA Finance Committee will consider a resolution authorizing Revenue Bonds, 2026 Series LMNO, presented by M. Babcock. The agenda gives no bond amount, purpose, or project details."
+ },
+ "ihda:ihda-finance-committee:2026-10-16#resolution-ratifying-permitted-financial-activities": {
+  "categories": [
+   {
+    "detail": "IHDA Finance Committee",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "eafe6678a4c7dc1d",
+  "entities": [
+   "Illinois Housing Development Authority",
+   "S. Bhimani"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "It is an IHDA Finance Committee resolution on the authority's financial activities, which fund housing finance, though the agenda gives no detail on what activities are ratified.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The IHDA Finance Committee will consider a resolution ratifying permitted financial activities, presented by S. Bhimani. The agenda text gives no further detail on the activities covered."
+ },
+ "ihda:ihda-finance-committee:2026-10-16#sbpa-amendment-extension-for-housing-bonds-series-2017-a-2": {
+  "categories": [
+   {
+    "detail": "IHDA Finance Committee",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "a0ca4d7d982bdc6f",
+  "entities": [
+   "Illinois Housing Development Authority",
+   "M. Babcock"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item concerns liquidity support for IHDA's Housing Bonds, Series 2017 A-2, which finance housing, so it bears on state housing finance.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The IHDA Finance Committee will consider amending or extending a standby bond purchase agreement (SBPA) for Housing Bonds Series 2017 A-2. M. Babcock is listed as presenter. The agenda gives no further terms."
+ },
+ "ihda:ihda-finance-committee:2026-10-16#security-update": {
+  "categories": [
+   {
+    "detail": "IHDA Finance Committee",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "f990be44b36b7e41",
+  "entities": [
+   "Illinois Housing Development Authority"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "This is an IT security briefing item on an IHDA Finance Committee agenda and does not concern building, financing, regulating, or occupying homes.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "IHDA Finance Committee agenda item for a Security Update presented by T. Hardrick, under the IT Update section. No housing programs or developments are described for this item."
+ },
+ "ihda:ihda-finance-committee:2026-10-16#single-family-homeownership-update": {
+  "categories": [
+   {
+    "detail": "IHDA Finance Committee",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "913d67ef3cf74508",
+  "entities": [
+   "Illinois Housing Development Authority",
+   "K. Nestlehut"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "A standing IHDA Finance Committee update on single family and homeownership programs, which bears on state housing finance for homebuyers.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "Standing monthly update on IHDA's Single Family/Homeownership programs, presented by K. Nestlehut at the October 16, 2026 Finance Committee meeting. The agenda gives no further detail on the update's content."
  },
  "ihda:notice:49129a3b50c6": {
   "categories": [
