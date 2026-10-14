@@ -1,1 +1,202 @@
-{}
+{
+ "clihtf:10000839": {
+  "hash": "e06ea82a74c1758a",
+  "items": []
+ },
+ "clihtf:10000840": {
+  "hash": "e06ea82a74c1758a",
+  "items": []
+ },
+ "clihtf:319068": {
+  "hash": "929313e06043e065",
+  "items": [
+   {
+    "number": "III",
+    "title": "President\u2019s Update"
+   },
+   {
+    "number": "IV",
+    "title": "Reports"
+   },
+   {
+    "number": "",
+    "title": "Allocations Summary"
+   },
+   {
+    "number": "",
+    "title": "Ownership change of 6815 N Sheridan from Patricia Johnson to Teko Properties"
+   },
+   {
+    "number": "",
+    "title": "Financial Statements as of September 30, 2026"
+   },
+   {
+    "number": "",
+    "title": "Presentation of draft 2027 Budget"
+   },
+   {
+    "number": "",
+    "title": "Outreach Committee Update provided by Board VP Sam Paler-Ponce"
+   },
+   {
+    "number": "VI",
+    "title": "New Business: Tenant Outreach Initiative presented by Marlana Edwards, Director of Program Development and Outreach"
+   }
+  ]
+ },
+ "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3": {
+  "hash": "cec9ce020b595cd8",
+  "items": [
+   {
+    "number": "1",
+    "title": "A proposed order authorizing the Corporation Counsel to enter into and execute a Settlement Order in the following sixteen (16) cases"
+   },
+   {
+    "number": "2",
+    "title": "An ordinance authorizing the execution of an intergovernmental agreement with the Chicago Board of Education to provide TIF funds for improvements at Harriet Beecher Stowe Elementary School, located at 3444 W. Wabansia Avenue."
+   },
+   {
+    "number": "3",
+    "title": "An ordinance authorizing the execution of an intergovernmental agreement with the Chicago Board of Education to provide TIF funds for improvements at Suder Montessori Magnet Elementary School, located at 2022 W. Washington Boulevard."
+   },
+   {
+    "number": "4",
+    "title": "A substitute ordinance approving the execution of the 66th amending agreement with SomerCor 504, Inc. to increase the amount of grant funds available in various redevelopment project areas, amend the Small Business Improvement Fund (SBIF) program rules, and authorize SomerCor 504, Inc. to continue providing administrative services for the program."
+   },
+   {
+    "number": "5",
+    "title": "An ordinance authorizing the execution of a Redevelopment Agreement with BTH Development, NFP to provide Housing and Economic Development Bond (HED) funds for redevelopment of Altgeld Gardens Youth Center project at 13122 S. Ellis Avenue."
+   },
+   {
+    "number": "6",
+    "title": "An ordinance authorizing the execution of a Redevelopment Agreement with North Lawndale Catalyst Initiative, NFP to provide Housing and Economic Development (HED) funds and tax increment financing (TIF) assistance for the Filmore Linen Services project at 920-922 S. Campbell Avenue."
+   },
+   {
+    "number": "7",
+    "title": "An ordinance authorizing the execution of a Redevelopment Agreement with Hudson Michigan Avenue Owner LLC to provide Housing and Economic Development (HED) funds for the Hudson House project at 2222 S. Michigan Avenue."
+   },
+   {
+    "number": "8",
+    "title": "One (1) proposed order authorizing the payment of various small claims against the City of Chicago."
+   },
+   {
+    "number": "9",
+    "title": "One (1) proposed orders denying the payment of various small claims against the City of Chicago."
+   }
+  ]
+ },
+ "ihda:ihda-board:2026-10-16": {
+  "hash": "d05b0c8bc2676a81",
+  "items": [
+   {
+    "number": "IV.B.1",
+    "title": "Resolution Authorizing Agreement with Mythics, Inc. for Business Process Co-Sourcing (BPC) Services In an Amount Not to Exceed $1,194,193"
+   },
+   {
+    "number": "IV.C.1",
+    "title": "Resolution Authorizing Return and Reallocation of Low Income Housing Tax Credits for Nine Developments"
+   },
+   {
+    "number": "IV.D.1",
+    "title": "Resolution Authorizing Second Amendment of Standby Bond Purchase Agreement Housing Bonds, 2017 Series A-2"
+   },
+   {
+    "number": "IV.D.2",
+    "title": "Quarterly Resolution Ratifying 'Permitted Financial Activities' under the Authority's Financial Management Policy"
+   },
+   {
+    "number": "IV.E.1",
+    "title": "Resolution Authorizing a Change of General Partner Ownership Interest, Amendment of Regulatory Agreement and Change in Property Management for The Glen (40-2246)"
+   },
+   {
+    "number": "IV.F.1",
+    "title": "Resolution Regarding Closed Session Minutes"
+   },
+   {
+    "number": "V.A.1",
+    "title": "Resolution Authorizing a Conduit Loan ($51,500,000) for Pheasant Ridge and Hunter Apartments (PID-12789)"
+   },
+   {
+    "number": "V.B.1",
+    "title": "Resolution Authorizing the Issuance of Not to Exceed $500,000,000 Revenue Bonds 2026 LMNO"
+   },
+   {
+    "number": "VI.A",
+    "title": "NCSHA Annual Conference Report Out"
+   },
+   {
+    "number": "VIII.A",
+    "title": "Authority Financial Statements"
+   },
+   {
+    "number": "VIII.B",
+    "title": "Accounting Payments Reports"
+   },
+   {
+    "number": "VIII.C",
+    "title": "Investment Holdings Report"
+   },
+   {
+    "number": "VIII.D",
+    "title": "Communications Report"
+   },
+   {
+    "number": "VIII.E",
+    "title": "External Relations Report"
+   },
+   {
+    "number": "VIII.F",
+    "title": "Court-Based Rental Assistance Program"
+   },
+   {
+    "number": "VIII.G",
+    "title": "Quarterly Operational Excellence Report"
+   }
+  ]
+ },
+ "ihda:ihda-finance-committee:2026-10-16": {
+  "hash": "111c32dff63df83f",
+  "items": [
+   {
+    "number": "II.A",
+    "title": "Information Technology Update"
+   },
+   {
+    "number": "II.B",
+    "title": "Security Update"
+   },
+   {
+    "number": "III.A",
+    "title": "Presentation of Consolidated Interim Financial Statement"
+   },
+   {
+    "number": "III.B",
+    "title": "Multifamily Update"
+   },
+   {
+    "number": "III.C",
+    "title": "Single Family/Homeownership Update"
+   },
+   {
+    "number": "IV.A.1",
+    "title": "Mythics Sole Source"
+   },
+   {
+    "number": "IV.A.2",
+    "title": "Resolution Ratifying Permitted Financial Activities"
+   },
+   {
+    "number": "IV.A.3",
+    "title": "SBPA Amendment/Extension for Housing Bonds Series 2017 A-2"
+   },
+   {
+    "number": "IV.A.4",
+    "title": "Resolution Authorizing Revenue Bonds, 2026 Series LMNO"
+   },
+   {
+    "number": "IV.B.1",
+    "title": "Pheasant Ridge"
+   }
+  ]
+ }
+}
