@@ -41,3 +41,15 @@ def test_score(tmp_path):
     assert s["precision"] == 0.5 and s["recall"] == 0.5
     assert s["categories"]["cha"] == {"tp": 1, "fp": 1, "fn": 0}
     assert s["categories"]["ahpaa"] == {"tp": 0, "fp": 1, "fn": 1}
+
+
+def test_score_normalizes_padded_labels(tmp_path):
+    path = tmp_path / "labels.csv"
+    rows = [
+        {"id": "a", "model_relevant": "y", "model_categories": "", "label_relevant": "y ", "label_categories": ""},
+        {"id": "b", "model_relevant": "y", "model_categories": "", "label_relevant": " N", "label_categories": ""},
+        {"id": "c", "model_relevant": "n", "model_categories": "", "label_relevant": " Y ", "label_categories": ""},
+    ]
+    write_sample(rows, path)
+    s = score(path)
+    assert s["labeled"] == 3 and s["precision"] == 0.5 and s["recall"] == 0.5

@@ -89,3 +89,10 @@ def test_non_json_provider_body_returns_none_and_is_not_cached(tmp_path):
     n = len(f.calls)
     geo.geocode("1133 W. Kinzie St.")
     assert len(f.calls) == n + 2
+
+
+def test_community_area_names_use_official_spelling():
+    from digest.geo import area_name
+    assert area_name("MCKINLEY PARK") == "McKinley Park"
+    assert area_name("OHARE") == "O'Hare"
+    assert area_name("NEAR WEST SIDE") == "Near West Side"

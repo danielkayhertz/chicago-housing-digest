@@ -22,6 +22,14 @@ NOMINATIM = "https://nominatim.openstreetmap.org/search"
 _MALFORMED = (KeyError, IndexError, TypeError, ValueError, AttributeError)
 
 
+# Official community-area names that str.title() gets wrong (checked against all 77 in community_areas.geojson).
+AREA_NAMES = {"MCKINLEY PARK": "McKinley Park", "OHARE": "O'Hare"}
+
+
+def area_name(raw: str) -> str:
+    return AREA_NAMES.get(raw.strip().upper(), raw.title())
+
+
 def _load(path: Path, prop: str) -> list[tuple[object, str]]:
     data = json.loads(path.read_text(encoding="utf-8"))
     return [(prep(shape(f["geometry"])), str(f["properties"][prop])) for f in data["features"] if f.get("geometry")]
@@ -51,7 +59,7 @@ class Geo:
         ward = _which(self.wards, p)
         area = _which(self.areas, p)
         return Geography(address=address, ward=int(ward) if ward else None,
-                         community_area=area.title() if area else None)
+                         community_area=area_name(area) if area else None)
 
     def geocode(self, address: str) -> tuple[float, float] | None:
         q = f"{normalize_address(address)}, Chicago, IL"

@@ -43,10 +43,11 @@ def write_sample(rows: list[dict], path: Path) -> None:
 
 def score(path: Path) -> dict:
     with path.open(newline="", encoding="utf-8") as f:
-        rows = [r for r in csv.DictReader(f) if r["label_relevant"].strip().lower() in ("y", "n")]
-    tp = sum(r["model_relevant"] == "y" and r["label_relevant"].lower() == "y" for r in rows)
-    fp = sum(r["model_relevant"] == "y" and r["label_relevant"].lower() == "n" for r in rows)
-    fn = sum(r["model_relevant"] == "n" and r["label_relevant"].lower() == "y" for r in rows)
+        rows = [{**r, "label_relevant": (r["label_relevant"] or "").strip().lower()} for r in csv.DictReader(f)]
+    rows = [r for r in rows if r["label_relevant"] in ("y", "n")]
+    tp = sum(r["model_relevant"] == "y" and r["label_relevant"] == "y" for r in rows)
+    fp = sum(r["model_relevant"] == "y" and r["label_relevant"] == "n" for r in rows)
+    fn = sum(r["model_relevant"] == "n" and r["label_relevant"] == "y" for r in rows)
     cats: dict[str, dict[str, int]] = {}
     for r in rows:
         model, label = set(r["model_categories"].split()), set(r["label_categories"].split())

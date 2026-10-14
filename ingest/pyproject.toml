@@ -11,7 +11,7 @@ dependencies = [
   "beautifulsoup4>=4.12",
   "pypdf>=4.0",
   "pydantic>=2.7",
-  "anthropic",
+  "anthropic>=1.13,<2",
   "pyyaml>=6.0",
   "shapely>=2.0",
   "jinja2>=3.1",
