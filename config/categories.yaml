@@ -1,0 +1,43 @@
+# IFE housing projects. The model assigns zero or more of these; body and keyword rules add them deterministically.
+# Editing this file changes its fingerprint, which re-enriches every record on the next run (a cost, not a migration).
+categories:
+  - id: cha
+    label: CHA & public housing
+    description: CHA actions, redevelopment and production, RAD and Section 18 conversions, disposition, public-housing property tax/PILOT, Gautreaux.
+    keywords: [CHA, Chicago Housing Authority, RAD, Section 18, disposition, PILOT, Gautreaux, ACOP]
+    bodies: [CHA Board of Commissioners, CHA Finance & Audit Committee, CHA Real Estate Operations Development Committee, CHA Tenant Services Committee, Chicago Housing Authority]
+  - id: social-housing
+    label: Social housing
+    description: Public or mixed-income developer models, acquisition and revolving funds, land trusts, disposition of public land for housing, CLIHTF.
+    keywords: [social housing, mixed-income, land trust, revolving fund, acquisition fund, CLIHTF]
+    bodies: [CLIHTF Board of Directors, CLIHTF]
+  - id: ahpaa
+    label: Zoning & housing supply
+    description: Rezonings and planned developments with residential units, city-initiated rezonings, ADUs and missing middle, zoning text amendments; suburban housing plans and AHPAA actions.
+    keywords: [rezoning, planned development, upzoning, AHPAA, missing middle]
+    bodies: [Chicago Plan Commission]
+  - id: property-taxes
+    label: Property taxes
+    description: Property tax incentive classes for housing, tax sale and scavenger sale, Land Bank, PILOT agreements, assessment appeals.
+    keywords: [Class 7, Class 9, Class L, tax sale, scavenger, Land Bank, PILOT]
+    bodies: []
+  - id: state-agenda
+    label: State housing finance
+    description: IHDA actions, tax-exempt bonds and TEFRA hearings, QAPs, private activity bond volume cap, LIHTC awards.
+    keywords: [IHDA, TEFRA, QAP, volume cap, LIHTC, private activity bond]
+    bodies: [IHDA Board, IHDA Finance Committee, IHDA Audit Committee, IHDA Asset Management Committee, IHDA]
+  - id: healthy-homes
+    label: Healthy homes & tenant protections
+    description: Building code, lead, inspections, receivership, demolition, heat and habitability; eviction, right to counsel, RLTO, relocation, foreclosure tenant protections.
+    keywords: [lead, receivership, heat, habitability, eviction, right to counsel, Keep Chicago Renting]
+    bodies: []
+  - id: housing-agenda
+    label: Affordable housing deals & policy
+    description: City financing for affordable deals, the ARO, TIF for housing, Department of Housing plans and RFPs, citywide housing ordinances and budget.
+    keywords: [Department of Housing, ARO, Affordable Requirements Ordinance, TIF]
+    bodies: []
+  - id: cls-housing
+    label: Criminal legal system & housing
+    description: Criminal-background screening in housing, Just Housing, crime-free and nuisance-property ordinances, reentry and supportive housing, sealing/expungement as it bears on housing.
+    keywords: [Just Housing, criminal background, crime-free, nuisance, reentry, sealing, expungement]
+    bodies: []

@@ -1,0 +1,45 @@
+import json
+
+from digest.cache import JsonCache
+from digest.geo import Geo
+from fakes import FakeFetcher
+
+
+def square(x0, y0, props):
+    ring = [[x0, y0], [x0 + 1, y0], [x0 + 1, y0 + 1], [x0, y0 + 1], [x0, y0]]
+    return {"type": "Feature", "properties": props, "geometry": {"type": "Polygon", "coordinates": [ring]}}
+
+
+def make_geo(tmp_path, routes):
+    w = tmp_path / "w.geojson"
+    a = tmp_path / "a.geojson"
+    w.write_text(json.dumps({"type": "FeatureCollection", "features": [square(0, 0, {"ward": "27"}), square(1, 0, {"ward": "44"})]}))
+    a.write_text(json.dumps({"type": "FeatureCollection", "features": [square(0, 0, {"community": "NEAR WEST SIDE"})]}))
+    f = FakeFetcher(routes)
+    return Geo(w, a, f, JsonCache(tmp_path / "geocode.json")), f
+
+
+CENSUS_HIT = json.dumps({"result": {"addressMatches": [{"coordinates": {"x": 0.5, "y": 0.5}}]}}).encode()
+CENSUS_MISS = json.dumps({"result": {"addressMatches": []}}).encode()
+NOMINATIM_HIT = json.dumps([{"lat": "0.5", "lon": "1.5"}]).encode()
+
+
+def test_census_hit_assigns_ward_and_area(tmp_path):
+    geo, _ = make_geo(tmp_path, [("geocoding.geo.census.gov", CENSUS_HIT)])
+    g = geo.locate("1133 W. Kinzie St.")
+    assert (g.address, g.ward, g.community_area) == ("1133 W. Kinzie St.", 27, "Near West Side")
+
+
+def test_census_miss_falls_back_to_nominatim_and_caches(tmp_path):
+    geo, f = make_geo(tmp_path, [("geocoding.geo.census.gov", CENSUS_MISS), ("nominatim.openstreetmap.org", NOMINATIM_HIT)])
+    assert geo.locate("3700-3846 N. Seminary Ave.").ward == 44
+    assert any("3700 N. Seminary Ave., Chicago, IL" in c for c in f.calls)  # address range reduced to its first number
+    n = len(f.calls)
+    geo.locate("3700-3846 N. Seminary Ave.")
+    assert len(f.calls) == n
+
+
+def test_no_geocode_returns_address_only(tmp_path):
+    geo, _ = make_geo(tmp_path, [("geocoding.geo.census.gov", CENSUS_MISS), ("nominatim.openstreetmap.org", b"[]")])
+    g = geo.locate("1 Nowhere Pl.")
+    assert (g.address, g.ward, g.community_area) == ("1 Nowhere Pl.", None, None)
