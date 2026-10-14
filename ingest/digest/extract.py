@@ -44,9 +44,13 @@ def extract_items(meeting: Meeting, fetcher: Fetcher, llm, cache: JsonCache) -> 
         ]
     h = hashlib.sha256(source).hexdigest()[:16]
     cached = cache.get(meeting.id)
+    rows = None
     if cached and cached.get("hash") == h:
-        rows = [ExtractedItem(**r) for r in cached["items"]]
-    else:
+        try:
+            rows = [ExtractedItem(**r) for r in cached["items"]]
+        except (TypeError, KeyError, ValueError):  # stale or corrupt entry: treat as a miss
+            rows = None
+    if rows is None:
         rows = llm.parse(purpose="extract", model_key="extract", system=SYSTEM, content=content,
                          schema=AgendaExtraction, max_tokens=16000).items
         cache.set(meeting.id, {"hash": h, "items": [r.model_dump() for r in rows]})

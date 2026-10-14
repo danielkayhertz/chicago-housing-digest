@@ -52,3 +52,16 @@ def test_missing_parsed_output_raises(tmp_path):
     llm, _ = make(tmp_path, stop_reason="max_tokens", parsed=None)
     with pytest.raises(LLMRefused, match="max_tokens"):
         llm.parse(purpose="screen", model_key="screen", system="s", content="c", schema=Verdict)
+
+
+def test_validation_error_logs_null_usage_and_raises(tmp_path):
+    llm, msgs = make(tmp_path)
+
+    def boom(**kwargs):
+        Verdict.model_validate_json("{}")
+
+    msgs.parse = boom
+    with pytest.raises(LLMRefused, match="did not validate"):
+        llm.parse(purpose="screen", model_key="screen", system="s", content="c", schema=Verdict)
+    row = json.loads((tmp_path / "usage.jsonl").read_text(encoding="utf-8").splitlines()[0])
+    assert (row["purpose"], row["model"], row["input_tokens"], row["output_tokens"]) == ("screen", "claude-haiku-5-5", None, None)

@@ -58,3 +58,14 @@ def test_unnumbered_and_duplicate_numbers_get_unique_ids(tmp_path):
     llm = FakeLLM({"extract": [rows(("", "First"), ("", "Second"), ("A", "Third"), ("A.", "Fourth"))]})
     items = extract_items(clihtf_meeting(), FakeFetcher([]), llm, JsonCache(tmp_path / "e.json"))
     assert [i.id.split("#")[1] for i in items] == ["1", "2", "a", "a-2"]
+
+
+def test_corrupt_cache_entry_is_a_miss(tmp_path):
+    cache = JsonCache(tmp_path / "e.json")
+    llm = FakeLLM({"extract": [rows(("1", "A"))]})
+    m = clihtf_meeting()
+    import hashlib
+    h = hashlib.sha256(m.agenda_text.encode("utf-8")).hexdigest()[:16]
+    cache.set(m.id, {"hash": h, "items": [{"bogus": 1}]})
+    items = extract_items(m, FakeFetcher([]), llm, cache)
+    assert [i.title for i in items] == ["A"] and len(llm.calls) == 1

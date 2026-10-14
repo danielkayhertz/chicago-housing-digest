@@ -27,6 +27,7 @@ class LLM:
                 messages=[{"role": "user", "content": content}], output_format=schema,
             )
         except ValidationError as e:  # truncated or malformed JSON
+            self._log(purpose, model, None)  # tokens were billed but the SDK gave us no usage
             raise LLMRefused(f"{purpose}: output did not validate: {e}") from e
         self._log(purpose, model, resp.usage)
         if resp.stop_reason == "refusal" or resp.parsed_output is None:
@@ -34,8 +35,10 @@ class LLM:
         return resp.parsed_output
 
     def _log(self, purpose: str, model: str, usage) -> None:
+        """Append one usage row; usage=None logs null token counts."""
         self.usage_path.parent.mkdir(parents=True, exist_ok=True)
         row = {"ts": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"), "purpose": purpose, "model": model,
-               "input_tokens": usage.input_tokens, "output_tokens": usage.output_tokens}
+               "input_tokens": usage.input_tokens if usage else None,
+               "output_tokens": usage.output_tokens if usage else None}
         with self.usage_path.open("a", encoding="utf-8") as f:
             f.write(json.dumps(row) + "\n")
