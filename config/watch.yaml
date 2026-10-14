@@ -1,0 +1,8 @@
+# Pages whose changes become page_change notices. Add pages freely; the first run of a page records a baseline.
+pages:
+  - {id: clihtf-quarterly, title: CLIHTF quarterly reports, body: CLIHTF,
+     url: "https://clihtf.org/about-history/quarterly-reports/"}
+  - {id: clihtf-annual, title: CLIHTF annual reports, body: CLIHTF,
+     url: "https://clihtf.org/about-history/annual-reports/"}
+  - {id: clihtf-landlord, title: CLIHTF landlord notices, body: CLIHTF,
+     url: "https://clihtf.org/for-owners/landlord-notices/"}
