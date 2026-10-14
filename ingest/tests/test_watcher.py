@@ -14,7 +14,9 @@ HTML = (FIX / "watch/doh_home.html").read_text(encoding="utf-8")
 
 def run(tmp_path, html):
     adapter = WatcherAdapter({"id": "watch"}, [PAGE], tmp_path / "snapshots")
-    return adapter.fetch(FakeFetcher([("doh.html", html.encode("utf-8"))]), NOW)
+    res = adapter.fetch(FakeFetcher([("doh.html", html.encode("utf-8"))]), NOW)
+    adapter.commit_snapshots()
+    return res
 
 
 def test_snapshot_has_main_text_and_absolute_links():
@@ -79,3 +81,61 @@ def test_corrupt_snapshot_is_rebaselined_with_warning(tmp_path):
     assert res.notices == []
     assert any("doh-home" in w and "unreadable" in w for w in res.warnings)
     assert "links" in json.loads((snap_dir / "doh-home.json").read_text(encoding="utf-8"))
+
+
+def test_fetch_stages_snapshots_and_writes_nothing_until_committed(tmp_path):
+    adapter = WatcherAdapter({"id": "watch"}, [PAGE], tmp_path / "snapshots")
+    adapter.fetch(FakeFetcher([("doh.html", HTML.encode("utf-8"))]), NOW)
+    assert not (tmp_path / "snapshots").exists()
+    assert list(adapter.pending) == [tmp_path / "snapshots" / "doh-home.json"]
+    adapter.commit_snapshots()
+    assert (tmp_path / "snapshots" / "doh-home.json").exists() and adapter.pending == {}
+
+
+def _watch_root(tmp_path):
+    import shutil
+    from test_run import REPO, make_root
+    root = make_root(tmp_path)
+    (root / "config" / "sources.yaml").write_text("sources:\n  - {id: watch, adapter: watcher, watch_file: watch.yaml}\n",
+                                                  encoding="utf-8")
+    (root / "config" / "watch.yaml").write_text(
+        f"pages:\n  - {{id: doh-home, title: DOH home, body: Chicago Department of Housing, url: \"{URL}\"}}\n",
+        encoding="utf-8")
+    return root
+
+
+def _run(root, html, now):
+    from digest.run import run as run_digest
+    return run_digest(root, fetcher=FakeFetcher([("doh.html", html.encode("utf-8"))]), llm=None, now=now)
+
+
+def test_run_writes_snapshots_only_after_items_json_is_saved(tmp_path):
+    root = _watch_root(tmp_path)
+    snap = root / "data" / "snapshots" / "doh-home.json"
+    _run(root, HTML, NOW)
+    assert snap.exists()  # baseline committed after dump_digest
+    changed = HTML.replace("</main>", '<a href="/content/dam/city/depts/doh/new-rfp.pdf">2027 Multifamily RFP</a></main>', 1)
+    d = _run(root, changed, NOW + dt.timedelta(hours=6))
+    assert [n.title for n in d.notices] == ["New on DOH home: 2027 Multifamily RFP"]
+    assert "new-rfp.pdf" in snap.read_text(encoding="utf-8")
+
+
+def test_crash_before_items_json_keeps_old_snapshot_so_change_is_redetected(tmp_path, monkeypatch):
+    import pytest
+    from digest import run as run_mod
+    root = _watch_root(tmp_path)
+    snap = root / "data" / "snapshots" / "doh-home.json"
+    _run(root, HTML, NOW)
+    before = snap.read_bytes()
+    changed = HTML.replace("</main>", '<a href="/content/dam/city/depts/doh/new-rfp.pdf">2027 Multifamily RFP</a></main>', 1)
+
+    def boom(*a, **k):
+        raise RuntimeError("disk full")
+    monkeypatch.setattr(run_mod, "dump_digest", boom)
+    with pytest.raises(RuntimeError, match="disk full"):
+        _run(root, changed, NOW + dt.timedelta(hours=6))
+    assert snap.read_bytes() == before
+    monkeypatch.undo()
+    d = _run(root, changed, NOW + dt.timedelta(hours=12))
+    assert [n.title for n in d.notices] == ["New on DOH home: 2027 Multifamily RFP"]
+    assert "new-rfp.pdf" in snap.read_text(encoding="utf-8")

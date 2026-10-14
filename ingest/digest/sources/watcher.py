@@ -75,8 +75,18 @@ class WatcherAdapter(BaseAdapter):
         super().__init__(cfg)
         self.pages = pages
         self.snap_dir = snap_dir
+        self.pending: dict[Path, str] = {}  # snapshots staged by fetch, written by commit_snapshots
+
+    def commit_snapshots(self) -> None:
+        """Write the snapshots staged by the last fetch. Call only after the notices they produced are saved:
+        a crash in between must leave the old snapshot, so the next run sees the same change again."""
+        for path, text in self.pending.items():
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(text, encoding="utf-8")
+        self.pending = {}
 
     def fetch(self, fetcher: Fetcher, now: dt.datetime) -> SourceResult:
+        self.pending = {}
         res = SourceResult()
         ok = 0
         for page in self.pages:
@@ -98,8 +108,7 @@ class WatcherAdapter(BaseAdapter):
                 res.warnings.append(f"watch page {page['id']} looks like a stub ({why}); snapshot kept, no notices")
                 continue
             res.notices += changes(page, prev, cur, now, self.source_id)
-            path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(json.dumps(cur, indent=1, sort_keys=True, ensure_ascii=False) + "\n", encoding="utf-8")
+            self.pending[path] = json.dumps(cur, indent=1, sort_keys=True, ensure_ascii=False) + "\n"
         if self.pages and ok == 0:
             raise ImplausibleResult("every watched page failed")
         return res

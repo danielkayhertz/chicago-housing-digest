@@ -50,6 +50,7 @@ def run(root: Path, *, fetcher: Fetcher, llm=None, now: dt.datetime | None = Non
     caches = [extract_cache]
     try:  # paid LLM work lands in the caches; persist them even if a later step crashes
         results: dict[str, SourceResult | Exception] = {}
+        committers = []  # adapters with staged state to persist once items.json is safely written
         for adapter in build_adapters(config, data, only):
             try:
                 res = adapter.fetch(fetcher, now)
@@ -62,6 +63,8 @@ def run(root: Path, *, fetcher: Fetcher, llm=None, now: dt.datetime | None = Non
             if llm is not None:
                 _extract(res, fetcher, llm, extract_cache)
             results[adapter.source_id] = res
+            if hasattr(adapter, "commit_snapshots"):
+                committers.append(adapter)
             log.info("%s: %d meetings, %d items, %d notices", adapter.source_id, len(res.meetings), len(res.items), len(res.notices))
 
         digest = merge(prev, results, now)
@@ -86,6 +89,8 @@ def run(root: Path, *, fetcher: Fetcher, llm=None, now: dt.datetime | None = Non
         for cache in caches:
             cache.save()
     dump_digest(digest, data / "items.json")  # only on success
+    for adapter in committers:  # watcher snapshots advance only after their notices are saved
+        adapter.commit_snapshots()
     return digest
 
 
