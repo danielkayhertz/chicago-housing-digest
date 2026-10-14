@@ -89,4 +89,8 @@ class HttpFetcher:
         return self.get_bytes(url, params).decode("utf-8", errors="replace")
 
     def get_json(self, url: str, params: dict | None = None) -> Any:
-        return json.loads(self.get_bytes(url, params))
+        body = self.get_bytes(url, params)
+        try:
+            return json.loads(body)
+        except ValueError as e:  # JSONDecodeError and UnicodeDecodeError both subclass ValueError
+            raise FetchError(url_key(public_url(url), params), None, f"invalid JSON: {e}") from e

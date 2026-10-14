@@ -77,3 +77,15 @@ def test_census_error_then_nominatim_hit_is_cached(tmp_path):
     ])
     assert geo.geocode("1133 W. Kinzie St.") == (1.5, 0.5)
     assert geo.cache.get("1133 W. Kinzie St., Chicago, IL") == [1.5, 0.5]
+
+
+def test_non_json_provider_body_returns_none_and_is_not_cached(tmp_path):
+    geo, f = make_geo(tmp_path, [
+        ("geocoding.geo.census.gov", b"<html>Service Unavailable</html>"),
+        ("nominatim.openstreetmap.org", b"[]"),
+    ])
+    assert geo.geocode("1133 W. Kinzie St.") is None  # JSON decode failure is a provider error, not an exception
+    assert geo.cache.get("1133 W. Kinzie St., Chicago, IL") is None
+    n = len(f.calls)
+    geo.geocode("1133 W. Kinzie St.")
+    assert len(f.calls) == n + 2

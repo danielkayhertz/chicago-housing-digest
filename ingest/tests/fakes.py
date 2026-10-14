@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 from urllib.parse import unquote_plus
 
-from digest.http import url_key
+from digest.http import FetchError, url_key
 
 FIX = Path(__file__).parent / "fixtures"
 
@@ -33,7 +33,11 @@ class FakeFetcher:
         return self.get_bytes(url, params).decode("utf-8")
 
     def get_json(self, url, params=None):
-        return json.loads(self.get_bytes(url, params))
+        body = self.get_bytes(url, params)
+        try:
+            return json.loads(body)
+        except ValueError as e:  # mirror HttpFetcher.get_json: non-JSON is a FetchError
+            raise FetchError(url_key(url, params), None, f"invalid JSON: {e}") from e
 
 
 class FakeLLM:

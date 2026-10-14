@@ -1,6 +1,7 @@
+import httpx
 import pytest
 
-from digest.http import BOT_UA, BROWSER_UA, HttpFetcher, NotFound, public_url, url_key
+from digest.http import BOT_UA, BROWSER_UA, FetchError, HttpFetcher, NotFound, public_url, url_key
 from fakes import FakeFetcher
 
 
@@ -33,3 +34,12 @@ def test_public_url_rewrites_only_chicago_content_city_prefix():
         "https://www.chicago.gov/content/dam/city/depts/doh/new-rfp.pdf"
     )
     assert public_url("https://clihtf.org/content/city/en/x.html") == "https://clihtf.org/content/city/en/x.html"
+
+
+def test_get_json_non_json_body_raises_fetch_error():
+    f = HttpFetcher(delay=0)
+    f.client = httpx.Client(transport=httpx.MockTransport(lambda req: httpx.Response(200, content=b"<html>Maintenance</html>")))
+    with pytest.raises(FetchError, match="invalid JSON"):
+        f.get_json("https://webapi.legistar.com/v1/chicago/bodies")
+    with pytest.raises(FetchError, match="invalid JSON"):
+        FakeFetcher([("bodies", b"<html>Maintenance</html>")]).get_json("https://h/bodies")
