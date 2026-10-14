@@ -7,6 +7,7 @@ import json
 import logging
 import re
 from dataclasses import dataclass
+from urllib.parse import urlsplit
 
 import anthropic
 from pydantic import BaseModel, ValidationError
@@ -77,10 +78,17 @@ def record_for_item(item: Item, meeting: Meeting | None) -> Record:
                   urls=[a.url for a in item.attachments], hint=item.geography_hint)
 
 
+def _is_document_url(url: str) -> bool:
+    """A page or PDF worth reading: .pdf, .htm, .html or no extension. Query and fragment are ignored."""
+    last = urlsplit(url).path.rsplit("/", 1)[-1]
+    ext = last.rsplit(".", 1)[-1].lower() if "." in last else ""
+    return ext in ("", "pdf", "htm", "html")
+
+
 def record_for_notice(n: Notice) -> Record:
     # A newly linked document is read (HTML or PDF). A text-diff notice's url is the whole watched page: use the
     # diff in extra_text only. Notices saved before new_link existed keep the old rule (PDF urls only).
-    fetch = n.kind != "page_change" or n.new_link or n.url.lower().endswith(".pdf")
+    fetch = n.kind != "page_change" or (n.new_link and _is_document_url(n.url)) or n.url.lower().endswith(".pdf")
     urls = [n.url] if fetch else []
     deadline = f"; deadline {n.deadline:%B %d, %Y}" if n.deadline else ""
     return Record(id=n.id, body=n.body, title=n.title, context=f"{n.body} public notice ({n.kind}){deadline}",
@@ -99,6 +107,7 @@ class EnrichContext:
     models: dict[str, str]
     char_cap: int = 12000
     max_attachments: int = 2
+    halted: str = ""  # set when the API rejects our credentials: every further call would fail the same way
 
 
 def content_hash(title: str, sources: list[str], fingerprint: str) -> str:
@@ -257,7 +266,13 @@ def is_transient(ex: BaseException) -> bool:
     """An outage that says nothing about the record: network, rate limit, 5xx, or a failed fetch."""
     if isinstance(ex, (anthropic.APIConnectionError, anthropic.RateLimitError, anthropic.InternalServerError, FetchError)):
         return True  # APIConnectionError includes APITimeoutError
-    return isinstance(ex, anthropic.APIStatusError) and ex.status_code >= 500
+    if is_auth_failure(ex):
+        return True  # a key or permission problem says nothing about the record
+    return isinstance(ex, anthropic.APIStatusError) and (ex.status_code >= 500 or ex.status_code == 408)
+
+
+def is_auth_failure(ex: BaseException) -> bool:
+    return isinstance(ex, (anthropic.AuthenticationError, anthropic.PermissionDeniedError))
 
 
 def _failed(rec: Record, ctx: EnrichContext, h: str, reason: str) -> Enrichment:
@@ -288,7 +303,9 @@ def enrich_record(rec: Record, ctx: EnrichContext) -> Enrichment:
                     e.geography = geography
                     ctx.cache.set(rec.id, e.model_dump(mode="json"))
     if e is None:
-        if attempts >= MAX_FAILED_ATTEMPTS:
+        if ctx.halted:
+            e = _failed(rec, ctx, h, f"enrichment skipped this run: {ctx.halted}")
+        elif attempts >= MAX_FAILED_ATTEMPTS:
             e = _failed(rec, ctx, h, f"enrichment failed {attempts} times; not retrying until the content changes")
         else:
             try:
@@ -296,6 +313,9 @@ def enrich_record(rec: Record, ctx: EnrichContext) -> Enrichment:
             except Exception as ex:  # one bad record must never abort the run
                 log.warning("%s: enrichment failed: %s: %s", rec.id, type(ex).__name__, ex)
                 e = _failed(rec, ctx, h, f"enrichment failed: {ex}")
+                if is_auth_failure(ex) and not ctx.halted:
+                    ctx.halted = f"{type(ex).__name__} from the API; check ANTHROPIC_API_KEY"
+                    log.error("enrichment halted for the rest of this run: %s", ctx.halted)
                 # Only failures a retry cannot fix count toward the cap; an outage must not fail records for good.
                 ctx.cache.set(rec.id, {"content_hash": h, "failed_attempts": attempts + (0 if is_transient(ex) else 1)})
             else:

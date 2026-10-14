@@ -319,3 +319,49 @@ def test_deterministic_api_errors_count_toward_the_cap(tmp_path):
             assert enrich_record(rec, c).status == "failed"
         assert enrich_record(rec, c).status == "failed"
         assert len(llm.calls) == 3, type(err).__name__
+
+
+def test_new_link_to_a_non_document_is_not_fetched_but_pages_and_pdfs_are(tmp_path):
+    llm = FakeLLM({"summarize": lambda content: summary(categories=[], entities=[], units=None, affordable_units=None,
+                                                          address=None)})
+    c = ctx(tmp_path, llm, routes=[("", PD_HTML)])
+    assert record_for_notice(_page_notice(url="https://x/form.docx")).urls == []
+    assert record_for_notice(_page_notice(url="https://x/sheet.xlsx?dl=1#top")).urls == []
+    for ok in ("https://x/a.pdf?x=1", "https://x/a.HTM", "https://x/a.html#frag", "https://x/programs/rfp", "https://x/"):
+        assert record_for_notice(_page_notice(url=ok)).urls == [ok]
+    enrich_record(record_for_notice(_page_notice(url="https://x/form.docx")), c)
+    assert c.fetcher.calls == []
+
+
+def test_timeout_status_408_is_transient(tmp_path):
+    import anthropic
+    import httpx
+    req = httpx.Request("POST", "https://api.anthropic.com/v1/messages")
+    err = anthropic.APIStatusError("timeout", response=httpx.Response(408, request=req), body=None)
+    llm = FakeLLM({"summarize": [err, err, err, summary()]})
+    c = ctx(tmp_path, llm)
+    rec = record_for_item(pd_item(), CPC)
+    for _ in range(3):
+        assert enrich_record(rec, c).status == "failed"
+    assert enrich_record(rec, c).status == "ok" and len(llm.calls) == 4
+
+
+def test_auth_failure_halts_enrichment_for_the_run_without_counting(tmp_path, caplog):
+    import anthropic
+    import httpx
+    req = httpx.Request("POST", "https://api.anthropic.com/v1/messages")
+    for cls, code in ((anthropic.AuthenticationError, 401), (anthropic.PermissionDeniedError, 403)):
+        llm = FakeLLM({"summarize": [cls("bad key", response=httpx.Response(code, request=req), body=None), summary()]})
+        c = ctx(tmp_path / str(code), llm)
+        items = [pd_item(item_id=f"cpc:2026-10-15#{k}") for k in "abc"]
+        with caplog.at_level("ERROR", logger="digest.enrich"):
+            d = enrich_digest(Digest(generated_at=NOW, meetings=[CPC], items=items), c)
+        assert [i.enrichment.status for i in d.items] == ["failed"] * 3
+        assert len(llm.calls) == 1                                          # nothing after the first rejection
+        assert len([r for r in caplog.records if r.levelname == "ERROR" and r.name == "digest.enrich"]) == 1
+        assert c.cache.get("cpc:2026-10-15#a")["failed_attempts"] == 0     # not counted
+        assert c.cache.get("cpc:2026-10-15#b") is None                      # skipped records leave no marker
+        assert "skipped this run" in d.items[1].enrichment.relevance_reason
+        caplog.clear()
+        c.halted = ""                                                       # next run: a fresh context retries them
+        assert enrich_record(record_for_item(items[0], CPC), c).status == "ok"
