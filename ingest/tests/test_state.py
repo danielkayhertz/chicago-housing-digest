@@ -143,3 +143,23 @@ def test_is_shown():
     assert is_shown(itm("cpc:2026-10-15#a", enrichment=Enrichment(status="failed")))
     assert is_shown(itm("cpc:2026-10-15#a", enrichment=Enrichment(status="ok", housing_relevant=True)))
     assert not is_shown(itm("cpc:2026-10-15#a", enrichment=Enrichment(status="screened_out")))
+
+
+def test_meeting_past_prune_cutoff_is_not_re_added_or_announced():
+    stale = mtg("cpc:2026-08-16", T1 - dt.timedelta(days=50), source_id="cpc")
+    d = merge(baseline(), {"cpc": res([mtg(agenda_url="https://x/a"), stale],
+                                      [itm("cpc:2026-10-15#a"), itm("cpc:2026-08-16#1", "cpc:2026-08-16")])}, T1)
+    assert d.events == []
+    assert [m.id for m in d.meetings] == ["cpc:2026-10-15"]
+    assert [i.id for i in d.items] == ["cpc:2026-10-15#a"]
+
+
+def test_notice_still_returned_is_kept_past_age_limit_and_pruned_once_gone():
+    n = Notice(id="ihda:notice:long", source_id="ihda", body="IHDA", kind="comment_period", title="Long", url="https://x/l")
+    long_ago = T0 - dt.timedelta(days=100)
+    prev = merge(None, {"ihda": res(notices=[n])}, long_ago)
+    kept = merge(prev, {"ihda": res(notices=[n.model_copy()])}, T0)
+    assert [x.id for x in kept.notices] == ["ihda:notice:long"]
+    assert kept.notices[0].first_seen_at == long_ago and kept.events == []
+    gone = merge(kept, {"ihda": res()}, T1)
+    assert gone.notices == []

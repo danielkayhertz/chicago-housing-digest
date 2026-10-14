@@ -35,6 +35,9 @@ def merge(prev: Digest | None, results: dict[str, SourceResult | Exception], now
     notices: dict[str, Notice] = dict(pn)
     statuses = dict(old_status)
     events = [e for e in prev.events if e.at >= now - dt.timedelta(days=EVENT_DAYS)]
+    meeting_cutoff = now - dt.timedelta(days=MEETING_PRUNE_DAYS)
+    notice_cutoff = now - dt.timedelta(days=NOTICE_PRUNE_DAYS)
+    returned_notices: set[str] = set()  # notices a source returned this run are never pruned
 
     for sid, res in results.items():
         before = old_status.get(sid)
@@ -57,6 +60,8 @@ def merge(prev: Digest | None, results: dict[str, SourceResult | Exception], now
             fresh_by_meeting[it.meeting_id].append(it)
 
         for m in res.meetings:
+            if m.start < meeting_cutoff:
+                continue  # already pruned (or about to be): a long lookback must not re-add and re-announce it
             old = pm.get(m.id)
             if old is None:
                 emit("meeting_new", m.id)
@@ -89,6 +94,7 @@ def merge(prev: Digest | None, results: dict[str, SourceResult | Exception], now
                 items[it.id] = it
 
         for n in res.notices:
+            returned_notices.add(n.id)
             o = pn.get(n.id)
             if o is None:
                 emit("notice_new", n.id)
@@ -97,14 +103,13 @@ def merge(prev: Digest | None, results: dict[str, SourceResult | Exception], now
             _stamp(n, o, now)
             notices[n.id] = n
 
-    meeting_cutoff = now - dt.timedelta(days=MEETING_PRUNE_DAYS)
-    notice_cutoff = now - dt.timedelta(days=NOTICE_PRUNE_DAYS)
     kept_meetings = sorted((m for m in meetings.values() if m.start >= meeting_cutoff), key=lambda m: (m.start, m.id))
     order = {m.id: i for i, m in enumerate(kept_meetings)}
     kept_items = sorted((i for i in items.values() if i.meeting_id in order), key=lambda i: order[i.meeting_id])
     kept_notices = sorted(
         (n for n in notices.values()
-         if not (n.first_seen_at and n.first_seen_at < notice_cutoff and not (n.deadline and n.deadline > now))),
+         if n.id in returned_notices
+         or not (n.first_seen_at and n.first_seen_at < notice_cutoff and not (n.deadline and n.deadline > now))),
         key=lambda n: (n.first_seen_at or now, n.id),
     )
     return Digest(generated_at=now, sources=sorted(statuses.values(), key=lambda s: s.source_id),
