@@ -81,3 +81,14 @@ def test_corrupt_cache_entry_is_a_miss(tmp_path):
     cache.set(m.id, {"hash": h, "items": [{"bogus": 1}]})
     items = extract_items(m, FakeFetcher([]), llm, cache)
     assert [i.title for i in items] == ["A"] and len(llm.calls) == 1
+
+
+def test_long_titles_with_a_shared_prefix_get_order_independent_ids(tmp_path):
+    a = "An ordinance authorizing the execution of an intergovernmental agreement with the Board of Education for Smith"
+    b = "An ordinance authorizing the execution of an intergovernmental agreement with the Board of Education for Jones"
+    llm = FakeLLM({"extract": [rows(("1", a), ("2", b)), rows(("1", b))]})
+    cache = JsonCache(tmp_path / "e.json")
+    first = extract_items(clihtf_meeting(), FakeFetcher([]), llm, cache)
+    second = extract_items(clihtf_meeting(AGENDA + " (revised)"), FakeFetcher([]), llm, cache)
+    assert first[0].id != first[1].id and second[0].id == first[1].id
+    assert all(len(i.id.split("#")[1]) <= 80 for i in first)

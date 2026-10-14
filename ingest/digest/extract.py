@@ -29,6 +29,14 @@ Copy each item's number and wording from the agenda. Do not add anything the age
 If the agenda lists no items of business, return an empty list."""
 
 
+def title_ref(title: str, max_len: int = 80) -> str:
+    """A stable id fragment from an item title. Long titles that share a prefix end in a hash of the whole title."""
+    full = slugify(title, 10_000)
+    if len(full) <= max_len:
+        return full
+    return f"{full[:max_len - 8].rstrip('-')}-{hashlib.sha1(full.encode()).hexdigest()[:7]}"
+
+
 def extract_items(meeting: Meeting, fetcher: Fetcher, llm, cache: JsonCache) -> list[Item]:
     when = f"{meeting.start:%B} {meeting.start.day}, {meeting.start.year}"
     if meeting.agenda_text:
@@ -60,7 +68,7 @@ def extract_items(meeting: Meeting, fetcher: Fetcher, llm, cache: JsonCache) -> 
     for i, r in enumerate(rows, 1):
         ref = r.number.strip().rstrip(".").strip() or str(i)
         # The id comes from the title, not the number: a revised agenda that drops an item renumbers the rest.
-        slug = unique_ref(slugify(r.title, 80), used)
+        slug = unique_ref(title_ref(r.title), used)
         items.append(Item(id=f"{meeting.id}#{slug}", meeting_id=meeting.id, source_ref=ref, title=r.title.strip(),
                           extraction="ai_extracted", attachments=list(attachments)))
     return items
