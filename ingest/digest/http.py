@@ -62,6 +62,12 @@ class HttpFetcher:
         return {"User-Agent": ua, "Accept": "*/*"}
 
     def get_bytes(self, url: str, params: dict | None = None) -> bytes:
+        try:
+            return self._get_bytes(url, params)
+        except (httpx.HTTPError, httpx.InvalidURL) as e:  # redirect loops, bad URLs, protocol errors
+            raise FetchError(url, None, f"{type(e).__name__}: {e}") from e
+
+    def _get_bytes(self, url: str, params: dict | None = None) -> bytes:
         url = public_url(url)
         host = urlsplit(url).hostname or ""
         key = url_key(url, params)

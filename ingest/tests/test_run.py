@@ -97,3 +97,31 @@ def test_run_without_ai_keeps_previous_enrichment(tmp_path):
     assert "clihtf:319068#1" in {i.id for i in d.items}           # extracted items survive a --no-ai run
     assert all(i.enrichment is not None for i in d.items)
     assert load_digest(root / "data" / "items.json").generated_at == NOW + dt.timedelta(hours=6)
+
+
+def test_generic_extraction_error_becomes_a_warning_and_the_run_completes(tmp_path):
+    root = make_root(tmp_path)
+    llm = fake_llm()
+    llm.responses["extract"] = lambda content: (_ for _ in ()).throw(RuntimeError("bad agenda"))
+    d = run(root, fetcher=FakeFetcher(routes()), llm=llm, now=NOW)
+    status = {s.source_id: s for s in d.sources}
+    assert status["clihtf"].status == "stale" and "agenda extraction failed: bad agenda" in status["clihtf"].message
+    assert status["cpc"].status == "ok"
+    assert (root / "data" / "items.json").exists()
+
+
+def test_caches_persist_when_a_later_step_crashes_and_empty_overrides_load(tmp_path, monkeypatch):
+    import pytest
+    from digest import run as run_mod
+    root = make_root(tmp_path)
+    (root / "config" / "overrides.yaml").write_text("", encoding="utf-8")  # safe_load -> None
+
+    def crash(digest, ctx):
+        ctx.cache.set("paid", {"content_hash": "h"})
+        raise RuntimeError("crash after paid calls")
+    monkeypatch.setattr(run_mod, "enrich_digest", crash)
+    with pytest.raises(RuntimeError, match="crash after paid calls"):
+        run(root, fetcher=FakeFetcher(routes()), llm=fake_llm(), now=NOW)
+    assert "paid" in json.loads((root / "data" / "cache" / "enrich.json").read_text(encoding="utf-8"))
+    assert "clihtf:319068" in json.loads((root / "data" / "cache" / "extract.json").read_text(encoding="utf-8"))
+    assert not (root / "data" / "items.json").exists()

@@ -8,13 +8,11 @@ import logging
 import re
 from dataclasses import dataclass
 
-import anthropic
-from pydantic import BaseModel
+from pydantic import BaseModel, ValidationError
 
 from .cache import JsonCache
 from .categories import Categories, merge_hits
 from .http import FetchError, Fetcher
-from .llm import LLMRefused
 from .models import CategoryHit, Digest, Enrichment, Figures, Geography, Item, Meeting, Notice
 from .pdftext import has_text_layer, pdf_text
 from .sources.base import html_to_text
@@ -232,12 +230,17 @@ def _fresh(rec: Record, ctx: EnrichContext, h: str) -> Enrichment:
 def enrich_record(rec: Record, ctx: EnrichContext) -> Enrichment:
     h = content_hash(rec.title, rec.urls + [rec.extra_text], ctx.categories.fingerprint())
     cached = ctx.cache.get(rec.id)
-    if cached and cached.get("content_hash") == h:
-        e = Enrichment.model_validate(cached)
-    else:
+    e = None
+    if isinstance(cached, dict) and cached.get("content_hash") == h:
+        try:
+            e = Enrichment.model_validate(cached)
+        except ValidationError as ex:  # stale or corrupt entry: treat as a miss
+            log.warning("%s: ignoring invalid enrich cache entry: %s", rec.id, ex)
+    if e is None:
         try:
             e = _fresh(rec, ctx, h)
-        except (LLMRefused, anthropic.APIError) as ex:
+        except Exception as ex:  # one bad record must never abort the run
+            log.warning("%s: enrichment failed: %s: %s", rec.id, type(ex).__name__, ex)
             e = Enrichment(status="failed", relevance_reason=f"enrichment failed: {ex}"[:300],
                            categories=ctx.categories.rule_hits(rec.body, [rec.title, rec.extra_text]),
                            geography=rec.hint or Geography(), model=ctx.models["summarize"], content_hash=h)

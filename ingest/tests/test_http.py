@@ -43,3 +43,16 @@ def test_get_json_non_json_body_raises_fetch_error():
         f.get_json("https://webapi.legistar.com/v1/chicago/bodies")
     with pytest.raises(FetchError, match="invalid JSON"):
         FakeFetcher([("bodies", b"<html>Maintenance</html>")]).get_json("https://h/bodies")
+
+
+def test_redirect_loops_and_invalid_urls_become_fetch_error():
+    def loop(req):
+        return httpx.Response(302, headers={"Location": str(req.url)})
+    f = HttpFetcher(delay=0)
+    f.client = httpx.Client(transport=httpx.MockTransport(loop), follow_redirects=True)
+    with pytest.raises(FetchError):
+        f.get_bytes("https://webapi.legistar.com/v1/chicago/events")
+    with pytest.raises(FetchError):
+        f.get_text("http://exa" + chr(0) + "mple.com/")  # NUL in host: httpx.InvalidURL
+    with pytest.raises(FetchError):
+        f.get_json("https://webapi.legistar.com/v1/chicago/events")

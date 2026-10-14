@@ -154,3 +154,25 @@ def test_notice_keyword_and_body_rules(tmp_path):
     assert {(c.id, c.via) for c in e.categories} == {("housing-agenda", "keyword"), ("property-taxes", "keyword")}
     assert e.source_quality == "none"
     assert "Class 7 incentive guidance" in llm.calls[0]["content"][-1]["text"]
+
+
+def test_generic_exception_fails_one_record_and_others_stay_ok(tmp_path):
+    llm = FakeLLM({"summarize": [RuntimeError("SDK blew up"), summary()]})
+    c = ctx(tmp_path, llm, routes=[("pd", PD_HTML)])
+    a = pd_item(item_id="cpc:2026-10-15#a")
+    b = pd_item(item_id="cpc:2026-10-15#b")
+    d = enrich_digest(Digest(generated_at=NOW, meetings=[CPC], items=[a, b]), c)
+    assert [i.enrichment.status for i in d.items] == ["failed", "ok"]
+    assert "SDK blew up" in d.items[0].enrichment.relevance_reason
+    assert [h.id for h in d.items[0].enrichment.categories] == ["ahpaa"]
+
+
+def test_cache_entry_that_fails_validation_is_re_enriched(tmp_path):
+    llm = FakeLLM({"summarize": [summary(), summary(summary="Second pass.")]})
+    c = ctx(tmp_path, llm, routes=[("pd", PD_HTML)])
+    rec = record_for_item(pd_item(), CPC)
+    first = enrich_record(rec, c)
+    c.cache.set(rec.id, {**c.cache.get(rec.id), "status": "not-a-status"})  # corrupt, same content_hash
+    e = enrich_record(rec, c)
+    assert len(llm.calls) == 2 and e.status == "ok" and e.summary == "Second pass."
+    assert c.cache.get(rec.id)["content_hash"] == first.content_hash and c.cache.get(rec.id)["status"] == "ok"
