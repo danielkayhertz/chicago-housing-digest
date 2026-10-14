@@ -1,0 +1,16 @@
+# Model per purpose. The screen runs only on items from screen_bodies (City Council committees,
+# whose agendas are mostly not about housing); everything else goes straight to the summary.
+models:
+  screen: claude-haiku-5-5
+  summarize: claude-sonnet-5-5
+  extract: claude-sonnet-5-5
+# USD per million tokens, used only by `python -m digest.costs`.
+prices:
+  claude-haiku-5-5: {input: 0.10, output: 0.50}
+  claude-sonnet-5-5: {input: 2.00, output: 10.00}
+screen_bodies:
+  - City Council Committee on Zoning
+  - City Council Committee on Housing and Real Estate
+  - City Council Committee on Finance
+char_cap: 12000
+max_attachments: 2

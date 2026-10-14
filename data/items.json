@@ -1,0 +1,1940 @@
+{
+ "generated_at": "2026-10-14T09:54:55.014387-05:00",
+ "sources": [
+  {
+   "source_id": "cdc",
+   "last_success_at": "2026-10-14T09:54:55.014387-05:00",
+   "status": "ok",
+   "message": ""
+  },
+  {
+   "source_id": "cha",
+   "last_success_at": null,
+   "status": "error",
+   "message": "ImplausibleResult: 0 meetings in window, expected at least 1"
+  },
+  {
+   "source_id": "clihtf",
+   "last_success_at": "2026-10-14T09:54:55.014387-05:00",
+   "status": "ok",
+   "message": ""
+  },
+  {
+   "source_id": "cpc",
+   "last_success_at": "2026-10-14T09:54:55.014387-05:00",
+   "status": "ok",
+   "message": ""
+  },
+  {
+   "source_id": "elms-finance",
+   "last_success_at": "2026-10-14T09:54:55.014387-05:00",
+   "status": "stale",
+   "message": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5: agenda has text but no record numbers; elms:531B4778-99B7-F111-AAAC-001DD80FDAD3: agenda has text but no record numbers"
+  },
+  {
+   "source_id": "elms-housing",
+   "last_success_at": "2026-10-14T09:54:55.014387-05:00",
+   "status": "stale",
+   "message": "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC: agenda has text but no record numbers"
+  },
+  {
+   "source_id": "elms-zoning",
+   "last_success_at": "2026-10-14T09:54:55.014387-05:00",
+   "status": "ok",
+   "message": ""
+  },
+  {
+   "source_id": "ihda",
+   "last_success_at": "2026-10-14T09:54:55.014387-05:00",
+   "status": "ok",
+   "message": ""
+  },
+  {
+   "source_id": "watch",
+   "last_success_at": "2026-10-14T09:54:55.014387-05:00",
+   "status": "ok",
+   "message": ""
+  }
+ ],
+ "meetings": [
+  {
+   "id": "ihda:ihda-audit-committee:2026-09-18",
+   "source_id": "ihda",
+   "body": "IHDA Audit Committee",
+   "body_id": "ihda-audit-committee",
+   "jurisdiction": "state",
+   "start": "2026-09-18T09:00:00-05:00",
+   "time_known": true,
+   "status": "held",
+   "location": null,
+   "agenda_url": "https://www.ihda.org/wp-content/uploads/2026/09/Audit-Committee-Agenda-1.pdf",
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": "https://www.ihda.org/about-ihda/public-meetings-and-notices/",
+   "needs_ai_extraction": true,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-09-18",
+   "source_id": "ihda",
+   "body": "IHDA Finance Committee",
+   "body_id": "ihda-finance-committee",
+   "jurisdiction": "state",
+   "start": "2026-09-18T10:00:00-05:00",
+   "time_known": true,
+   "status": "held",
+   "location": null,
+   "agenda_url": "https://www.ihda.org/wp-content/uploads/2026/09/Finance-Committee-Agenda.pdf",
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": "https://www.ihda.org/about-ihda/public-meetings-and-notices/",
+   "needs_ai_extraction": true,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-09-18",
+   "source_id": "ihda",
+   "body": "IHDA Board",
+   "body_id": "ihda-board",
+   "jurisdiction": "state",
+   "start": "2026-09-18T11:00:00-05:00",
+   "time_known": true,
+   "status": "held",
+   "location": null,
+   "agenda_url": "https://www.ihda.org/wp-content/uploads/2026/09/0918-Agenda-Final.pdf",
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": "https://www.ihda.org/about-ihda/public-meetings-and-notices/",
+   "needs_ai_extraction": true,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:266A5A62-53B8-F111-AAAC-001DD80AA3CC",
+   "source_id": "elms-finance",
+   "body": "City Council Committee on Finance",
+   "body_id": "D99FC72B-B0D7-EC11-A7B4-001DD804F0C4",
+   "jurisdiction": "chicago",
+   "start": "2026-10-05T10:00:00-05:00",
+   "time_known": true,
+   "status": "held",
+   "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
+   "agenda_url": null,
+   "video_url": "https://vimeo.com/manage/videos/1232129590",
+   "minutes_url": null,
+   "detail_url": null,
+   "needs_ai_extraction": false,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:30125FE9-53B8-F111-AAAC-001DD80AA3CC",
+   "source_id": "elms-finance",
+   "body": "City Council Committee on Finance",
+   "body_id": "D99FC72B-B0D7-EC11-A7B4-001DD804F0C4",
+   "jurisdiction": "chicago",
+   "start": "2026-10-05T10:00:00-05:00",
+   "time_known": true,
+   "status": "held",
+   "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
+   "agenda_url": null,
+   "video_url": "https://vimeo.com/manage/videos/1232129590",
+   "minutes_url": null,
+   "detail_url": null,
+   "needs_ai_extraction": false,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3",
+   "source_id": "elms-finance",
+   "body": "City Council Committee on Finance",
+   "body_id": "D99FC72B-B0D7-EC11-A7B4-001DD804F0C4",
+   "jurisdiction": "chicago",
+   "start": "2026-10-05T10:00:00-05:00",
+   "time_known": true,
+   "status": "held",
+   "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
+   "agenda_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/d3f3d5d3-da10-4a65-9367-b00e89dd4023.pdf",
+   "video_url": "https://vimeo.com/manage/videos/1232129590",
+   "minutes_url": null,
+   "detail_url": null,
+   "needs_ai_extraction": false,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC",
+   "source_id": "elms-housing",
+   "body": "City Council Committee on Housing and Real Estate",
+   "body_id": "DB9FC72B-B0D7-EC11-A7B4-001DD804F0C4",
+   "jurisdiction": "chicago",
+   "start": "2026-10-08T10:30:00-05:00",
+   "time_known": true,
+   "status": "held",
+   "location": "Room 201A, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
+   "agenda_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/ce402690-72de-48ee-a907-a2d8fc569498.pdf",
+   "video_url": "https://vimeo.com/manage/videos/1233831459",
+   "minutes_url": null,
+   "detail_url": null,
+   "needs_ai_extraction": false,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "clihtf:319068",
+   "source_id": "clihtf",
+   "body": "CLIHTF Board of Directors",
+   "body_id": "clihtf-board",
+   "jurisdiction": "chicago",
+   "start": "2026-10-13T08:30:00-05:00",
+   "time_known": true,
+   "status": "held",
+   "location": null,
+   "agenda_url": "https://clihtf.org/event/board-meeting-11-7/",
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": "https://clihtf.org/event/board-meeting-11-7/",
+   "needs_ai_extraction": true,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_id": "elms-zoning",
+   "body": "City Council Committee on Zoning",
+   "body_id": "ED9FC72B-B0D7-EC11-A7B4-001DD804F0C4",
+   "jurisdiction": "chicago",
+   "start": "2026-10-13T10:00:00-05:00",
+   "time_known": true,
+   "status": "held",
+   "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
+   "agenda_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/ad26295a-e3da-4371-84a1-8941f91edfb4.pdf",
+   "video_url": "https://vimeo.com/manage/videos/1234481036",
+   "minutes_url": null,
+   "detail_url": null,
+   "needs_ai_extraction": false,
+   "item_count_total": 49,
+   "item_count_relevant": 49,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5",
+   "source_id": "elms-finance",
+   "body": "City Council Committee on Finance",
+   "body_id": "D99FC72B-B0D7-EC11-A7B4-001DD804F0C4",
+   "jurisdiction": "chicago",
+   "start": "2026-10-13T13:00:00-05:00",
+   "time_known": true,
+   "status": "held",
+   "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
+   "agenda_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/d047b6dd-fc15-4b12-8eaf-ef72c790b29a.pdf",
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": null,
+   "needs_ai_extraction": false,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "cdc:2026-10-13",
+   "source_id": "cdc",
+   "body": "Community Development Commission",
+   "body_id": "cdc",
+   "jurisdiction": "chicago",
+   "start": "2026-10-13T13:30:00-05:00",
+   "time_known": true,
+   "status": "held",
+   "location": null,
+   "agenda_url": "https://www.chicago.gov/city/en/depts/dcd/community-development-commission/agendas/2026/october.html",
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": "https://www.chicago.gov/city/en/depts/dcd/community-development-commission/agendas/2026/october.html",
+   "needs_ai_extraction": false,
+   "item_count_total": 2,
+   "item_count_relevant": 2,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "cpc:2026-10-15",
+   "source_id": "cpc",
+   "body": "Chicago Plan Commission",
+   "body_id": "cpc",
+   "jurisdiction": "chicago",
+   "start": "2026-10-15T10:00:00-05:00",
+   "time_known": false,
+   "status": "scheduled",
+   "location": null,
+   "agenda_url": "https://www.chicago.gov/content/city/en/depts/dcd/supp_info/chicago_plan_commission/October_2026_Plan_Commission_Hearing.html",
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": "https://www.chicago.gov/content/city/en/depts/dcd/supp_info/chicago_plan_commission/October_2026_Plan_Commission_Hearing.html",
+   "needs_ai_extraction": false,
+   "item_count_total": 3,
+   "item_count_relevant": 3,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "clihtf:10000839",
+   "source_id": "clihtf",
+   "body": "CLIHTF Board of Directors",
+   "body_id": "clihtf-board",
+   "jurisdiction": "chicago",
+   "start": "2026-11-10T08:30:00-06:00",
+   "time_known": true,
+   "status": "scheduled",
+   "location": null,
+   "agenda_url": "https://clihtf.org/event/board-meeting-11/2026-11-10/",
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": "https://clihtf.org/event/board-meeting-11/2026-11-10/",
+   "needs_ai_extraction": true,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "cdc:2026-11-10",
+   "source_id": "cdc",
+   "body": "Community Development Commission",
+   "body_id": "cdc",
+   "jurisdiction": "chicago",
+   "start": "2026-11-10T13:30:00-06:00",
+   "time_known": false,
+   "status": "scheduled",
+   "location": null,
+   "agenda_url": null,
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": "https://www.chicago.gov/content/city/en/depts/dcd/community-development-commission/meetings--agendas-and-video-archives.html",
+   "needs_ai_extraction": false,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "cpc:2026-11-19",
+   "source_id": "cpc",
+   "body": "Chicago Plan Commission",
+   "body_id": "cpc",
+   "jurisdiction": "chicago",
+   "start": "2026-11-19T10:00:00-06:00",
+   "time_known": false,
+   "status": "scheduled",
+   "location": null,
+   "agenda_url": null,
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": "https://www.chicago.gov/content/city/en/depts/dcd/chicago-plan-commission/meetings--agendas---video-archives.html",
+   "needs_ai_extraction": false,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "clihtf:10000840",
+   "source_id": "clihtf",
+   "body": "CLIHTF Board of Directors",
+   "body_id": "clihtf-board",
+   "jurisdiction": "chicago",
+   "start": "2026-12-08T08:30:00-06:00",
+   "time_known": true,
+   "status": "scheduled",
+   "location": null,
+   "agenda_url": "https://clihtf.org/event/board-meeting-11/2026-12-08/",
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": "https://clihtf.org/event/board-meeting-11/2026-12-08/",
+   "needs_ai_extraction": true,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "cdc:2026-12-08",
+   "source_id": "cdc",
+   "body": "Community Development Commission",
+   "body_id": "cdc",
+   "jurisdiction": "chicago",
+   "start": "2026-12-08T13:30:00-06:00",
+   "time_known": false,
+   "status": "scheduled",
+   "location": null,
+   "agenda_url": null,
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": "https://www.chicago.gov/content/city/en/depts/dcd/community-development-commission/meetings--agendas-and-video-archives.html",
+   "needs_ai_extraction": false,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  }
+ ],
+ "items": [
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#R2026-0028815",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "R2026-0028815",
+   "title": "Establishment of Problem Landlord and Housing Court Coordination Task Force to examine and recommend improvements to response to chronic and repeat housing code violations",
+   "attachments": [
+    {
+     "label": "w36others - r28815",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/5a5419a0-b39b-4f2f-a408-ec96131cde7c.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028463",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028463",
+   "title": "Amendment of Municipal Code Section 17-9-0129 allowing lawful cannabis dispensaries to modify to include medical cannabis without triggering Section 17-9-0129.1",
+   "attachments": [
+    {
+     "label": "Cannabis",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/68c21353-b0bf-4e1a-8856-fa361eca5dbc.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0025391",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0025391",
+   "title": "Amendment of Municipal Code Chapter 17-3 by adding Section 17-3-0600 regarding transient-oriented development (TOD) streets",
+   "attachments": [
+    {
+     "label": "O2026-0025391 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/298f50fb-d105-4b1c-bf5b-ff694f31aa71.pdf"
+    },
+    {
+     "label": "O2026-0025391 Mayoral Letter",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/bb0c10e8-cda6-4087-af0f-5fe2c32cd907.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0026261",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0026261",
+   "title": "Designation of segment of N Western Ave right-of-way on Map Nos. 9-H, 9-I, 11-H, 11-I, 13-H, and 13-I as Transient Oriented Development (TOD) Street and amendment of Municipal Code Section 17-3-0602-F designating portion of N Western Ave as Transient Oriented Development (TOD) Street",
+   "attachments": [
+    {
+     "label": "TOD Street - Western Avenue - Addison to Ainslie (1)",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/046e293b-1799-4d63-9980-ac48f966a4df.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0026239",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0026239",
+   "title": "Designation of segment of N Ravenswood Ave right-of-way on Map No. 11-H as Transient Oriented Development (TOD) Street and amendment of Municipal Code Section 17-3-0602-F designating portion of N Ravenswood Ave as Transient Oriented Development Street",
+   "attachments": [
+    {
+     "label": "TOD Street -  Ravenswood Avenue - Irving Park to Lawrence",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/4987a7d2-f911-4fca-9f62-fe5d51a24466.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027856",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0027856",
+   "title": "Repeal of historical landmark designation for Cortland Bridge",
+   "attachments": [
+    {
+     "label": "W2-Cortland repeal",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/02aa05d7-5b49-4799-94a8-60fb5352f830.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#Or2026-0028250",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "Or2026-0028250",
+   "title": "Historical landmark fee waiver for property at 208 S LaSalle St",
+   "attachments": [
+    {
+     "label": "Or28250 EDS - Prime - redacted",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/17e9601a-20bb-4a4c-807c-fdafe5f5e42f.pdf"
+    },
+    {
+     "label": "Or28250 EDS - RCP - redacted",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/8a8c1aff-81ff-4be7-bcbe-b0e13fa671f8.pdf"
+    },
+    {
+     "label": "Or28250 EDS - Lasalle Owner - redacted",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/6b9e9d71-f9cb-4359-9da6-9e068abdf24c.pdf"
+    },
+    {
+     "label": "Permit Fee Waiver - 208 S LaSalle signed",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/bbbdfee7-dc4a-4b62-aea1-1f36233b1007.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028355",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028355",
+   "title": "Zoning Reclassification Map Nos. 1-H and 3-H at 1600-1760 W Chicago Ave and 1601-1759 W Chicago Ave",
+   "attachments": [
+    {
+     "label": "1601chicago_rezone",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/85d641dd-7c8d-4e89-b153-8d8a0a3ed6d5.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027173",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0027173",
+   "title": "Zoning Reclassification Map No. 10-F at 4639-4643 S Wallace St",
+   "attachments": [
+    {
+     "label": "w15 - o27173",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/925b67fc-a481-44aa-9718-5ab430644738.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027987",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0027987",
+   "title": "Zoning Reclassification Map No. 12-F at 5000-5046 S Wells St",
+   "attachments": [
+    {
+     "label": "5000-5046 S. Wells - signed.docx",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/c5bb2933-4c84-4065-9d81-850bceec5e7d.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027667",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0027667",
+   "title": "Zoning Reclassification Map No. 17-H at 1721 W Greenleaf Ave",
+   "attachments": [
+    {
+     "label": "1721 W. Greenleaf Avenue",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/10ad6d53-af53-4147-b4d6-85e64f96dc36.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0025393",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0025393",
+   "title": "Zoning Reclassification Map Nos. 8-F and 10-F at 3800-3958 S State St, 3901-3959 S Dearborn St, 3900-3958 S Dearborn St, 3901-3959 S Federal St, 3900-3946 S Federal St, 2-24 W Pershing Rd, 1-109 W Pershing Rd and 2-52 W 40th St - App No. 23087",
+   "attachments": [
+    {
+     "label": "O2026-0025393 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/5a024c2b-44a8-48fe-9c95-8ca9cdde7244.pdf"
+    },
+    {
+     "label": "O2026-0025393 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/02dff8b1-ad8f-4591-9a68-c35576db7705.pdf"
+    },
+    {
+     "label": "O2026-0025393 Statements and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/7501d964-ee15-43c9-91ab-f90b54303aef.pdf"
+    },
+    {
+     "label": "O2026-0025393 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/0c431952-5d8b-417f-9f25-9a5535332f35.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027331",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0027331",
+   "title": "Zoning Reclassification Map No.  4-E at 1608 S Wabash Ave - App No. 23131",
+   "attachments": [
+    {
+     "label": "O2026-0027331 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/7548e899-1f9e-4ce1-beb5-df5b162c9cd6.pdf"
+    },
+    {
+     "label": "O2026-0027331 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/3a542192-a22a-413f-8614-7fc4ad8f74b6.pdf"
+    },
+    {
+     "label": "O2026-0027331 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/9b045884-cfe2-4a56-a414-838a83fa1c3e.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027372",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0027372",
+   "title": "Zoning Reclassification Map No. 10-E at 3927-3933 S Martin Luther King, Jr. Dr. - App No. 23135",
+   "attachments": [
+    {
+     "label": "O2026-0027372 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/53f161fa-3085-4ab1-be1a-2f818210565a.pdf"
+    },
+    {
+     "label": "O2026-0027372 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/4549776a-4d94-48df-a3eb-50b918c551ad.pdf"
+    },
+    {
+     "label": "O2026-0027372 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/2c13cd7f-ff1b-4403-a666-fbe8ea0bbbd6.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028739",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028739",
+   "title": "Zoning Reclassification Map No. 12-K at 5312 S Kenneth Ave - App No. 23172",
+   "attachments": [
+    {
+     "label": "O2026-0028739 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/8729c602-88c7-4de4-897f-13d92cdcdf99.pdf"
+    },
+    {
+     "label": "O2026-0028739 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/ef0a265a-28e4-4410-8c3b-d8aaed520d0c.pdf"
+    },
+    {
+     "label": "O2026-0028739 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/dd10f197-187a-47d9-984a-f11bca91f91c.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028698",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028698",
+   "title": "Zoning Reclassification Map No. 3-I at 1140 N California Ave - App No. 23162T1",
+   "attachments": [
+    {
+     "label": "O2026-0028698 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/9f32d5c6-f8fc-4d62-9cfc-b06e169f7416.pdf"
+    },
+    {
+     "label": "O2026-0028698 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/aa52c783-29c9-4ff5-90af-fff78987c651.pdf"
+    },
+    {
+     "label": "O2026-0028698 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/a49ac812-c28e-489a-bbfa-1d2a0324ee33.pdf"
+    },
+    {
+     "label": "O2026-0028698 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/6a046b73-8750-435b-921b-ee65a7ad12e6.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028700",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028700",
+   "title": "Zoning Reclassification Map No. 13-L at 4841 N Lipps Ave- App No. 23163",
+   "attachments": [
+    {
+     "label": "O2026-0028700 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/8a2f9097-7b6c-4665-948d-13dbdaeadf90.pdf"
+    },
+    {
+     "label": "O2026-0028700 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e6161b39-06a2-459e-9008-61602c407e78.pdf"
+    },
+    {
+     "label": "O2026-0028700 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/84d5b44a-800f-4b15-8ba9-4156fd4ca981.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028735",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028735",
+   "title": "Zoning Reclassification Map No. 12-D at 5482 S Ridgewood Ct - App No. 23170T1",
+   "attachments": [
+    {
+     "label": "O2026-0028735 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/c54b68f1-6c9c-4bb1-aa6f-670e3e48ab5f.pdf"
+    },
+    {
+     "label": "OO2026-0028735 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/70f3ce6c-6907-431c-af86-6cdd4f1fdc0b.pdf"
+    },
+    {
+     "label": "O2026-0028735 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/4e47ec6e-1f33-46ef-af31-ea3e8f042fa9.pdf"
+    },
+    {
+     "label": "O2026-0028735 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/5f83adab-addf-4f83-bdd8-1b07892bfbf3.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028738",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028738",
+   "title": "Zoning Reclassification Map No. 2-K at 4125 and 4127 W 5th Ave - App No. 23171T1",
+   "attachments": [
+    {
+     "label": "O2026-0028738 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e6fbd10c-69f1-439e-9cc2-c095f0d2365b.pdf"
+    },
+    {
+     "label": "O2026-0028738 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/789553d2-4368-4e16-a028-fc14de9fc553.pdf"
+    },
+    {
+     "label": "O2026-0028738 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/6818e32c-bbc1-4bd7-8bbf-9eba71564ea4.pdf"
+    },
+    {
+     "label": "O2026-0028738 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f6138376-5df1-4e3f-ab48-33c87f8fc620.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028740",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028740",
+   "title": "Zoning Reclassification Map No. 4-H at 2142 W 18th Pl - App No. 23173T1",
+   "attachments": [
+    {
+     "label": "O2026-0028740 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/7defb000-8e56-4953-a2d8-0a4a3ae701fe.pdf"
+    },
+    {
+     "label": "O2026-0028740 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d9ea9ab2-e736-47eb-8010-51513f9736af.pdf"
+    },
+    {
+     "label": "O2026-0028740 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/fdad537e-34f0-4e45-beaa-923f48d31d90.pdf"
+    },
+    {
+     "label": "O2026-0028740 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/1655a80d-b68e-42e9-8c42-c906c8f0d9ca.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028734",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028734",
+   "title": "Zoning Reclassification Map No. 7-H at 2315-2317 W Barry Ave - App No. 23169T1",
+   "attachments": [
+    {
+     "label": "O2026-0028734 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/30896849-3a55-4bee-be57-419b4580e78d.pdf"
+    },
+    {
+     "label": "O2026-0028734 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/4474b58b-e106-43f7-83f8-87fc36633e50.pdf"
+    },
+    {
+     "label": "O2026-0028734 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/8c1f6720-1231-4f7a-9c5b-b91a8826284a.pdf"
+    },
+    {
+     "label": "O2026-0028734 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/86becdae-563e-45c2-a321-f3b8206601a0.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028742",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028742",
+   "title": "Zoning Reclassification Map No. 5-H at 1933 N Winchester Ave - App No. 23175T1",
+   "attachments": [
+    {
+     "label": "O2026-0028742 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/6c485db4-e403-4741-b9a5-9434646c518d.pdf"
+    },
+    {
+     "label": "O2026-0028742 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/0556ffec-e51c-4e29-b8ce-5325b24363e0.pdf"
+    },
+    {
+     "label": "O2026-0028742 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e4eee897-2a9a-4ac8-8cd1-4ac949faf15e.pdf"
+    },
+    {
+     "label": "O2026-0028742 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/66bac463-36ce-499b-9d2d-8c2b26cdaf5b.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028744",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028744",
+   "title": "Zoning Reclassification Map No. 15-J at 3244-3250 W Bryn Mawr Ave - App No. 23176T1",
+   "attachments": [
+    {
+     "label": "O2026-0028744 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/5cb6fc0e-00d2-4365-893e-63fc4fa48d4a.pdf"
+    },
+    {
+     "label": "O2026-0028744 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d396507f-53ca-4a82-9a2b-3320d2d67bbb.pdf"
+    },
+    {
+     "label": "O2026-0028744 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/99527390-81dc-44ca-871a-6c9a16b8ffad.pdf"
+    },
+    {
+     "label": "O2026-0028744 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/7104fd8a-c196-4261-8d4e-478c9f80d697.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028341",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028341",
+   "title": "Zoning Reclassification Map No. 18-E at 7353-7359 S Indiana Ave - App No. 23148T1",
+   "attachments": [
+    {
+     "label": "O2026-0028341 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d59c9319-ae69-40b9-baa6-4ba93b35fe94.pdf"
+    },
+    {
+     "label": "O2026-0028341 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/50c73e19-ff2b-4c90-a720-332223054f8e.pdf"
+    },
+    {
+     "label": "O2026-0028341 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/251b4c13-70e5-4e16-8249-d6954df96a44.pdf"
+    },
+    {
+     "label": "O2026-0028341 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/62843840-225e-4203-86f1-a9e83c9c7870.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028339",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028339",
+   "title": "Zoning Reclassification Map No. 1-H at 2156 W Warren Blvd - App No. 23147T1",
+   "attachments": [
+    {
+     "label": "O2026-0028339 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/9b08ad55-fe4a-405f-922d-78f3e1d91eee.pdf"
+    },
+    {
+     "label": "O2026-0028339 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/31ab3c1f-c2c0-4ab8-98a8-741ba13f6637.pdf"
+    },
+    {
+     "label": "O2026-0028339 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d89f67ef-26d7-4008-b463-94ef3178c320.pdf"
+    },
+    {
+     "label": "O2026-0028339 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/864ed6af-f95d-4090-83c9-e3e07ed30d42.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028345",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028345",
+   "title": "Zoning Reclassification Map No. 2-I at 2400 W Grenshaw St a.k.a. 1124 S Western Ave - App No. 23149T1",
+   "attachments": [
+    {
+     "label": "O2026-0028345 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/5a7e21ec-e218-4912-a16d-5a06ddaccceb.pdf"
+    },
+    {
+     "label": "O2026-0028345 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/ba0d7433-9636-416c-bfbc-0770484b14dc.pdf"
+    },
+    {
+     "label": "O2026-0028345 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/49e888dc-0e39-42f3-8139-3324291e1e75.pdf"
+    },
+    {
+     "label": "O2026-0028345 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/422962e7-a9d8-4a71-b3c7-4c07a08a3af0.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028415",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028415",
+   "title": "Zoning Reclassification Map No. 8-G at 3439 S Morgan St - App No. 23152T1",
+   "attachments": [
+    {
+     "label": "O2026-0028415 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/bf3aab83-24c5-4c8e-b1cf-c801e0700720.pdf"
+    },
+    {
+     "label": "O2026-0028415 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/dcfcab2a-0e7d-4aad-b4b0-ff54b808a045.pdf"
+    },
+    {
+     "label": "O2026-0028415 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/9043ce88-488d-4bbc-ba91-b26490cfa1e2.pdf"
+    },
+    {
+     "label": "O2026-0028415 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/69fac282-8b53-40a7-9ed9-9c74acf709f4.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028439",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028439",
+   "title": "Zoning Reclassification Map No. 1-H at 1921 W Chicago Ave - App No. 23153T1",
+   "attachments": [
+    {
+     "label": "O2026-0028439 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/da8aad67-5148-4967-974c-102802368bc6.pdf"
+    },
+    {
+     "label": "O2026-0028439 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/6c521dd6-995e-451a-b144-a15fbddc476d.pdf"
+    },
+    {
+     "label": "O2026-0028439 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/46c1a89c-dbf8-48c7-99ab-f62d4ce78ae1.pdf"
+    },
+    {
+     "label": "O2026-0028439 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/a3ffb721-99c3-44ff-80b9-713ffb83eb2a.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027299",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0027299",
+   "title": "Zoning Reclassification Map No. 3-H at 1807-1809 W Augusta Blvd - App No. 23130T1",
+   "attachments": [
+    {
+     "label": "O2026-0027299 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/280dc155-dc31-4f8d-a285-16ed629278ef.pdf"
+    },
+    {
+     "label": "O2026-0027299 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/cda69538-0aee-4465-a194-6227bbad1e20.pdf"
+    },
+    {
+     "label": "O2026-0027299 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/5bc0c5b8-d45d-42aa-afe9-91c109842a08.pdf"
+    },
+    {
+     "label": "O2026-0027299 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/571521f5-211f-41fe-ac22-9c8accb76f34.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028465",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028465",
+   "title": "Zoning Reclassification Map No. 5-H at 1644 N Winchester Ave - App No. 23155T1",
+   "attachments": [
+    {
+     "label": "O2026-0028465 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/bc0927c9-6a99-4804-8e7e-6b7dd8d57f8d.pdf"
+    },
+    {
+     "label": "O2026-0028465 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/003a3608-3917-4a8e-ba7d-c0649edd4c3a.pdf"
+    },
+    {
+     "label": "O2026-0028465 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/0c7c58ea-a30f-4afe-8f9f-606a14c1ae12.pdf"
+    },
+    {
+     "label": "O2026-0028465 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/c2918f43-b4b5-43b6-a110-b98d1eaaa214.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028457",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028457",
+   "title": "Zoning Reclassification Map No. 2-J at 1147-1151 S Independence Blvd - App No. 23154T1",
+   "attachments": [
+    {
+     "label": "O2026-0028457 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/71751691-5087-4851-87b8-28d896a59896.pdf"
+    },
+    {
+     "label": "O2026-0028457 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/1d5d2161-35bf-48a0-94cf-0a07122f2bdd.pdf"
+    },
+    {
+     "label": "O2026-0028457 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/c6583dae-6835-4a95-9796-b9b0414fa6a8.pdf"
+    },
+    {
+     "label": "O2026-0028457 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/9917bf5a-e3ff-42d1-92d6-8244dd3a41e6.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028670",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028670",
+   "title": "Zoning Reclassification Map No. 2-H at 2342-2346 W Jackson Blvd - App No. 23156T1",
+   "attachments": [
+    {
+     "label": "O2026-0028670 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/6d36e1b0-5354-4e2f-9f6a-05f6b1066bba.pdf"
+    },
+    {
+     "label": "O2026-0028670 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/3cf7c8cd-6005-40b1-b6ae-ef7302eb8ae1.pdf"
+    },
+    {
+     "label": "O2026-0028670 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/c91144ed-89fe-4742-a8dc-318109000f35.pdf"
+    },
+    {
+     "label": "O2026-0028670 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/7b0bbaf3-b508-4013-9e71-4bedc4c9f315.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028350",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028350",
+   "title": "Zoning Reclassification Map No. 16-H at 6701-6731 S Western Ave - App No. 23150",
+   "attachments": [
+    {
+     "label": "O2026-0028350 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/cfbe61c1-aca7-4881-9ba7-defa2ad8cf48.pdf"
+    },
+    {
+     "label": "O2026-0028350 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/87f3e7a1-1ecf-42ec-b382-51d24d8c083b.pdf"
+    },
+    {
+     "label": "O2026-0028350 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/2e271682-eb24-48d0-858b-a61f327f71cb.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028671",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028671",
+   "title": "Zoning Reclassification Map No. 6-H at 2249 W Cermak Rd - App No. 23157",
+   "attachments": [
+    {
+     "label": "O2026-0028671 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/c8fea5e5-ba2e-419e-8666-982382262cd1.pdf"
+    },
+    {
+     "label": "O2026-0028671 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d10edec1-6c77-406e-aa69-27ba2a6d735f.pdf"
+    },
+    {
+     "label": "O2026-0028671 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/dbd64f22-0ec1-496f-b424-a6a1b291c2da.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028689",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028689",
+   "title": "Zoning Reclassification Map No. 13-I at 2648-2658 W Lawrence Ave - App No. 23160T1",
+   "attachments": [
+    {
+     "label": "O2026-0028689 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/0128cee4-7176-452c-ac72-cfec8809364a.pdf"
+    },
+    {
+     "label": "O2026-0028689 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/501d1b95-7796-44b6-8d28-f56fa6e37eed.pdf"
+    },
+    {
+     "label": "O2026-0028689 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/6fde20d8-7987-4b92-8a55-65b608744b3c.pdf"
+    },
+    {
+     "label": "O2026-0028689 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/af6e5af1-947b-4e96-b185-2186a30199b5.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028696",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028696",
+   "title": "Zoning Reclassification Map No. 5-K at 1745-1759 N Cicero Ave- App No. 23161T1",
+   "attachments": [
+    {
+     "label": "O2026-0028696 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/06d4aab2-486d-496c-844f-31f9d9f867bf.pdf"
+    },
+    {
+     "label": "O2026-0028696 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/74bd1fa6-06e7-45f1-bf3b-6c3caf66d2ec.pdf"
+    },
+    {
+     "label": "O2026-0028696 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/2134af6e-cab9-4251-86ed-13bb4fc3d74a.pdf"
+    },
+    {
+     "label": "O2026-0028696 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e7e5e3ef-63b7-410e-a598-3b2294642747.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028687",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028687",
+   "title": "Zoning Reclassification Map No. 16-G at 814 W 69th St - App No. 23159",
+   "attachments": [
+    {
+     "label": "O2026-0028687 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/760de97b-614d-41d0-b627-915cab7254df.pdf"
+    },
+    {
+     "label": "O2026-0028687 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/764f9b42-7d3d-42e5-ab53-309bd594efcd.pdf"
+    },
+    {
+     "label": "O2026-0028687 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/93688e73-cf0b-4414-8ada-acda11f5df3f.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028406",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028406",
+   "title": "Zoning Reclassification Map No. 12-L at 5300-5358 W 55th St, 5425-5459 S Lorel Ave and 5426-5458 S Lockwood Ave - App No. 23151",
+   "attachments": [
+    {
+     "label": "O2026-0028406 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/3cdaad22-e390-448a-8734-10ecca22a997.pdf"
+    },
+    {
+     "label": "O2026-0028406 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/5caf9105-68c2-469e-a081-ea5cb6c45cf2.pdf"
+    },
+    {
+     "label": "O2026-0028406 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/4182ccb0-eec4-47ea-8737-5f30deb3f16b.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028726",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028726",
+   "title": "Zoning Reclassification Map No. 3-F at 537-547 W Oak St and 939-957 N Larrabee St - App No. 23166T1",
+   "attachments": [
+    {
+     "label": "O2026-0028726 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/c4feaada-9249-4d7b-ba6d-6b15fa86dbf3.pdf"
+    },
+    {
+     "label": "O2026-0028726 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/a9ad3c53-225e-4bf1-830c-f037929a62dc.pdf"
+    },
+    {
+     "label": "O2026-0028726 EDS 1 redacted",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/71f06221-fd9c-4bf8-9d6f-ea52764c0619.pdf"
+    },
+    {
+     "label": "O2026-0028726 EDS 2 Redacted",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/7a404fbf-b663-40e8-95f8-cfa207a78947.pdf"
+    },
+    {
+     "label": "O2026-0028726 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/63333e1c-ffc9-41ef-a688-f0cfaa373b73.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028704",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028704",
+   "title": "Zoning Reclassification Map No. 2-I at 1140-1144 S California Ave - App No. 23165T1",
+   "attachments": [
+    {
+     "label": "O2026-0028704 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/592cc989-39c3-4e73-9d4a-5d37e57d7270.pdf"
+    },
+    {
+     "label": "O2026-0028704 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/36d367f6-29a9-4e41-b1e0-83f45aab83ba.pdf"
+    },
+    {
+     "label": "O2026-0028704 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/806e0748-0bf4-433b-9d35-77d3600946da.pdf"
+    },
+    {
+     "label": "O2026-0028704 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e610230f-f05a-44e8-87a8-11fc5a64ff81.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028747",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028747",
+   "title": "Zoning Reclassification Map No. 2-I at 1001-1003 S Campbell Ave - App No. 23177T1",
+   "attachments": [
+    {
+     "label": "O2026-0028747 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/5bcf3270-512f-400c-850e-a351a5cc67c2.pdf"
+    },
+    {
+     "label": "O2026-0028747 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/6038e613-b41a-4326-89d8-f0b760e542b2.pdf"
+    },
+    {
+     "label": "O2026-0028747 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/06f71508-8f6e-44fa-a2a7-cc78cec10c41.pdf"
+    },
+    {
+     "label": "O2026-0028747 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/ca21157f-5448-4036-b71b-d88f8ab7bd0e.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028730",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028730",
+   "title": "Zoning Reclassification Map No. 7-H at 2328-2334 W Montana St. - App No. 23167T1",
+   "attachments": [
+    {
+     "label": "O2026-0028730 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/b5332b91-1ac9-4ba4-9e51-25c13a912bcd.pdf"
+    },
+    {
+     "label": "O2026-0028730 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/8b18ffaf-e805-4898-934f-274b16c7b5cd.pdf"
+    },
+    {
+     "label": "O2026-0028730 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/391c9c63-69ad-498c-9f14-20cf841601a3.pdf"
+    },
+    {
+     "label": "O2026-0028730 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/49fbe917-cca7-42b7-9121-9d9cc840ea63.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028731",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028731",
+   "title": "Zoning Reclassification Map No. 11-K at 4301 W Montrose Ave - App No. 23168T1",
+   "attachments": [
+    {
+     "label": "O2026-0028731 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/4dda7a4d-062d-41ef-889f-389f83615160.pdf"
+    },
+    {
+     "label": "O2026-0028731 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f6f701b7-2e54-4ad0-ac12-a278cc7a02b9.pdf"
+    },
+    {
+     "label": "O2026-0028731 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d8024ea2-c938-461e-bdf6-5fca6ed9ff5a.pdf"
+    },
+    {
+     "label": "O2026-0028731 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/a2e71081-2ddd-4fbd-9bd6-6aad90913ed4.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027417",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0027417",
+   "title": "Zoning Reclassification Map No. 7-G at 1415 W Diversey Pkwy - App No. 23146T1",
+   "attachments": [
+    {
+     "label": "O2026-0027417 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/dbf1729e-f52d-4eab-866b-8a2865a8f2d2.pdf"
+    },
+    {
+     "label": "O2026-0027417 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/a3b482d0-1857-417b-abc4-bd025619474d.pdf"
+    },
+    {
+     "label": "O2026-0027417 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/a9265084-d4d7-4e02-873f-ee7ac173a715.pdf"
+    },
+    {
+     "label": "O2026-0027417 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/5e03cf14-a586-4b15-ba32-76f026cc1852.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027579",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0027579",
+   "title": "Amendment of Municipal Code Section 17-2-0207 requiring special use permits for single room occupancy residential development in RT4 through RT6.5 zoning districts",
+   "attachments": [
+    {
+     "label": "SRO permitted to special use in residential zoning 081426",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/cbbbf7f4-aeb0-4a29-a434-6d73bfc6857c.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028686",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028686",
+   "title": "Zoning Reclassification Map No. 10-E at 4200 S Dr Martin Luther King, Jr. - App No. 23158T1",
+   "attachments": [
+    {
+     "label": "O2026-0028686 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f3427890-f217-4c15-af55-0a326125c083.pdf"
+    },
+    {
+     "label": "O2026-0028686 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/19c0b87d-77f6-42a9-ba4d-88f2402ed918.pdf"
+    },
+    {
+     "label": "O2026-0028686 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/0962fcbf-9769-4e93-9fb1-d2adf4338d35.pdf"
+    },
+    {
+     "label": "O2026-0028686 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/db1c647c-6b28-4097-be38-579afd2955fc.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028741",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028741",
+   "title": "Zoning Reclassification Map No. 16-E at 370 E Garfield Blvd - App No. 23174",
+   "attachments": [
+    {
+     "label": "O2026-0028741 Statements and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d94446c5-53e9-41e0-acde-c9f0fb173b9b.pdf"
+    },
+    {
+     "label": "O2026-0028741 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/483e9beb-b3df-4bc2-bfa6-9e6a1714ac66.pdf"
+    },
+    {
+     "label": "O2026-0028741 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/4f6d2e14-bfb6-40af-b684-0180564bc4cb.pdf"
+    },
+    {
+     "label": "O2026-0028741 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/61a528fa-3f3c-4f00-897d-718be4ccfabd.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028754",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028754",
+   "title": "Zoning Reclassification Map No. 3-F at 1119-1137 N Halsted St/1134-1178 N Kingsbury St/1157-1167 Ogden Ave - App No. 23179",
+   "attachments": [
+    {
+     "label": "O2026-0028754 Statements and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/1b753be1-dad8-4210-9b2a-759928763dc3.pdf"
+    },
+    {
+     "label": "O2026-0028754 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e0833530-5dea-4375-a43d-ea0f2d1a4c37.pdf"
+    },
+    {
+     "label": "O2026-0028754 EDS_Redacted",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/ff62a70f-d549-40ac-b211-0d4f442d3e9d.pdf"
+    },
+    {
+     "label": "O2026-0028754 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/b283a1be-d49b-42e5-b1cb-76ffdd035207.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028702",
+   "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
+   "source_ref": "O2026-0028702",
+   "title": "Zoning Reclassification Map No. 1-J at 718 N St Louis Ave - App No. 23164",
+   "attachments": [
+    {
+     "label": "O2026-0028702 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/7422fd18-7737-432f-9bdc-c2ac44ae6a6e.pdf"
+    },
+    {
+     "label": "O2026-0028702 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/53951759-199e-4554-99d7-994a07581c7f.pdf"
+    },
+    {
+     "label": "O2026-0028702 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/0657e764-1da5-4982-9887-77b9d61f260e.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "cdc:2026-10-13#1207-w-leland-ave",
+   "meeting_id": "cdc:2026-10-13",
+   "source_ref": "1207 W. Leland Ave.",
+   "title": "Request for the Commission to grant authority to the Department of Housing to negotiate a redevelopment agreement with Mercy Housing Lakefront for the redevelopment of the property located at 1207 W. Leland Ave. in the Lawrence/Broadway Redevelopment Project Area, and for the Commission to recommend to the City Council the designation of Mercy Housing Lakefront as Developer.",
+   "attachments": [
+    {
+     "label": "Staff Report",
+     "url": "https://www.chicago.gov/content/dam/city/depts/dcd/agendas/cdc_materials/2026/1026/2026-10-13_1207WLelandAve_StaffReport.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": "1207 W. Leland Ave.",
+    "ward": 46,
+    "community_area": null
+   },
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "cdc:2026-10-13#758-e-111th-st",
+   "meeting_id": "cdc:2026-10-13",
+   "source_ref": "758 E. 111th St.",
+   "title": "Request for the Commission to grant authority to the Department of Planning and Development to negotiate a redevelopment agreement with Chicago Neighborhood Initiatives for the redevelopment of the property located at 758 E. 111th St. in the North Pullman Redevelopment Project Area, and for the Commission to recommend to the City Council the designation of Chicago Neighborhood Initiatives as Developer.",
+   "attachments": [
+    {
+     "label": "Staff Report",
+     "url": "https://www.chicago.gov/content/dam/city/depts/dcd/agendas/cdc_materials/2026/1026/2026-10-13_758E111St_StaffReport.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": "758 E. 111th St.",
+    "ward": 9,
+    "community_area": null
+   },
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "cpc:2026-10-15#1133-w-kinzie-st",
+   "meeting_id": "cpc:2026-10-15",
+   "source_ref": "1133 W. Kinzie St.",
+   "title": "A proposed Planned Development, submitted by MKR Owner LLC for the property generally located at 1133 W. Kinzie Street . The Applicant requests a rezoning of the subject property from M2-3 to DX-5 to construct a 5-story, 59’-11” residential building with a maximum number of 110 dwelling units, 33 car parking spaces and a maximum FAR of 5.",
+   "attachments": [
+    {
+     "label": "PD Application",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/10_2026/1133_W_Kinzie_St_PD_As_Filed_Application.pdf"
+    },
+    {
+     "label": "Presentation",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/10_2026/1133_W_Kinzie_St_PD_CPC_Presentation.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": "1133 W. Kinzie St.",
+    "ward": 27,
+    "community_area": "Near West Side"
+   },
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "cpc:2026-10-15#3700-3846-n-seminary-ave",
+   "meeting_id": "cpc:2026-10-15",
+   "source_ref": "3700-3846 N. Seminary Ave.",
+   "title": "A proposed amendment to Institutional Planned Development 108, submitted by Chicago Realty Ventures, LLC, for the property generally located at 3700-3846 N Seminary Avenue, 1100-1156 W Grace Street, and 3801-3851 N Racine Avenue . The applicant proposes amending Planned Development 108 to extend the boundaries of the Planned Development and establish three subareas. The existing surface parking lot in Subarea A is proposed to include up to 800 parking stalls as previously granted via minor change on March 4, 2014. No changes are proposed to Subarea B, which contains an existing public park. Subarea C will include an existing surface parking lot with up to 103 parking spaces. The proposed maximum Floor Area Ratio (FAR) of all subareas is 1.2.",
+   "attachments": [
+    {
+     "label": "PD Amendment Application",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/10_2026/Full_App_Packet_As_Filed.pdf"
+    },
+    {
+     "label": "Presentation",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/10_2026/PD_108_CPC_Presentation_V2_Upload.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": "3700-3846 N. Seminary Ave.",
+    "ward": 44,
+    "community_area": "Lake View"
+   },
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "cpc:2026-10-15#item-3",
+   "meeting_id": "cpc:2026-10-15",
+   "source_ref": "Item 3",
+   "title": "A resolution seeking the adoption of the South Chicago Land Use Framework plan. This planning effort led by DPD establishes a framework for future land use recommendations in the South Chicago community area in the 7 th and 10 th wards. It evaluated land use, zoning, community priorities, and redevelopment opportunities in South Chicago, informed by a public engagement process and review of community-led planning initiatives. The recommendations of the land use framework will serve as a planning tool to support strengthening residential areas, foster thriving commercial corridors, and open spaces, and achieve other local priorities",
+   "attachments": [
+    {
+     "label": "South Chicago Land Use Framework Plan (Informational webpage)",
+     "url": "https://www.chicago.gov/city/en/depts/dcd/supp_info/south-chicago-land-use-framework-plan.html"
+    },
+    {
+     "label": "Plan Draft Report",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/10_2026/South_Chicago_Land_Use_Framework_Draft_SinglePage.pdf"
+    },
+    {
+     "label": "Presentation",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/10_2026/2026.10.15_CPC_South_Chicago_Land_Use_Framework.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": null,
+    "ward": 10,
+    "community_area": null
+   },
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  }
+ ],
+ "notices": [
+  {
+   "id": "ihda:notice:49129a3b50c6",
+   "source_id": "ihda",
+   "body": "IHDA",
+   "kind": "public_notice",
+   "title": "Notice to Terminate Subsidy – Abbey Apartments at Four Lakes – Lisle, IL",
+   "url": "https://www.ihda.org/wp-content/uploads/2022/07/Preservation-Act-notice-06-30-22.pdf",
+   "detail": "",
+   "posted_at": null,
+   "deadline": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "ihda:notice:588d94bc0a3b",
+   "source_id": "ihda",
+   "body": "IHDA",
+   "kind": "comment_period",
+   "title": "Public Notice for the Public Comments Period for the 2026 Federal Housing Trust Fund Substantial Amendment to the 2026 State of Illinois Consolidated Plan – Annual Action Plan",
+   "url": "https://www.ihda.org/wp-content/uploads/2026/08/HUD-PY2026-HTF-Substantial-Amendment-Public-Notice_For-Publishing.pdf",
+   "detail": "",
+   "posted_at": null,
+   "deadline": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "ihda:notice:608e125825f2",
+   "source_id": "ihda",
+   "body": "IHDA",
+   "kind": "comment_period",
+   "title": "Public Hearing Agenda (DRAFT) For the State of Illinois Federal Housing Trust Fund Substantial Amendment to the 2026 Action Plan – Tuesday, September 15, 2026 @ 10:30 A.M.",
+   "url": "https://www.ihda.org/wp-content/uploads/2026/09/Public-Hearing-AGENDA-DRAFT-for-2026-HTF-Amendment.pdf",
+   "detail": "",
+   "posted_at": null,
+   "deadline": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "ihda:notice:7ab127d8183f",
+   "source_id": "ihda",
+   "body": "IHDA",
+   "kind": "comment_period",
+   "title": "Presentations under the Municipal Advisor Registration Rules",
+   "url": "https://www.ihda.org/wp-content/uploads/2025/05/IHDA-IRMA-Exemption_Updated-2.2025.pdf",
+   "detail": "",
+   "posted_at": null,
+   "deadline": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "ihda:notice:c8cf4b4ee245",
+   "source_id": "ihda",
+   "body": "IHDA",
+   "kind": "hearing",
+   "title": "Pheasant Ridge Hunter Apartments – October 15, 2026 at 10:00 a.m.",
+   "url": "https://www.ihda.org/wp-content/uploads/2026/10/Pheasant-Ridge-Hunter-Apartments-TEFRA_October_100826.pdf",
+   "detail": "",
+   "posted_at": null,
+   "deadline": "2026-10-15T10:00:00-05:00",
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "ihda:notice:c9fec879f825",
+   "source_id": "ihda",
+   "body": "IHDA",
+   "kind": "hearing",
+   "title": "Revenue Bonds 2026 Series LMNO – October 15, 2026 at 10:30 a.m.",
+   "url": "https://www.ihda.org/wp-content/uploads/2026/10/Revenue-Bonds-2026-Series-LMNO-TEFRA_October.pdf",
+   "detail": "",
+   "posted_at": null,
+   "deadline": "2026-10-15T10:30:00-05:00",
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "ihda:notice:f38be4c0418c",
+   "source_id": "ihda",
+   "body": "IHDA",
+   "kind": "comment_period",
+   "title": "Public Notice on IHDA’s Draft 2027-2028 Qualified Allocation Plan – English – Spanish",
+   "url": "https://www.ihda.org/wp-content/uploads/2026/08/PUBLIC-NOTICE_IHDA-DRAFT-2027-2028-QAP-publication.pdf",
+   "detail": "",
+   "posted_at": null,
+   "deadline": null,
+   "enrichment": null,
+   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
+   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  }
+ ],
+ "events": []
+}

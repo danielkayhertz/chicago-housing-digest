@@ -1,0 +1,7 @@
+# Hand corrections, keyed by item or notice id (copy the id from items.json).
+# Allowed fields: housing_relevant, summary, relevance_reason, categories (list of ids), geography {address, ward, community_area}.
+# Example:
+#   "elms:A44FB4F3-45B0-F111-AAAC-001DD80B58E5#O2026-0025391":
+#     housing_relevant: true
+#     categories: [ahpaa]
+overrides: {}
