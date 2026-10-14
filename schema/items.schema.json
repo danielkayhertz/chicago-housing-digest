@@ -1,0 +1,728 @@
+{
+  "$defs": {
+    "Attachment": {
+      "properties": {
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "label",
+        "url"
+      ],
+      "title": "Attachment",
+      "type": "object"
+    },
+    "CategoryHit": {
+      "properties": {
+        "detail": {
+          "default": "",
+          "title": "Detail",
+          "type": "string"
+        },
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "via": {
+          "enum": [
+            "model",
+            "body",
+            "keyword",
+            "override"
+          ],
+          "title": "Via",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "via"
+      ],
+      "title": "CategoryHit",
+      "type": "object"
+    },
+    "ChangeEvent": {
+      "properties": {
+        "at": {
+          "format": "date-time",
+          "title": "At",
+          "type": "string"
+        },
+        "ref_id": {
+          "title": "Ref Id",
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "meeting_new",
+            "agenda_posted",
+            "item_added",
+            "meeting_cancelled",
+            "meeting_rescheduled",
+            "outcome_recorded",
+            "notice_new"
+          ],
+          "title": "Type",
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "ref_id",
+        "at"
+      ],
+      "title": "ChangeEvent",
+      "type": "object"
+    },
+    "Enrichment": {
+      "properties": {
+        "categories": {
+          "items": {
+            "$ref": "#/$defs/CategoryHit"
+          },
+          "title": "Categories",
+          "type": "array"
+        },
+        "content_hash": {
+          "default": "",
+          "title": "Content Hash",
+          "type": "string"
+        },
+        "entities": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Entities",
+          "type": "array"
+        },
+        "figures": {
+          "$ref": "#/$defs/Figures"
+        },
+        "geography": {
+          "$ref": "#/$defs/Geography"
+        },
+        "housing_relevant": {
+          "default": false,
+          "title": "Housing Relevant",
+          "type": "boolean"
+        },
+        "model": {
+          "default": "",
+          "title": "Model",
+          "type": "string"
+        },
+        "overridden": {
+          "default": false,
+          "title": "Overridden",
+          "type": "boolean"
+        },
+        "relevance_reason": {
+          "default": "",
+          "title": "Relevance Reason",
+          "type": "string"
+        },
+        "source_quality": {
+          "default": "none",
+          "enum": [
+            "full",
+            "partial",
+            "scanned",
+            "none"
+          ],
+          "title": "Source Quality",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "ok",
+            "failed",
+            "screened_out"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "summary": {
+          "default": "",
+          "title": "Summary",
+          "type": "string"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "title": "Enrichment",
+      "type": "object"
+    },
+    "Figures": {
+      "properties": {
+        "affordable_units": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Affordable Units"
+        },
+        "units": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Units"
+        }
+      },
+      "title": "Figures",
+      "type": "object"
+    },
+    "Geography": {
+      "properties": {
+        "address": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Address"
+        },
+        "community_area": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Community Area"
+        },
+        "ward": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ward"
+        }
+      },
+      "title": "Geography",
+      "type": "object"
+    },
+    "Item": {
+      "properties": {
+        "attachments": {
+          "items": {
+            "$ref": "#/$defs/Attachment"
+          },
+          "title": "Attachments",
+          "type": "array"
+        },
+        "enrichment": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Enrichment"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "extraction": {
+          "default": "structured",
+          "enum": [
+            "structured",
+            "ai_extracted"
+          ],
+          "title": "Extraction",
+          "type": "string"
+        },
+        "first_seen_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "First Seen At"
+        },
+        "geography_hint": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Geography"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "last_changed_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Last Changed At"
+        },
+        "meeting_id": {
+          "title": "Meeting Id",
+          "type": "string"
+        },
+        "outcome": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Outcome"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source_ref": {
+          "title": "Source Ref",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "meeting_id",
+        "source_ref",
+        "title"
+      ],
+      "title": "Item",
+      "type": "object"
+    },
+    "Meeting": {
+      "properties": {
+        "agenda_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Agenda Url"
+        },
+        "body": {
+          "title": "Body",
+          "type": "string"
+        },
+        "body_id": {
+          "title": "Body Id",
+          "type": "string"
+        },
+        "detail_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Detail Url"
+        },
+        "first_seen_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "First Seen At"
+        },
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "item_count_relevant": {
+          "default": 0,
+          "title": "Item Count Relevant",
+          "type": "integer"
+        },
+        "item_count_total": {
+          "default": 0,
+          "title": "Item Count Total",
+          "type": "integer"
+        },
+        "jurisdiction": {
+          "default": "chicago",
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "last_changed_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Last Changed At"
+        },
+        "location": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Location"
+        },
+        "minutes_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Minutes Url"
+        },
+        "needs_ai_extraction": {
+          "default": false,
+          "title": "Needs Ai Extraction",
+          "type": "boolean"
+        },
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "start": {
+          "format": "date-time",
+          "title": "Start",
+          "type": "string"
+        },
+        "status": {
+          "default": "scheduled",
+          "enum": [
+            "scheduled",
+            "cancelled",
+            "rescheduled",
+            "held",
+            "unknown"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "time_known": {
+          "default": true,
+          "title": "Time Known",
+          "type": "boolean"
+        },
+        "video_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Video Url"
+        }
+      },
+      "required": [
+        "id",
+        "source_id",
+        "body",
+        "body_id",
+        "start"
+      ],
+      "title": "Meeting",
+      "type": "object"
+    },
+    "Notice": {
+      "properties": {
+        "body": {
+          "title": "Body",
+          "type": "string"
+        },
+        "deadline": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Deadline"
+        },
+        "detail": {
+          "default": "",
+          "title": "Detail",
+          "type": "string"
+        },
+        "enrichment": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Enrichment"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "first_seen_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "First Seen At"
+        },
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "comment_period",
+            "hearing",
+            "funding_round",
+            "report",
+            "public_notice",
+            "page_change"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "last_changed_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Last Changed At"
+        },
+        "posted_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Posted At"
+        },
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "source_id",
+        "body",
+        "kind",
+        "title",
+        "url"
+      ],
+      "title": "Notice",
+      "type": "object"
+    },
+    "Outcome": {
+      "properties": {
+        "action": {
+          "title": "Action",
+          "type": "string"
+        },
+        "date": {
+          "format": "date",
+          "title": "Date",
+          "type": "string"
+        },
+        "tally": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tally"
+        }
+      },
+      "required": [
+        "action",
+        "date"
+      ],
+      "title": "Outcome",
+      "type": "object"
+    },
+    "SourceStatus": {
+      "properties": {
+        "last_success_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Last Success At"
+        },
+        "message": {
+          "default": "",
+          "title": "Message",
+          "type": "string"
+        },
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "ok",
+            "stale",
+            "error"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "status"
+      ],
+      "title": "SourceStatus",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "events": {
+      "items": {
+        "$ref": "#/$defs/ChangeEvent"
+      },
+      "title": "Events",
+      "type": "array"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "items": {
+      "items": {
+        "$ref": "#/$defs/Item"
+      },
+      "title": "Items",
+      "type": "array"
+    },
+    "meetings": {
+      "items": {
+        "$ref": "#/$defs/Meeting"
+      },
+      "title": "Meetings",
+      "type": "array"
+    },
+    "notices": {
+      "items": {
+        "$ref": "#/$defs/Notice"
+      },
+      "title": "Notices",
+      "type": "array"
+    },
+    "sources": {
+      "items": {
+        "$ref": "#/$defs/SourceStatus"
+      },
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "generated_at"
+  ],
+  "title": "Digest",
+  "type": "object"
+}
