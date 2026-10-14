@@ -168,23 +168,44 @@ def resolve_geography(hint: Geography | None, address: str | None, geo) -> Geogr
     return g
 
 
-def apply_overrides(e: Enrichment, ov: dict | None) -> Enrichment:
+OVERRIDABLE = ("housing_relevant", "relevance_reason", "summary", "categories", "geography", "entities", "figures")
+
+
+def apply_overrides(e: Enrichment, ov: dict | None, rec_id: str = "?") -> Enrichment:
+    """Hand corrections win over the model. A bad key or value is logged and skipped; it never aborts the run."""
     if not ov:
         return e
-    e = e.model_copy(deep=True)
-    for f in ("housing_relevant", "summary", "relevance_reason"):
-        if f in ov:
-            setattr(e, f, ov[f])
-    if "categories" in ov:
-        e.categories = [CategoryHit(id=c, via="override") for c in ov["categories"]]
-    if "geography" in ov:
-        e.geography = Geography(**{**e.geography.model_dump(), **ov["geography"]})
-    if e.status == "failed" and ov.get("summary"):
-        e.status = "ok"
-    if e.status == "screened_out" and ov.get("housing_relevant"):
-        e.status = "ok"
-    e.overridden = True
-    return e
+    if not isinstance(ov, dict):
+        log.warning("%s: override is not a mapping; ignored", rec_id)
+        return e
+    data = e.model_dump()
+    applied = []
+    for key, value in ov.items():
+        if key not in OVERRIDABLE:
+            log.warning("%s: override key %r is not allowed (allowed: %s); ignored", rec_id, key, ", ".join(OVERRIDABLE))
+            continue
+        try:
+            if key == "categories":
+                if not isinstance(value, list):
+                    raise TypeError("categories must be a list of ids")
+                value = [{"id": c, "via": "override", "detail": ""} for c in value]
+            elif key in ("geography", "figures"):
+                value = {**data[key], **value}
+            Enrichment.model_validate({**data, key: value})
+        except (ValidationError, TypeError, ValueError) as ex:
+            log.warning("%s: override %r is invalid, ignored: %s", rec_id, key, str(ex).splitlines()[0] if str(ex) else ex)
+            continue
+        data[key] = value
+        applied.append(key)
+    if not applied:
+        return e
+    out = Enrichment.model_validate(data)
+    if out.status == "failed" and ov.get("summary") and "summary" in applied:
+        out.status = "ok"
+    if out.status == "screened_out" and ov.get("housing_relevant") and "housing_relevant" in applied:
+        out.status = "ok"
+    out.overridden = True
+    return out
 
 
 def _prompt(rec: Record, text: str) -> str:
@@ -270,7 +291,7 @@ def enrich_record(rec: Record, ctx: EnrichContext) -> Enrichment:
                 ctx.cache.set(rec.id, {"content_hash": h, "failed_attempts": attempts + 1})
             else:
                 ctx.cache.set(rec.id, e.model_dump(mode="json"))
-    return apply_overrides(e, ctx.overrides.get(rec.id))
+    return apply_overrides(e, ctx.overrides.get(rec.id), rec.id)
 
 
 def enrich_digest(digest: Digest, ctx: EnrichContext) -> Digest:

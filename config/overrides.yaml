@@ -1,5 +1,8 @@
 # Hand corrections, keyed by item or notice id (copy the id from items.json).
-# Allowed fields: housing_relevant, summary, relevance_reason, categories (list of ids), geography {address, ward, community_area}.
+# Allowed fields (anything else, or a value of the wrong type, is skipped with a warning in the run log):
+#   housing_relevant (true/false), summary, relevance_reason,
+#   categories (list of category ids), geography {address, ward, community_area} (only the keys you give change),
+#   entities (list of names; replaces the whole list), figures {units, affordable_units} (only the keys you give change).
 # Example:
 #   "elms:A44FB4F3-45B0-F111-AAAC-001DD80B58E5#O2026-0025391":
 #     housing_relevant: true

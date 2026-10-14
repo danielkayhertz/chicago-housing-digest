@@ -241,3 +241,35 @@ def test_text_diff_notice_does_not_fetch_the_page(tmp_path):
     e = enrich_record(record_for_notice(n), c)
     assert c.fetcher.calls == [] and e.source_quality == "none"
     assert "Comment period open" in llm.calls[0]["content"][-1]["text"]
+
+
+def test_overrides_accept_entities_figures_and_geography_merge(tmp_path):
+    llm = FakeLLM({"summarize": [summary()]})
+    rid = "cpc:2026-10-15#1133-w-kinzie-st"
+    ov = {rid: {"entities": ["Corrected Owner LLC"], "figures": {"affordable_units": 240}, "geography": {"ward": 2}}}
+    e = enrich_record(record_for_item(pd_item(), CPC), ctx(tmp_path, llm, overrides=ov))
+    assert e.entities == ["Corrected Owner LLC"] and e.overridden
+    assert (e.figures.units, e.figures.affordable_units) == (1200, 240)   # figures merge key by key
+    assert e.geography.ward == 2 and e.geography.address is None
+
+
+def test_unknown_override_key_warns_and_is_ignored(tmp_path, caplog):
+    llm = FakeLLM({"summarize": [summary()]})
+    rid = "cpc:2026-10-15#1133-w-kinzie-st"
+    ov = {rid: {"status": "failed", "summary": "Fixed summary."}}
+    with caplog.at_level("WARNING", logger="digest.enrich"):
+        e = enrich_record(record_for_item(pd_item(), CPC), ctx(tmp_path, llm, overrides=ov))
+    assert e.status == "ok" and e.summary == "Fixed summary."           # the valid key still applies
+    assert any(rid in r.message and "'status'" in r.message for r in caplog.records)
+
+
+def test_invalid_override_value_warns_and_is_ignored(tmp_path, caplog):
+    llm = FakeLLM({"summarize": [summary()]})
+    rid = "cpc:2026-10-15#1133-w-kinzie-st"
+    ov = {rid: {"figures": {"units": "lots"}, "categories": "ahpaa", "entities": ["Fine LLC"]}}
+    with caplog.at_level("WARNING", logger="digest.enrich"):
+        e = enrich_record(record_for_item(pd_item(), CPC), ctx(tmp_path, llm, overrides=ov))
+    assert e.figures.units == 1200 and [c.via for c in e.categories] != ["override"] * len(e.categories)
+    assert e.entities == ["Fine LLC"]
+    msgs = [r.message for r in caplog.records]
+    assert any(rid in m and "'figures'" in m for m in msgs) and any(rid in m and "'categories'" in m for m in msgs)
