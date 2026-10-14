@@ -53,7 +53,8 @@ def changes(page: dict, prev: dict | None, cur: dict, now: dt.datetime, source_i
         return []
     out = [
         Notice(id=f"{source_id}:{page['id']}:{_h(url)}", source_id=source_id, body=page["body"],
-               kind="page_change", title=f"New on {page['title']}: {label}", url=url, detail=label, posted_at=now)
+               kind="page_change", title=f"New on {page['title']}: {label}", url=url, detail=label,
+               new_link=True, posted_at=now)
         for url, label in cur["links"].items() if url not in prev["links"]
     ]
     if not out and cur["text"] != prev["text"]:

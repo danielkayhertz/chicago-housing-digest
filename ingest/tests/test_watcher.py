@@ -38,7 +38,7 @@ def test_new_link_becomes_notice(tmp_path):
     n = res.notices[0]
     assert n.kind == "page_change" and n.title == "New on DOH home: 2027 Multifamily RFP"
     assert n.url == "https://www.chicago.gov/content/dam/city/depts/doh/new-rfp.pdf"
-    assert n.id.startswith("watch:doh-home:")
+    assert n.id.startswith("watch:doh-home:") and n.new_link
     assert run(tmp_path, changed).notices == []  # no repeat once the snapshot is updated
 
 
@@ -48,7 +48,7 @@ def test_text_only_change_describes_added_lines(tmp_path):
     assert len(res.notices) == 1
     assert res.notices[0].title == "DOH home page updated"
     assert "Comment period open until November 30" in res.notices[0].detail
-    assert res.notices[0].url == URL
+    assert res.notices[0].url == URL and not res.notices[0].new_link
 
 
 def test_one_page_failing_is_a_warning(tmp_path):

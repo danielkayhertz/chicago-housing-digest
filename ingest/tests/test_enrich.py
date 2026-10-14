@@ -217,3 +217,27 @@ def test_failed_record_is_retried_three_times_then_given_up(tmp_path):
     c.fetcher.routes.append(("pd-v2", PD_HTML))
     enrich_record(changed, c)
     assert len(llm.calls) == 4
+
+
+def _page_notice(**kw):
+    base = dict(id="watch:doh-home:abc", source_id="watch", body="Chicago Department of Housing", kind="page_change",
+                title="New on DOH home: 2027 RFP", url="https://x/new-rfp.html", detail="2027 RFP", new_link=True)
+    return Notice(**{**base, **kw})
+
+
+def test_new_link_html_notice_reads_the_linked_page(tmp_path):
+    llm = FakeLLM({"summarize": [summary(categories=[], entities=[], units=None, affordable_units=None, address=None)]})
+    c = ctx(tmp_path, llm, routes=[("new-rfp.html", b"<html><body><p>RFP text about 300 homes.</p></body></html>")])
+    e = enrich_record(record_for_notice(_page_notice()), c)
+    assert c.fetcher.calls == ["https://x/new-rfp.html"]
+    assert "RFP text about 300 homes." in llm.calls[0]["content"][-1]["text"]
+    assert e.source_quality == "full"
+
+
+def test_text_diff_notice_does_not_fetch_the_page(tmp_path):
+    llm = FakeLLM({"summarize": [summary(categories=[], entities=[], units=None, affordable_units=None, address=None)]})
+    n = _page_notice(title="DOH home page updated", url="https://x/doh.html", detail="Comment period open", new_link=False)
+    c = ctx(tmp_path, llm, routes=[])
+    e = enrich_record(record_for_notice(n), c)
+    assert c.fetcher.calls == [] and e.source_quality == "none"
+    assert "Comment period open" in llm.calls[0]["content"][-1]["text"]

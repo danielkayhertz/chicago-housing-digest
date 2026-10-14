@@ -105,6 +105,7 @@ class Notice(BaseModel):
     title: str
     url: str
     detail: str = ""
+    new_link: bool = False  # a page_change notice whose url is a newly linked document (not a text diff)
     posted_at: dt.datetime | None = None
     deadline: dt.datetime | None = None
     enrichment: Enrichment | None = None

@@ -77,7 +77,10 @@ def record_for_item(item: Item, meeting: Meeting | None) -> Record:
 
 
 def record_for_notice(n: Notice) -> Record:
-    urls = [] if n.kind == "page_change" and not n.url.lower().endswith(".pdf") else [n.url]
+    # A newly linked document is read (HTML or PDF). A text-diff notice's url is the whole watched page: use the
+    # diff in extra_text only. Notices saved before new_link existed keep the old rule (PDF urls only).
+    fetch = n.kind != "page_change" or n.new_link or n.url.lower().endswith(".pdf")
+    urls = [n.url] if fetch else []
     deadline = f"; deadline {n.deadline:%B %d, %Y}" if n.deadline else ""
     return Record(id=n.id, body=n.body, title=n.title, context=f"{n.body} public notice ({n.kind}){deadline}",
                   urls=urls, extra_text=n.detail)

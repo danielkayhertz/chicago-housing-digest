@@ -568,6 +568,11 @@
           "default": null,
           "title": "Last Changed At"
         },
+        "new_link": {
+          "default": false,
+          "title": "New Link",
+          "type": "boolean"
+        },
         "posted_at": {
           "anyOf": [
             {
