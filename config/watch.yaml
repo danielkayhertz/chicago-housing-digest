@@ -1,5 +1,12 @@
 # Pages whose changes become page_change notices. Add pages freely; the first run of a page records a baseline.
+# thecha.org pages are omitted because the site 403s httpx regardless of headers.
 pages:
+  - {id: doh-home, title: Department of Housing home, body: Chicago Department of Housing,
+     url: "https://www.chicago.gov/city/en/depts/doh.html"}
+  - {id: doh-reports, title: "DOH Data, Plans and Reports", body: Chicago Department of Housing,
+     url: "https://www.chicago.gov/city/en/depts/doh/provdrs/goals_reports.html"}
+  - {id: doh-qap, title: DOH Qualified Allocation Plan, body: Chicago Department of Housing,
+     url: "https://www.chicago.gov/city/en/depts/doh/supp_info/2025-qualified-allocation-plan.html"}
   - {id: clihtf-quarterly, title: CLIHTF quarterly reports, body: CLIHTF,
      url: "https://clihtf.org/about-history/quarterly-reports/"}
   - {id: clihtf-annual, title: CLIHTF annual reports, body: CLIHTF,

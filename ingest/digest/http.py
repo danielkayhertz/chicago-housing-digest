@@ -27,6 +27,17 @@ class NotFound(FetchError):
     pass
 
 
+CHICAGO_CONTENT_PREFIX = "https://www.chicago.gov/content/city/en/"
+CHICAGO_PUBLIC_PREFIX = "https://www.chicago.gov/city/en/"
+
+
+def public_url(url: str) -> str:
+    """chicago.gov 403s non-browser clients on /content/city/en/ paths but serves the same pages at /city/en/."""
+    if url.startswith(CHICAGO_CONTENT_PREFIX):
+        return CHICAGO_PUBLIC_PREFIX + url[len(CHICAGO_CONTENT_PREFIX):]
+    return url
+
+
 def url_key(url: str, params: dict | None = None) -> str:
     return str(httpx.URL(url, params=params))
 
@@ -51,6 +62,7 @@ class HttpFetcher:
         return {"User-Agent": ua, "Accept": "*/*"}
 
     def get_bytes(self, url: str, params: dict | None = None) -> bytes:
+        url = public_url(url)
         host = urlsplit(url).hostname or ""
         key = url_key(url, params)
         for attempt in range(self.retries + 1):
