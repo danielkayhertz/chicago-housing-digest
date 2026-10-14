@@ -3,6 +3,10 @@
   -87.688467125698,
   41.869258180405
  ],
+ "1001 South Campbell Avenue, Chicago, IL": [
+  -87.688467125698,
+  41.869258180405
+ ],
  "111 E. Wacker, Suite 1000, Chicago, IL 60601, Chicago, IL": [
   -87.623816131427,
   41.888136033696
@@ -10,6 +14,14 @@
  "111 East Wacker Drive, Suite 1000, Chicago, Illinois 60601, Chicago, IL": [
   -87.623816131427,
   41.888136033696
+ ],
+ "1140 N California Ave, Chicago, IL": [
+  -87.696935317474,
+  41.902080345102
+ ],
+ "1140 South California Avenue, Chicago, IL": [
+  -87.695997946649,
+  41.867179390242
  ],
  "11414 S Halsted St, Chicago, IL": [
   -87.642274840572,
@@ -23,7 +35,15 @@
   -87.597587762623,
   41.65681909646
  ],
+ "1335 South Springfield Avenue, Chicago, IL": [
+  -87.722565957987,
+  41.863066161037
+ ],
  "1415 W Diversey Pkwy, Chicago, IL": [
+  -87.664255773958,
+  41.932411248433
+ ],
+ "1415 West Diversey Parkway, Chicago, IL": [
   -87.664255773958,
   41.932411248433
  ],
@@ -31,11 +51,23 @@
   -87.588520755435,
   41.772344893333
  ],
+ "1509 E. 67th Pl, Chicago, IL": [
+  -87.588520755435,
+  41.772344893333
+ ],
  "1600 W Chicago Ave and 1601-1759 W Chicago Ave, Chicago, IL": [
   -87.642929017442,
   41.896476005759
  ],
+ "1600 W. Chicago Ave, Chicago, IL": [
+  -87.667371092178,
+  41.896129698919
+ ],
  "1644 N Winchester Ave, Chicago, IL": [
+  -87.676342968496,
+  41.911328341089
+ ],
+ "1644 North Winchester Avenue, Chicago, IL": [
   -87.676342968496,
   41.911328341089
  ],
@@ -43,13 +75,49 @@
   -87.672976299231,
   42.010165653796
  ],
+ "1745 N. Cicero Avenue, Chicago, IL": [
+  -87.745868027326,
+  41.912558081658
+ ],
+ "1807 West Augusta Boulevard, Chicago, IL": [
+  -87.672576795507,
+  41.899571695091
+ ],
+ "1921 West Chicago Avenue, Chicago, IL": [
+  -87.675492499794,
+  41.895880141876
+ ],
  "1933 N. Winchester Ave, Chicago, IL": [
   -87.676305949295,
   41.916737992517
  ],
+ "1933 North Winchester Avenue, Chicago, IL": [
+  -87.676305949295,
+  41.916737992517
+ ],
+ "1948 W 63rd St to Reynoso Insulation LLC under ChiBlockBuilder, Chicago, IL": [
+  -87.673096156109,
+  41.779384891794
+ ],
+ "2054 W Warren Blvd to EGP Warren Apartments LLC under ChiBlockBuilder, Chicago, IL": [
+  -87.67800119373,
+  41.882268529982
+ ],
  "2054 W. Warren Blvd, Chicago, IL": [
   -87.67800119373,
   41.882268529982
+ ],
+ "208 S. LaSalle Street, Chicago, IL": [
+  -87.632360963434,
+  41.879131917148
+ ],
+ "2142 W 18th Place, Chicago, IL": [
+  -87.679482470063,
+  41.856765067217
+ ],
+ "2156 W Warren Blvd, Chicago, IL": [
+  -87.680610839869,
+  41.882226785124
  ],
  "2222 S. Michigan Avenue, Chicago, IL": [
   -87.623872323732,
@@ -59,13 +127,45 @@
   -87.682326881028,
   41.852017813379
  ],
+ "2249 West Cermak Road, Chicago, IL": [
+  -87.682326881028,
+  41.852017813379
+ ],
  "225 N. Michigan Drive, Suite 800, Chicago, IL 60601, Chicago, IL": [
   -87.624455476695,
   41.886564322674
  ],
+ "2315 West Barry Avenue, Chicago, IL": [
+  -87.68638649514,
+  41.937593342485
+ ],
  "2328 W. Montana St., Chicago, IL": [
   -87.686067474287,
   41.925742999636
+ ],
+ "2342 West Jackson Boulevard, Chicago, IL": [
+  -87.684705996496,
+  41.877624389999
+ ],
+ "2400 W Grenshaw St, Chicago, IL": [
+  -87.686140059062,
+  41.867578458062
+ ],
+ "2648 West Lawrence Avenue, Chicago, IL": [
+  -87.695358658305,
+  41.968615648411
+ ],
+ "3244 West Bryn Mawr Avenue, Chicago, IL": [
+  -87.710419156927,
+  41.983107920511
+ ],
+ "3415\u20133449 West Jackson Blvd., Chicago, IL": [
+  -87.712160075308,
+  41.877201065696
+ ],
+ "3439 South Morgan Street, Chicago, IL": [
+  -87.650907782807,
+  41.831500132861
  ],
  "3600 \u2013 4859 N. Western Avenue, Chicago, IL": [
   -87.688872433328,
@@ -79,9 +179,21 @@
   -87.619161715423,
   41.826564625305
  ],
+ "3729, Chicago, IL": [
+  -87.7551136,
+  41.9678635
+ ],
+ "3800 S State St, Chicago, IL": [
+  -87.626503418162,
+  41.825481644651
+ ],
  "4001 N. Ravenswood Avenue, Chicago, IL": [
   -87.673716133549,
   41.954281667426
+ ],
+ "4125 W 5th Ave, Chicago, IL": [
+  -87.728683474783,
+  41.872022263706
  ],
  "4125 and 4127 W 5th Ave, Chicago, IL": [
   -87.72874995122,
@@ -91,13 +203,33 @@
   -87.737092950691,
   41.960789893409
  ],
+ "4549 S Indiana Ave to Click Development LLC 4549 Indiana under ChiBlockBuilder, Chicago, IL": [
+  -87.621208665878,
+  41.81205153392
+ ],
  "4549 S Indiana Ave, Chicago, IL": [
   -87.621208665878,
   41.81205153392
  ],
+ "4639 S Wallace Street, Chicago, IL": [
+  -87.640619834382,
+  41.809772520622
+ ],
+ "4841 North Lipps Avenue, Chicago, IL": [
+  -87.759605385773,
+  41.968359710403
+ ],
  "4849, 4853 and 4857 W West End Ave, Chicago, IL": [
   -87.7468529864,
   41.883054695545
+ ],
+ "4849, Chicago, IL": [
+  -87.7472528,
+  41.8949107
+ ],
+ "4927 S Forrestville Ave, Chicago, IL": [
+  -87.612497961997,
+  41.805294189646
  ],
  "4927, 4935 and 4937 S Forrestville Ave, Chicago, IL": [
   -87.612494138274,
@@ -107,6 +239,26 @@
   -87.632308004232,
   41.803351946175
  ],
+ "5300 W 55th St, Chicago, IL": [
+  -87.755053537192,
+  41.792905024961
+ ],
+ "5312 S. Kenneth Avenue, Chicago, IL": [
+  -87.734361060067,
+  41.796601958618
+ ],
+ "537 West Oak Street, Chicago, IL": [
+  -87.641499983046,
+  41.90038360371
+ ],
+ "5482 South Ridgewood Court, Chicago, IL": [
+  -87.592647516475,
+  41.796082785205
+ ],
+ "5550 Abbey Drive, Lisle, Illinois 60532": [
+  -88.087100882323,
+  41.783225390293
+ ],
  "5550 Abbey Drive, Lisle, Illinois 60532, Chicago, IL": [
   -88.087100882323,
   41.783225390293
@@ -115,9 +267,21 @@
   -87.660894684568,
   42.005769179815
  ],
+ "718 N St Louis Ave, Chicago, IL": [
+  -87.713917825617,
+  41.894324416121
+ ],
+ "7353 South Indiana Avenue, Chicago, IL": [
+  -87.619905604503,
+  41.761003575413
+ ],
  "758 E. 111th St., Chicago, IL": [
   -87.604948029995,
   41.692885220957
+ ],
+ "814 W 69th St, Chicago, IL": [
+  -87.64473768959,
+  41.768891528551
  ],
  "920 S. Campbell Avenue, Chicago, IL": [
   -87.688635179758,

@@ -412,6 +412,2112 @@
   "status": "ok",
   "summary": "The Plan Commission is asked to adopt the DPD-led South Chicago Land Use Framework, a planning tool for land use, zoning and redevelopment in parts of the 7th and 10th wards, including strengthening residential areas."
  },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0025391": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "0527ae4cde4418a3",
+  "entities": [
+   "CTA",
+   "METRA"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The ordinance amends the Zoning Ordinance to set TOD street rezoning requirements (B or C1 districts with minimum 3 FAR) and lowers the residential parking cap near transit, affecting where and how housing can be built.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Proposed ordinance adds Section 17-3-0600 creating TOD streets near CTA/Metra stations, requiring rezonings there to B or C1 districts with at least 3 FAR and setting design standards. It also lowers the residential parking cap near transit to 0.5 spaces per unit."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0025393": {
+  "categories": [
+   {
+    "detail": "planned development",
+    "id": "ahpaa",
+    "via": "keyword"
+   },
+   {
+    "detail": "ARO",
+    "id": "housing-agenda",
+    "via": "keyword"
+   },
+   {
+    "detail": "",
+    "id": "social-housing",
+    "via": "model"
+   }
+  ],
+  "content_hash": "a01aa071b9b38399",
+  "entities": [
+   "P.S. Bronzeville, LLC"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "3800-3958 S State St, 3901-3959 S Dearborn St, 3900-3958 S Dearborn St, 3901-3959 S Federal St, 3900-3946 S Federal St, 2-24 W Pershing Rd, 1-109 W Pershing Rd and 2-52 W 40th St",
+   "community_area": "Douglas",
+   "ward": 3
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning amends Business Planned Development No. 1143 to expand its boundaries onto RS-3 and RT-4 land and City-owned parcels for a phased mixed-use project that includes multi-family housing and is subject to the ARO.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "P.S. Bronzeville, LLC seeks to rezone RS-3, RT-4 and PD 1143 land near 39th and State to an expanded Business Planned Development No. 1143. Phase I is a grocery-anchored mixed-use development; Phase II, north of Pershing, would include multi-family housing. The application checks that the project is subject to the ARO."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0026239": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "0da4d0faef8d8800",
+  "entities": [
+   "Matthew J. Martin"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "4001-4799 N. Ravenswood Avenue",
+   "community_area": "Lake View",
+   "ward": 47
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "TOD street designation changes zoning rules (such as parking and density allowances) for residential and mixed-use development along a corridor, affecting housing supply.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "Ordinance sponsored by Alderman Matthew J. Martin (47th Ward) would designate N Ravenswood Ave between W Irving Park Rd and W Lawrence Ave as a Transit Oriented Development street, amending Municipal Code Section 17-3-0602-F and Map No. 11-H."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0026261": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "42c999e4fd051f71",
+  "entities": [
+   "Matthew J. Martin",
+   "Andre Vasquez Jr."
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "3600 \u2013 4859 N. Western Avenue",
+   "community_area": "Lincoln Square",
+   "ward": 47
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "Designating a TOD street in the Chicago Zoning Ordinance changes zoning rules that govern residential density and parking for development along N Western Ave.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "Ordinance would designate N Western Avenue between W Addison St and W Ainslie St as a Transit Oriented Development (TOD) Street and amend Municipal Code Section 17-3-0602-F accordingly. Sponsored by Aldermen Matthew J. Martin (47th) and Andre Vasquez Jr. (40th)."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027173": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "0dec91e3c587582e",
+  "entities": [
+   "Raymond A. Lopez"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "4639-43 S Wallace Street",
+   "community_area": "New City",
+   "ward": 15
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "A residential downzoning from B2-3 mixed-use to RS-3 single-unit detached house district changes the housing that can be built on the site.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Ordinance sponsored by Ald. Raymond A. Lopez (15th Ward) would rezone 4639-43 S Wallace Street on Map No. 10-F from B2-3 Neighborhood Mixed-Use District to RS-3 Residential Single Unit (Detached House) District."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027299": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "d4f137e8d62a0b53",
+  "entities": [
+   "1807-09 W. Augusta Blvd LLC",
+   "M15 Land Investments LLC"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 6
+  },
+  "geography": {
+   "address": "1807-09 West Augusta Boulevard",
+   "community_area": "West Town",
+   "ward": 36
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The Type 1 zoning application would allow a new six-unit residential building on a lot that is currently vacant and partly occupied by a two-story residential building.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "1807-09 W. Augusta Blvd LLC seeks a Type 1 map amendment (App. No. 23130T1) for 1807-09 W. Augusta Blvd, keeping RM-4.5 zoning. It would build a three-story, six-unit residential building with a five-space garage, plus parking and setback relief. The owner is M15 Land Investments LLC."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027331": {
+  "categories": [],
+  "content_hash": "2d760fd98346df3a",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning from DX-5 to DS-3 at 1608 S. Wabash is for a storage and delivery use of construction materials with zero dwelling units and no residential use proposed, so it is a purely commercial/industrial map amendment that does not add, remove, or change homes.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": ""
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027372": {
+  "categories": [],
+  "content_hash": "c41c23d544853e8b",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "The item rezones a vacant lot from RM-5 to B3-3 for a restaurant building with zero dwelling units and no residential use proposed, so it is a purely commercial rezoning that does not add, remove, or change homes.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": ""
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027417": {
+  "categories": [],
+  "content_hash": "7afa316fe01a120b",
+  "entities": [
+   "EIG14T NF IL CHI W DIVERSEY LLC"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "1415 West Diversey Parkway",
+   "community_area": "Lincoln Park",
+   "ward": 32
+  },
+  "housing_relevant": false,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning from M1-2 to B3-2 would allow a daycare conversion and involves no dwelling units.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Rezones 1415 W Diversey Pkwy from M1-2 to B3-2 to resolve split zoning and allow conversion of the adjacent building into a daycare for 153 students. Applicant is EIG14T NF IL CHI W DIVERSEY LLC."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027579": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "bc514bebae34dddb",
+  "entities": [
+   "Pat Dowell"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The ordinance changes zoning rules for single room occupancy housing, a type of residential use, in RT and RM districts.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Ald. Pat Dowell (3rd Ward) proposes amending Municipal Code 17-2-0207 so single room occupancy housing in RT4 through RM6.5 districts goes from permitted by-right to requiring special use approval. The use table shows 'PS' markings in those districts."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027667": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "c739be1c264d73d0",
+  "entities": [
+   "Maria Hadden"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "1721 W. Greenleaf Avenue",
+   "community_area": "Rogers Park",
+   "ward": 49
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning changes a residential RT-4 two-flat/townhouse/multi-unit district to a B3-3 Community Shopping District, which affects land currently zoned for housing.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "Ordinance sponsored by Ald. Maria Hadden (49th Ward) would rezone the area at 1721 W. Greenleaf Ave from RT-4 Residential Two-Flat, Townhouse and Multi-Unit District to B3-3 Community Shopping District. It also includes necessary relief under Sections 17-13-1003 and 17-13-1101."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027856": {
+  "categories": [],
+  "content_hash": "f25230c421ffb6ee",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "The ordinance repeals a historical landmark designation for a bridge, which concerns no homes, dwelling units, or residential rights.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": ""
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027987": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "2f3aa9376a80e3b8",
+  "entities": [
+   "Jeanette B. Taylor"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "5000-5046 S. Wells Street",
+   "community_area": "Fuller Park",
+   "ward": 20
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The ordinance rezones land from a neighborhood shopping district to a single-unit residential district, changing what housing can be built on the site.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "Ordinance would rezone the area bounded by West 50th Street, South Wells Street, and the alley to the west, at 5000-5046 S Wells St, from B1-1 Neighborhood Shopping District to RS-3 Residential Single-Unit (Detached House) District. Sponsored by Alderwoman Jeanette B. Taylor, 20th Ward."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028339": {
+  "categories": [
+   {
+    "detail": "ARO",
+    "id": "housing-agenda",
+    "via": "keyword"
+   },
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "0be1d2a783a0753a",
+  "entities": [
+   "2156 W WARREN LLC"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 8
+  },
+  "geography": {
+   "address": "2156 W Warren Blvd",
+   "community_area": "Near West Side",
+   "ward": 27
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning from RT4 to RM5 would allow a new 8-unit residential building on a vacant lot.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "2156 W Warren LLC seeks to rezone a vacant lot at 2156 W Warren Blvd from RT4 to RM5 to build a 4-story, 8-unit residential building with 5 outdoor parking spaces. The application says the project is not subject to the ARO."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028341": {
+  "categories": [
+   {
+    "detail": "ARO",
+    "id": "housing-agenda",
+    "via": "keyword"
+   },
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "92b5e6f83722eeef",
+  "entities": [
+   "73RD AND INDIANA, LLC"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 8
+  },
+  "geography": {
+   "address": "7353-59 South Indiana Avenue",
+   "community_area": "Greater Grand Crossing",
+   "ward": 6
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning from RS2 to RT4 would allow a new 8-unit residential building on a vacant lot.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "73RD AND INDIANA, LLC seeks to rezone 7353-59 S Indiana Ave from RS2 to RT4 to build a two-story, 8-unit residential building with a 7-car garage on a vacant lot. The application says the ARO does not apply."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028345": {
+  "categories": [
+   {
+    "detail": "rezoning",
+    "id": "ahpaa",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "64bf90ebf82f7235",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": 7
+  },
+  "geography": {
+   "address": "2400 W Grenshaw St",
+   "community_area": "Near West Side",
+   "ward": 28
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning from C1-2 to B2-3 would allow a new 7-unit residential building, including ground-floor residential use, on a vacant lot.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Applicant seeks a Type 1 rezoning of 2400 W. Grenshaw St. from C1-2 Neighborhood Commercial to B2-3 Neighborhood Mixed-Use, with a rear setback variation, to build a 4-story, 7-unit residential building with 3 garage parking spaces on a vacant corner lot."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028350": {
+  "categories": [],
+  "content_hash": "be207d0a5e11e7c5",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "The ordinance rezones the site from B1-2 Neighborhood Shopping to C2-2 Motor Vehicle-Related Commercial, a commercial-to-commercial change with no dwelling units or residential use involved.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": ""
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028355": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "73df1c78f1d3559d",
+  "entities": [
+   "Daniel La Spata"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "1600-1760 W. Chicago Ave and 1601-1759 W. Chicago Ave",
+   "community_area": "West Town",
+   "ward": 1
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "A corridor-wide rezoning from B1 neighborhood shopping to B3 community shopping districts changes the zoning rules that govern what, including residential, can be built along West Chicago Avenue.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Ordinance sponsored by Alderman Daniel La Spata (1st Ward) would rezone B1-2 and B1-3 parcels along W Chicago Ave between N Wood St and N Ashland Ave to B3-2 and B3-3. Several parcels with other zoning are excluded."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028406": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "cfce7a14908e012e",
+  "entities": [
+   "Southwest Airlines Co."
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "5300-5358 W 55th St, 5425-5459 S Lorel Ave, 5426-5458 S Lockwood Ave",
+   "community_area": "Garfield Ridge",
+   "ward": 23
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning from RS-3 residential single-unit to B2-1 would remove residentially zoned land and replace vacant church and school buildings with a non-accessory parking lot, so it bears on housing supply.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Southwest Airlines Co., a contract purchaser, seeks to rezone the former St Camillus church and school site from RS-3 to B2-1 to raze the vacant buildings and build a roughly 364-space parking lot for Midway Airport employees and visitors. No dwelling units are proposed."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028415": {
+  "categories": [
+   {
+    "detail": "ARO",
+    "id": "housing-agenda",
+    "via": "keyword"
+   },
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "2550518f9484cccb",
+  "entities": [
+   "QHN LLC"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 6
+  },
+  "geography": {
+   "address": "3439 South Morgan Street",
+   "community_area": "Bridgeport",
+   "ward": 11
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning would allow a new six-unit residential building on a vacant lot, with reduced parking under the transit-served location provisions.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "QHN LLC seeks to rezone 3439 S Morgan St from B1-3 to B2-3 to build a three-story, six-unit residential building on a vacant lot. It also requests a parking reduction from six spaces to three under the Transit Served Location rules. The project is not subject to the ARO."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028439": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "b0fdd3130eacd028",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": 3
+  },
+  "geography": {
+   "address": "1921 West Chicago Avenue",
+   "community_area": "West Town",
+   "ward": 36
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning from B3-2 to B3-3 would allow a new four-story mixed-use building with three residential units replacing a two-story residence.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Ordinance would rezone 1921 W Chicago Ave from B3-2 to B3-3 Community Shopping District to allow a four-story building with ground-floor retail and three dwelling units above, with three off-street parking spaces, as a Transit Served Location project."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028457": {
+  "categories": [],
+  "content_hash": "6be702c1b8cefaab",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning from RT-4 and C1-2 to C1-2 covers a site with no dwelling units, where the applicant proposes to keep the existing car wash and commercial building and add four parking spaces, a purely commercial and parking use.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": ""
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028463": {
+  "categories": [],
+  "content_hash": "5c5ac4d69baaad26",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "The ordinance regulates cannabis dispensary operations and permitting under the zoning code without changing rules for dwelling units or residential use, so it does not bear on homes.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": ""
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028465": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "e108f2eb749c76c2",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": 1
+  },
+  "geography": {
+   "address": "1644 North Winchester Avenue",
+   "community_area": "West Town",
+   "ward": 32
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning from RS-3 to RT-4 would allow a new accessory dwelling unit (coach house) to be added to a single-family lot.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Applicants seek to rezone 1644 N Winchester Ave from RS-3 to RT-4 to rehabilitate and expand a single-family home and replace the rear garage with a two-story garage containing one accessory dwelling unit (coach house) on the second floor."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028670": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "471c8be5bb318a80",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": 15
+  },
+  "geography": {
+   "address": "2342-46 West Jackson Boulevard",
+   "community_area": "Near West Side",
+   "ward": 27
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning from RM-5 to B2-3 would allow a new 15-unit residential building on a vacant lot, adding homes near transit.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Ordinance would rezone 2342-46 W Jackson Blvd from RM-5 to B2-3 so the lot can be split and a new five-story, 15-unit residential building built at 2346. The existing four-unit building at 2342 would remain. Parking would be reduced under transit-served location rules."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028671": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "a982bf6e34d69915",
+  "entities": [
+   "2249 W Cermak LLC"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 6
+  },
+  "geography": {
+   "address": "2249 West Cermak Road",
+   "community_area": "Lower West Side",
+   "ward": 25
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning would allow two additional dwelling units to be lawfully established in the basement of an existing residential building, increasing the home count.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "2249 W Cermak LLC seeks to rezone 2249 W Cermak Rd from B3-2 to B2-3 to lawfully establish two additional garden-level dwelling units in an existing 2-story building, bringing it from four to six units. No parking or commercial space is proposed."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028686": {
+  "categories": [],
+  "content_hash": "20c1ecd7cebaf7a2",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "The item rezones 4200 S. Dr. Martin Luther King Jr. Drive for a coin-operated laundromat with zero dwelling units and exclusively non-residential use, so it does not add, remove, or change homes there.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": ""
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028687": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "ee8ee327af1746cc",
+  "entities": [
+   "Washington Legacy Group, LLC"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 1
+  },
+  "geography": {
+   "address": "814 W 69th St",
+   "community_area": "Englewood",
+   "ward": 16
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "A rezoning from RS-3 residential to C1-1 would change the zoning of a building that keeps one second-floor dwelling unit, though the main purpose is a ground-floor hair salon.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Washington Legacy Group, LLC seeks to rezone 814 W. 69th St. from RS-3 to C1-1 to renovate a vacant two-story building into a first-floor hair salon with one dwelling unit upstairs. No off-street parking is proposed."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028689": {
+  "categories": [
+   {
+    "detail": "ARO",
+    "id": "housing-agenda",
+    "via": "keyword"
+   },
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "5ca35af6e147fb03",
+  "entities": [
+   "MLV Properties, LLC"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 37
+  },
+  "geography": {
+   "address": "2648-2658 West Lawrence Avenue",
+   "community_area": "Lincoln Square",
+   "ward": 40
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning from B3-2 to B2-3 would allow construction of a 37-unit residential building with ground-floor commercial space on a vacant commercial site.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "MLV Properties, LLC seeks to rezone 2648-2658 W Lawrence Ave from B3-2 to B2-3 to build a 61-foot, 37-unit residential building with 13 parking spaces and 2,914 square feet of commercial space. The applicant also requests setback and lot-area variations, and the project is subject to the ARO."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028696": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "5e7db7d77f24a98f",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": 36
+  },
+  "geography": {
+   "address": "1745-1759 N. Cicero Avenue",
+   "community_area": "Austin",
+   "ward": 37
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning from C2-1 to B2-3 would allow a new 36-unit residential building on a site currently used for vehicle storage.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Applicant seeks to rezone 1745-1759 N. Cicero Ave. from C2-1 Motor Vehicle-Related Commercial to B2-3 Neighborhood Mixed-Use to build a 57-foot, 36-unit residential building with 34 parking spaces and no commercial space. Administrative adjustments and a rear setback variation are also requested."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028698": {
+  "categories": [],
+  "content_hash": "d7f4326b40f6d64b",
+  "entities": [
+   "Humboldt Park Health"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "1140 N California Ave",
+   "community_area": "West Town",
+   "ward": 26
+  },
+  "housing_relevant": false,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning from B3-1 to B3-3 would allow a commercial/medical behavioral health clinic on a vacant lot, with no dwelling units involved.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Humboldt Park Health seeks to rezone 1140 N. California Ave. from B3-1 to B3-3 Community Shopping District to build a 3-story outpatient behavioral health clinic, urgent care center and medical office, with a 100% parking reduction sought."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028700": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "f3ba09d7656b150b",
+  "entities": [
+   "4841 Lipps LLC"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 4
+  },
+  "geography": {
+   "address": "4841 North Lipps Avenue",
+   "community_area": "Jefferson Park",
+   "ward": 45
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning would permit renovation of an existing mixed-use building to contain four dwelling units above a ground-floor commercial space.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "4841 Lipps LLC seeks to rezone 4841 N. Lipps Ave. from B3-2 to C1-2 to renovate an existing mixed-use building into one ground-floor commercial space and four dwelling units. Ald. Gardiner has stated no objection."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028702": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "a53fc5bf267db9d1",
+  "entities": [
+   "GT Alternatives LLC"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 3
+  },
+  "geography": {
+   "address": "718 N St Louis Ave",
+   "community_area": "Humboldt Park",
+   "ward": 27
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning from RS-3 to RT-4 would allow a vacant residential lot to be redeveloped with a three-unit residential building.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "GT Alternatives LLC seeks to rezone 718 N St Louis Ave from RS-3 to RT-4 to build a new two-story, three-unit residential building with a basement on a vacant 4,181 sq. ft. lot. No commercial space is proposed."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028704": {
+  "categories": [],
+  "content_hash": "fdfc96e0ea63c047",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "1140-44 South California Avenue",
+   "community_area": "North Lawndale",
+   "ward": 28
+  },
+  "housing_relevant": false,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning from C1-2 to C1-3 is solely to build a 19-space non-accessory surface parking lot serving a learning academy, with no dwelling units involved.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Rezones 1140-44 S California Ave from C1-2 to C1-3 Neighborhood Commercial District so the applicant can build a 19-space surface parking lot serving Great Expectations Learning Academy. No residential units are proposed."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028726": {
+  "categories": [
+   {
+    "detail": "rezoning",
+    "id": "ahpaa",
+    "via": "keyword"
+   },
+   {
+    "detail": "ARO",
+    "id": "housing-agenda",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "a7962f2269b79015",
+  "entities": [
+   "Brinshore-Michaels Development, LLC"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 78
+  },
+  "geography": {
+   "address": "537-547 West Oak Street, 939-957 North Larrabee Street",
+   "community_area": "Near North Side",
+   "ward": 27
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The Type 1 zoning amendment would allow a 78-unit, 7-story residential building on a vacant site, using transit-served location relief tied to meeting 100% of the ARO requirement on-site.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Applicant seeks a Type 1 rezoning from DR-3 to DR-3 at 537-547 W Oak St and 939-957 N Larrabee St to permit a 78-unit, 7-story residential building with 39 parking spaces. Relief is sought for Transit-Served Locations, with 100% of the ARO requirement met on-site. Site plans list Brinshore-Michaels Development, LLC."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028730": {
+  "categories": [
+   {
+    "detail": "ARO",
+    "id": "housing-agenda",
+    "via": "keyword"
+   },
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "83e033078b7ce969",
+  "entities": [
+   "Laurel Homes 1, Inc."
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 2
+  },
+  "geography": {
+   "address": "2328-34 W. Montana St.",
+   "community_area": "Logan Square",
+   "ward": 32
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "A Type 1 rezoning from M1-2 to RT-4 on vacant lots would allow new residential two-flats where manufacturing zoning currently applies.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Laurel Homes 1, Inc. seeks to rezone three vacant parcels at 2328-34 W. Montana St. from M1-2 to RT-4 to build three 2-unit residential buildings. The applicant says the project is not subject to the ARO."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028731": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "30d43d6ca7efbb06",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "4301 W. Montrose Ave.",
+   "community_area": "Irving Park",
+   "ward": 39
+  },
+  "housing_relevant": false,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning changes a vacant motor vehicle repair shop lot from residential RT3.5 to commercial C2-1 for storage and trade-school training use, with no housing units proposed, though it removes residentially zoned land.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Rezones 4301 W. Montrose Ave. from RT3.5 to C2-1 so the vacant repair shop can become indoor storage and an outdoor training area for a trade school at 4300 W. Montrose. No on-site parking and no housing proposed."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028734": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "0d97c1948a192ccc",
+  "entities": [
+   "ZSD Barry LLC"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 3
+  },
+  "geography": {
+   "address": "2315-17 West Barry Avenue",
+   "community_area": "North Center",
+   "ward": 32
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "A residential rezoning from RS-3 to RT-4 would allow renovation and expansion of an existing three-unit residential building.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Ordinance would rezone 2315-17 W Barry Ave from RS-3 to RT-4 so the applicant can renovate and add a rear addition to an existing three-unit building. The plans list ZSD Barry LLC as developer/owner; the unit count stays at three."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028735": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "d49b62973871393c",
+  "entities": [
+   "Nabil M. Abou Baker",
+   "Sara G. Jelinek"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "5482 South Ridgewood Court",
+   "community_area": "Hyde Park",
+   "ward": 5
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "A residential rezoning from RT-4 to RM-4.5 changes the zoning district for a home, with setback and open-space variations for a rear addition to an existing single-family house.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Rezones 5482 S Ridgewood Ct from RT-4 to RM-4.5 so homeowners Nabil M. Abou Baker and Sara G. Jelinek can replace the home's rear addition, with setback and rear yard open space relief. No parking is provided and no new units are proposed."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028738": {
+  "categories": [
+   {
+    "detail": "Department of Housing",
+    "id": "housing-agenda",
+    "via": "keyword"
+   },
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   },
+   {
+    "detail": "",
+    "id": "social-housing",
+    "via": "model"
+   }
+  ],
+  "content_hash": "eaddef881323567e",
+  "entities": [
+   "TECHCO SAVVY INC.",
+   "Department of Housing"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 3
+  },
+  "geography": {
+   "address": "4125 and 4127 W 5th Ave",
+   "community_area": "West Garfield Park",
+   "ward": 24
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "A Type 1 rezoning from RT-4 to RM-4.5 on city-owned vacant lots would allow two new three-unit residential buildings.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "TechCo Savvy Inc. seeks to rezone city-owned vacant lots at 4125 and 4127 W 5th Ave from RT-4 to RM-4.5 to build two three-story buildings with three units each. It is working with the Department of Housing to acquire the lots, and also requests setback variations."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028739": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "07920db8783697cc",
+  "entities": [
+   "Midway 5312 S. Kenneth Avenue Condominium"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 3
+  },
+  "geography": {
+   "address": "5312 S. Kenneth Avenue",
+   "community_area": "West Elsdon",
+   "ward": 23
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "A rezoning of a residential lot with an existing multi-unit building from RS-2 to RT-4 affects the legal residential density and compliance of existing homes.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Midway 5312 S. Kenneth Avenue Condominium seeks to rezone 5312 S. Kenneth Ave from RS-2 to RT-4 to unify the lot under one zoning designation and bring a building built contrary to approved plans into compliance. The use stays residential with 3 dwelling units."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028740": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "1c1aa13b389e86f3",
+  "entities": [
+   "Coach House Properties LLC"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 5
+  },
+  "geography": {
+   "address": "2142 W 18th Place",
+   "community_area": "Lower West Side",
+   "ward": 25
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "A residential rezoning from RT-4 to RM-5 that legalizes an existing five-unit building and splits off a vacant lot for a new three-unit building.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Coach House Properties LLC seeks to rezone 2142 W 18th Pl from RT-4 to RM-5 to split two lots. The change would legalize the existing five-unit building, while the vacant lot stays RT-4 for a new three-unit building."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028741": {
+  "categories": [
+   {
+    "detail": "planned development",
+    "id": "ahpaa",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "bccaf9537b80e140",
+  "entities": [
+   "Lake Park Associates, Inc."
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "370 E Garfield Blvd",
+   "community_area": "Washington Park",
+   "ward": 3
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning changes RS-3 residential land to C2-3 and then to an Institutional Planned Development whose permitted uses list no dwelling units, so it bears on residential land supply.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Lake Park Associates, Inc. seeks to rezone about 353,394 square feet at 370 E Garfield Blvd, partly from RS-3 and C2-3, to an Institutional Planned Development. Permitted uses include university, hospital, medical, office, and commercial uses; no residential units are listed."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028742": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "3dff94f6c9d7b2e5",
+  "entities": [
+   "Theus Property Holding - 1933 N. Winchester L.L.C."
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 5
+  },
+  "geography": {
+   "address": "1933 North Winchester Avenue",
+   "community_area": "Logan Square",
+   "ward": 32
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "A residential rezoning that would legalize an existing fifth dwelling unit in a building now zoned for fewer units.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Theus Property Holding - 1933 N. Winchester L.L.C. seeks to rezone 1933 N Winchester Ave from RS-3 to RM-4.5 so the existing fifth unit and rooftop dormer conform. No expansion is proposed; the building stays at five units and 29 feet."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028744": {
+  "categories": [
+   {
+    "detail": "ARO",
+    "id": "housing-agenda",
+    "via": "keyword"
+   },
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "ca188d313fc0ef2b",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": 40
+  },
+  "geography": {
+   "address": "3244-50 West Bryn Mawr Avenue",
+   "community_area": "North Park",
+   "ward": 39
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The Type 1 map amendment application would allow a mixed-use building with 40 residential units on a vacant commercial site and is subject to the ARO.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "3244-50 Bryn Mawr LLC seeks to amend a previously approved Type 1 map amendment (B2-3 to B2-3) at 3244-50 W Bryn Mawr Ave. It would allow a five-story building with 40 residential units, 1,490 sq. ft. of ground-floor commercial space and 25 parking spaces. The application says the project is subject to the ARO."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028747": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "385d6de5d0e30a62",
+  "entities": [
+   "Orlando Valdez"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 1
+  },
+  "geography": {
+   "address": "1001-03 South Campbell Avenue",
+   "community_area": "Near West Side",
+   "ward": 28
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "A rezoning from RT-3.5 to RT-4 of a vacant lot to build a new single-family home adds a residential unit.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Applicant Orlando Valdez seeks to rezone a vacant lot at 1001-03 S Campbell Ave from RT-3.5 to RT-4 to build one single-family residence with two parking spaces. Setback and parking relief are also requested."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028754": {
+  "categories": [],
+  "content_hash": "e5027c3f270bfc5c",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "The rezoning creates a Waterway Industrial Planned Development whose permitted uses are industrial, commercial, and vehicle-related with no dwelling units or residential use, so it does not add, remove, or change homes on the site.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": ""
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#Or2026-0028250": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "housing-agenda",
+    "via": "model"
+   }
+  ],
+  "content_hash": "f75ad7128fccaea1",
+  "entities": [
+   "208 LaSalle Owner, LLC.",
+   "Brendan Reilly"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 167
+  },
+  "geography": {
+   "address": "208 S. LaSalle Street",
+   "community_area": "Loop",
+   "ward": 42
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The order waives city permit fees for converting floors of a historic downtown building into 167 residential units, 30% of them affordable at 60% AMI.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "An order from Ald. Brendan Reilly would waive city permit fees from 10/01/2026 through 7/01/2028 for adaptive reuse of floors 14-16 at 208 S. LaSalle St. into 167 dwelling units, 30% affordable at 60% AMI. Owner is 208 LaSalle Owner, LLC."
+ },
+ "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#R2026-0028815": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "healthy-homes",
+    "via": "model"
+   }
+  ],
+  "content_hash": "05fd5f13a45ea4f8",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The resolution creates a task force on enforcing building codes against problem landlords and coordinating with housing and eviction court, which bears on habitability and tenant protections.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "A City Council resolution would create a Problem Landlord and Housing Court Coordination Task Force. It would include aldermen, Mayor's Office, Buildings, Law and Circuit Court representatives. The task force would recommend improvements on repeat building code violations and report within 180 days of its first meeting."
+ },
+ "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#A2026-0027377": {
+  "categories": [
+   {
+    "detail": "Chicago Housing Authority",
+    "id": "cha",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "8af749ab7f4b4cb3",
+  "entities": [
+   "Chicago Housing Authority",
+   "Hipolito (Paul) Roldan",
+   "Brandon Johnson"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item is a mayoral appointment of a Chicago Housing Authority commissioner, which bears on the governance of public housing.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Mayor Brandon Johnson has appointed Hipolito (Paul) Roldan as a Chicago Housing Authority commissioner for a term effective immediately and expiring July 7, 2031. The appointment goes to the City Council for consideration."
+ },
+ "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#A2026-0029000": {
+  "categories": [
+   {
+    "detail": "Chicago Housing Authority",
+    "id": "cha",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "5c9a75939f429cf8",
+  "entities": [
+   "Vernell Givens",
+   "Chicago Housing Authority"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item is an appointment of a Chicago Housing Authority commissioner, which bears on governance of public housing in Chicago.",
+  "source_quality": "none",
+  "status": "ok",
+  "summary": "The City Council Committee on Housing and Real Estate will consider the appointment of Vernell Givens as a Chicago Housing Authority Commissioner, with a term effective immediately and expiring August 31, 2031."
+ },
+ "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#A2026-0029001": {
+  "categories": [
+   {
+    "detail": "Chicago Housing Authority",
+    "id": "cha",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "803af816576ed409",
+  "entities": [
+   "Mary Gardner",
+   "Chicago Housing Authority"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item concerns an appointment to the Chicago Housing Authority board, the agency that runs public housing in Chicago.",
+  "source_quality": "none",
+  "status": "ok",
+  "summary": "The Committee on Housing and Real Estate will consider the appointment of Mary Gardner as a Commissioner of the Chicago Housing Authority, with a term effective immediately and expiring August 31, 2031."
+ },
+ "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029007": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "social-housing",
+    "via": "model"
+   },
+   {
+    "detail": "",
+    "id": "housing-agenda",
+    "via": "model"
+   }
+  ],
+  "content_hash": "2189f64ef6036175",
+  "entities": [
+   "MKB Business Strategies, LLC"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "1335 South Springfield Avenue",
+   "community_area": "North Lawndale",
+   "ward": 24
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The ordinance sells a surplus school site to a developer that plans to demolish the building and build affordable single-family homes and three-flats.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Ordinance would convey the former Henson Elementary campus parcel at 1335 S Springfield Ave to MKB Business Strategies, LLC for $25,000. MKB plans to demolish the building and build 13 single-family houses and 13 affordable three-flats in two phases."
+ },
+ "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029008": {
+  "categories": [
+   {
+    "detail": "mixed-income",
+    "id": "social-housing",
+    "via": "keyword"
+   },
+   {
+    "detail": "",
+    "id": "housing-agenda",
+    "via": "model"
+   },
+   {
+    "detail": "",
+    "id": "property-taxes",
+    "via": "model"
+   },
+   {
+    "detail": "",
+    "id": "state-agenda",
+    "via": "model"
+   },
+   {
+    "detail": "",
+    "id": "ahpaa",
+    "via": "model"
+   }
+  ],
+  "content_hash": "c5f637ec4e147f75",
+  "entities": [
+   "Far South CDC"
+  ],
+  "figures": {
+   "affordable_units": 66,
+   "units": 70
+  },
+  "geography": {
+   "address": "11414 S Halsted St",
+   "community_area": "Morgan Park",
+   "ward": 21
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "It authorizes sale of City-owned land for $1 to a nonprofit developer for a mixed-income, affordable housing redevelopment tied to Low-Income Housing Tax Credits and the ARO.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Repeals and replaces ordinance O2026-0026567, authorizing sale of City-owned property at 11414 S Halsted St to Far South CDC for $1 for Morgan Park Commons. Phase 1 would build two mixed-income buildings with 70 units, 66 affordable; Phase 0 is site work funded by a $15 million state grant."
+ },
+ "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029009": {
+  "categories": [
+   {
+    "detail": "ARO",
+    "id": "housing-agenda",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "a18f97685ce5f908",
+  "entities": [
+   "ChiBlockBuilder",
+   "Reynoso Insulation, LLC"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "1948 W 63rd St to Reynoso Insulation LLC under ChiBlockBuilder",
+   "community_area": "West Englewood",
+   "ward": 16
+  },
+  "housing_relevant": false,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The sale of two vacant city-owned lots is for a commercial parking lot serving an adjacent business, with no housing units involved.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "The ordinance would sell two vacant City-owned lots at 1948 W 63rd St for $18,006 to Reynoso Insulation, LLC through ChiBlockBuilder. The buyer plans a commercial parking lot for its adjacent business, with no ARO units."
+ },
+ "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029010": {
+  "categories": [
+   {
+    "detail": "ARO",
+    "id": "housing-agenda",
+    "via": "keyword"
+   },
+   {
+    "detail": "",
+    "id": "social-housing",
+    "via": "model"
+   },
+   {
+    "detail": "",
+    "id": "property-taxes",
+    "via": "model"
+   }
+  ],
+  "content_hash": "c598a1ba90d3fdac",
+  "entities": [
+   "EGP Warren Apartments LLC",
+   "ChiBlockBuilder"
+  ],
+  "figures": {
+   "affordable_units": 4,
+   "units": 20
+  },
+  "geography": {
+   "address": "2054 and 2058 W Warren Blvd to EGP Warren Apartments LLC under ChiBlockBuilder",
+   "community_area": "Near West Side",
+   "ward": 27
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The ordinance sells City-owned vacant land for a 20-unit residential building that includes four ARO-compliant affordable units.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "The City Council would approve the sale of two City-owned parcels at 2054 and 2058 W. Warren Blvd to EGP Warren Apartments LLC for $315,315 through ChiBlockBuilder. The buyer would build a 20-unit residential building including four ARO-compliant units."
+ },
+ "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029011": {
+  "categories": [
+   {
+    "detail": "ARO",
+    "id": "housing-agenda",
+    "via": "keyword"
+   },
+   {
+    "detail": "",
+    "id": "social-housing",
+    "via": "model"
+   }
+  ],
+  "content_hash": "e39c9f41ec2f9217",
+  "entities": [
+   "Click Development, LLC 4549 Indiana",
+   "ChiBlockBuilder"
+  ],
+  "figures": {
+   "affordable_units": 2,
+   "units": 16
+  },
+  "geography": {
+   "address": "4549 S Indiana Ave to Click Development LLC 4549 Indiana under ChiBlockBuilder",
+   "community_area": "Grand Boulevard",
+   "ward": 3
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The ordinance sells a vacant City-owned lot for construction of a new 16-unit residential building that includes two ARO units.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "City Council would approve sale of City-owned vacant land at 4549 S. Indiana Ave. to Click Development, LLC 4549 Indiana for $203,241 through ChiBlockBuilder. The buyer would build a 16-unit residential building, including two ARO units, with a deed restriction."
+ },
+ "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029012": {
+  "categories": [
+   {
+    "detail": "ARO",
+    "id": "housing-agenda",
+    "via": "keyword"
+   },
+   {
+    "detail": "",
+    "id": "social-housing",
+    "via": "model"
+   },
+   {
+    "detail": "",
+    "id": "property-taxes",
+    "via": "model"
+   }
+  ],
+  "content_hash": "c52a13b418580502",
+  "entities": [
+   "TK Palos LLC",
+   "ChiBlockBuilder"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 8
+  },
+  "geography": {
+   "address": "4927 S Forrestville Ave",
+   "community_area": "Grand Boulevard",
+   "ward": 4
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The ordinance sells city-owned vacant lots for construction of 16 residential units in Grand Boulevard, with ARO units required, and disposes of public land for housing.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Ordinance would sell three city-owned parcels at 4927, 4935 and 4937 S Forrestville Ave to TK Palos LLC for $301,028 through ChiBlockBuilder. The buyer would build two 8-unit masonry residential buildings; the project will contain ARO units."
+ },
+ "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029016": {
+  "categories": [
+   {
+    "detail": "ARO",
+    "id": "housing-agenda",
+    "via": "keyword"
+   },
+   {
+    "detail": "",
+    "id": "social-housing",
+    "via": "model"
+   }
+  ],
+  "content_hash": "661367d973dc5464",
+  "entities": [
+   "Iron Eagle LLC",
+   "ChiBlockBuilder"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "3729, 3731 and 3733 S Giles Ave",
+   "community_area": "Portage Park",
+   "ward": 45
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "It is a sale of three City-owned residential lots for construction of new multi-unit housing under the ChiBlockBuilder program.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "The City would sell three vacant lots at 3729, 3731 and 3733 S Giles Ave in Douglas to Iron Eagle LLC for $250,000 under ChiBlockBuilder. The buyer would build three three-story buildings with three 3-bedroom units each, with no ARO units."
+ },
+ "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029017": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "social-housing",
+    "via": "model"
+   }
+  ],
+  "content_hash": "a7937ec7da3737cc",
+  "entities": [
+   "Department of Planning and Development",
+   "1509 E. 67th PL LLC",
+   "ChiBlockBuilder"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "1509 E. 67th Pl",
+   "community_area": "South Shore",
+   "ward": 5
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "It approves the sale of a vacant City-owned lot for market-rate development through the ChiBlockBuilder program, which is disposition of public land for housing.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "The City Council would approve sale of vacant City-owned land at 1509 E. 67th Pl to 1509 E. 67th PL LLC for market-rate development, via the Department of Planning and Development's ChiBlockBuilder program, subject to a deed restriction and closing conditions."
+ },
+ "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029018": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "social-housing",
+    "via": "model"
+   }
+  ],
+  "content_hash": "0eceee59bbbdecae",
+  "entities": [
+   "Medlock Development LLC",
+   "ChiBlockBuilder"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 15
+  },
+  "geography": {
+   "address": "4849, 4853 and 4857 W West End Ave",
+   "community_area": "Austin",
+   "ward": 37
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The ordinance would sell vacant City-owned land for a 15-unit new-construction residential project, a disposition of public land for housing.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "The City Council would approve the as-is sale of City-owned lots at 4849, 4853 and 4857 W West End Ave to Medlock Development LLC through ChiBlockBuilder, for market-rate development. The disclosure describes a 15-unit new construction project."
+ },
+ "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029020": {
+  "categories": [],
+  "content_hash": "e54635727e1028a6",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "The ordinance sells vacant City-owned lots to buyers for community open space under a deed restriction requiring open space improvements, not for building, preserving, or regulating homes.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": ""
+ },
+ "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#1": {
+  "categories": [],
+  "content_hash": "f58b8282165c5225",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "This item is a settlement of sixteen lawsuits against police officers, such as Guevara, with no connection to building, financing, regulating, or taxing homes or tenants' rights.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": ""
+ },
+ "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#2": {
+  "categories": [
+   {
+    "detail": "TIF",
+    "id": "housing-agenda",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "c8aa0c7bfca36d10",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "The item provides TIF funds for improvements to an elementary school, which does not involve building, financing, preserving, regulating, taxing, or demolishing homes or the rights of residents.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": ""
+ },
+ "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#3": {
+  "categories": [
+   {
+    "detail": "TIF",
+    "id": "housing-agenda",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "3efa34d6fb2231bf",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "The item provides TIF funds for capital improvements at an elementary school, which is an institutional use with no dwelling units or residential regulation involved.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": ""
+ },
+ "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#4": {
+  "categories": [],
+  "content_hash": "024025c4b776964c",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "The item concerns grant funds and administrative services for the Small Business Improvement Fund, which assists small businesses rather than building, financing, preserving, or regulating homes or residents' rights.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": ""
+ },
+ "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#5": {
+  "categories": [],
+  "content_hash": "39fd08a62b0fb920",
+  "entities": [
+   "BTH Development, NFP",
+   "Department of Planning and Development"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "13122 S. Ellis Avenue",
+   "community_area": "Riverdale",
+   "ward": 10
+  },
+  "housing_relevant": false,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item funds redevelopment of a youth center, a community facility, and the material does not mention any housing units.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "Ordinance authorizing a Redevelopment Agreement with BTH Development, NFP to provide up to $7,300,000 in Housing and Economic Development Bond funds for redevelopment of the Altgeld Gardens Youth Center at 13122 S. Ellis Avenue (10th Ward)."
+ },
+ "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#6": {
+  "categories": [
+   {
+    "detail": "TIF",
+    "id": "housing-agenda",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "fc06edc68cf4d113",
+  "entities": [
+   "North Lawndale Catalyst Initiative, NFP",
+   "Department of Planning and Development"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "920-922 S. Campbell Avenue",
+   "community_area": "Near West Side",
+   "ward": 28
+  },
+  "housing_relevant": false,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item funds a linen services project, which appears to be commercial or economic development, and the material mentions no homes.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "Ordinance authorizing a Redevelopment Agreement with North Lawndale Catalyst Initiative, NFP for up to $5,000,000 in HED funds and up to $5,000,000 in TIF assistance for the Filmore Linen Services project at 920-922 S. Campbell Avenue (28th Ward)."
+ },
+ "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#7": {
+  "categories": [
+   {
+    "detail": "",
+    "id": "housing-agenda",
+    "via": "model"
+   }
+  ],
+  "content_hash": "f2e86864bae1c3e5",
+  "entities": [
+   "Department of Planning and Development",
+   "Hudson Michigan Avenue Owner LLC"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "2222 S. Michigan Avenue",
+   "community_area": "Near South Side",
+   "ward": 3
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The ordinance would provide city HED loan and grant funds to a redevelopment project called Hudson House, which appears to be a housing project, though the material does not describe its use.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "Ordinance authorizing a Redevelopment Agreement with Hudson Michigan Avenue Owner LLC for the Hudson House project at 2222 S. Michigan Avenue in the 3rd Ward. It provides up to $5,000,000 in HED city loan funds and up to $10,000,000 in HED city grant funds."
+ },
+ "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#8": {
+  "categories": [],
+  "content_hash": "19cb9adaed354c18",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "The item is a routine order authorizing payment of small claims against the City, which does not bear on homes, housing finance, or tenants' rights.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": ""
+ },
+ "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#9": {
+  "categories": [],
+  "content_hash": "009b8de3de4c09ab",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "The item denies payment of various small claims against the City, which is a routine claims-settlement matter with no bearing on building, financing, regulating, or taxing homes or tenants' rights.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": ""
+ },
+ "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5#O2026-0026950": {
+  "categories": [],
+  "content_hash": "59993eb723f1e32f",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "This ordinance amends charitable solicitation permit rules for the public way and does not concern building, financing, regulating, or taxing homes or tenant rights.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": ""
+ },
+ "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5#O2026-0028750": {
+  "categories": [
+   {
+    "detail": "Department of Housing",
+    "id": "housing-agenda",
+    "via": "keyword"
+   },
+   {
+    "detail": "",
+    "id": "social-housing",
+    "via": "model"
+   },
+   {
+    "detail": "",
+    "id": "state-agenda",
+    "via": "model"
+   },
+   {
+    "detail": "",
+    "id": "property-taxes",
+    "via": "model"
+   }
+  ],
+  "content_hash": "d82e861e0c5177a8",
+  "entities": [
+   "Harvest Homes II Apartments, LLC",
+   "Department of Housing"
+  ],
+  "figures": {
+   "affordable_units": 50,
+   "units": 50
+  },
+  "geography": {
+   "address": "3415\u20133449 West Jackson Blvd. and 3414\u20133456 West Fifth Ave.",
+   "community_area": "East Garfield Park",
+   "ward": 28
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The ordinance authorizes city loan funds, TIF assistance, and sale of city-owned lots for a 50-unit affordable rental development.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Authorizes a Department of Housing loan of up to $11,000,000 and up to $11,500,000 in Midwest TIF funds to Harvest Homes II Apartments, LLC. It also conveys three city lots for $1 each to PCDAC for a 50-unit affordable rental building."
+ },
  "ihda:ihda-board:2026-10-16#iv-b-1": {
   "categories": [
    {
@@ -1260,9 +3366,9 @@
    "units": null
   },
   "geography": {
-   "address": "111 E. Wacker, Suite 1000, Chicago, IL 60601",
-   "community_area": "Loop",
-   "ward": 42
+   "address": null,
+   "community_area": null,
+   "ward": null
   },
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
@@ -1391,9 +3497,9 @@
    "units": null
   },
   "geography": {
-   "address": "225 N. Michigan Drive, Suite 800, Chicago, IL 60601",
-   "community_area": "Loop",
-   "ward": 42
+   "address": null,
+   "community_area": null,
+   "ward": null
   },
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
@@ -1422,9 +3528,9 @@
    "units": null
   },
   "geography": {
-   "address": "111 East Wacker Drive, Suite 1000, Chicago, Illinois 60601",
-   "community_area": "Loop",
-   "ward": 42
+   "address": null,
+   "community_area": null,
+   "ward": null
   },
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
