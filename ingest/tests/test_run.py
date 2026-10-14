@@ -125,3 +125,21 @@ def test_caches_persist_when_a_later_step_crashes_and_empty_overrides_load(tmp_p
     assert "paid" in json.loads((root / "data" / "cache" / "enrich.json").read_text(encoding="utf-8"))
     assert "clihtf:319068" in json.loads((root / "data" / "cache" / "extract.json").read_text(encoding="utf-8"))
     assert not (root / "data" / "items.json").exists()
+
+
+def test_meetings_older_than_the_prune_window_are_not_ai_extracted(tmp_path):
+    from digest.models import Meeting, SourceResult
+    from digest.run import _extract
+    from digest.cache import JsonCache
+    from digest.state import MEETING_PRUNE_DAYS
+
+    def meeting(mid, days_ago):
+        return Meeting(id=mid, source_id="ihda", body="IHDA Board", body_id="ihda-board", status="held",
+                       start=NOW - dt.timedelta(days=days_ago), agenda_url="https://x/agenda.pdf",
+                       needs_ai_extraction=True)
+    res = SourceResult(meetings=[meeting("ihda:old", MEETING_PRUNE_DAYS + 1), meeting("ihda:recent", MEETING_PRUNE_DAYS - 1)])
+    llm = fake_llm()
+    fetcher = FakeFetcher([("agenda.pdf", b"<html><body><p>1. Approve allocations</p></body></html>")])
+    _extract(res, fetcher, llm, JsonCache(tmp_path / "extract.json"), NOW)
+    assert {i.meeting_id for i in res.items} == {"ihda:recent"}
+    assert len(llm.calls) == 1

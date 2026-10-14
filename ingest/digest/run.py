@@ -19,7 +19,7 @@ from .llm import LLM
 from .models import CHI, Digest, SourceResult, dump_digest, load_digest
 from .registry import build_adapters
 from .sources.base import ImplausibleResult
-from .state import count_items, merge
+from .state import MEETING_PRUNE_DAYS, count_items, merge
 
 log = logging.getLogger("digest")
 ROOT = Path(__file__).resolve().parents[2]
@@ -29,11 +29,14 @@ def load_ai(config_dir: Path) -> dict:
     return yaml.safe_load((config_dir / "ai.yaml").read_text(encoding="utf-8"))
 
 
-def _extract(res: SourceResult, fetcher: Fetcher, llm, cache: JsonCache) -> None:
+def _extract(res: SourceResult, fetcher: Fetcher, llm, cache: JsonCache, now: dt.datetime) -> None:
     have = {i.meeting_id for i in res.items}
+    cutoff = now - dt.timedelta(days=MEETING_PRUNE_DAYS)
     for m in res.meetings:
         if not m.needs_ai_extraction or m.status == "cancelled" or m.id in have:
             continue
+        if m.start < cutoff:
+            continue  # merge prunes it this run: do not pay to extract an agenda that is dropped
         try:
             res.items += extract_items(m, fetcher, llm, cache)
         except Exception as e:  # one bad agenda must never abort the run
@@ -61,7 +64,7 @@ def run(root: Path, *, fetcher: Fetcher, llm=None, now: dt.datetime | None = Non
                 results[adapter.source_id] = e
                 continue
             if llm is not None:
-                _extract(res, fetcher, llm, extract_cache)
+                _extract(res, fetcher, llm, extract_cache, now)
             results[adapter.source_id] = res
             if hasattr(adapter, "commit_snapshots"):
                 committers.append(adapter)
