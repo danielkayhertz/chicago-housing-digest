@@ -107,6 +107,21 @@ def test_calendar_has_timezone_block():
     assert "BEGIN:VTIMEZONE\r\nTZID:America/Chicago" in cal
 
 
+def test_meetings_from_the_last_two_weeks_show_under_recent_with_their_items(tmp_path):
+    d = sample()
+    old = Meeting(id="elms:Z0", source_id="elms-zoning", body="City Council Committee on Zoning", body_id="z",
+                  start=dt.datetime(2026, 9, 1, 10, 0, tzinfo=CHI), location="Old Room 1A")
+    d.meetings.append(old)
+    src = tmp_path / "items.json"
+    dump_digest(d, src)
+    build_site(d, tmp_path / "site", src, CATS, NOW)
+    html = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
+    upcoming, recent = html.split("<h2>Upcoming meetings</h2>")[1].split("<h2>Recent meetings</h2>")
+    recent = recent.split("<h2>Open notices</h2>")[0]
+    assert "Rezoning at 4400 N. Broadway" in recent and "Rezoning at 4400 N. Broadway" not in upcoming
+    assert "Wednesday, September 30" in recent and "Old Room 1A" not in html  # older than two weeks: not shown
+
+
 def test_unknown_meeting_is_hidden_from_upcoming_and_cancelled_in_ics(tmp_path):
     d = sample()
     stale = Meeting(id="cpc:2026-10-22", source_id="cpc", body="Chicago Plan Commission", body_id="cpc",

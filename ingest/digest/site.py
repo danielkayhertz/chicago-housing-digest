@@ -105,17 +105,19 @@ def build_site(digest: Digest, out_dir: Path, items_json: Path, categories: Cate
         items_by_meeting[it.meeting_id].append(it)
     meetings_by_id = {m.id: m for m in digest.meetings}
 
-    upcoming = []
+    cutoff = today - dt.timedelta(days=OUTCOME_DAYS)
+    upcoming, recent = [], []
     for m in digest.meetings:
-        if m.start.astimezone(CHI).date() < today or m.status == "unknown":
+        day = m.start.astimezone(CHI).date()
+        if day < cutoff or m.status == "unknown":
             continue  # unknown: moved or dropped by its source; not worth showing
         its = items_by_meeting.get(m.id, [])
         visible = [i for i in its if is_shown(i)]
-        upcoming.append({"m": m, "items": visible, "hidden": len(its) - len(visible)})
+        (upcoming if day >= today else recent).append({"m": m, "items": visible, "hidden": len(its) - len(visible)})
+    recent.sort(key=lambda u: u["m"].start, reverse=True)
     notices = [n for n in digest.notices
                if (n.deadline is None or n.deadline >= now)
                and is_shown(n)]
-    cutoff = today - dt.timedelta(days=OUTCOME_DAYS)
     outcomes = sorted(
         ({"i": i, "m": meetings_by_id.get(i.meeting_id)} for i in digest.items
          if i.outcome and i.outcome.date >= cutoff and is_shown(i)),
@@ -127,7 +129,7 @@ def build_site(digest: Digest, out_dir: Path, items_json: Path, categories: Cate
     env.filters["anchor"] = lambda s: slugify(s, 120)
     env.filters["safe_url"] = safe_url
     html = env.get_template("index.html.j2").render(
-        digest=digest, upcoming=upcoming, notices=notices, outcomes=outcomes, bodies=bodies,
+        digest=digest, upcoming=upcoming, recent=recent, notices=notices, outcomes=outcomes, bodies=bodies,
         categories=categories.items, cat_labels={c.id: c.label for c in categories.items},
         ics={b: f"ics/{slugify(b)}.ics" for b in bodies}, generated=digest.generated_at.astimezone(CHI),
     )

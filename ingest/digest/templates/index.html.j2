@@ -45,8 +45,7 @@
 </li>
 {%- endmacro %}
 
-<h2>Upcoming meetings</h2>
-{% for u in upcoming %}{% set m = u.m %}
+{% macro meeting_section(u) -%}{% set m = u.m %}
 <section class="meeting" id="{{ m.id | anchor }}" data-body="{{ m.body }}">
   <h3>{{ m.body }}</h3>
   <div class="meta">
@@ -59,7 +58,15 @@
   {% if u['items'] %}<ul class="items">{% for i in u['items'] %}{{ item_row(i) }}{% endfor %}</ul>{% endif %}
   {% if u.hidden %}<div class="hidden-count">+{{ u.hidden }} item{{ 's' if u.hidden != 1 else '' }} not about housing</div>{% endif %}
 </section>
+{%- endmacro %}
+
+<h2>Upcoming meetings</h2>
+{% for u in upcoming %}{{ meeting_section(u) }}
 {% else %}<p>No upcoming meetings found.</p>{% endfor %}
+
+<h2>Recent meetings</h2>
+{% for u in recent %}{{ meeting_section(u) }}
+{% else %}<p>No meetings in the last two weeks.</p>{% endfor %}
 
 <h2>Open notices</h2>
 <ul class="items">
