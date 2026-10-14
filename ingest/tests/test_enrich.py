@@ -365,3 +365,173 @@ def test_auth_failure_halts_enrichment_for_the_run_without_counting(tmp_path, ca
         caplog.clear()
         c.halted = ""                                                       # next run: a fresh context retries them
         assert enrich_record(record_for_item(items[0], CPC), c).status == "ok"
+
+
+def _pdf(pages: int, text: str | None = None) -> bytes:
+    """A blank (scanned-looking) PDF, or a one-page PDF whose text layer holds `text`."""
+    if text is None:
+        w = PdfWriter()
+        for _ in range(pages):
+            w.add_blank_page(612, 792)
+        buf = io.BytesIO()
+        w.write(buf)
+        return buf.getvalue()
+    lines = "".join(f"({line}) Tj T* " for line in text.split("\n"))
+    stream = f"BT /F1 10 Tf 12 TL 40 750 Td {lines}ET".encode("latin-1")
+    objs = [b"<< /Type /Catalog /Pages 2 0 R >>", b"<< /Type /Pages /Kids [3 0 R] /Count 1 >>",
+            b"<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R "
+            b"/Resources << /Font << /F1 5 0 R >> >> >>",
+            b"<< /Length %d >>\nstream\n" % len(stream) + stream + b"\nendstream",
+            b"<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>"]
+    out = b"%PDF-1.4\n"
+    offsets = []
+    for i, o in enumerate(objs, 1):
+        offsets.append(len(out))
+        out += b"%d 0 obj\n" % i + o + b"\nendobj\n"
+    xref = len(out)
+    out += b"xref\n0 %d\n0000000000 65535 f \n" % (len(objs) + 1) + b"".join(b"%010d 00000 n \n" % x for x in offsets)
+    return out + b"trailer\n<< /Size %d /Root 1 0 R >>\nstartxref\n%d\n%%%%EOF" % (len(objs) + 1, xref)
+
+
+def _pages_sent(block) -> int:
+    import base64
+    from pypdf import PdfReader
+    return len(PdfReader(io.BytesIO(base64.b64decode(block["source"]["data"]))).pages)
+
+
+def _docs(call) -> list:
+    return [b for b in call["content"] if isinstance(b, dict) and b.get("type") == "document"]
+
+
+def zoning_item(attachments, title="Zoning Reclassification Map No. 1-H at 1921 W Chicago Ave - App No. 23153T1"):
+    return Item(id="elms:Z1#O2026-1", meeting_id=ZONING.id, source_ref="O2026-1", title=title,
+                attachments=[Attachment(label=label, url=url) for label, url in attachments])
+
+
+def bare_summary(**kw):
+    return summary(**{"units": None, "affordable_units": None, "address": None, "entities": [], **kw})
+
+
+def test_screen_reads_the_start_of_the_document_and_the_summary_reuses_the_fetch(tmp_path):
+    narrative = "\n".join(["The applicant proposes a four-story building with three dwelling units above retail."] * 5)
+    llm = FakeLLM({"screen": [Screen(housing_relevant=True, reason="Adds homes.")], "summarize": [bare_summary()]})
+    c = ctx(tmp_path, llm, routes=[("app.pdf", _pdf(1, narrative))])
+    enrich_record(record_for_item(zoning_item([("Application", "https://x/app.pdf")]), ZONING), c)
+    assert llm.calls[0]["purpose"] == "screen" and "three dwelling units" in str(llm.calls[0]["content"])
+    assert c.fetcher.calls.count("https://x/app.pdf") == 1
+
+
+def test_scanned_document_goes_to_the_screen_as_its_first_pages_only(tmp_path):
+    llm = FakeLLM({"screen": [Screen(housing_relevant=False, reason="A car wash.")], "summarize": []})
+    c = ctx(tmp_path, llm, routes=[("app.pdf", _pdf(9))])
+    e = enrich_record(record_for_item(zoning_item([("Application", "https://x/app.pdf")]), ZONING), c)
+    assert e.status == "screened_out" and [x["purpose"] for x in llm.calls] == ["screen"]
+    assert [_pages_sent(d) for d in _docs(llm.calls[0])] == [2]
+
+
+def test_scanned_pdf_sent_to_the_summary_is_trimmed_to_the_page_cap(tmp_path):
+    llm = FakeLLM({"summarize": [bare_summary()]})
+    c = ctx(tmp_path, llm, routes=[("scan.pdf", _pdf(12))])
+    c.scanned_page_cap = 4
+    enrich_record(record_for_item(pd_item(url="https://x/scan.pdf"), CPC), c)
+    assert [_pages_sent(d) for d in _docs(llm.calls[0])] == [4]
+
+
+def test_scanned_pdf_too_large_even_after_trimming_is_skipped(tmp_path):
+    llm = FakeLLM({"summarize": [bare_summary()]})
+    c = ctx(tmp_path, llm, routes=[("scan.pdf", _pdf(3))])
+    c.max_doc_bytes = 100
+    e = enrich_record(record_for_item(pd_item(url="https://x/scan.pdf"), CPC), c)
+    assert e.status == "ok" and e.source_quality == "partial" and _docs(llm.calls[0]) == []
+
+
+def test_disclosure_forms_and_cover_letters_are_not_fetched(tmp_path):
+    llm = FakeLLM({"screen": [Screen(housing_relevant=True, reason="Adds homes.")], "summarize": [bare_summary()]})
+    c = ctx(tmp_path, llm, routes=[("ord.pdf", _pdf(1))])
+    it = zoning_item([("Or28250 EDS - Prime - redacted", "https://x/eds.pdf"),
+                      ("O2026-0025391 Mayoral Letter", "https://x/letter.pdf"),
+                      ("O2026-0025391 Ordinance", "https://x/ord.pdf")])
+    enrich_record(record_for_item(it, ZONING), c)
+    assert c.fetcher.calls == ["https://x/ord.pdf"]
+
+
+def test_skipping_boilerplate_does_not_change_the_content_hash():
+    rec = record_for_item(zoning_item([("EDS", "https://x/eds.pdf"), ("Ordinance", "https://x/ord.pdf")]), ZONING)
+    assert rec.urls == ["https://x/eds.pdf", "https://x/ord.pdf"] and rec.fetch_urls == ["https://x/ord.pdf"]
+
+
+def test_figures_from_a_scanned_source_count_when_the_summary_states_them(tmp_path):
+    llm = FakeLLM({"summarize": [bare_summary(summary="Two buildings with three dwelling units each.", units=3,
+                                              affordable_units=7)]})
+    e = enrich_record(record_for_item(pd_item(url="https://x/scan.pdf"), CPC),
+                      ctx(tmp_path, llm, routes=[("scan.pdf", _pdf(1))]))
+    assert (e.figures.units, e.figures.affordable_units) == (3, None)
+
+
+def test_spelled_out_numbers_in_document_text_ground_figures(tmp_path):
+    html = b"<html><body><p>MKR Owner LLC proposes six dwelling units at 1133 W. Kinzie St.</p></body></html>"
+    llm = FakeLLM({"summarize": [summary(units=6, affordable_units=None)]})
+    e = enrich_record(record_for_item(pd_item(), CPC), ctx(tmp_path, llm, routes=[("pd.html", html)]))
+    assert e.figures.units == 6
+
+
+def test_address_grounding_ignores_street_suffix_spelling(tmp_path):
+    geo = StubGeo()
+    llm = FakeLLM({"screen": [Screen(housing_relevant=True, reason="Adds homes.")],
+                   "summarize": [bare_summary(address="1921 W. Chicago Avenue")]})
+    e = enrich_record(record_for_item(zoning_item([]), ZONING), ctx(tmp_path, llm, geo=geo))
+    assert e.geography.address == "1921 W. Chicago Avenue" and e.geography.ward == 27
+
+
+def test_address_falls_back_to_the_item_title(tmp_path):
+    geo = StubGeo()
+    llm = FakeLLM({"screen": [Screen(housing_relevant=True, reason="Adds homes.")], "summarize": [bare_summary()]})
+    e = enrich_record(record_for_item(zoning_item([]), ZONING), ctx(tmp_path, llm, geo=geo))
+    assert geo.calls == ["1921 W Chicago Ave"] and e.geography.ward == 27
+
+
+def test_title_address_handles_aka_and_titles_without_one():
+    from digest.enrich import title_address
+    assert title_address("Zoning Reclassification Map No. 2-I at 2400 W Grenshaw St a.k.a. 1124 S Western Ave - App No. 2") \
+        == "2400 W Grenshaw St"
+    assert title_address("Historical landmark fee waiver for property at 208 S LaSalle St") == "208 S LaSalle St"
+    assert title_address("Zoning Reclassification Map No. 10-E at 3927-3933 S Martin Luther King, Jr. Dr. - App No. 23135") \
+        == "3927-3933 S Martin Luther King, Jr. Dr."
+    assert title_address("Repeal of historical landmark designation for Cortland Bridge") is None
+    assert title_address("Meeting at 10 a.m. on the budget") is None
+
+
+def test_cached_record_without_an_address_takes_the_title_address_without_the_llm(tmp_path):
+    llm = FakeLLM({"screen": [Screen(housing_relevant=True, reason="Adds homes.")], "summarize": [bare_summary()]})
+    c = ctx(tmp_path, llm)
+    rec = record_for_item(zoning_item([]), ZONING)
+    enrich_record(rec, c)
+    cached = c.cache.get(rec.id)
+    cached["geography"] = {"address": None, "ward": None, "community_area": None}  # as saved by the old code
+    c.cache.set(rec.id, cached)
+    c.geo = StubGeo()
+    e = enrich_record(rec, c)
+    assert (e.geography.address, e.geography.ward) == ("1921 W Chicago Ave", 27) and len(llm.calls) == 2
+
+
+def test_agency_office_address_is_not_used_as_the_site(tmp_path):
+    geo = StubGeo()
+    office = "111 E. Wacker, Suite 1000, Chicago, IL 60601"
+    llm = FakeLLM({"summarize": [bare_summary(address=office)]})
+    n = Notice(id="ihda:notice:1", source_id="ihda", body="IHDA", kind="public_notice", title="Public notice",
+               url="https://x/n.html", detail=f"Send comments to {office}.")
+    c = ctx(tmp_path, llm, routes=[("n.html", f"<p>Send comments to {office}.</p>".encode())], geo=geo)
+    c.office_addresses = ["111 E Wacker", "225 N Michigan"]
+    e = enrich_record(record_for_notice(n), c)
+    assert e.geography.address is None and geo.calls == []
+
+
+def test_cached_office_address_is_cleared_without_the_llm(tmp_path):
+    llm = FakeLLM({"summarize": [summary()]})
+    c = ctx(tmp_path, llm, geo=StubGeo())
+    rec = record_for_item(pd_item(), CPC)
+    assert enrich_record(rec, c).geography.address == "1133 W. Kinzie St."
+    c.office_addresses = ["1133 W Kinzie"]
+    e = enrich_record(rec, c)
+    assert e.geography == Geography() and len(llm.calls) == 1
+    assert c.cache.get(rec.id)["geography"]["address"] is None

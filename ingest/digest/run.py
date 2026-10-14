@@ -84,6 +84,8 @@ def run(root: Path, *, fetcher: Fetcher, llm=None, now: dt.datetime | None = Non
                 cache=enrich_cache, overrides=overrides,
                 screen_bodies=set(ai.get("screen_bodies") or []), models=ai["models"],
                 char_cap=ai.get("char_cap", 12000), max_attachments=ai.get("max_attachments", 2),
+                scanned_page_cap=ai.get("scanned_page_cap", 4), screen_pages=ai.get("screen_pages", 2),
+                office_addresses=list(ai.get("office_addresses") or []),
             )
             enrich_digest(digest, ctx)
 

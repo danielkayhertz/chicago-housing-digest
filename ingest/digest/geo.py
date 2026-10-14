@@ -39,8 +39,20 @@ def _which(polys: list[tuple[object, str]], pt: Point) -> str | None:
     return next((value for poly, value in polys if poly.contains(pt)), None)
 
 
+_HAS_CITY = re.compile(r",\s*(IL|Illinois)\b|\b\d{5}(-\d{4})?\s*$", re.IGNORECASE)
+
+
+def names_city(address: str) -> bool:
+    """True when the address already carries a state or ZIP, so the geocoder must not be told it is in Chicago."""
+    return bool(_HAS_CITY.search(address))
+
+
 def normalize_address(address: str) -> str:
     a = address.strip().rstrip(",").strip()
+    if names_city(a):
+        return a
+    a = re.sub(r"^(\d+)\s+(?:and|&)\s+\d+\b", r"\1", a)  # "4125 and 4127 W 5th Ave" → "4125 W 5th Ave"
+    a = re.split(r",\s*(?=\d)|\s+(?:and|&)\s+(?=\d)|\s*/\s*", a)[0].strip()  # first of several addresses
     return re.sub(r"^(\d+)-\d+", r"\1", a)  # "3700-3846 N. Seminary" → "3700 N. Seminary"
 
 
@@ -62,7 +74,8 @@ class Geo:
                          community_area=area_name(area) if area else None)
 
     def geocode(self, address: str) -> tuple[float, float] | None:
-        q = f"{normalize_address(address)}, Chicago, IL"
+        a = normalize_address(address)
+        q = a if names_city(a) else f"{a}, Chicago, IL"
         if self.cache is not None and (hit := self.cache.get(q)) is not None:
             return tuple(hit) if hit else None
         errored = False

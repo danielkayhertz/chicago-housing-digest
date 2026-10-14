@@ -6,11 +6,13 @@ import hashlib
 import json
 import logging
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, field
+from io import BytesIO
 from urllib.parse import urlsplit
 
 import anthropic
 from pydantic import BaseModel, ValidationError
+from pypdf import PdfReader, PdfWriter
 
 from .cache import JsonCache
 from .categories import Categories, merge_hits
@@ -42,9 +44,12 @@ class Summary(BaseModel):
 
 SCREEN_SYSTEM = """You triage Chicago City Council committee agenda items for a digest about housing.
 
-An item is housing_relevant if it bears on homes: building, financing, preserving, regulating, taxing, or demolishing them, or the rights of the people who live in them. Zoning changes that add or remove homes count, as do city land sales for housing and housing-related tax incentives.
-Signs, driveways, sidewalk cafes, honorary street names, business licenses, and purely commercial or industrial projects do not.
-When you cannot tell, mark the item relevant. Give a one-sentence reason."""
+You get the item's title and, when available, the start of its document.
+
+An item is housing_relevant if it bears on homes: building, financing, preserving, regulating, taxing, or demolishing them, or the rights of the people who live in them. City land sales for housing, housing-related tax incentives, and changes to the zoning code's rules for residential use count.
+A rezoning of one site counts only if it adds, removes, or changes homes there (dwelling units or residential use). A rezoning for a purely commercial, industrial, institutional, or parking use with no dwelling units does not, even if the old or new district would allow homes.
+Signs, driveways, sidewalk cafes, honorary street names, landmark fee waivers, and business licenses do not.
+When the material does not say and you cannot tell, mark the item relevant. Give a one-sentence reason."""
 
 SUMMARY_SYSTEM = """You write one entry in an email digest of Chicago housing public meetings, read by housing advocates and researchers.
 
@@ -55,9 +60,13 @@ relevance_reason: one sentence.
 summary: one to three plain sentences, at most about 40 words, on what the item would do and who is behind it, using only facts in the provided material. Do not speculate about effects. If the material says little more than the title, restate the title plainly.
 categories: the ids below that the item clearly bears on. An empty list is fine.
 {categories}
-address: the street address of the site, copied as written, or null.
+address: the street address of the site the item concerns, copied as written, or null. Never the agency's office, an address for sending comments, or the meeting location.
 entities: developers, applicants, owners, lenders, and agencies named in the material, copied exactly as written.
 units, affordable_units: counts of homes stated in the material, or null. Never estimate."""
+
+
+# Attachments never worth reading: disclosure forms, cover letters, notice affidavits.
+BOILERPLATE_LABEL = re.compile(r"\bEDS\b|economic disclosure|mayoral letter|affidavit", re.IGNORECASE)
 
 
 @dataclass
@@ -66,16 +75,22 @@ class Record:
     body: str
     title: str
     context: str
-    urls: list[str]
+    urls: list[str]  # every source url; part of the content hash
     extra_text: str = ""
     hint: Geography | None = None
+    fetch_urls: list[str] | None = None  # the urls actually read; defaults to urls
+
+    def __post_init__(self):
+        if self.fetch_urls is None:
+            self.fetch_urls = list(self.urls)
 
 
 def record_for_item(item: Item, meeting: Meeting | None) -> Record:
     body = meeting.body if meeting else ""
     when = f"{meeting.start:%B} {meeting.start.day}, {meeting.start.year}" if meeting else "unknown date"
     return Record(id=item.id, body=body, title=item.title, context=f"{body}, {when}; agenda reference {item.source_ref}",
-                  urls=[a.url for a in item.attachments], hint=item.geography_hint)
+                  urls=[a.url for a in item.attachments], hint=item.geography_hint,
+                  fetch_urls=[a.url for a in item.attachments if not BOILERPLATE_LABEL.search(a.label)])
 
 
 def _is_document_url(url: str) -> bool:
@@ -107,6 +122,11 @@ class EnrichContext:
     models: dict[str, str]
     char_cap: int = 12000
     max_attachments: int = 2
+    scanned_page_cap: int = 4  # a scanned PDF goes to the model as its first pages only
+    max_doc_bytes: int = 30_000_000  # the API rejects PDFs over 32 MB
+    screen_chars: int = 3000  # how much document text the screen sees
+    screen_pages: int = 2  # or how many pages of a scanned document
+    office_addresses: list[str] = field(default_factory=list)  # agency offices: never an item's site
     halted: str = ""  # set when the API rejects our credentials: every further call would fail the same way
 
 
@@ -115,11 +135,34 @@ def content_hash(title: str, sources: list[str], fingerprint: str) -> str:
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
 
 
-def gather_sources(fetcher: Fetcher, urls: list[str], char_cap: int, max_attachments: int) -> tuple[str, list[dict], str]:
+def trim_pdf(data: bytes, pages: int) -> bytes:
+    """The first `pages` pages of a PDF; the original bytes if it is already that short or cannot be parsed."""
+    try:
+        reader = PdfReader(BytesIO(data))
+        if len(reader.pages) <= pages:
+            return data
+        w = PdfWriter()
+        for page in reader.pages[:pages]:
+            w.add_page(page)
+        buf = BytesIO()
+        w.write(buf)
+        return buf.getvalue()
+    except Exception:
+        return data
+
+
+def doc_block(data: bytes) -> dict:
+    return {"type": "document", "source": {
+        "type": "base64", "media_type": "application/pdf", "data": base64.b64encode(data).decode("ascii")}}
+
+
+def gather_sources(fetcher: Fetcher, urls: list[str], char_cap: int, max_attachments: int, page_cap: int = 4,
+                   max_doc_bytes: int = 30_000_000) -> tuple[str, list[bytes], str]:
+    """Text of the sources, the scanned PDFs (trimmed to page_cap pages) to send as documents, and source_quality."""
     if not urls:
         return "", [], "none"
     texts: list[str] = []
-    docs: list[dict] = []
+    scans: list[bytes] = []
     quality = "full"
     for url in urls[:max_attachments]:
         try:
@@ -131,38 +174,78 @@ def gather_sources(fetcher: Fetcher, urls: list[str], char_cap: int, max_attachm
             text = pdf_text(data)
             if has_text_layer(text):
                 texts.append(text)
-            else:
-                docs.append({"type": "document", "source": {
-                    "type": "base64", "media_type": "application/pdf", "data": base64.b64encode(data).decode("ascii")}})
-                quality = "scanned" if quality == "full" else quality
+                continue
+            data = trim_pdf(data, page_cap)
+            if len(data) > max_doc_bytes:
+                log.info("skipping a scanned PDF of %d bytes even after trimming: %s", len(data), url)
+                quality = "partial"
+                continue
+            scans.append(data)
+            quality = "scanned" if quality == "full" else quality
         else:
             texts.append(html_to_text(data.decode("utf-8", errors="replace")))
     joined = "\n\n---\n\n".join(t for t in texts if t.strip())
     if len(joined) > char_cap:
         joined = joined[:char_cap]
         quality = "partial" if quality == "full" else quality
-    return joined, docs, quality
+    return joined, scans, quality
 
 
 def _norm(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip().lower()
 
 
+NUMBER_WORDS = {w: str(i) for i, w in enumerate(
+    "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen "
+    "seventeen eighteen nineteen twenty".split())}
+NUMBER_WORDS.update({"thirty": "30", "forty": "40", "fifty": "50", "sixty": "60", "seventy": "70", "eighty": "80",
+                     "ninety": "90", "hundred": "100"})
+
+
 def _numbers(corpus: str) -> set[str]:
-    return {tok.replace(",", "") for tok in re.findall(r"\d[\d,]*", corpus)}
+    digits = {tok.replace(",", "") for tok in re.findall(r"\d[\d,]*", corpus)}
+    return digits | {NUMBER_WORDS[w] for w in re.findall(r"[a-z]+", corpus) if w in NUMBER_WORDS}
 
 
 def _grounded_number(n: int | None, numbers: set[str]) -> int | None:
     return n if n is not None and str(n) in numbers else None
 
 
+STREET_WORDS = {"avenue": "ave", "street": "st", "boulevard": "blvd", "drive": "dr", "place": "pl", "parkway": "pkwy",
+                "road": "rd", "court": "ct", "north": "n", "south": "s", "east": "e", "west": "w"}
+
+
+def _street_tokens(text: str) -> list[str]:
+    return [STREET_WORDS.get(t, t) for t in re.findall(r"[a-z0-9]+", _norm(text))]
+
+
 def _grounded_address(address: str | None, corpus: str) -> str | None:
     if not address:
         return None
-    tokens = re.findall(r"[a-z0-9]+", _norm(address))
+    tokens = _street_tokens(address)
     if not any(t.isdigit() for t in tokens):
         return None
-    return address if all(t in corpus for t in tokens if len(t) >= 3) else None
+    known = set(_street_tokens(corpus))
+    return address if all(t in known for t in tokens if len(t) >= 3) else None
+
+
+_TITLE_ADDRESS = re.compile(
+    r"\bat\s+(\d+(?:-\d+)?(?:\s+(?:and|&)\s+\d+(?:-\d+)?)?\s+[NSEW]\.?\s+[^-]+?)"
+    r"(?:\s+a\.?k\.?a\.?\s.*)?(?:\s*-\s*App\b.*)?$")
+
+
+def title_address(title: str) -> str | None:
+    """The site address in a title like "Zoning Reclassification Map No. 1-H at 1921 W Chicago Ave - App No. 1"."""
+    m = _TITLE_ADDRESS.search(title.strip())
+    return m.group(1).strip() if m else None
+
+
+def is_office(address: str | None, offices: list[str]) -> bool:
+    """True when the address is one of the agency offices (number and street match), never a project site."""
+    if not address:
+        return False
+    tokens = set(_street_tokens(address))
+    return any(set(_street_tokens(o)) <= tokens for o in offices)
 
 
 def resolve_geography(hint: Geography | None, address: str | None, geo) -> Geography:
@@ -226,19 +309,32 @@ def _prompt(rec: Record, text: str) -> str:
     return "\n\n".join(parts)
 
 
+def _screen_content(rec: Record, text: str, scans: list[bytes], ctx: EnrichContext):
+    head = f"Committee: {rec.body}\nItem: {rec.title}"
+    if text.strip():
+        return f"{head}\n\nStart of the document:\n{text[:ctx.screen_chars]}"
+    if scans:
+        return [doc_block(trim_pdf(scans[0], ctx.screen_pages)), {"type": "text", "text": head}]
+    return head
+
+
 def _fresh(rec: Record, ctx: EnrichContext, h: str) -> Enrichment:
     rules = ctx.categories.rule_hits(rec.body, [rec.title, rec.extra_text])
+    text, scans, quality = gather_sources(ctx.fetcher, rec.fetch_urls, ctx.char_cap, ctx.max_attachments,
+                                          ctx.scanned_page_cap, ctx.max_doc_bytes)
     if rec.body in ctx.screen_bodies:
         sc = ctx.llm.parse(purpose="screen", model_key="screen", system=SCREEN_SYSTEM,
-                           content=f"Committee: {rec.body}\nItem: {rec.title}", schema=Screen, max_tokens=8000)
+                           content=_screen_content(rec, text, scans, ctx), schema=Screen, max_tokens=8000)
         if not sc.housing_relevant:
             return Enrichment(status="screened_out", relevance_reason=sc.reason, categories=rules,
                               geography=rec.hint or Geography(), model=ctx.models["screen"], content_hash=h)
-    text, docs, quality = gather_sources(ctx.fetcher, rec.urls, ctx.char_cap, ctx.max_attachments)
     s = ctx.llm.parse(purpose="summarize", model_key="summarize",
                       system=SUMMARY_SYSTEM.format(categories=ctx.categories.prompt_block()),
-                      content=[*docs, {"type": "text", "text": _prompt(rec, text)}], schema=Summary, max_tokens=16000)
-    corpus = _norm("\n".join([rec.title, rec.extra_text, text]))
+                      content=[*map(doc_block, scans), {"type": "text", "text": _prompt(rec, text)}],
+                      schema=Summary, max_tokens=16000)
+    # A scanned document has no text to check against. Its facts are accepted where the summary, which the model
+    # wrote from that document, states them too: that adds nothing the summary does not already claim.
+    corpus = _norm("\n".join([rec.title, rec.extra_text, text] + ([s.summary] if scans else [])))
     numbers = _numbers(corpus)
     entities = [e.strip() for e in s.entities if e.strip() and _norm(e) in corpus]
     dropped = len(s.entities) - len(entities)
@@ -250,12 +346,17 @@ def _fresh(rec: Record, ctx: EnrichContext, h: str) -> Enrichment:
         figures[name] = _grounded_number(value, numbers)
         if value is not None and figures[name] is None:
             log.info("%s: dropped ungrounded figure %s=%s", rec.id, name, value)
+    address = _grounded_address(s.address, corpus)
+    if not address or is_office(address, ctx.office_addresses):
+        address = title_address(rec.title)
+    if is_office(address, ctx.office_addresses):
+        address = None
     late_rules = ctx.categories.rule_hits(None, [s.summary, *entities])  # keywords also match summary and entities
     model_hits = [CategoryHit(id=c, via="model") for c in s.categories if c in ctx.categories.by_id]
     return Enrichment(
         status="ok", housing_relevant=s.housing_relevant, relevance_reason=s.relevance_reason, summary=s.summary,
         categories=merge_hits(rules, late_rules, model_hits),
-        geography=resolve_geography(rec.hint, _grounded_address(s.address, corpus), ctx.geo),
+        geography=resolve_geography(rec.hint, address, ctx.geo),
         entities=entities,
         figures=Figures(**figures),
         source_quality=quality, model=ctx.models["summarize"], content_hash=h,
@@ -296,6 +397,12 @@ def enrich_record(rec: Record, ctx: EnrichContext) -> Enrichment:
                 e = Enrichment.model_validate(cached)
             except ValidationError as ex:  # stale or corrupt entry: treat as a miss
                 log.warning("%s: ignoring invalid enrich cache entry: %s", rec.id, ex)
+            if e is not None and is_office(e.geography.address, ctx.office_addresses):
+                e.geography = Geography()  # an agency office is never the site; dropped without a new model call
+                ctx.cache.set(rec.id, e.model_dump(mode="json"))
+            if e is not None and e.status == "ok" and not e.geography.address and (addr := title_address(rec.title)):
+                e.geography = resolve_geography(rec.hint, addr, ctx.geo)  # free: no model call
+                ctx.cache.set(rec.id, e.model_dump(mode="json"))
             if e is not None and e.geography.address and e.geography.ward is None:
                 # The geocoder may have failed transiently last time; the geocode cache makes a clean no-match free.
                 geography = resolve_geography(rec.hint, e.geography.address, ctx.geo)

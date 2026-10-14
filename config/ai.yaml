@@ -13,4 +13,13 @@ screen_bodies:
   - City Council Committee on Housing and Real Estate
   - City Council Committee on Finance
 char_cap: 12000
-max_attachments: 2
+max_attachments: 2  # disclosure forms (EDS), mayoral letters and affidavits are never read and do not count
+# Scanned PDFs (no text layer) are sent as images, which is where most of the cost goes; send only the first pages.
+scanned_page_cap: 4
+screen_pages: 2  # the Haiku screen sees this many pages of a scanned document, or the first 3000 chars of text
+# Agency offices that show up in notices as places to send comments. Never treated as an item's site.
+office_addresses:
+  - 111 E Wacker      # IHDA
+  - 225 N Michigan    # IHDA bond hearings
+  - 121 N LaSalle     # City Hall
+  - 60 E Van Buren    # CHA

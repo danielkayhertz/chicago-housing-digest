@@ -96,3 +96,17 @@ def test_community_area_names_use_official_spelling():
     assert area_name("MCKINLEY PARK") == "McKinley Park"
     assert area_name("OHARE") == "O'Hare"
     assert area_name("NEAR WEST SIDE") == "Near West Side"
+
+
+def test_query_keeps_an_address_that_already_names_its_city(tmp_path):
+    geo, f = make_geo(tmp_path, [("geocoding.geo.census.gov", CENSUS_MISS), ("nominatim.openstreetmap.org", b"[]")])
+    geo.locate("5550 Abbey Drive, Lisle, Illinois 60532")
+    assert f.calls and all("Chicago" not in c for c in f.calls)
+
+
+def test_multi_address_strings_are_reduced_to_the_first_address():
+    from digest.geo import normalize_address
+    assert normalize_address("3800 S State St, 3901-3959 S Dearborn St and 2-52 W 40th St") == "3800 S State St"
+    assert normalize_address("4125 and 4127 W 5th Ave") == "4125 W 5th Ave"
+    assert normalize_address("1119-1137 N Halsted St/1134-1178 N Kingsbury St") == "1119 N Halsted St"
+    assert normalize_address("111 E. Wacker, Suite 1000, Chicago, IL 60601") == "111 E. Wacker, Suite 1000, Chicago, IL 60601"
