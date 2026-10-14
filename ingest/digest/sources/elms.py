@@ -8,7 +8,7 @@ from collections import Counter
 from ..http import Fetcher, NotFound
 from ..models import CHI, Attachment, Item, Meeting, MeetingStatus, Outcome, SourceResult
 from ..pdftext import has_text_layer, pdf_text
-from .base import BaseAdapter, window_for
+from .base import BaseAdapter, clean_text, window_for
 
 ELMS = "https://api.chicityclerkelms.chicago.gov"
 # Two agenda layouts: "DOCUMENT # O2026-0025391" headers (Zoning), and numbered lines that open with the
@@ -73,9 +73,43 @@ def _inline_title(block: str) -> str:
     return " ".join(lines)
 
 
+_ENTRY_RE = re.compile(r"^[ \t]*\d+\.[ \t]+(\S.*)$")
+_TRAILING_REC_RE = re.compile(rf"^(.*?)[ \t]*\(({_REC})\)[ \t]*$")
+
+
+def _parse_trailing(text: str) -> list[tuple[str, str]]:
+    """Finance layout: "2. An ordinance ... 28th Ward" with the record "(O2026-0028750)" closing the entry.
+    Entries with no record number (communications and the like) are skipped."""
+    out: list[tuple[str, str]] = []
+    seen: set[str] = set()
+    entry: list[str] | None = None
+    for line in text.splitlines():
+        start = _ENTRY_RE.match(line)
+        if start:
+            entry = [start.group(1)]
+        elif entry is not None and not line.strip():
+            entry = None  # a blank line ends an entry that never named a record
+            continue
+        elif entry is not None:
+            entry.append(line)
+        if entry is None:
+            continue
+        closing = _TRAILING_REC_RE.match(entry[-1].rstrip())
+        if closing:
+            rec = closing.group(2)
+            parts = [*entry[:-1], closing.group(1)]
+            if rec not in seen:
+                seen.add(rec)
+                out.append((rec, clean_text(" ".join(parts))))
+            entry = None
+    return out
+
+
 def parse_agenda(text: str) -> list[tuple[str, str]]:
     """(record number, title as printed) in agenda order, first occurrence only."""
     matches = list(RECORD_RE.finditer(text))
+    if not matches:
+        return _parse_trailing(text)
     out: list[tuple[str, str]] = []
     seen: set[str] = set()
     for i, m in enumerate(matches):

@@ -140,3 +140,34 @@ Department of Planning and Development
         ("O2026-0029011", "Sale of City-owned property at 4549 S Indiana Ave."),
         ("O2026-0029012", ""),  # nothing follows before a blank line: no title rather than a section heading
     ]
+
+
+def test_parse_agenda_record_number_after_the_title():
+    # Layout of the Committee on Finance agenda for October 13, 2026: the record closes the entry.
+    text = """AGENDA OF MATTERS
+TO BE CONSIDERED BY THE
+COMMITTEE ON FINANCE
+
+DEPARTMENT OF LAW
+
+1. A communication transmitting reports of cases in which verdicts, judgments or
+settlements were entered into for the month of September 2026.
+
+DEPARTMENT OF HOUSING
+
+2. An ordinance authorizing the issuance of Multi-Family program funds to Harvest Homes
+Apartments, LLC for a residential housing project at 3415-3449 W. Jackson Boulevard.      28th Ward
+(O2026-0028750)
+    Amount not to exceed: $11,000,000. Multi-Family Program Funds
+
+MISCELLANEOUS
+
+3. An ordinance, introduced by Alderman Pat Dowell (3rd Ward), amending Municipal Code Chapter 10-8
+regarding charitable solicitation on public way. (O2026-0026950)
+"""
+    assert parse_agenda(text) == [
+        ("O2026-0028750", "An ordinance authorizing the issuance of Multi-Family program funds to Harvest Homes "
+                          "Apartments, LLC for a residential housing project at 3415-3449 W. Jackson Boulevard. 28th Ward"),
+        ("O2026-0026950", "An ordinance, introduced by Alderman Pat Dowell (3rd Ward), amending Municipal Code "
+                          "Chapter 10-8 regarding charitable solicitation on public way."),
+    ]
