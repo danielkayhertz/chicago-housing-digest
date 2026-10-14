@@ -11,7 +11,10 @@ from ..pdftext import has_text_layer, pdf_text
 from .base import BaseAdapter, window_for
 
 ELMS = "https://api.chicityclerkelms.chicago.gov"
-RECORD_RE = re.compile(r"DOCUMENT\s*#\s*([A-Z][A-Za-z]{0,2}\d{4}-\d{4,8})")
+# Two agenda layouts: "DOCUMENT # O2026-0025391" headers (Zoning), and numbered lines that open with the
+# record in parentheses, "4. (O2026-0029008) Sale of City-owned property ..." (Housing, Finance).
+_REC = r"[A-Z][A-Za-z]{0,2}\d{4}-\d{4,8}"
+RECORD_RE = re.compile(rf"DOCUMENT\s*#\s*({_REC})|^[ \t]*\d+\.[ \t]*\(({_REC})\)", re.MULTILINE)
 STATUS_WORDS: dict[str, MeetingStatus] = {
     "cancel": "cancelled", "reschedul": "rescheduled",
     "recess": "held", "adjourn": "held", "reconven": "held",
@@ -56,18 +59,30 @@ def _block_title(block: str) -> str:
     return " ".join(keep[0]) if keep else ""
 
 
+def _inline_title(block: str) -> str:
+    """Numbered layout: the title starts on the record's line and runs to a blank line or a "(21st Ward)" line."""
+    lines: list[str] = []
+    for line in block.splitlines():
+        line = line.strip()
+        if not line or (lines and line.startswith("(")):
+            break
+        lines.append(line)
+    return " ".join(lines)
+
+
 def parse_agenda(text: str) -> list[tuple[str, str]]:
     """(record number, title as printed) in agenda order, first occurrence only."""
     matches = list(RECORD_RE.finditer(text))
     out: list[tuple[str, str]] = []
     seen: set[str] = set()
     for i, m in enumerate(matches):
-        rec = m.group(1)
+        rec = m.group(1) or m.group(2)
         if rec in seen:
             continue
         seen.add(rec)
         end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
-        out.append((rec, _block_title(text[m.end():end])))
+        block = text[m.end():end]
+        out.append((rec, _block_title(block) if m.group(1) else _inline_title(block)))
     return out
 
 
@@ -133,8 +148,10 @@ class ElmsAdapter(BaseAdapter):
         text = pdf_text(fetcher.get_bytes(m.agenda_url))
         records = parse_agenda(text)
         if not records:
-            why = "agenda has text but no record numbers" if has_text_layer(text) else "agenda has no text layer"
-            return [], [f"{m.id}: {why}"]
+            if has_text_layer(text):
+                m.needs_ai_extraction = True  # an unfamiliar layout: run.py's _extract lists the items instead
+                return [], []
+            return [], [f"{m.id}: agenda has no text layer"]
         return [self._item(m, rec, title, self._matter(fetcher, rec)) for rec, title in records], []
 
     def _matter(self, fetcher: Fetcher, rec: str) -> dict | None:

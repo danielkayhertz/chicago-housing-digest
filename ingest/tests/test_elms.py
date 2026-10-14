@@ -75,8 +75,41 @@ def test_missing_matter_falls_back_to_agenda_title():
     assert bldg.attachments == []
 
 
-def test_agenda_without_record_numbers_warns(monkeypatch):
+def test_agenda_text_without_record_numbers_goes_to_ai_extraction(monkeypatch):
     monkeypatch.setattr(elms, "pdf_text", lambda data: "COMMITTEE ON ZONING AGENDA\n" * 20)
     res = ElmsAdapter(CFG).fetch(FakeFetcher(routes()), NOW)
-    assert res.items == []
-    assert any("no record numbers" in w for w in res.warnings)
+    assert res.items == [] and res.warnings == []  # no "no record numbers" stale warning
+    with_agenda = {m.id for m in res.meetings if m.status != "cancelled" and m.agenda_url}
+    assert with_agenda and {m.id for m in res.meetings if m.needs_ai_extraction} == with_agenda
+
+
+def test_parse_agenda_numbered_parenthetical_records():
+    # Layout of the Committee on Housing and Real Estate agenda for October 8, 2026 (text layer as extracted).
+    text = """AGENDA
+Thursday, October 8, 2026
+Mayoral Appointments
+
+1. (A2026-0029000) Appointment of Vernell Givens as Commissioner of Chicago Housing
+Authority for a term effective immediately and expiring August 31, 2031.
+
+Department of Planning and Development
+
+4. (O2026-0029008) Sale of City-owned property at 11414 S Halsted St to Far South CDC
+under Low-Income Housing Tax Credits program for redevelopment of Morgan Park
+Commons (repeal and replacement of O2026-0026567 in entirety).
+(21st Ward)
+Sale Price $2.00
+
+10. (O2026-0029011) Sale of City-owned property at 4549 S Indiana Ave to Click
+Development LLC 4549 Indiana under ChiBlockBuilder.
+(3rd Ward)
+"""
+    assert parse_agenda(text) == [
+        ("A2026-0029000", "Appointment of Vernell Givens as Commissioner of Chicago Housing Authority for a term "
+                          "effective immediately and expiring August 31, 2031."),
+        ("O2026-0029008", "Sale of City-owned property at 11414 S Halsted St to Far South CDC under Low-Income "
+                          "Housing Tax Credits program for redevelopment of Morgan Park Commons (repeal and "
+                          "replacement of O2026-0026567 in entirety)."),
+        ("O2026-0029011", "Sale of City-owned property at 4549 S Indiana Ave to Click Development LLC 4549 Indiana "
+                          "under ChiBlockBuilder."),
+    ]
