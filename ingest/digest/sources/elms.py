@@ -15,6 +15,7 @@ ELMS = "https://api.chicityclerkelms.chicago.gov"
 # record in parentheses, "4. (O2026-0029008) Sale of City-owned property ..." (Housing, Finance).
 _REC = r"[A-Z][A-Za-z]{0,2}\d{4}-\d{4,8}"
 RECORD_RE = re.compile(rf"DOCUMENT\s*#\s*({_REC})|^[ \t]*\d+\.[ \t]*\(({_REC})\)", re.MULTILINE)
+MAX_MEETING_PAGES = 10
 STATUS_WORDS: dict[str, MeetingStatus] = {
     "cancel": "cancelled", "reschedul": "rescheduled",
     "recess": "held", "adjourn": "held", "reconven": "held",
@@ -74,11 +75,12 @@ def _inline_title(block: str) -> str:
 
 
 _ENTRY_RE = re.compile(r"^[ \t]*\d+\.[ \t]+(\S.*)$")
-_TRAILING_REC_RE = re.compile(rf"^(.*?)[ \t]*\(({_REC})\)[ \t]*$")
+_STANDALONE_REC_RE = re.compile(rf"^[ \t]*\(({_REC})\)[ \t]*$")
 
 
 def _parse_trailing(text: str) -> list[tuple[str, str]]:
-    """Finance layout: "2. An ordinance ... 28th Ward" with the record "(O2026-0028750)" closing the entry.
+    """Finance layout: "2. An ordinance ... 28th Ward" closed by a line holding only the record, "(O2026-0028750)".
+    A record at the end of a line of words is a cross-reference inside the title, never the closer.
     Entries with no record number (communications and the like) are skipped."""
     out: list[tuple[str, str]] = []
     seen: set[str] = set()
@@ -87,22 +89,26 @@ def _parse_trailing(text: str) -> list[tuple[str, str]]:
         start = _ENTRY_RE.match(line)
         if start:
             entry = [start.group(1)]
-        elif entry is not None and not line.strip():
-            entry = None  # a blank line ends an entry that never named a record
             continue
-        elif entry is not None:
-            entry.append(line)
         if entry is None:
             continue
-        closing = _TRAILING_REC_RE.match(entry[-1].rstrip())
+        if not line.strip():
+            entry = None  # a blank line ends an entry that never named a record
+            continue
+        closing = _STANDALONE_REC_RE.match(line)
         if closing:
-            rec = closing.group(2)
-            parts = [*entry[:-1], closing.group(1)]
+            rec = closing.group(1)
             if rec not in seen:
                 seen.add(rec)
-                out.append((rec, clean_text(" ".join(parts))))
+                out.append((rec, clean_text(" ".join(entry))))
             entry = None
+        else:
+            entry.append(line)
     return out
+
+
+def count_numbered_entries(text: str) -> int:
+    return sum(1 for line in text.splitlines() if _ENTRY_RE.match(line))
 
 
 def parse_agenda(text: str) -> list[tuple[str, str]]:
@@ -148,7 +154,9 @@ class ElmsAdapter(BaseAdapter):
     def fetch(self, fetcher: Fetcher, now: dt.datetime) -> SourceResult:
         win = window_for(now, self.days)
         res = SourceResult(window_start=win.start, window_end=win.end)
-        for raw in self._meetings(fetcher, win):
+        rows, paging_warnings = self._meetings(fetcher, win)
+        res.warnings += paging_warnings
+        for raw in rows:
             m = self._meeting(raw, now)
             res.meetings.append(m)
             if m.status == "cancelled" or not m.agenda_url:
@@ -158,17 +166,20 @@ class ElmsAdapter(BaseAdapter):
             res.warnings += warnings
         return res
 
-    def _meetings(self, fetcher: Fetcher, win) -> list[dict]:
-        out = []
-        for page in range(10):  # newest (furthest future) first
+    def _meetings(self, fetcher: Fetcher, win) -> tuple[list[dict], list[str]]:
+        out: list[dict] = []
+        for page in range(MAX_MEETING_PAGES):  # newest (furthest future) first
             data = fetcher.get_json(f"{ELMS}/meeting", {
                 "filter": f"body eq '{self.body}'", "top": self.page_size, "skip": page * self.page_size,
             })
             rows = data.get("data") or []
+            if not rows:
+                return out, []  # only an empty page proves the end: a short page may not be the last
             out += [r for r in rows if win.contains(_local(r["date"]).date())]
-            if len(rows) < self.page_size or _local(rows[-1]["date"]).date() < win.start:
-                break
-        return out
+            if _local(rows[-1]["date"]).date() < win.start:
+                return out, []
+        # Meetings past the cap would look unlisted to merge, but it only flips ones inside the window we covered.
+        return out, [f"{self.source_id}: meeting list not exhausted after {MAX_MEETING_PAGES} pages"]
 
     def _meeting(self, r: dict, now: dt.datetime) -> Meeting:
         start = _local(r["date"])
@@ -189,7 +200,12 @@ class ElmsAdapter(BaseAdapter):
                 m.needs_ai_extraction = True  # an unfamiliar layout: run.py's _extract lists the items instead
                 return [], []
             return [], [f"{m.id}: agenda has no text layer"]
-        return [self._item(m, rec, title, self._matter(fetcher, rec)) for rec, title in records], []
+        warnings: list[str] = []
+        if not RECORD_RE.search(text):  # trailing-record layout: entries with no record number are not itemized
+            skipped = count_numbered_entries(text) - len(records)
+            if skipped > 0:
+                warnings.append(f"{m.id}: {skipped} numbered agenda entries have no record number and were skipped")
+        return [self._item(m, rec, title, self._matter(fetcher, rec)) for rec, title in records], warnings
 
     def _matter(self, fetcher: Fetcher, rec: str) -> dict | None:
         # A substituted record (O… → SO…) can 404 under its original number.

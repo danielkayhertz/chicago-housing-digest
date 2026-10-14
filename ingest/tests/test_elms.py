@@ -20,7 +20,8 @@ def routes(**over):
         ("recordNumber/O2026-0027202", NotFound("O2026-0027202", 404)),
         ("recordNumber/SO2026-0027202", "elms/matter_SO2026-0027202.json"),
         ("meetingattachmentspublic/", "elms/agenda_zoning.pdf"),
-        ("/meeting?", "elms/meetings_zoning.json"),
+        ("skip=0", "elms/meetings_zoning.json"),
+        ("/meeting?", b'{"data": []}'),  # the page after: only an empty page ends the listing
     ]
     return [(k, over.get(k, v)) for k, v in base]
 
@@ -163,7 +164,8 @@ Apartments, LLC for a residential housing project at 3415-3449 W. Jackson Boulev
 MISCELLANEOUS
 
 3. An ordinance, introduced by Alderman Pat Dowell (3rd Ward), amending Municipal Code Chapter 10-8
-regarding charitable solicitation on public way. (O2026-0026950)
+regarding charitable solicitation on public way.
+(O2026-0026950)
 """
     assert parse_agenda(text) == [
         ("O2026-0028750", "An ordinance authorizing the issuance of Multi-Family program funds to Harvest Homes "
@@ -171,3 +173,58 @@ regarding charitable solicitation on public way. (O2026-0026950)
         ("O2026-0026950", "An ordinance, introduced by Alderman Pat Dowell (3rd Ward), amending Municipal Code "
                           "Chapter 10-8 regarding charitable solicitation on public way."),
     ]
+
+
+def test_trailing_layout_ignores_a_cross_reference_ending_a_title_line():
+    text = """1. An ordinance amending the sale of 11414 S Halsted St, replacing and repealing the earlier
+ordinance authorizing it (O2026-0026567)
+for redevelopment of Morgan Park Commons.      9th Ward
+(O2026-0029008)
+
+2. An ordinance repealing (O2026-0026567)
+"""
+    assert parse_agenda(text) == [
+        ("O2026-0029008", "An ordinance amending the sale of 11414 S Halsted St, replacing and repealing the earlier "
+                          "ordinance authorizing it (O2026-0026567) for redevelopment of Morgan Park Commons. 9th Ward"),
+    ]
+
+
+def test_trailing_layout_warns_about_entries_without_a_record(monkeypatch):
+    text = """COMMITTEE ON FINANCE
+
+1. A communication transmitting reports of cases for the month of September 2026.
+
+2. An ordinance authorizing Multi-Family program funds for a project at 3415 W. Jackson Blvd.
+(O2026-0025391)
+
+3. A communication from the Department of Law.
+"""
+    monkeypatch.setattr(elms, "pdf_text", lambda data: text)
+    res = ElmsAdapter(CFG).fetch(FakeFetcher(routes()), NOW)
+    assert any(i.source_ref == "O2026-0025391" for i in res.items)
+    assert any("2 numbered agenda entries have no record number" in w for w in res.warnings)
+    assert not any(m.needs_ai_extraction for m in res.meetings)
+
+
+def _row(n, day):
+    return {"meetingId": f"M{n}", "date": f"2026-10-{day:02d}T15:00:00Z", "status": "Scheduled"}
+
+
+def test_paging_continues_past_a_short_page_until_an_empty_one():
+    cfg = {**CFG, "page_size": 2}
+    f = FakeFetcher([
+        ("skip=0", json.dumps({"data": [_row(1, 20)]}).encode()),       # short, but not the last page
+        ("skip=2", json.dumps({"data": [_row(2, 14), _row(3, 13)]}).encode()),
+        ("/meeting?", b'{"data": []}'),
+    ])
+    res = ElmsAdapter(cfg).fetch(f, NOW)
+    assert sorted(m.id for m in res.meetings) == ["elms:M1", "elms:M2", "elms:M3"]
+    assert res.warnings == []
+
+
+def test_paging_is_capped_with_a_warning():
+    cfg = {**CFG, "page_size": 1}
+    f = FakeFetcher([("/meeting?", json.dumps({"data": [_row(1, 20)]}).encode())])
+    res = ElmsAdapter(cfg).fetch(f, NOW)
+    assert len(f.calls) == elms.MAX_MEETING_PAGES
+    assert any("not exhausted" in w for w in res.warnings)
