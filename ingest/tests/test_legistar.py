@@ -44,3 +44,21 @@ def test_items_only_matters_with_attachments():
 def test_window_is_carried_on_the_result():
     res = LegistarAdapter(CFG).fetch(fetcher(), NOW)
     assert (res.window_start, res.window_end) == (dt.date(2026, 9, 6), dt.date(2026, 11, 19))
+
+
+def test_matter_listed_twice_on_one_agenda_gets_distinct_item_ids():
+    import json
+    rows = [{"EventItemMatterFile": "26-57", "EventItemTitle": "First listing"},
+            {"EventItemMatterFile": "26-96", "EventItemTitle": "Other matter"},
+            {"EventItemMatterFile": "26-57", "EventItemTitle": "Second listing"},
+            {"EventItemMatterFile": "26-57", "EventItemTitle": "Third listing"}]
+    f = FakeFetcher([
+        ("/events/1146/eventitems", json.dumps(rows).encode()),
+        ("/eventitems", "common/empty_list.json"),
+        ("/thecha/events?", "legistar/cha_events.json"),
+    ])
+    res = LegistarAdapter(CFG).fetch(f, NOW)
+    ids = [i.id for i in res.items]
+    assert ids == ["legistar:thecha:1146#26-57", "legistar:thecha:1146#26-96",
+                   "legistar:thecha:1146#26-57-2", "legistar:thecha:1146#26-57-3"]
+    assert {i.source_ref for i in res.items} == {"26-57", "26-96"}  # the printed number is unchanged

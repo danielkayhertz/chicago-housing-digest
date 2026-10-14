@@ -33,6 +33,16 @@ def slugify(text: str, max_len: int = 60) -> str:
     return s[:max_len].rstrip("-") or "x"
 
 
+def unique_ref(base: str, used: set[str]) -> str:
+    """base, then base-2, base-3, ... for repeats within one meeting; records the result in used."""
+    ref, k = base, 1
+    while ref in used:
+        k += 1
+        ref = f"{base}-{k}"
+    used.add(ref)
+    return ref
+
+
 def clean_text(s: str) -> str:
     return re.sub(r"\s+", " ", s.replace("\xa0", " ")).strip()
 

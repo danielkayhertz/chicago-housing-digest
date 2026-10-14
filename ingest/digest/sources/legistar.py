@@ -5,7 +5,7 @@ import datetime as dt
 
 from ..http import Fetcher
 from ..models import CHI, Attachment, Item, Meeting, Outcome, SourceResult
-from .base import BaseAdapter, window_for
+from .base import BaseAdapter, unique_ref, window_for
 
 API = "https://webapi.legistar.com/v1"
 
@@ -38,7 +38,8 @@ class LegistarAdapter(BaseAdapter):
             m = self._meeting(ev, now)
             res.meetings.append(m)
             rows = fetcher.get_json(f"{API}/{self.client}/events/{ev['EventId']}/eventitems", {"Attachments": 1})
-            res.items += [self._item(m, r) for r in rows if r.get("EventItemMatterFile")]
+            used: set[str] = set()  # one matter can be listed twice on an agenda
+            res.items += [self._item(m, r, used) for r in rows if r.get("EventItemMatterFile")]
         return res
 
     def _meeting(self, ev: dict, now: dt.datetime) -> Meeting:
@@ -54,11 +55,11 @@ class LegistarAdapter(BaseAdapter):
             video_url=ev.get("EventVideoPath") or None, detail_url=ev.get("EventInSiteURL") or None,
         )
 
-    def _item(self, m: Meeting, r: dict) -> Item:
+    def _item(self, m: Meeting, r: dict, used: set[str]) -> Item:
         action = r.get("EventItemActionName") or r.get("EventItemPassedFlagName")
         title = (r.get("EventItemTitle") or r.get("EventItemMatterName") or r["EventItemMatterFile"]).strip()
         return Item(
-            id=f"{m.id}#{r['EventItemMatterFile']}", meeting_id=m.id, source_ref=r["EventItemMatterFile"],
+            id=f"{m.id}#{unique_ref(r['EventItemMatterFile'], used)}", meeting_id=m.id, source_ref=r["EventItemMatterFile"],
             title=title,
             attachments=[
                 Attachment(label=a["MatterAttachmentName"], url=a["MatterAttachmentHyperlink"])

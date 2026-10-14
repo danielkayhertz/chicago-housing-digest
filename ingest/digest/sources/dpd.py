@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup, NavigableString, Tag
 
 from ..http import Fetcher
 from ..models import CHI, Attachment, Geography, Item, Meeting, SourceResult
-from .base import BaseAdapter, ImplausibleResult, clean_text, parse_ampm, slugify, window_for
+from .base import BaseAdapter, ImplausibleResult, clean_text, parse_ampm, slugify, unique_ref, window_for
 
 MONTHS = {
     "jan": 1, "january": 1, "feb": 2, "february": 2, "mar": 3, "march": 3, "apr": 4, "april": 4,
@@ -149,11 +149,7 @@ class DpdAdapter(BaseAdapter):
 
     def _item(self, m: Meeting, n: int, row: HearingRow, used: set[str]) -> Item:
         base = slugify(row.address) if row.address else f"item-{n}"
-        ref, k = base, 1
-        while ref in used:
-            k += 1
-            ref = f"{base}-{k}"
-        used.add(ref)
+        ref = unique_ref(base, used)
         return Item(
             id=f"{m.id}#{ref}", meeting_id=m.id, source_ref=row.address or f"Item {n}",
             title=row.description, attachments=row.attachments,
