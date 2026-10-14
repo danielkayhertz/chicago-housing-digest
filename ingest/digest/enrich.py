@@ -18,6 +18,7 @@ from .pdftext import has_text_layer, pdf_text
 from .sources.base import html_to_text
 
 PROMPT_VERSION = "1"  # bump to re-enrich everything after a prompt change
+MAX_FAILED_ATTEMPTS = 3  # a record that keeps failing is retried on this many runs, then left failed
 log = logging.getLogger("digest.enrich")
 
 
@@ -227,25 +228,45 @@ def _fresh(rec: Record, ctx: EnrichContext, h: str) -> Enrichment:
     )
 
 
+def _failed(rec: Record, ctx: EnrichContext, h: str, reason: str) -> Enrichment:
+    """A failed enrichment keeps the rule-based category hits so the record still shows up sensibly."""
+    return Enrichment(status="failed", relevance_reason=reason[:300],
+                      categories=ctx.categories.rule_hits(rec.body, [rec.title, rec.extra_text]),
+                      geography=rec.hint or Geography(), model=ctx.models["summarize"], content_hash=h)
+
+
 def enrich_record(rec: Record, ctx: EnrichContext) -> Enrichment:
     h = content_hash(rec.title, rec.urls + [rec.extra_text], ctx.categories.fingerprint())
     cached = ctx.cache.get(rec.id)
     e = None
+    attempts = 0
     if isinstance(cached, dict) and cached.get("content_hash") == h:
-        try:
-            e = Enrichment.model_validate(cached)
-        except ValidationError as ex:  # stale or corrupt entry: treat as a miss
-            log.warning("%s: ignoring invalid enrich cache entry: %s", rec.id, ex)
-    if e is None:
-        try:
-            e = _fresh(rec, ctx, h)
-        except Exception as ex:  # one bad record must never abort the run
-            log.warning("%s: enrichment failed: %s: %s", rec.id, type(ex).__name__, ex)
-            e = Enrichment(status="failed", relevance_reason=f"enrichment failed: {ex}"[:300],
-                           categories=ctx.categories.rule_hits(rec.body, [rec.title, rec.extra_text]),
-                           geography=rec.hint or Geography(), model=ctx.models["summarize"], content_hash=h)
+        if "failed_attempts" in cached:  # failure marker, never a valid Enrichment
+            n = cached["failed_attempts"]
+            attempts = n if isinstance(n, int) else 0
         else:
-            ctx.cache.set(rec.id, e.model_dump(mode="json"))
+            try:
+                e = Enrichment.model_validate(cached)
+            except ValidationError as ex:  # stale or corrupt entry: treat as a miss
+                log.warning("%s: ignoring invalid enrich cache entry: %s", rec.id, ex)
+            if e is not None and e.geography.address and e.geography.ward is None:
+                # The geocoder may have failed transiently last time; the geocode cache makes a clean no-match free.
+                geography = resolve_geography(rec.hint, e.geography.address, ctx.geo)
+                if geography != e.geography:
+                    e.geography = geography
+                    ctx.cache.set(rec.id, e.model_dump(mode="json"))
+    if e is None:
+        if attempts >= MAX_FAILED_ATTEMPTS:
+            e = _failed(rec, ctx, h, f"enrichment failed {attempts} times; not retrying until the content changes")
+        else:
+            try:
+                e = _fresh(rec, ctx, h)
+            except Exception as ex:  # one bad record must never abort the run
+                log.warning("%s: enrichment failed: %s: %s", rec.id, type(ex).__name__, ex)
+                e = _failed(rec, ctx, h, f"enrichment failed: {ex}")
+                ctx.cache.set(rec.id, {"content_hash": h, "failed_attempts": attempts + 1})
+            else:
+                ctx.cache.set(rec.id, e.model_dump(mode="json"))
     return apply_overrides(e, ctx.overrides.get(rec.id))
 
 

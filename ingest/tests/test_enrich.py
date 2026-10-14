@@ -107,7 +107,7 @@ def test_refusal_marks_failed_and_continues(tmp_path):
     d = enrich_digest(Digest(generated_at=NOW, meetings=[CPC], items=[a, b]), c)
     assert [i.enrichment.status for i in d.items] == ["failed", "ok"]
     assert [h.id for h in d.items[0].enrichment.categories] == ["ahpaa"]  # rule hits survive a failure
-    assert c.cache.get("cpc:2026-10-15#a") is None and c.cache.get("cpc:2026-10-15#b") is not None
+    assert c.cache.get("cpc:2026-10-15#a")["failed_attempts"] == 1 and c.cache.get("cpc:2026-10-15#b")["status"] == "ok"
     llm.responses["summarize"] = [summary()]
     assert enrich_record(record_for_item(a, CPC), c).status == "ok"  # retried next run
 
@@ -176,3 +176,44 @@ def test_cache_entry_that_fails_validation_is_re_enriched(tmp_path):
     e = enrich_record(rec, c)
     assert len(llm.calls) == 2 and e.status == "ok" and e.summary == "Second pass."
     assert c.cache.get(rec.id)["content_hash"] == first.content_hash and c.cache.get(rec.id)["status"] == "ok"
+
+
+def test_cached_ward_less_geography_is_re_resolved_without_the_llm(tmp_path):
+    import json
+    from digest.geo import Geo
+    from digest.http import FetchError
+    square = {"type": "FeatureCollection", "features": [{"type": "Feature", "properties": {"ward": "27", "community": "NEAR WEST SIDE"},
+              "geometry": {"type": "Polygon", "coordinates": [[[0, 0], [1, 0], [1, 1], [0, 1], [0, 0]]]}}]}
+    for name in ("wards.geojson", "areas.geojson"):
+        (tmp_path / name).write_text(json.dumps(square), encoding="utf-8")
+    geocache = JsonCache(tmp_path / "geocode.json")
+    down = FakeFetcher([("geocoding.geo.census.gov", FetchError("census", 503)), ("nominatim", FetchError("osm", 503))])
+    hit = json.dumps({"result": {"addressMatches": [{"coordinates": {"x": 0.5, "y": 0.5}}]}}).encode()
+    up = FakeFetcher([("geocoding.geo.census.gov", hit)])
+    llm = FakeLLM({"summarize": [summary()]})
+    c = ctx(tmp_path, llm, geo=Geo(tmp_path / "wards.geojson", tmp_path / "areas.geojson", down, geocache))
+    rec = record_for_item(pd_item(), CPC)
+    first = enrich_record(rec, c)
+    assert first.geography.address == "1133 W. Kinzie St." and first.geography.ward is None
+    c.geo = Geo(tmp_path / "wards.geojson", tmp_path / "areas.geojson", up, geocache)
+    second = enrich_record(rec, c)
+    assert (second.geography.ward, second.geography.community_area) == (27, "Near West Side")
+    assert len(llm.calls) == 1
+    assert c.cache.get(rec.id)["geography"]["ward"] == 27
+
+
+def test_failed_record_is_retried_three_times_then_given_up(tmp_path):
+    llm = FakeLLM({"summarize": lambda content: (_ for _ in ()).throw(RuntimeError("still broken"))})
+    c = ctx(tmp_path, llm)
+    rec = record_for_item(pd_item(), CPC)
+    for attempt in (1, 2, 3):
+        assert enrich_record(rec, c).status == "failed"
+        assert len(llm.calls) == attempt
+        assert c.cache.get(rec.id)["failed_attempts"] == attempt
+    e = enrich_record(rec, c)
+    assert len(llm.calls) == 3 and e.status == "failed"
+    assert [h.id for h in e.categories] == ["ahpaa"]
+    changed = record_for_item(pd_item(url="https://x/pd-v2.html"), CPC)  # new content_hash resets the count
+    c.fetcher.routes.append(("pd-v2", PD_HTML))
+    enrich_record(changed, c)
+    assert len(llm.calls) == 4
