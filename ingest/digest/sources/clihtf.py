@@ -8,18 +8,31 @@ from ..models import CHI, Meeting, SourceResult
 from .base import BaseAdapter, html_to_text, window_for
 
 API = "https://clihtf.org/wp-json/tribe/events/v1/events"
+MAX_PAGES = 10
 
 
 class ClihtfAdapter(BaseAdapter):
     def fetch(self, fetcher: Fetcher, now: dt.datetime) -> SourceResult:
         win = window_for(now, self.days)
-        data = fetcher.get_json(API, {
-            "start_date": f"{win.start.isoformat()} 00:00:00",
-            "end_date": f"{win.end.isoformat()} 23:59:59",
-            "per_page": 50,
-        })
         res = SourceResult(window_start=win.start, window_end=win.end)
-        for ev in data.get("events") or []:
+        events: list[dict] = []
+        seen: set = set()
+        for page in range(1, MAX_PAGES + 1):
+            data = fetcher.get_json(API, {
+                "start_date": f"{win.start.isoformat()} 00:00:00",
+                "end_date": f"{win.end.isoformat()} 23:59:59",
+                "per_page": 50,
+                "page": page,
+            })
+            fresh = [ev for ev in data.get("events") or [] if ev.get("id") not in seen]
+            seen.update(ev.get("id") for ev in fresh)
+            events += fresh
+            total_pages = data.get("total_pages") or 1
+            if page >= total_pages or not fresh:  # no new events: the API repeated itself, so stop
+                break
+        else:
+            res.warnings.append(f"clihtf: event list has more than {MAX_PAGES} pages; later ones were not read")
+        for ev in events:
             title = ev.get("title") or ""
             if "board meeting" not in title.lower():
                 continue
