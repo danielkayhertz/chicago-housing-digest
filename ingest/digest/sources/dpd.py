@@ -143,11 +143,17 @@ class DpdAdapter(BaseAdapter):
                 agenda_url=e.agenda_url, detail_url=e.agenda_url or self.listing_url,
             )
             res.meetings.append(m)
-            res.items += [self._item(m, n, row) for n, row in enumerate(rows, 1)]
+            used: set[str] = set()
+            res.items += [self._item(m, n, row, used) for n, row in enumerate(rows, 1)]
         return res
 
-    def _item(self, m: Meeting, n: int, row: HearingRow) -> Item:
-        ref = slugify(row.address) if row.address else f"item-{n}"
+    def _item(self, m: Meeting, n: int, row: HearingRow, used: set[str]) -> Item:
+        base = slugify(row.address) if row.address else f"item-{n}"
+        ref, k = base, 1
+        while ref in used:
+            k += 1
+            ref = f"{base}-{k}"
+        used.add(ref)
         return Item(
             id=f"{m.id}#{ref}", meeting_id=m.id, source_ref=row.address or f"Item {n}",
             title=row.description, attachments=row.attachments,

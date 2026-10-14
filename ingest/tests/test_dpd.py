@@ -84,3 +84,20 @@ def test_cpc_item_without_address_uses_position():
     ids = [i.id for i in res.items]
     assert ids == ["cpc:2026-10-15#1133-w-kinzie-st", "cpc:2026-10-15#3700-3846-n-seminary-ave", "cpc:2026-10-15#item-3"]
     assert res.meetings[0].time_known is False  # the CPC page states no time
+
+
+def test_duplicate_address_rows_get_distinct_item_ids():
+    listing = b"""<h2>2026 Meeting Schedule</h2><table><tr><td>
+        <a href="/agendas/2026/dup-hearing.html">October 13</a></td></tr></table>"""
+    hearing = b"""<p>The meeting will be held at 1:30 p.m.</p><table>
+        <tr><th>Address</th><th>Description</th></tr>
+        <tr><td>1207 W. Leland Ave.<br>(Uptown, 46th Ward)</td><td>First action</td></tr>
+        <tr><td>1207 W. Leland Ave.<br>(Uptown, 46th Ward)</td><td>Second action</td></tr>
+        </table>"""
+    cfg = {"id": "cdc", "body": "Community Development Commission", "default_time": "13:30",
+           "listing_url": "https://www.chicago.gov/dup/listing.html"}
+    f = FakeFetcher([("dup-hearing.html", hearing), ("dup/listing.html", listing)])
+    res = DpdAdapter(cfg).fetch(f, dt.datetime(2026, 10, 5, 12, 0, tzinfo=CHI))
+    assert [i.id for i in res.items] == ["cdc:2026-10-13#1207-w-leland-ave",
+                                         "cdc:2026-10-13#1207-w-leland-ave-2"]
+    assert len({i.id for i in res.items}) == len(res.items)
