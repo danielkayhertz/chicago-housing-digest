@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import json
 import re
 from dataclasses import dataclass
 from pathlib import Path
@@ -36,8 +37,8 @@ def merge_hits(*groups: list[CategoryHit]) -> list[CategoryHit]:
 class Categories:
     def __init__(self, path: Path):
         self.path = path
-        self._raw = path.read_text(encoding="utf-8")
-        data = yaml.safe_load(self._raw)
+        data = yaml.safe_load(path.read_text(encoding="utf-8"))
+        self._data = data
         self.items = [
             Category(c["id"], c["label"], c["description"], tuple(c.get("keywords") or ()), tuple(c.get("bodies") or ()))
             for c in data["categories"]
@@ -45,7 +46,9 @@ class Categories:
         self.by_id = {c.id: c for c in self.items}
 
     def fingerprint(self) -> str:
-        return hashlib.sha256(self._raw.encode("utf-8")).hexdigest()[:12]
+        """Hash of the parsed content, so comment and whitespace edits do not trigger a paid re-enrichment."""
+        canon = json.dumps(self._data, sort_keys=True, ensure_ascii=False, default=str)
+        return hashlib.sha256(canon.encode("utf-8")).hexdigest()[:12]
 
     def rule_hits(self, body: str | None, texts: list[str]) -> list[CategoryHit]:
         hits = []

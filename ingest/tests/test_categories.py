@@ -39,3 +39,16 @@ def test_merge_hits_first_per_id_wins():
 def test_prompt_block_and_fingerprint():
     assert "- cha: CHA & public housing." in CATS.prompt_block()
     assert len(CATS.fingerprint()) == 12
+
+
+def test_fingerprint_ignores_comments_and_whitespace_but_not_meaning(tmp_path):
+    raw = (Path(__file__).resolve().parents[2] / "config" / "categories.yaml").read_text(encoding="utf-8")
+    base = tmp_path / "a.yaml"
+    base.write_text(raw, encoding="utf-8")
+    cosmetic = tmp_path / "b.yaml"
+    cosmetic.write_text("# a new header comment\n\n" + raw.replace("\n", "\n\n", 3) + "\n# trailing\n", encoding="utf-8")
+    assert Categories(cosmetic).fingerprint() == Categories(base).fingerprint()
+    first_kw = CATS.items[0].keywords[0]
+    changed = tmp_path / "c.yaml"
+    changed.write_text(raw.replace(first_kw, first_kw + " extra", 1), encoding="utf-8")
+    assert Categories(changed).fingerprint() != Categories(base).fingerprint()
