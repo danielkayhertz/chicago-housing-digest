@@ -118,3 +118,25 @@ Development LLC 4549 Indiana under ChiBlockBuilder.
 def test_window_is_carried_on_the_result():
     res = ElmsAdapter(CFG).fetch(FakeFetcher(routes()), NOW)
     assert (res.window_start, res.window_end) == (dt.date(2026, 9, 6), dt.date(2026, 11, 19))
+
+
+def test_parse_agenda_inline_title_on_the_following_line():
+    text = """AGENDA
+
+4. (O2026-0029008)
+Sale of City-owned property at 11414 S Halsted St to Far South CDC
+for redevelopment of Morgan Park Commons.
+(21st Ward)
+
+5. (O2026-0029011) Sale of City-owned property at 4549 S Indiana Ave.
+
+6. (O2026-0029012)
+
+Department of Planning and Development
+"""
+    assert parse_agenda(text) == [
+        ("O2026-0029008", "Sale of City-owned property at 11414 S Halsted St to Far South CDC for redevelopment of "
+                          "Morgan Park Commons."),
+        ("O2026-0029011", "Sale of City-owned property at 4549 S Indiana Ave."),
+        ("O2026-0029012", ""),  # nothing follows before a blank line: no title rather than a section heading
+    ]

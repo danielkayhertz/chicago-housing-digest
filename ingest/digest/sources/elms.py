@@ -60,9 +60,12 @@ def _block_title(block: str) -> str:
 
 
 def _inline_title(block: str) -> str:
-    """Numbered layout: the title starts on the record's line and runs to a blank line or a "(21st Ward)" line."""
+    """Numbered layout: the title starts on the record's line (or the next one) and runs to a blank line or a "(21st Ward)" line."""
     lines: list[str] = []
-    for line in block.splitlines():
+    rows = block.splitlines()
+    if rows and not rows[0].strip():
+        rows = rows[1:]  # nothing after the "(record)": the title wrapped onto the next line(s)
+    for line in rows:
         line = line.strip()
         if not line or (lines and line.startswith("(")):
             break
