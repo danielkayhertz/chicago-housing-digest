@@ -2,6 +2,7 @@ import json
 
 from digest.cache import JsonCache
 from digest.geo import Geo
+from digest.http import FetchError
 from fakes import FakeFetcher
 
 
@@ -43,3 +44,36 @@ def test_no_geocode_returns_address_only(tmp_path):
     geo, _ = make_geo(tmp_path, [("geocoding.geo.census.gov", CENSUS_MISS), ("nominatim.openstreetmap.org", b"[]")])
     g = geo.locate("1 Nowhere Pl.")
     assert (g.address, g.ward, g.community_area) == ("1 Nowhere Pl.", None, None)
+
+
+def test_both_providers_error_returns_none_and_is_not_cached(tmp_path):
+    geo, f = make_geo(tmp_path, [
+        ("geocoding.geo.census.gov", FetchError("census", 503)),
+        ("nominatim.openstreetmap.org", FetchError("nominatim", 429)),
+    ])
+    assert geo.geocode("1133 W. Kinzie St.") is None
+    assert geo.cache.get("1133 W. Kinzie St., Chicago, IL") is None  # transient error must not become a permanent miss
+    n = len(f.calls)
+    assert geo.geocode("1133 W. Kinzie St.") is None
+    assert len(f.calls) == n + 2  # second call re-fetches from both providers
+
+
+def test_malformed_nominatim_body_with_census_miss_is_not_cached(tmp_path):
+    geo, f = make_geo(tmp_path, [
+        ("geocoding.geo.census.gov", CENSUS_MISS),
+        ("nominatim.openstreetmap.org", json.dumps({"error": "x"}).encode()),
+    ])
+    assert geo.geocode("1133 W. Kinzie St.") is None  # no KeyError/IndexError escapes
+    assert geo.cache.get("1133 W. Kinzie St., Chicago, IL") is None
+    n = len(f.calls)
+    geo.geocode("1133 W. Kinzie St.")
+    assert len(f.calls) == n + 2
+
+
+def test_census_error_then_nominatim_hit_is_cached(tmp_path):
+    geo, f = make_geo(tmp_path, [
+        ("geocoding.geo.census.gov", FetchError("census", 503)),
+        ("nominatim.openstreetmap.org", NOMINATIM_HIT),
+    ])
+    assert geo.geocode("1133 W. Kinzie St.") == (1.5, 0.5)
+    assert geo.cache.get("1133 W. Kinzie St., Chicago, IL") == [1.5, 0.5]

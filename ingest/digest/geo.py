@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import logging
 import re
 from pathlib import Path
 
@@ -12,8 +13,13 @@ from .cache import JsonCache
 from .http import FetchError, Fetcher
 from .models import Geography
 
+log = logging.getLogger(__name__)
+
 CENSUS = "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress"
 NOMINATIM = "https://nominatim.openstreetmap.org/search"
+
+# A provider body that parses as JSON but has the wrong shape is an error, not a no-match.
+_MALFORMED = (KeyError, IndexError, TypeError, ValueError, AttributeError)
 
 
 def _load(path: Path, prop: str) -> list[tuple[object, str]]:
@@ -51,22 +57,47 @@ class Geo:
         q = f"{normalize_address(address)}, Chicago, IL"
         if self.cache is not None and (hit := self.cache.get(q)) is not None:
             return tuple(hit) if hit else None
-        pt = self._census(q) or self._nominatim(q)
+        errored = False
+        pt, ok = self._census(q)
+        errored |= not ok
+        if pt is None:
+            pt, ok = self._nominatim(q)
+            errored |= not ok
+        if pt is None and errored:
+            # Transient failure: return nothing and leave the cache alone so the next run retries.
+            return None
         if self.cache is not None:
-            self.cache.set(q, list(pt) if pt else [])
+            self.cache.set(q, list(pt) if pt else [])  # hit, or a clean no-match from both providers
         return pt
 
-    def _census(self, q: str) -> tuple[float, float] | None:
+    def _census(self, q: str) -> tuple[tuple[float, float] | None, bool]:
+        """Returns (point, ok). ok=False means the provider errored; (None, True) is a clean no-match."""
         try:
             data = self.fetcher.get_json(CENSUS, {"address": q, "benchmark": "Public_AR_Current", "format": "json"})
-        except FetchError:
-            return None
-        matches = data.get("result", {}).get("addressMatches") or []
-        return (matches[0]["coordinates"]["x"], matches[0]["coordinates"]["y"]) if matches else None
+        except FetchError as e:
+            log.warning("census geocoder failed for %r: %s", q, e)
+            return None, False
+        try:
+            matches = data["result"]["addressMatches"]
+            if matches == []:
+                return None, True
+            c = matches[0]["coordinates"]
+            return (float(c["x"]), float(c["y"])), True
+        except _MALFORMED as e:
+            log.warning("census geocoder returned a malformed body for %r: %s", q, e)
+            return None, False
 
-    def _nominatim(self, q: str) -> tuple[float, float] | None:
+    def _nominatim(self, q: str) -> tuple[tuple[float, float] | None, bool]:
+        """Returns (point, ok). ok=False means the provider errored; (None, True) is a clean no-match."""
         try:
             data = self.fetcher.get_json(NOMINATIM, {"q": q, "format": "jsonv2", "limit": 1, "countrycodes": "us"})
-        except FetchError:
-            return None
-        return (float(data[0]["lon"]), float(data[0]["lat"])) if data else None
+        except FetchError as e:
+            log.warning("nominatim failed for %r: %s", q, e)
+            return None, False
+        try:
+            if data == []:
+                return None, True
+            return (float(data[0]["lon"]), float(data[0]["lat"])), True
+        except _MALFORMED as e:
+            log.warning("nominatim returned a malformed body for %r: %s", q, e)
+            return None, False
