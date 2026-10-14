@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-14T09:54:55.014387-05:00",
+ "generated_at": "2026-10-14T09:57:42.773546-05:00",
  "sources": [
   {
    "source_id": "cdc",
@@ -9,9 +9,9 @@
   },
   {
    "source_id": "cha",
-   "last_success_at": null,
-   "status": "error",
-   "message": "ImplausibleResult: 0 meetings in window, expected at least 1"
+   "last_success_at": "2026-10-14T09:57:42.773546-05:00",
+   "status": "ok",
+   "message": ""
   },
   {
    "source_id": "clihtf",

@@ -24,7 +24,7 @@ sources:
       188: CHA Finance & Audit Committee
       189: CHA Real Estate Operations Development Committee
       190: CHA Tenant Services Committee
-    min_meetings: 1
+    min_meetings: 0  # CHA meets about every two months, so an empty -14/+60 window is normal
   - id: cpc
     adapter: dpd
     body: Chicago Plan Commission
