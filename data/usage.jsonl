@@ -317,3 +317,13 @@
 {"ts": "2026-10-14T19:02:59+00:00", "purpose": "screen", "model": "claude-haiku-5-5", "input_tokens": 3786, "output_tokens": 82}
 {"ts": "2026-10-14T19:03:05+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 14160, "output_tokens": 427}
 {"ts": "2026-10-14T19:03:08+00:00", "purpose": "screen", "model": "claude-haiku-5-5", "input_tokens": 1614, "output_tokens": 68}
+{"ts": "2026-10-14T19:47:06+00:00", "purpose": "extract", "model": "claude-sonnet-5-5", "input_tokens": 2614, "output_tokens": 281}
+{"ts": "2026-10-14T19:47:15+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 2087, "output_tokens": 173}
+{"ts": "2026-10-14T19:47:17+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 2084, "output_tokens": 181}
+{"ts": "2026-10-14T19:47:20+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 2099, "output_tokens": 204}
+{"ts": "2026-10-14T19:47:22+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 2087, "output_tokens": 195}
+{"ts": "2026-10-14T19:47:25+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 2092, "output_tokens": 211}
+{"ts": "2026-10-14T19:47:27+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 2102, "output_tokens": 208}
+{"ts": "2026-10-14T19:47:30+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 2112, "output_tokens": 225}
+{"ts": "2026-10-14T19:47:32+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 2111, "output_tokens": 188}
+{"ts": "2026-10-14T19:47:34+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 2092, "output_tokens": 186}

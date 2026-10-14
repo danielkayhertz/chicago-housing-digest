@@ -1585,7 +1585,7 @@
    "units": 5
   },
   "geography": {
-   "address": "2142 W 18th Place",
+   "address": "2142 W 18th Pl",
    "community_area": "Lower West Side",
    "ward": 25
   },
@@ -1986,7 +1986,7 @@
    "units": null
   },
   "geography": {
-   "address": "1948 W 63rd St to Reynoso Insulation LLC under ChiBlockBuilder",
+   "address": "1948 W 63rd St",
    "community_area": "West Englewood",
    "ward": 16
   },
@@ -2026,7 +2026,7 @@
    "units": 20
   },
   "geography": {
-   "address": "2054 and 2058 W Warren Blvd to EGP Warren Apartments LLC under ChiBlockBuilder",
+   "address": "2054 and 2058 W Warren Blvd",
    "community_area": "Near West Side",
    "ward": 27
   },
@@ -2061,7 +2061,7 @@
    "units": 16
   },
   "geography": {
-   "address": "4549 S Indiana Ave to Click Development LLC 4549 Indiana under ChiBlockBuilder",
+   "address": "4549 S Indiana Ave",
    "community_area": "Grand Boulevard",
    "ward": 3
   },
@@ -3013,7 +3013,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "62042896dd25cd7d",
+  "content_hash": "b3470dbe311b5816",
   "entities": [
    "Illinois Housing Development Authority"
   ],
@@ -3029,10 +3029,10 @@
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "This is an internal IHDA information technology update with no direct bearing on building, financing, regulating, or tenant rights for housing.",
+  "relevance_reason": "This is an internal IHDA information technology update with no bearing on building, financing, regulating, or preserving homes or on residents' rights.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "IHDA Finance Committee agenda item for an Information Technology Update, presented by F. Ghauri. The material contains no further detail on the update."
+  "summary": "IHDA Finance Committee agenda item for an Information Technology Update, presented by F. Ghauri. The item is a routine agency IT briefing."
  },
  "ihda:ihda-finance-committee:2026-10-16#ii-b": {
   "categories": [
@@ -3042,10 +3042,9 @@
     "via": "body"
    }
   ],
-  "content_hash": "e0ae2725d8ac62b2",
+  "content_hash": "f990be44b36b7e41",
   "entities": [
-   "Illinois Housing Development Authority",
-   "T. Hardrick"
+   "Illinois Housing Development Authority"
   ],
   "figures": {
    "affordable_units": null,
@@ -3059,10 +3058,10 @@
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "This is an IT security briefing at an IHDA finance committee meeting and does not bear on the building, financing, regulation, or occupancy of homes.",
+  "relevance_reason": "This is an IT security briefing item on an IHDA Finance Committee agenda and does not concern building, financing, regulating, or occupying homes.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "Security Update, a presentation by T. Hardrick under the IT Update section of the IHDA Finance Committee's October 16, 2026 agenda. The material gives no further detail."
+  "summary": "IHDA Finance Committee agenda item for a Security Update presented by T. Hardrick, under the IT Update section. No housing programs or developments are described for this item."
  },
  "ihda:ihda-finance-committee:2026-10-16#iii-a": {
   "categories": [
@@ -3072,9 +3071,10 @@
     "via": "body"
    }
   ],
-  "content_hash": "5a35efef911b57fd",
+  "content_hash": "c4346b2f5cab1378",
   "entities": [
-   "Illinois Housing Development Authority"
+   "Illinois Housing Development Authority",
+   "M. Jalaluddin"
   ],
   "figures": {
    "affordable_units": null,
@@ -3088,10 +3088,10 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "This is a routine IHDA Finance Committee report on the state housing finance agency's consolidated financials, which bears on how it funds housing programs, though the material gives no project-level detail.",
+  "relevance_reason": "This is a standing financial report to the board of IHDA, the state housing finance agency that funds affordable housing and homeownership programs.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "IHDA's Finance Committee will receive a presentation of the consolidated interim financial statement from M. Jalaluddin as a standing monthly update. The agenda lists no further detail on this item."
+  "summary": "The IHDA Finance Committee will receive a presentation of the consolidated interim financial statement from M. Jalaluddin as a standing monthly update. The agenda text gives no further detail on the statement."
  },
  "ihda:ihda-finance-committee:2026-10-16#iii-b": {
   "categories": [
@@ -3101,7 +3101,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "19cdd25c859b2009",
+  "content_hash": "e35108c7893bcc8a",
   "entities": [
    "Illinois Housing Development Authority"
   ],
@@ -3117,10 +3117,10 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A standing IHDA Finance Committee update on the state housing finance agency's multifamily lending and financing activity bears on affordable rental housing finance.",
+  "relevance_reason": "A standing multifamily update at IHDA's Finance Committee covers the state housing finance agency's multifamily lending and affordable housing activity.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "The IHDA Finance Committee's standing monthly Multifamily Update, presented by S. Bannon, appears on the October 16, 2026 agenda. The retrieved text gives no details of the update's content."
+  "summary": "IHDA's Finance Committee receives a standing monthly Multifamily Update, presented by S. Bannon. The provided text is only the meeting agenda and gives no details on the update's content."
  },
  "ihda:ihda-finance-committee:2026-10-16#iii-c": {
   "categories": [
@@ -3130,7 +3130,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "02db210c41ce482b",
+  "content_hash": "913d67ef3cf74508",
   "entities": [
    "Illinois Housing Development Authority",
    "K. Nestlehut"
@@ -3147,10 +3147,10 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "IHDA's standing monthly update on single family homeownership programs concerns state financing of homes for buyers.",
+  "relevance_reason": "A standing IHDA Finance Committee update on single family and homeownership programs, which bears on state housing finance for homebuyers.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "Standing monthly Single Family/Homeownership Update presented by K. Nestlehut at the IHDA Finance Committee's October 16, 2026 meeting. The agenda text gives no further detail on its content."
+  "summary": "Standing monthly update on IHDA's Single Family/Homeownership programs, presented by K. Nestlehut at the October 16, 2026 Finance Committee meeting. The agenda gives no further detail on the update's content."
  },
  "ihda:ihda-finance-committee:2026-10-16#iv-a-1": {
   "categories": [
@@ -3160,37 +3160,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "734a52a9ab8e19c1",
-  "entities": [
-   "Illinois Housing Development Authority",
-   "Mythics"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": false,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The item is an IHDA internal sole-source procurement (apparently an IT vendor) with no stated bearing on housing production, financing, or tenant rights.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "IHDA Finance Committee will consider a sole-source procurement with Mythics, presented by M. Jalaluddin. The agenda gives no further detail on scope or cost."
- },
- "ihda:ihda-finance-committee:2026-10-16#iv-a-2": {
-  "categories": [
-   {
-    "detail": "IHDA Finance Committee",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "ebc36472615c16f5",
+  "content_hash": "eafe6678a4c7dc1d",
   "entities": [
    "Illinois Housing Development Authority",
    "S. Bhimani"
@@ -3207,12 +3177,12 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "IHDA is the state housing finance agency, and a resolution ratifying its permitted financial activities bears on how it finances housing, though the material gives no specifics.",
+  "relevance_reason": "It is an IHDA Finance Committee resolution on the authority's financial activities, which fund housing finance, though the agenda gives no detail on what activities are ratified.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "The IHDA Finance Committee will consider a resolution ratifying permitted financial activities, presented by S. Bhimani. The agenda gives no further detail on what activities are covered."
+  "summary": "The IHDA Finance Committee will consider a resolution ratifying permitted financial activities, presented by S. Bhimani. The agenda text gives no further detail on the activities covered."
  },
- "ihda:ihda-finance-committee:2026-10-16#iv-a-3": {
+ "ihda:ihda-finance-committee:2026-10-16#iv-a-2": {
   "categories": [
    {
     "detail": "IHDA Finance Committee",
@@ -3220,7 +3190,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "fd73ad63283c4d7e",
+  "content_hash": "a0ca4d7d982bdc6f",
   "entities": [
    "Illinois Housing Development Authority",
    "M. Babcock"
@@ -3237,10 +3207,39 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "It concerns the standby bond purchase agreement backing IHDA's Housing Bonds Series 2017 A-2, part of the state housing finance authority's bond financing.",
+  "relevance_reason": "The item concerns liquidity support for IHDA's Housing Bonds, Series 2017 A-2, which finance housing, so it bears on state housing finance.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "The IHDA Finance Committee will consider amending and extending a standby bond purchase agreement (SBPA) for Housing Bonds Series 2017 A-2. M. Babcock is listed as presenter. The agenda gives no further terms."
+  "summary": "The IHDA Finance Committee will consider amending or extending a standby bond purchase agreement (SBPA) for Housing Bonds Series 2017 A-2. M. Babcock is listed as presenter. The agenda gives no further terms."
+ },
+ "ihda:ihda-finance-committee:2026-10-16#iv-a-3": {
+  "categories": [
+   {
+    "detail": "IHDA Finance Committee",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "e6bcb1925f15cdb3",
+  "entities": [
+   "Illinois Housing Development Authority"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "IHDA revenue bond issuance is a state housing finance action that funds housing programs.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The IHDA Finance Committee will consider a resolution authorizing Revenue Bonds, 2026 Series LMNO, presented by M. Babcock. The agenda gives no bond amount, purpose, or project details."
  },
  "ihda:ihda-finance-committee:2026-10-16#iv-a-4": {
   "categories": [
@@ -3280,10 +3279,9 @@
     "via": "body"
    }
   ],
-  "content_hash": "245004274a7b6213",
+  "content_hash": "f0698bc1e0bb7279",
   "entities": [
-   "Illinois Housing Development Authority",
-   "R. Ess"
+   "Illinois Housing Development Authority"
   ],
   "figures": {
    "affordable_units": null,
@@ -3297,10 +3295,10 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A multifamily finance item before IHDA's Finance Committee concerns a housing development named Pheasant Ridge, though the agenda gives no details.",
+  "relevance_reason": "It is a multifamily finance item before IHDA's Finance Committee, which acts on financing for housing developments.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "The IHDA Finance Committee will take up \"Pheasant Ridge\" under Multifamily Finance, presented by R. Ess. The agenda text gives no financing amount, location, or unit details."
+  "summary": "The IHDA Finance Committee lists Pheasant Ridge under Multifamily Finance, presented by S. Bannon. The agenda gives no details on the financing, unit counts, or location."
  },
  "ihda:notice:49129a3b50c6": {
   "categories": [
