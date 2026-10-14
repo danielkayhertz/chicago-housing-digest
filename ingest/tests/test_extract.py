@@ -23,7 +23,7 @@ def test_extract_from_text_and_cache(tmp_path):
     llm = FakeLLM({"extract": [rows(("III.", "Allocations Committee report"), ("IV.", "2027 budget"))]})
     cache = JsonCache(tmp_path / "extract.json")
     items = extract_items(clihtf_meeting(), FakeFetcher([]), llm, cache)
-    assert [i.id for i in items] == ["clihtf:319068#iii", "clihtf:319068#iv"]
+    assert [i.id for i in items] == ["clihtf:319068#allocations-committee-report", "clihtf:319068#2027-budget"]
     assert items[0].source_ref == "III" and items[0].title == "Allocations Committee report"
     assert items[0].extraction == "ai_extracted"
     assert items[0].attachments[0].label == "Agenda"
@@ -51,13 +51,25 @@ def test_extract_from_pdf_sends_document_block(tmp_path):
     block = llm.calls[0]["content"][0]
     assert block["type"] == "document" and block["source"]["media_type"] == "application/pdf"
     assert "\n" not in block["source"]["data"]
-    assert items[0].id == "ihda:ihda-board:2026-09-18#1"
+    assert items[0].id == "ihda:ihda-board:2026-09-18#pheasant-ridge-hunter-apartments-tax-exempt-bond-financing"
 
 
-def test_unnumbered_and_duplicate_numbers_get_unique_ids(tmp_path):
-    llm = FakeLLM({"extract": [rows(("", "First"), ("", "Second"), ("A", "Third"), ("A.", "Fourth"))]})
+def test_unnumbered_items_keep_a_number_as_source_ref_and_repeated_titles_get_unique_ids(tmp_path):
+    llm = FakeLLM({"extract": [rows(("", "Staff report"), ("", "Staff report"), ("A.", "Budget"))]})
     items = extract_items(clihtf_meeting(), FakeFetcher([]), llm, JsonCache(tmp_path / "e.json"))
-    assert [i.id.split("#")[1] for i in items] == ["1", "2", "a", "a-2"]
+    assert [i.id.split("#")[1] for i in items] == ["staff-report", "staff-report-2", "budget"]
+    assert [i.source_ref for i in items] == ["1", "2", "A"]
+
+
+def test_ids_survive_an_agenda_revision_that_drops_an_earlier_item(tmp_path):
+    before = rows(("IV.A.1", "Mythics Sole Source"), ("IV.A.2", "Resolution Ratifying Permitted Financial Activities"))
+    after = rows(("IV.A.1", "Resolution Ratifying Permitted Financial Activities"))
+    llm = FakeLLM({"extract": [before, after]})
+    cache = JsonCache(tmp_path / "e.json")
+    first = extract_items(clihtf_meeting(), FakeFetcher([]), llm, cache)
+    second = extract_items(clihtf_meeting(AGENDA + " (revised)"), FakeFetcher([]), llm, cache)
+    assert first[1].id == second[0].id == "clihtf:319068#resolution-ratifying-permitted-financial-activities"
+    assert second[0].source_ref == "IV.A.1"
 
 
 def test_corrupt_cache_entry_is_a_miss(tmp_path):

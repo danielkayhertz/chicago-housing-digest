@@ -70,7 +70,7 @@ def test_run_baseline_writes_valid_items_json(tmp_path):
     d = run(root, fetcher=FakeFetcher(routes()), llm=fake_llm(), now=NOW)
     assert {s.source_id: s.status for s in d.sources} == {"cpc": "ok", "clihtf": "ok"}
     assert d.events == []
-    assert "clihtf:319068#1" in {i.id for i in d.items}
+    assert "clihtf:319068#approve-allocations" in {i.id for i in d.items}
     assert all(i.enrichment is not None for i in d.items)
     cpc = next(m for m in d.meetings if m.id == "cpc:2026-10-15")
     assert cpc.item_count_total == 3 and cpc.item_count_relevant == 3
@@ -94,7 +94,7 @@ def test_run_without_ai_keeps_previous_enrichment(tmp_path):
     root = make_root(tmp_path)
     run(root, fetcher=FakeFetcher(routes()), llm=fake_llm(), now=NOW)
     d = run(root, fetcher=FakeFetcher(routes()), llm=None, now=NOW + dt.timedelta(hours=6))
-    assert "clihtf:319068#1" in {i.id for i in d.items}           # extracted items survive a --no-ai run
+    assert "clihtf:319068#approve-allocations" in {i.id for i in d.items}           # extracted items survive a --no-ai run
     assert all(i.enrichment is not None for i in d.items)
     assert load_digest(root / "data" / "items.json").generated_at == NOW + dt.timedelta(hours=6)
 

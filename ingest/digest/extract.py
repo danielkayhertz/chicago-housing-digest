@@ -3,14 +3,13 @@ from __future__ import annotations
 
 import base64
 import hashlib
-from collections import Counter
 
 from pydantic import BaseModel
 
 from .cache import JsonCache
 from .http import Fetcher
 from .models import Attachment, Item, Meeting
-from .sources.base import slugify
+from .sources.base import slugify, unique_ref
 
 
 class ExtractedItem(BaseModel):
@@ -56,14 +55,12 @@ def extract_items(meeting: Meeting, fetcher: Fetcher, llm, cache: JsonCache) -> 
         cache.set(meeting.id, {"hash": h, "items": [r.model_dump() for r in rows]})
 
     attachments = [Attachment(label="Agenda", url=meeting.agenda_url)] if meeting.agenda_url else []
-    seen: Counter[str] = Counter()
+    used: set[str] = set()
     items = []
     for i, r in enumerate(rows, 1):
         ref = r.number.strip().rstrip(".").strip() or str(i)
-        slug = slugify(ref)
-        seen[slug] += 1
-        if seen[slug] > 1:
-            slug = f"{slug}-{seen[slug]}"
+        # The id comes from the title, not the number: a revised agenda that drops an item renumbers the rest.
+        slug = unique_ref(slugify(r.title, 80), used)
         items.append(Item(id=f"{meeting.id}#{slug}", meeting_id=meeting.id, source_ref=ref, title=r.title.strip(),
                           extraction="ai_extracted", attachments=list(attachments)))
     return items
