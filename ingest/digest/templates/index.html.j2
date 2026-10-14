@@ -41,7 +41,7 @@
   {% if e and e.summary %}<div><span class="ai">AI summary</span> {{ e.summary }}</div>{% endif %}
   <div>{% if e %}{% for c in e.categories %}<span class="tag">{{ cat_labels.get(c.id, c.id) }}</span>{% endfor %}{% endif %}
     {% if e and e.geography.ward %}<span class="tag">Ward {{ e.geography.ward }}</span>{% endif %}
-    {% for a in i.attachments[:3] %}<a href="{{ a.url }}">{{ a.label }}</a> {% endfor %}</div>
+    {% for a in i.attachments[:3] %}{% if a.url | safe_url %}<a href="{{ a.url | safe_url }}">{{ a.label }}</a> {% endif %}{% endfor %}</div>
 </li>
 {%- endmacro %}
 
@@ -53,7 +53,7 @@
     {{ m.start.strftime('%A, %B %d') }}{% if m.time_known %}, {{ m.start.strftime('%I:%M %p').lstrip('0') }}{% endif %}
     {% if m.location %} · {{ m.location }}{% endif %}
     {% if m.status == 'cancelled' %} · <span class="cancelled">Cancelled</span>{% endif %}
-    {% if m.agenda_url %} · <a href="{{ m.agenda_url }}">Agenda</a>{% endif %}
+    {% if m.agenda_url | safe_url %} · <a href="{{ m.agenda_url | safe_url }}">Agenda</a>{% endif %}
     · <a href="{{ ics[m.body] }}">Calendar</a>
   </div>
   {% if u['items'] %}<ul class="items">{% for i in u['items'] %}{{ item_row(i) }}{% endfor %}</ul>{% endif %}
@@ -66,7 +66,7 @@
 {% for n in notices %}
   <li class="row" data-body="{{ n.body }}"
       data-categories="{{ (n.enrichment.categories | map(attribute='id') | join(' ')) if n.enrichment else '' }}" data-ward="">
-    <strong><a href="{{ n.url }}">{{ n.title }}</a></strong>
+    <strong>{% if n.url | safe_url %}<a href="{{ n.url | safe_url }}">{{ n.title }}</a>{% else %}{{ n.title }}{% endif %}</strong>
     <span class="src">{{ n.body }}{% if n.deadline %} · deadline {{ n.deadline.strftime('%B %d, %Y') }}{% endif %}</span>
     {% if n.enrichment and n.enrichment.summary %}<div><span class="ai">AI summary</span> {{ n.enrichment.summary }}</div>{% endif %}
   </li>

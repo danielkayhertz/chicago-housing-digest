@@ -6,6 +6,7 @@ import datetime as dt
 import shutil
 from collections import defaultdict
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from jinja2 import Environment, PackageLoader, select_autoescape
 
@@ -25,6 +26,23 @@ VTIMEZONE = [
     "TZOFFSETFROM:-0600", "TZOFFSETTO:-0500", "TZNAME:CDT", "END:DAYLIGHT",
     "END:VTIMEZONE",
 ]
+
+
+def safe_url(url: str | None) -> str | None:
+    """The URL when its scheme is http or https; None otherwise (javascript:, data:, relative, malformed)."""
+    if not url:
+        return None
+    url = url.strip()
+    try:
+        scheme = urlsplit(url).scheme.strip().lower()
+    except ValueError:
+        return None
+    return url if scheme in ("http", "https") else None
+
+
+def _ics_url(url: str | None) -> str | None:
+    url = safe_url(url)
+    return url.replace("\r", "").replace("\n", "") if url else None
 
 
 def ics_escape(text: str) -> str:
@@ -55,10 +73,15 @@ def _event(m: Meeting, now: dt.datetime) -> list[str]:
     lines.append(f"SUMMARY:{ics_escape(m.body + (' (cancelled)' if m.status == 'cancelled' else ''))}")
     if m.location:
         lines.append(f"LOCATION:{ics_escape(m.location)}")
-    url = m.detail_url or m.agenda_url
+    agenda = _ics_url(m.agenda_url)
+    url = _ics_url(m.detail_url) or agenda
     if url:
         lines.append(f"URL:{url}")
-    desc = [f"Agenda: {m.agenda_url}" if m.agenda_url else "Agenda not posted yet."]
+    desc = []
+    if agenda:
+        desc.append(f"Agenda: {agenda}")
+    elif not m.agenda_url:
+        desc.append("Agenda not posted yet.")
     if m.item_count_total:
         desc.append(f"{m.item_count_relevant} of {m.item_count_total} items are about housing.")
     lines += [f"DESCRIPTION:{ics_escape(chr(10).join(desc))}",
@@ -102,6 +125,7 @@ def build_site(digest: Digest, out_dir: Path, items_json: Path, categories: Cate
 
     env = Environment(loader=PackageLoader("digest", "templates"), autoescape=select_autoescape(["html", "j2"]))
     env.filters["anchor"] = lambda s: slugify(s, 120)
+    env.filters["safe_url"] = safe_url
     html = env.get_template("index.html.j2").render(
         digest=digest, upcoming=upcoming, notices=notices, outcomes=outcomes, bodies=bodies,
         categories=categories.items, cat_labels={c.id: c.label for c in categories.items},

@@ -66,6 +66,33 @@ def test_ics_feeds(tmp_path):
     assert all(len(line.encode("utf-8")) <= 75 for line in cpc.split("\r\n"))
 
 
+def test_non_http_urls_never_reach_href_or_ics(tmp_path):
+    from digest.models import Attachment
+    from digest.site import safe_url
+    d = sample()
+    bad = " JavaScript:alert(1)"
+    up = next(m for m in d.meetings if m.id == "cpc:2026-10-15")
+    up.agenda_url, up.detail_url = bad, "jAvAsCrIpT:alert(2)"
+    d.items[0].attachments = [Attachment(label="Evil", url=bad), Attachment(label="Fine", url="https://x/ok.pdf")]
+    d.notices[0].url = "JAVASCRIPT:alert(3)"
+    src = tmp_path / "items.json"
+    dump_digest(d, src)
+    build_site(d, tmp_path / "site", src, CATS, NOW)
+    html = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
+    cpc = (tmp_path / "site" / "ics" / "chicago-plan-commission.ics").read_bytes().decode("utf-8")
+    assert "javascript" not in html.lower() and "javascript" not in cpc.lower()
+    assert 'href="https://x/ok.pdf"' in html and "TEFRA hearing, Pheasant Ridge" in html  # notice title kept, unlinked
+    assert "URL:" not in cpc and "Agenda" not in cpc
+    assert safe_url(" HTTPS://x/a ") == "HTTPS://x/a" and safe_url("data:text/html,x") is None and safe_url(None) is None
+
+
+def test_ics_urls_lose_cr_and_lf():
+    m = Meeting(id="cpc:2026-10-15", source_id="cpc", body="Chicago Plan Commission", body_id="cpc",
+                start=dt.datetime(2026, 10, 15, 10, 0, tzinfo=CHI), agenda_url="https://x/a.pdf\r\nX-EVIL:1")
+    cal = ics_calendar([m], "Chicago Plan Commission", NOW)
+    assert "\r\nX-EVIL" not in cal and "URL:https://x/a.pdfX-EVIL:1" in cal
+
+
 def test_escape_and_fold():
     assert ics_escape("a,b;c\\d\ne") == "a\\,b\\;c\\\\d\\ne"
     folded = fold("DESCRIPTION:" + "é" * 80)
