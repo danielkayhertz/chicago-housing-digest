@@ -16,6 +16,18 @@ from ..models import Notice, SourceResult
 from .base import BaseAdapter, ImplausibleResult
 
 
+MIN_TEXT_CHARS = 200  # a fetched page with less visible text than this is treated as a stub
+MIN_LINKS_FOR_DROP_CHECK = 10  # link-count collapse is only checked once the baseline had this many links
+
+
+def _stub_reason(prev: dict | None, cur: dict) -> str | None:
+    if len(cur["text"]) < MIN_TEXT_CHARS:
+        return f"only {len(cur['text'])} chars of text"
+    if prev is not None and len(prev["links"]) >= MIN_LINKS_FOR_DROP_CHECK and len(cur["links"]) < len(prev["links"]) / 2:
+        return f"links fell from {len(prev['links'])} to {len(cur['links'])}"
+    return None
+
+
 def _h(s: str) -> str:
     return hashlib.sha1(s.encode("utf-8")).hexdigest()[:12]
 
@@ -74,8 +86,16 @@ class WatcherAdapter(BaseAdapter):
                 continue
             ok += 1
             path = self.snap_dir / f"{page['id']}.json"
-            prev = json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
+            try:
+                prev = json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
+            except (OSError, ValueError) as e:
+                res.warnings.append(f"watch page {page['id']} snapshot unreadable, re-baselining: {e}")
+                prev = None
             cur = snapshot(html, page["url"])
+            why = _stub_reason(prev, cur)
+            if why:
+                res.warnings.append(f"watch page {page['id']} looks like a stub ({why}); snapshot kept, no notices")
+                continue
             res.notices += changes(page, prev, cur, now, self.source_id)
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(json.dumps(cur, indent=1, sort_keys=True, ensure_ascii=False) + "\n", encoding="utf-8")

@@ -1,4 +1,5 @@
 import datetime as dt
+import json
 
 from digest.http import NotFound
 from digest.models import CHI
@@ -55,3 +56,26 @@ def test_one_page_failing_is_a_warning(tmp_path):
     f = FakeFetcher([("gone.html", NotFound("gone", 404)), ("doh.html", HTML.encode("utf-8"))])
     res = WatcherAdapter({"id": "watch"}, pages, tmp_path / "snapshots").fetch(f, NOW)
     assert any("gone" in w for w in res.warnings)
+
+
+def test_stub_fetch_after_baseline_is_ignored(tmp_path):
+    run(tmp_path, HTML)
+    snap = tmp_path / "snapshots" / "doh-home.json"
+    before = snap.read_bytes()
+    res = run(tmp_path, "<main>Service unavailable</main>")
+    assert res.notices == []
+    assert any("doh-home" in w and "stub" in w for w in res.warnings)
+    assert snap.read_bytes() == before
+    changed = HTML.replace("</main>", '<a href="/content/dam/city/depts/doh/new-rfp.pdf">2027 Multifamily RFP</a></main>', 1)
+    res = run(tmp_path, changed)
+    assert len(res.notices) == 1 and res.notices[0].title == "New on DOH home: 2027 Multifamily RFP"
+
+
+def test_corrupt_snapshot_is_rebaselined_with_warning(tmp_path):
+    snap_dir = tmp_path / "snapshots"
+    snap_dir.mkdir()
+    (snap_dir / "doh-home.json").write_text('{"text": "Chicago', encoding="utf-8")
+    res = run(tmp_path, HTML)
+    assert res.notices == []
+    assert any("doh-home" in w and "unreadable" in w for w in res.warnings)
+    assert "links" in json.loads((snap_dir / "doh-home.json").read_text(encoding="utf-8"))

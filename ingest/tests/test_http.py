@@ -26,6 +26,10 @@ def test_fake_fetcher_routes_first_match_and_raises():
 
 
 def test_public_url_rewrites_only_chicago_content_city_prefix():
-    assert public_url("https://www.chicago.gov/content/city/en/depts/doh.html") ==         "https://www.chicago.gov/city/en/depts/doh.html"
-    assert public_url("https://www.chicago.gov/content/dam/city/depts/doh/new-rfp.pdf") ==         "https://www.chicago.gov/content/dam/city/depts/doh/new-rfp.pdf"
+    assert public_url("https://www.chicago.gov/content/city/en/depts/doh.html") == (
+        "https://www.chicago.gov/city/en/depts/doh.html"
+    )
+    assert public_url("https://www.chicago.gov/content/dam/city/depts/doh/new-rfp.pdf") == (
+        "https://www.chicago.gov/content/dam/city/depts/doh/new-rfp.pdf"
+    )
     assert public_url("https://clihtf.org/content/city/en/x.html") == "https://clihtf.org/content/city/en/x.html"
