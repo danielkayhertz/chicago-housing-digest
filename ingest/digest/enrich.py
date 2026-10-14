@@ -8,6 +8,7 @@ import logging
 import re
 from dataclasses import dataclass
 
+import anthropic
 from pydantic import BaseModel, ValidationError
 
 from .cache import JsonCache
@@ -18,7 +19,7 @@ from .pdftext import has_text_layer, pdf_text
 from .sources.base import html_to_text
 
 PROMPT_VERSION = "1"  # bump to re-enrich everything after a prompt change
-MAX_FAILED_ATTEMPTS = 3  # a record that keeps failing is retried on this many runs, then left failed
+MAX_FAILED_ATTEMPTS = 3  # a record that keeps failing deterministically is retried this many runs, then left failed
 log = logging.getLogger("digest.enrich")
 
 
@@ -252,6 +253,13 @@ def _fresh(rec: Record, ctx: EnrichContext, h: str) -> Enrichment:
     )
 
 
+def is_transient(ex: BaseException) -> bool:
+    """An outage that says nothing about the record: network, rate limit, 5xx, or a failed fetch."""
+    if isinstance(ex, (anthropic.APIConnectionError, anthropic.RateLimitError, anthropic.InternalServerError, FetchError)):
+        return True  # APIConnectionError includes APITimeoutError
+    return isinstance(ex, anthropic.APIStatusError) and ex.status_code >= 500
+
+
 def _failed(rec: Record, ctx: EnrichContext, h: str, reason: str) -> Enrichment:
     """A failed enrichment keeps the rule-based category hits so the record still shows up sensibly."""
     return Enrichment(status="failed", relevance_reason=reason[:300],
@@ -288,7 +296,8 @@ def enrich_record(rec: Record, ctx: EnrichContext) -> Enrichment:
             except Exception as ex:  # one bad record must never abort the run
                 log.warning("%s: enrichment failed: %s: %s", rec.id, type(ex).__name__, ex)
                 e = _failed(rec, ctx, h, f"enrichment failed: {ex}")
-                ctx.cache.set(rec.id, {"content_hash": h, "failed_attempts": attempts + 1})
+                # Only failures a retry cannot fix count toward the cap; an outage must not fail records for good.
+                ctx.cache.set(rec.id, {"content_hash": h, "failed_attempts": attempts + (0 if is_transient(ex) else 1)})
             else:
                 ctx.cache.set(rec.id, e.model_dump(mode="json"))
     return apply_overrides(e, ctx.overrides.get(rec.id), rec.id)

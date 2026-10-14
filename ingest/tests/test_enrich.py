@@ -273,3 +273,49 @@ def test_invalid_override_value_warns_and_is_ignored(tmp_path, caplog):
     assert e.entities == ["Fine LLC"]
     msgs = [r.message for r in caplog.records]
     assert any(rid in m and "'figures'" in m for m in msgs) and any(rid in m and "'categories'" in m for m in msgs)
+
+
+def _api_errors():
+    import anthropic
+    import httpx
+    from digest.http import FetchError
+    req = httpx.Request("POST", "https://api.anthropic.com/v1/messages")
+
+    def status(cls, code):
+        return cls("boom", response=httpx.Response(code, request=req), body=None)
+    return [
+        anthropic.APIConnectionError(request=req),
+        anthropic.APITimeoutError(request=req),
+        status(anthropic.RateLimitError, 429),
+        status(anthropic.InternalServerError, 500),
+        status(anthropic.APIStatusError, 529),
+        FetchError("https://x/doc", 503),
+    ]
+
+
+def test_transient_failures_never_exhaust_the_retry_cap(tmp_path):
+    import pytest
+    for n, err in enumerate(_api_errors()):
+        llm = FakeLLM({"summarize": [err, err, err, summary()]})
+        c = ctx(tmp_path / f"t{n}", llm)
+        rec = record_for_item(pd_item(), CPC)
+        for attempt in (1, 2, 3):
+            assert enrich_record(rec, c).status == "failed", type(err).__name__
+            assert c.cache.get(rec.id)["failed_attempts"] == 0
+        assert enrich_record(rec, c).status == "ok", type(err).__name__
+        assert len(llm.calls) == 4
+
+
+def test_deterministic_api_errors_count_toward_the_cap(tmp_path):
+    import anthropic
+    import httpx
+    req = httpx.Request("POST", "https://api.anthropic.com/v1/messages")
+    bad = anthropic.BadRequestError("prompt is too long", response=httpx.Response(400, request=req), body=None)
+    for n, err in enumerate([bad, LLMRefused("refusal"), ValueError("bad")]):
+        llm = FakeLLM({"summarize": lambda content, err=err: (_ for _ in ()).throw(err)})
+        c = ctx(tmp_path / f"d{n}", llm)
+        rec = record_for_item(pd_item(), CPC)
+        for attempt in (1, 2, 3):
+            assert enrich_record(rec, c).status == "failed"
+        assert enrich_record(rec, c).status == "failed"
+        assert len(llm.calls) == 3, type(err).__name__
