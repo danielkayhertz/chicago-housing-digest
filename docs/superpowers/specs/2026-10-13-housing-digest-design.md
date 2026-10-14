@@ -1,7 +1,7 @@
 # Chicago Housing Digest — Design
 
 Date: 2026-10-13
-Status: design approved in brainstorming; awaiting written-spec review
+Status: spec approved 2026-10-13. Implementation plan for the ingest half: `docs/superpowers/plans/2026-10-13-housing-digest-ingest.md`
 
 ## 1. Purpose
 
@@ -55,13 +55,13 @@ Top level: `{ generated_at, sources: [SourceStatus], meetings: [Meeting], items:
 
 **SourceStatus** — `source_id, last_success_at, status (ok | stale | error), message`. Consumed by the admin alert only.
 
-**Meeting** — `id` (stable: `source_id:native_id`), `body` (canonical name), `body_id`, `jurisdiction` (`chicago` | `state` | suburban slug), `start` (ISO, America/Chicago), `status` (scheduled | cancelled | rescheduled | held | unknown), `location`, `agenda_url`, `video_url`, `minutes_url`, `first_seen_at`, `last_changed_at`, `item_count_total`, `item_count_relevant`.
+**Meeting** — `id` (stable: `source_id:native_id`), `source_id`, `body` (canonical name), `body_id`, `jurisdiction` (`chicago` | `state` | suburban slug), `start` (ISO, America/Chicago), `time_known` (false when only the date is published), `status` (scheduled | cancelled | rescheduled | held | unknown), `location`, `agenda_url`, `video_url`, `minutes_url`, `detail_url`, `needs_ai_extraction`, `first_seen_at`, `last_changed_at`, `item_count_total`, `item_count_relevant`. (Agenda text held in memory for AI extraction is never written to `items.json`.)
 
-**Item** — `id`, `meeting_id`, `source_ref` (e.g. `O2026-0029184`, CHA `26-112`), `title` (verbatim), `attachments: [{label, url}]`, `outcome` (`{action, date, tally}` or null), `extraction` (`structured` | `ai_extracted`), `enrichment` (below), `first_seen_at`, `last_changed_at`.
+**Item** — `id`, `meeting_id`, `source_ref` (e.g. `O2026-0029184`, CHA `26-112`), `title` (verbatim), `attachments: [{label, url}]`, `outcome` (`{action, date, tally}` or null), `extraction` (`structured` | `ai_extracted`), `geography_hint` (`{address, ward, community_area}` from the source, e.g. Plan Commission rows; nullable), `enrichment` (below), `first_seen_at`, `last_changed_at`.
 
-**Notice** — `id`, `source_id`, `kind` (comment_period | hearing | funding_round | report | page_change), `title`, `url`, `posted_at`, `deadline` (nullable), `enrichment`, `first_seen_at`.
+**Notice** — `id`, `source_id`, `body`, `kind` (comment_period | hearing | funding_round | report | public_notice | page_change), `title`, `url`, `detail` (for `page_change`: the new link label or the added text), `posted_at`, `deadline` (nullable), `enrichment`, `first_seen_at`, `last_changed_at`.
 
-**Enrichment** — `housing_relevant` (bool), `relevance_reason`, `summary` (≤ ~40 words, plain language), `categories: [category_id]`, `geography: {address, ward, community_area}`, `entities: [string]`, `figures: {units, affordable_units}` (each nullable), `source_quality` (full | partial | scanned), `model`, `content_hash`, `overridden` (bool).
+**Enrichment** — `status` (ok | failed | screened_out; failed records retry next run), `housing_relevant` (bool), `relevance_reason`, `summary` (≤ ~40 words, plain language), `categories: [{id, via: model | body | keyword | override, detail}]` (the `via` is the reason shown to subscribers), `geography: {address, ward, community_area}`, `entities: [string]`, `figures: {units, affordable_units}` (each nullable), `source_quality` (full | partial | scanned | none), `model`, `content_hash`, `overridden` (bool).
 
 **ChangeEvent** — `{type: meeting_new | agenda_posted | item_added | meeting_cancelled | meeting_rescheduled | outcome_recorded | notice_new, ref_id, at}`. Drives alerts and daily mode.
 
@@ -77,7 +77,7 @@ All endpoints below were verified by live fetch on 2026-10-13 unless noted.
 | **CHA Board of Commissioners + Finance & Audit, Real Estate Operations Development, Tenant Services committees** | Legistar Web API `https://webapi.legistar.com/v1/thecha/` — `events` (filter by `EventBodyId` 138/188/189/190 and date), `events/{id}/eventitems` (title, matter file, action, passed flag, tally), `matters/{id}/attachments`. Ignore events with agenda status Hidden until published. This adapter is written generically (client name as a parameter) so v1.5 reuses it for suburban Legistar clients. |
 | **Chicago Plan Commission** | Year listing page `.../depts/dcd/chicago-plan-commission/meetings--agendas---video-archives.html` → monthly hearing pages (stable pattern `supp_info/chicago_plan_commission/<Month>_<YYYY>_Plan_Commission_Hearing.html`) with a per-project table (address, ward, community area, description, application/presentation PDFs). Materials post ~2 weeks ahead. No recent minutes → no outcomes. |
 | **Community Development Commission** | Listing `.../depts/dcd/community-development-commission/meetings--agendas-and-video-archives.html` (full-year schedule, cancellations marked) → monthly agenda HTML pages (inconsistent filenames: discover links from the listing, never construct URLs). No recent minutes. |
-| **IHDA Board + Finance, Audit, Asset Management committees** | `https://www.ihda.org/about-ihda/public-meetings-and-notices/` — one WordPress page of notice/agenda/minutes PDFs. The agenda PDFs are multi-column tables whose text layer comes out scrambled, so items are extracted by Claude reading the PDF directly (`extraction = ai_extracted`) — the same component v1.5 uses for suburban agendas. Minutes lag ~2 months; outcomes from minutes when present. The same page supplies **Notices** (TEFRA hearings, QAP). |
+| **IHDA Board + Finance, Audit, Asset Management committees** | `https://www.ihda.org/about-ihda/public-meetings-and-notices/` — one WordPress page of notice/agenda/minutes PDFs. The agenda PDFs are multi-column tables whose text layer comes out scrambled, so items are extracted by Claude reading the PDF directly (`extraction = ai_extracted`) — the same component v1.5 uses for suburban agendas. Minutes lag ~2 months; outcomes from minutes when present. The same page supplies **Notices** (TEFRA hearings, QAP and other comment periods, and subsidy-related `public_notice`s). Reading outcomes from IHDA minutes is deferred past v1. |
 | **CLIHTF** | The Events Calendar REST API `https://clihtf.org/wp-json/tribe/events/v1/events` (keyless JSON; verified) — board meetings are events titled "Board Meeting" whose `description` HTML holds the agenda; no minutes. |
 
 chicago.gov blocks default clients: every chicago.gov request sends a full browser User-Agent.
@@ -88,18 +88,18 @@ chicago.gov blocks default clients: every chicago.gov request sends a full brows
 
 **Failure handling.** Each adapter runs in isolation; an exception or an implausible result (zero meetings where the source normally has some, or a parse yielding zero items from a non-empty agenda) marks that source `stale`, keeps its last good data, and triggers an admin email. One broken source never blocks the others.
 
-**Politeness.** Cached HTTP with conditional requests where supported, a per-host delay, and a descriptive contact in the User-Agent comment where the host allows it.
+**Politeness.** A per-host delay, limited retries, and a descriptive contact URL in the User-Agent where the host allows it. Conditional requests are deferred past v1.
 
 ## 6. Enrichment
 
 - **Unit:** each Item and Notice; cached by `(id, content_hash)` — recomputed only when source text changes.
 - **Input:** verbatim title + extracted attachment text (capped length). Scanned PDFs (no text layer) are sent as PDF documents so the model reads page images; `source_quality = scanned`.
-- **Two-step models:** `claude-haiku-5-5` for the relevance screen on long, mostly-irrelevant agendas (Committee on Finance; later suburban agendas); `claude-sonnet-5-5` for summary, categories, entities, figures on items that pass. Structured output enforced by JSON schema.
+- **Two-step models:** `claude-haiku-5-5` for the relevance screen on long, mostly-irrelevant agendas (the three City Council committees; later suburban agendas); `claude-sonnet-5-5` for summary, categories, entities, figures on items that pass. Structured output enforced by JSON schema.
 - **Geography:** prefer source fields (Plan Commission rows carry ward and community area). Otherwise geocode the extracted address and assign ward/community area by point-in-polygon against city boundary files — never model-guessed.
-- **Grounding check:** every extracted entity and figure must appear (normalized) in the source text; otherwise it is dropped and logged.
+- **Grounding check:** every extracted entity and figure must appear (normalized) in the source text; otherwise it is dropped and logged in the ingest run log. The model's address is geocoded only if it is grounded the same way.
 - **Overrides:** `overrides.yaml` keyed by item/notice id; any field set there wins and survives re-runs (`overridden = true`).
 - **Labeling:** summaries are shown as "AI summary" with the source link beside them.
-- **Cost control:** the cache means each item is enriched once; the plan includes a measurement step on one month of real items to produce a cost estimate before launch.
+- **Cost control:** the cache means each item is enriched once; every Claude call is logged to `data/usage.jsonl`. The plan measures the first full run (the whole ingest window, more than a month of items) and a follow-up run to estimate steady-state cost before launch.
 
 ### Categories (`categories.yaml`)
 
@@ -133,7 +133,7 @@ The categories are IFE's housing projects. The model assigns zero or more catego
 
 **Sending.** Resend from `housingdigest.danielkayhertz.com`. Worker cron runs daily (morning: daily + alerts after the morning ingest; Sunday evening: weekly). Bounce/complaint webhooks mark subscribers `suspended` after repeated hard bounces. Resend free-tier limits are checked at setup against subscriber count × cadence.
 
-**Admin email (dhertz@impactforequity.org only).** Stale or failed sources, ingest errors, grounding-check drops above a threshold, bounce spikes.
+**Admin email (dhertz@impactforequity.org only).** Stale or failed sources (from `sources[]`), failed enrichments, bounce spikes. Grounding-check drops are only in the ingest run log in v1.
 
 ## 8. Public web page
 
@@ -173,4 +173,4 @@ v1.5 adds the CivicClerk and AgendaCenter adapters, suburban Legistar clients vi
 - **Late postings** (48-hour Open Meetings Act minimum) — 3×/day ingest plus alert/daily modes; weekly subscribers may miss late items, which the preferences page states.
 - **AI summary errors** — grounding check, "AI summary" label, source link on every item, overrides file, eval set.
 - **Outcome coverage is uneven** — only Council, CHA, and IHDA (lagged) publish outcomes; the email says nothing rather than implying no action.
-- **eLMS substitute records:** a committee may act on an `SO…` substitute rather than the `O…` on the agenda; outcomes are looked up on the agenda record and, if absent, on records listed in its `supersededBy` field.
+- **eLMS substitute records:** a committee may act on an `SO…` substitute rather than the `O…` on the agenda, and once substituted the `O…` record returns 404 from `/matter/recordNumber/`. The adapter tries the agenda's record number and then the same number with an `S` prefix (verified on O2026-0027202 → SO2026-0027202, 2026-10-13).
