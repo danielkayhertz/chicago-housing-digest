@@ -523,6 +523,10 @@ def test_title_address_handles_aka_and_titles_without_one():
     assert title_address("Historical landmark fee waiver for property at 208 S LaSalle St") == "208 S LaSalle St"
     assert title_address("Zoning Reclassification Map No. 10-E at 3927-3933 S Martin Luther King, Jr. Dr. - App No. 23135") \
         == "3927-3933 S Martin Luther King, Jr. Dr."
+    assert title_address("Sale of City-owned property at 2054 and 2058 W Warren Blvd to EGP Warren Apartments LLC under "
+                         "ChiBlockBuilder") == "2054 and 2058 W Warren Blvd"
+    assert title_address("Sale of City-owned property at 4549 S Indiana Ave to Click Development, LLC 4549 Indiana") \
+        == "4549 S Indiana Ave"
     assert title_address("Repeal of historical landmark designation for Cortland Bridge") is None
     assert title_address("Meeting at 10 a.m. on the budget") is None
 
@@ -538,6 +542,19 @@ def test_cached_record_without_an_address_takes_the_title_address_without_the_ll
     c.geo = StubGeo()
     e = enrich_record(rec, c)
     assert (e.geography.address, e.geography.ward) == ("1921 W Chicago Ave", 27) and len(llm.calls) == 2
+
+
+def test_cached_over_long_title_address_is_trimmed_without_the_llm(tmp_path):
+    title = "Sale of City-owned property at 4549 S Indiana Ave to Click Development LLC under ChiBlockBuilder"
+    llm = FakeLLM({"screen": [Screen(housing_relevant=True, reason="Adds homes.")], "summarize": [bare_summary()]})
+    c = ctx(tmp_path, llm, geo=StubGeo())
+    rec = record_for_item(zoning_item([], title=title), ZONING)
+    enrich_record(rec, c)
+    cached = c.cache.get(rec.id)
+    cached["geography"]["address"] = "4549 S Indiana Ave to Click Development LLC under ChiBlockBuilder"
+    c.cache.set(rec.id, cached)
+    e = enrich_record(rec, c)
+    assert e.geography.address == "4549 S Indiana Ave" and e.geography.ward == 27 and len(llm.calls) == 2
 
 
 def test_agency_office_address_is_not_used_as_the_site(tmp_path):

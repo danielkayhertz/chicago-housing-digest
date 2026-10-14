@@ -232,7 +232,7 @@ def _grounded_address(address: str | None, corpus: str) -> str | None:
 
 _TITLE_ADDRESS = re.compile(
     r"\bat\s+(\d+(?:-\d+)?(?:\s+(?:and|&)\s+\d+(?:-\d+)?)?\s+[NSEW]\.?\s+[^-]+?)"
-    r"(?:\s+a\.?k\.?a\.?\s.*)?(?:\s*-\s*App\b.*)?$")
+    r"(?:\s+(?:a\.?k\.?a\.?|to|under|for|from|by)\s.*)?(?:\s*-\s*App\b.*)?$")
 
 
 def title_address(title: str) -> str | None:
@@ -405,6 +405,10 @@ def enrich_record(rec: Record, ctx: EnrichContext) -> Enrichment:
                 ctx.cache.set(rec.id, e.model_dump(mode="json"))
             if e is not None and e.status == "ok" and e.figures.units is None and (n := parse_units(e.summary)):
                 e.figures.units = n  # free backfill from the stored summary
+                ctx.cache.set(rec.id, e.model_dump(mode="json"))
+            if (e is not None and e.status == "ok" and (addr := title_address(rec.title)) and e.geography.address
+                    and e.geography.address != addr and e.geography.address.startswith(addr)):
+                e.geography.address = addr  # an older title parse ran past the address ("... St to Buyer LLC")
                 ctx.cache.set(rec.id, e.model_dump(mode="json"))
             if e is not None and e.status == "ok" and not e.geography.address and (addr := title_address(rec.title)):
                 e.geography = resolve_geography(rec.hint, addr, ctx.geo)  # free: no model call
