@@ -33,6 +33,10 @@ def slugify(text: str, max_len: int = 60) -> str:
     return s[:max_len].rstrip("-") or "x"
 
 
+def clean_text(s: str) -> str:
+    return re.sub(r"\s+", " ", s.replace("\xa0", " ")).strip()
+
+
 def html_to_text(html: str) -> str:
     return BeautifulSoup(html or "", "html.parser").get_text("\n", strip=True).replace("\xa0", " ")
 
