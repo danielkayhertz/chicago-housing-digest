@@ -3,18 +3,18 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
-import re
 import shutil
 from collections import defaultdict
 from pathlib import Path
-from urllib.parse import urlsplit
 
 from jinja2 import Environment, PackageLoader, select_autoescape
 
 from .categories import Categories
+from .layout import DEFAULT_PATH as LAYOUT_PATH, Layout, build_outline
 from .models import CHI, Digest, Item, Meeting, load_digest
 from .sources.base import slugify
 from .state import is_shown
+from .text import LONG_TITLE, safe_url, short_title, trim_summary  # noqa: F401  (tests import these from here)
 
 ROOT = Path(__file__).resolve().parents[2]
 UID_DOMAIN = "housingdigest.danielkayhertz.com"
@@ -27,43 +27,6 @@ VTIMEZONE = [
     "TZOFFSETFROM:-0600", "TZOFFSETTO:-0500", "TZNAME:CDT", "END:DAYLIGHT",
     "END:VTIMEZONE",
 ]
-
-
-def safe_url(url: str | None) -> str | None:
-    """The URL when its scheme is http or https; None otherwise (javascript:, data:, relative, malformed)."""
-    if not url:
-        return None
-    url = url.strip()
-    try:
-        scheme = urlsplit(url).scheme.strip().lower()
-    except ValueError:
-        return None
-    return url if scheme in ("http", "https") else None
-
-
-LONG_TITLE = 120
-
-
-def short_title(title: str, limit: int = 100) -> str:
-    """A title cut at a word boundary for the headline; the full text stays on the page under a disclosure."""
-    if len(title) <= LONG_TITLE:
-        return title
-    cut = title[:limit].rsplit(" ", 1)[0].rstrip(" ,;:.-")
-    return f"{cut}…"
-
-
-_ABSENCE = re.compile(r"no further|gives no|provides no|no other details?|no details|only the meeting agenda"
-                      r"|does not (?:name|give|say|state|specify)", re.I)
-
-
-def trim_summary(summary: str) -> str:
-    """Drop sentences that only say what the source leaves out. Older summaries carry them; the prompt now forbids them."""
-    pieces = re.split(r"(?<=[.;])\s+", summary.strip())
-    keep = [p for p in pieces if not _ABSENCE.search(p)]
-    if not keep or len(keep) == len(pieces):
-        return summary
-    keep = [p[:-1] + "." if p.endswith(";") else p for p in keep]
-    return " ".join(p[0].upper() + p[1:] for p in keep)  # a clause that followed a dropped "...;" starts a sentence now
 
 
 def _ics_url(url: str | None) -> str | None:
@@ -124,7 +87,9 @@ def ics_calendar(meetings: list[Meeting], name: str, now: dt.datetime) -> str:
     return "".join(fold(line) + "\r\n" for line in lines)
 
 
-def build_site(digest: Digest, out_dir: Path, items_json: Path, categories: Categories, now: dt.datetime) -> None:
+def build_site(digest: Digest, out_dir: Path, items_json: Path, categories: Categories, now: dt.datetime,
+               layout: Layout | None = None) -> None:
+    layout = layout or Layout.load(LAYOUT_PATH)
     today = now.astimezone(CHI).date()
     items_by_meeting: dict[str, list[Item]] = defaultdict(list)
     for it in digest.items:
@@ -139,8 +104,7 @@ def build_site(digest: Digest, out_dir: Path, items_json: Path, categories: Cate
             continue  # unknown: moved or dropped by its source; not worth showing
         its = items_by_meeting.get(m.id, [])
         visible = [i for i in its if is_shown(i)]
-        (upcoming if day >= today else recent).append({"m": m, "items": visible, "hidden": len(its) - len(visible)})
-    recent.sort(key=lambda u: u["m"].start, reverse=True)
+        (upcoming if day >= today else recent).append((m, visible, len(its) - len(visible)))
     notices = [n for n in digest.notices
                if (n.deadline is None or n.deadline >= now)
                and is_shown(n)]
@@ -150,18 +114,16 @@ def build_site(digest: Digest, out_dir: Path, items_json: Path, categories: Cate
         key=lambda r: r["i"].outcome.date, reverse=True,
     )
     bodies = sorted({m.body for m in digest.meetings})
+    ics = {b: f"ics/{slugify(b)}.ics" for b in bodies}
 
     env = Environment(loader=PackageLoader("digest", "templates"), autoescape=select_autoescape(["html", "j2"]))
-    env.filters["anchor"] = lambda s: slugify(s, 120)
     env.filters["safe_url"] = safe_url
     env.filters["short_title"] = short_title
-    env.filters["trim_summary"] = trim_summary
     env.tests["safe_url"] = lambda u: safe_url(u) is not None
     env.globals["LONG_TITLE"] = LONG_TITLE
     html = env.get_template("index.html.j2").render(
-        digest=digest, upcoming=upcoming, recent=recent, notices=notices, outcomes=outcomes, bodies=bodies,
-        categories=categories.items, cat_labels={c.id: c.label for c in categories.items},
-        ics={b: f"ics/{slugify(b)}.ics" for b in bodies}, generated=digest.generated_at.astimezone(CHI),
+        digest=digest, outline=build_outline(upcoming, recent, layout, ics), notices=notices, outcomes=outcomes,
+        bodies=bodies, categories=categories.items, generated=digest.generated_at.astimezone(CHI),
     )
     (out_dir / "ics").mkdir(parents=True, exist_ok=True)
     (out_dir / "index.html").write_text(html, encoding="utf-8")
@@ -182,7 +144,8 @@ def main(argv: list[str] | None = None) -> None:
     if digest is None:
         raise SystemExit(f"{src} not found; run python -m digest.run first")
     out = args.root / "site"
-    build_site(digest, out, src, Categories(args.root / "config" / "categories.yaml"), dt.datetime.now(CHI))
+    build_site(digest, out, src, Categories(args.root / "config" / "categories.yaml"), dt.datetime.now(CHI),
+               Layout.load(args.root / "config" / "layout.yaml"))
     print(f"wrote {out}")
 
 

@@ -54,7 +54,8 @@ def fake_llm():
     return FakeLLM({
         "extract": lambda content: AgendaExtraction(items=[ExtractedItem(number="1", title="Approve allocations")]),
         "summarize": lambda content: Summary(housing_relevant=True, relevance_reason="r", summary="s", categories=[],
-                                             address=None, entities=[], units=None, affordable_units=None),
+                                             address=None, entities=[], units=None, affordable_units=None,
+                                             amount=None, amount_kind=None, zoning_from=[], zoning_to=None),
         "screen": [],
     })
 

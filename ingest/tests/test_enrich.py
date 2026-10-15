@@ -41,7 +41,8 @@ def pd_item(url="https://x/pd.html", item_id="cpc:2026-10-15#1133-w-kinzie-st"):
 def summary(**kw):
     base = dict(housing_relevant=True, relevance_reason="Adds homes.", summary="MKR Owner LLC proposes 1,200 homes.",
                 categories=["ahpaa", "not-a-category", "housing-agenda"], address="1133 W. Kinzie St.",
-                entities=["MKR Owner LLC", "Invented Partners LP"], units=1200, affordable_units=999)
+                entities=["MKR Owner LLC", "Invented Partners LP"], units=1200, affordable_units=999,
+                amount=None, amount_kind=None, zoning_from=[], zoning_to=None)
     return Summary(**{**base, **kw})
 
 
@@ -578,3 +579,55 @@ def test_cached_office_address_is_cleared_without_the_llm(tmp_path):
     e = enrich_record(rec, c)
     assert e.geography == Geography() and len(llm.calls) == 1
     assert c.cache.get(rec.id)["geography"]["address"] is None
+
+
+SALE_HTML = (b"<html><body><p>Sale of 4549 S. Indiana Ave. to Click Development, LLC for a sale price of $315,315. "
+             b"The buyer would build two 8-unit masonry residential buildings. The site is rezoned from RS-3 and RT-4 "
+             b"to Business Planned Development No. 1143. IHDA would make a $51.5 million conduit loan.</p></body></html>")
+
+
+def sale_item():
+    return pd_item(url="https://x/sale.html", item_id="elms:H1#sale")
+
+
+def test_amount_and_kind_are_kept_when_grounded_and_dropped_when_not(tmp_path):
+    llm = FakeLLM({"summarize": [summary(amount=315315, amount_kind=" sale price "),
+                                 summary(amount=999999, amount_kind="sale price")]})
+    c = ctx(tmp_path, llm, routes=(("sale.html", SALE_HTML),))
+    e = enrich_record(record_for_item(sale_item(), CPC), c)
+    assert (e.amount, e.amount_kind) == (315315, "sale price")
+    c.cache = JsonCache(tmp_path / "other.json")
+    e = enrich_record(record_for_item(sale_item(), CPC), c)
+    assert (e.amount, e.amount_kind) == (None, None)
+
+
+def test_amount_in_millions_is_grounded(tmp_path):
+    llm = FakeLLM({"summarize": [summary(amount=51_500_000, amount_kind="conduit loan")]})
+    e = enrich_record(record_for_item(sale_item(), CPC), ctx(tmp_path, llm, routes=(("sale.html", SALE_HTML),)))
+    assert (e.amount, e.amount_kind) == (51_500_000, "conduit loan")
+
+
+def test_zoning_codes_are_kept_only_when_each_appears_in_the_text(tmp_path):
+    llm = FakeLLM({"summarize": [summary(zoning_from=["RS-3", "RT-4", "B3-2"],
+                                         zoning_to="Business Planned Development No. 1143"),
+                                 summary(zoning_from=["RS-3"], zoning_to="DX-12")]})
+    c = ctx(tmp_path, llm, routes=(("sale.html", SALE_HTML),))
+    e = enrich_record(record_for_item(sale_item(), CPC), c)
+    assert e.zoning_from == ["RS-3", "RT-4"] and e.zoning_to == "Business Planned Development No. 1143"
+    c.cache = JsonCache(tmp_path / "other.json")
+    e = enrich_record(record_for_item(sale_item(), CPC), c)
+    assert e.zoning_from == ["RS-3"] and e.zoning_to is None
+
+
+def test_unit_total_across_buildings_is_grounded(tmp_path):
+    llm = FakeLLM({"summarize": [summary(units=16, summary="Click Development, LLC would build 16 homes.")]})
+    e = enrich_record(record_for_item(sale_item(), CPC), ctx(tmp_path, llm, routes=(("sale.html", SALE_HTML),)))
+    assert e.figures.units == 16                                     # 2 x 8 from the text, not a bare "16"
+
+
+def test_overrides_accept_amount_and_zoning(tmp_path):
+    llm = FakeLLM({"summarize": [summary()]})
+    ov = {pd_item().id: {"amount": 2_000_000, "amount_kind": "grant", "zoning_from": ["M2-3"], "zoning_to": "DX-5"}}
+    e = enrich_record(record_for_item(pd_item(), CPC), ctx(tmp_path, llm, overrides=ov))
+    assert (e.amount, e.amount_kind, e.zoning_from, e.zoning_to) == (2_000_000, "grant", ["M2-3"], "DX-5")
+    assert e.overridden
