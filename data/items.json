@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-10-15T10:36:19.137772-05:00",
+ "generated_at": "2026-10-15T15:21:23.549669-05:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-10-15T10:36:19.137772-05:00",
+   "last_success_at": "2026-10-15T15:21:23.549669-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-10-15T10:36:19.137772-05:00",
+   "last_success_at": "2026-10-15T15:21:23.549669-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-10-15T10:36:19.137772-05:00",
+   "last_success_at": "2026-10-15T15:21:23.549669-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-10-15T10:36:19.137772-05:00",
+   "last_success_at": "2026-10-15T15:21:23.549669-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-10-15T10:36:19.137772-05:00",
+   "last_success_at": "2026-10-15T15:21:23.549669-05:00",
    "status": "stale",
    "message": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5: 1 numbered agenda entries have no record number and were skipped"
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-10-15T10:36:19.137772-05:00",
+   "last_success_at": "2026-10-15T15:21:23.549669-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-10-15T10:36:19.137772-05:00",
+   "last_success_at": "2026-10-15T15:21:23.549669-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-10-15T10:36:19.137772-05:00",
+   "last_success_at": "2026-10-15T15:21:23.549669-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-10-15T10:36:19.137772-05:00",
+   "last_success_at": "2026-10-15T15:21:23.549669-05:00",
    "status": "ok",
    "message": ""
   }
@@ -169,13 +169,13 @@
    "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
    "agenda_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/d3f3d5d3-da10-4a65-9367-b00e89dd4023.pdf",
    "video_url": "https://vimeo.com/manage/videos/1232129590",
-   "minutes_url": null,
+   "minutes_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/68f30283-6de3-4941-b068-5540b9e288b5.pdf",
    "detail_url": null,
    "needs_ai_extraction": true,
    "item_count_total": 9,
    "item_count_relevant": 1,
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T13:08:07.894365-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC",
@@ -189,13 +189,13 @@
    "location": "Room 201A, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
    "agenda_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/ce402690-72de-48ee-a907-a2d8fc569498.pdf",
    "video_url": "https://vimeo.com/manage/videos/1233831459",
-   "minutes_url": null,
+   "minutes_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/3edf1c47-1832-4023-8cc9-7701aa80dd58.pdf",
    "detail_url": null,
    "needs_ai_extraction": false,
    "item_count_total": 13,
    "item_count_relevant": 11,
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "clihtf:319068",
@@ -229,13 +229,13 @@
    "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
    "agenda_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/ad26295a-e3da-4371-84a1-8941f91edfb4.pdf",
    "video_url": "https://vimeo.com/manage/videos/1234481036",
-   "minutes_url": null,
+   "minutes_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/2d21c0ea-1976-4c86-8c04-f2550a4f5329.pdf",
    "detail_url": null,
    "needs_ai_extraction": false,
    "item_count_total": 49,
-   "item_count_relevant": 36,
+   "item_count_relevant": 35,
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5",
@@ -248,14 +248,14 @@
    "status": "held",
    "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
    "agenda_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/d047b6dd-fc15-4b12-8eaf-ef72c790b29a.pdf",
-   "video_url": null,
-   "minutes_url": null,
+   "video_url": "https://vimeo.com/manage/videos/1235504794",
+   "minutes_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/498ebf7f-3397-4387-af89-2d8070952c8f.pdf",
    "detail_url": null,
    "needs_ai_extraction": false,
    "item_count_total": 2,
    "item_count_relevant": 1,
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "cdc:2026-10-13",
@@ -473,6 +473,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
     "content_hash": "2541c58405f5a3fe",
@@ -521,6 +522,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
     "content_hash": "d4e4778d6c9a95c7",
@@ -569,6 +571,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
     "content_hash": "db32d8e34079cd88",
@@ -611,6 +614,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
     "content_hash": "9cc02658a605ef95",
@@ -656,6 +660,7 @@
     "amount_kind": "HED bond funds",
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "358264b80b69cc6e",
@@ -707,6 +712,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "6cfd223efe0d0dd9",
@@ -758,6 +764,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "156bcc2c06afa363",
@@ -800,6 +807,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
     "content_hash": "da2795220a47fb93",
@@ -842,6 +850,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
     "content_hash": "4161655d6bda3a99",
@@ -888,6 +897,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "none",
     "model": "claude-sonnet-5-5",
     "content_hash": "92d30038f0651150",
@@ -934,6 +944,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "none",
     "model": "claude-sonnet-5-5",
     "content_hash": "d492a449e6e9321c",
@@ -990,6 +1001,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "558fde8858984516",
@@ -1078,6 +1090,7 @@
     "amount_kind": "purchase price per parcel",
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "e1e80a3c736df3ef",
@@ -1153,6 +1166,7 @@
     "amount_kind": "purchase price",
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "a1bcfcdd90df78f3",
@@ -1211,6 +1225,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
     "content_hash": "143610fe09ec0eb7",
@@ -1268,6 +1283,7 @@
     "amount_kind": "sale price",
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "9f0939bf1774cf9c",
@@ -1345,6 +1361,7 @@
     "amount_kind": "sale price",
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "3fc3d60747ff18d6",
@@ -1417,6 +1434,7 @@
     "amount_kind": "sale price",
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "bdb3a9912509f089",
@@ -1489,6 +1507,7 @@
     "amount_kind": "sale price",
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "deb0251105a19124",
@@ -1561,6 +1580,7 @@
     "amount_kind": "sale price",
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "2d496adbcccb46d6",
@@ -1629,6 +1649,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "3a2850440d5f6ac7",
@@ -1695,6 +1716,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "0202784d971c1d94",
@@ -1746,6 +1768,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "e3357218a9bd7b84",
@@ -1803,6 +1826,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "12856a3575610e04",
@@ -1854,6 +1878,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "0e823ba37f8c7661",
@@ -1906,6 +1931,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "c90f0525ce85412a",
@@ -1957,6 +1983,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "b49a9c2b3d138af4",
@@ -2009,6 +2036,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "a120d47f820832c7",
@@ -2060,6 +2088,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "fbfea72f9fb1759d",
@@ -2116,6 +2145,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "9121d46e3db9c041",
@@ -2170,6 +2200,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "99100bb6d4dc0458",
@@ -2181,12 +2212,16 @@
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028463",
    "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
-   "source_ref": "O2026-0028463",
+   "source_ref": "SO2026-0028463",
    "title": "Amendment of Municipal Code Section 17-9-0129 allowing lawful cannabis dispensaries to modify to include medical cannabis without triggering Section 17-9-0129.1",
    "attachments": [
     {
      "label": "Cannabis",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/68c21353-b0bf-4e1a-8856-fa361eca5dbc.pdf"
+    },
+    {
+     "label": "SO2026-0028463 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e9c0c932-c93a-4bf6-bed6-890f51647b3c.pdf"
     }
    ],
    "outcome": null,
@@ -2195,7 +2230,7 @@
    "enrichment": {
     "status": "screened_out",
     "housing_relevant": false,
-    "relevance_reason": "The ordinance concerns cannabis dispensary operations and zoning standards for cannabis business establishments, with no mention of dwelling units, residential use, or housing.",
+    "relevance_reason": "The ordinance concerns cannabis dispensary operations and zoning standards for cannabis business establishments, with no dwelling units or residential use affected.",
     "summary": "",
     "categories": [],
     "geography": {
@@ -2212,20 +2247,25 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
-    "content_hash": "d6f45443b324d835",
+    "content_hash": "9f2a665f66904ef8",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0025391",
    "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
-   "source_ref": "O2026-0025391",
+   "source_ref": "SO2026-0025391",
    "title": "Amendment of Municipal Code Chapter 17-3 by adding Section 17-3-0600 regarding transient-oriented development (TOD) streets",
    "attachments": [
+    {
+     "label": "SO2026-0025391",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/c34787d3-d9a9-4afd-8329-84ad44707f0d.pdf"
+    },
     {
      "label": "O2026-0025391 Ordinance",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/298f50fb-d105-4b1c-bf5b-ff694f31aa71.pdf"
@@ -2241,8 +2281,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "The zoning text amendment sets TOD street rules that require rezonings to B or C1 districts with at least 3 FAR and cap residential parking near transit, directly affecting housing development.",
-    "summary": "Ordinance would add Section 17-3-0600 to the Chicago zoning code creating TOD streets near CTA and Metra stations. It sets building design standards, requires rezonings of abutting property to B or C1 with minimum 3 FAR, and caps residential parking at 0.5 spaces per unit.",
+    "relevance_reason": "A zoning text amendment creating TOD street rules would require rezonings along designated streets to B or C1 districts with at least 3 FAR and change residential parking and ground-floor design standards near transit.",
+    "summary": "Substitute ordinance from Ald. Matthew J. Martin (47th Ward) would add TOD street rules to the zoning code, designating segments of Ravenswood and Western. Rezonings abutting them would require a B or C1 district with at least 3 FAR, and the existing pedestrian-street exceptions would no longer apply there.",
     "categories": [
      {
       "id": "ahpaa",
@@ -2255,7 +2295,9 @@
      "ward": null,
      "community_area": null
     },
-    "entities": [],
+    "entities": [
+     "Matthew J. Martin"
+    ],
     "figures": {
      "units": null,
      "affordable_units": null
@@ -2264,13 +2306,14 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "d43c05391087afa8",
+    "content_hash": "30a23ecbb8e05e6c",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0026261",
@@ -2315,6 +2358,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "39dfb80d7dd79211",
@@ -2365,6 +2409,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "1641be18c9b3f696",
@@ -2407,6 +2452,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
     "content_hash": "95f422565b14e570",
@@ -2470,6 +2516,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "7098fdd30ecff7c1",
@@ -2523,6 +2570,7 @@
      "B1-3"
     ],
     "zoning_to": "B3-2 and B3-3",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "5dd86bae85494683",
@@ -2575,6 +2623,7 @@
      "B2-3"
     ],
     "zoning_to": "RS-3",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "b69b5d6f194293fb",
@@ -2627,6 +2676,7 @@
      "B1-1"
     ],
     "zoning_to": "RS-3",
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "6705aa344cb06589",
@@ -2679,6 +2729,7 @@
      "RT-4"
     ],
     "zoning_to": "B3-3",
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "5633372d52038487",
@@ -2755,6 +2806,7 @@
      "Business Planned Development No. 1143"
     ],
     "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "9d89fabd2df2e843",
@@ -2805,6 +2857,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
     "content_hash": "d9e50428604c96c1",
@@ -2855,6 +2908,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
     "content_hash": "784d57290b10e66a",
@@ -2916,6 +2970,7 @@
      "RS-2"
     ],
     "zoning_to": "RT-4",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "f35f6b7f4918d6a6",
@@ -2935,6 +2990,10 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/9f32d5c6-f8fc-4d62-9cfc-b06e169f7416.pdf"
     },
     {
+     "label": "O2026-0028698 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/a8a40535-efbf-410a-8222-8ed46cb59c11.pdf"
+    },
+    {
      "label": "O2026-0028698 Application",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/aa52c783-29c9-4ff5-90af-fff78987c651.pdf"
     },
@@ -2945,6 +3004,10 @@
     {
      "label": "O2026-0028698 EDS",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/6a046b73-8750-435b-921b-ee65a7ad12e6.pdf"
+    },
+    {
+     "label": "O2026-0028698 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d110f84b-0604-487c-8de9-5d0e6dddd340.pdf"
     }
    ],
    "outcome": null,
@@ -2953,9 +3016,15 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": false,
-    "relevance_reason": "The rezoning is for a commercial and medical behavioral health clinic on a vacant lot and includes no dwelling units.",
-    "summary": "Humboldt Park Health seeks to rezone 1140 N. California Ave. from B3-1 to B3-3 Community Shopping District to build a 3-story outpatient behavioral health clinic, urgent care center, and medical office.",
-    "categories": [],
+    "relevance_reason": "The rezoning from B3-1 to B3-3 is for a new 3-story outpatient behavioral health clinic and medical office with no residential units, so it does not bear on homes.",
+    "summary": "Humboldt Park Health seeks a rezoning of 1140 N California Ave from B3-1 to B3-3 Community Shopping District to build a 3-story outpatient behavioral health clinic, urgent care center and medical office with no off-street parking.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "keyword",
+      "detail": "rezoning"
+     }
+    ],
     "geography": {
      "address": "1140 N California Ave",
      "ward": 26,
@@ -2972,13 +3041,14 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": "B3-3 Community Shopping District",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "a3472e16a3edff27",
+    "content_hash": "27f1acf5de1d7bd9",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028700",
@@ -3022,6 +3092,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
     "content_hash": "fd17d47b9b588832",
@@ -3033,7 +3104,7 @@
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028735",
    "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
-   "source_ref": "O2026-0028735",
+   "source_ref": "SO2026-0028735",
    "title": "Zoning Reclassification Map No. 12-D at 5482 S Ridgewood Ct - App No. 23170T1",
    "attachments": [
     {
@@ -3045,8 +3116,16 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/70f3ce6c-6907-431c-af86-6cdd4f1fdc0b.pdf"
     },
     {
+     "label": "SO2026-0028735 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/7c27b93f-cbd5-40a2-83c1-2e10ede27a8f.pdf"
+    },
+    {
      "label": "O2026-0028735 Application",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/4e47ec6e-1f33-46ef-af31-ea3e8f042fa9.pdf"
+    },
+    {
+     "label": "SO2026-0028735 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/c9a0198c-cc22-4d67-b8b4-b1f3f86cf1e6.pdf"
     },
     {
      "label": "O2026-0028735 EDS",
@@ -3059,8 +3138,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A residential rezoning from RT-4 to RM-4.5 for a single-family home to allow a rear addition replacement with setback variations.",
-    "summary": "Applicants Nabil M. Abou Baker and Sara G. Jelinek seek to rezone 5482 S Ridgewood Ct from RT-4 to RM-4.5 to replace the two-story rear addition on their single-family home, with no parking and setback relief.",
+    "relevance_reason": "A residential rezoning from RT-4 to RM-4.5 for a single-family home at 5482 S Ridgewood Ct, which changes the permitted residential density and setbacks.",
+    "summary": "Homeowners Nabil M. Abou Baker and Sara G. Jelinek seek to rezone 5482 S Ridgewood Ct from RT-4 to RM-4.5 to replace a two-story rear addition on their single-family home, with setback and open-space variations. No parking would be provided.",
     "categories": [
      {
       "id": "ahpaa",
@@ -3087,18 +3166,19 @@
      "RT-4"
     ],
     "zoning_to": "RM-4.5",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "58f3012003bcf3a5",
+    "content_hash": "168e590a4e8f977a",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028738",
    "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
-   "source_ref": "O2026-0028738",
+   "source_ref": "SO2026-0028738",
    "title": "Zoning Reclassification Map No. 2-K at 4125 and 4127 W 5th Ave - App No. 23171T1",
    "attachments": [
     {
@@ -3110,12 +3190,20 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/789553d2-4368-4e16-a028-fc14de9fc553.pdf"
     },
     {
+     "label": "SO2026-0028738 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/016f5fbc-500e-4b17-a7cc-f89a5c17c76f.pdf"
+    },
+    {
      "label": "O2026-0028738 Application",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/6818e32c-bbc1-4bd7-8bbf-9eba71564ea4.pdf"
     },
     {
      "label": "O2026-0028738 Ordinance",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f6138376-5df1-4e3f-ab48-33c87f8fc620.pdf"
+    },
+    {
+     "label": "SO2026-0028738 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e54c319d-5d3b-4f66-a062-c96eccb14673.pdf"
     }
    ],
    "outcome": null,
@@ -3124,33 +3212,22 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A rezoning of two city-owned vacant lots from RT-4 to RM-4.5 to build two three-unit residential buildings, with the applicant working with the Department of Housing to acquire the land.",
-    "summary": "TechCo Savvy Inc. seeks to rezone 4125 and 4127 W 5th Ave from RT-4 to RM-4.5 to build two three-story buildings with three units each, on vacant city-owned lots. The Department of Housing authorized the application.",
+    "relevance_reason": "A rezoning from RT-4 to RM-4.5 would allow two new three-unit residential buildings on vacant lots near the CTA Pulaski Blue Line station.",
+    "summary": "TECHCO SAVVY INC. seeks to rezone 4125 and 4127 W 5th Ave from RT-4 to RM-4.5 to split the lot and build two three-story buildings, each with three dwelling units, plus setback variations.",
     "categories": [
      {
-      "id": "housing-agenda",
-      "via": "keyword",
-      "detail": "Department of Housing"
-     },
-     {
       "id": "ahpaa",
-      "via": "model",
-      "detail": ""
-     },
-     {
-      "id": "social-housing",
       "via": "model",
       "detail": ""
      }
     ],
     "geography": {
-     "address": "4125 and 4127 West 5th Avenue",
+     "address": "4125 and 4127 W 5th Ave",
      "ward": 24,
      "community_area": "West Garfield Park"
     },
     "entities": [
-     "TECHCO SAVVY INC.",
-     "Department of Housing"
+     "TECHCO SAVVY INC."
     ],
     "figures": {
      "units": 3,
@@ -3162,13 +3239,14 @@
      "RT-4"
     ],
     "zoning_to": "RM-4.5",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "6d95845c4fd494ec",
+    "content_hash": "edac461f891901a4",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028740",
@@ -3226,6 +3304,7 @@
      "RT-4"
     ],
     "zoning_to": "RM-5",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "b6917b63bf66d84d",
@@ -3241,8 +3320,16 @@
    "title": "Zoning Reclassification Map No. 7-H at 2315-2317 W Barry Ave - App No. 23169T1",
    "attachments": [
     {
+     "label": "O2026-0028734 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f375ad9e-7457-4afe-bc80-0aeaf2cd17ac.pdf"
+    },
+    {
      "label": "O2026-0028734 EDS",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/30896849-3a55-4bee-be57-419b4580e78d.pdf"
+    },
+    {
+     "label": "O2026-0028734 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/661d878b-daf8-40cc-b3ca-35f5dabde87d.pdf"
     },
     {
      "label": "O2026-0028734 Ordinance",
@@ -3263,8 +3350,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A residential rezoning from RS-3 to RT-4 would allow renovation and expansion of an existing three-unit building.",
-    "summary": "Rezones 2315-17 W Barry Ave from RS-3 to RT-4 (App No. 23169T1). The applicant, ZSD Barry LLC, proposes a substantial renovation and rear addition to the existing three-unit residential building and seeks setback variations.",
+    "relevance_reason": "A rezoning from RS-3 to RT-4 would allow renovation and expansion of an existing three-unit residential building.",
+    "summary": "Rezones 2315-17 W Barry Ave from RS-3 to RT-4 so ZSD Barry LLC can renovate and expand, with a rear addition, an existing three-dwelling-unit residential building. The plans keep three units and four parking spaces.",
     "categories": [
      {
       "id": "ahpaa",
@@ -3290,13 +3377,14 @@
      "RS-3"
     ],
     "zoning_to": "RT-4",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "8912a543e2096445",
+    "content_hash": "29d8b938f30b0249",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028742",
@@ -3354,6 +3442,7 @@
      "RS-3"
     ],
     "zoning_to": "RM-4.5",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "0a2116e5d64bdbc9",
@@ -3369,6 +3458,10 @@
    "title": "Zoning Reclassification Map No. 15-J at 3244-3250 W Bryn Mawr Ave - App No. 23176T1",
    "attachments": [
     {
+     "label": "O2026-0028744 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d029ac99-9057-4a5d-b820-046cae818f4a.pdf"
+    },
+    {
      "label": "O2026-0028744 Ordinance",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/5cb6fc0e-00d2-4365-893e-63fc4fa48d4a.pdf"
     },
@@ -3383,6 +3476,10 @@
     {
      "label": "O2026-0028744 Narrative and Plans",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/7104fd8a-c196-4261-8d4e-478c9f80d697.pdf"
+    },
+    {
+     "label": "O2026-0028744 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/c9e7f329-e193-4565-813e-50b9df50826a.pdf"
     }
    ],
    "outcome": null,
@@ -3390,21 +3487,10 @@
    "geography_hint": null,
    "enrichment": {
     "status": "ok",
-    "housing_relevant": true,
-    "relevance_reason": "The Type 1 map amendment amends a prior approval to allow a 40-unit residential building, and the application says the project is subject to the ARO.",
-    "summary": "3244-50 Bryn Mawr LLC seeks to amend a previously approved B2-3 Type 1 map amendment at 3244-50 W Bryn Mawr Ave. The change would allow a five-story building with 40 residential units, 1,490 sq. ft. of ground-floor commercial space and 25 parking spaces.",
-    "categories": [
-     {
-      "id": "ahpaa",
-      "via": "model",
-      "detail": ""
-     },
-     {
-      "id": "housing-agenda",
-      "via": "model",
-      "detail": ""
-     }
-    ],
+    "housing_relevant": false,
+    "relevance_reason": "The ordinance as written reclassifies B2-3 to B2-3 with no stated residential units or housing change, so nothing in the material bears on homes.",
+    "summary": "Zoning reclassification on Map No. 15-J for 3244-3250 W Bryn Mawr Ave (App No. 23176T1). The ordinance text lists the area as B2-3 Neighborhood Mixed-Use District both before and after the change.",
+    "categories": [],
     "geography": {
      "address": "3244-50 West Bryn Mawr Avenue",
      "ward": 39,
@@ -3412,20 +3498,23 @@
     },
     "entities": [],
     "figures": {
-     "units": 40,
+     "units": null,
      "affordable_units": null
     },
     "amount": null,
     "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
+    "zoning_from": [
+     "B2-3"
+    ],
+    "zoning_to": "B2-3",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "487857b5b46fc16c",
+    "content_hash": "22cc13dde7afaac8",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028341",
@@ -3438,8 +3527,16 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d59c9319-ae69-40b9-baa6-4ba93b35fe94.pdf"
     },
     {
+     "label": "O2026-0028341 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/06599907-a99a-4d00-b926-93499ee6738b.pdf"
+    },
+    {
      "label": "O2026-0028341 Application",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/50c73e19-ff2b-4c90-a720-332223054f8e.pdf"
+    },
+    {
+     "label": "O2026-0028341 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/54c641a3-9999-4ac3-88b1-171a5fd4b0e9.pdf"
     },
     {
      "label": "O2026-0028341 Ordinance",
@@ -3456,8 +3553,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "The rezoning would allow a new 8-unit residential building on a vacant lot in the 6th Ward.",
-    "summary": "73rd and Indiana, LLC seeks to rezone the vacant lot at 7353-7359 S Indiana Ave from RS2 to RT4 to build a two-story, 8-unit residential building with a 7-car garage. Agnes Plecka of Jaffe & Berlin represents the applicant.",
+    "relevance_reason": "A Type 1 rezoning would allow a new 8-unit residential building on a vacant lot, adding homes.",
+    "summary": "The applicant seeks to rezone the vacant lot at 7353-7359 S Indiana Ave from RS2 to RT4 to build a two-story, 8-unit residential building with a 7-car garage. The site is a Transit Served Location.",
     "categories": [
      {
       "id": "ahpaa",
@@ -3470,10 +3567,7 @@
      "ward": 6,
      "community_area": "Greater Grand Crossing"
     },
-    "entities": [
-     "73RD AND INDIANA, LLC",
-     "Jaffe & Berlin"
-    ],
+    "entities": [],
     "figures": {
      "units": 8,
      "affordable_units": null
@@ -3484,13 +3578,14 @@
      "RS2"
     ],
     "zoning_to": "RT4",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "b64657f7c2ed9ab9",
+    "content_hash": "bc4f487a1704e901",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028339",
@@ -3503,8 +3598,16 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/9b08ad55-fe4a-405f-922d-78f3e1d91eee.pdf"
     },
     {
+     "label": "O2026-0028339 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/14f80cec-44e7-41e5-893b-23881e1aa3e6.pdf"
+    },
+    {
      "label": "O2026-0028339 EDS",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/31ab3c1f-c2c0-4ab8-98a8-741ba13f6637.pdf"
+    },
+    {
+     "label": "O2026-0028339 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/2c7b1ed0-a8f7-4786-ba21-dc9d0d7f6005.pdf"
     },
     {
      "label": "O2026-0028339 Ordinance",
@@ -3521,8 +3624,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A rezoning from RT4 to RM5 would allow a new 8-unit residential building on a vacant lot.",
-    "summary": "2156 W Warren LLC seeks to rezone a vacant lot at 2156 W Warren Blvd from RT4 to RM5 to build a 4-story, 8-unit residential building with 5 outdoor parking spaces. The applicant also requests setback and rear-yard open space relief.",
+    "relevance_reason": "A rezoning from RT4 to RM5 to build an 8-unit residential building on a vacant lot adds homes.",
+    "summary": "2156 W Warren LLC seeks to rezone 2156 W Warren Blvd from RT4 to RM5 to build a new 4-story, 8-unit residential building with 5 parking spaces on a vacant lot. The request also seeks setback and rear yard open space variations.",
     "categories": [
      {
       "id": "ahpaa",
@@ -3548,13 +3651,14 @@
      "RT4"
     ],
     "zoning_to": "RM5",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "3278f6f717b7d469",
+    "content_hash": "d863a41d7fe80bff",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028345",
@@ -3567,6 +3671,10 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/5a7e21ec-e218-4912-a16d-5a06ddaccceb.pdf"
     },
     {
+     "label": "O2026-0028345 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/253731db-bb26-4cd5-8d4e-c69d65787538.pdf"
+    },
+    {
      "label": "O2026-0028345 Ordinance",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/ba0d7433-9636-416c-bfbc-0770484b14dc.pdf"
     },
@@ -3577,6 +3685,10 @@
     {
      "label": "O2026-0028345 Application",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/422962e7-a9d8-4a71-b3c7-4c07a08a3af0.pdf"
+    },
+    {
+     "label": "O2026-0028345 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/a506a55f-40ac-4849-beeb-e9b3ca001b75.pdf"
     }
    ],
    "outcome": null,
@@ -3585,8 +3697,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "The rezoning would allow a new 7-unit residential building, including ground-floor residential use, on a vacant lot along the Western Avenue bus corridor.",
-    "summary": "Applicant seeks to rezone a vacant corner lot at 2400 W. Grenshaw St. from C1-2 to B2-3 to build a 4-story, 7-unit residential building with 3 garage parking spaces. The request includes a variation reducing the rear setback from 30 feet to 9 feet.",
+    "relevance_reason": "The rezoning would allow a new 7-unit residential building, including ground-floor residential use, on a vacant lot.",
+    "summary": "Rezones 2400 W. Grenshaw St. (a.k.a. 1124 S. Western Ave.) from C1-2 to B2-3 to allow a new 4-story, 7-unit residential building with 3 parking spaces. The applicant also seeks a rear setback reduction from 30 feet to 9 feet.",
     "categories": [
      {
       "id": "ahpaa",
@@ -3608,23 +3720,32 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "c478f2ce70be1d5a",
+    "content_hash": "783d117f84110eed",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028415",
    "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
-   "source_ref": "O2026-0028415",
+   "source_ref": "SO2026-0028415",
    "title": "Zoning Reclassification Map No. 8-G at 3439 S Morgan St - App No. 23152T1",
    "attachments": [
     {
      "label": "O2026-0028415 EDS",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/bf3aab83-24c5-4c8e-b1cf-c801e0700720.pdf"
+    },
+    {
+     "label": "SO2026-0028415 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/153ac1e2-235d-47f7-93d3-3cc7b5ccfa6c.pdf"
+    },
+    {
+     "label": "SO2026-0028415 Substitute Application Pages",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/6483eaaa-1354-4d5f-b075-0833c9ee51ed.pdf"
     },
     {
      "label": "O2026-0028415 Application",
@@ -3637,6 +3758,10 @@
     {
      "label": "O2026-0028415 Ordinance",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/69fac282-8b53-40a7-9ed9-9c74acf709f4.pdf"
+    },
+    {
+     "label": "SO2026-0028415 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/2229fc30-8034-4142-8055-9f67bf84abe0.pdf"
     }
    ],
    "outcome": null,
@@ -3645,9 +3770,14 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A rezoning from B1-3 to B2-3 would allow a new six-unit residential building on a vacant lot in the 11th Ward.",
-    "summary": "QHN LLC seeks to rezone a vacant lot at 3439 S Morgan St from B1-3 to B2-3 to build a three-story, six-unit residential building with three off-street parking spaces, including a transit-served-location parking reduction from six spaces to three.",
+    "relevance_reason": "The rezoning would allow a new six-unit residential building on a vacant lot in Bridgeport.",
+    "summary": "QHN LLC seeks to rezone vacant land at 3439 S Morgan St from B1-3 to B2-3 to build a four-story, six-unit residential building. It also seeks to cut required off-street parking from six spaces to three. The project is not subject to the ARO.",
     "categories": [
+     {
+      "id": "housing-agenda",
+      "via": "keyword",
+      "detail": "ARO"
+     },
      {
       "id": "ahpaa",
       "via": "model",
@@ -3672,13 +3802,14 @@
      "B1-3"
     ],
     "zoning_to": "B2-3",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "6573aff35374ce27",
+    "content_hash": "393efa1f7d372a8f",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028439",
@@ -3701,6 +3832,14 @@
     {
      "label": "O2026-0028439 Application",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/a3ffb721-99c3-44ff-80b9-713ffb83eb2a.pdf"
+    },
+    {
+     "label": "O2026-0028439 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/25208a9e-2e16-4411-9892-8cdf2fab2523.pdf"
+    },
+    {
+     "label": "O2026-0028439 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/fc23796f-12f3-4be3-bd38-f676b9b6fcef.pdf"
     }
    ],
    "outcome": null,
@@ -3710,7 +3849,7 @@
     "status": "ok",
     "housing_relevant": true,
     "relevance_reason": "The rezoning would allow a new four-story mixed-use building with three residential units replacing a two-story residence.",
-    "summary": "Rezones 1921 W Chicago Ave from B3-2 to B3-3 Community Shopping District to allow a four-story building with ground-floor retail and three apartments above, replacing a two-story residence. Includes parking increase and rear setback relief.",
+    "summary": "Rezones 1921 W Chicago Ave from B3-2 to B3-3 Community Shopping District so the applicant can replace a two-story residence with a four-story building holding one ground-floor retail space and three apartments above, with three garage parking spaces.",
     "categories": [
      {
       "id": "ahpaa",
@@ -3732,13 +3871,14 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": "B3-3 Community Shopping District",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "2ed259932148f484",
+    "content_hash": "73a9fc56b4a475c8",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027299",
@@ -3761,6 +3901,14 @@
     {
      "label": "O2026-0027299 EDS",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/571521f5-211f-41fe-ac22-9c8accb76f34.pdf"
+    },
+    {
+     "label": "O2026-0027299 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/8c80140d-f97a-4e96-89a2-2aff61786198.pdf"
+    },
+    {
+     "label": "O2026-0027299 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/4f9a0776-6396-41ff-b771-e9437ea7f2b8.pdf"
     }
    ],
    "outcome": null,
@@ -3769,8 +3917,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A Type 1 zoning amendment application would allow a new six-unit residential building on a vacant and partly improved lot in the 36th Ward.",
-    "summary": "1807-09 W. Augusta Blvd LLC seeks a Type 1 map amendment for 1807-09 W. Augusta Blvd. The site stays RM-4.5. It would allow a new three-story, six-unit residential building with a five-space garage, plus parking, setback and rear yard open space relief.",
+    "relevance_reason": "The Type 1 zoning application would allow a new six-unit residential building on a partly vacant lot in the 36th Ward.",
+    "summary": "1807-09 W. Augusta Blvd LLC seeks a Type 1 map amendment, with administrative adjustments and variations, to build a three-story, six-unit residential building with a five-space detached garage at 1807-09 W. Augusta Blvd. The owner is M15 Land Investments LLC.",
     "categories": [
      {
       "id": "ahpaa",
@@ -3784,7 +3932,8 @@
      "community_area": "West Town"
     },
     "entities": [
-     "1807-09 W. Augusta Blvd LLC"
+     "1807-09 W. Augusta Blvd LLC",
+     "M15 Land Investments LLC"
     ],
     "figures": {
      "units": 6,
@@ -3792,17 +3941,16 @@
     },
     "amount": null,
     "amount_kind": null,
-    "zoning_from": [
-     "RM-4.5"
-    ],
-    "zoning_to": "RM-4.5",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "d59c4ce871440982",
+    "content_hash": "97a42ee953b5fcd8",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028465",
@@ -3810,6 +3958,14 @@
    "source_ref": "O2026-0028465",
    "title": "Zoning Reclassification Map No. 5-H at 1644 N Winchester Ave - App No. 23155T1",
    "attachments": [
+    {
+     "label": "O2026-0028465 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/766f9896-3b6e-45ca-bec8-096a89abe79e.pdf"
+    },
+    {
+     "label": "O2026-0028465 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/9ccd7c31-fc09-45d8-bf62-83a960240ecd.pdf"
+    },
     {
      "label": "O2026-0028465 EDS",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/bc0927c9-6a99-4804-8e7e-6b7dd8d57f8d.pdf"
@@ -3833,13 +3989,13 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A residential rezoning from RS-3 to RT-4 that would allow a new accessory dwelling unit above a rebuilt garage at a single-family home.",
-    "summary": "Rezoning of 1644 N Winchester Ave from RS-3 to RT-4 so the applicants can renovate and expand a single-family home and replace the rear garage with a two-story garage containing one accessory dwelling unit.",
+    "relevance_reason": "A rezoning from RS-3 to RT-4 would allow a rehabbed single-family home to add an accessory dwelling unit above a new garage.",
+    "summary": "Applicants seek to rezone 1644 N Winchester Ave from RS-3 to RT-4 to rehabilitate and add onto a three-story single-family home and replace the rear garage with a two-story garage containing one accessory dwelling unit.",
     "categories": [
      {
       "id": "ahpaa",
-      "via": "keyword",
-      "detail": "rezoning"
+      "via": "model",
+      "detail": ""
      }
     ],
     "geography": {
@@ -3854,15 +4010,18 @@
     },
     "amount": null,
     "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
+    "zoning_from": [
+     "RS-3"
+    ],
+    "zoning_to": "RT-4",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "86f1c60dc64e83b1",
+    "content_hash": "ea04050a016d255c",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028457",
@@ -3885,6 +4044,14 @@
     {
      "label": "O2026-0028457 Narrative and Plans",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/9917bf5a-e3ff-42d1-92d6-8244dd3a41e6.pdf"
+    },
+    {
+     "label": "O2026-0028457 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d741708c-12ce-4af7-8754-181c0b94063e.pdf"
+    },
+    {
+     "label": "O2026-0028457 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/726b1924-2577-4663-98f4-4b23397eecb5.pdf"
     }
    ],
    "outcome": null,
@@ -3893,7 +4060,7 @@
    "enrichment": {
     "status": "screened_out",
     "housing_relevant": false,
-    "relevance_reason": "The rezoning of 1147-1151 S. Independence Blvd. from RT-4 and C1-2 to C1-2 covers a car wash, a commercial building, and parking, with no dwelling units proposed, so it is a purely commercial rezoning that does not add, remove, or change homes.",
+    "relevance_reason": "The rezoning of 1147-1151 S. Independence Blvd. from RT-4 and C1-2 to C1-2 covers a car wash, a commercial building, and a vacant lot to be used for four parking spaces, with no dwelling units proposed or existing.",
     "summary": "",
     "categories": [],
     "geography": {
@@ -3910,13 +4077,14 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
-    "content_hash": "8665fb51eae4f81c",
+    "content_hash": "f27058dac3c69266",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028670",
@@ -3924,6 +4092,10 @@
    "source_ref": "O2026-0028670",
    "title": "Zoning Reclassification Map No. 2-H at 2342-2346 W Jackson Blvd - App No. 23156T1",
    "attachments": [
+    {
+     "label": "O2026-0028670 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/32a6158a-1e4b-4cea-8372-23fc2eeb13b2.pdf"
+    },
     {
      "label": "O2026-0028670 Ordinance",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/6d36e1b0-5354-4e2f-9f6a-05f6b1066bba.pdf"
@@ -3939,6 +4111,10 @@
     {
      "label": "O2026-0028670 Application",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/7b0bbaf3-b508-4013-9e71-4bedc4c9f315.pdf"
+    },
+    {
+     "label": "O2026-0028670 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/bb05e7a1-6bc1-4ef4-b0ab-1d4d4c0c1590.pdf"
     }
    ],
    "outcome": null,
@@ -3947,8 +4123,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A rezoning from RM-5 to B2-3 would allow a new 15-unit residential building on a vacant lot next to an existing 4-unit building.",
-    "summary": "Ordinance would rezone 2342-46 W. Jackson Blvd. from RM-5 to B2-3 so the lot can be split and a new five-story, 15-unit residential building built beside the existing 4-unit building, with reduced parking at this transit-served location.",
+    "relevance_reason": "The rezoning would allow a new five-story, 15-unit residential building next to an existing four-unit building near CTA transit.",
+    "summary": "Rezones 2342-46 W Jackson Blvd from RM-5 to B2-3 so the applicant can split the lot and build a new five-story, 15-unit residential building with four parking spaces. The existing four-unit building stays. Transit-served location relief is sought.",
     "categories": [
      {
       "id": "ahpaa",
@@ -3970,13 +4146,14 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "d844c1db68132a2c",
+    "content_hash": "84913a1ee90de279",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028350",
@@ -4020,6 +4197,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
     "content_hash": "fa613a004a60a259",
@@ -4080,6 +4258,7 @@
      "B3-2"
     ],
     "zoning_to": "B2-3",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "aca6a051fdc81a50",
@@ -4095,6 +4274,10 @@
    "title": "Zoning Reclassification Map No. 13-I at 2648-2658 W Lawrence Ave - App No. 23160T1",
    "attachments": [
     {
+     "label": "O2026-0028689 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f8427a18-09b7-466a-9b20-11a29186e033.pdf"
+    },
+    {
      "label": "O2026-0028689 Application",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/0128cee4-7176-452c-ac72-cfec8809364a.pdf"
     },
@@ -4109,6 +4292,10 @@
     {
      "label": "O2026-0028689 EDS",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/af6e5af1-947b-4e96-b185-2186a30199b5.pdf"
+    },
+    {
+     "label": "O2026-0028689 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/667b67d7-7965-440f-b442-298eea24ced1.pdf"
     }
    ],
    "outcome": null,
@@ -4117,16 +4304,16 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "The rezoning would allow construction of a 37-unit residential building with ground-floor commercial space, and the project is subject to the ARO.",
-    "summary": "MLV Properties, LLC seeks to rezone 2648-2658 W Lawrence Ave from B3-2 to B2-3 to replace a vacant commercial building with a 37-unit, 61-foot residential building with 13 parking spaces and 2,914 square feet of commercial space.",
+    "relevance_reason": "The rezoning would allow construction of a new 37-unit residential building with ground-floor commercial space, and it is subject to the ARO.",
+    "summary": "MLV Properties, LLC seeks to rezone 2648-2658 W Lawrence Ave from B3-2 to B2-3 to build a 37-unit, 61-foot building with 2,914 square feet of commercial space and 13 parking spaces. The application is marked as subject to the ARO.",
     "categories": [
      {
-      "id": "ahpaa",
-      "via": "model",
-      "detail": ""
+      "id": "housing-agenda",
+      "via": "keyword",
+      "detail": "ARO"
      },
      {
-      "id": "housing-agenda",
+      "id": "ahpaa",
       "via": "model",
       "detail": ""
      }
@@ -4149,18 +4336,19 @@
      "B3-2"
     ],
     "zoning_to": "B2-3",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "3b7cefaf209aef2b",
+    "content_hash": "d1ed0da366a5d71a",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028696",
    "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
-   "source_ref": "O2026-0028696",
+   "source_ref": "SO2026-0028696",
    "title": "Zoning Reclassification Map No. 5-K at 1745-1759 N Cicero Ave- App No. 23161T1",
    "attachments": [
     {
@@ -4176,8 +4364,16 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/2134af6e-cab9-4251-86ed-13bb4fc3d74a.pdf"
     },
     {
+     "label": "SO2026-0028696 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f6b93653-7b54-47a7-b3bb-6b3157386966.pdf"
+    },
+    {
      "label": "O2026-0028696 Application",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e7e5e3ef-63b7-410e-a598-3b2294642747.pdf"
+    },
+    {
+     "label": "SO2026-0028696 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/9c86c5cc-3d4a-4067-b151-2198567b07d2.pdf"
     }
    ],
    "outcome": null,
@@ -4186,8 +4382,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "The rezoning would allow a new 36-unit residential building on a site now used for vehicle storage.",
-    "summary": "Ordinance to rezone 1745-1759 N. Cicero Ave. from C2-1 Motor Vehicle-Related Commercial District to B2-3 Neighborhood Mixed-Use District for a 36-unit, 57-foot residential building with 34 parking spaces and no commercial space. The applicant also seeks parking, window and setback relief.",
+    "relevance_reason": "The rezoning would allow a new 36-unit residential building on a site currently used for vehicle storage.",
+    "summary": "Applicant seeks to rezone 1745-1759 N. Cicero Ave. from C2-1 to B2-3 to build a 36-unit, 57-foot residential building with 34 parking spaces and no commercial space. The site is now used for vehicle storage.",
     "categories": [
      {
       "id": "ahpaa",
@@ -4207,17 +4403,16 @@
     },
     "amount": null,
     "amount_kind": null,
-    "zoning_from": [
-     "C2-1 Motor Vehicle-Related Commercial District"
-    ],
-    "zoning_to": "B2-3 Neighborhood Mixed-Use District",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "e19da2b85ce8efc6",
+    "content_hash": "12b5cf1673a30ea9",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028687",
@@ -4271,6 +4466,7 @@
      "RS-3"
     ],
     "zoning_to": "C1-1",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "c1c7d74aa4d4664d",
@@ -4332,6 +4528,7 @@
      "RS-3"
     ],
     "zoning_to": "B2-1",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "3cbfd930e22466e6",
@@ -4359,12 +4556,20 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/71f06221-fd9c-4bf8-9d6f-ea52764c0619.pdf"
     },
     {
+     "label": "O2026-0028726 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/70fd7b0c-71f5-4102-a58e-1db0f1fea03a.pdf"
+    },
+    {
      "label": "O2026-0028726 EDS 2 Redacted",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/7a404fbf-b663-40e8-95f8-cfa207a78947.pdf"
     },
     {
      "label": "O2026-0028726 Application",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/63333e1c-ffc9-41ef-a688-f0cfaa373b73.pdf"
+    },
+    {
+     "label": "O2026-0028726 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/501c7b98-5788-43a0-b43b-1fc134eff886.pdf"
     }
    ],
    "outcome": null,
@@ -4373,13 +4578,13 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A Type 1 zoning amendment would allow a new 78-unit, 7-story residential building on a vacant Near North Side site, with relief tied to ARO on-site compliance.",
-    "summary": "Brinshore-Michaels Development, LLC seeks a Type 1 rezoning of 537-547 W Oak St and 939-957 N Larrabee St, a DR-3 to DR-3 map change, to build a 78-unit, 7-story residential building with 39 parking spaces on a vacant lot.",
+    "relevance_reason": "The Type 1 zoning amendment would allow a 78-unit residential building on a vacant downtown lot with on-site ARO compliance.",
+    "summary": "Brinshore-Michaels Development, LLC seeks a Type 1 zoning amendment (DR-3 to DR-3) at 537-547 W Oak St and 939-957 N Larrabee St to build a 78-unit, 7-story residential building, with reduced lot area per unit, higher FAR and parking relief for a transit-served location.",
     "categories": [
      {
       "id": "ahpaa",
-      "via": "keyword",
-      "detail": "rezoning"
+      "via": "model",
+      "detail": ""
      },
      {
       "id": "housing-agenda",
@@ -4403,13 +4608,14 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "08d32f4e45aa1106",
+    "content_hash": "0021be75a36468b0",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028704",
@@ -4418,12 +4624,20 @@
    "title": "Zoning Reclassification Map No. 2-I at 1140-1144 S California Ave - App No. 23165T1",
    "attachments": [
     {
+     "label": "O2026-0028704 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/9ec22ea6-0e13-4068-b149-cce079e780b0.pdf"
+    },
+    {
      "label": "O2026-0028704 Ordinance",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/592cc989-39c3-4e73-9d4a-5d37e57d7270.pdf"
     },
     {
      "label": "O2026-0028704 EDS",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/36d367f6-29a9-4e41-b1e0-83f45aab83ba.pdf"
+    },
+    {
+     "label": "O2026-0028704 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/7d1ab8b4-269b-4198-b108-533b011782de.pdf"
     },
     {
      "label": "O2026-0028704 Narrative and Plans",
@@ -4438,19 +4652,17 @@
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
-    "status": "ok",
+    "status": "screened_out",
     "housing_relevant": false,
-    "relevance_reason": "The rezoning from C1-2 to C1-3 only enables a 19-space non-accessory surface parking lot for a learning academy, with no housing units involved.",
-    "summary": "Rezones 1140-44 S California Ave from C1-2 to C1-3 Neighborhood Commercial District so the applicant can build a 19-space surface parking lot serving Great Expectations Learning Academy Incorporated.",
+    "relevance_reason": "This rezoning from C1-2 to C1-3 Neighborhood Commercial is for a commercial site, and neither the title nor the ordinance text mentions dwelling units or residential use being added, removed, or changed.",
+    "summary": "",
     "categories": [],
     "geography": {
-     "address": "1140-44 South California Avenue",
-     "ward": 28,
-     "community_area": "North Lawndale"
+     "address": null,
+     "ward": null,
+     "community_area": null
     },
-    "entities": [
-     "Great Expectations Learning Academy Incorporated"
-    ],
+    "entities": [],
     "figures": {
      "units": null,
      "affordable_units": null
@@ -4458,14 +4670,15 @@
     "amount": null,
     "amount_kind": null,
     "zoning_from": [],
-    "zoning_to": "C1-3 Neighborhood Commercial District",
-    "source_quality": "scanned",
-    "model": "claude-sonnet-5-5",
-    "content_hash": "18f767ecfb6fd6cb",
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-haiku-5-5",
+    "content_hash": "3a6b08525e282ede",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028747",
@@ -4474,12 +4687,20 @@
    "title": "Zoning Reclassification Map No. 2-I at 1001-1003 S Campbell Ave - App No. 23177T1",
    "attachments": [
     {
+     "label": "O2026-0028747 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/24737dc4-6bab-45f5-b896-a766c71997e0.pdf"
+    },
+    {
      "label": "O2026-0028747 EDS",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/5bcf3270-512f-400c-850e-a351a5cc67c2.pdf"
     },
     {
      "label": "O2026-0028747 Application",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/6038e613-b41a-4326-89d8-f0b760e542b2.pdf"
+    },
+    {
+     "label": "O2026-0028747 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/264637a8-f262-4ad0-98fd-c0e0bd676bc3.pdf"
     },
     {
      "label": "O2026-0028747 Ordinance",
@@ -4496,8 +4717,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A rezoning of a vacant lot from RT-3.5 to RT 4 to allow construction of a new single-family home adds a residential unit.",
-    "summary": "Orlando Valdez seeks to rezone vacant property at 1001-03 S Campbell Ave from RT-3.5 to RT 4 to build a one-unit single-family residence with two parking spaces. The application also requests setback and parking variations.",
+    "relevance_reason": "A rezoning of a vacant lot from RT-3.5 to RT-4 to allow construction of a new single-family home.",
+    "summary": "Orlando Valdez seeks to rezone vacant property at 1001-03 S Campbell Ave in the 28th Ward from RT-3.5 to RT-4 to build one single-family residence. The application also seeks setback and parking variations.",
     "categories": [
      {
       "id": "ahpaa",
@@ -4522,19 +4743,20 @@
     "zoning_from": [
      "RT-3.5"
     ],
-    "zoning_to": "RT 4",
+    "zoning_to": "RT-4",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "cd46129921070b38",
+    "content_hash": "67d600397a684d70",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028730",
    "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
-   "source_ref": "O2026-0028730",
+   "source_ref": "SO2026-0028730",
    "title": "Zoning Reclassification Map No. 7-H at 2328-2334 W Montana St. - App No. 23167T1",
    "attachments": [
     {
@@ -4550,8 +4772,20 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/391c9c63-69ad-498c-9f14-20cf841601a3.pdf"
     },
     {
+     "label": "SO2026-0028730 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/5cd61aa7-c98d-49c4-b950-6779bc74a616.pdf"
+    },
+    {
      "label": "O2026-0028730 Ordinance",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/49fbe917-cca7-42b7-9121-9d9cc840ea63.pdf"
+    },
+    {
+     "label": "SO2026-0028730 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f0e5badf-d4c1-4669-9ec3-e76860946ef5.pdf"
+    },
+    {
+     "label": "SO2026-0028730 Substitute Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/ea2702f8-4f0a-4a5c-98d2-bbed81807705.pdf"
     }
    ],
    "outcome": null,
@@ -4560,8 +4794,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A rezoning from M1-2 to RT-4 on vacant parcels would allow construction of new two-unit residential buildings.",
-    "summary": "Laurel Homes 1, Inc. seeks to rezone three vacant parcels at 2328-34 W. Montana St. from M1-2 to RT-4 to build three 2-unit residences. The owner is Ashur Properties LLC. The applicant marked the project as not subject to the ARO.",
+    "relevance_reason": "A rezoning of vacant land from manufacturing to a residential district to build new two-unit homes adds housing.",
+    "summary": "Laurel Homes 1, Inc. seeks to rezone three vacant parcels at 2328-34 W. Montana St. from M1-2 to RT-4 to build three 2-story, 2-unit residences. The owner is Ashur Properties LLC. The applicant marked the project as not subject to the ARO.",
     "categories": [
      {
       "id": "housing-agenda",
@@ -4593,18 +4827,19 @@
      "M1-2"
     ],
     "zoning_to": "RT-4",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "43d713ce9114429a",
+    "content_hash": "9588cb35040bc82b",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028731",
    "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
-   "source_ref": "O2026-0028731",
+   "source_ref": "SO2026-0028731",
    "title": "Zoning Reclassification Map No. 11-K at 4301 W Montrose Ave - App No. 23168T1",
    "attachments": [
     {
@@ -4620,8 +4855,16 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d8024ea2-c938-461e-bdf6-5fca6ed9ff5a.pdf"
     },
     {
+     "label": "SO2026-0028731 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/a30bb4e5-8980-47b2-9673-986d0aac968c.pdf"
+    },
+    {
      "label": "O2026-0028731 Application",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/a2e71081-2ddd-4fbd-9bd6-6aad90913ed4.pdf"
+    },
+    {
+     "label": "SO2026-0028731 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/db9f01d6-1bc6-4786-98df-dadf11cdd0de.pdf"
     }
    ],
    "outcome": null,
@@ -4630,8 +4873,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": false,
-    "relevance_reason": "The rezoning would convert a vacant motor vehicle repair shop to storage and outdoor trade-school training use, with no housing units involved, although it removes RT3.5 residential zoning from the parcel.",
-    "summary": "Rezones 4301 W. Montrose Ave. from RT3.5 to C2-1 so a vacant one-story repair shop can become indoor storage and an outdoor training area for a trade school at 4300 W. Montrose Ave. No on-site parking is planned.",
+    "relevance_reason": "The rezoning converts a vacant motor vehicle repair shop lot from residential RT3.5 to commercial C2-1 for storage and trade-school training use, with no housing units involved.",
+    "summary": "Rezones 4301 W. Montrose Ave. from RT3.5 to C2-1 so a vacant one-story motor vehicle repair shop can become indoor storage and an outdoor training area for a trade school at 4300 W. Montrose. No on-site parking is proposed.",
     "categories": [],
     "geography": {
      "address": "4301 W. Montrose Ave.",
@@ -4649,13 +4892,14 @@
      "RT3.5"
     ],
     "zoning_to": "C2-1",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "a072a694b45f171e",
+    "content_hash": "20d999681604ef29",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027417",
@@ -4713,6 +4957,7 @@
      "M1-2"
     ],
     "zoning_to": "B3-2",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "8be613edff4c71d7",
@@ -4763,6 +5008,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "65851ad1a913ff47",
@@ -4817,6 +5063,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
     "content_hash": "7d7ce2c6a6e333b9",
@@ -4882,6 +5129,7 @@
      "C2-3"
     ],
     "zoning_to": "Institutional Planned Development",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "71c5ec742cfc1184",
@@ -4936,6 +5184,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
     "content_hash": "f5627fa2c2291661",
@@ -4996,6 +5245,7 @@
      "RS-3"
     ],
     "zoning_to": "RT-4",
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "b6581928395ca24a",
@@ -5087,6 +5337,7 @@
     "amount_kind": "DOH multi-family loan",
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
     "content_hash": "1d5e400b6ec35062",
@@ -5141,6 +5392,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
     "content_hash": "e173cc360bb81d02",
@@ -5202,6 +5454,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "partial",
     "model": "claude-sonnet-5-5",
     "content_hash": "0ccbacfd6152a2a9",
@@ -5251,6 +5504,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "partial",
     "model": "claude-sonnet-5-5",
     "content_hash": "c9af1161b93cd000",
@@ -5315,6 +5569,7 @@
      "M2-3"
     ],
     "zoning_to": "DX-5",
+    "important": null,
     "source_quality": "partial",
     "model": "claude-sonnet-5-5",
     "content_hash": "133bc302ffb0bd84",
@@ -5379,6 +5634,7 @@
      "Institutional Planned Development 108"
     ],
     "zoning_to": null,
+    "important": null,
     "source_quality": "partial",
     "model": "claude-sonnet-5-5",
     "content_hash": "26c962f4057df1d7",
@@ -5447,6 +5703,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "partial",
     "model": "claude-sonnet-5-5",
     "content_hash": "03ac2135b3ee19c7",
@@ -5497,6 +5754,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "e85c1f0e62391e3e",
@@ -5547,6 +5805,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "25ce0e1a5f65e1b2",
@@ -5597,6 +5856,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "05e4cda765a66a89",
@@ -5647,6 +5907,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "802dc4fd369f8f2b",
@@ -5697,6 +5958,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "d70173e0469f4481",
@@ -5747,6 +6009,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "bfed7a3397323860",
@@ -5798,6 +6061,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "3b8f04405e6f7d39",
@@ -5848,6 +6112,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "0a8d516bb52d38b1",
@@ -5898,6 +6163,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "b72513adff2256ef",
@@ -5949,6 +6215,7 @@
     "amount_kind": "contract not-to-exceed",
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "9fc74e837d2346db",
@@ -6000,6 +6267,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "bd740937cdef7a2c",
@@ -6051,6 +6319,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "81a804a60622c87a",
@@ -6102,6 +6371,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "d987dab282da06d5",
@@ -6154,6 +6424,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "655399ce19a794b9",
@@ -6204,6 +6475,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "9143fe78adb77851",
@@ -6255,6 +6527,7 @@
     "amount_kind": "conduit loan",
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "1ee172c93711017b",
@@ -6306,6 +6579,7 @@
     "amount_kind": "revenue bond cap",
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "feb8dc3d1ff94302",
@@ -6357,6 +6631,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "f8a4ef78969cbca7",
@@ -6408,6 +6683,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "45121bcfe5907785",
@@ -6458,6 +6734,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "9cc901695363248c",
@@ -6509,6 +6786,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "f43bdfc0e2cac1c3",
@@ -6559,6 +6837,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "af7391fb4323b9f1",
@@ -6610,6 +6889,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "bc6b99bc4c118c54",
@@ -6666,6 +6946,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "3c2e1871f5896eaa",
@@ -6716,6 +6997,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "df4ed07ad026b25b",
@@ -6775,6 +7057,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "fd4480b443f2ec17",
@@ -6830,6 +7113,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "9249bdb21af20a19",
@@ -6884,6 +7168,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "2a9d6739feb106a1",
@@ -6934,6 +7219,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "b74cedafc484bf02",
@@ -6981,6 +7267,7 @@
     "amount_kind": "tax-exempt bonds cap",
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "8d8c9a75a7c850e3",
@@ -7028,6 +7315,7 @@
     "amount_kind": "mortgage revenue bonds",
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "c4a45a2f33d1cb08",
@@ -7077,6 +7365,7 @@
     "amount_kind": null,
     "zoning_from": [],
     "zoning_to": null,
+    "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
     "content_hash": "b6bef8b3379e83cc",

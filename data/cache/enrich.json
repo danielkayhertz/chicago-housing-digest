@@ -467,8 +467,10 @@
     "via": "model"
    }
   ],
-  "content_hash": "d43c05391087afa8",
-  "entities": [],
+  "content_hash": "30a23ecbb8e05e6c",
+  "entities": [
+   "Matthew J. Martin"
+  ],
   "figures": {
    "affordable_units": null,
    "units": null
@@ -479,12 +481,13 @@
    "ward": null
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The zoning text amendment sets TOD street rules that require rezonings to B or C1 districts with at least 3 FAR and cap residential parking near transit, directly affecting housing development.",
+  "relevance_reason": "A zoning text amendment creating TOD street rules would require rezonings along designated streets to B or C1 districts with at least 3 FAR and change residential parking and ground-floor design standards near transit.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ordinance would add Section 17-3-0600 to the Chicago zoning code creating TOD streets near CTA and Metra stations. It sets building design standards, requires rezonings of abutting property to B or C1 with minimum 3 FAR, and caps residential parking at 0.5 spaces per unit.",
+  "summary": "Substitute ordinance from Ald. Matthew J. Martin (47th Ward) would add TOD street rules to the zoning code, designating segments of Ravenswood and Western. Rezonings abutting them would require a B or C1 district with at least 3 FAR, and the existing pedestrian-street exceptions would no longer apply there.",
   "zoning_from": [],
   "zoning_to": null
  },
@@ -647,9 +650,10 @@
     "via": "model"
    }
   ],
-  "content_hash": "d59c4ce871440982",
+  "content_hash": "97a42ee953b5fcd8",
   "entities": [
-   "1807-09 W. Augusta Blvd LLC"
+   "1807-09 W. Augusta Blvd LLC",
+   "M15 Land Investments LLC"
   ],
   "figures": {
    "affordable_units": null,
@@ -661,16 +665,15 @@
    "ward": 36
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A Type 1 zoning amendment application would allow a new six-unit residential building on a vacant and partly improved lot in the 36th Ward.",
+  "relevance_reason": "The Type 1 zoning application would allow a new six-unit residential building on a partly vacant lot in the 36th Ward.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "1807-09 W. Augusta Blvd LLC seeks a Type 1 map amendment for 1807-09 W. Augusta Blvd. The site stays RM-4.5. It would allow a new three-story, six-unit residential building with a five-space garage, plus parking, setback and rear yard open space relief.",
-  "zoning_from": [
-   "RM-4.5"
-  ],
-  "zoning_to": "RM-4.5"
+  "summary": "1807-09 W. Augusta Blvd LLC seeks a Type 1 map amendment, with administrative adjustments and variations, to build a three-story, six-unit residential building with a five-space detached garage at 1807-09 W. Augusta Blvd. The owner is M15 Land Investments LLC.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027331": {
   "amount": null,
@@ -895,7 +898,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "3278f6f717b7d469",
+  "content_hash": "d863a41d7fe80bff",
   "entities": [
    "2156 W WARREN LLC"
   ],
@@ -909,12 +912,13 @@
    "ward": 27
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A rezoning from RT4 to RM5 would allow a new 8-unit residential building on a vacant lot.",
+  "relevance_reason": "A rezoning from RT4 to RM5 to build an 8-unit residential building on a vacant lot adds homes.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "2156 W Warren LLC seeks to rezone a vacant lot at 2156 W Warren Blvd from RT4 to RM5 to build a 4-story, 8-unit residential building with 5 outdoor parking spaces. The applicant also requests setback and rear-yard open space relief.",
+  "summary": "2156 W Warren LLC seeks to rezone 2156 W Warren Blvd from RT4 to RM5 to build a new 4-story, 8-unit residential building with 5 parking spaces on a vacant lot. The request also seeks setback and rear yard open space variations.",
   "zoning_from": [
    "RT4"
   ],
@@ -930,11 +934,8 @@
     "via": "model"
    }
   ],
-  "content_hash": "b64657f7c2ed9ab9",
-  "entities": [
-   "73RD AND INDIANA, LLC",
-   "Jaffe & Berlin"
-  ],
+  "content_hash": "bc4f487a1704e901",
+  "entities": [],
   "figures": {
    "affordable_units": null,
    "units": 8
@@ -945,12 +946,13 @@
    "ward": 6
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning would allow a new 8-unit residential building on a vacant lot in the 6th Ward.",
+  "relevance_reason": "A Type 1 rezoning would allow a new 8-unit residential building on a vacant lot, adding homes.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "73rd and Indiana, LLC seeks to rezone the vacant lot at 7353-7359 S Indiana Ave from RS2 to RT4 to build a two-story, 8-unit residential building with a 7-car garage. Agnes Plecka of Jaffe & Berlin represents the applicant.",
+  "summary": "The applicant seeks to rezone the vacant lot at 7353-7359 S Indiana Ave from RS2 to RT4 to build a two-story, 8-unit residential building with a 7-car garage. The site is a Transit Served Location.",
   "zoning_from": [
    "RS2"
   ],
@@ -966,7 +968,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "c478f2ce70be1d5a",
+  "content_hash": "783d117f84110eed",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -978,12 +980,13 @@
    "ward": 28
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning would allow a new 7-unit residential building, including ground-floor residential use, on a vacant lot along the Western Avenue bus corridor.",
+  "relevance_reason": "The rezoning would allow a new 7-unit residential building, including ground-floor residential use, on a vacant lot.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Applicant seeks to rezone a vacant corner lot at 2400 W. Grenshaw St. from C1-2 to B2-3 to build a 4-story, 7-unit residential building with 3 garage parking spaces. The request includes a variation reducing the rear setback from 30 feet to 9 feet.",
+  "summary": "Rezones 2400 W. Grenshaw St. (a.k.a. 1124 S. Western Ave.) from C1-2 to B2-3 to allow a new 4-story, 7-unit residential building with 3 parking spaces. The applicant also seeks a rear setback reduction from 30 feet to 9 feet.",
   "zoning_from": [],
   "zoning_to": null
  },
@@ -1089,12 +1092,17 @@
   "amount_kind": null,
   "categories": [
    {
+    "detail": "ARO",
+    "id": "housing-agenda",
+    "via": "keyword"
+   },
+   {
     "detail": "",
     "id": "ahpaa",
     "via": "model"
    }
   ],
-  "content_hash": "6573aff35374ce27",
+  "content_hash": "393efa1f7d372a8f",
   "entities": [
    "QHN LLC"
   ],
@@ -1108,12 +1116,13 @@
    "ward": 11
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A rezoning from B1-3 to B2-3 would allow a new six-unit residential building on a vacant lot in the 11th Ward.",
+  "relevance_reason": "The rezoning would allow a new six-unit residential building on a vacant lot in Bridgeport.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "QHN LLC seeks to rezone a vacant lot at 3439 S Morgan St from B1-3 to B2-3 to build a three-story, six-unit residential building with three off-street parking spaces, including a transit-served-location parking reduction from six spaces to three.",
+  "summary": "QHN LLC seeks to rezone vacant land at 3439 S Morgan St from B1-3 to B2-3 to build a four-story, six-unit residential building. It also seeks to cut required off-street parking from six spaces to three. The project is not subject to the ARO.",
   "zoning_from": [
    "B1-3"
   ],
@@ -1129,7 +1138,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "2ed259932148f484",
+  "content_hash": "73a9fc56b4a475c8",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -1141,12 +1150,13 @@
    "ward": 36
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
   "relevance_reason": "The rezoning would allow a new four-story mixed-use building with three residential units replacing a two-story residence.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Rezones 1921 W Chicago Ave from B3-2 to B3-3 Community Shopping District to allow a four-story building with ground-floor retail and three apartments above, replacing a two-story residence. Includes parking increase and rear setback relief.",
+  "summary": "Rezones 1921 W Chicago Ave from B3-2 to B3-3 Community Shopping District so the applicant can replace a two-story residence with a four-story building holding one ground-floor retail space and three apartments above, with three garage parking spaces.",
   "zoning_from": [],
   "zoning_to": "B3-3 Community Shopping District"
  },
@@ -1154,7 +1164,7 @@
   "amount": null,
   "amount_kind": null,
   "categories": [],
-  "content_hash": "8665fb51eae4f81c",
+  "content_hash": "f27058dac3c69266",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -1166,9 +1176,10 @@
    "ward": null
   },
   "housing_relevant": false,
+  "important": null,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning of 1147-1151 S. Independence Blvd. from RT-4 and C1-2 to C1-2 covers a car wash, a commercial building, and parking, with no dwelling units proposed, so it is a purely commercial rezoning that does not add, remove, or change homes.",
+  "relevance_reason": "The rezoning of 1147-1151 S. Independence Blvd. from RT-4 and C1-2 to C1-2 covers a car wash, a commercial building, and a vacant lot to be used for four parking spaces, with no dwelling units proposed or existing.",
   "source_quality": "none",
   "status": "screened_out",
   "summary": "",
@@ -1179,7 +1190,7 @@
   "amount": null,
   "amount_kind": null,
   "categories": [],
-  "content_hash": "d6f45443b324d835",
+  "content_hash": "9f2a665f66904ef8",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -1191,9 +1202,10 @@
    "ward": null
   },
   "housing_relevant": false,
+  "important": null,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The ordinance concerns cannabis dispensary operations and zoning standards for cannabis business establishments, with no mention of dwelling units, residential use, or housing.",
+  "relevance_reason": "The ordinance concerns cannabis dispensary operations and zoning standards for cannabis business establishments, with no dwelling units or residential use affected.",
   "source_quality": "none",
   "status": "screened_out",
   "summary": "",
@@ -1205,12 +1217,12 @@
   "amount_kind": null,
   "categories": [
    {
-    "detail": "rezoning",
+    "detail": "",
     "id": "ahpaa",
-    "via": "keyword"
+    "via": "model"
    }
   ],
-  "content_hash": "86f1c60dc64e83b1",
+  "content_hash": "ea04050a016d255c",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -1222,14 +1234,17 @@
    "ward": 32
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A residential rezoning from RS-3 to RT-4 that would allow a new accessory dwelling unit above a rebuilt garage at a single-family home.",
+  "relevance_reason": "A rezoning from RS-3 to RT-4 would allow a rehabbed single-family home to add an accessory dwelling unit above a new garage.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Rezoning of 1644 N Winchester Ave from RS-3 to RT-4 so the applicants can renovate and expand a single-family home and replace the rear garage with a two-story garage containing one accessory dwelling unit.",
-  "zoning_from": [],
-  "zoning_to": null
+  "summary": "Applicants seek to rezone 1644 N Winchester Ave from RS-3 to RT-4 to rehabilitate and add onto a three-story single-family home and replace the rear garage with a two-story garage containing one accessory dwelling unit.",
+  "zoning_from": [
+   "RS-3"
+  ],
+  "zoning_to": "RT-4"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028670": {
   "amount": null,
@@ -1241,7 +1256,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "d844c1db68132a2c",
+  "content_hash": "84913a1ee90de279",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -1253,12 +1268,13 @@
    "ward": 27
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A rezoning from RM-5 to B2-3 would allow a new 15-unit residential building on a vacant lot next to an existing 4-unit building.",
+  "relevance_reason": "The rezoning would allow a new five-story, 15-unit residential building next to an existing four-unit building near CTA transit.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ordinance would rezone 2342-46 W. Jackson Blvd. from RM-5 to B2-3 so the lot can be split and a new five-story, 15-unit residential building built beside the existing 4-unit building, with reduced parking at this transit-served location.",
+  "summary": "Rezones 2342-46 W Jackson Blvd from RM-5 to B2-3 so the applicant can split the lot and build a new five-story, 15-unit residential building with four parking spaces. The existing four-unit building stays. Transit-served location relief is sought.",
   "zoning_from": [],
   "zoning_to": null
  },
@@ -1362,17 +1378,17 @@
   "amount_kind": null,
   "categories": [
    {
-    "detail": "",
-    "id": "ahpaa",
-    "via": "model"
+    "detail": "ARO",
+    "id": "housing-agenda",
+    "via": "keyword"
    },
    {
     "detail": "",
-    "id": "housing-agenda",
+    "id": "ahpaa",
     "via": "model"
    }
   ],
-  "content_hash": "3b7cefaf209aef2b",
+  "content_hash": "d1ed0da366a5d71a",
   "entities": [
    "MLV Properties, LLC"
   ],
@@ -1386,12 +1402,13 @@
    "ward": 40
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning would allow construction of a 37-unit residential building with ground-floor commercial space, and the project is subject to the ARO.",
+  "relevance_reason": "The rezoning would allow construction of a new 37-unit residential building with ground-floor commercial space, and it is subject to the ARO.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "MLV Properties, LLC seeks to rezone 2648-2658 W Lawrence Ave from B3-2 to B2-3 to replace a vacant commercial building with a 37-unit, 61-foot residential building with 13 parking spaces and 2,914 square feet of commercial space.",
+  "summary": "MLV Properties, LLC seeks to rezone 2648-2658 W Lawrence Ave from B3-2 to B2-3 to build a 37-unit, 61-foot building with 2,914 square feet of commercial space and 13 parking spaces. The application is marked as subject to the ARO.",
   "zoning_from": [
    "B3-2"
   ],
@@ -1407,7 +1424,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "e19da2b85ce8efc6",
+  "content_hash": "12b5cf1673a30ea9",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -1419,22 +1436,27 @@
    "ward": 37
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning would allow a new 36-unit residential building on a site now used for vehicle storage.",
+  "relevance_reason": "The rezoning would allow a new 36-unit residential building on a site currently used for vehicle storage.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ordinance to rezone 1745-1759 N. Cicero Ave. from C2-1 Motor Vehicle-Related Commercial District to B2-3 Neighborhood Mixed-Use District for a 36-unit, 57-foot residential building with 34 parking spaces and no commercial space. The applicant also seeks parking, window and setback relief.",
-  "zoning_from": [
-   "C2-1 Motor Vehicle-Related Commercial District"
-  ],
-  "zoning_to": "B2-3 Neighborhood Mixed-Use District"
+  "summary": "Applicant seeks to rezone 1745-1759 N. Cicero Ave. from C2-1 to B2-3 to build a 36-unit, 57-foot residential building with 34 parking spaces and no commercial space. The site is now used for vehicle storage.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028698": {
   "amount": null,
   "amount_kind": null,
-  "categories": [],
-  "content_hash": "a3472e16a3edff27",
+  "categories": [
+   {
+    "detail": "rezoning",
+    "id": "ahpaa",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "27f1acf5de1d7bd9",
   "entities": [
    "Humboldt Park Health"
   ],
@@ -1448,12 +1470,13 @@
    "ward": 26
   },
   "housing_relevant": false,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning is for a commercial and medical behavioral health clinic on a vacant lot and includes no dwelling units.",
+  "relevance_reason": "The rezoning from B3-1 to B3-3 is for a new 3-story outpatient behavioral health clinic and medical office with no residential units, so it does not bear on homes.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Humboldt Park Health seeks to rezone 1140 N. California Ave. from B3-1 to B3-3 Community Shopping District to build a 3-story outpatient behavioral health clinic, urgent care center, and medical office.",
+  "summary": "Humboldt Park Health seeks a rezoning of 1140 N California Ave from B3-1 to B3-3 Community Shopping District to build a 3-story outpatient behavioral health clinic, urgent care center and medical office with no off-street parking.",
   "zoning_from": [],
   "zoning_to": "B3-3 Community Shopping District"
  },
@@ -1521,37 +1544,36 @@
   "amount": null,
   "amount_kind": null,
   "categories": [],
-  "content_hash": "18f767ecfb6fd6cb",
-  "entities": [
-   "Great Expectations Learning Academy Incorporated"
-  ],
+  "content_hash": "3a6b08525e282ede",
+  "entities": [],
   "figures": {
    "affordable_units": null,
    "units": null
   },
   "geography": {
-   "address": "1140-44 South California Avenue",
-   "community_area": "North Lawndale",
-   "ward": 28
+   "address": null,
+   "community_area": null,
+   "ward": null
   },
   "housing_relevant": false,
-  "model": "claude-sonnet-5-5",
+  "important": null,
+  "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning from C1-2 to C1-3 only enables a 19-space non-accessory surface parking lot for a learning academy, with no housing units involved.",
-  "source_quality": "scanned",
-  "status": "ok",
-  "summary": "Rezones 1140-44 S California Ave from C1-2 to C1-3 Neighborhood Commercial District so the applicant can build a 19-space surface parking lot serving Great Expectations Learning Academy Incorporated.",
+  "relevance_reason": "This rezoning from C1-2 to C1-3 Neighborhood Commercial is for a commercial site, and neither the title nor the ordinance text mentions dwelling units or residential use being added, removed, or changed.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": "",
   "zoning_from": [],
-  "zoning_to": "C1-3 Neighborhood Commercial District"
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028726": {
   "amount": null,
   "amount_kind": null,
   "categories": [
    {
-    "detail": "rezoning",
+    "detail": "",
     "id": "ahpaa",
-    "via": "keyword"
+    "via": "model"
    },
    {
     "detail": "",
@@ -1559,7 +1581,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "08d32f4e45aa1106",
+  "content_hash": "0021be75a36468b0",
   "entities": [
    "Brinshore-Michaels Development, LLC"
   ],
@@ -1573,12 +1595,13 @@
    "ward": 27
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A Type 1 zoning amendment would allow a new 78-unit, 7-story residential building on a vacant Near North Side site, with relief tied to ARO on-site compliance.",
+  "relevance_reason": "The Type 1 zoning amendment would allow a 78-unit residential building on a vacant downtown lot with on-site ARO compliance.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Brinshore-Michaels Development, LLC seeks a Type 1 rezoning of 537-547 W Oak St and 939-957 N Larrabee St, a DR-3 to DR-3 map change, to build a 78-unit, 7-story residential building with 39 parking spaces on a vacant lot.",
+  "summary": "Brinshore-Michaels Development, LLC seeks a Type 1 zoning amendment (DR-3 to DR-3) at 537-547 W Oak St and 939-957 N Larrabee St to build a 78-unit, 7-story residential building, with reduced lot area per unit, higher FAR and parking relief for a transit-served location.",
   "zoning_from": [],
   "zoning_to": null
  },
@@ -1597,7 +1620,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "43d713ce9114429a",
+  "content_hash": "9588cb35040bc82b",
   "entities": [
    "Laurel Homes 1, Inc.",
    "Ashur Properties LLC"
@@ -1612,12 +1635,13 @@
    "ward": 32
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A rezoning from M1-2 to RT-4 on vacant parcels would allow construction of new two-unit residential buildings.",
+  "relevance_reason": "A rezoning of vacant land from manufacturing to a residential district to build new two-unit homes adds housing.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Laurel Homes 1, Inc. seeks to rezone three vacant parcels at 2328-34 W. Montana St. from M1-2 to RT-4 to build three 2-unit residences. The owner is Ashur Properties LLC. The applicant marked the project as not subject to the ARO.",
+  "summary": "Laurel Homes 1, Inc. seeks to rezone three vacant parcels at 2328-34 W. Montana St. from M1-2 to RT-4 to build three 2-story, 2-unit residences. The owner is Ashur Properties LLC. The applicant marked the project as not subject to the ARO.",
   "zoning_from": [
    "M1-2"
   ],
@@ -1627,7 +1651,7 @@
   "amount": null,
   "amount_kind": null,
   "categories": [],
-  "content_hash": "a072a694b45f171e",
+  "content_hash": "20d999681604ef29",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -1639,12 +1663,13 @@
    "ward": 39
   },
   "housing_relevant": false,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning would convert a vacant motor vehicle repair shop to storage and outdoor trade-school training use, with no housing units involved, although it removes RT3.5 residential zoning from the parcel.",
+  "relevance_reason": "The rezoning converts a vacant motor vehicle repair shop lot from residential RT3.5 to commercial C2-1 for storage and trade-school training use, with no housing units involved.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Rezones 4301 W. Montrose Ave. from RT3.5 to C2-1 so a vacant one-story repair shop can become indoor storage and an outdoor training area for a trade school at 4300 W. Montrose Ave. No on-site parking is planned.",
+  "summary": "Rezones 4301 W. Montrose Ave. from RT3.5 to C2-1 so a vacant one-story motor vehicle repair shop can become indoor storage and an outdoor training area for a trade school at 4300 W. Montrose. No on-site parking is proposed.",
   "zoning_from": [
    "RT3.5"
   ],
@@ -1660,7 +1685,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "8912a543e2096445",
+  "content_hash": "29d8b938f30b0249",
   "entities": [
    "ZSD Barry LLC"
   ],
@@ -1674,12 +1699,13 @@
    "ward": 32
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A residential rezoning from RS-3 to RT-4 would allow renovation and expansion of an existing three-unit building.",
+  "relevance_reason": "A rezoning from RS-3 to RT-4 would allow renovation and expansion of an existing three-unit residential building.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Rezones 2315-17 W Barry Ave from RS-3 to RT-4 (App No. 23169T1). The applicant, ZSD Barry LLC, proposes a substantial renovation and rear addition to the existing three-unit residential building and seeks setback variations.",
+  "summary": "Rezones 2315-17 W Barry Ave from RS-3 to RT-4 so ZSD Barry LLC can renovate and expand, with a rear addition, an existing three-dwelling-unit residential building. The plans keep three units and four parking spaces.",
   "zoning_from": [
    "RS-3"
   ],
@@ -1695,7 +1721,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "58f3012003bcf3a5",
+  "content_hash": "168e590a4e8f977a",
   "entities": [
    "Nabil M. Abou Baker",
    "Sara G. Jelinek"
@@ -1710,12 +1736,13 @@
    "ward": 5
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A residential rezoning from RT-4 to RM-4.5 for a single-family home to allow a rear addition replacement with setback variations.",
+  "relevance_reason": "A residential rezoning from RT-4 to RM-4.5 for a single-family home at 5482 S Ridgewood Ct, which changes the permitted residential density and setbacks.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Applicants Nabil M. Abou Baker and Sara G. Jelinek seek to rezone 5482 S Ridgewood Ct from RT-4 to RM-4.5 to replace the two-story rear addition on their single-family home, with no parking and setback relief.",
+  "summary": "Homeowners Nabil M. Abou Baker and Sara G. Jelinek seek to rezone 5482 S Ridgewood Ct from RT-4 to RM-4.5 to replace a two-story rear addition on their single-family home, with setback and open-space variations. No parking would be provided.",
   "zoning_from": [
    "RT-4"
   ],
@@ -1726,42 +1753,32 @@
   "amount_kind": null,
   "categories": [
    {
-    "detail": "Department of Housing",
-    "id": "housing-agenda",
-    "via": "keyword"
-   },
-   {
     "detail": "",
     "id": "ahpaa",
     "via": "model"
-   },
-   {
-    "detail": "",
-    "id": "social-housing",
-    "via": "model"
    }
   ],
-  "content_hash": "6d95845c4fd494ec",
+  "content_hash": "edac461f891901a4",
   "entities": [
-   "TECHCO SAVVY INC.",
-   "Department of Housing"
+   "TECHCO SAVVY INC."
   ],
   "figures": {
    "affordable_units": null,
    "units": 3
   },
   "geography": {
-   "address": "4125 and 4127 West 5th Avenue",
+   "address": "4125 and 4127 W 5th Ave",
    "community_area": "West Garfield Park",
    "ward": 24
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A rezoning of two city-owned vacant lots from RT-4 to RM-4.5 to build two three-unit residential buildings, with the applicant working with the Department of Housing to acquire the land.",
+  "relevance_reason": "A rezoning from RT-4 to RM-4.5 would allow two new three-unit residential buildings on vacant lots near the CTA Pulaski Blue Line station.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "TechCo Savvy Inc. seeks to rezone 4125 and 4127 W 5th Ave from RT-4 to RM-4.5 to build two three-story buildings with three units each, on vacant city-owned lots. The Department of Housing authorized the application.",
+  "summary": "TECHCO SAVVY INC. seeks to rezone 4125 and 4127 W 5th Ave from RT-4 to RM-4.5 to split the lot and build two three-story buildings, each with three dwelling units, plus setback variations.",
   "zoning_from": [
    "RT-4"
   ],
@@ -1912,38 +1929,30 @@
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028744": {
   "amount": null,
   "amount_kind": null,
-  "categories": [
-   {
-    "detail": "",
-    "id": "ahpaa",
-    "via": "model"
-   },
-   {
-    "detail": "",
-    "id": "housing-agenda",
-    "via": "model"
-   }
-  ],
-  "content_hash": "487857b5b46fc16c",
+  "categories": [],
+  "content_hash": "22cc13dde7afaac8",
   "entities": [],
   "figures": {
    "affordable_units": null,
-   "units": 40
+   "units": null
   },
   "geography": {
    "address": "3244-50 West Bryn Mawr Avenue",
    "community_area": "North Park",
    "ward": 39
   },
-  "housing_relevant": true,
+  "housing_relevant": false,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The Type 1 map amendment amends a prior approval to allow a 40-unit residential building, and the application says the project is subject to the ARO.",
+  "relevance_reason": "The ordinance as written reclassifies B2-3 to B2-3 with no stated residential units or housing change, so nothing in the material bears on homes.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "3244-50 Bryn Mawr LLC seeks to amend a previously approved B2-3 Type 1 map amendment at 3244-50 W Bryn Mawr Ave. The change would allow a five-story building with 40 residential units, 1,490 sq. ft. of ground-floor commercial space and 25 parking spaces.",
-  "zoning_from": [],
-  "zoning_to": null
+  "summary": "Zoning reclassification on Map No. 15-J for 3244-3250 W Bryn Mawr Ave (App No. 23176T1). The ordinance text lists the area as B2-3 Neighborhood Mixed-Use District both before and after the change.",
+  "zoning_from": [
+   "B2-3"
+  ],
+  "zoning_to": "B2-3"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028747": {
   "amount": null,
@@ -1955,7 +1964,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "cd46129921070b38",
+  "content_hash": "67d600397a684d70",
   "entities": [
    "Orlando Valdez"
   ],
@@ -1969,16 +1978,17 @@
    "ward": 28
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A rezoning of a vacant lot from RT-3.5 to RT 4 to allow construction of a new single-family home adds a residential unit.",
+  "relevance_reason": "A rezoning of a vacant lot from RT-3.5 to RT-4 to allow construction of a new single-family home.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Orlando Valdez seeks to rezone vacant property at 1001-03 S Campbell Ave from RT-3.5 to RT 4 to build a one-unit single-family residence with two parking spaces. The application also requests setback and parking variations.",
+  "summary": "Orlando Valdez seeks to rezone vacant property at 1001-03 S Campbell Ave in the 28th Ward from RT-3.5 to RT-4 to build one single-family residence. The application also seeks setback and parking variations.",
   "zoning_from": [
    "RT-3.5"
   ],
-  "zoning_to": "RT 4"
+  "zoning_to": "RT-4"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028754": {
   "amount": null,
