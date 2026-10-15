@@ -35,6 +35,10 @@ AGENDA_CASES = [
     ("a new four-story mixed-use building with 2 retail units and no homes", None),
     ("A sign permit at 100 W. Madison St.", None),
     ("", None),
+    ("The buyer would build two 8-unit masonry residential buildings with ARO units.", 16),
+    ("Construction of 2 12-unit residential buildings on the site.", 24),
+    ("would allow an 8-unit building on a vacant lot", 8),
+    ("a 3-story, 6-unit building with two 2-unit coach houses", 6),
 ]
 
 

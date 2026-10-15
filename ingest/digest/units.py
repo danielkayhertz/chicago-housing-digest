@@ -44,6 +44,10 @@ _AREA_SUFFIX = re.compile(r"\s*(?:SQ\.?\s*(?:FT|F)\b|SQUARE\s+(?:FEET|FOOT)|S\.?
 # "2 RETAIL UNITS", "1 COMMERCIAL UNIT": not dwellings, and must not reach the weak tier.
 _NON_DWELLING = re.compile(r"\s*(?:COMMERCIAL|RETAIL|OFFICE|STORE|PARKING|STORAGE)\s+UNITS?\b")
 
+# "TWO 8-UNIT MASONRY RESIDENTIAL BUILDINGS": several buildings of one size. The count is their total.
+_MULTI = re.compile(r"(?<![\d,])\b(\d{1,2}|" + "|".join(_WORD_NUMBERS) + r")\s+(\d{1,3})[- ]UNIT\s+"
+                    r"(?:[A-Z]+\s+){0,3}?BUILDINGS\b")
+
 
 def _value(token: str) -> int:
     return _WORD_NUMBERS[token] if token in _WORD_NUMBERS else int(token.replace(",", ""))
@@ -52,8 +56,9 @@ def _value(token: str) -> int:
 def parse_units(text: str) -> int | None:
     """The dwelling-unit count stated in the text (the largest, if several), or None."""
     desc = (text or "").upper()
+    multi = [n for n in (_value(a) * int(b) for a, b in _MULTI.findall(desc)) if 1 <= n <= 2000]
     for tier in (_UNIT_PATTERNS_STRONG, _UNIT_PATTERNS_WEAK):
-        found = []
+        found = list(multi) if tier is _UNIT_PATTERNS_STRONG else []
         for pat in tier:
             for m in re.finditer(pat, desc):
                 if _AREA_SUFFIX.match(desc, m.end(1)) or _NON_DWELLING.match(desc, m.end(1)):
