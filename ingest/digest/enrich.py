@@ -41,6 +41,10 @@ class Summary(BaseModel):
     entities: list[str]
     units: int | None
     affordable_units: int | None
+    amount: int | None
+    amount_kind: str | None
+    zoning_from: list[str]
+    zoning_to: str | None
 
 
 SCREEN_SYSTEM = """You triage Chicago City Council committee agenda items for a digest about housing.
@@ -63,7 +67,9 @@ categories: the ids below that the item clearly bears on. An empty list is fine.
 {categories}
 address: the street address of the site the item concerns, copied as written, or null. Never the agency's office, an address for sending comments, or the meeting location.
 entities: developers, applicants, owners, lenders, and agencies named in the material, copied exactly as written.
-units, affordable_units: counts of homes stated in the material, or null. Never estimate."""
+units, affordable_units: counts of homes stated in the material, or null. When the material describes several buildings, give the total across all of them. Never estimate.
+amount, amount_kind: the single dollar figure the item turns on (a sale price, loan, bond cap, grant, or fee waiver) in whole dollars, and what it is in two to four words ("sale price", "conduit loan"); null for both if there is none.
+zoning_from, zoning_to: for a rezoning, the current district codes and the requested one, copied as written ("RS-3", "Business Planned Development No. 1143"); otherwise an empty list and null."""
 
 
 # Attachments never worth reading: disclosure forms, cover letters, notice affidavits.
@@ -212,6 +218,18 @@ def _grounded_number(n: int | None, numbers: set[str]) -> int | None:
     return n if n is not None and str(n) in numbers else None
 
 
+_MILLIONS = re.compile(r"(\d+(?:\.\d+)?)\s*million\b")
+
+
+def _grounded_amount(n: int | None, numbers: set[str], corpus: str) -> int | None:
+    """A dollar figure stated in the text, as digits ("$315,315") or in millions ("$51.5 million")."""
+    if n is None or n <= 0:
+        return None
+    if str(n) in numbers:
+        return n
+    return n if any(round(float(x) * 1_000_000) == n for x in _MILLIONS.findall(corpus)) else None
+
+
 STREET_WORDS = {"avenue": "ave", "street": "st", "boulevard": "blvd", "drive": "dr", "place": "pl", "parkway": "pkwy",
                 "road": "rd", "court": "ct", "north": "n", "south": "s", "east": "e", "west": "w"}
 
@@ -262,7 +280,8 @@ def resolve_geography(hint: Geography | None, address: str | None, geo) -> Geogr
     return g
 
 
-OVERRIDABLE = ("housing_relevant", "relevance_reason", "summary", "categories", "geography", "entities", "figures")
+OVERRIDABLE = ("housing_relevant", "relevance_reason", "summary", "categories", "geography", "entities", "figures",
+               "amount", "amount_kind", "zoning_from", "zoning_to")
 
 
 def apply_overrides(e: Enrichment, ov: dict | None, rec_id: str = "?") -> Enrichment:
@@ -354,6 +373,12 @@ def _fresh(rec: Record, ctx: EnrichContext, h: str) -> Enrichment:
         address = title_address(rec.title)
     if is_office(address, ctx.office_addresses):
         address = None
+    amount = _grounded_amount(s.amount, numbers, corpus)
+    if s.amount is not None and amount is None:
+        log.info("%s: dropped ungrounded amount %s", rec.id, s.amount)
+    amount_kind = ((s.amount_kind or "").strip()[:40] or None) if amount else None
+    zoning_from = [z.strip() for z in s.zoning_from if z.strip() and _norm(z) in corpus]
+    zoning_to = s.zoning_to.strip() if s.zoning_to and s.zoning_to.strip() and _norm(s.zoning_to) in corpus else None
     late_rules = ctx.categories.rule_hits(None, [s.summary, *entities])  # keywords also match summary and entities
     model_hits = [CategoryHit(id=c, via="model") for c in s.categories if c in ctx.categories.by_id]
     return Enrichment(
@@ -362,6 +387,7 @@ def _fresh(rec: Record, ctx: EnrichContext, h: str) -> Enrichment:
         geography=resolve_geography(rec.hint, address, ctx.geo),
         entities=entities,
         figures=Figures(**figures),
+        amount=amount, amount_kind=amount_kind, zoning_from=zoning_from, zoning_to=zoning_to,
         source_quality=quality, model=ctx.models["summarize"], content_hash=h,
     )
 

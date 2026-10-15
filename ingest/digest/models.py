@@ -55,6 +55,10 @@ class Enrichment(BaseModel):
     geography: Geography = Field(default_factory=Geography)
     entities: list[str] = Field(default_factory=list)
     figures: Figures = Field(default_factory=Figures)
+    amount: int | None = None  # the dollar figure the item turns on, in whole dollars
+    amount_kind: str | None = None  # what that figure is: "sale price", "conduit loan"
+    zoning_from: list[str] = Field(default_factory=list)  # a rezoning's current districts, as written
+    zoning_to: str | None = None  # and the requested one
     source_quality: Literal["full", "partial", "scanned", "none"] = "none"
     model: str = ""
     content_hash: str = ""

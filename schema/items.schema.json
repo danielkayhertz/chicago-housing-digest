@@ -82,6 +82,30 @@
     },
     "Enrichment": {
       "properties": {
+        "amount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Amount"
+        },
+        "amount_kind": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Amount Kind"
+        },
         "categories": {
           "items": {
             "$ref": "#/$defs/CategoryHit"
@@ -151,6 +175,25 @@
           "default": "",
           "title": "Summary",
           "type": "string"
+        },
+        "zoning_from": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Zoning From",
+          "type": "array"
+        },
+        "zoning_to": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Zoning To"
         }
       },
       "required": [
