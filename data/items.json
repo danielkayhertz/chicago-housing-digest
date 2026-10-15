@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-10-14T15:22:51.783440-05:00",
+ "generated_at": "2026-10-14T20:29:16.698038-05:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-10-14T15:22:51.783440-05:00",
+   "last_success_at": "2026-10-14T20:29:16.698038-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-10-14T15:22:51.783440-05:00",
+   "last_success_at": "2026-10-14T20:29:16.698038-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-10-14T15:22:51.783440-05:00",
+   "last_success_at": "2026-10-14T20:29:16.698038-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-10-14T15:22:51.783440-05:00",
+   "last_success_at": "2026-10-14T20:29:16.698038-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-10-14T15:22:51.783440-05:00",
+   "last_success_at": "2026-10-14T20:29:16.698038-05:00",
    "status": "stale",
    "message": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5: 1 numbered agenda entries have no record number and were skipped"
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-10-14T15:22:51.783440-05:00",
+   "last_success_at": "2026-10-14T20:29:16.698038-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-10-14T15:22:51.783440-05:00",
+   "last_success_at": "2026-10-14T20:29:16.698038-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-10-14T15:22:51.783440-05:00",
+   "last_success_at": "2026-10-14T20:29:16.698038-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-10-14T15:22:51.783440-05:00",
+   "last_success_at": "2026-10-14T20:29:16.698038-05:00",
    "status": "ok",
    "message": ""
   }
@@ -4927,6 +4927,10 @@
     {
      "label": "Presentation",
      "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/10_2026/1133_W_Kinzie_St_PD_CPC_Presentation.pdf"
+    },
+    {
+     "label": "Public Comments",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/10_2026/Written_Comments/1133_W_Kinzie_Comments_ALL.pdf"
     }
    ],
    "outcome": null,
@@ -4939,8 +4943,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "The planned development and rezoning would allow a new 110-unit residential building on land currently zoned for manufacturing.",
-    "summary": "MKR Owner LLC requests a Planned Development and rezoning from M2-3 to DX-5 at 1133 W. Kinzie Street. It would build a 5-story, 59'-11\" residential building with up to 110 dwelling units and 33 parking spaces, at a maximum FAR of 5.",
+    "relevance_reason": "The planned development and rezoning from M2-3 to DX-5 would allow a new 110-unit residential building.",
+    "summary": "MKR Owner LLC proposes a Planned Development at 1133 W. Kinzie Street, rezoning the site from M2-3 to DX-5 to build a 5-story residential building with up to 110 dwelling units and 33 parking spaces.",
     "categories": [
      {
       "id": "ahpaa",
@@ -4962,11 +4966,11 @@
     },
     "source_quality": "partial",
     "model": "claude-sonnet-5-5",
-    "content_hash": "6ba9c5874cba7264",
+    "content_hash": "bb9a5794a989d127",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-14T20:29:16.698038-05:00"
   },
   {
    "id": "cpc:2026-10-15#3700-3846-n-seminary-ave",
@@ -4981,6 +4985,10 @@
     {
      "label": "Presentation",
      "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/10_2026/PD_108_CPC_Presentation_V2_Upload.pdf"
+    },
+    {
+     "label": "Public Comments",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/10_2026/Written_Comments/10.15.2026_PD_108_Written_Comments_ALL.pdf"
     }
    ],
    "outcome": null,
@@ -4993,8 +5001,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": false,
-    "relevance_reason": "The amendment concerns parking lots, a park, and FAR within an Institutional Planned Development, with no residential units or housing provisions stated.",
-    "summary": "Chicago Realty Ventures, LLC proposes amending Institutional Planned Development 108 to extend its boundaries and create three subareas, covering surface parking lots (up to 800 and 103 spaces), an existing park, and a maximum FAR of 1.2.",
+    "relevance_reason": "The planned development amendment concerns boundaries, subareas, parking lots, and a park, with no residential units or housing regulation mentioned.",
+    "summary": "Chicago Realty Ventures, LLC proposes amending Institutional Planned Development 108 at 3700-3846 N. Seminary Ave. to extend its boundaries and create three subareas, including parking lots of up to 800 and 103 spaces and an existing park, with a maximum FAR of 1.2.",
     "categories": [
      {
       "id": "ahpaa",
@@ -5016,11 +5024,11 @@
     },
     "source_quality": "partial",
     "model": "claude-sonnet-5-5",
-    "content_hash": "f64f02d522f7bd2c",
+    "content_hash": "13ac8ad00d6cf4b6",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-14T20:29:16.698038-05:00"
   },
   {
    "id": "cpc:2026-10-15#item-3",
@@ -5039,6 +5047,10 @@
     {
      "label": "Presentation",
      "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/10_2026/2026.10.15_CPC_South_Chicago_Land_Use_Framework.pdf"
+    },
+    {
+     "label": "Public Comments",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/10_2026/Written_Comments/10.15.2026_South_Chicago_Framework_Written_Comments_ALL.pdf"
     }
    ],
    "outcome": null,
@@ -5052,7 +5064,7 @@
     "status": "ok",
     "housing_relevant": true,
     "relevance_reason": "The land use framework guides future zoning and land use recommendations, including strengthening residential areas, in South Chicago.",
-    "summary": "The Plan Commission is asked to adopt the DPD-led South Chicago Land Use Framework, a planning tool for land use, zoning and redevelopment in parts of the 7th and 10th wards, including strengthening residential areas.",
+    "summary": "The Plan Commission is asked to adopt the South Chicago Land Use Framework, a DPD-led plan for the 7th and 10th wards. It sets land use and zoning recommendations to strengthen residential areas, commercial corridors and open spaces.",
     "categories": [
      {
       "id": "ahpaa",
@@ -5076,11 +5088,11 @@
     },
     "source_quality": "partial",
     "model": "claude-sonnet-5-5",
-    "content_hash": "7cb2087b7c92eee9",
+    "content_hash": "742c5554386c33b2",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-14T20:29:16.698038-05:00"
   },
   {
    "id": "ihda:ihda-finance-committee:2026-10-16#information-technology-update",
