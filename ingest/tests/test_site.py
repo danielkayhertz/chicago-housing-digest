@@ -1,9 +1,10 @@
 import datetime as dt
 import json
+import re
 from pathlib import Path
 
 from digest.categories import Categories
-from digest.models import (CHI, CategoryHit, Digest, Enrichment, Geography, Item, Meeting, Notice, Outcome,
+from digest.models import (CHI, CategoryHit, Digest, Enrichment, Figures, Geography, Item, Meeting, Notice, Outcome,
                            dump_digest)
 from digest.site import build_site, fold, ics_calendar, ics_escape
 
@@ -34,6 +35,33 @@ def sample():
     for m, n in ((up, 2), (gone, 0), (past, 1)):
         m.item_count_total = n
     return Digest(generated_at=NOW, meetings=[past, up, gone], items=items, notices=[notice])
+
+
+HRE = "City Council Committee on Housing and Real Estate"
+
+
+def render(d, tmp_path):
+    src = tmp_path / "items.json"
+    dump_digest(d, src)
+    build_site(d, tmp_path / "site", src, CATS, NOW)
+    return (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
+
+
+def council_digest():
+    d = sample()
+    h = Meeting(id="elms:H1", source_id="elms-housing", body=HRE, body_id="h",
+                start=dt.datetime(2026, 10, 8, 10, 30, tzinfo=CHI))
+
+    def sale(n, addr, units, buyer):
+        return Item(id=f"elms:H1#{n}", meeting_id=h.id, source_ref=f"O2026-{n}",
+                    title=f"Sale of City-owned property at {addr} to {buyer}",
+                    enrichment=Enrichment(status="ok", housing_relevant=True, summary=f"Sale of land for {units} homes.",
+                                          categories=[CategoryHit(id="ahpaa", via="body")],
+                                          geography=Geography(address=addr, ward=27), figures=Figures(units=units),
+                                          amount=315315, amount_kind="sale price", entities=[buyer]))
+    d.meetings.append(h)
+    d.items += [sale(1, "2054 W Warren Blvd", 20, "EGP Warren Apartments LLC"), sale(2, "6 S Elm St", 2, "<b>Evil</b> LLC")]
+    return d
 
 
 def test_index_shows_relevant_hides_rest(tmp_path):
@@ -116,7 +144,7 @@ def test_meetings_from_the_last_two_weeks_show_under_recent_with_their_items(tmp
     dump_digest(d, src)
     build_site(d, tmp_path / "site", src, CATS, NOW)
     html = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
-    upcoming, recent = html.split("<h2>Upcoming meetings</h2>")[1].split("<h2>Recent meetings</h2>")
+    upcoming, recent = html.split('<h2 id="recent">Recent</h2>')
     recent = recent.split("<h2>Open notices</h2>")[0]
     assert "Rezoning at 4400 N. Broadway" in recent and "Rezoning at 4400 N. Broadway" not in upcoming
     assert "Wednesday, September 30" in recent and "Old Room 1A" not in html  # older than two weeks: not shown
@@ -155,17 +183,17 @@ def test_long_titles_get_a_short_headline_with_the_full_text_in_a_disclosure(tmp
     assert short_title("Multifamily Update") == "Multifamily Update"
 
 
-def test_meeting_heading_leads_with_the_date_and_documents_are_separated(tmp_path):
+def test_meeting_band_names_family_and_body_and_documents_are_separated(tmp_path):
     from digest.models import Attachment
     d = sample()
     d.items[0].attachments = [Attachment(label="Plan", url="https://x/p.pdf"), Attachment(label="Report", url="https://x/r.pdf")]
-    src = tmp_path / "items.json"
-    dump_digest(d, src)
-    build_site(d, tmp_path / "site", src, CATS, NOW)
-    html = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
-    assert '<h3>Thursday, October 15, 10:00 AM\n    <span class="sep">·</span> <span class="body">Chicago Plan Commission</span></h3>' in html
+    html = render(d, tmp_path)
+    sec = html.split('id="cpc-2026-10-15"')[1].split("</section>")[0]
+    assert '<h3><span class="fam">Planning</span> Chicago Plan Commission</h3>' in sec
+    assert "10:00 AM · " in sec and "1 housing item · " in sec
     assert 'Documents: <a href="https://x/p.pdf">Plan</a> · <a href="https://x/r.pdf">Report</a>' in html
     assert "<main>" in html and 'role="status"' in html and "Updated October 5, 2026, 12:00 PM" in html
+    assert '<h2 id="day-2026-10-15">Thursday, October 15</h2>' in html
 
 
 def test_summaries_drop_sentences_that_only_say_what_the_agenda_leaves_out():
@@ -175,3 +203,44 @@ def test_summaries_drop_sentences_that_only_say_what_the_agenda_leaves_out():
     assert trim_summary("A $51,500,000 loan. The material gives no unit counts; it appears under Multifamily Finance.")         == "A $51,500,000 loan. It appears under Multifamily Finance."
     assert trim_summary("Adds 120 homes near the Kinzie Green Line stop.") == "Adds 120 homes near the Kinzie Green Line stop."
     assert trim_summary("The agenda gives no further detail.") == "The agenda gives no further detail."  # never empty a summary
+
+
+def test_grouped_body_renders_group_heading_cards_and_a_table(tmp_path):
+    html = render(council_digest(), tmp_path)
+    sec = html.split('id="elms-h1"')[1].split("</section>")[0]
+    assert 'class="meeting fam-council"' in html and '<span class="fam">City Council</span>' in sec
+    assert '<h4>Sales of city land <span class="n">· 2</span></h4>' in sec
+    cards, table = sec.split('<table class="rows">')
+    assert "<strong>2054 W Warren Blvd</strong>" in cards and "6 S Elm St" not in cards
+    assert "<b>20</b> homes" in cards and "<b>$315,315</b> sale price" in cards and "EGP Warren Apartments LLC" in cards
+    assert '<th scope="col">Item</th><th scope="col">Facts</th>' in table
+    assert "<summary><strong>6 S Elm St</strong></summary>" in table
+    assert '<td class="facts">Ward 27 · 2 homes · $315,315 sale price · &lt;b&gt;Evil&lt;/b&gt; LLC</td>' in table
+    assert "<b>Evil</b>" not in html                                   # model text is escaped
+    assert 'id="elms-h1-2"' in table and 'data-categories="ahpaa"' in table and 'data-ward="27"' in table
+
+
+def test_flat_body_renders_only_cards(tmp_path):
+    sec = render(council_digest(), tmp_path).split('id="cpc-2026-10-15"')[1].split("</section>")[0]
+    assert '<li id="cpc-2026-10-15-kinzie" class="row card"' in sec and "<table" not in sec and "<h4>" not in sec
+
+
+def test_index_and_panel_list_every_shown_meeting_in_page_order(tmp_path):
+    html = render(council_digest(), tmp_path)
+    toc = html.split('<nav class="toc"')[1].split("</nav>")[0]
+    panel = html.split('<nav id="panel" aria-label="Meetings"')[1].split("</nav>")[0]
+    order = ["elms-h1", "cpc-2026-10-15", "cdc-2026-11-10", "elms-z1"]
+    for nav in (toc, panel):
+        assert re.findall(r'href="#([^"]+)"', nav) == order
+        assert re.findall(r'data-target="([^"]+)"', nav) == order
+    assert '<span class="n">2 items</span>' in toc and '<span class="n">1 item</span>' in toc
+    assert '<span class="n">0 items</span>' in toc                         # the cancelled CDC meeting
+    assert html.index('<h2 id="day-2026-10-08">') < html.index('<h2 id="day-2026-10-15">')         < html.index('<h2 id="day-2026-11-10">') < html.index('<h2 id="recent">Recent</h2>')
+    assert html.index('<nav class="toc"') < html.index('<h2 id="day-2026-10-08">')
+
+
+def test_no_upcoming_meetings_says_so(tmp_path):
+    d = sample()
+    d.meetings = [m for m in d.meetings if m.id == "elms:Z1"]
+    html = render(d, tmp_path)
+    assert "No upcoming meetings found." in html and '<h2 id="recent">Recent</h2>' in html

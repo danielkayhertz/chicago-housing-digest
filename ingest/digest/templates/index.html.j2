@@ -5,28 +5,140 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Chicago Housing Meetings</title>
 <style>
-  :root { --ink: #1d1d1f; --muted: #5f6368; --line: #dadce0; --bg: #fff; --tag: #eef3f8; --warn: #a50e0e; }
-  @media (prefers-color-scheme: dark) { :root { --ink: #e8eaed; --muted: #9aa0a6; --line: #3c4043; --bg: #202124; --tag: #2b3440; --warn: #f28b82; } }
-  body { margin: 0 auto; max-width: 860px; padding: 16px; font: 16px/1.5 system-ui, sans-serif; color: var(--ink); background: var(--bg); }
-  h1 { font-size: 1.6rem; margin-bottom: 0; } h2 { margin-top: 2rem; border-bottom: 1px solid var(--line); }
-  .meta, .hidden-count, .src { color: var(--muted); font-size: .9rem; }
-  .meeting { margin: 2rem 0; } .meeting h3 { margin: 0; font-size: 1.1rem; text-wrap: balance; }
-  .meeting h3 .body { font-weight: 400; }
-  @media (max-width: 30rem) { .meeting h3 .sep { display: none; } .meeting h3 .body { display: block; } }
+  :root { --ink: #1f2224; --muted: #535659; --line: #dbdee2; --bg: #fff; --soft: #f7fafe; --chip: #ebeff2; --warn: #a50e0e; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #e8eaed; --muted: #9aa0a6; --line: #3c4043; --bg: #202124; --soft: #262a30; --chip: #2b3440; --warn: #f28b82; } }
+  .meeting { --tint: var(--soft); --rule: var(--line); --fink: var(--ink); }
+  .fam-council { --tint: #e7f5ff; --rule: #3a84ca; --fink: #0e4f86; }
+  .fam-ihda { --tint: #e5f9ef; --rule: #00986c; --fink: #005f3e; }
+  .fam-clihtf { --tint: #fff0e2; --rule: #b46d10; --fink: #753d00; }
+  .fam-planning { --tint: #f7f0ff; --rule: #926abe; --fink: #5b3b7c; }
+  @media (prefers-color-scheme: dark) {
+    .fam-council { --tint: #1e2f41; --rule: #67aaed; --fink: #a6d2ff; }
+    .fam-ihda { --tint: #193429; --rule: #4dbc92; --fink: #9cdfc1; }
+    .fam-clihtf { --tint: #3c2a18; --rule: #d8944d; --fink: #f3c497; }
+    .fam-planning { --tint: #32293e; --rule: #b691e1; --fink: #dac1f8; }
+  }
+  body { margin: 0; padding: 16px; font: 16px/1.5 system-ui, sans-serif; color: var(--ink); background: var(--bg); }
+  .page { max-width: 860px; margin: 0 auto; }
+  h1 { font-size: 1.6rem; margin-bottom: 0; }
+  h2 { margin: 2.5rem 0 1rem; font-size: 1.3rem; padding-bottom: .2rem; border-bottom: 2px solid var(--ink); }
+  .meta, .hidden-count, .src, .n { color: var(--muted); font-size: .9rem; }
+  .n { font-variant-numeric: tabular-nums; }
   .cancelled { color: var(--warn); font-weight: 600; }
-  ul.items { padding-left: 1.1rem; } ul.items > li { margin: 1.25rem 0; max-width: 70ch; }
+  a { color: inherit; }
+  .toc { border: 1px solid var(--line); border-radius: 6px; padding: .5rem 1rem; margin: 1.5rem 0; }
+  .toc h2 { margin: .25rem 0 .5rem; font-size: 1.05rem; border: 0; padding: 0; }
+  .toc ul, #panel ul { list-style: none; margin: 0; padding: 0; }
+  .toc li { padding: .2rem 0; border-top: 1px dotted var(--line); } .toc li:first-child { border-top: 0; }
+  .toc a, #panel a { text-decoration: none; display: block; } .toc a:hover .b, #panel a:hover .b { text-decoration: underline; }
+  .when { display: inline-block; min-width: 5.5rem; color: var(--muted); font-size: .9rem; }
+  .tag { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--fink);
+         border-left: 4px solid var(--rule); padding-left: .3rem; margin-right: .25rem; }
+  #panel { display: none; }
+  @media (min-width: 70rem) {
+    .page { max-width: 78rem; display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: 2.5rem; }
+    main { max-width: 860px; }
+    #panel { display: block; position: sticky; top: 1rem; align-self: start; max-height: calc(100vh - 2rem);
+             overflow-y: auto; background: var(--soft); border: 1px solid var(--line); border-radius: 6px;
+             padding: .75rem; font-size: .9rem; }
+    #panel .panel-h { font-weight: 700; margin: 0 0 .4rem; }
+    #panel li { padding: .15rem .3rem; border-radius: 4px; }
+    #panel .when { display: block; min-width: 0; font-size: .8rem; }
+    #panel a[aria-current] { font-weight: 650; } #panel li:has(a[aria-current]) { background: var(--chip); }
+  }
+  .meeting { margin: 0 0 2rem; border-left: 4px solid var(--rule); }
+  .band { background: var(--tint); padding: .6rem .9rem; border-radius: 0 6px 0 0; }
+  .band h3 { margin: 0; font-size: 1.1rem; text-wrap: balance; }
+  .fam { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em;
+         color: var(--fink); background: var(--bg); border-radius: 3px; padding: 0 .4rem; margin-right: .3rem; vertical-align: .15rem; }
+  .mbody { padding: .25rem .9rem .5rem 1rem; }
+  .group h4 { margin: 1.25rem 0 .25rem; font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--fink); }
+  .group h4 .n { font-weight: 400; font-size: .8rem; }
+  ul.items { list-style: none; padding: 0; margin: 0; }
+  ul.items > li { padding: .75rem 0; border-bottom: 1px solid var(--line); max-width: 70ch; }
+  ul.items > li:last-child { border-bottom: 0; }
   ul.items > li > * { margin: .2rem 0 0; }
-  .tag { display: inline-block; background: var(--tag); border-radius: 4px; padding: 0 .4rem; font-size: .8rem; margin-right: .25rem; white-space: nowrap; }
+  .chip { display: inline-block; background: var(--chip); border-radius: 3px; padding: 0 .45rem; margin: .1rem .25rem .1rem 0; font-size: .85rem; }
+  .chip b { font-weight: 650; }
   .ai { font-size: .75rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
-  details.full { font-size: .9rem; color: var(--muted); } details.full summary { cursor: pointer; }
+  details.full, div.full { font-size: .9rem; color: var(--muted); } details summary { cursor: pointer; }
   .docs { font-size: .9rem; overflow-wrap: break-word; }
+  table.rows { width: 100%; border-collapse: collapse; margin: .5rem 0; font-size: .95rem; }
+  table.rows th { text-align: left; font-size: .8rem; color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--line); padding: .2rem .5rem .2rem 0; }
+  table.rows td { vertical-align: top; border-bottom: 1px solid var(--line); padding: .4rem .5rem .4rem 0; overflow-wrap: anywhere; }
+  table.rows td.facts { font-size: .85rem; color: var(--muted); width: 45%; }
+  table.rows details > :not(summary) { margin: .3rem 0 0; }
   .filters { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin: 1rem 0 .25rem; }
   select { font: inherit; max-width: 100%; } button { font: inherit; }
   #f-status:empty { display: none; }
-  a { color: inherit; }
+  .plain { list-style: none; padding: 0; } .plain > li { margin: 1rem 0; max-width: 70ch; }
 </style>
 </head>
 <body>
+{% macro meeting_links() -%}
+<ul>{% for x in outline.index %}
+  <li data-target="{{ x.anchor }}"><a href="#{{ x.anchor }}" class="{{ 'fam-' ~ x.family.id if x.family else 'fam-none' }}"><span class="when">{{ x.date_label }}</span> {% if x.family %}<span class="tag">{{ x.family.label }}</span> {% endif %}<span class="b">{{ x.body }}</span> <span class="n">{{ x.count }} item{{ 's' if x.count != 1 else '' }}</span></a></li>{% endfor %}
+</ul>
+{%- endmacro %}
+
+{% macro chips(i) -%}
+{% for f in i.facts %}<span class="chip">{% for s in f %}{% if s.bold %}<b>{{ s.text }}</b>{% else %}{{ s.text }}{% endif %}{% endfor %}</span>{% endfor %}
+{%- endmacro %}
+
+{% macro details_body(i) -%}
+  {% if i.summary %}<div><span class="ai">AI summary</span> {{ i.summary }}</div>{% endif %}
+  {% if i.docs %}<div class="docs">Documents: {% for a in i.docs %}<a href="{{ a.url | safe_url }}">{{ a.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</div>{% endif %}
+{%- endmacro %}
+
+{% macro card(i) -%}
+<li id="{{ i.anchor }}" class="row card" data-categories="{{ i.categories }}" data-ward="{{ i.ward }}">
+  <strong>{{ i.headline }}</strong> <span class="src">{{ i.item.source_ref }}</span>
+  {% if i.full_title %}<details class="full"><summary>Full agenda text</summary>{{ i.full_title }}</details>{% endif %}
+  {% if i.facts %}<div class="chips">{{ chips(i) }}</div>{% endif %}
+  {{ details_body(i) }}
+</li>
+{%- endmacro %}
+
+{% macro table_row(i) -%}
+<tr id="{{ i.anchor }}" class="row" data-categories="{{ i.categories }}" data-ward="{{ i.ward }}">
+  <td><details><summary><strong>{{ i.headline }}</strong></summary>
+    <div class="src">{{ i.item.source_ref }}</div>
+    {% if i.full_title %}<div class="full">{{ i.full_title }}</div>{% endif %}
+    {{ details_body(i) }}</details></td>
+  <td class="facts">{{ i.facts_text }}</td>
+</tr>
+{%- endmacro %}
+
+{% macro meeting_section(v) -%}{% set m = v.meeting %}
+<section class="meeting {{ 'fam-' ~ v.family.id if v.family else 'fam-none' }}" id="{{ v.anchor }}" data-body="{{ m.body }}">
+  <div class="band">
+    <h3>{% if v.family %}<span class="fam">{{ v.family.label }}</span> {% endif %}{{ m.body }}</h3>
+    <div class="meta">
+      {% if v.when %}{{ v.when }} · {% endif %}
+      {% if m.status == 'cancelled' %}<span class="cancelled">Cancelled</span> · {% endif %}
+      {{ v.count }} housing item{{ 's' if v.count != 1 else '' }} · {% if m.location %}{{ m.location }} · {% endif %}
+      {% if m.agenda_url | safe_url %}<a href="{{ m.agenda_url | safe_url }}">Agenda</a> · {% endif %}
+      <a href="{{ v.ics }}">Add to calendar</a>
+    </div>
+  </div>
+  <div class="mbody">
+  {% if v.groups is not none %}
+    {% for g in v.groups %}
+    <div class="group">
+      <h4>{{ g.label }} <span class="n">· {{ g.count }}</span></h4>
+      {% if g.cards %}<ul class="items">{% for i in g.cards %}{{ card(i) }}{% endfor %}</ul>{% endif %}
+      {% if g.rows %}<table class="rows"><thead><tr><th scope="col">Item</th><th scope="col">Facts</th></tr></thead>
+        <tbody>{% for i in g.rows %}{{ table_row(i) }}{% endfor %}</tbody></table>{% endif %}
+    </div>
+    {% endfor %}
+  {% elif v.cards %}<ul class="items">{% for i in v.cards %}{{ card(i) }}{% endfor %}</ul>{% endif %}
+  {% if v.hidden %}<div class="hidden-count">+{{ v.hidden }} item{{ 's' if v.hidden != 1 else '' }} not about housing</div>{% endif %}
+  </div>
+</section>
+{%- endmacro %}
+
+<div class="page">
+<nav id="panel" aria-label="Meetings"><p class="panel-h">This week</p>{{ meeting_links() }}</nav>
 <main>
 <h1>Chicago Housing Meetings</h1>
 <p class="meta">Updated {{ generated.strftime('%B') }} {{ generated.day }}, {{ generated.year }}, {{ generated.strftime('%I:%M %p').lstrip('0') }} Chicago time. Summaries are written by AI from public documents; check the source before relying on them.</p>
@@ -42,46 +154,17 @@
 </div>
 <p id="f-status" class="meta" role="status"></p>
 
-{% macro item_row(i) -%}
-{% set e = i.enrichment %}
-<li id="{{ i.id | anchor }}" class="row"
-    data-categories="{{ (e.categories | map(attribute='id') | join(' ')) if e else '' }}"
-    data-ward="{{ e.geography.ward if e and e.geography.ward else '' }}">
-  <strong>{{ i.title | short_title }}</strong> <span class="src">{{ i.source_ref }}</span>
-  {% if i.title | length > LONG_TITLE %}<details class="full"><summary>Full agenda text</summary>{{ i.title }}</details>{% endif %}
-  {% if e and e.summary %}<div><span class="ai">AI summary</span> {{ e.summary | trim_summary }}</div>{% endif %}
-  {% if e and (e.categories or e.geography.ward) %}<div>{% for c in e.categories %}<span class="tag">{{ cat_labels.get(c.id, c.id) }}</span>{% endfor %}
-    {% if e.geography.ward %}<span class="tag">Ward {{ e.geography.ward }}</span>{% endif %}</div>{% endif %}
-  {% set docs = i.attachments[:3] | selectattr('url', 'safe_url') | list %}
-  {% if docs %}<div class="docs">Documents: {% for a in docs %}<a href="{{ a.url | safe_url }}">{{ a.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</div>{% endif %}
-</li>
-{%- endmacro %}
+{% if outline.index %}<nav class="toc" aria-labelledby="toc-h"><h2 id="toc-h">This week</h2>{{ meeting_links() }}</nav>{% endif %}
 
-{% macro meeting_section(u) -%}{% set m = u.m %}
-<section class="meeting" id="{{ m.id | anchor }}" data-body="{{ m.body }}">
-  <h3>{{ m.start.strftime('%A, %B') }} {{ m.start.day }}{% if m.time_known %}, {{ m.start.strftime('%I:%M %p').lstrip('0') }}{% endif %}
-    <span class="sep">·</span> <span class="body">{{ m.body }}</span></h3>
-  <div class="meta">
-    {% if m.status == 'cancelled' %}<span class="cancelled">Cancelled</span> · {% endif %}
-    {% if m.location %}{{ m.location }} · {% endif %}
-    {% if m.agenda_url | safe_url %}<a href="{{ m.agenda_url | safe_url }}">Agenda</a> · {% endif %}
-    <a href="{{ ics[m.body] }}">Add to calendar</a>
-  </div>
-  {% if u['items'] %}<ul class="items">{% for i in u['items'] %}{{ item_row(i) }}{% endfor %}</ul>{% endif %}
-  {% if u.hidden %}<div class="hidden-count">+{{ u.hidden }} item{{ 's' if u.hidden != 1 else '' }} not about housing</div>{% endif %}
-</section>
-{%- endmacro %}
-
-<h2>Upcoming meetings</h2>
-{% for u in upcoming %}{{ meeting_section(u) }}
-{% else %}<p>No upcoming meetings found.</p>{% endfor %}
-
-<h2>Recent meetings</h2>
-{% for u in recent %}{{ meeting_section(u) }}
-{% else %}<p>No meetings in the last two weeks.</p>{% endfor %}
+{% if not outline.has_upcoming %}<p>No upcoming meetings found.</p>{% endif %}
+{% for d in outline.days %}
+<h2 id="{{ d.id }}">{{ d.label }}</h2>
+{% for v in d.meetings %}{{ meeting_section(v) }}
+{% endfor %}
+{% endfor %}
 
 <h2>Open notices</h2>
-<ul class="items">
+<ul class="plain">
 {% for n in notices %}
   <li class="row" data-body="{{ n.body }}"
       data-categories="{{ (n.enrichment.categories | map(attribute='id') | join(' ')) if n.enrichment else '' }}" data-ward="">
@@ -93,7 +176,7 @@
 </ul>
 
 <h2>Recent outcomes</h2>
-<ul class="items">
+<ul class="plain">
 {% for r in outcomes %}
   <li class="row" data-body="{{ r.m.body if r.m else '' }}"
       data-categories="{{ (r.i.enrichment.categories | map(attribute='id') | join(' ')) if r.i.enrichment else '' }}"
@@ -106,10 +189,13 @@
 
 <p class="meta">Data: <a href="items.json">items.json</a></p>
 </main>
+</div>
 <script>
   const sel = id => document.getElementById(id);
+  const anyShown = el => [...el.querySelectorAll('.row')].some(r => !r.hidden);
   function apply() {
     const cat = sel('f-cat').value, body = sel('f-body').value, ward = sel('f-ward').value;
+    const filtering = cat || body || ward;
     document.querySelectorAll('.row').forEach(row => {
       const section = row.closest('.meeting');
       const rowBody = row.dataset.body || (section && section.dataset.body) || '';
@@ -117,12 +203,11 @@
         && (!body || rowBody === body) && (!ward || row.dataset.ward === ward);
       row.hidden = !ok;
     });
+    document.querySelectorAll('table.rows, .group').forEach(el => { el.hidden = filtering ? !anyShown(el) : false; });
     document.querySelectorAll('.meeting').forEach(s => {
-      const filtering = cat || body || ward;
-      const visible = [...s.querySelectorAll('.row')].some(r => !r.hidden);
-      s.hidden = filtering ? !(visible || (body && s.dataset.body === body && !cat && !ward)) : false;
+      s.hidden = filtering ? !(anyShown(s) || (body && s.dataset.body === body && !cat && !ward)) : false;
     });
-    const filtering = cat || body || ward;
+    document.querySelectorAll('[data-target]').forEach(li => { const s = sel(li.dataset.target); li.hidden = !s || s.hidden; });
     const shown = [...document.querySelectorAll('.row')].filter(r => !r.hidden && !(r.closest('.meeting') || {}).hidden).length;
     sel('f-clear').hidden = !filtering;
     sel('f-status').textContent = !filtering ? ''
@@ -135,6 +220,17 @@
     apply();
     sel('f-cat').focus();
   });
+  // Mark the meeting in view in the side panel. Without this script the panel is still a list of working links.
+  const links = new Map([...document.querySelectorAll('#panel [data-target]')].map(li => [li.dataset.target, li.querySelector('a')]));
+  if ('IntersectionObserver' in window && links.size) {
+    const io = new IntersectionObserver(entries => entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      links.forEach(a => a.removeAttribute('aria-current'));
+      const a = links.get(en.target.id);
+      if (a) a.setAttribute('aria-current', 'location');
+    }), { rootMargin: '0px 0px -70% 0px' });
+    document.querySelectorAll('.meeting').forEach(s => io.observe(s));
+  }
 </script>
 </body>
 </html>
