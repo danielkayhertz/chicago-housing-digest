@@ -167,9 +167,9 @@
 
 {% if not outline.has_upcoming %}<p>No upcoming meetings found.</p>{% endif %}
 {% for d in outline.days %}
-<h2 id="{{ d.id }}">{{ d.label }}</h2>
+<section class="day"><h2 id="{{ d.id }}">{{ d.label }}</h2>
 {% for v in d.meetings %}{{ meeting_section(v) }}
-{% endfor %}
+{% endfor %}</section>
 {% endfor %}
 
 <h2>Open notices</h2>
@@ -216,7 +216,13 @@
     document.querySelectorAll('.meeting').forEach(s => {
       s.hidden = filtering ? !(anyShown(s) || (body && s.dataset.body === body && !cat && !ward)) : false;
     });
+    document.querySelectorAll('section.day').forEach(d => { d.hidden = ![...d.querySelectorAll('.meeting')].some(s => !s.hidden); });
     document.querySelectorAll('[data-target]').forEach(li => { const s = sel(li.dataset.target); li.hidden = !s || s.hidden; });
+    document.querySelectorAll('li.split').forEach(li => {  // the Recent divider: hidden when no recent line is left
+      let n = li.nextElementSibling, any = false;
+      for (; n; n = n.nextElementSibling) if (!n.hidden) { any = true; break; }
+      li.hidden = !any;
+    });
     const shown = [...document.querySelectorAll('.row')].filter(r => !r.hidden && !(r.closest('.meeting') || {}).hidden).length;
     sel('f-clear').hidden = !filtering;
     sel('f-status').textContent = !filtering ? ''
@@ -229,16 +235,24 @@
     apply();
     sel('f-cat').focus();
   });
-  // Mark the meeting in view in the side panel. Without this script the panel is still a list of working links.
+  // Mark the meeting in view in the side panel: the last visible meeting whose top has reached the top of the
+  // window, so a meeting jumped to from a link is the one marked. Without this script the panel is still a list of links.
   const links = new Map([...document.querySelectorAll('#panel [data-target]')].map(li => [li.dataset.target, li.querySelector('a')]));
-  if ('IntersectionObserver' in window && links.size) {
-    const io = new IntersectionObserver(entries => entries.forEach(en => {
-      if (!en.isIntersecting) return;
-      links.forEach(a => a.removeAttribute('aria-current'));
-      const a = links.get(en.target.id);
-      if (a) a.setAttribute('aria-current', 'location');
-    }), { rootMargin: '0px 0px -70% 0px' });
-    document.querySelectorAll('.meeting').forEach(s => io.observe(s));
+  const meetings = [...document.querySelectorAll('.meeting')];
+  let queued = false;
+  function mark() {
+    queued = false;
+    let cur = null;
+    for (const s of meetings) {
+      if (s.hidden || s.closest('[hidden]')) continue;
+      if (s.getBoundingClientRect().top <= 8) cur = s; else break;
+    }
+    links.forEach((a, id) => { if (cur && id === cur.id) a.setAttribute('aria-current', 'location'); else a.removeAttribute('aria-current'); });
+  }
+  if (links.size) {
+    addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(mark); } }, { passive: true });
+    ['f-cat', 'f-body', 'f-ward', 'f-clear'].forEach(id => sel(id).addEventListener(id === 'f-clear' ? 'click' : 'change', mark));
+    mark();
   }
 </script>
 </body>

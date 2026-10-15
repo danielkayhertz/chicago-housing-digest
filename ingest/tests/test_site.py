@@ -255,3 +255,11 @@ def test_card_does_not_repeat_an_address_headline_as_its_agenda_number(tmp_path)
         update={"geography": Geography(address="1133 W. Kinzie St.", ward=27)})
     sec = render(d, tmp_path).split('id="cpc-2026-10-15-kinzie"')[1].split("</li>")[0]
     assert "<strong>1133 W. Kinzie St.</strong>" in sec and '<span class="src">' not in sec
+
+
+def test_each_day_is_a_section_the_filters_can_hide(tmp_path):
+    html = render(council_digest(), tmp_path)
+    for day in ("day-2026-10-08", "day-2026-10-15", "day-2026-11-10", "recent"):
+        assert f'<section class="day"><h2 id="{day}">' in html
+    first = html.split('<section class="day"><h2 id="day-2026-10-08">')[1].split('<section class="day">')[0]
+    assert 'id="elms-h1"' in first and 'id="cpc-2026-10-15"' not in first   # a day holds only its own meetings
