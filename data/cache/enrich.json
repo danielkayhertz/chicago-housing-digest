@@ -1822,7 +1822,7 @@
    "units": 5
   },
   "geography": {
-   "address": "2142 W 18th Place",
+   "address": "2142 W 18th Pl",
    "community_area": "Lower West Side",
    "ward": 25
   },
@@ -2047,15 +2047,12 @@
     "detail": "",
     "id": "healthy-homes",
     "via": "model"
-   },
-   {
-    "detail": "",
-    "id": "housing-agenda",
-    "via": "model"
    }
   ],
-  "content_hash": "14be36b7ac250da3",
-  "entities": [],
+  "content_hash": "99100bb6d4dc0458",
+  "entities": [
+   "Circuit Court of Cook County"
+  ],
   "figures": {
    "affordable_units": null,
    "units": null
@@ -2068,10 +2065,10 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The resolution creates a task force to improve enforcement against problem landlords and chronic building-code violations, which bears on tenant habitability and housing court coordination.",
+  "relevance_reason": "The resolution creates a task force on problem landlords and repeat building-code violations, which bears on habitability enforcement and tenant protections.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "A City Council resolution would create a Problem Landlord and Housing Court Coordination Task Force to examine and recommend improvements to the City's response to chronic and repeat housing code violations. It would include Council, Mayor, Buildings, Law, and Circuit Court representatives and report within 180 days of its first meeting.",
+  "summary": "A substitute resolution would establish a Problem Landlord and Housing Court Coordination Task Force to recommend improvements to the City's response to chronic and repeat housing code violations and to coordinate with the Circuit Court of Cook County. It would include City Council members, the Mayor's Office, and several city departments, and report within 180 days.",
   "zoning_from": [],
   "zoning_to": null
  },
@@ -2392,7 +2389,7 @@
   ],
   "figures": {
    "affordable_units": null,
-   "units": null
+   "units": 16
   },
   "geography": {
    "address": "4927, 4935 and 4937 S Forrestville Ave",
