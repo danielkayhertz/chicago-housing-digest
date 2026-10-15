@@ -1,5 +1,7 @@
 {
  "cdc:2026-10-13#1207-w-leland-ave": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "Department of Housing",
@@ -12,7 +14,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "4fc6c0b1ad1d0adc",
+  "content_hash": "0ccbacfd6152a2a9",
   "entities": [
    "Department of Housing",
    "Mercy Housing Lakefront",
@@ -30,14 +32,18 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The item concerns a redevelopment agreement and developer designation for a property at 1207 W. Leland Ave. with a housing-focused developer and the Department of Housing.",
+  "relevance_reason": "The item concerns authorizing negotiation of a redevelopment agreement and developer designation for a city-involved redevelopment of a property by an affordable housing developer.",
   "source_quality": "partial",
   "status": "ok",
-  "summary": "The Community Development Commission is asked to authorize the Department of Housing to negotiate a redevelopment agreement with Mercy Housing Lakefront for 1207 W. Leland Ave. in the Lawrence/Broadway Redevelopment Project Area, and to recommend Council designate Mercy Housing Lakefront as Developer."
+  "summary": "The Community Development Commission would authorize the Department of Housing to negotiate a redevelopment agreement with Mercy Housing Lakefront for 1207 W. Leland Ave. in the Lawrence/Broadway Redevelopment Project Area, and recommend that City Council designate Mercy Housing Lakefront as Developer.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "cdc:2026-10-13#758-e-111th-st": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [],
-  "content_hash": "56da184a083f609a",
+  "content_hash": "c9af1161b93cd000",
   "entities": [
    "Department of Planning and Development",
    "Chicago Neighborhood Initiatives"
@@ -54,12 +60,16 @@
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The material only names a redevelopment of a property in a TIF area with no stated housing use, units, or residential component.",
+  "relevance_reason": "The title describes a redevelopment agreement for a property in a redevelopment area but does not say it involves housing or homes.",
   "source_quality": "partial",
   "status": "ok",
-  "summary": "The Community Development Commission is asked to authorize the Department of Planning and Development to negotiate a redevelopment agreement with Chicago Neighborhood Initiatives for 758 E. 111th St. in the North Pullman area, and to recommend CNI's designation as Developer."
+  "summary": "The Community Development Commission is asked to authorize the Department of Planning and Development to negotiate a redevelopment agreement with Chicago Neighborhood Initiatives for 758 E. 111th St. in the North Pullman Redevelopment Project Area, and to recommend CNI's designation as Developer to City Council.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "clihtf:319068#allocations-summary": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "CLIHTF Board of Directors",
@@ -67,12 +77,10 @@
     "via": "body"
    }
   ],
-  "content_hash": "4b04de19a51a3224",
+  "content_hash": "0e823ba37f8c7661",
   "entities": [
    "Chicago Low-Income Housing Trust Fund",
-   "CLIHTF",
-   "Allocations Committee",
-   "Adonya Little"
+   "Allocations Committee"
   ],
   "figures": {
    "affordable_units": null,
@@ -86,12 +94,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The Chicago Low-Income Housing Trust Fund board is receiving its Allocations Committee report on rental subsidy allocations for low-income housing.",
+  "relevance_reason": "The Chicago Low-Income Housing Trust Fund board is receiving an allocations summary for its rental subsidy program for low-income tenants.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "The CLIHTF Board of Directors will receive an Allocations Summary from the Allocations Committee, chaired by Adonya Little. No allocation amounts, properties, or unit counts are given beyond the agenda title."
+  "summary": "The CLIHTF Board of Directors will hear an Allocations Summary from its Allocations Committee, chaired by Adonya Little. The same committee report also covers an ownership change at 6815 N Sheridan from Patricia Johnson to Teko Properties.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "clihtf:319068#financial-statements-as-of-september-30-2026": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "CLIHTF Board of Directors",
@@ -99,11 +111,10 @@
     "via": "body"
    }
   ],
-  "content_hash": "fd6c029cb4ed5076",
+  "content_hash": "b49a9c2b3d138af4",
   "entities": [
    "Chicago Low-Income Housing Trust Fund",
-   "Finance and Audit Committee",
-   "Meredith Muir"
+   "Finance and Audit Committee"
   ],
   "figures": {
    "affordable_units": null,
@@ -117,12 +128,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The Chicago Low-Income Housing Trust Fund, which funds rental subsidies for low-income tenants, will review its financial statements as part of its board's oversight of affordable housing funding.",
+  "relevance_reason": "The Chicago Low-Income Housing Trust Fund board reviews its finances, which fund rental subsidies for low-income tenants.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "The CLIHTF Board's Finance and Audit Committee, with Treasurer Meredith Muir, will report on the Trust Fund's financial statements as of September 30, 2026. The same meeting includes a draft 2027 budget presentation."
+  "summary": "The CLIHTF Board of Directors will review the Chicago Low-Income Housing Trust Fund's financial statements as of September 30, 2026, as a Finance and Audit Committee report presented by Treasurer Meredith Muir.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "clihtf:319068#new-business-tenant-outreach-initiative-presented-by-marlana-edwards-dir-079adf2": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "CLIHTF Board of Directors",
@@ -135,7 +150,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "55699536749b791f",
+  "content_hash": "9121d46e3db9c041",
   "entities": [
    "Chicago Low-Income Housing Trust Fund",
    "Marlana Edwards"
@@ -152,12 +167,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The Chicago Low-Income Housing Trust Fund board will hear a Tenant Outreach Initiative, which concerns tenants in subsidized rental housing.",
+  "relevance_reason": "The Chicago Low-Income Housing Trust Fund board will hear a tenant outreach initiative tied to its rental subsidy program for low-income renters.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "The CLIHTF Board of Directors will hear a new-business presentation on a Tenant Outreach Initiative from Marlana Edwards, Director of Program Development and Outreach. The material gives no further detail on the initiative."
+  "summary": "The CLIHTF Board of Directors will hear a Tenant Outreach Initiative presentation from Marlana Edwards, Director of Program Development and Outreach, under new business at its October 13 meeting.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "clihtf:319068#outreach-committee-update-provided-by-board-vp-sam-paler-ponce": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "CLIHTF Board of Directors",
@@ -165,7 +184,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "56d184b86d364c77",
+  "content_hash": "fbfea72f9fb1759d",
   "entities": [
    "Chicago Low-Income Housing Trust Fund",
    "Sam Paler-Ponce"
@@ -182,12 +201,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The Chicago Low-Income Housing Trust Fund board is receiving an update on its outreach work, which supports its rental subsidy program for low-income tenants.",
+  "relevance_reason": "The Chicago Low-Income Housing Trust Fund board hears an outreach committee update, which relates to a rental subsidy program for low-income tenants.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "Board Vice President Sam Paler-Ponce will give an Outreach Committee update at the CLIHTF Board of Directors meeting. The agenda gives no further detail on the update."
+  "summary": "Board Vice President Sam Paler-Ponce will give the Outreach Committee update at the CLIHTF Board of Directors meeting on October 13, 2026.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "clihtf:319068#ownership-change-of-6815-n-sheridan-from-patricia-johnson-to-teko-properties": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "CLIHTF Board of Directors",
@@ -195,7 +218,116 @@
     "via": "body"
    }
   ],
-  "content_hash": "322c925d052867e0",
+  "content_hash": "c90f0525ce85412a",
+  "entities": [
+   "Patricia Johnson",
+   "Teko Properties",
+   "Chicago Low-Income Housing Trust Fund"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "6815 N Sheridan",
+   "community_area": "Rogers Park",
+   "ward": 49
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "A Chicago Low-Income Housing Trust Fund property ownership change affects a rental subsidy property and the tenants who live there.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The CLIHTF Allocations Committee will report on an ownership change of 6815 N Sheridan from Patricia Johnson to Teko Properties.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "clihtf:319068#presentation-of-draft-2027-budget": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CLIHTF Board of Directors",
+    "id": "social-housing",
+    "via": "body"
+   }
+  ],
+  "content_hash": "a120d47f820832c7",
+  "entities": [
+   "CLIHTF",
+   "Chicago Low-Income Housing Trust Fund",
+   "Finance and Audit Committee"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The Chicago Low-Income Housing Trust Fund's draft 2027 budget bears on funding for its rental subsidy program for low-income tenants.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The CLIHTF Board of Directors' Finance and Audit Committee will present the draft 2027 budget at the October 13 board meeting.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "clihtf:319068#president-s-update": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CLIHTF Board of Directors",
+    "id": "social-housing",
+    "via": "body"
+   }
+  ],
+  "content_hash": "e3357218a9bd7b84",
+  "entities": [
+   "Chicago Low-Income Housing Trust Fund",
+   "Fatmah Farraj"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The CLIHTF board oversees the Chicago Low-Income Housing Trust Fund, which subsidizes rental housing for low-income tenants, and this is the president's update at its October 2026 meeting.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The CLIHTF Board of Directors will hear a President's Update at its October 13, 2026 meeting. The agenda item itself has no further detail.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "clihtf:319068#reports": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CLIHTF Board of Directors",
+    "id": "social-housing",
+    "via": "body"
+   },
+   {
+    "detail": "",
+    "id": "housing-agenda",
+    "via": "model"
+   }
+  ],
+  "content_hash": "12856a3575610e04",
   "entities": [
    "Chicago Low-Income Housing Trust Fund",
    "Patricia Johnson",
@@ -213,117 +345,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The item concerns an ownership change for a rental property at 6815 N Sheridan, which is handled through the Chicago Low-Income Housing Trust Fund's rental subsidy program.",
+  "relevance_reason": "The Chicago Low-Income Housing Trust Fund board hears committee reports on rental subsidy allocations, a property ownership change, and the draft 2027 budget.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "The CLIHTF Board's Allocations Committee report includes an ownership change for 6815 N Sheridan from Patricia Johnson to Teko Properties. The material gives no further details."
- },
- "clihtf:319068#presentation-of-draft-2027-budget": {
-  "categories": [
-   {
-    "detail": "CLIHTF Board of Directors",
-    "id": "social-housing",
-    "via": "body"
-   },
-   {
-    "detail": "",
-    "id": "housing-agenda",
-    "via": "model"
-   }
-  ],
-  "content_hash": "132b3d090d4f6e65",
-  "entities": [
-   "Chicago Low-Income Housing Trust Fund (CLIHTF)",
-   "Finance and Audit Committee",
-   "Meredith Muir"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The Chicago Low-Income Housing Trust Fund's 2027 budget governs funding for its rental subsidy program for low-income renters.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "The CLIHTF Board's Finance and Audit Committee, with Treasurer Meredith Muir reporting, will present a draft 2027 budget for the Chicago Low-Income Housing Trust Fund. No budget figures are provided in the material."
- },
- "clihtf:319068#president-s-update": {
-  "categories": [
-   {
-    "detail": "CLIHTF Board of Directors",
-    "id": "social-housing",
-    "via": "body"
-   }
-  ],
-  "content_hash": "dae397eb6a6e124b",
-  "entities": [
-   "Chicago Low-Income Housing Trust Fund",
-   "Fatmah Farraj"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The CLIHTF board oversees Chicago's Low-Income Housing Trust Fund, which subsidizes rental housing for low-income tenants, though this item is only a general president's update.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "The President's Update is a standing item on the CLIHTF Board of Directors' October 13, 2026 agenda. The material gives no details of its content."
- },
- "clihtf:319068#reports": {
-  "categories": [
-   {
-    "detail": "CLIHTF Board of Directors",
-    "id": "social-housing",
-    "via": "body"
-   },
-   {
-    "detail": "",
-    "id": "housing-agenda",
-    "via": "model"
-   }
-  ],
-  "content_hash": "e93ab415e75c0f44",
-  "entities": [
-   "Chicago Low-Income Housing Trust Fund",
-   "Patricia Johnson",
-   "Teko Properties",
-   "Allocations Committee",
-   "Finance and Audit Committee",
-   "Outreach Committee"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": "6815 N Sheridan",
-   "community_area": "Rogers Park",
-   "ward": 49
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The Chicago Low-Income Housing Trust Fund board hears committee reports on rental subsidy allocations, a property ownership change, and a draft 2027 budget for its affordable rental subsidy program.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "CLIHTF board receives committee reports, including an allocations summary, an ownership change of 6815 N Sheridan from Patricia Johnson to Teko Properties, financial statements through September 30, 2026, and the draft 2027 budget."
+  "summary": "CLIHTF Board of Directors will hear committee reports, including an allocations summary, an ownership change at 6815 N Sheridan from Patricia Johnson to Teko Properties, financial statements, and the draft 2027 budget.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "cpc:2026-10-15#1133-w-kinzie-st": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "Chicago Plan Commission",
@@ -331,7 +362,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "bb9a5794a989d127",
+  "content_hash": "133bc302ffb0bd84",
   "entities": [
    "MKR Owner LLC"
   ],
@@ -347,12 +378,18 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The planned development and rezoning from M2-3 to DX-5 would allow a new 110-unit residential building.",
+  "relevance_reason": "A planned development rezoning would allow a new 110-unit residential building on a site now zoned for manufacturing.",
   "source_quality": "partial",
   "status": "ok",
-  "summary": "MKR Owner LLC proposes a Planned Development at 1133 W. Kinzie Street, rezoning the site from M2-3 to DX-5 to build a 5-story residential building with up to 110 dwelling units and 33 parking spaces."
+  "summary": "MKR Owner LLC requests a Planned Development rezoning of 1133 W. Kinzie St. from M2-3 to DX-5 to build a 5-story residential building with up to 110 dwelling units and 33 parking spaces.",
+  "zoning_from": [
+   "M2-3"
+  ],
+  "zoning_to": "DX-5"
  },
  "cpc:2026-10-15#3700-3846-n-seminary-ave": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "Chicago Plan Commission",
@@ -360,7 +397,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "13ac8ad00d6cf4b6",
+  "content_hash": "26c962f4057df1d7",
   "entities": [
    "Chicago Realty Ventures, LLC"
   ],
@@ -376,12 +413,18 @@
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The planned development amendment concerns boundaries, subareas, parking lots, and a park, with no residential units or housing regulation mentioned.",
+  "relevance_reason": "The amendment concerns parking lots and a park within an institutional planned development, with no residential units or housing regulation described.",
   "source_quality": "partial",
   "status": "ok",
-  "summary": "Chicago Realty Ventures, LLC proposes amending Institutional Planned Development 108 at 3700-3846 N. Seminary Ave. to extend its boundaries and create three subareas, including parking lots of up to 800 and 103 spaces and an existing park, with a maximum FAR of 1.2."
+  "summary": "Chicago Realty Ventures, LLC proposes amending Institutional Planned Development 108 at 3700-3846 N Seminary Ave to extend its boundaries and create three subareas, covering surface parking (up to 800 and 103 spaces) and an existing park, with a maximum FAR of 1.2.",
+  "zoning_from": [
+   "Institutional Planned Development 108"
+  ],
+  "zoning_to": null
  },
  "cpc:2026-10-15#item-3": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "Chicago Plan Commission",
@@ -389,11 +432,11 @@
     "via": "body"
    }
   ],
-  "content_hash": "742c5554386c33b2",
+  "content_hash": "03ac2135b3ee19c7",
   "entities": [
    "Chicago Plan Commission",
-   "Department of Planning and Development",
-   "DPD"
+   "DPD",
+   "Department of Planning and Development"
   ],
   "figures": {
    "affordable_units": null,
@@ -407,12 +450,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The land use framework guides future zoning and land use recommendations, including strengthening residential areas, in South Chicago.",
+  "relevance_reason": "The land use framework is a DPD planning tool guiding future zoning and land use recommendations, including strengthening residential areas, in South Chicago.",
   "source_quality": "partial",
   "status": "ok",
-  "summary": "The Plan Commission is asked to adopt the South Chicago Land Use Framework, a DPD-led plan for the 7th and 10th wards. It sets land use and zoning recommendations to strengthen residential areas, commercial corridors and open spaces."
+  "summary": "The Plan Commission is asked to adopt the South Chicago Land Use Framework, a DPD-led plan for the 7th and 10th wards. It evaluates land use, zoning, and redevelopment opportunities and recommends strategies to strengthen residential areas, commercial corridors, and open spaces.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0025391": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -420,11 +467,8 @@
     "via": "model"
    }
   ],
-  "content_hash": "0527ae4cde4418a3",
-  "entities": [
-   "CTA",
-   "METRA"
-  ],
+  "content_hash": "d43c05391087afa8",
+  "entities": [],
   "figures": {
    "affordable_units": null,
    "units": null
@@ -437,12 +481,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The ordinance amends the Zoning Ordinance to set TOD street rezoning requirements (B or C1 districts with minimum 3 FAR) and lowers the residential parking cap near transit, affecting where and how housing can be built.",
+  "relevance_reason": "The zoning text amendment sets TOD street rules that require rezonings to B or C1 districts with at least 3 FAR and cap residential parking near transit, directly affecting housing development.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Proposed ordinance adds Section 17-3-0600 creating TOD streets near CTA/Metra stations, requiring rezonings there to B or C1 districts with at least 3 FAR and setting design standards. It also lowers the residential parking cap near transit to 0.5 spaces per unit."
+  "summary": "Ordinance would add Section 17-3-0600 to the Chicago zoning code creating TOD streets near CTA and Metra stations. It sets building design standards, requires rezonings of abutting property to B or C1 with minimum 3 FAR, and caps residential parking at 0.5 spaces per unit.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0025393": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "planned development",
@@ -450,9 +498,9 @@
     "via": "keyword"
    },
    {
-    "detail": "ARO",
+    "detail": "",
     "id": "housing-agenda",
-    "via": "keyword"
+    "via": "model"
    },
    {
     "detail": "",
@@ -460,7 +508,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "a01aa071b9b38399",
+  "content_hash": "9d89fabd2df2e843",
   "entities": [
    "P.S. Bronzeville, LLC"
   ],
@@ -476,12 +524,20 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning amends Business Planned Development No. 1143 to expand its boundaries onto RS-3 and RT-4 land and City-owned parcels for a phased mixed-use project that includes multi-family housing and is subject to the ARO.",
+  "relevance_reason": "The rezoning amends and expands Business Planned Development No. 1143 on largely city-owned land, with a Phase II that includes multi-family housing and an application indicating the ARO applies.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "P.S. Bronzeville, LLC seeks to rezone RS-3, RT-4 and PD 1143 land near 39th and State to an expanded Business Planned Development No. 1143. Phase I is a grocery-anchored mixed-use development; Phase II, north of Pershing, would include multi-family housing. The application checks that the project is subject to the ARO."
+  "summary": "P.S. Bronzeville, LLC seeks to rezone RS-3, RT-4 and PD 1143 land near 39th and State to an expanded Business Planned Development No. 1143. Phase I is a grocery-anchored mixed-use development; Phase II, north of Pershing, would include multi-family housing. The city owns part of the site.",
+  "zoning_from": [
+   "RS-3",
+   "RT-4",
+   "Business Planned Development No. 1143"
+  ],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0026239": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -489,7 +545,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "0da4d0faef8d8800",
+  "content_hash": "1641be18c9b3f696",
   "entities": [
    "Matthew J. Martin"
   ],
@@ -505,12 +561,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "TOD street designation changes zoning rules (such as parking and density allowances) for residential and mixed-use development along a corridor, affecting housing supply.",
+  "relevance_reason": "Designating a TOD street in the zoning code changes development standards that can allow more density and reduced parking for housing along the corridor.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "Ordinance sponsored by Alderman Matthew J. Martin (47th Ward) would designate N Ravenswood Ave between W Irving Park Rd and W Lawrence Ave as a Transit Oriented Development street, amending Municipal Code Section 17-3-0602-F and Map No. 11-H."
+  "summary": "Ordinance sponsored by Ald. Matthew J. Martin (47th Ward) would designate N. Ravenswood Ave between W. Irving Park Rd and W. Lawrence Ave as a Transit Oriented Development Street, amending the zoning map and Municipal Code Section 17-3-0602-F.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0026261": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -518,7 +578,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "42c999e4fd051f71",
+  "content_hash": "39dfb80d7dd79211",
   "entities": [
    "Matthew J. Martin",
    "Andre Vasquez Jr."
@@ -535,12 +595,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "Designating a TOD street in the Chicago Zoning Ordinance changes zoning rules that govern residential density and parking for development along N Western Ave.",
+  "relevance_reason": "Designating a stretch of N Western Ave as a TOD street amends the zoning code and typically changes density and parking rules for residential development along it.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "Ordinance would designate N Western Avenue between W Addison St and W Ainslie St as a Transit Oriented Development (TOD) Street and amend Municipal Code Section 17-3-0602-F accordingly. Sponsored by Aldermen Matthew J. Martin (47th) and Andre Vasquez Jr. (40th)."
+  "summary": "Aldermen Matthew J. Martin (47th) and Andre Vasquez Jr. (40th) propose designating North Western Avenue from West Addison Street to West Ainslie Street as a Transit Oriented Development (TOD) Street, amending zoning maps and Municipal Code Section 17-3-0602-F.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027173": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -548,7 +612,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "0dec91e3c587582e",
+  "content_hash": "b69b5d6f194293fb",
   "entities": [
    "Raymond A. Lopez"
   ],
@@ -564,12 +628,18 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A residential downzoning from B2-3 mixed-use to RS-3 single-unit detached house district changes the housing that can be built on the site.",
+  "relevance_reason": "A downzoning from a neighborhood mixed-use district to a single-unit detached house district changes the residential development capacity of the site.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ordinance sponsored by Ald. Raymond A. Lopez (15th Ward) would rezone 4639-43 S Wallace Street on Map No. 10-F from B2-3 Neighborhood Mixed-Use District to RS-3 Residential Single Unit (Detached House) District."
+  "summary": "Ordinance sponsored by Ald. Raymond A. Lopez (15th Ward) would rezone 4639-43 S Wallace Street from B2-3 Neighborhood Mixed-Use District to RS-3 Residential Single Unit (Detached House) District on Map No. 10-F.",
+  "zoning_from": [
+   "B2-3"
+  ],
+  "zoning_to": "RS-3"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027299": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -577,10 +647,9 @@
     "via": "model"
    }
   ],
-  "content_hash": "d4f137e8d62a0b53",
+  "content_hash": "d59c4ce871440982",
   "entities": [
-   "1807-09 W. Augusta Blvd LLC",
-   "M15 Land Investments LLC"
+   "1807-09 W. Augusta Blvd LLC"
   ],
   "figures": {
    "affordable_units": null,
@@ -594,14 +663,20 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The Type 1 zoning application would allow a new six-unit residential building on a lot that is currently vacant and partly occupied by a two-story residential building.",
+  "relevance_reason": "A Type 1 zoning amendment application would allow a new six-unit residential building on a vacant and partly improved lot in the 36th Ward.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "1807-09 W. Augusta Blvd LLC seeks a Type 1 map amendment (App. No. 23130T1) for 1807-09 W. Augusta Blvd, keeping RM-4.5 zoning. It would build a three-story, six-unit residential building with a five-space garage, plus parking and setback relief. The owner is M15 Land Investments LLC."
+  "summary": "1807-09 W. Augusta Blvd LLC seeks a Type 1 map amendment for 1807-09 W. Augusta Blvd. The site stays RM-4.5. It would allow a new three-story, six-unit residential building with a five-space garage, plus parking, setback and rear yard open space relief.",
+  "zoning_from": [
+   "RM-4.5"
+  ],
+  "zoning_to": "RM-4.5"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027331": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [],
-  "content_hash": "2d760fd98346df3a",
+  "content_hash": "d9e50428604c96c1",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -615,14 +690,18 @@
   "housing_relevant": false,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning from DX-5 to DS-3 at 1608 S. Wabash is for a storage and delivery use of construction materials with zero dwelling units and no residential use proposed, so it is a purely commercial/industrial map amendment that does not add, remove, or change homes.",
+  "relevance_reason": "The rezoning from DX-5 to DS-3 at 1608 S. Wabash is for a storage and delivery use for construction materials with zero dwelling units, so it neither adds, removes, nor changes homes on the site.",
   "source_quality": "none",
   "status": "screened_out",
-  "summary": ""
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027372": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [],
-  "content_hash": "c41c23d544853e8b",
+  "content_hash": "784d57290b10e66a",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -636,14 +715,24 @@
   "housing_relevant": false,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The item rezones a vacant lot from RM-5 to B3-3 for a restaurant building with zero dwelling units and no residential use proposed, so it is a purely commercial rezoning that does not add, remove, or change homes.",
+  "relevance_reason": "The rezoning from RM-5 to B3-3 is for a vacant lot to be used for a restaurant with zero dwelling units and zero parking, so it is a purely commercial use that adds, removes, and changes no homes even though the old residential district would have allowed them.",
   "source_quality": "none",
   "status": "screened_out",
-  "summary": ""
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027417": {
-  "categories": [],
-  "content_hash": "7afa316fe01a120b",
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "rezoning",
+    "id": "ahpaa",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "8be613edff4c71d7",
   "entities": [
    "EIG14T NF IL CHI W DIVERSEY LLC"
   ],
@@ -652,19 +741,25 @@
    "units": null
   },
   "geography": {
-   "address": "1415 West Diversey Parkway",
+   "address": "1415 W Diversey Pkwy",
    "community_area": "Lincoln Park",
    "ward": 32
   },
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning from M1-2 to B3-2 would allow a daycare conversion and involves no dwelling units.",
+  "relevance_reason": "The rezoning from M1-2 to B3-2 would allow a daycare conversion and adds or removes no homes.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Rezones 1415 W Diversey Pkwy from M1-2 to B3-2 to resolve split zoning and allow conversion of the adjacent building into a daycare for 153 students. Applicant is EIG14T NF IL CHI W DIVERSEY LLC."
+  "summary": "Rezoning of 1415 W Diversey Pkwy from M1-2 to B3-2, requested by EIG14T NF IL CHI W DIVERSEY LLC. The change would resolve a split-zoning issue so the lot can support converting the adjacent building into a daycare.",
+  "zoning_from": [
+   "M1-2"
+  ],
+  "zoning_to": "B3-2"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027579": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -672,7 +767,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "bc514bebae34dddb",
+  "content_hash": "65851ad1a913ff47",
   "entities": [
    "Pat Dowell"
   ],
@@ -688,12 +783,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The ordinance changes zoning rules for single room occupancy housing, a type of residential use, in RT and RM districts.",
+  "relevance_reason": "The ordinance changes zoning use rules for single room occupancy housing, a type of residential development, in several residential districts.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ald. Pat Dowell (3rd Ward) proposes amending Municipal Code 17-2-0207 so single room occupancy housing in RT4 through RM6.5 districts goes from permitted by-right to requiring special use approval. The use table shows 'PS' markings in those districts."
+  "summary": "Ordinance sponsored by Ald. Pat Dowell (3rd Ward) would amend Municipal Code 17-2-0207 so single room occupancy housing requires special use approval (PS) in RT4, RM4.5, RM5-5.5 and RM6-6.5 districts, and remains not allowed in RS and RT3.5.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027667": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -701,7 +800,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "c739be1c264d73d0",
+  "content_hash": "5633372d52038487",
   "entities": [
    "Maria Hadden"
   ],
@@ -717,14 +816,20 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning changes a residential RT-4 two-flat/townhouse/multi-unit district to a B3-3 Community Shopping District, which affects land currently zoned for housing.",
+  "relevance_reason": "The rezoning would change a site from a residential two-flat, townhouse and multi-unit district to a community shopping district, which could remove residential zoning.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "Ordinance sponsored by Ald. Maria Hadden (49th Ward) would rezone the area at 1721 W. Greenleaf Ave from RT-4 Residential Two-Flat, Townhouse and Multi-Unit District to B3-3 Community Shopping District. It also includes necessary relief under Sections 17-13-1003 and 17-13-1101."
+  "summary": "Ordinance sponsored by Alderwoman Maria Hadden (49th Ward) would rezone the area at 1721 W. Greenleaf Avenue from RT-4 Residential Two-Flat, Townhouse and Multi-Unit District to B3-3 Community Shopping District.",
+  "zoning_from": [
+   "RT-4"
+  ],
+  "zoning_to": "B3-3"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027856": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [],
-  "content_hash": "f25230c421ffb6ee",
+  "content_hash": "95f422565b14e570",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -738,12 +843,16 @@
   "housing_relevant": false,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The ordinance repeals a historical landmark designation for a bridge, which concerns no homes, dwelling units, or residential rights.",
+  "relevance_reason": "The ordinance repeals a historical landmark designation for the Cortland Bridge, a structure with no dwelling units or residential use, so it does not bear on homes or residents' rights.",
   "source_quality": "none",
   "status": "screened_out",
-  "summary": ""
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027987": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -751,7 +860,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "2f3aa9376a80e3b8",
+  "content_hash": "6705aa344cb06589",
   "entities": [
    "Jeanette B. Taylor"
   ],
@@ -767,25 +876,26 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The ordinance rezones land from a neighborhood shopping district to a single-unit residential district, changing what housing can be built on the site.",
+  "relevance_reason": "The rezoning changes a B1-1 shopping district to RS-3 single-unit residential, altering what homes can be built on the site.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "Ordinance would rezone the area bounded by West 50th Street, South Wells Street, and the alley to the west, at 5000-5046 S Wells St, from B1-1 Neighborhood Shopping District to RS-3 Residential Single-Unit (Detached House) District. Sponsored by Alderwoman Jeanette B. Taylor, 20th Ward."
+  "summary": "Ordinance sponsored by Alderwoman Jeanette B. Taylor (20th Ward) would rezone the area at 5000-5046 S. Wells Street on Map No. 12-F from B1-1 Neighborhood Shopping District to RS-3 Residential Single-Unit (Detached House) District.",
+  "zoning_from": [
+   "B1-1"
+  ],
+  "zoning_to": "RS-3"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028339": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
-   {
-    "detail": "ARO",
-    "id": "housing-agenda",
-    "via": "keyword"
-   },
    {
     "detail": "",
     "id": "ahpaa",
     "via": "model"
    }
   ],
-  "content_hash": "0be1d2a783a0753a",
+  "content_hash": "3278f6f717b7d469",
   "entities": [
    "2156 W WARREN LLC"
   ],
@@ -794,61 +904,69 @@
    "units": 8
   },
   "geography": {
-   "address": "2156 W Warren Blvd",
+   "address": "2156 West Warren Boulevard",
    "community_area": "Near West Side",
    "ward": 27
   },
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning from RT4 to RM5 would allow a new 8-unit residential building on a vacant lot.",
+  "relevance_reason": "A rezoning from RT4 to RM5 would allow a new 8-unit residential building on a vacant lot.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "2156 W Warren LLC seeks to rezone a vacant lot at 2156 W Warren Blvd from RT4 to RM5 to build a 4-story, 8-unit residential building with 5 outdoor parking spaces. The application says the project is not subject to the ARO."
+  "summary": "2156 W Warren LLC seeks to rezone a vacant lot at 2156 W Warren Blvd from RT4 to RM5 to build a 4-story, 8-unit residential building with 5 outdoor parking spaces. The applicant also requests setback and rear-yard open space relief.",
+  "zoning_from": [
+   "RT4"
+  ],
+  "zoning_to": "RM5"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028341": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
-   {
-    "detail": "ARO",
-    "id": "housing-agenda",
-    "via": "keyword"
-   },
    {
     "detail": "",
     "id": "ahpaa",
     "via": "model"
    }
   ],
-  "content_hash": "92b5e6f83722eeef",
+  "content_hash": "b64657f7c2ed9ab9",
   "entities": [
-   "73RD AND INDIANA, LLC"
+   "73RD AND INDIANA, LLC",
+   "Jaffe & Berlin"
   ],
   "figures": {
    "affordable_units": null,
    "units": 8
   },
   "geography": {
-   "address": "7353-59 South Indiana Avenue",
+   "address": "7353-7359 S Indiana Ave",
    "community_area": "Greater Grand Crossing",
    "ward": 6
   },
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning from RS2 to RT4 would allow a new 8-unit residential building on a vacant lot.",
+  "relevance_reason": "The rezoning would allow a new 8-unit residential building on a vacant lot in the 6th Ward.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "73RD AND INDIANA, LLC seeks to rezone 7353-59 S Indiana Ave from RS2 to RT4 to build a two-story, 8-unit residential building with a 7-car garage on a vacant lot. The application says the ARO does not apply."
+  "summary": "73rd and Indiana, LLC seeks to rezone the vacant lot at 7353-7359 S Indiana Ave from RS2 to RT4 to build a two-story, 8-unit residential building with a 7-car garage. Agnes Plecka of Jaffe & Berlin represents the applicant.",
+  "zoning_from": [
+   "RS2"
+  ],
+  "zoning_to": "RT4"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028345": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
-    "detail": "rezoning",
+    "detail": "",
     "id": "ahpaa",
-    "via": "keyword"
+    "via": "model"
    }
   ],
-  "content_hash": "64bf90ebf82f7235",
+  "content_hash": "c478f2ce70be1d5a",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -862,14 +980,18 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning from C1-2 to B2-3 would allow a new 7-unit residential building, including ground-floor residential use, on a vacant lot.",
+  "relevance_reason": "The rezoning would allow a new 7-unit residential building, including ground-floor residential use, on a vacant lot along the Western Avenue bus corridor.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Applicant seeks a Type 1 rezoning of 2400 W. Grenshaw St. from C1-2 Neighborhood Commercial to B2-3 Neighborhood Mixed-Use, with a rear setback variation, to build a 4-story, 7-unit residential building with 3 garage parking spaces on a vacant corner lot."
+  "summary": "Applicant seeks to rezone a vacant corner lot at 2400 W. Grenshaw St. from C1-2 to B2-3 to build a 4-story, 7-unit residential building with 3 garage parking spaces. The request includes a variation reducing the rear setback from 30 feet to 9 feet.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028350": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [],
-  "content_hash": "be207d0a5e11e7c5",
+  "content_hash": "fa613a004a60a259",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -883,20 +1005,24 @@
   "housing_relevant": false,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The ordinance rezones the site from B1-2 Neighborhood Shopping to C2-2 Motor Vehicle-Related Commercial, a commercial-to-commercial change with no dwelling units or residential use involved.",
+  "relevance_reason": "The rezoning changes a B1-2 Neighborhood Shopping District to C2-2 Motor Vehicle-Related Commercial District, a purely commercial change with no dwelling units or residential use involved.",
   "source_quality": "none",
   "status": "screened_out",
-  "summary": ""
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028355": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
-    "detail": "",
+    "detail": "rezoning",
     "id": "ahpaa",
-    "via": "model"
+    "via": "keyword"
    }
   ],
-  "content_hash": "73df1c78f1d3559d",
+  "content_hash": "5dd86bae85494683",
   "entities": [
    "Daniel La Spata"
   ],
@@ -905,19 +1031,26 @@
    "units": null
   },
   "geography": {
-   "address": "1600-1760 W. Chicago Ave and 1601-1759 W. Chicago Ave",
+   "address": "1600-1760 W Chicago Ave and 1601-1759 W Chicago Ave",
    "community_area": "West Town",
    "ward": 1
   },
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A corridor-wide rezoning from B1 neighborhood shopping to B3 community shopping districts changes the zoning rules that govern what, including residential, can be built along West Chicago Avenue.",
+  "relevance_reason": "A city-initiated-style rezoning along West Chicago Avenue moves parcels from B1 neighborhood shopping districts to B3 community shopping districts, which changes the zoning rules that govern residential and mixed-use development there.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ordinance sponsored by Alderman Daniel La Spata (1st Ward) would rezone B1-2 and B1-3 parcels along W Chicago Ave between N Wood St and N Ashland Ave to B3-2 and B3-3. Several parcels with other zoning are excluded."
+  "summary": "Ald. Daniel La Spata (1st Ward) proposes rezoning parcels along 1600-1760 W Chicago Ave and 1601-1759 W Chicago Ave from B1-2 and B1-3 to B3-2 and B3-3 community shopping districts. Several parcels with other existing zoning are excluded.",
+  "zoning_from": [
+   "B1-2",
+   "B1-3"
+  ],
+  "zoning_to": "B3-2 and B3-3"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028406": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -925,9 +1058,10 @@
     "via": "model"
    }
   ],
-  "content_hash": "cfce7a14908e012e",
+  "content_hash": "3cbfd930e22466e6",
   "entities": [
-   "Southwest Airlines Co."
+   "Southwest Airlines Co.",
+   "Archdiocese of Chicago"
   ],
   "figures": {
    "affordable_units": null,
@@ -941,25 +1075,26 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning from RS-3 residential single-unit to B2-1 would remove residentially zoned land and replace vacant church and school buildings with a non-accessory parking lot, so it bears on housing supply.",
+  "relevance_reason": "The rezoning changes land from a residential single-unit district (RS-3) to a mixed-use district (B2-1) and removes a site zoned for residential use, though no homes exist there now.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Southwest Airlines Co., a contract purchaser, seeks to rezone the former St Camillus church and school site from RS-3 to B2-1 to raze the vacant buildings and build a roughly 364-space parking lot for Midway Airport employees and visitors. No dwelling units are proposed."
+  "summary": "Southwest Airlines Co., with the Archdiocese of Chicago as owner, seeks to rezone the former St. Camillus church and school site from RS-3 to B2-1. The plan is to raze the vacant buildings and build a parking lot of about 364 spaces for Midway Airport employees and visitors.",
+  "zoning_from": [
+   "RS-3"
+  ],
+  "zoning_to": "B2-1"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028415": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
-   {
-    "detail": "ARO",
-    "id": "housing-agenda",
-    "via": "keyword"
-   },
    {
     "detail": "",
     "id": "ahpaa",
     "via": "model"
    }
   ],
-  "content_hash": "2550518f9484cccb",
+  "content_hash": "6573aff35374ce27",
   "entities": [
    "QHN LLC"
   ],
@@ -975,12 +1110,18 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning would allow a new six-unit residential building on a vacant lot, with reduced parking under the transit-served location provisions.",
+  "relevance_reason": "A rezoning from B1-3 to B2-3 would allow a new six-unit residential building on a vacant lot in the 11th Ward.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "QHN LLC seeks to rezone 3439 S Morgan St from B1-3 to B2-3 to build a three-story, six-unit residential building on a vacant lot. It also requests a parking reduction from six spaces to three under the Transit Served Location rules. The project is not subject to the ARO."
+  "summary": "QHN LLC seeks to rezone a vacant lot at 3439 S Morgan St from B1-3 to B2-3 to build a three-story, six-unit residential building with three off-street parking spaces, including a transit-served-location parking reduction from six spaces to three.",
+  "zoning_from": [
+   "B1-3"
+  ],
+  "zoning_to": "B2-3"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028439": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -988,7 +1129,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "b0fdd3130eacd028",
+  "content_hash": "2ed259932148f484",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -1002,14 +1143,18 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning from B3-2 to B3-3 would allow a new four-story mixed-use building with three residential units replacing a two-story residence.",
+  "relevance_reason": "The rezoning would allow a new four-story mixed-use building with three residential units replacing a two-story residence.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ordinance would rezone 1921 W Chicago Ave from B3-2 to B3-3 Community Shopping District to allow a four-story building with ground-floor retail and three dwelling units above, with three off-street parking spaces, as a Transit Served Location project."
+  "summary": "Rezones 1921 W Chicago Ave from B3-2 to B3-3 Community Shopping District to allow a four-story building with ground-floor retail and three apartments above, replacing a two-story residence. Includes parking increase and rear setback relief.",
+  "zoning_from": [],
+  "zoning_to": "B3-3 Community Shopping District"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028457": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [],
-  "content_hash": "6be702c1b8cefaab",
+  "content_hash": "8665fb51eae4f81c",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -1023,14 +1168,18 @@
   "housing_relevant": false,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning from RT-4 and C1-2 to C1-2 covers a site with no dwelling units, where the applicant proposes to keep the existing car wash and commercial building and add four parking spaces, a purely commercial and parking use.",
+  "relevance_reason": "The rezoning of 1147-1151 S. Independence Blvd. from RT-4 and C1-2 to C1-2 covers a car wash, a commercial building, and parking, with no dwelling units proposed, so it is a purely commercial rezoning that does not add, remove, or change homes.",
   "source_quality": "none",
   "status": "screened_out",
-  "summary": ""
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028463": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [],
-  "content_hash": "5c5ac4d69baaad26",
+  "content_hash": "d6f45443b324d835",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -1044,24 +1193,28 @@
   "housing_relevant": false,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The ordinance regulates cannabis dispensary operations and permitting under the zoning code without changing rules for dwelling units or residential use, so it does not bear on homes.",
+  "relevance_reason": "The ordinance concerns cannabis dispensary operations and zoning standards for cannabis business establishments, with no mention of dwelling units, residential use, or housing.",
   "source_quality": "none",
   "status": "screened_out",
-  "summary": ""
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028465": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
-    "detail": "",
+    "detail": "rezoning",
     "id": "ahpaa",
-    "via": "model"
+    "via": "keyword"
    }
   ],
-  "content_hash": "e108f2eb749c76c2",
+  "content_hash": "86f1c60dc64e83b1",
   "entities": [],
   "figures": {
    "affordable_units": null,
-   "units": 1
+   "units": 2
   },
   "geography": {
    "address": "1644 North Winchester Avenue",
@@ -1071,12 +1224,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning from RS-3 to RT-4 would allow a new accessory dwelling unit (coach house) to be added to a single-family lot.",
+  "relevance_reason": "A residential rezoning from RS-3 to RT-4 that would allow a new accessory dwelling unit above a rebuilt garage at a single-family home.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Applicants seek to rezone 1644 N Winchester Ave from RS-3 to RT-4 to rehabilitate and expand a single-family home and replace the rear garage with a two-story garage containing one accessory dwelling unit (coach house) on the second floor."
+  "summary": "Rezoning of 1644 N Winchester Ave from RS-3 to RT-4 so the applicants can renovate and expand a single-family home and replace the rear garage with a two-story garage containing one accessory dwelling unit.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028670": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -1084,7 +1241,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "471c8be5bb318a80",
+  "content_hash": "d844c1db68132a2c",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -1098,12 +1255,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning from RM-5 to B2-3 would allow a new 15-unit residential building on a vacant lot, adding homes near transit.",
+  "relevance_reason": "A rezoning from RM-5 to B2-3 would allow a new 15-unit residential building on a vacant lot next to an existing 4-unit building.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ordinance would rezone 2342-46 W Jackson Blvd from RM-5 to B2-3 so the lot can be split and a new five-story, 15-unit residential building built at 2346. The existing four-unit building at 2342 would remain. Parking would be reduced under transit-served location rules."
+  "summary": "Ordinance would rezone 2342-46 W. Jackson Blvd. from RM-5 to B2-3 so the lot can be split and a new five-story, 15-unit residential building built beside the existing 4-unit building, with reduced parking at this transit-served location.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028671": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -1111,7 +1272,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "a982bf6e34d69915",
+  "content_hash": "aca6a051fdc81a50",
   "entities": [
    "2249 W Cermak LLC"
   ],
@@ -1127,14 +1288,20 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning would allow two additional dwelling units to be lawfully established in the basement of an existing residential building, increasing the home count.",
+  "relevance_reason": "The rezoning would allow two additional basement dwelling units in an existing residential building, adding homes.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "2249 W Cermak LLC seeks to rezone 2249 W Cermak Rd from B3-2 to B2-3 to lawfully establish two additional garden-level dwelling units in an existing 2-story building, bringing it from four to six units. No parking or commercial space is proposed."
+  "summary": "2249 W Cermak LLC seeks to rezone 2249 W Cermak Rd from B3-2 to B2-3 to lawfully establish two additional dwelling units in the basement of a building that now has four. The project would have six units and no parking.",
+  "zoning_from": [
+   "B3-2"
+  ],
+  "zoning_to": "B2-3"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028686": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [],
-  "content_hash": "20c1ecd7cebaf7a2",
+  "content_hash": "7d7ce2c6a6e333b9",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -1148,12 +1315,16 @@
   "housing_relevant": false,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The item rezones 4200 S. Dr. Martin Luther King Jr. Drive for a coin-operated laundromat with zero dwelling units and exclusively non-residential use, so it does not add, remove, or change homes there.",
+  "relevance_reason": "The item rezones a single commercial lot at 4200 S. Dr. Martin Luther King Jr. Drive to B3-2 for conversion of a dry cleaner to a coin-operated laundromat, with zero dwelling units and exclusively non-residential use, so it does not add, remove, or change homes there.",
   "source_quality": "none",
   "status": "screened_out",
-  "summary": ""
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028687": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -1161,7 +1332,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "ee8ee327af1746cc",
+  "content_hash": "c1c7d74aa4d4664d",
   "entities": [
    "Washington Legacy Group, LLC"
   ],
@@ -1170,32 +1341,38 @@
    "units": 1
   },
   "geography": {
-   "address": "814 W 69th St",
+   "address": "814 W. 69th Street",
    "community_area": "Englewood",
    "ward": 16
   },
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A rezoning from RS-3 residential to C1-1 would change the zoning of a building that keeps one second-floor dwelling unit, though the main purpose is a ground-floor hair salon.",
+  "relevance_reason": "A rezoning from a residential single-unit district to a neighborhood commercial district would change a residential building into a mixed-use building that keeps one dwelling unit.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Washington Legacy Group, LLC seeks to rezone 814 W. 69th St. from RS-3 to C1-1 to renovate a vacant two-story building into a first-floor hair salon with one dwelling unit upstairs. No off-street parking is proposed."
+  "summary": "Washington Legacy Group, LLC seeks to rezone 814 W. 69th St. from RS-3 to C1-1 to renovate a vacant two-story building. It would hold a first-floor hair salon and one second-floor dwelling unit.",
+  "zoning_from": [
+   "RS-3"
+  ],
+  "zoning_to": "C1-1"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028689": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
-   {
-    "detail": "ARO",
-    "id": "housing-agenda",
-    "via": "keyword"
-   },
    {
     "detail": "",
     "id": "ahpaa",
     "via": "model"
+   },
+   {
+    "detail": "",
+    "id": "housing-agenda",
+    "via": "model"
    }
   ],
-  "content_hash": "5ca35af6e147fb03",
+  "content_hash": "3b7cefaf209aef2b",
   "entities": [
    "MLV Properties, LLC"
   ],
@@ -1211,12 +1388,18 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning from B3-2 to B2-3 would allow construction of a 37-unit residential building with ground-floor commercial space on a vacant commercial site.",
+  "relevance_reason": "The rezoning would allow construction of a 37-unit residential building with ground-floor commercial space, and the project is subject to the ARO.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "MLV Properties, LLC seeks to rezone 2648-2658 W Lawrence Ave from B3-2 to B2-3 to build a 61-foot, 37-unit residential building with 13 parking spaces and 2,914 square feet of commercial space. The applicant also requests setback and lot-area variations, and the project is subject to the ARO."
+  "summary": "MLV Properties, LLC seeks to rezone 2648-2658 W Lawrence Ave from B3-2 to B2-3 to replace a vacant commercial building with a 37-unit, 61-foot residential building with 13 parking spaces and 2,914 square feet of commercial space.",
+  "zoning_from": [
+   "B3-2"
+  ],
+  "zoning_to": "B2-3"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028696": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -1224,7 +1407,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "5e7db7d77f24a98f",
+  "content_hash": "e19da2b85ce8efc6",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -1238,14 +1421,20 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning from C2-1 to B2-3 would allow a new 36-unit residential building on a site currently used for vehicle storage.",
+  "relevance_reason": "The rezoning would allow a new 36-unit residential building on a site now used for vehicle storage.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Applicant seeks to rezone 1745-1759 N. Cicero Ave. from C2-1 Motor Vehicle-Related Commercial to B2-3 Neighborhood Mixed-Use to build a 57-foot, 36-unit residential building with 34 parking spaces and no commercial space. Administrative adjustments and a rear setback variation are also requested."
+  "summary": "Ordinance to rezone 1745-1759 N. Cicero Ave. from C2-1 Motor Vehicle-Related Commercial District to B2-3 Neighborhood Mixed-Use District for a 36-unit, 57-foot residential building with 34 parking spaces and no commercial space. The applicant also seeks parking, window and setback relief.",
+  "zoning_from": [
+   "C2-1 Motor Vehicle-Related Commercial District"
+  ],
+  "zoning_to": "B2-3 Neighborhood Mixed-Use District"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028698": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [],
-  "content_hash": "d7f4326b40f6d64b",
+  "content_hash": "a3472e16a3edff27",
   "entities": [
    "Humboldt Park Health"
   ],
@@ -1261,41 +1450,41 @@
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning from B3-1 to B3-3 would allow a commercial/medical behavioral health clinic on a vacant lot, with no dwelling units involved.",
+  "relevance_reason": "The rezoning is for a commercial and medical behavioral health clinic on a vacant lot and includes no dwelling units.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Humboldt Park Health seeks to rezone 1140 N. California Ave. from B3-1 to B3-3 Community Shopping District to build a 3-story outpatient behavioral health clinic, urgent care center and medical office, with a 100% parking reduction sought."
+  "summary": "Humboldt Park Health seeks to rezone 1140 N. California Ave. from B3-1 to B3-3 Community Shopping District to build a 3-story outpatient behavioral health clinic, urgent care center, and medical office.",
+  "zoning_from": [],
+  "zoning_to": "B3-3 Community Shopping District"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028700": {
-  "categories": [
-   {
-    "detail": "",
-    "id": "ahpaa",
-    "via": "model"
-   }
-  ],
-  "content_hash": "f3ba09d7656b150b",
-  "entities": [
-   "4841 Lipps LLC"
-  ],
+  "amount": null,
+  "amount_kind": null,
+  "categories": [],
+  "content_hash": "fd17d47b9b588832",
+  "entities": [],
   "figures": {
    "affordable_units": null,
-   "units": 4
+   "units": null
   },
   "geography": {
-   "address": "4841 North Lipps Avenue",
-   "community_area": "Jefferson Park",
-   "ward": 45
+   "address": null,
+   "community_area": null,
+   "ward": null
   },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
+  "housing_relevant": false,
+  "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning would permit renovation of an existing mixed-use building to contain four dwelling units above a ground-floor commercial space.",
-  "source_quality": "scanned",
-  "status": "ok",
-  "summary": "4841 Lipps LLC seeks to rezone 4841 N. Lipps Ave. from B3-2 to C1-2 to renovate an existing mixed-use building into one ground-floor commercial space and four dwelling units. Ald. Gardiner has stated no objection."
+  "relevance_reason": "The ordinance reclassifies one site from B3-2 Community Shopping to C1-2 Neighborhood Commercial, both commercial districts, and the text mentions no dwelling units or residential use being added, removed, or changed.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028702": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -1303,7 +1492,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "a53fc5bf267db9d1",
+  "content_hash": "b6581928395ca24a",
   "entities": [
    "GT Alternatives LLC"
   ],
@@ -1319,15 +1508,23 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning from RS-3 to RT-4 would allow a vacant residential lot to be redeveloped with a three-unit residential building.",
+  "relevance_reason": "The rezoning from RS-3 to RT-4 would allow a new three-unit residential building on a vacant lot.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "GT Alternatives LLC seeks to rezone 718 N St Louis Ave from RS-3 to RT-4 to build a new two-story, three-unit residential building with a basement on a vacant 4,181 sq. ft. lot. No commercial space is proposed."
+  "summary": "GT Alternatives LLC seeks to rezone 718 N St Louis Ave from RS-3 to RT-4 to build a new two-story, three-unit residential building with a basement on a vacant 4,181 sq. ft. lot in the 27th Ward.",
+  "zoning_from": [
+   "RS-3"
+  ],
+  "zoning_to": "RT-4"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028704": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [],
-  "content_hash": "fdfc96e0ea63c047",
-  "entities": [],
+  "content_hash": "18f767ecfb6fd6cb",
+  "entities": [
+   "Great Expectations Learning Academy Incorporated"
+  ],
   "figures": {
    "affordable_units": null,
    "units": null
@@ -1340,12 +1537,16 @@
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning from C1-2 to C1-3 is solely to build a 19-space non-accessory surface parking lot serving a learning academy, with no dwelling units involved.",
+  "relevance_reason": "The rezoning from C1-2 to C1-3 only enables a 19-space non-accessory surface parking lot for a learning academy, with no housing units involved.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Rezones 1140-44 S California Ave from C1-2 to C1-3 Neighborhood Commercial District so the applicant can build a 19-space surface parking lot serving Great Expectations Learning Academy. No residential units are proposed."
+  "summary": "Rezones 1140-44 S California Ave from C1-2 to C1-3 Neighborhood Commercial District so the applicant can build a 19-space surface parking lot serving Great Expectations Learning Academy Incorporated.",
+  "zoning_from": [],
+  "zoning_to": "C1-3 Neighborhood Commercial District"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028726": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "rezoning",
@@ -1353,12 +1554,12 @@
     "via": "keyword"
    },
    {
-    "detail": "ARO",
+    "detail": "",
     "id": "housing-agenda",
-    "via": "keyword"
+    "via": "model"
    }
   ],
-  "content_hash": "a7962f2269b79015",
+  "content_hash": "08d32f4e45aa1106",
   "entities": [
    "Brinshore-Michaels Development, LLC"
   ],
@@ -1374,12 +1575,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The Type 1 zoning amendment would allow a 78-unit, 7-story residential building on a vacant site, using transit-served location relief tied to meeting 100% of the ARO requirement on-site.",
+  "relevance_reason": "A Type 1 zoning amendment would allow a new 78-unit, 7-story residential building on a vacant Near North Side site, with relief tied to ARO on-site compliance.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Applicant seeks a Type 1 rezoning from DR-3 to DR-3 at 537-547 W Oak St and 939-957 N Larrabee St to permit a 78-unit, 7-story residential building with 39 parking spaces. Relief is sought for Transit-Served Locations, with 100% of the ARO requirement met on-site. Site plans list Brinshore-Michaels Development, LLC."
+  "summary": "Brinshore-Michaels Development, LLC seeks a Type 1 rezoning of 537-547 W Oak St and 939-957 N Larrabee St, a DR-3 to DR-3 map change, to build a 78-unit, 7-story residential building with 39 parking spaces on a vacant lot.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028730": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "ARO",
@@ -1392,9 +1597,10 @@
     "via": "model"
    }
   ],
-  "content_hash": "83e033078b7ce969",
+  "content_hash": "43d713ce9114429a",
   "entities": [
-   "Laurel Homes 1, Inc."
+   "Laurel Homes 1, Inc.",
+   "Ashur Properties LLC"
   ],
   "figures": {
    "affordable_units": null,
@@ -1408,20 +1614,20 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A Type 1 rezoning from M1-2 to RT-4 on vacant lots would allow new residential two-flats where manufacturing zoning currently applies.",
+  "relevance_reason": "A rezoning from M1-2 to RT-4 on vacant parcels would allow construction of new two-unit residential buildings.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Laurel Homes 1, Inc. seeks to rezone three vacant parcels at 2328-34 W. Montana St. from M1-2 to RT-4 to build three 2-unit residential buildings. The applicant says the project is not subject to the ARO."
+  "summary": "Laurel Homes 1, Inc. seeks to rezone three vacant parcels at 2328-34 W. Montana St. from M1-2 to RT-4 to build three 2-unit residences. The owner is Ashur Properties LLC. The applicant marked the project as not subject to the ARO.",
+  "zoning_from": [
+   "M1-2"
+  ],
+  "zoning_to": "RT-4"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028731": {
-  "categories": [
-   {
-    "detail": "",
-    "id": "ahpaa",
-    "via": "model"
-   }
-  ],
-  "content_hash": "30d43d6ca7efbb06",
+  "amount": null,
+  "amount_kind": null,
+  "categories": [],
+  "content_hash": "a072a694b45f171e",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -1435,12 +1641,18 @@
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning changes a vacant motor vehicle repair shop lot from residential RT3.5 to commercial C2-1 for storage and trade-school training use, with no housing units proposed, though it removes residentially zoned land.",
+  "relevance_reason": "The rezoning would convert a vacant motor vehicle repair shop to storage and outdoor trade-school training use, with no housing units involved, although it removes RT3.5 residential zoning from the parcel.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Rezones 4301 W. Montrose Ave. from RT3.5 to C2-1 so the vacant repair shop can become indoor storage and an outdoor training area for a trade school at 4300 W. Montrose. No on-site parking and no housing proposed."
+  "summary": "Rezones 4301 W. Montrose Ave. from RT3.5 to C2-1 so a vacant one-story repair shop can become indoor storage and an outdoor training area for a trade school at 4300 W. Montrose Ave. No on-site parking is planned.",
+  "zoning_from": [
+   "RT3.5"
+  ],
+  "zoning_to": "C2-1"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028734": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -1448,7 +1660,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "0d97c1948a192ccc",
+  "content_hash": "8912a543e2096445",
   "entities": [
    "ZSD Barry LLC"
   ],
@@ -1464,12 +1676,18 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A residential rezoning from RS-3 to RT-4 would allow renovation and expansion of an existing three-unit residential building.",
+  "relevance_reason": "A residential rezoning from RS-3 to RT-4 would allow renovation and expansion of an existing three-unit building.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ordinance would rezone 2315-17 W Barry Ave from RS-3 to RT-4 so the applicant can renovate and add a rear addition to an existing three-unit building. The plans list ZSD Barry LLC as developer/owner; the unit count stays at three."
+  "summary": "Rezones 2315-17 W Barry Ave from RS-3 to RT-4 (App No. 23169T1). The applicant, ZSD Barry LLC, proposes a substantial renovation and rear addition to the existing three-unit residential building and seeks setback variations.",
+  "zoning_from": [
+   "RS-3"
+  ],
+  "zoning_to": "RT-4"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028735": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -1477,7 +1695,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "d49b62973871393c",
+  "content_hash": "58f3012003bcf3a5",
   "entities": [
    "Nabil M. Abou Baker",
    "Sara G. Jelinek"
@@ -1494,12 +1712,18 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A residential rezoning from RT-4 to RM-4.5 changes the zoning district for a home, with setback and open-space variations for a rear addition to an existing single-family house.",
+  "relevance_reason": "A residential rezoning from RT-4 to RM-4.5 for a single-family home to allow a rear addition replacement with setback variations.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Rezones 5482 S Ridgewood Ct from RT-4 to RM-4.5 so homeowners Nabil M. Abou Baker and Sara G. Jelinek can replace the home's rear addition, with setback and rear yard open space relief. No parking is provided and no new units are proposed."
+  "summary": "Applicants Nabil M. Abou Baker and Sara G. Jelinek seek to rezone 5482 S Ridgewood Ct from RT-4 to RM-4.5 to replace the two-story rear addition on their single-family home, with no parking and setback relief.",
+  "zoning_from": [
+   "RT-4"
+  ],
+  "zoning_to": "RM-4.5"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028738": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "Department of Housing",
@@ -1517,7 +1741,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "eaddef881323567e",
+  "content_hash": "6d95845c4fd494ec",
   "entities": [
    "TECHCO SAVVY INC.",
    "Department of Housing"
@@ -1527,19 +1751,25 @@
    "units": 3
   },
   "geography": {
-   "address": "4125 and 4127 W 5th Ave",
+   "address": "4125 and 4127 West 5th Avenue",
    "community_area": "West Garfield Park",
    "ward": 24
   },
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A Type 1 rezoning from RT-4 to RM-4.5 on city-owned vacant lots would allow two new three-unit residential buildings.",
+  "relevance_reason": "A rezoning of two city-owned vacant lots from RT-4 to RM-4.5 to build two three-unit residential buildings, with the applicant working with the Department of Housing to acquire the land.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "TechCo Savvy Inc. seeks to rezone city-owned vacant lots at 4125 and 4127 W 5th Ave from RT-4 to RM-4.5 to build two three-story buildings with three units each. It is working with the Department of Housing to acquire the lots, and also requests setback variations."
+  "summary": "TechCo Savvy Inc. seeks to rezone 4125 and 4127 W 5th Ave from RT-4 to RM-4.5 to build two three-story buildings with three units each, on vacant city-owned lots. The Department of Housing authorized the application.",
+  "zoning_from": [
+   "RT-4"
+  ],
+  "zoning_to": "RM-4.5"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028739": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -1547,9 +1777,10 @@
     "via": "model"
    }
   ],
-  "content_hash": "07920db8783697cc",
+  "content_hash": "f35f6b7f4918d6a6",
   "entities": [
-   "Midway 5312 S. Kenneth Avenue Condominium"
+   "Midway 5312 S. Kenneth Avenue Condominium",
+   "Mark Kupiec"
   ],
   "figures": {
    "affordable_units": null,
@@ -1563,12 +1794,18 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A rezoning of a residential lot with an existing multi-unit building from RS-2 to RT-4 affects the legal residential density and compliance of existing homes.",
+  "relevance_reason": "A residential rezoning of a lot with an existing multi-unit building from RS-2 to RT-4 to bring a three-unit building into zoning compliance.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Midway 5312 S. Kenneth Avenue Condominium seeks to rezone 5312 S. Kenneth Ave from RS-2 to RT-4 to unify the lot under one zoning designation and bring a building built contrary to approved plans into compliance. The use stays residential with 3 dwelling units."
+  "summary": "Midway 5312 S. Kenneth Avenue Condominium seeks to rezone 5312 S. Kenneth Avenue from RS-2 to RT-4 to unify the lot under one district. The existing three-unit residential building was built contrary to approved plans; attorney is Mark Kupiec.",
+  "zoning_from": [
+   "RS-2"
+  ],
+  "zoning_to": "RT-4"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028740": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -1576,7 +1813,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "1c1aa13b389e86f3",
+  "content_hash": "b6917b63bf66d84d",
   "entities": [
    "Coach House Properties LLC"
   ],
@@ -1585,19 +1822,25 @@
    "units": 5
   },
   "geography": {
-   "address": "2142 W 18th Pl",
+   "address": "2142 W 18th Place",
    "community_area": "Lower West Side",
    "ward": 25
   },
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A residential rezoning from RT-4 to RM-5 that legalizes an existing five-unit building and splits off a vacant lot for a new three-unit building.",
+  "relevance_reason": "A residential rezoning that would split a lot, legalize an existing five-unit building, and allow a new three-unit building on a vacant lot.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Coach House Properties LLC seeks to rezone 2142 W 18th Pl from RT-4 to RM-5 to split two lots. The change would legalize the existing five-unit building, while the vacant lot stays RT-4 for a new three-unit building."
+  "summary": "Coach House Properties LLC seeks to rezone 2142 W. 18th Place from RT-4 to RM-5 to split the lot, legalizing the existing five-unit building's setbacks and bulk. The vacant lot would stay RT-4 and get a three-unit building.",
+  "zoning_from": [
+   "RT-4"
+  ],
+  "zoning_to": "RM-5"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028741": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "planned development",
@@ -1605,7 +1848,7 @@
     "via": "keyword"
    }
   ],
-  "content_hash": "bccaf9537b80e140",
+  "content_hash": "71c5ec742cfc1184",
   "entities": [
    "Lake Park Associates, Inc."
   ],
@@ -1621,12 +1864,19 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning changes RS-3 residential land to C2-3 and then to an Institutional Planned Development whose permitted uses list no dwelling units, so it bears on residential land supply.",
+  "relevance_reason": "A rezoning from RS-3 residential to C2-3 and then an Institutional Planned Development removes residentially zoned land, though the permitted uses listed do not include housing.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Lake Park Associates, Inc. seeks to rezone about 353,394 square feet at 370 E Garfield Blvd, partly from RS-3 and C2-3, to an Institutional Planned Development. Permitted uses include university, hospital, medical, office, and commercial uses; no residential units are listed."
+  "summary": "Lake Park Associates, Inc. seeks to rezone about 353,394 square feet at 370 E Garfield Blvd from RS-3 and C2-3 to a new Institutional Planned Development. Permitted uses include hospital, medical, office, research, and retail.",
+  "zoning_from": [
+   "RS-3",
+   "C2-3"
+  ],
+  "zoning_to": "Institutional Planned Development"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028742": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -1634,7 +1884,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "3dff94f6c9d7b2e5",
+  "content_hash": "0a2116e5d64bdbc9",
   "entities": [
    "Theus Property Holding - 1933 N. Winchester L.L.C."
   ],
@@ -1650,25 +1900,31 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A residential rezoning that would legalize an existing fifth dwelling unit in a building now zoned for fewer units.",
+  "relevance_reason": "The rezoning would legalize an existing fifth dwelling unit in a residential building, affecting the permitted housing unit count.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Theus Property Holding - 1933 N. Winchester L.L.C. seeks to rezone 1933 N Winchester Ave from RS-3 to RM-4.5 so the existing fifth unit and rooftop dormer conform. No expansion is proposed; the building stays at five units and 29 feet."
+  "summary": "Theus Property Holding - 1933 N. Winchester L.L.C. seeks to rezone 1933 N Winchester Ave from RS-3 to RM-4.5 to bring an existing fifth residential unit and dormer into conformance. No expansion of the 2.5-story building is proposed.",
+  "zoning_from": [
+   "RS-3"
+  ],
+  "zoning_to": "RM-4.5"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028744": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
-   {
-    "detail": "ARO",
-    "id": "housing-agenda",
-    "via": "keyword"
-   },
    {
     "detail": "",
     "id": "ahpaa",
     "via": "model"
+   },
+   {
+    "detail": "",
+    "id": "housing-agenda",
+    "via": "model"
    }
   ],
-  "content_hash": "ca188d313fc0ef2b",
+  "content_hash": "487857b5b46fc16c",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -1682,12 +1938,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The Type 1 map amendment application would allow a mixed-use building with 40 residential units on a vacant commercial site and is subject to the ARO.",
+  "relevance_reason": "The Type 1 map amendment amends a prior approval to allow a 40-unit residential building, and the application says the project is subject to the ARO.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "3244-50 Bryn Mawr LLC seeks to amend a previously approved Type 1 map amendment (B2-3 to B2-3) at 3244-50 W Bryn Mawr Ave. It would allow a five-story building with 40 residential units, 1,490 sq. ft. of ground-floor commercial space and 25 parking spaces. The application says the project is subject to the ARO."
+  "summary": "3244-50 Bryn Mawr LLC seeks to amend a previously approved B2-3 Type 1 map amendment at 3244-50 W Bryn Mawr Ave. The change would allow a five-story building with 40 residential units, 1,490 sq. ft. of ground-floor commercial space and 25 parking spaces.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028747": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -1695,7 +1955,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "385d6de5d0e30a62",
+  "content_hash": "cd46129921070b38",
   "entities": [
    "Orlando Valdez"
   ],
@@ -1711,14 +1971,20 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A rezoning from RT-3.5 to RT-4 of a vacant lot to build a new single-family home adds a residential unit.",
+  "relevance_reason": "A rezoning of a vacant lot from RT-3.5 to RT 4 to allow construction of a new single-family home adds a residential unit.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Applicant Orlando Valdez seeks to rezone a vacant lot at 1001-03 S Campbell Ave from RT-3.5 to RT-4 to build one single-family residence with two parking spaces. Setback and parking relief are also requested."
+  "summary": "Orlando Valdez seeks to rezone vacant property at 1001-03 S Campbell Ave from RT-3.5 to RT 4 to build a one-unit single-family residence with two parking spaces. The application also requests setback and parking variations.",
+  "zoning_from": [
+   "RT-3.5"
+  ],
+  "zoning_to": "RT 4"
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028754": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [],
-  "content_hash": "e5027c3f270bfc5c",
+  "content_hash": "f5627fa2c2291661",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -1732,12 +1998,16 @@
   "housing_relevant": false,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning creates a Waterway Industrial Planned Development whose permitted uses are industrial, commercial, and vehicle-related with no dwelling units or residential use, so it does not add, remove, or change homes on the site.",
+  "relevance_reason": "The Waterway Industrial Planned Development rezoning permits only industrial, commercial, office (capped at 9,000 sq ft), parking, and vehicle-related uses with no dwelling units or residential use, so it does not add, remove, or change homes on the site.",
   "source_quality": "none",
   "status": "screened_out",
-  "summary": ""
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#Or2026-0028250": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -1745,9 +2015,9 @@
     "via": "model"
    }
   ],
-  "content_hash": "f75ad7128fccaea1",
+  "content_hash": "7098fdd30ecff7c1",
   "entities": [
-   "208 LaSalle Owner, LLC.",
+   "208 LaSalle Owner, LLC",
    "Brendan Reilly"
   ],
   "figures": {
@@ -1762,20 +2032,29 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The order waives city permit fees for converting floors of a historic downtown building into 167 residential units, 30% of them affordable at 60% AMI.",
+  "relevance_reason": "The order waives city permit fees for converting floors of a historic LaSalle Street building into 167 residential units, 30% of them affordable.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "An order from Ald. Brendan Reilly would waive city permit fees from 10/01/2026 through 7/01/2028 for adaptive reuse of floors 14-16 at 208 S. LaSalle St. into 167 dwelling units, 30% affordable at 60% AMI. Owner is 208 LaSalle Owner, LLC."
+  "summary": "An order by Alderman Brendan Reilly would waive city permit fees for adaptive reuse of floors 14-16 of the Continental and Commercial National Bank Building into 167 dwelling units, 30% affordable at 60% AMI. The owner is 208 LaSalle Owner, LLC.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#R2026-0028815": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
     "id": "healthy-homes",
     "via": "model"
+   },
+   {
+    "detail": "",
+    "id": "housing-agenda",
+    "via": "model"
    }
   ],
-  "content_hash": "05fd5f13a45ea4f8",
+  "content_hash": "14be36b7ac250da3",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -1789,12 +2068,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The resolution creates a task force on enforcing building codes against problem landlords and coordinating with housing and eviction court, which bears on habitability and tenant protections.",
+  "relevance_reason": "The resolution creates a task force to improve enforcement against problem landlords and chronic building-code violations, which bears on tenant habitability and housing court coordination.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "A City Council resolution would create a Problem Landlord and Housing Court Coordination Task Force. It would include aldermen, Mayor's Office, Buildings, Law and Circuit Court representatives. The task force would recommend improvements on repeat building code violations and report within 180 days of its first meeting."
+  "summary": "A City Council resolution would create a Problem Landlord and Housing Court Coordination Task Force to examine and recommend improvements to the City's response to chronic and repeat housing code violations. It would include Council, Mayor, Buildings, Law, and Circuit Court representatives and report within 180 days of its first meeting.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#A2026-0027377": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "Chicago Housing Authority",
@@ -1802,10 +2085,10 @@
     "via": "keyword"
    }
   ],
-  "content_hash": "8af749ab7f4b4cb3",
+  "content_hash": "558fde8858984516",
   "entities": [
-   "Chicago Housing Authority",
    "Hipolito (Paul) Roldan",
+   "Chicago Housing Authority",
    "Brandon Johnson"
   ],
   "figures": {
@@ -1820,12 +2103,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The item is a mayoral appointment of a Chicago Housing Authority commissioner, which bears on the governance of public housing.",
+  "relevance_reason": "The item is a mayoral appointment to the Chicago Housing Authority's board of commissioners, which governs public housing in Chicago.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Mayor Brandon Johnson has appointed Hipolito (Paul) Roldan as a Chicago Housing Authority commissioner for a term effective immediately and expiring July 7, 2031. The appointment goes to the City Council for consideration."
+  "summary": "Mayor Brandon Johnson has appointed Hipolito (Paul) Roldan as a Chicago Housing Authority commissioner, for a term effective immediately and expiring July 7, 2031. The appointment goes to City Council for consideration.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#A2026-0029000": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "Chicago Housing Authority",
@@ -1833,7 +2120,7 @@
     "via": "keyword"
    }
   ],
-  "content_hash": "5c9a75939f429cf8",
+  "content_hash": "92d30038f0651150",
   "entities": [
    "Vernell Givens",
    "Chicago Housing Authority"
@@ -1850,12 +2137,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The item is an appointment of a Chicago Housing Authority commissioner, which bears on governance of public housing in Chicago.",
+  "relevance_reason": "The item is an appointment of a Chicago Housing Authority commissioner, which bears on the governance of public housing.",
   "source_quality": "none",
   "status": "ok",
-  "summary": "The City Council Committee on Housing and Real Estate will consider the appointment of Vernell Givens as a Chicago Housing Authority Commissioner, with a term effective immediately and expiring August 31, 2031."
+  "summary": "The Committee on Housing and Real Estate will consider the appointment of Vernell Givens as a Chicago Housing Authority Commissioner, for a term effective immediately and expiring August 31, 2031.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#A2026-0029001": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "Chicago Housing Authority",
@@ -1863,7 +2154,7 @@
     "via": "keyword"
    }
   ],
-  "content_hash": "803af816576ed409",
+  "content_hash": "d492a449e6e9321c",
   "entities": [
    "Mary Gardner",
    "Chicago Housing Authority"
@@ -1880,12 +2171,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The item concerns an appointment to the Chicago Housing Authority board, the agency that runs public housing in Chicago.",
+  "relevance_reason": "The item concerns an appointment to the Chicago Housing Authority board, the body that governs the city's public housing.",
   "source_quality": "none",
   "status": "ok",
-  "summary": "The Committee on Housing and Real Estate will consider the appointment of Mary Gardner as a Commissioner of the Chicago Housing Authority, with a term effective immediately and expiring August 31, 2031."
+  "summary": "The Committee on Housing and Real Estate would consider the appointment of Mary Gardner as a Commissioner of the Chicago Housing Authority, with a term effective immediately and expiring August 31, 2031.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029007": {
+  "amount": 25000,
+  "amount_kind": "purchase price",
   "categories": [
    {
     "detail": "",
@@ -1898,7 +2193,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "2189f64ef6036175",
+  "content_hash": "a1bcfcdd90df78f3",
   "entities": [
    "MKB Business Strategies, LLC"
   ],
@@ -1914,12 +2209,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The ordinance sells a surplus school site to a developer that plans to demolish the building and build affordable single-family homes and three-flats.",
+  "relevance_reason": "The ordinance sells a former school site to a developer planning to demolish the building and build 13 single-family houses and 13 affordable three-flats.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ordinance would convey the former Henson Elementary campus parcel at 1335 S Springfield Ave to MKB Business Strategies, LLC for $25,000. MKB plans to demolish the building and build 13 single-family houses and 13 affordable three-flats in two phases."
+  "summary": "The City Council would accept MKB Business Strategies, LLC's $25,000 bid for the Board of Education property at 1335 S Springfield Ave. MKB plans to demolish the existing building and build 13 single-family houses and 13 affordable three-flats in two phases.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029008": {
+  "amount": 1,
+  "amount_kind": "purchase price per parcel",
   "categories": [
    {
     "detail": "mixed-income",
@@ -1935,19 +2234,9 @@
     "detail": "",
     "id": "property-taxes",
     "via": "model"
-   },
-   {
-    "detail": "",
-    "id": "state-agenda",
-    "via": "model"
-   },
-   {
-    "detail": "",
-    "id": "ahpaa",
-    "via": "model"
    }
   ],
-  "content_hash": "c5f637ec4e147f75",
+  "content_hash": "e1e80a3c736df3ef",
   "entities": [
    "Far South CDC"
   ],
@@ -1963,45 +2252,47 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "It authorizes sale of City-owned land for $1 to a nonprofit developer for a mixed-income, affordable housing redevelopment tied to Low-Income Housing Tax Credits and the ARO.",
+  "relevance_reason": "It authorizes sale of city-owned land to a nonprofit developer for a mixed-income housing redevelopment with affordable units financed under the LIHTC program.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Repeals and replaces ordinance O2026-0026567, authorizing sale of City-owned property at 11414 S Halsted St to Far South CDC for $1 for Morgan Park Commons. Phase 1 would build two mixed-income buildings with 70 units, 66 affordable; Phase 0 is site work funded by a $15 million state grant."
+  "summary": "Replaces a July 2026 ordinance to authorize selling the City-owned 11414 S Halsted St parcel to Far South CDC for $1 per tax parcel. Morgan Park Commons Phase 1 would add 70 mixed-income units, 66 affordable, with Phase 0 site work funded by a $15 million State grant.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029009": {
-  "categories": [
-   {
-    "detail": "ARO",
-    "id": "housing-agenda",
-    "via": "keyword"
-   }
-  ],
-  "content_hash": "a18f97685ce5f908",
+  "amount": 18006,
+  "amount_kind": "sale price",
+  "categories": [],
+  "content_hash": "9f0939bf1774cf9c",
   "entities": [
-   "ChiBlockBuilder",
-   "Reynoso Insulation, LLC"
+   "Reynoso Insulation, LLC",
+   "ChiBlockBuilder"
   ],
   "figures": {
    "affordable_units": null,
    "units": null
   },
   "geography": {
-   "address": "1948 W 63rd St",
+   "address": "1948 W. 63rd Street",
    "community_area": "West Englewood",
    "ward": 16
   },
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The sale of two vacant city-owned lots is for a commercial parking lot serving an adjacent business, with no housing units involved.",
+  "relevance_reason": "The sale of two vacant City-owned lots is for a commercial parking lot serving the buyer's adjacent business, with no housing units involved.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "The ordinance would sell two vacant City-owned lots at 1948 W 63rd St for $18,006 to Reynoso Insulation, LLC through ChiBlockBuilder. The buyer plans a commercial parking lot for its adjacent business, with no ARO units."
+  "summary": "The City would sell two vacant City-owned lots at 1948 W. 63rd St. to Reynoso Insulation, LLC for $18,006 through ChiBlockBuilder. The buyer plans a new commercial parking lot for its adjacent business.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029010": {
+  "amount": 315315,
+  "amount_kind": "sale price",
   "categories": [
    {
-    "detail": "ARO",
+    "detail": "Affordable Requirements Ordinance",
     "id": "housing-agenda",
     "via": "keyword"
    },
@@ -2012,11 +2303,11 @@
    },
    {
     "detail": "",
-    "id": "property-taxes",
+    "id": "ahpaa",
     "via": "model"
    }
   ],
-  "content_hash": "c598a1ba90d3fdac",
+  "content_hash": "3fc3d60747ff18d6",
   "entities": [
    "EGP Warren Apartments LLC",
    "ChiBlockBuilder"
@@ -2033,12 +2324,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The ordinance sells City-owned vacant land for a 20-unit residential building that includes four ARO-compliant affordable units.",
+  "relevance_reason": "The ordinance sells city-owned vacant land for a 20-unit residential building that includes four ARO-compliant affordable units.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "The City Council would approve the sale of two City-owned parcels at 2054 and 2058 W. Warren Blvd to EGP Warren Apartments LLC for $315,315 through ChiBlockBuilder. The buyer would build a 20-unit residential building including four ARO-compliant units."
+  "summary": "The City Council would approve the sale of city-owned lots at 2054 and 2058 W. Warren Blvd. to EGP Warren Apartments LLC through ChiBlockBuilder for $315,315. The buyer would build a 20-unit residential building with four Affordable Requirements Ordinance units.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029011": {
+  "amount": 203241,
+  "amount_kind": "sale price",
   "categories": [
    {
     "detail": "ARO",
@@ -2051,7 +2346,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "e39c9f41ec2f9217",
+  "content_hash": "deb0251105a19124",
   "entities": [
    "Click Development, LLC 4549 Indiana",
    "ChiBlockBuilder"
@@ -2068,12 +2363,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The ordinance sells a vacant City-owned lot for construction of a new 16-unit residential building that includes two ARO units.",
+  "relevance_reason": "The ordinance sells a city-owned vacant lot for construction of a new 16-unit residential building that includes two ARO units.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "City Council would approve sale of City-owned vacant land at 4549 S. Indiana Ave. to Click Development, LLC 4549 Indiana for $203,241 through ChiBlockBuilder. The buyer would build a 16-unit residential building, including two ARO units, with a deed restriction."
+  "summary": "Ordinance approving the sale of city-owned property at 4549 S. Indiana Ave. to Click Development, LLC 4549 Indiana through ChiBlockBuilder for $203,241. The buyer would build a 16-unit residential building with two ARO units and a six-space parking pad.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029012": {
+  "amount": 301028,
+  "amount_kind": "sale price",
   "categories": [
    {
     "detail": "ARO",
@@ -2084,36 +2383,35 @@
     "detail": "",
     "id": "social-housing",
     "via": "model"
-   },
-   {
-    "detail": "",
-    "id": "property-taxes",
-    "via": "model"
    }
   ],
-  "content_hash": "c52a13b418580502",
+  "content_hash": "bdb3a9912509f089",
   "entities": [
    "TK Palos LLC",
    "ChiBlockBuilder"
   ],
   "figures": {
    "affordable_units": null,
-   "units": 8
+   "units": null
   },
   "geography": {
-   "address": "4927 S Forrestville Ave",
-   "community_area": "Grand Boulevard",
-   "ward": 4
+   "address": "4927, 4935 and 4937 S Forrestville Ave",
+   "community_area": "Lake View",
+   "ward": 46
   },
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The ordinance sells city-owned vacant lots for construction of 16 residential units in Grand Boulevard, with ARO units required, and disposes of public land for housing.",
+  "relevance_reason": "The ordinance sells city-owned vacant land for construction of 16 residential units, including ARO units, in Grand Boulevard.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ordinance would sell three city-owned parcels at 4927, 4935 and 4937 S Forrestville Ave to TK Palos LLC for $301,028 through ChiBlockBuilder. The buyer would build two 8-unit masonry residential buildings; the project will contain ARO units."
+  "summary": "The City Council would approve the sale of three city-owned parcels on S Forrestville Ave to TK Palos LLC for $301,028 through ChiBlockBuilder. The buyer would build two 8-unit masonry residential buildings with garages and parking, with ARO units included.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029016": {
+  "amount": 250000,
+  "amount_kind": "sale price",
   "categories": [
    {
     "detail": "ARO",
@@ -2126,29 +2424,33 @@
     "via": "model"
    }
   ],
-  "content_hash": "661367d973dc5464",
+  "content_hash": "2d496adbcccb46d6",
   "entities": [
    "Iron Eagle LLC",
    "ChiBlockBuilder"
   ],
   "figures": {
    "affordable_units": null,
-   "units": null
+   "units": 9
   },
   "geography": {
-   "address": "3729, 3731 and 3733 S Giles Ave",
-   "community_area": "Portage Park",
-   "ward": 45
+   "address": null,
+   "community_area": null,
+   "ward": null
   },
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "It is a sale of three City-owned residential lots for construction of new multi-unit housing under the ChiBlockBuilder program.",
+  "relevance_reason": "The item is a sale of three City-owned lots for construction of nine new residential dwelling units under the ChiBlockBuilder program.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "The City would sell three vacant lots at 3729, 3731 and 3733 S Giles Ave in Douglas to Iron Eagle LLC for $250,000 under ChiBlockBuilder. The buyer would build three three-story buildings with three 3-bedroom units each, with no ARO units."
+  "summary": "The City would sell three vacant lots at 3729, 3731 and 3733 S Giles Ave to Iron Eagle LLC for $250,000 under ChiBlockBuilder. Iron Eagle plans three three-story buildings with three 3-bedroom units each, nine homes total, with no ARO units.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029017": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -2156,10 +2458,10 @@
     "via": "model"
    }
   ],
-  "content_hash": "a7937ec7da3737cc",
+  "content_hash": "3a2850440d5f6ac7",
   "entities": [
-   "Department of Planning and Development",
    "1509 E. 67th PL LLC",
+   "Department of Planning and Development",
    "ChiBlockBuilder"
   ],
   "figures": {
@@ -2167,19 +2469,23 @@
    "units": null
   },
   "geography": {
-   "address": "1509 E. 67th Pl",
+   "address": "1509 E 67th Pl",
    "community_area": "South Shore",
    "ward": 5
   },
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "It approves the sale of a vacant City-owned lot for market-rate development through the ChiBlockBuilder program, which is disposition of public land for housing.",
+  "relevance_reason": "The item approves the sale of vacant City-owned land for market-rate residential development through the ChiBlockBuilder program.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "The City Council would approve sale of vacant City-owned land at 1509 E. 67th Pl to 1509 E. 67th PL LLC for market-rate development, via the Department of Planning and Development's ChiBlockBuilder program, subject to a deed restriction and closing conditions."
+  "summary": "The City Council would approve selling vacant City-owned property at 1509 E 67th Pl to 1509 E. 67th PL LLC through ChiBlockBuilder for market-rate development, subject to a deed restriction and Department of Planning and Development approval of plans, budget and permits.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029018": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -2187,10 +2493,9 @@
     "via": "model"
    }
   ],
-  "content_hash": "0eceee59bbbdecae",
+  "content_hash": "0202784d971c1d94",
   "entities": [
-   "Medlock Development LLC",
-   "ChiBlockBuilder"
+   "Medlock Development LLC"
   ],
   "figures": {
    "affordable_units": null,
@@ -2204,14 +2509,18 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The ordinance would sell vacant City-owned land for a 15-unit new-construction residential project, a disposition of public land for housing.",
+  "relevance_reason": "It approves the sale of city-owned vacant lots for a 15-unit new construction residential project through the ChiBlockBuilder program.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "The City Council would approve the as-is sale of City-owned lots at 4849, 4853 and 4857 W West End Ave to Medlock Development LLC through ChiBlockBuilder, for market-rate development. The disclosure describes a 15-unit new construction project."
+  "summary": "City Council would approve the sale of city-owned property at 4849, 4853 and 4857 W West End Ave to Medlock Development LLC through ChiBlockBuilder for market-rate development. The buyer's disclosure describes a 15-unit new construction project.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029020": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [],
-  "content_hash": "e54635727e1028a6",
+  "content_hash": "143610fe09ec0eb7",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -2225,14 +2534,18 @@
   "housing_relevant": false,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The ordinance sells vacant City-owned lots to buyers for community open space under a deed restriction requiring open space improvements, not for building, preserving, or regulating homes.",
+  "relevance_reason": "The item sells vacant City-owned lots to buyers for community open space under a deed restriction requiring open space improvements, with no homes built, preserved, or regulated, and no change to residential use.",
   "source_quality": "none",
   "status": "screened_out",
-  "summary": ""
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#a-proposed-order-authorizing-the-corporation-counsel-to-enter-into-and-e-ed66b79": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [],
-  "content_hash": "f58b8282165c5225",
+  "content_hash": "2541c58405f5a3fe",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -2246,14 +2559,18 @@
   "housing_relevant": false,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "This item is a settlement of sixteen lawsuits against police officers, such as Guevara, with no connection to building, financing, regulating, or taxing homes or tenants' rights.",
+  "relevance_reason": "This item authorizes settlement of sixteen lawsuits against city personnel with a payout of $260,814,000, which does not involve building, financing, regulating, or taxing homes or tenants' rights.",
   "source_quality": "none",
   "status": "screened_out",
-  "summary": ""
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#a-substitute-ordinance-approving-the-execution-of-the-66th-amending-agre-7b92f60": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [],
-  "content_hash": "024025c4b776964c",
+  "content_hash": "9cc02658a605ef95",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -2267,12 +2584,16 @@
   "housing_relevant": false,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The item concerns grant funds and administrative services for the Small Business Improvement Fund, which assists small businesses rather than building, financing, preserving, or regulating homes or residents' rights.",
+  "relevance_reason": "The SBIF program provides grants to small businesses for storefront and commercial property improvements in redevelopment areas, not to homes or residents' housing rights, so it does not bear on housing.",
   "source_quality": "none",
   "status": "screened_out",
-  "summary": ""
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-a-redevelopment-agreement-with-690ee1e": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "TIF",
@@ -2280,7 +2601,7 @@
     "via": "keyword"
    }
   ],
-  "content_hash": "fc06edc68cf4d113",
+  "content_hash": "6cfd223efe0d0dd9",
   "entities": [
    "North Lawndale Catalyst Initiative, NFP",
    "Department of Planning and Development"
@@ -2297,14 +2618,18 @@
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The item funds a linen services project, which appears to be commercial or economic development, and the material mentions no homes.",
+  "relevance_reason": "The item funds a Filmore Linen Services project, which appears to be a commercial or economic development project, and the material mentions no housing.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "Ordinance authorizing a Redevelopment Agreement with North Lawndale Catalyst Initiative, NFP for up to $5,000,000 in HED funds and up to $5,000,000 in TIF assistance for the Filmore Linen Services project at 920-922 S. Campbell Avenue (28th Ward)."
+  "summary": "Ordinance authorizing a Redevelopment Agreement with North Lawndale Catalyst Initiative, NFP for up to $5,000,000 in HED funds and up to $5,000,000 in TIF assistance for the Filmore Linen Services project at 920-922 S. Campbell Avenue (28th Ward).",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-a-redevelopment-agreement-with-e11e35b": {
+  "amount": 7300000,
+  "amount_kind": "HED bond funds",
   "categories": [],
-  "content_hash": "39fd08a62b0fb920",
+  "content_hash": "358264b80b69cc6e",
   "entities": [
    "BTH Development, NFP",
    "Department of Planning and Development"
@@ -2321,12 +2646,16 @@
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The item funds redevelopment of a youth center, a community facility, and the material does not mention any housing units.",
+  "relevance_reason": "The item funds a youth center redevelopment at Altgeld Gardens, a community facility, and the material describes no housing units or housing activity.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "Ordinance authorizing a Redevelopment Agreement with BTH Development, NFP to provide up to $7,300,000 in Housing and Economic Development Bond funds for redevelopment of the Altgeld Gardens Youth Center at 13122 S. Ellis Avenue (10th Ward)."
+  "summary": "Ordinance authorizing a Redevelopment Agreement with BTH Development, NFP for up to $7,300,000 in Housing and Economic Development Bond (HED) funds to redevelop the Altgeld Gardens Youth Center at 13122 S. Ellis Avenue (10th Ward).",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-a-redevelopment-agreement-with-e529a0d": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "",
@@ -2334,10 +2663,10 @@
     "via": "model"
    }
   ],
-  "content_hash": "f2e86864bae1c3e5",
+  "content_hash": "156bcc2c06afa363",
   "entities": [
-   "Department of Planning and Development",
-   "Hudson Michigan Avenue Owner LLC"
+   "Hudson Michigan Avenue Owner LLC",
+   "Department of Planning and Development"
   ],
   "figures": {
    "affordable_units": null,
@@ -2351,12 +2680,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The ordinance would provide city HED loan and grant funds to a redevelopment project called Hudson House, which appears to be a housing project, though the material does not describe its use.",
+  "relevance_reason": "The ordinance would provide City HED loan and grant funds to a project called Hudson House, which appears to be a housing development financed by the City.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "Ordinance authorizing a Redevelopment Agreement with Hudson Michigan Avenue Owner LLC for the Hudson House project at 2222 S. Michigan Avenue in the 3rd Ward. It provides up to $5,000,000 in HED city loan funds and up to $10,000,000 in HED city grant funds."
+  "summary": "Ordinance authorizing a Redevelopment Agreement with Hudson Michigan Avenue Owner LLC for Housing and Economic Development (HED) funds for the Hudson House project at 2222 S. Michigan Avenue: up to $5,000,000 as a City loan and up to $10,000,000 as a City grant.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-an-intergovernmental-agreement-191a042": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "TIF",
@@ -2364,7 +2697,7 @@
     "via": "keyword"
    }
   ],
-  "content_hash": "c8aa0c7bfca36d10",
+  "content_hash": "d4e4778d6c9a95c7",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -2378,12 +2711,16 @@
   "housing_relevant": false,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The item provides TIF funds for improvements to an elementary school, which does not involve building, financing, preserving, regulating, taxing, or demolishing homes or the rights of residents.",
+  "relevance_reason": "The item provides TIF funds for improvements at an elementary school, which is a public institutional use with no housing built, financed, preserved, regulated, or demolished.",
   "source_quality": "none",
   "status": "screened_out",
-  "summary": ""
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-an-intergovernmental-agreement-616e994": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "TIF",
@@ -2391,7 +2728,7 @@
     "via": "keyword"
    }
   ],
-  "content_hash": "3efa34d6fb2231bf",
+  "content_hash": "db32d8e34079cd88",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -2405,14 +2742,18 @@
   "housing_relevant": false,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The item provides TIF funds for capital improvements at an elementary school, which is an institutional use with no dwelling units or residential regulation involved.",
+  "relevance_reason": "The item provides TIF funds for capital improvements at a public elementary school, which is an educational facility and not about homes, housing finance, or residential rights.",
   "source_quality": "none",
   "status": "screened_out",
-  "summary": ""
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#one-1-proposed-order-authorizing-the-payment-of-various-small-claims-aga-7140ea7": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [],
-  "content_hash": "19cb9adaed354c18",
+  "content_hash": "da2795220a47fb93",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -2426,14 +2767,18 @@
   "housing_relevant": false,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The item is a routine order authorizing payment of small claims against the City, which does not bear on homes, housing finance, or tenants' rights.",
+  "relevance_reason": "This item authorizes payments to settle lawsuits against the City, such as the Guevara-related cases, and does not build, finance, regulate, tax, or demolish homes or affect tenants' rights.",
   "source_quality": "none",
   "status": "screened_out",
-  "summary": ""
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#one-1-proposed-orders-denying-the-payment-of-various-small-claims-agains-235e13b": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [],
-  "content_hash": "009b8de3de4c09ab",
+  "content_hash": "4161655d6bda3a99",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -2447,14 +2792,18 @@
   "housing_relevant": false,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The item denies payment of various small claims against the City, which is a routine claims-settlement matter with no bearing on building, financing, regulating, or taxing homes or tenants' rights.",
+  "relevance_reason": "The item denies payment of various small claims against the City and does not concern homes, housing finance, tax, regulation, or residents' rights in housing.",
   "source_quality": "none",
   "status": "screened_out",
-  "summary": ""
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5#O2026-0026950": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [],
-  "content_hash": "59993eb723f1e32f",
+  "content_hash": "e173cc360bb81d02",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -2468,12 +2817,16 @@
   "housing_relevant": false,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "This ordinance amends charitable solicitation permit rules for the public way and does not concern building, financing, regulating, or taxing homes or tenant rights.",
+  "relevance_reason": "The ordinance concerns permits for charitable solicitation on the public way and reassigns the permitting authority from the committee on finance to the Commissioner of Transportation, with no bearing on homes, housing, or residents' housing rights.",
   "source_quality": "none",
   "status": "screened_out",
-  "summary": ""
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5#O2026-0028750": {
+  "amount": 11000000,
+  "amount_kind": "DOH multi-family loan",
   "categories": [
    {
     "detail": "Department of Housing",
@@ -2487,18 +2840,19 @@
    },
    {
     "detail": "",
-    "id": "state-agenda",
+    "id": "property-taxes",
     "via": "model"
    },
    {
     "detail": "",
-    "id": "property-taxes",
+    "id": "state-agenda",
     "via": "model"
    }
   ],
-  "content_hash": "d82e861e0c5177a8",
+  "content_hash": "1d5e400b6ec35062",
   "entities": [
    "Harvest Homes II Apartments, LLC",
+   "The People's Community Development Association of Chicago",
    "Department of Housing"
   ],
   "figures": {
@@ -2506,19 +2860,23 @@
    "units": 50
   },
   "geography": {
-   "address": "3415\u20133449 West Jackson Blvd. and 3414\u20133456 West Fifth Ave.",
+   "address": "3415-3449 W Jackson Blvd and 3414-3456 W Fifth Ave",
    "community_area": "East Garfield Park",
    "ward": 28
   },
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The ordinance authorizes city loan funds, TIF assistance, and sale of city-owned lots for a 50-unit affordable rental development.",
+  "relevance_reason": "The ordinance provides city loan funds, TIF assistance and city-owned land for a 50-unit affordable rental development.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Authorizes a Department of Housing loan of up to $11,000,000 and up to $11,500,000 in Midwest TIF funds to Harvest Homes II Apartments, LLC. It also conveys three city lots for $1 each to PCDAC for a 50-unit affordable rental building."
+  "summary": "Ordinance authorizing a Department of Housing multi-family loan of up to $11 million, up to $11.5 million in Midwest TIF funds, and sale of three city lots for $1 each to build a 50-unit affordable rental building. Harvest Homes II Apartments, LLC, with NHP Foundation and The People's Community Development Association of Chicago, is the developer.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-board:2026-10-16#accounting-payments-reports": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA Board",
@@ -2526,8 +2884,42 @@
     "via": "body"
    }
   ],
-  "content_hash": "77a8c58c9c188fa8",
+  "content_hash": "9cc901695363248c",
   "entities": [
+   "IHDA"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "This is a routine informational accounting payments report from IHDA staff, with no specific housing program, development, or policy action.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "IHDA Board agenda item for an Accounting Payments Report, presented by M. Jalaluddin under New Business at the October 16, 2026 board meeting.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "ihda:ihda-board:2026-10-16#authority-financial-statements": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "IHDA Board",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "45121bcfe5907785",
+  "entities": [
+   "IHDA",
    "Illinois Housing Development Authority"
   ],
   "figures": {
@@ -2539,46 +2931,19 @@
    "community_area": null,
    "ward": null
   },
-  "housing_relevant": false,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "This is a routine informational accounting payments report on IHDA's internal finances, with no stated bearing on specific homes, financing, or tenants.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "IHDA Board's new business includes an Accounting Payments Report presented by M. Jalaluddin. The retrieved text is the full October 16, 2026 meeting agenda and gives no details on the report's contents."
- },
- "ihda:ihda-board:2026-10-16#authority-financial-statements": {
-  "categories": [
-   {
-    "detail": "IHDA Board",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "b02cab811e099699",
-  "entities": [
-   "IHDA",
-   "Illinois Housing Development Authority",
-   "M. Jalaluddin"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "IHDA's financial statements report on the finances of the state housing finance agency, but the item itself is a routine informational report with no specific housing action.",
+  "relevance_reason": "The item is the Illinois Housing Development Authority's financial statements report, which concerns the finances of the state's housing finance agency, though it has no specific project.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "The IHDA Board receives the Authority Financial Statements as a written report, presented by M. Jalaluddin. The retrieved text is the full October 16, 2026 board agenda and gives no details on the statements."
+  "summary": "Informational report of the Illinois Housing Development Authority's financial statements, presented to the IHDA Board by M. Jalaluddin at the October 16, 2026 meeting.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-board:2026-10-16#communications-report": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA Board",
@@ -2586,10 +2951,9 @@
     "via": "body"
    }
   ],
-  "content_hash": "cfe513893e697139",
+  "content_hash": "af7391fb4323b9f1",
   "entities": [
-   "Illinois Housing Development Authority",
-   "J. Frevert"
+   "IHDA"
   ],
   "figures": {
    "affordable_units": null,
@@ -2603,12 +2967,16 @@
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The item is a routine informational Communications Report on the IHDA Board agenda and does not itself act on any housing development, financing, or policy.",
+  "relevance_reason": "This is a routine informational Communications Report on the IHDA board agenda and does not itself concern any specific housing action.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "A Communications Report presented by J. Frevert as an informational written report at the IHDA Board's October 16, 2026 meeting. The retrieved text is the full meeting agenda and gives no details on the report's content."
+  "summary": "Informational Communications Report presented by J. Frevert at the IHDA Board's October 16, 2026 meeting.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-board:2026-10-16#court-based-rental-assistance-program": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA Board",
@@ -2621,10 +2989,10 @@
     "via": "model"
    }
   ],
-  "content_hash": "12478280b7db8393",
+  "content_hash": "3c2e1871f5896eaa",
   "entities": [
-   "Illinois Housing Development Authority",
-   "P. Sellke"
+   "IHDA",
+   "Illinois Housing Development Authority"
   ],
   "figures": {
    "affordable_units": null,
@@ -2638,12 +3006,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A court-based rental assistance program bears on helping tenants facing eviction stay housed, and it is presented to the IHDA Board.",
+  "relevance_reason": "A Court-Based Rental Assistance Program is a rental assistance and eviction-prevention item presented to the IHDA Board.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "The IHDA Board agenda lists a report on the Court-Based Rental Assistance Program, presented by P. Sellke. The retrieved text gives no details on program design, funding, or scope beyond the title."
+  "summary": "IHDA staff (P. Sellke) will present on the Court-Based Rental Assistance Program at the October 16, 2026 board meeting. The agenda gives only the title for this item.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-board:2026-10-16#external-relations-report": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA Board",
@@ -2651,10 +3023,10 @@
     "via": "body"
    }
   ],
-  "content_hash": "1d440aa5e57f7d95",
+  "content_hash": "bc6b99bc4c118c54",
   "entities": [
    "IHDA",
-   "B. Kiley"
+   "Illinois Housing Development Authority"
   ],
   "figures": {
    "affordable_units": null,
@@ -2668,12 +3040,16 @@
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The item is a routine written External Relations Report from IHDA staff, and the retrieved text is only the full board agenda outline with no housing action described for this item.",
+  "relevance_reason": "The item is a routine informational External Relations Report from IHDA staff, with no specific housing action described.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "Informational External Relations Report on the IHDA Board's October 16, 2026 agenda, presented by B. Kiley. The material provides no details about its content."
+  "summary": "IHDA staff member B. Kiley presents the External Relations Report at the October 16, 2026 IHDA Board meeting.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-board:2026-10-16#investment-holdings-report": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA Board",
@@ -2681,7 +3057,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "8349a898404dedef",
+  "content_hash": "f43bdfc0e2cac1c3",
   "entities": [
    "IHDA",
    "Illinois Housing Development Authority"
@@ -2695,15 +3071,19 @@
    "community_area": null,
    "ward": null
   },
-  "housing_relevant": false,
+  "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "This is an informational written report on IHDA's investment holdings, with no specific housing development, program, or policy action described in the material.",
+  "relevance_reason": "IHDA's Investment Holdings Report covers the finances of the state housing finance agency, which funds affordable housing, though the item itself has little detail.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "Informational Investment Holdings Report to the IHDA Board, presented by S. Martin. The retrieved text is the full October 16, 2026 board agenda and gives no details about the report itself."
+  "summary": "Written informational report on the Illinois Housing Development Authority's investment holdings, presented by S. Martin at the October 16, 2026 IHDA Board meeting.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-board:2026-10-16#ncsha-annual-conference-report-out": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA Board",
@@ -2711,11 +3091,10 @@
     "via": "body"
    }
   ],
-  "content_hash": "f2ccf40885942372",
+  "content_hash": "f8a4ef78969cbca7",
   "entities": [
    "IHDA",
-   "NCSHA",
-   "K. Faust"
+   "NCSHA"
   ],
   "figures": {
    "affordable_units": null,
@@ -2729,12 +3108,16 @@
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "This is a conference report-out presentation by IHDA staff with no stated action on housing production, financing, regulation, or tenants.",
+  "relevance_reason": "This item is a presentation reporting on a national housing finance conference and does not itself act on any housing development, financing, or policy.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "K. Faust will report to the IHDA Board on the NCSHA Annual Conference. The retrieved text is the full October 16, 2026 board agenda and gives no details on the presentation itself."
+  "summary": "K. Faust will report to the IHDA Board on the NCSHA Annual Conference as a presentation item on the October 16, 2026 agenda.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-board:2026-10-16#quarterly-operational-excellence-report": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA Board",
@@ -2742,10 +3125,9 @@
     "via": "body"
    }
   ],
-  "content_hash": "b5ccb4bcd6a432dc",
+  "content_hash": "df4ed07ad026b25b",
   "entities": [
-   "Illinois Housing Development Authority",
-   "C. Jerry"
+   "IHDA"
   ],
   "figures": {
    "affordable_units": null,
@@ -2759,12 +3141,16 @@
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The item is an internal informational report on IHDA's operations, and the retrieved text gives no details tying it to specific housing programs or developments.",
+  "relevance_reason": "The item is an internal IHDA operational report, and the retrieved text is a full board agenda that gives no details on what the report covers.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "IHDA staff (C. Jerry) will present the Quarterly Operational Excellence Report to the IHDA Board at its October 16, 2026 meeting. No further detail on the report's contents is provided."
+  "summary": "IHDA Board receives the Quarterly Operational Excellence Report, presented by C. Jerry, under written reports on the October 16, 2026 agenda.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-board:2026-10-16#quarterly-resolution-ratifying-permitted-financial-activities-under-the-70070d8": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA Board",
@@ -2772,7 +3158,76 @@
     "via": "body"
    }
   ],
-  "content_hash": "2d91ef863dad20ad",
+  "content_hash": "d987dab282da06d5",
+  "entities": [
+   "Illinois Housing Development Authority",
+   "IHDA"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "IHDA's quarterly ratification of permitted financial activities under its Financial Management Policy concerns the state housing finance agency's financing operations.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The IHDA Board would ratify, in a quarterly resolution, the 'Permitted Financial Activities' carried out under the Authority's Financial Management Policy. It is presented by S. Bhimani on the consent agenda.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "ihda:ihda-board:2026-10-16#resolution-authorizing-a-change-of-general-partner-ownership-interest-am-a6e7349": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "IHDA Board",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "655399ce19a794b9",
+  "entities": [
+   "IHDA",
+   "Illinois Housing Development Authority",
+   "The Glen"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item concerns IHDA-regulated affordable rental housing, changing the general partner, regulatory agreement, and property manager for The Glen.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "IHDA Board would authorize a change of general partner ownership interest, an amendment to the regulatory agreement, and a change in property management for The Glen (40-2246). Presented by K. Padgitt as an asset management matter.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "ihda:ihda-board:2026-10-16#resolution-authorizing-a-conduit-loan-51-500-000-for-pheasant-ridge-and-e0dd243": {
+  "amount": 51500000,
+  "amount_kind": "conduit loan",
+  "categories": [
+   {
+    "detail": "IHDA Board",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "1ee172c93711017b",
   "entities": [
    "IHDA",
    "Illinois Housing Development Authority"
@@ -2789,74 +3244,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "This is an IHDA board resolution ratifying permitted financial activities under the agency's Financial Management Policy, which governs how the state housing finance agency manages its funds.",
+  "relevance_reason": "The item authorizes a $51.5 million IHDA conduit loan to finance the Pheasant Ridge and Hunter Apartments multifamily development.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "IHDA's board will vote on a quarterly resolution ratifying 'Permitted Financial Activities' under the Authority's Financial Management Policy. The material gives no further detail; S. Bhimani is listed as presenter."
- },
- "ihda:ihda-board:2026-10-16#resolution-authorizing-a-change-of-general-partner-ownership-interest-am-a6e7349": {
-  "categories": [
-   {
-    "detail": "IHDA Board",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "5f700cdeedf1136d",
-  "entities": [
-   "IHDA",
-   "Illinois Housing Development Authority",
-   "The Glen",
-   "K. Padgitt"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The item concerns changes to ownership, the regulatory agreement, and property management of The Glen, an IHDA-financed multifamily development.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "IHDA Board would authorize a change of general partner ownership interest, an amendment to the regulatory agreement, and a change in property management for The Glen (40-2246). Staff presenter is K. Padgitt; no other details are provided."
- },
- "ihda:ihda-board:2026-10-16#resolution-authorizing-a-conduit-loan-51-500-000-for-pheasant-ridge-and-e0dd243": {
-  "categories": [
-   {
-    "detail": "IHDA Board",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "c1914a34af4cb73d",
-  "entities": [
-   "Illinois Housing Development Authority",
-   "Pheasant Ridge and Hunter Apartments"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The item authorizes IHDA to provide a $51.5 million conduit loan to finance a multifamily rental development, Pheasant Ridge and Hunter Apartments.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "IHDA Board would authorize a $51,500,000 conduit loan for Pheasant Ridge and Hunter Apartments (PID-12789). The material gives no unit counts, developer name, or site details; it appears on the October 16, 2026 agenda under Multifamily Finance, presented by T. Krouse."
+  "summary": "The IHDA Board would adopt a resolution authorizing a $51,500,000 conduit loan for Pheasant Ridge and Hunter Apartments (PID-12789). The item is presented by T. Krouse of Multifamily Finance.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-board:2026-10-16#resolution-authorizing-agreement-with-mythics-inc-for-business-process-c-c706ea5": {
+  "amount": 1194193,
+  "amount_kind": "contract not-to-exceed",
   "categories": [
    {
     "detail": "IHDA Board",
@@ -2864,9 +3261,9 @@
     "via": "body"
    }
   ],
-  "content_hash": "1f9af01fd648aa01",
+  "content_hash": "9fc74e837d2346db",
   "entities": [
-   "Illinois Housing Development Authority",
+   "IHDA",
    "Mythics, Inc."
   ],
   "figures": {
@@ -2881,12 +3278,16 @@
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "This is an IHDA internal procurement of business process co-sourcing services from a technology vendor, not an action on housing production, finance, or tenant matters.",
+  "relevance_reason": "This is an IT/business process co-sourcing services contract for IHDA's internal operations, not a housing financing, regulatory, or development action.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "IHDA Board would authorize an agreement with Mythics, Inc. for Business Process Co-Sourcing (BPC) services in an amount not to exceed $1,194,193. Presented by S. Runkle as a procurement matter."
+  "summary": "IHDA Board resolution authorizing an agreement with Mythics, Inc. for Business Process Co-Sourcing (BPC) services, in an amount not to exceed $1,194,193. Presented by S. Runkle as a procurement matter.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-board:2026-10-16#resolution-authorizing-return-and-reallocation-of-low-income-housing-tax-0b609a1": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA Board",
@@ -2894,8 +3295,9 @@
     "via": "body"
    }
   ],
-  "content_hash": "1b85fe868c3c8e10",
+  "content_hash": "bd740937cdef7a2c",
   "entities": [
+   "IHDA",
    "Illinois Housing Development Authority"
   ],
   "figures": {
@@ -2910,12 +3312,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The resolution concerns returning and reallocating Low Income Housing Tax Credits, which finance affordable rental developments.",
+  "relevance_reason": "The item concerns returning and reallocating Low Income Housing Tax Credits, which finance affordable rental developments.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "IHDA Board would authorize the return and reallocation of Low Income Housing Tax Credits for nine developments (resolution 2026-10-IHDA-159, presented by D. Hilmer). The agenda text does not name the developments or give amounts."
+  "summary": "The IHDA Board would authorize the return and reallocation of Low Income Housing Tax Credits for nine developments. The item is on the consent agenda as resolution 2026-10-IHDA-159, presented by D. Hilmer.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-board:2026-10-16#resolution-authorizing-second-amendment-of-standby-bond-purchase-agreeme-de6b625": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA Board",
@@ -2923,10 +3329,10 @@
     "via": "body"
    }
   ],
-  "content_hash": "031cdd6548b839bd",
+  "content_hash": "81a804a60622c87a",
   "entities": [
-   "Illinois Housing Development Authority",
-   "M. Babcock"
+   "IHDA",
+   "Illinois Housing Development Authority"
   ],
   "figures": {
    "affordable_units": null,
@@ -2940,12 +3346,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "It amends a standby bond purchase agreement tied to IHDA Housing Bonds, which finance the authority's housing programs.",
+  "relevance_reason": "It concerns the financing of IHDA's Housing Bonds, 2017 Series A-2, a state housing finance instrument that funds affordable housing.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "The IHDA Board would authorize a second amendment to the Standby Bond Purchase Agreement for Housing Bonds, 2017 Series A-2. The agenda gives no terms or counterparties; M. Babcock is listed as presenter (resolution 2026-10-IHDA-160)."
+  "summary": "The IHDA Board is asked to authorize a second amendment to the Standby Bond Purchase Agreement for Housing Bonds, 2017 Series A-2. It is on the consent agenda as item 2026-10-IHDA-160, presented by M. Babcock.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-board:2026-10-16#resolution-authorizing-the-issuance-of-not-to-exceed-500-000-000-revenue-633fbb6": {
+  "amount": 500000000,
+  "amount_kind": "revenue bond cap",
   "categories": [
    {
     "detail": "IHDA Board",
@@ -2953,10 +3363,10 @@
     "via": "body"
    }
   ],
-  "content_hash": "aa806a3a9261ed23",
+  "content_hash": "feb8dc3d1ff94302",
   "entities": [
-   "Illinois Housing Development Authority",
-   "M. Babcock"
+   "IHDA",
+   "Illinois Housing Development Authority"
   ],
   "figures": {
    "affordable_units": null,
@@ -2970,12 +3380,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "IHDA revenue bond issuance finances housing programs, which bears on state housing finance.",
+  "relevance_reason": "IHDA is authorizing issuance of up to $500 million in revenue bonds, which finance housing programs.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "The IHDA Board would authorize issuing up to $500,000,000 in Revenue Bonds, Series 2026 LMNO (resolution 2026-10-IHDA-165), presented by M. Babcock as a finance matter. The material gives no detail on the projects or programs the bonds would fund."
+  "summary": "The IHDA Board would authorize issuing revenue bonds, Series 2026 LMNO, in an amount not to exceed $500,000,000. The item is presented by M. Babcock as a finance matter.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-board:2026-10-16#resolution-regarding-closed-session-minutes": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA Board",
@@ -2983,10 +3397,9 @@
     "via": "body"
    }
   ],
-  "content_hash": "fe786dc1a536acfc",
+  "content_hash": "9143fe78adb77851",
   "entities": [
-   "Illinois Housing Development Authority",
-   "C. McClernon"
+   "Illinois Housing Development Authority"
   ],
   "figures": {
    "affordable_units": null,
@@ -3000,12 +3413,16 @@
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "This is an administrative resolution about the IHDA Board's closed session minutes and does not itself concern building, financing, regulating, or occupying homes.",
+  "relevance_reason": "This is an administrative resolution about closed session minutes of the IHDA Board and does not itself concern building, financing, or regulating homes.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "The IHDA Board would consider a resolution regarding its closed session minutes (item 2026-10-IHDA-163), presented by C. McClernon. The retrieved text is the full October 16, 2026 agenda and gives no detail on this item."
+  "summary": "IHDA Board resolution regarding closed session minutes, presented by C. McClernon as a general administrative matter on the October 2026 board agenda.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-finance-committee:2026-10-16#information-technology-update": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA Finance Committee",
@@ -3013,7 +3430,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "b3470dbe311b5816",
+  "content_hash": "e85c1f0e62391e3e",
   "entities": [
    "Illinois Housing Development Authority"
   ],
@@ -3029,10 +3446,12 @@
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "This is an internal IHDA information technology update with no bearing on building, financing, regulating, or preserving homes or on residents' rights.",
+  "relevance_reason": "This is an internal IHDA information technology update with no bearing on building, financing, regulating, or occupying specific homes.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "IHDA Finance Committee agenda item for an Information Technology Update, presented by F. Ghauri. The item is a routine agency IT briefing."
+  "summary": "IHDA's Finance Committee will receive an Information Technology Update, presented by F. Ghauri, as part of its October 16, 2026 meeting agenda.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-finance-committee:2026-10-16#iv-a-4": {
   "categories": [
@@ -3065,6 +3484,8 @@
   "summary": "The IHDA Finance Committee will consider a resolution authorizing Revenue Bonds, 2026 Series LMNO, presented by M. Babcock. The agenda gives no amounts, purposes, or properties for the bonds."
  },
  "ihda:ihda-finance-committee:2026-10-16#multifamily-update": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA Finance Committee",
@@ -3072,7 +3493,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "e35108c7893bcc8a",
+  "content_hash": "802dc4fd369f8f2b",
   "entities": [
    "Illinois Housing Development Authority"
   ],
@@ -3088,12 +3509,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A standing multifamily update at IHDA's Finance Committee covers the state housing finance agency's multifamily lending and affordable housing activity.",
+  "relevance_reason": "A standing multifamily update to the IHDA Finance Committee covers the state housing finance agency's multifamily lending and financing activity.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "IHDA's Finance Committee receives a standing monthly Multifamily Update, presented by S. Bannon. The provided text is only the meeting agenda and gives no details on the update's content."
+  "summary": "Standing monthly Multifamily Update presented by S. Bannon at the IHDA Finance Committee meeting on October 16, 2026.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-finance-committee:2026-10-16#pheasant-ridge": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA Finance Committee",
@@ -3101,7 +3526,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "f0698bc1e0bb7279",
+  "content_hash": "b72513adff2256ef",
   "entities": [
    "Illinois Housing Development Authority"
   ],
@@ -3117,12 +3542,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "It is a multifamily finance item before IHDA's Finance Committee, which acts on financing for housing developments.",
+  "relevance_reason": "A multifamily finance item before IHDA's Finance Committee concerns financing for a housing development called Pheasant Ridge.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "The IHDA Finance Committee lists Pheasant Ridge under Multifamily Finance, presented by S. Bannon. The agenda gives no details on the financing, unit counts, or location."
+  "summary": "The IHDA Finance Committee agenda lists Pheasant Ridge under Multifamily Finance, presented by S. Bannon. No further details on the financing or development are given.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-finance-committee:2026-10-16#presentation-of-consolidated-interim-financial-statement": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA Finance Committee",
@@ -3130,37 +3559,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "c4346b2f5cab1378",
-  "entities": [
-   "Illinois Housing Development Authority",
-   "M. Jalaluddin"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": null,
-   "community_area": null,
-   "ward": null
-  },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "This is a standing financial report to the board of IHDA, the state housing finance agency that funds affordable housing and homeownership programs.",
-  "source_quality": "full",
-  "status": "ok",
-  "summary": "The IHDA Finance Committee will receive a presentation of the consolidated interim financial statement from M. Jalaluddin as a standing monthly update. The agenda text gives no further detail on the statement."
- },
- "ihda:ihda-finance-committee:2026-10-16#resolution-authorizing-revenue-bonds-2026-series-lmno": {
-  "categories": [
-   {
-    "detail": "IHDA Finance Committee",
-    "id": "state-agenda",
-    "via": "body"
-   }
-  ],
-  "content_hash": "e6bcb1925f15cdb3",
+  "content_hash": "05e4cda765a66a89",
   "entities": [
    "Illinois Housing Development Authority"
   ],
@@ -3176,12 +3575,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "IHDA revenue bond issuance is a state housing finance action that funds housing programs.",
+  "relevance_reason": "This is a standing monthly financial update at the Illinois Housing Development Authority, the state's housing finance agency, but it is a general financial statement with no specific housing deal.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "The IHDA Finance Committee will consider a resolution authorizing Revenue Bonds, 2026 Series LMNO, presented by M. Babcock. The agenda gives no bond amount, purpose, or project details."
+  "summary": "The IHDA Finance Committee will hear a presentation of the consolidated interim financial statement from M. Jalaluddin as a standing monthly update at its October 16, 2026 meeting.",
+  "zoning_from": [],
+  "zoning_to": null
  },
- "ihda:ihda-finance-committee:2026-10-16#resolution-ratifying-permitted-financial-activities": {
+ "ihda:ihda-finance-committee:2026-10-16#resolution-authorizing-revenue-bonds-2026-series-lmno": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA Finance Committee",
@@ -3189,10 +3592,9 @@
     "via": "body"
    }
   ],
-  "content_hash": "eafe6678a4c7dc1d",
+  "content_hash": "0a8d516bb52d38b1",
   "entities": [
-   "Illinois Housing Development Authority",
-   "S. Bhimani"
+   "Illinois Housing Development Authority"
   ],
   "figures": {
    "affordable_units": null,
@@ -3206,12 +3608,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "It is an IHDA Finance Committee resolution on the authority's financial activities, which fund housing finance, though the agenda gives no detail on what activities are ratified.",
+  "relevance_reason": "IHDA is considering a resolution authorizing revenue bonds, a state housing finance action.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "The IHDA Finance Committee will consider a resolution ratifying permitted financial activities, presented by S. Bhimani. The agenda text gives no further detail on the activities covered."
+  "summary": "The IHDA Finance Committee will consider a resolution authorizing Revenue Bonds, 2026 Series LMNO. The agenda lists M. Babcock as presenter.",
+  "zoning_from": [],
+  "zoning_to": null
  },
- "ihda:ihda-finance-committee:2026-10-16#sbpa-amendment-extension-for-housing-bonds-series-2017-a-2": {
+ "ihda:ihda-finance-committee:2026-10-16#resolution-ratifying-permitted-financial-activities": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA Finance Committee",
@@ -3219,7 +3625,40 @@
     "via": "body"
    }
   ],
-  "content_hash": "a0ca4d7d982bdc6f",
+  "content_hash": "bfed7a3397323860",
+  "entities": [
+   "Illinois Housing Development Authority"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "It is an IHDA Finance Committee action on the authority's financial activities, which fund affordable housing, though the material gives no specifics.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The IHDA Finance Committee will consider a resolution ratifying permitted financial activities, presented by S. Bhimani at its October 16, 2026 meeting.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "ihda:ihda-finance-committee:2026-10-16#sbpa-amendment-extension-for-housing-bonds-series-2017-a-2": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "IHDA Finance Committee",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "3b8f04405e6f7d39",
   "entities": [
    "Illinois Housing Development Authority",
    "M. Babcock"
@@ -3236,12 +3675,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The item concerns liquidity support for IHDA's Housing Bonds, Series 2017 A-2, which finance housing, so it bears on state housing finance.",
+  "relevance_reason": "It concerns an amendment and extension of a standby bond purchase agreement supporting IHDA Housing Bonds, which are used to finance housing.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "The IHDA Finance Committee will consider amending or extending a standby bond purchase agreement (SBPA) for Housing Bonds Series 2017 A-2. M. Babcock is listed as presenter. The agenda gives no further terms."
+  "summary": "The IHDA Finance Committee will consider amending and extending a standby bond purchase agreement (SBPA) for Housing Bonds Series 2017 A-2. M. Babcock is listed as presenter.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-finance-committee:2026-10-16#security-update": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA Finance Committee",
@@ -3249,7 +3692,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "f990be44b36b7e41",
+  "content_hash": "25ce0e1a5f65e1b2",
   "entities": [
    "Illinois Housing Development Authority"
   ],
@@ -3265,12 +3708,16 @@
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "This is an IT security briefing item on an IHDA Finance Committee agenda and does not concern building, financing, regulating, or occupying homes.",
+  "relevance_reason": "This is an IHDA IT security briefing, an internal operational item with no bearing on housing production, finance, or tenants.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "IHDA Finance Committee agenda item for a Security Update presented by T. Hardrick, under the IT Update section. No housing programs or developments are described for this item."
+  "summary": "IHDA Finance Committee agenda item II.B, a Security Update presented by T. Hardrick, part of the IT update section of the October 16, 2026 meeting.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-finance-committee:2026-10-16#single-family-homeownership-update": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA Finance Committee",
@@ -3278,10 +3725,9 @@
     "via": "body"
    }
   ],
-  "content_hash": "913d67ef3cf74508",
+  "content_hash": "d70173e0469f4481",
   "entities": [
-   "Illinois Housing Development Authority",
-   "K. Nestlehut"
+   "Illinois Housing Development Authority"
   ],
   "figures": {
    "affordable_units": null,
@@ -3295,12 +3741,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A standing IHDA Finance Committee update on single family and homeownership programs, which bears on state housing finance for homebuyers.",
+  "relevance_reason": "A standing IHDA Finance Committee update on single-family and homeownership programs bears on state housing finance.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "Standing monthly update on IHDA's Single Family/Homeownership programs, presented by K. Nestlehut at the October 16, 2026 Finance Committee meeting. The agenda gives no further detail on the update's content."
+  "summary": "IHDA's Finance Committee receives a standing monthly Single Family/Homeownership Update, presented by K. Nestlehut, at its October 16, 2026 meeting.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:notice:49129a3b50c6": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA",
@@ -3313,14 +3763,14 @@
     "via": "model"
    }
   ],
-  "content_hash": "228e760c40ac64b0",
+  "content_hash": "fd4480b443f2ec17",
   "entities": [
    "Abbey Capital Partners, LLC",
    "Eagle Management R.E., LLC",
-   "DuPage Housing Authority",
-   "Village of Lisle",
    "Illinois Housing Development Authority",
-   "U.S. Department of HUD"
+   "DuPage Housing Authority",
+   "U.S. Department of HUD",
+   "Village of Lisle"
   ],
   "figures": {
    "affordable_units": 78,
@@ -3334,12 +3784,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The owner plans to opt out of a HUD Section 8 HAP contract covering 78 occupied affordable units, which could end their affordability restrictions and triggers tenant rights under the Federally Assisted Housing Preservation Act.",
+  "relevance_reason": "The notice says an owner intends to opt out of a HUD Section 8 contract covering 78 occupied affordable units, which bears on preserving subsidized housing and on tenant rights.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "Abbey Capital Partners, LLC gave notice that it intends to opt out of the HUD Section 8 HAP contract on June 30, 2023, at Abbey Apartments at Four Lakes in Lisle. The contract covers 78 of the property's 200 units, and the notice explains tenants' rights to organize and bid to buy."
+  "summary": "Abbey Capital Partners, LLC intends to opt out of the HUD Section 8 HAP contract for 78 of 200 units at Abbey Apartments at Four Lakes in Lisle on June 30, 2023. Tenants get rights under the Federally Assisted Housing Preservation Act.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:notice:588d94bc0a3b": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA",
@@ -3352,7 +3806,7 @@
     "via": "keyword"
    }
   ],
-  "content_hash": "2a588c401df8d5c7",
+  "content_hash": "9249bdb21af20a19",
   "entities": [
    "Illinois Housing Development Authority",
    "IHDA",
@@ -3371,12 +3825,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The notice concerns IHDA's draft allocation and proposed activities for the federal National Housing Trust Fund, which finances affordable housing, within the state's 2026 Consolidated Plan.",
+  "relevance_reason": "The notice opens public comment on how Illinois will use its 2026 federal National Housing Trust Fund allocation, which finances affordable housing.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "IHDA is seeking public comment on a draft federal Housing Trust Fund substantial amendment to the 2026 Consolidated Action Plan, covering the 2026 allocation, proposed activities, and goals. A virtual hearing is Sept. 15, 2026; comments are due Sept. 30."
+  "summary": "IHDA released a draft substantial amendment to the 2026 Consolidated Annual Action Plan covering 2026 federal Housing Trust Fund allocation amounts, proposed activities, and goals. A virtual hearing is Sept. 15, 2026; comments are due Sept. 30, 2026.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:notice:608e125825f2": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA",
@@ -3389,12 +3847,11 @@
     "via": "model"
    }
   ],
-  "content_hash": "54ec9b00940a5f5f",
+  "content_hash": "2a9d6739feb106a1",
   "entities": [
-   "Illinois Housing Development Authority (IHDA)",
-   "Reporting and Compliance, Strategic Planning and Reporting (CR-SPAR)",
-   "State of Illinois",
-   "Federal Housing Trust Fund"
+   "IHDA",
+   "Illinois Housing Development Authority",
+   "Reporting and Compliance, Strategic Planning and Reporting (CR-SPAR)"
   ],
   "figures": {
    "affordable_units": null,
@@ -3408,12 +3865,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The hearing covers a substantial amendment to the state's 2026 Action Plan for the federal Housing Trust Fund, which finances affordable housing.",
+  "relevance_reason": "The hearing concerns a substantial amendment to the state's federal Housing Trust Fund allocation plan, which funds affordable housing.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "IHDA will hold a public hearing on September 15, 2026 at 10:30 A.M. on a substantial amendment to the State of Illinois 2026 Action Plan for the federal Housing Trust Fund. The agenda covers the allocation amount, a review of the draft, the submission schedule, and public comment."
+  "summary": "IHDA will hold a public hearing on September 15, 2026 at 10:30 A.M. on a substantial amendment to the State of Illinois 2026 Action Plan for the federal Housing Trust Fund. The agenda covers the allocation amount, the draft amendment, and public comment.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:notice:7ab127d8183f": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA",
@@ -3421,7 +3882,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "b9214e65f50edf4c",
+  "content_hash": "b74cedafc484bf02",
   "entities": [
    "Illinois Housing Development Authority",
    "IHDA",
@@ -3440,12 +3901,16 @@
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "This is an administrative notice about IHDA's independent registered municipal advisor exemption for financial firms, with no specific housing, financing deal, or tenant impact.",
+  "relevance_reason": "This is a procedural notice about IHDA's independent registered municipal advisor exemption for financial firms, not about any specific housing development, financing, or policy.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "IHDA posted a notice that financial firms may use the SEC's independent registered municipal advisor exemption when advising it. IHDA says it relies on Caine Mitter & Associates Incorporated for advice on municipal financial products and securities issuance."
+  "summary": "IHDA posted a notice that financial firms may use the independent registered municipal advisor exemption when advising it. IHDA states it is represented by and relies on Caine Mitter & Associates Incorporated. Effective February 27, 2025.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:notice:c8cf4b4ee245": {
+  "amount": 51500000,
+  "amount_kind": "tax-exempt bonds cap",
   "categories": [
    {
     "detail": "IHDA",
@@ -3453,29 +3918,32 @@
     "via": "body"
    }
   ],
-  "content_hash": "863b7f04506e1693",
+  "content_hash": "8d8c9a75a7c850e3",
   "entities": [
-   "Illinois Housing Development Authority",
-   "Pheasant Ridge/Hunter Apartments"
+   "Illinois Housing Development Authority"
   ],
   "figures": {
    "affordable_units": null,
    "units": 176
   },
   "geography": {
-   "address": null,
+   "address": "9200-9335 Hunter Drive, Orland Hills, 60487",
    "community_area": null,
    "ward": null
   },
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "This is a TEFRA public hearing on IHDA tax-exempt bonds to finance acquisition, construction, or rehabilitation of a 176-unit multifamily apartment development.",
+  "relevance_reason": "IHDA is holding a TEFRA hearing on up to $51.5 million in tax-exempt bonds to finance acquisition and rehabilitation of a 176-unit multifamily development.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "IHDA will hold a hearing on October 15, 2026 on tax-exempt bonds of up to $51,500,000 for Pheasant Ridge/Hunter Apartments, a 176-unit multifamily property in Orland Hills. The owner is Standard PRHA Venture LP."
+  "summary": "IHDA will hold a public hearing on October 15, 2026 on tax-exempt bonds of up to $51,500,000 for Pheasant Ridge/Hunter Apartments, a 176-unit multifamily property in Orland Hills owned by Standard PRHA Venture LP.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:notice:c9fec879f825": {
+  "amount": 500000000,
+  "amount_kind": "mortgage revenue bonds",
   "categories": [
    {
     "detail": "IHDA",
@@ -3483,12 +3951,9 @@
     "via": "body"
    }
   ],
-  "content_hash": "784948ba9129e261",
+  "content_hash": "c4a45a2f33d1cb08",
   "entities": [
-   "Illinois Housing Development Authority",
-   "IHDA",
-   "Kristin Faust",
-   "Ben Wiesner"
+   "Illinois Housing Development Authority"
   ],
   "figures": {
    "affordable_units": null,
@@ -3502,12 +3967,16 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The hearing covers IHDA's proposed issuance of up to $500 million in mortgage revenue bonds to finance home mortgage loans and down payment assistance in Illinois.",
+  "relevance_reason": "The hearing concerns IHDA's proposed issuance of mortgage revenue bonds to finance home mortgage loans and down payment assistance across Illinois.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "IHDA will hold a TEFRA public hearing on October 15, 2026 on issuing up to $500,000,000 in mortgage revenue bonds (2026 Series LMNO) over three years. Proceeds would finance qualifying mortgage loans, down payment and closing cost assistance, and refund prior bonds."
+  "summary": "IHDA will hold a TEFRA public hearing on October 15, 2026 on issuing up to $500,000,000 in mortgage revenue bonds over three years. Proceeds would finance qualifying mortgage loans, down payment and closing cost assistance, and refund prior bonds.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:notice:f38be4c0418c": {
+  "amount": null,
+  "amount_kind": null,
   "categories": [
    {
     "detail": "IHDA",
@@ -3515,7 +3984,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "2eb89ff99404f982",
+  "content_hash": "b6bef8b3379e83cc",
   "entities": [
    "Illinois Housing Development Authority",
    "IHDA",
@@ -3536,6 +4005,8 @@
   "relevance_reason": "The Qualified Allocation Plan sets how Illinois awards Low-Income Housing Tax Credits for affordable housing development.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "IHDA released its draft 2027-2028 Low-Income Housing Tax Credit Qualified Allocation Plan for public comment. A hybrid public hearing is set for June 8, 2026, and written comments are due by 5:00 P.M. on June 15, 2026."
+  "summary": "IHDA released its draft 2027-2028 Low-Income Housing Tax Credit Qualified Allocation Plan for public comment. A hybrid public hearing is set for June 8, 2026, and written comments are due by 5:00 P.M. on June 15, 2026.",
+  "zoning_from": [],
+  "zoning_to": null
  }
 }
