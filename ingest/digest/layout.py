@@ -6,14 +6,15 @@ AI re-run. The outline it builds is what the page template renders, and what the
 from __future__ import annotations
 
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 import yaml
 
 from .enrich import title_address
-from .models import Item
-from .text import short_title
+from .models import CHI, Attachment, Item, Meeting
+from .sources.base import slugify
+from .text import safe_url, short_title, trim_summary
 
 DEFAULT_PATH = Path(__file__).resolve().parents[2] / "config" / "layout.yaml"
 OTHER = "Other"
@@ -132,3 +133,129 @@ def facts(item: Item, head: str) -> list[tuple[Seg, ...]]:
     if party:
         out.append((Seg(party),))
     return out
+
+
+@dataclass
+class ItemView:
+    item: Item
+    anchor: str
+    group: str | None
+    headline: str
+    full_title: str | None  # the agenda title, when the headline is not it
+    facts: list[tuple[Seg, ...]]
+    card: bool
+    summary: str
+    docs: list[Attachment]
+    categories: str  # space-separated category ids, for the filters
+    ward: str
+
+    @property
+    def facts_text(self) -> str:
+        return " · ".join(fact_text(f) for f in self.facts)
+
+
+@dataclass
+class GroupView:
+    label: str
+    cards: list[ItemView] = field(default_factory=list)
+    rows: list[ItemView] = field(default_factory=list)
+
+    @property
+    def count(self) -> int:
+        return len(self.cards) + len(self.rows)
+
+
+@dataclass
+class MeetingView:
+    meeting: Meeting
+    anchor: str
+    family: Family | None
+    when: str
+    groups: list[GroupView] | None  # None: a flat body, see cards
+    cards: list[ItemView]
+    count: int
+    hidden: int
+    ics: str
+
+
+@dataclass
+class DayView:
+    id: str
+    label: str
+    meetings: list[MeetingView]
+
+
+@dataclass
+class IndexEntry:
+    anchor: str
+    date_label: str
+    family: Family | None
+    body: str
+    count: int
+
+
+@dataclass
+class Outline:
+    index: list[IndexEntry]
+    days: list[DayView]
+    has_upcoming: bool
+
+
+Shown = tuple[Meeting, list[Item], int]  # a meeting, its shown items in agenda order, how many were hidden
+
+
+def item_view(layout: Layout, body: str, item: Item) -> ItemView:
+    e = item.enrichment
+    summary = trim_summary(e.summary) if e and e.summary else ""
+    group = group_for(layout, body, item.title, summary)
+    head = headline(layout, item, group)
+    return ItemView(
+        item=item, anchor=slugify(item.id, 120), group=group, headline=head,
+        full_title=item.title if head != item.title else None, facts=facts(item, head),
+        card=is_card(layout, group, e.figures.units if e else None, e.amount if e else None), summary=summary,
+        docs=[a for a in item.attachments[:3] if safe_url(a.url)],
+        categories=" ".join(c.id for c in e.categories) if e else "",
+        ward=str(e.geography.ward) if e and e.geography.ward else "",
+    )
+
+
+def _when(m: Meeting, with_date: bool) -> str:
+    start = m.start.astimezone(CHI)
+    time = f"{start:%I:%M %p}".lstrip("0") if m.time_known else ""
+    if not with_date:
+        return time
+    date = f"{start:%A, %B} {start.day}"
+    return f"{date}, {time}" if time else date
+
+
+def meeting_view(layout: Layout, shown: Shown, ics: dict[str, str], with_date: bool) -> MeetingView:
+    m, items, hidden = shown
+    views = [item_view(layout, m.body, i) for i in items]
+    groups = None
+    if m.body in layout.grouping:
+        labels = list(dict.fromkeys([r.label for r in layout.grouping[m.body]] + [OTHER]))
+        groups = []
+        for label in labels:
+            vs = [v for v in views if v.group == label]
+            if vs:
+                groups.append(GroupView(label, [v for v in vs if v.card], [v for v in vs if not v.card]))
+    return MeetingView(meeting=m, anchor=slugify(m.id, 120), family=layout.families.get(m.body),
+                       when=_when(m, with_date), groups=groups, cards=views if groups is None else [],
+                       count=len(views), hidden=hidden, ics=ics.get(m.body, ""))
+
+
+def build_outline(upcoming: list[Shown], recent: list[Shown], layout: Layout, ics: dict[str, str]) -> Outline:
+    """The page from the top: the index, then one day per upcoming date, then every recent meeting under Recent."""
+    by_day: dict = {}
+    for s in sorted(upcoming, key=lambda s: s[0].start):
+        by_day.setdefault(s[0].start.astimezone(CHI).date(), []).append(meeting_view(layout, s, ics, False))
+    days = [DayView(f"day-{d.isoformat()}", f"{d:%A, %B} {d.day}", mvs) for d, mvs in by_day.items()]
+    if recent:
+        days.append(DayView("recent", "Recent", [meeting_view(layout, s, ics, True)
+                                                 for s in sorted(recent, key=lambda s: s[0].start, reverse=True)]))
+    index = []
+    for day in days:
+        for mv in day.meetings:
+            start = mv.meeting.start.astimezone(CHI)
+            index.append(IndexEntry(mv.anchor, f"{start:%a %b} {start.day}", mv.family, mv.meeting.body, mv.count))
+    return Outline(index=index, days=days, has_upcoming=bool(by_day))

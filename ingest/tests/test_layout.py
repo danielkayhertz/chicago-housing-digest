@@ -93,3 +93,75 @@ def test_party_skips_public_bodies_and_the_headline():
     appt = item("Appointment of Vernell Givens as Commissioner", entities=["Vernell Givens", "Chicago Housing Authority"])
     assert facts(appt, "Vernell Givens") == []
     assert facts(item("No enrichment yet"), "x") == []
+
+
+import datetime as dt  # noqa: E402
+
+from digest.layout import build_outline  # noqa: E402
+from digest.models import CHI, Attachment, CategoryHit, Meeting  # noqa: E402
+
+
+def meeting(id, body, start):
+    return Meeting(id=id, source_id="s", body=body, body_id="b", start=start)
+
+
+def test_outline_days_index_and_groups():
+    h = meeting("elms:H", HRE, dt.datetime(2026, 10, 15, 10, 0, tzinfo=CHI))
+    cpc = meeting("cpc:1", "Chicago Plan Commission", dt.datetime(2026, 10, 15, 13, 0, tzinfo=CHI))
+    late = meeting("ihda:1", "IHDA Board", dt.datetime(2026, 10, 16, 23, 30, tzinfo=CHI).astimezone(dt.timezone.utc))
+    z = meeting("elms:Z", ZON, dt.datetime(2026, 10, 13, 10, 0, tzinfo=CHI))
+    big = item("Sale of City-owned property at 1 W Alpha St", id="h#1", figures=Figures(units=20))
+    small = item("Sale of City-owned property at 2 W Beta St", id="h#2", figures=Figures(units=2))
+    appt = item("Appointment of Jo Doe as Commissioner", id="h#3")
+    loan = item("Kinzie Planned Development", id="c#1")
+    rez = item("Zoning Reclassification Map No. 1-H at 3 W Gamma St", id="z#1")
+    o = build_outline([(cpc, [loan], 0), (late, [], 2), (h, [big, appt, small], 1)], [(z, [rez], 0)], L,
+                      {b: f"ics/{b}.ics" for b in (HRE, ZON, "Chicago Plan Commission", "IHDA Board")})
+    assert o.has_upcoming
+    assert [(d.id, d.label) for d in o.days] == [("day-2026-10-15", "Thursday, October 15"),
+                                                 ("day-2026-10-16", "Friday, October 16"), ("recent", "Recent")]
+    assert [mv.meeting.id for mv in o.days[0].meetings] == ["elms:H", "cpc:1"]          # sorted by start
+    assert [(x.anchor, x.date_label, x.family.id, x.count) for x in o.index] == [
+        ("elms-h", "Thu Oct 15", "council", 3), ("cpc-1", "Thu Oct 15", "planning", 1),
+        ("ihda-1", "Fri Oct 16", "ihda", 0), ("elms-z", "Tue Oct 13", "council", 1)]
+    hv = o.days[0].meetings[0]
+    assert hv.when == "10:00 AM" and hv.hidden == 1 and hv.ics == f"ics/{HRE}.ics" and hv.cards == []
+    assert [g.label for g in hv.groups] == ["Sales of city land", "CHA board appointments"]
+    sales = hv.groups[0]
+    assert [v.item.id for v in sales.cards] == ["h#1"] and [v.item.id for v in sales.rows] == ["h#2"]
+    assert sales.count == 2 and hv.groups[1].rows[0].headline == "Jo Doe"
+    cv = o.days[0].meetings[1]
+    assert cv.groups is None and [v.item.id for v in cv.cards] == ["c#1"] and cv.cards[0].card
+    assert o.days[1].meetings[0].groups is None and o.days[1].meetings[0].count == 0     # IHDA: flat, all hidden
+    zv = o.days[2].meetings[0]
+    assert zv.when == "Tuesday, October 13, 10:00 AM" and zv.groups[0].label == "Single-site rezonings"
+
+
+def test_item_view_carries_filter_data_and_disclosure():
+    h = meeting("elms:H", HRE, dt.datetime(2026, 10, 15, 10, 0, tzinfo=CHI))
+    sale = item("Sale of City-owned property at 1 W Alpha St to Alpha LLC", id="h#1",
+                geography=Geography(address="1 W Alpha St", ward=4), figures=Figures(units=12),
+                categories=[CategoryHit(id="ahpaa", via="body"), CategoryHit(id="cha", via="model")],
+                summary="Sale of land. The agenda gives no further detail.", entities=["Alpha LLC"])
+    sale.attachments = [Attachment(label="Bad", url="javascript:x"), Attachment(label="Ordinance", url="https://x/o.pdf")]
+    v = build_outline([(h, [sale], 0)], [], L, {HRE: "ics/h.ics"}).days[0].meetings[0].groups[0].cards[0]
+    assert v.anchor == "h-1" and v.categories == "ahpaa cha" and v.ward == "4"
+    assert v.headline == "1 W Alpha St" and v.full_title == sale.title             # title kept under the disclosure
+    assert v.summary == "Sale of land." and [a.label for a in v.docs] == ["Ordinance"]
+    assert v.facts_text == "Ward 4 · 12 homes · Alpha LLC"
+
+
+def test_unenriched_item_in_a_grouped_body_is_a_row_with_no_facts():
+    h = meeting("elms:H", HRE, dt.datetime(2026, 10, 15, 10, 0, tzinfo=CHI))
+    raw = item("Sale of City-owned property at 5 W Delta St", id="h#9")
+    v = build_outline([(h, [raw], 0)], [], L, {HRE: "x"}).days[0].meetings[0].groups[0].rows[0]
+    assert v.headline == "5 W Delta St" and v.facts == [] and v.summary == "" and v.ward == "" and v.categories == ""
+
+
+def test_no_upcoming_meetings():
+    z = meeting("elms:Z", ZON, dt.datetime(2026, 10, 1, 9, 0, tzinfo=CHI))
+    o = build_outline([], [(z, [], 0)], L, {ZON: "x"})
+    assert not o.has_upcoming and [d.id for d in o.days] == ["recent"]
+    unknown_time = meeting("cpc:2", "Chicago Plan Commission", dt.datetime(2026, 10, 20, 0, 0, tzinfo=CHI))
+    unknown_time.time_known = False
+    assert build_outline([(unknown_time, [], 0)], [], L, {"Chicago Plan Commission": "x"}).days[0].meetings[0].when == ""
