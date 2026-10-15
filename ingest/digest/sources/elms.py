@@ -34,6 +34,12 @@ def map_status(raw: str | None, start: dt.datetime, now: dt.datetime) -> Meeting
     return "held" if start < now else "scheduled"
 
 
+def summary_file(files: list[dict] | None) -> dict | None:
+    """The committee's post-meeting Summary of actions, newest first, when one is posted."""
+    summaries = [f for f in files or [] if f.get("attachmentType") == "Summary" and f.get("path")]
+    return max(summaries, key=lambda f: f.get("sort") or 0, default=None)
+
+
 def agenda_file(files: list[dict] | None) -> dict | None:
     """The newest agenda: highest sort among Agenda attachments (Amended Agenda outranks Agenda)."""
     agendas = [f for f in files or [] if f.get("attachmentType") == "Agenda" and f.get("path")]
@@ -183,13 +189,13 @@ class ElmsAdapter(BaseAdapter):
 
     def _meeting(self, r: dict, now: dt.datetime) -> Meeting:
         start = _local(r["date"])
-        af = agenda_file(r.get("files"))
+        af, sf = agenda_file(r.get("files")), summary_file(r.get("files"))
         return Meeting(
             id=f"elms:{r['meetingId']}", source_id=self.source_id, body=self.display,
             body_id=r.get("bodyId") or self.body, start=start,
             status=map_status(r.get("status"), start, now),
             location=r.get("location") or None, agenda_url=af["path"] if af else None,
-            video_url=r.get("videoLink") or None,
+            video_url=r.get("videoLink") or None, minutes_url=sf["path"] if sf else None,
         )
 
     def _items(self, fetcher: Fetcher, m: Meeting) -> tuple[list[Item], list[str]]:

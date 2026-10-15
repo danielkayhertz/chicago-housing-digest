@@ -281,7 +281,7 @@ def resolve_geography(hint: Geography | None, address: str | None, geo) -> Geogr
 
 
 OVERRIDABLE = ("housing_relevant", "relevance_reason", "summary", "categories", "geography", "entities", "figures",
-               "amount", "amount_kind", "zoning_from", "zoning_to")
+               "amount", "amount_kind", "zoning_from", "zoning_to", "important")
 
 
 def apply_overrides(e: Enrichment, ov: dict | None, rec_id: str = "?") -> Enrichment:

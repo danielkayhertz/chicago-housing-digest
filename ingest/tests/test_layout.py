@@ -185,3 +185,41 @@ def test_address_bodies_lead_with_the_address_in_a_flat_body():
     assert headline(L, pd, None, "Chicago Plan Commission") == "1133 W. Kinzie St."
     assert headline(L, item("Item 3 South Chicago Land Use Framework"), None, "Chicago Plan Commission")         == "Item 3 South Chicago Land Use Framework"                          # no address: the title
     assert headline(L, item("Pheasant Ridge", geography=Geography(address="1 Main St")), None, "IHDA Board")         == "Pheasant Ridge"                                                   # not an address body
+
+
+from digest.layout import important  # noqa: E402
+from digest.models import Outcome  # noqa: E402
+
+
+def test_importance_rules_and_hand_flags():
+    assert important(L, item("x", figures=Figures(units=10)), None)
+    assert important(L, item("x", amount=1_000_000), "Sales of city land")
+    assert important(L, item("x"), "Planned developments") and important(L, item("x"), "Zoning code changes")
+    assert not important(L, item("x", figures=Figures(units=3)), "Single-site rezonings")
+    assert important(L, item("x", categories=[CategoryHit(id="cha", via="model")]), None)
+    assert not important(L, item("x", categories=[CategoryHit(id="cha", via="body")]), None)   # body-wide tag
+    assert not important(L, item("x", categories=[CategoryHit(id="ahpaa", via="model")]), None)
+    assert important(L, item("x", important=True), "Single-site rezonings")                   # flagged in
+    assert not important(L, item("x", important=False, figures=Figures(units=99)), None)       # flagged out
+    assert not important(L, item("no enrichment"), None)
+
+
+def test_recent_meetings_carry_outcomes_and_a_tally():
+    z = meeting("elms:Z", ZON, dt.datetime(2026, 10, 1, 10, 0, tzinfo=CHI))
+    z.source_id = "elms-zoning"
+    z.minutes_url = "https://x/summary.pdf"
+    a, b, c, d = (item(f"Zoning Reclassification Map No. 1-H at {n} W A St", id=f"z#{n}") for n in (1, 2, 3, 4))
+    a.outcome = Outcome(action="Recommended to Pass", date=dt.date(2026, 10, 1))
+    b.outcome = Outcome(action="Recommended to Pass", date=dt.date(2026, 10, 1))
+    c.outcome = Outcome(action="Held in Committee", date=dt.date(2026, 10, 1))
+    up = meeting("elms:U", ZON, dt.datetime(2026, 10, 20, 10, 0, tzinfo=CHI))
+    up.source_id = "elms-zoning"
+    cpc = meeting("cpc:1", "Chicago Plan Commission", dt.datetime(2026, 10, 2, 10, 0, tzinfo=CHI))
+    cpc.source_id = "cpc"
+    o = build_outline([(up, [], 0)], [(z, [a, b, c, d], 0), (cpc, [item("Kinzie PD", id="c#1")], 0)], L, {})
+    upv, (cv, zv) = o.days[0].meetings[0], o.days[1].meetings              # Recent is newest first
+    assert zv.outcomes and zv.tally == "2 recommended to pass · 1 held in committee · 1 no outcome posted yet"
+    assert not upv.outcomes and upv.tally == ""                       # upcoming: nothing to report yet
+    assert not cv.outcomes and cv.tally == ""                         # a body that publishes no outcomes
+    assert [v.item.outcome.action if v.item.outcome else None for g in zv.groups for v in g.cards + g.rows] \
+        == ["Recommended to Pass", "Recommended to Pass", "Held in Committee", None]

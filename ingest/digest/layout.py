@@ -43,6 +43,9 @@ class Layout:
     address_groups: set[str]
     name_groups: set[str]
     address_bodies: set[str] = field(default_factory=set)  # flat bodies whose headline is the address
+    important_groups: set[str] = field(default_factory=set)
+    important_categories: set[str] = field(default_factory=set)
+    outcome_sources: set[str] = field(default_factory=set)
 
     @classmethod
     def load(cls, path: Path) -> "Layout":
@@ -55,7 +58,10 @@ class Layout:
         return cls(families=families, grouping=grouping, always_card=set(raw.get("always_card_groups") or []),
                    min_units=int(raw.get("card_min_units", 10)), min_amount=int(raw.get("card_min_amount", 1_000_000)),
                    address_groups=set(raw.get("address_groups") or []), name_groups=set(raw.get("name_groups") or []),
-                   address_bodies=set(raw.get("address_bodies") or []))
+                   address_bodies=set(raw.get("address_bodies") or []),
+                   important_groups=set(raw.get("important_groups") or []),
+                   important_categories=set(raw.get("important_categories") or []),
+                   outcome_sources=set(raw.get("outcome_sources") or []))
 
 
 @dataclass(frozen=True)
@@ -86,6 +92,20 @@ def is_card(layout: Layout, group: str | None, units: int | None, amount: int | 
     if group is None or group in layout.always_card:
         return True
     return (units or 0) >= layout.min_units or (amount or 0) >= layout.min_amount
+
+
+def important(layout: Layout, item: Item, group: str | None) -> bool:
+    """A hand flag wins; otherwise big items, the listed groups, and the listed categories (not body-wide tags)."""
+    e = item.enrichment
+    if e is not None and e.important is not None:
+        return e.important
+    if group in layout.important_groups:
+        return True
+    if e is None:
+        return False
+    if (e.figures.units or 0) >= layout.min_units or (e.amount or 0) >= layout.min_amount:
+        return True
+    return any(c.id in layout.important_categories and c.via != "body" for c in e.categories)
 
 
 _APPOINTEE = re.compile(r"^Appointment of (.+?) as\b")
@@ -156,6 +176,7 @@ class ItemView:
     docs: list[Attachment]
     categories: str  # space-separated category ids, for the filters
     ward: str
+    important: bool = False
 
     @property
     def facts_text(self) -> str:
@@ -184,6 +205,8 @@ class MeetingView:
     count: int
     hidden: int
     ics: str
+    outcomes: bool = False  # a past meeting of a body that publishes outcomes
+    tally: str = ""  # "2 recommended to pass · 1 not yet posted"
 
 
 @dataclass
@@ -225,6 +248,7 @@ def item_view(layout: Layout, body: str, item: Item) -> ItemView:
         docs=[a for a in item.attachments[:3] if safe_url(a.url)],
         categories=" ".join(c.id for c in e.categories) if e else "",
         ward=str(e.geography.ward) if e and e.geography.ward else "",
+        important=important(layout, item, group),
     )
 
 
@@ -237,8 +261,19 @@ def _when(m: Meeting, with_date: bool) -> str:
     return f"{date}, {time}" if time else date
 
 
+def _tally(items: list[Item]) -> str:
+    counts: dict[str, int] = {}
+    for i in items:
+        key = i.outcome.action.lower() if i.outcome else ""
+        counts[key] = counts.get(key, 0) + 1
+    pending = counts.pop("", 0)
+    parts = [f"{n} {action}" for action, n in counts.items()]
+    return " · ".join(parts + ([f"{pending} no outcome posted yet"] if pending else []))
+
+
 def meeting_view(layout: Layout, shown: Shown, ics: dict[str, str], with_date: bool) -> MeetingView:
     m, items, hidden = shown
+    outcomes = with_date and m.source_id in layout.outcome_sources
     views = [item_view(layout, m.body, i) for i in items]
     groups = None
     if m.body in layout.grouping:
@@ -250,7 +285,8 @@ def meeting_view(layout: Layout, shown: Shown, ics: dict[str, str], with_date: b
                 groups.append(GroupView(label, [v for v in vs if v.card], [v for v in vs if not v.card]))
     return MeetingView(meeting=m, anchor=slugify(m.id, 120), family=layout.families.get(m.body),
                        when=_when(m, with_date), groups=groups, cards=views if groups is None else [],
-                       count=len(views), hidden=hidden, ics=ics.get(m.body, ""))
+                       count=len(views), hidden=hidden, ics=ics.get(m.body, ""), outcomes=outcomes,
+                       tally=_tally(items) if outcomes and items else "")
 
 
 def build_outline(upcoming: list[Shown], recent: list[Shown], layout: Layout, ics: dict[str, str]) -> Outline:

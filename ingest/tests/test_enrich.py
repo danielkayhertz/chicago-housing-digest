@@ -631,3 +631,12 @@ def test_overrides_accept_amount_and_zoning(tmp_path):
     e = enrich_record(record_for_item(pd_item(), CPC), ctx(tmp_path, llm, overrides=ov))
     assert (e.amount, e.amount_kind, e.zoning_from, e.zoning_to) == (2_000_000, "grant", ["M2-3"], "DX-5")
     assert e.overridden
+
+
+def test_important_can_be_set_by_hand():
+    from digest.enrich import apply_overrides
+    from digest.models import Enrichment
+    e = Enrichment(status="ok", housing_relevant=True)
+    assert e.important is None                                       # never set by the model
+    assert apply_overrides(e, {"important": True}, "x").important is True
+    assert apply_overrides(e, {"important": False}, "x").important is False

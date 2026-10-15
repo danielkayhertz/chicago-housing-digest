@@ -107,7 +107,6 @@ def build_site(digest: Digest, out_dir: Path, items_json: Path, categories: Cate
     items_by_meeting: dict[str, list[Item]] = defaultdict(list)
     for it in digest.items:
         items_by_meeting[it.meeting_id].append(it)
-    meetings_by_id = {m.id: m for m in digest.meetings}
 
     cutoff = today - dt.timedelta(days=OUTCOME_DAYS)
     upcoming, recent = [], []
@@ -121,11 +120,6 @@ def build_site(digest: Digest, out_dir: Path, items_json: Path, categories: Cate
     notices = [n for n in digest.notices
                if (n.deadline is None or n.deadline >= now)
                and is_shown(n)]
-    outcomes = sorted(
-        ({"i": i, "m": meetings_by_id.get(i.meeting_id)} for i in digest.items
-         if i.outcome and i.outcome.date >= cutoff and is_shown(i)),
-        key=lambda r: r["i"].outcome.date, reverse=True,
-    )
     bodies = sorted({m.body for m in digest.meetings})
     ics = {b: f"ics/{slugify(b)}.ics" for b in bodies}
     quiet = quiet_sources(sources or [], {m.source_id for m, _, _ in upcoming + recent}, today, cutoff)
@@ -136,7 +130,7 @@ def build_site(digest: Digest, out_dir: Path, items_json: Path, categories: Cate
     env.tests["safe_url"] = lambda u: safe_url(u) is not None
     env.globals["LONG_TITLE"] = LONG_TITLE
     html = env.get_template("index.html.j2").render(
-        digest=digest, outline=build_outline(upcoming, recent, layout, ics), notices=notices, outcomes=outcomes,
+        digest=digest, outline=build_outline(upcoming, recent, layout, ics), notices=notices,
         bodies=bodies, categories=categories.items, generated=digest.generated_at.astimezone(CHI), quiet=quiet,
     )
     (out_dir / "ics").mkdir(parents=True, exist_ok=True)

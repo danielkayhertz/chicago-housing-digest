@@ -60,6 +60,13 @@
   ul.items > li { padding: .75rem 0; border-bottom: 1px solid var(--line); max-width: 70ch; }
   ul.items > li:last-child { border-bottom: 0; }
   ul.items > li > * { margin: .2rem 0 0; }
+  .key { display: inline-block; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em;
+         color: var(--bg); background: var(--ink); border-radius: 3px; padding: 0 .35rem; margin-left: .35rem; vertical-align: .1rem; }
+  .outcome { display: inline-block; font-size: .85rem; font-weight: 650; border: 1px solid var(--ink); border-radius: 3px; padding: 0 .4rem; }
+  .outcome.pending { font-weight: 400; color: var(--muted); border-color: var(--line); }
+  .tally { margin-top: .2rem; font-size: .9rem; font-weight: 600; }
+  td.oc { font-size: .85rem; width: 9rem; }
+  #f-key[aria-pressed="true"] { background: var(--ink); color: var(--bg); border: 1px solid var(--ink); border-radius: 3px; }
   .chip { display: inline-block; background: var(--chip); border-radius: 3px; padding: 0 .45rem; margin: .1rem .25rem .1rem 0; font-size: .85rem; }
   .chip b { font-weight: 650; }
   .ai { font-size: .75rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
@@ -100,22 +107,30 @@
   {% if i.docs %}<div class="docs">Documents: {% for a in i.docs %}<a href="{{ a.url | safe_url }}">{{ a.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</div>{% endif %}
 {%- endmacro %}
 
-{% macro card(i) -%}
-<li id="{{ i.anchor }}" class="row card" data-categories="{{ i.categories }}" data-ward="{{ i.ward }}">
-  <strong>{{ i.headline }}</strong>{% if i.item.source_ref != i.headline %} <span class="src">{{ i.item.source_ref }}</span>{% endif %}
+{% macro key(i) %}{% if i.important %} <span class="key">Key</span>{% endif %}{% endmacro %}
+
+{% macro outcome(i) -%}
+{% if i.item.outcome %}<span class="outcome">{{ i.item.outcome.action }}</span>{% else %}<span class="outcome pending">No outcome posted yet</span>{% endif %}
+{%- endmacro %}
+
+{% macro card(i, oc=false) -%}
+<li id="{{ i.anchor }}" class="row card" data-categories="{{ i.categories }}" data-ward="{{ i.ward }}" data-important="{{ 1 if i.important else 0 }}">
+  {% if oc %}<div>{{ outcome(i) }}</div>{% endif %}
+  <strong>{{ i.headline }}</strong>{{ key(i) }}{% if i.item.source_ref != i.headline %} <span class="src">{{ i.item.source_ref }}</span>{% endif %}
   {% if i.full_title %}<details class="full"><summary>Full agenda text</summary>{{ i.full_title }}</details>{% endif %}
   {% if i.facts %}<div class="chips">{{ chips(i) }}</div>{% endif %}
   {{ details_body(i) }}
 </li>
 {%- endmacro %}
 
-{% macro table_row(i) -%}
-<tr id="{{ i.anchor }}" class="row" data-categories="{{ i.categories }}" data-ward="{{ i.ward }}">
-  <td><details><summary><strong>{{ i.headline }}</strong></summary>
+{% macro table_row(i, oc=false) -%}
+<tr id="{{ i.anchor }}" class="row" data-categories="{{ i.categories }}" data-ward="{{ i.ward }}" data-important="{{ 1 if i.important else 0 }}">
+  <td><details><summary><strong>{{ i.headline }}</strong>{{ key(i) }}</summary>
     {% if i.item.source_ref != i.headline %}<div class="src">{{ i.item.source_ref }}</div>{% endif %}
     {% if i.full_title %}<div class="full">{{ i.full_title }}</div>{% endif %}
     {{ details_body(i) }}</details></td>
-  <td class="facts">{{ i.facts_text }}</td>
+  <td class="facts">{{ i.facts_text }}</td>{% if oc %}
+  <td class="oc">{{ i.item.outcome.action if i.item.outcome else 'Not yet posted' }}</td>{% endif %}
 </tr>
 {%- endmacro %}
 
@@ -128,20 +143,22 @@
       {% if m.status == 'cancelled' %}<span class="cancelled">Cancelled</span> · {% endif %}
       {{ v.count }} housing item{{ 's' if v.count != 1 else '' }} · {% if m.location %}{{ m.location }} · {% endif %}
       {% if m.agenda_url | safe_url %}<a href="{{ m.agenda_url | safe_url }}">Agenda</a> · {% endif %}
+      {% if m.minutes_url | safe_url %}<a href="{{ m.minutes_url | safe_url }}">Committee summary</a> · {% endif %}
       <a href="{{ v.ics }}">Add to calendar</a>
     </div>
+    {% if v.tally %}<div class="tally">{{ v.tally }}</div>{% endif %}
   </div>
   <div class="mbody">
   {% if v.groups is not none %}
     {% for g in v.groups %}
     <div class="group">
       <h4>{{ g.label }} <span class="n">· {{ g.count }}</span></h4>
-      {% if g.cards %}<ul class="items">{% for i in g.cards %}{{ card(i) }}{% endfor %}</ul>{% endif %}
-      {% if g.rows %}<table class="rows"><thead><tr><th scope="col">Item</th><th scope="col">Facts</th></tr></thead>
-        <tbody>{% for i in g.rows %}{{ table_row(i) }}{% endfor %}</tbody></table>{% endif %}
+      {% if g.cards %}<ul class="items">{% for i in g.cards %}{{ card(i, v.outcomes) }}{% endfor %}</ul>{% endif %}
+      {% if g.rows %}<table class="rows"><thead><tr><th scope="col">Item</th><th scope="col">Facts</th>{% if v.outcomes %}<th scope="col">Outcome</th>{% endif %}</tr></thead>
+        <tbody>{% for i in g.rows %}{{ table_row(i, v.outcomes) }}{% endfor %}</tbody></table>{% endif %}
     </div>
     {% endfor %}
-  {% elif v.cards %}<ul class="items">{% for i in v.cards %}{{ card(i) }}{% endfor %}</ul>{% endif %}
+  {% elif v.cards %}<ul class="items">{% for i in v.cards %}{{ card(i, v.outcomes) }}{% endfor %}</ul>{% endif %}
   {% if v.hidden %}<div class="hidden-count">+{{ v.hidden }} item{{ 's' if v.hidden != 1 else '' }} not about housing</div>{% endif %}
   </div>
 </section>
@@ -160,6 +177,7 @@
     {% for b in bodies %}<option value="{{ b }}">{{ b }}</option>{% endfor %}</select>
   <select id="f-ward" aria-label="Ward"><option value="">All wards</option>
     {% for w in range(1, 51) %}<option value="{{ w }}">Ward {{ w }}</option>{% endfor %}</select>
+  <button type="button" id="f-key" aria-pressed="false">Important only</button>
   <button type="button" id="f-clear" hidden>Clear filters</button>
 </div>
 <p id="f-status" class="meta" role="status"></p>
@@ -187,18 +205,6 @@
 {% else %}<li>No open notices.</li>{% endfor %}
 </ul>
 
-<h2>Recent outcomes</h2>
-<ul class="plain">
-{% for r in outcomes %}
-  <li class="row" data-body="{{ r.m.body if r.m else '' }}"
-      data-categories="{{ (r.i.enrichment.categories | map(attribute='id') | join(' ')) if r.i.enrichment else '' }}"
-      data-ward="{{ r.i.enrichment.geography.ward if r.i.enrichment and r.i.enrichment.geography.ward else '' }}">
-    <strong>{{ r.i.outcome.action }}</strong> ({{ r.i.outcome.date.strftime('%B %d') }}{% if r.m %}, {{ r.m.body }}{% endif %}): {{ r.i.title | short_title }}
-    {% if r.i.title | length > LONG_TITLE %}<details class="full"><summary>Full agenda text</summary>{{ r.i.title }}</details>{% endif %}
-  </li>
-{% else %}<li>No outcomes in the last two weeks.</li>{% endfor %}
-</ul>
-
 <p class="meta">Data: <a href="items.json">items.json</a></p>
 </main>
 </div>
@@ -207,17 +213,19 @@
   const anyShown = el => [...el.querySelectorAll('.row')].some(r => !r.hidden);
   function apply() {
     const cat = sel('f-cat').value, body = sel('f-body').value, ward = sel('f-ward').value;
-    const filtering = cat || body || ward;
+    const key = sel('f-key').getAttribute('aria-pressed') === 'true';
+    const filtering = cat || body || ward || key;
     document.querySelectorAll('.row').forEach(row => {
       const section = row.closest('.meeting');
       const rowBody = row.dataset.body || (section && section.dataset.body) || '';
       const ok = (!cat || (row.dataset.categories || '').split(' ').includes(cat))
-        && (!body || rowBody === body) && (!ward || row.dataset.ward === ward);
+        && (!body || rowBody === body) && (!ward || row.dataset.ward === ward)
+        && (!key || row.dataset.important !== '0');  // notices carry no flag and stay
       row.hidden = !ok;
     });
     document.querySelectorAll('table.rows, .group').forEach(el => { el.hidden = filtering ? !anyShown(el) : false; });
     document.querySelectorAll('.meeting').forEach(s => {
-      s.hidden = filtering ? !(anyShown(s) || (body && s.dataset.body === body && !cat && !ward)) : false;
+      s.hidden = filtering ? !(anyShown(s) || (body && s.dataset.body === body && !cat && !ward && !key)) : false;
     });
     document.querySelectorAll('section.day').forEach(d => { d.hidden = ![...d.querySelectorAll('.meeting')].some(s => !s.hidden); });
     document.querySelectorAll('[data-target]').forEach(li => { const s = sel(li.dataset.target); li.hidden = !s || s.hidden; });
@@ -233,8 +241,14 @@
       : 'No items match these filters. Try another category, body, or ward, or clear filters.';
   }
   ['f-cat', 'f-body', 'f-ward'].forEach(id => sel(id).addEventListener('change', apply));
+  sel('f-key').addEventListener('click', () => {
+    const b = sel('f-key');
+    b.setAttribute('aria-pressed', String(b.getAttribute('aria-pressed') !== 'true'));
+    apply();
+  });
   sel('f-clear').addEventListener('click', () => {
     ['f-cat', 'f-body', 'f-ward'].forEach(id => { sel(id).value = ''; });
+    sel('f-key').setAttribute('aria-pressed', 'false');
     apply();
     sel('f-cat').focus();
   });
@@ -254,7 +268,8 @@
   }
   if (links.size) {
     addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(mark); } }, { passive: true });
-    ['f-cat', 'f-body', 'f-ward', 'f-clear'].forEach(id => sel(id).addEventListener(id === 'f-clear' ? 'click' : 'change', mark));
+    ['f-cat', 'f-body', 'f-ward'].forEach(id => sel(id).addEventListener('change', mark));
+    ['f-key', 'f-clear'].forEach(id => sel(id).addEventListener('click', mark));
     mark();
   }
 </script>
