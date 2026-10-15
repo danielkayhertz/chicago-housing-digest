@@ -228,3 +228,9 @@ def test_paging_is_capped_with_a_warning():
     res = ElmsAdapter(cfg).fetch(f, NOW)
     assert len(f.calls) == elms.MAX_MEETING_PAGES
     assert any("not exhausted" in w for w in res.warnings)
+
+
+def test_summary_file_is_kept_as_the_meetings_minutes_link():
+    by_id = {m.id: m for m in ElmsAdapter(CFG).fetch(FakeFetcher(routes()), NOW).meetings}
+    assert by_id[SEP17].minutes_url.endswith("c5aaceb3.pdf")                  # the post-meeting Summary
+    assert by_id["elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC"].minutes_url is None   # none posted yet

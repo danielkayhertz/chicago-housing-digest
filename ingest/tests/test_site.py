@@ -293,3 +293,35 @@ def test_no_quiet_list_when_every_source_has_a_meeting(tmp_path):
     dump_digest(d, src)
     build_site(d, tmp_path / "site", src, CATS, NOW, sources=[SOURCES[1]])
     assert 'class="quiet"' not in (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
+
+
+def test_recent_meeting_leads_items_with_outcomes_and_keeps_the_summary(tmp_path):
+    d = sample()
+    next(m for m in d.meetings if m.id == "elms:Z1").minutes_url = "https://x/summary.pdf"
+    html = render(d, tmp_path)
+    sec = html.split('id="elms-z1"')[1].split("</section>")[0]
+    assert '<span class="outcome">Recommended to Pass</span>' in sec
+    assert "1 recommended to pass" in sec                                  # the band's tally
+    assert '<a href="https://x/summary.pdf">Committee summary</a>' in sec
+    assert "Adds 120 homes" in sec                                         # AI summary stays visible
+    assert "Recent outcomes" not in html                                   # folded into the meetings
+
+
+def test_recent_tables_get_an_outcome_column(tmp_path):
+    up = render(council_digest(), tmp_path / "up")
+    assert '<th scope="col">Outcome</th>' not in up                         # upcoming: nothing to report
+    d = council_digest()
+    d.meetings[-1].start = dt.datetime(2026, 10, 1, 10, 30, tzinfo=CHI)     # the Housing meeting, now past
+    d.items[-2].outcome = Outcome(action="Recommended to Pass", date=dt.date(2026, 10, 1))
+    table = render(d, tmp_path / "past").split('id="elms-h1"')[1].split('<table class="rows">')[1].split("</table>")[0]
+    assert '<th scope="col">Item</th><th scope="col">Facts</th><th scope="col">Outcome</th>' in table
+    assert '<td class="oc">Not yet posted</td>' in table                    # the small sale has no outcome yet
+
+
+def test_important_items_are_marked_and_can_be_shown_alone(tmp_path):
+    html = render(council_digest(), tmp_path)
+    big = html.split('<li id="elms-h1-1"')[1].split("</li>")[0]
+    assert 'data-important="1"' in big and '<span class="key">Key</span>' in big     # 20 homes
+    small = html.split('<tr id="elms-h1-2"')[1].split("</tr>")[0]
+    assert 'data-important="0"' in small and 'class="key"' not in small
+    assert '<button type="button" id="f-key" aria-pressed="false">Important only</button>' in html

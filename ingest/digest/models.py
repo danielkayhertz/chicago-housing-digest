@@ -59,6 +59,7 @@ class Enrichment(BaseModel):
     amount_kind: str | None = None  # what that figure is: "sale price", "conduit loan"
     zoning_from: list[str] = Field(default_factory=list)  # a rezoning's current districts, as written
     zoning_to: str | None = None  # and the requested one
+    important: bool | None = None  # set only by hand (overrides.yaml); None leaves it to the page's rules
     source_quality: Literal["full", "partial", "scanned", "none"] = "none"
     model: str = ""
     content_hash: str = ""

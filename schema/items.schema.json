@@ -136,6 +136,18 @@
           "title": "Housing Relevant",
           "type": "boolean"
         },
+        "important": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Important"
+        },
         "model": {
           "default": "",
           "title": "Model",

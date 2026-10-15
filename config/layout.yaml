@@ -34,6 +34,15 @@ always_card_groups: [Planned developments, Zoning code changes, Other]
 card_min_units: 10
 card_min_amount: 1000000
 
+# An item is important (the page's "Important only" toggle and Key marker) when it has card_min_units homes or
+# card_min_amount dollars, is in one of these groups, or has one of these categories from the model, a keyword or an
+# override (body-wide tags do not count). `important: true/false` in overrides.yaml wins over all of these.
+important_groups: [Planned developments, Zoning code changes]
+important_categories: [cha, social-housing]
+
+# Sources that publish per-item outcomes; their past meetings lead each item with its outcome and show a tally.
+outcome_sources: [elms-zoning, elms-housing, elms-finance, cha]
+
 # The headline is the site address in these groups and the appointee's name in these; otherwise the title.
 address_groups: [Sales of city land, Single-site rezonings, Planned developments]
 name_groups: [CHA board appointments]
