@@ -22,7 +22,7 @@ from .pdftext import has_text_layer, pdf_text
 from .sources.base import html_to_text
 from .units import parse_units
 
-PROMPT_VERSION = "1"  # bump to re-enrich everything after a prompt change
+PROMPT_VERSION = "2"  # bump to re-enrich everything after a prompt change
 MAX_FAILED_ATTEMPTS = 3  # a record that keeps failing deterministically is retried this many runs, then left failed
 log = logging.getLogger("digest.enrich")
 
