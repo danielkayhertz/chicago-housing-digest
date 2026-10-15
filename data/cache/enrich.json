@@ -331,7 +331,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "6ba9c5874cba7264",
+  "content_hash": "bb9a5794a989d127",
   "entities": [
    "MKR Owner LLC"
   ],
@@ -347,10 +347,10 @@
   "housing_relevant": true,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The planned development and rezoning would allow a new 110-unit residential building on land currently zoned for manufacturing.",
+  "relevance_reason": "The planned development and rezoning from M2-3 to DX-5 would allow a new 110-unit residential building.",
   "source_quality": "partial",
   "status": "ok",
-  "summary": "MKR Owner LLC requests a Planned Development and rezoning from M2-3 to DX-5 at 1133 W. Kinzie Street. It would build a 5-story, 59'-11\" residential building with up to 110 dwelling units and 33 parking spaces, at a maximum FAR of 5."
+  "summary": "MKR Owner LLC proposes a Planned Development at 1133 W. Kinzie Street, rezoning the site from M2-3 to DX-5 to build a 5-story residential building with up to 110 dwelling units and 33 parking spaces."
  },
  "cpc:2026-10-15#3700-3846-n-seminary-ave": {
   "categories": [
@@ -360,7 +360,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "f64f02d522f7bd2c",
+  "content_hash": "13ac8ad00d6cf4b6",
   "entities": [
    "Chicago Realty Ventures, LLC"
   ],
@@ -376,10 +376,10 @@
   "housing_relevant": false,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The amendment concerns parking lots, a park, and FAR within an Institutional Planned Development, with no residential units or housing provisions stated.",
+  "relevance_reason": "The planned development amendment concerns boundaries, subareas, parking lots, and a park, with no residential units or housing regulation mentioned.",
   "source_quality": "partial",
   "status": "ok",
-  "summary": "Chicago Realty Ventures, LLC proposes amending Institutional Planned Development 108 to extend its boundaries and create three subareas, covering surface parking lots (up to 800 and 103 spaces), an existing park, and a maximum FAR of 1.2."
+  "summary": "Chicago Realty Ventures, LLC proposes amending Institutional Planned Development 108 at 3700-3846 N. Seminary Ave. to extend its boundaries and create three subareas, including parking lots of up to 800 and 103 spaces and an existing park, with a maximum FAR of 1.2."
  },
  "cpc:2026-10-15#item-3": {
   "categories": [
@@ -389,7 +389,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "7cb2087b7c92eee9",
+  "content_hash": "742c5554386c33b2",
   "entities": [
    "Chicago Plan Commission",
    "Department of Planning and Development",
@@ -410,7 +410,7 @@
   "relevance_reason": "The land use framework guides future zoning and land use recommendations, including strengthening residential areas, in South Chicago.",
   "source_quality": "partial",
   "status": "ok",
-  "summary": "The Plan Commission is asked to adopt the DPD-led South Chicago Land Use Framework, a planning tool for land use, zoning and redevelopment in parts of the 7th and 10th wards, including strengthening residential areas."
+  "summary": "The Plan Commission is asked to adopt the South Chicago Land Use Framework, a DPD-led plan for the 7th and 10th wards. It sets land use and zoning recommendations to strengthen residential areas, commercial corridors and open spaces."
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0025391": {
   "categories": [
