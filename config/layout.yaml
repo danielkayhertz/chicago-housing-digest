@@ -1,0 +1,39 @@
+# How the meeting page groups and colors items. Read when the page is built; changing it never needs an AI re-run.
+
+# Color family per body. A body not listed here gets neutral colors and no family label.
+families:
+  council:
+    label: City Council
+    bodies: [City Council Committee on Zoning, City Council Committee on Housing and Real Estate,
+             City Council Committee on Finance]
+  ihda:
+    label: IHDA
+    bodies: [IHDA Board, IHDA Finance Committee, IHDA Audit Committee]
+  clihtf:
+    label: CLIHTF
+    bodies: [CLIHTF Board of Directors]
+  planning:
+    label: Planning
+    bodies: [Chicago Plan Commission, Community Development Commission]
+
+# Bodies listed here get type groups, shown in this order. The first matching rule wins: the title must start with
+# one of title_prefix, and pattern (a regex, if given) must match the title or the summary. Unmatched items go to
+# Other, shown last. Bodies not listed are a flat list in agenda order.
+grouping:
+  City Council Committee on Housing and Real Estate:
+    - {label: Sales of city land, title_prefix: [Sale of City-owned]}
+    - {label: CHA board appointments, title_prefix: [Appointment of]}
+  City Council Committee on Zoning:
+    - {label: Planned developments, title_prefix: [Zoning Reclassification], pattern: 'Planned Development|\bPD\b'}
+    - {label: Single-site rezonings, title_prefix: [Zoning Reclassification]}
+    - {label: Zoning code changes, title_prefix: [Amendment of Municipal Code, Designation of]}
+  City Council Committee on Finance: []
+
+# Inside a grouped body an item is a card if it is big; the rest go in a compact table.
+always_card_groups: [Planned developments, Zoning code changes, Other]
+card_min_units: 10
+card_min_amount: 1000000
+
+# The headline is the site address in these groups and the appointee's name in these; otherwise the title.
+address_groups: [Sales of city land, Single-site rezonings, Planned developments]
+name_groups: [CHA board appointments]
