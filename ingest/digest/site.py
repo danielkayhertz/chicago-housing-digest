@@ -7,6 +7,7 @@ import shutil
 from collections import defaultdict
 from pathlib import Path
 
+import yaml
 from jinja2 import Environment, PackageLoader, select_autoescape
 
 from .categories import Categories
@@ -87,8 +88,20 @@ def ics_calendar(meetings: list[Meeting], name: str, now: dt.datetime) -> str:
     return "".join(fold(line) + "\r\n" for line in lines)
 
 
+def quiet_sources(sources: list[dict], shown: set[str], today: dt.date, cutoff: dt.date) -> list[str]:
+    """One line per watched source with no meeting on the page, so a body between meetings is not silently absent."""
+    out = []
+    for cfg in sources:
+        name = cfg.get("label") or cfg.get("display_body") or cfg.get("body")
+        if not name or cfg.get("adapter") == "watcher" or cfg["id"] in shown:
+            continue
+        end = today + dt.timedelta(days=int(cfg.get("window_days", (-14, 60))[1]))
+        out.append(f"{name}: no meeting posted from {cutoff:%B} {cutoff.day} to {end:%B} {end.day}")
+    return out
+
+
 def build_site(digest: Digest, out_dir: Path, items_json: Path, categories: Categories, now: dt.datetime,
-               layout: Layout | None = None) -> None:
+               layout: Layout | None = None, sources: list[dict] | None = None) -> None:
     layout = layout or Layout.load(LAYOUT_PATH)
     today = now.astimezone(CHI).date()
     items_by_meeting: dict[str, list[Item]] = defaultdict(list)
@@ -115,6 +128,7 @@ def build_site(digest: Digest, out_dir: Path, items_json: Path, categories: Cate
     )
     bodies = sorted({m.body for m in digest.meetings})
     ics = {b: f"ics/{slugify(b)}.ics" for b in bodies}
+    quiet = quiet_sources(sources or [], {m.source_id for m, _, _ in upcoming + recent}, today, cutoff)
 
     env = Environment(loader=PackageLoader("digest", "templates"), autoescape=select_autoescape(["html", "j2"]))
     env.filters["safe_url"] = safe_url
@@ -123,7 +137,7 @@ def build_site(digest: Digest, out_dir: Path, items_json: Path, categories: Cate
     env.globals["LONG_TITLE"] = LONG_TITLE
     html = env.get_template("index.html.j2").render(
         digest=digest, outline=build_outline(upcoming, recent, layout, ics), notices=notices, outcomes=outcomes,
-        bodies=bodies, categories=categories.items, generated=digest.generated_at.astimezone(CHI),
+        bodies=bodies, categories=categories.items, generated=digest.generated_at.astimezone(CHI), quiet=quiet,
     )
     (out_dir / "ics").mkdir(parents=True, exist_ok=True)
     (out_dir / "index.html").write_text(html, encoding="utf-8")
@@ -145,7 +159,8 @@ def main(argv: list[str] | None = None) -> None:
         raise SystemExit(f"{src} not found; run python -m digest.run first")
     out = args.root / "site"
     build_site(digest, out, src, Categories(args.root / "config" / "categories.yaml"), dt.datetime.now(CHI),
-               Layout.load(args.root / "config" / "layout.yaml"))
+               Layout.load(args.root / "config" / "layout.yaml"),
+               yaml.safe_load((args.root / "config" / "sources.yaml").read_text(encoding="utf-8"))["sources"])
     print(f"wrote {out}")
 
 

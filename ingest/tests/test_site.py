@@ -263,3 +263,33 @@ def test_each_day_is_a_section_the_filters_can_hide(tmp_path):
         assert f'<section class="day"><h2 id="{day}">' in html
     first = html.split('<section class="day"><h2 id="day-2026-10-08">')[1].split('<section class="day">')[0]
     assert 'id="elms-h1"' in first and 'id="cpc-2026-10-15"' not in first   # a day holds only its own meetings
+
+
+SOURCES = [
+    {"id": "cha", "adapter": "legistar", "label": "CHA Board of Commissioners and committees"},
+    {"id": "cpc", "adapter": "dpd", "body": "Chicago Plan Commission"},
+    {"id": "ihda", "adapter": "ihda", "label": "IHDA", "window_days": [-60, 90]},
+    {"id": "watch", "adapter": "watcher"},
+]
+
+
+def test_watched_sources_with_nothing_on_the_page_say_so(tmp_path):
+    src = tmp_path / "items.json"
+    d = sample()
+    dump_digest(d, src)
+    build_site(d, tmp_path / "site", src, CATS, NOW, sources=SOURCES)
+    html = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
+    quiet = html.split('<ul class="quiet"')[1].split("</ul>")[0]
+    assert "<li>CHA Board of Commissioners and committees: no meeting posted from September 21 to December 4</li>" in quiet
+    assert "<li>IHDA: no meeting posted from September 21 to January 3</li>" in quiet   # its own look-ahead
+    assert "Chicago Plan Commission" not in quiet                                     # it has meetings shown
+    assert "watch" not in quiet
+    assert html.index('<ul class="quiet"') < html.index('<section class="day">')
+
+
+def test_no_quiet_list_when_every_source_has_a_meeting(tmp_path):
+    src = tmp_path / "items.json"
+    d = sample()
+    dump_digest(d, src)
+    build_site(d, tmp_path / "site", src, CATS, NOW, sources=[SOURCES[1]])
+    assert 'class="quiet"' not in (tmp_path / "site" / "index.html").read_text(encoding="utf-8")

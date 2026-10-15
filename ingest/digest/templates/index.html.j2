@@ -79,6 +79,7 @@
   .filters { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin: 1rem 0 .25rem; }
   select { font: inherit; max-width: 100%; } button { font: inherit; }
   #f-status:empty { display: none; }
+  ul.quiet { list-style: none; padding: 0; margin: -.75rem 0 1.5rem; color: var(--muted); font-size: .9rem; }
   .plain { list-style: none; padding: 0; } .plain > li { margin: 1rem 0; max-width: 70ch; }
 </style>
 </head>
@@ -164,6 +165,8 @@
 <p id="f-status" class="meta" role="status"></p>
 
 {% if outline.index %}<nav class="toc" aria-labelledby="toc-h"><h2 id="toc-h">Meetings</h2>{{ meeting_links() }}</nav>{% endif %}
+
+{% if quiet %}<ul class="quiet" aria-label="Watched bodies with nothing scheduled">{% for q in quiet %}<li>{{ q }}</li>{% endfor %}</ul>{% endif %}
 
 {% if not outline.has_upcoming %}<p>No upcoming meetings found.</p>{% endif %}
 {% for d in outline.days %}

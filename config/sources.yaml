@@ -19,6 +19,7 @@ sources:
   - id: cha
     adapter: legistar
     client: thecha
+    label: CHA Board of Commissioners and committees  # named on the page when nothing is scheduled
     bodies:
       138: CHA Board of Commissioners
       188: CHA Finance & Audit Committee
@@ -39,10 +40,12 @@ sources:
     min_meetings: 1
   - id: ihda
     adapter: ihda
+    label: IHDA Board and committees
     url: "https://www.ihda.org/about-ihda/public-meetings-and-notices/"
     window_days: [-60, 90]
   - id: clihtf
     adapter: clihtf
+    label: CLIHTF Board of Directors
   - id: watch
     adapter: watcher
     watch_file: watch.yaml
