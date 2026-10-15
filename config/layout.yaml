@@ -37,3 +37,5 @@ card_min_amount: 1000000
 # The headline is the site address in these groups and the appointee's name in these; otherwise the title.
 address_groups: [Sales of city land, Single-site rezonings, Planned developments]
 name_groups: [CHA board appointments]
+# Bodies without type groups whose items also lead with the site address when one is known.
+address_bodies: [Chicago Plan Commission]

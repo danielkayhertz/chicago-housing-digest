@@ -42,6 +42,7 @@ class Layout:
     min_amount: int
     address_groups: set[str]
     name_groups: set[str]
+    address_bodies: set[str] = field(default_factory=set)  # flat bodies whose headline is the address
 
     @classmethod
     def load(cls, path: Path) -> "Layout":
@@ -53,7 +54,8 @@ class Layout:
                     for body, rules in (raw.get("grouping") or {}).items()}
         return cls(families=families, grouping=grouping, always_card=set(raw.get("always_card_groups") or []),
                    min_units=int(raw.get("card_min_units", 10)), min_amount=int(raw.get("card_min_amount", 1_000_000)),
-                   address_groups=set(raw.get("address_groups") or []), name_groups=set(raw.get("name_groups") or []))
+                   address_groups=set(raw.get("address_groups") or []), name_groups=set(raw.get("name_groups") or []),
+                   address_bodies=set(raw.get("address_bodies") or []))
 
 
 @dataclass(frozen=True)
@@ -89,11 +91,11 @@ def is_card(layout: Layout, group: str | None, units: int | None, amount: int | 
 _APPOINTEE = re.compile(r"^Appointment of (.+?) as\b")
 
 
-def headline(layout: Layout, item: Item, group: str | None) -> str:
+def headline(layout: Layout, item: Item, group: str | None, body: str = "") -> str:
     """The site address for land sales and rezonings, the person for appointments; otherwise the (shortened) title."""
     if group in layout.name_groups and (m := _APPOINTEE.match(item.title)):
         return m.group(1).strip()
-    if group in layout.address_groups:
+    if group in layout.address_groups or (group is None and body in layout.address_bodies):
         e = item.enrichment
         addr = (e.geography.address if e else None) or title_address(item.title)
         if addr:
@@ -111,7 +113,11 @@ _PUBLIC = re.compile(r"\b(?:City|Council|Committee|Department|Dept|Authority|Com
 
 
 def facts(item: Item, head: str) -> list[tuple[Seg, ...]]:
-    """Fact chips in display order: ward, homes, dollars, zoning change, buyer or applicant. Only known facts."""
+    """Fact chips in display order: ward, homes, dollars, zoning change, buyer or applicant. Only known facts.
+
+    The buyer or applicant must be named in the agenda title: entities found only in documents are as often the
+    sponsoring alderperson, a presenter or the appointing mayor.
+    """
     e = item.enrichment
     if e is None:
         return []
@@ -129,7 +135,9 @@ def facts(item: Item, head: str) -> list[tuple[Seg, ...]]:
     if e.zoning_to:
         lead = ", ".join(e.zoning_from) + " → " if e.zoning_from else "to "
         out.append((Seg(lead), Seg(e.zoning_to, True)))
-    party = next((x for x in e.entities if not _PUBLIC.search(x) and x.casefold() not in head.casefold()), None)
+    title = item.title.casefold()
+    party = next((x for x in e.entities if not _PUBLIC.search(x) and x.casefold() in title
+                  and x.casefold() not in head.casefold()), None)
     if party:
         out.append((Seg(party),))
     return out
@@ -192,6 +200,7 @@ class IndexEntry:
     family: Family | None
     body: str
     count: int
+    recent: bool = False
 
 
 @dataclass
@@ -208,7 +217,7 @@ def item_view(layout: Layout, body: str, item: Item) -> ItemView:
     e = item.enrichment
     summary = trim_summary(e.summary) if e and e.summary else ""
     group = group_for(layout, body, item.title, summary)
-    head = headline(layout, item, group)
+    head = headline(layout, item, group, body)
     return ItemView(
         item=item, anchor=slugify(item.id, 120), group=group, headline=head,
         full_title=item.title if head != item.title else None, facts=facts(item, head),
@@ -257,5 +266,6 @@ def build_outline(upcoming: list[Shown], recent: list[Shown], layout: Layout, ic
     for day in days:
         for mv in day.meetings:
             start = mv.meeting.start.astimezone(CHI)
-            index.append(IndexEntry(mv.anchor, f"{start:%a %b} {start.day}", mv.family, mv.meeting.body, mv.count))
+            index.append(IndexEntry(mv.anchor, f"{start:%a %b} {start.day}", mv.family, mv.meeting.body, mv.count,
+                                    day.id == "recent"))
     return Outline(index=index, days=days, has_upcoming=bool(by_day))

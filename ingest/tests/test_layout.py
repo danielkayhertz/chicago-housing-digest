@@ -69,7 +69,7 @@ def test_headlines():
 
 
 def test_facts_order_and_format():
-    it = item("Sale of City-owned property at 2054 W Warren Blvd", geography=Geography(ward=27),
+    it = item("Sale of City-owned property at 2054 W Warren Blvd to EGP Warren Apartments LLC", geography=Geography(ward=27),
               figures=Figures(units=20, affordable_units=4), amount=315315, amount_kind="sale price",
               entities=["City of Chicago", "Department of Housing", "EGP Warren Apartments LLC"])
     got = facts(it, "2054 W Warren Blvd")
@@ -124,6 +124,7 @@ def test_outline_days_index_and_groups():
     assert [(x.anchor, x.date_label, x.family.id, x.count) for x in o.index] == [
         ("elms-h", "Thu Oct 15", "council", 3), ("cpc-1", "Thu Oct 15", "planning", 1),
         ("ihda-1", "Fri Oct 16", "ihda", 0), ("elms-z", "Tue Oct 13", "council", 1)]
+    assert [x.recent for x in o.index] == [False, False, False, True]
     hv = o.days[0].meetings[0]
     assert hv.when == "10:00 AM" and hv.hidden == 1 and hv.ics == f"ics/{HRE}.ics" and hv.cards == []
     assert [g.label for g in hv.groups] == ["Sales of city land", "CHA board appointments"]
@@ -165,3 +166,22 @@ def test_no_upcoming_meetings():
     unknown_time = meeting("cpc:2", "Chicago Plan Commission", dt.datetime(2026, 10, 20, 0, 0, tzinfo=CHI))
     unknown_time.time_known = False
     assert build_outline([(unknown_time, [], 0)], [], L, {"Chicago Plan Commission": "x"}).days[0].meetings[0].when == ""
+
+
+def test_party_must_be_named_in_the_title():
+    # sponsors, presenters and the appointing mayor are entities the model finds, but not the buyer or applicant
+    rez = item("Zoning Reclassification Map No. 10-F at 4639-4643 S Wallace St", entities=["Raymond A. Lopez"])
+    assert facts(rez, "4639-4643 S Wallace St") == []
+    talk = item("Multifamily Update", entities=["S. Bannon"])
+    assert facts(talk, "Multifamily Update") == []
+    pd = item("A proposed Planned Development, submitted by MKR Owner LLC for 1133 W. Kinzie St.",
+              entities=["MKR Owner LLC"])
+    assert [fact_text(f) for f in facts(pd, "1133 W. Kinzie St.")] == ["MKR Owner LLC"]
+
+
+def test_address_bodies_lead_with_the_address_in_a_flat_body():
+    pd = item("A proposed Planned Development, submitted by MKR Owner LLC for the property generally located at "
+              "1133 W. Kinzie St.", geography=Geography(address="1133 W. Kinzie St."))
+    assert headline(L, pd, None, "Chicago Plan Commission") == "1133 W. Kinzie St."
+    assert headline(L, item("Item 3 South Chicago Land Use Framework"), None, "Chicago Plan Commission")         == "Item 3 South Chicago Land Use Framework"                          # no address: the title
+    assert headline(L, item("Pheasant Ridge", geography=Geography(address="1 Main St")), None, "IHDA Board")         == "Pheasant Ridge"                                                   # not an address body

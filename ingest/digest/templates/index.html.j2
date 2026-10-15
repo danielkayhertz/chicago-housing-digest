@@ -30,6 +30,8 @@
   .toc h2 { margin: .25rem 0 .5rem; font-size: 1.05rem; border: 0; padding: 0; }
   .toc ul, #panel ul { list-style: none; margin: 0; padding: 0; }
   .toc li { padding: .2rem 0; border-top: 1px dotted var(--line); } .toc li:first-child { border-top: 0; }
+  li.split { margin-top: .5rem; padding-top: .4rem; border-top: 2px solid var(--ink); font-size: .8rem; font-weight: 700;
+             text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
   .toc a, #panel a { text-decoration: none; display: block; } .toc a:hover .b, #panel a:hover .b { text-decoration: underline; }
   .when { display: inline-block; min-width: 5.5rem; color: var(--muted); font-size: .9rem; }
   .tag { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--fink);
@@ -68,6 +70,12 @@
   table.rows td { vertical-align: top; border-bottom: 1px solid var(--line); padding: .4rem .5rem .4rem 0; overflow-wrap: anywhere; }
   table.rows td.facts { font-size: .85rem; color: var(--muted); width: 45%; }
   table.rows details > :not(summary) { margin: .3rem 0 0; }
+  @media (max-width: 40rem) {
+    table.rows thead { display: none; }
+    table.rows tr { display: block; border-bottom: 1px solid var(--line); padding: .4rem 0; }
+    table.rows td { display: block; border: 0; padding: 0; }
+    table.rows td.facts { width: auto; padding: .15rem 0 0 1rem; }
+  }
   .filters { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin: 1rem 0 .25rem; }
   select { font: inherit; max-width: 100%; } button { font: inherit; }
   #f-status:empty { display: none; }
@@ -76,8 +84,9 @@
 </head>
 <body>
 {% macro meeting_links() -%}
-<ul>{% for x in outline.index %}
-  <li data-target="{{ x.anchor }}"><a href="#{{ x.anchor }}" class="{{ 'fam-' ~ x.family.id if x.family else 'fam-none' }}"><span class="when">{{ x.date_label }}</span> {% if x.family %}<span class="tag">{{ x.family.label }}</span> {% endif %}<span class="b">{{ x.body }}</span> <span class="n">{{ x.count }} item{{ 's' if x.count != 1 else '' }}</span></a></li>{% endfor %}
+<ul>{% for x in outline.index %}{% if x.recent and (loop.first or not loop.previtem.recent) %}
+  <li class="split">Recent</li>{% endif %}
+  <li data-target="{{ x.anchor }}"><a href="#{{ x.anchor }}" class="{{ 'fam-' ~ x.family.id if x.family else 'fam-none' }}"><span class="when">{{ x.date_label }}</span> {% if x.family %}<span class="tag">{{ x.family.label }}</span> {% endif %}<span class="b">{{ x.body }}</span> <span class="n">{{ x.count }} housing item{{ 's' if x.count != 1 else '' }}</span></a></li>{% endfor %}
 </ul>
 {%- endmacro %}
 
@@ -92,7 +101,7 @@
 
 {% macro card(i) -%}
 <li id="{{ i.anchor }}" class="row card" data-categories="{{ i.categories }}" data-ward="{{ i.ward }}">
-  <strong>{{ i.headline }}</strong> <span class="src">{{ i.item.source_ref }}</span>
+  <strong>{{ i.headline }}</strong>{% if i.item.source_ref != i.headline %} <span class="src">{{ i.item.source_ref }}</span>{% endif %}
   {% if i.full_title %}<details class="full"><summary>Full agenda text</summary>{{ i.full_title }}</details>{% endif %}
   {% if i.facts %}<div class="chips">{{ chips(i) }}</div>{% endif %}
   {{ details_body(i) }}
@@ -102,7 +111,7 @@
 {% macro table_row(i) -%}
 <tr id="{{ i.anchor }}" class="row" data-categories="{{ i.categories }}" data-ward="{{ i.ward }}">
   <td><details><summary><strong>{{ i.headline }}</strong></summary>
-    <div class="src">{{ i.item.source_ref }}</div>
+    {% if i.item.source_ref != i.headline %}<div class="src">{{ i.item.source_ref }}</div>{% endif %}
     {% if i.full_title %}<div class="full">{{ i.full_title }}</div>{% endif %}
     {{ details_body(i) }}</details></td>
   <td class="facts">{{ i.facts_text }}</td>
@@ -138,7 +147,7 @@
 {%- endmacro %}
 
 <div class="page">
-<nav id="panel" aria-label="Meetings"><p class="panel-h">This week</p>{{ meeting_links() }}</nav>
+<nav id="panel" aria-label="Meetings"><p class="panel-h">Meetings</p>{{ meeting_links() }}</nav>
 <main>
 <h1>Chicago Housing Meetings</h1>
 <p class="meta">Updated {{ generated.strftime('%B') }} {{ generated.day }}, {{ generated.year }}, {{ generated.strftime('%I:%M %p').lstrip('0') }} Chicago time. Summaries are written by AI from public documents; check the source before relying on them.</p>
@@ -154,7 +163,7 @@
 </div>
 <p id="f-status" class="meta" role="status"></p>
 
-{% if outline.index %}<nav class="toc" aria-labelledby="toc-h"><h2 id="toc-h">This week</h2>{{ meeting_links() }}</nav>{% endif %}
+{% if outline.index %}<nav class="toc" aria-labelledby="toc-h"><h2 id="toc-h">Meetings</h2>{{ meeting_links() }}</nav>{% endif %}
 
 {% if not outline.has_upcoming %}<p>No upcoming meetings found.</p>{% endif %}
 {% for d in outline.days %}

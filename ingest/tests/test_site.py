@@ -170,7 +170,7 @@ def test_long_titles_get_a_short_headline_with_the_full_text_in_a_disclosure(tmp
     from digest.site import short_title
     d = sample()
     long = "A proposed Planned Development, submitted by MKR Owner LLC for the property generally located at " \
-           "1133 W. Kinzie Street. The Applicant requests a rezoning from M2-3 to DX-5."
+           "the Kinzie Green Line site. The Applicant requests a rezoning from M2-3 to DX-5."
     d.items[0].title = long
     src = tmp_path / "items.json"
     dump_digest(d, src)
@@ -233,8 +233,11 @@ def test_index_and_panel_list_every_shown_meeting_in_page_order(tmp_path):
     for nav in (toc, panel):
         assert re.findall(r'href="#([^"]+)"', nav) == order
         assert re.findall(r'data-target="([^"]+)"', nav) == order
-    assert '<span class="n">2 items</span>' in toc and '<span class="n">1 item</span>' in toc
-    assert '<span class="n">0 items</span>' in toc                         # the cancelled CDC meeting
+    assert '<span class="n">2 housing items</span>' in toc and '<span class="n">1 housing item</span>' in toc
+    assert '<span class="n">0 housing items</span>' in toc                 # the cancelled CDC meeting
+    assert '<h2 id="toc-h">Meetings</h2>' in html and "This week" not in html
+    for nav in (toc, panel):                                               # upcoming, then a Recent divider
+        assert nav.index('href="#cdc-2026-11-10"') < nav.index('<li class="split">Recent</li>')             < nav.index('href="#elms-z1"')
     assert html.index('<h2 id="day-2026-10-08">') < html.index('<h2 id="day-2026-10-15">')         < html.index('<h2 id="day-2026-11-10">') < html.index('<h2 id="recent">Recent</h2>')
     assert html.index('<nav class="toc"') < html.index('<h2 id="day-2026-10-08">')
 
@@ -244,3 +247,11 @@ def test_no_upcoming_meetings_says_so(tmp_path):
     d.meetings = [m for m in d.meetings if m.id == "elms:Z1"]
     html = render(d, tmp_path)
     assert "No upcoming meetings found." in html and '<h2 id="recent">Recent</h2>' in html
+
+
+def test_card_does_not_repeat_an_address_headline_as_its_agenda_number(tmp_path):
+    d = sample()
+    d.items[0].enrichment = d.items[0].enrichment.model_copy(
+        update={"geography": Geography(address="1133 W. Kinzie St.", ward=27)})
+    sec = render(d, tmp_path).split('id="cpc-2026-10-15-kinzie"')[1].split("</li>")[0]
+    assert "<strong>1133 W. Kinzie St.</strong>" in sec and '<span class="src">' not in sec
