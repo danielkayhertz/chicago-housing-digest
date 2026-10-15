@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-10-14T23:23:51.217198-05:00",
+ "generated_at": "2026-10-15T10:36:19.137772-05:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-10-14T23:23:51.217198-05:00",
+   "last_success_at": "2026-10-15T10:36:19.137772-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-10-14T23:23:51.217198-05:00",
+   "last_success_at": "2026-10-15T10:36:19.137772-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-10-14T23:23:51.217198-05:00",
+   "last_success_at": "2026-10-15T10:36:19.137772-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-10-14T23:23:51.217198-05:00",
+   "last_success_at": "2026-10-15T10:36:19.137772-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-10-14T23:23:51.217198-05:00",
+   "last_success_at": "2026-10-15T10:36:19.137772-05:00",
    "status": "stale",
    "message": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5: 1 numbered agenda entries have no record number and were skipped"
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-10-14T23:23:51.217198-05:00",
+   "last_success_at": "2026-10-15T10:36:19.137772-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-10-14T23:23:51.217198-05:00",
+   "last_success_at": "2026-10-15T10:36:19.137772-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-10-14T23:23:51.217198-05:00",
+   "last_success_at": "2026-10-15T10:36:19.137772-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-10-14T23:23:51.217198-05:00",
+   "last_success_at": "2026-10-15T10:36:19.137772-05:00",
    "status": "ok",
    "message": ""
   }
@@ -285,7 +285,7 @@
    "jurisdiction": "chicago",
    "start": "2026-10-15T10:00:00-05:00",
    "time_known": false,
-   "status": "scheduled",
+   "status": "held",
    "location": null,
    "agenda_url": "https://www.chicago.gov/content/city/en/depts/dcd/supp_info/chicago_plan_commission/October_2026_Plan_Commission_Hearing.html",
    "video_url": null,
@@ -295,7 +295,7 @@
    "item_count_total": 3,
    "item_count_relevant": 2,
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T10:36:19.137772-05:00"
   },
   {
    "id": "ihda:ihda-finance-committee:2026-10-16",
@@ -1410,7 +1410,7 @@
      "ChiBlockBuilder"
     ],
     "figures": {
-     "units": null,
+     "units": 16,
      "affordable_units": null
     },
     "amount": 301028,
@@ -2127,9 +2127,13 @@
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#R2026-0028815",
    "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
-   "source_ref": "R2026-0028815",
+   "source_ref": "SR2026-0028815",
    "title": "Establishment of Problem Landlord and Housing Court Coordination Task Force to examine and recommend improvements to response to chronic and repeat housing code violations",
    "attachments": [
+    {
+     "label": "SR2026-0028815",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/2069dbda-8c75-4942-bfb9-2b62a1d4a211.pdf"
+    },
     {
      "label": "w36others - r28815",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/5a5419a0-b39b-4f2f-a408-ec96131cde7c.pdf"
@@ -2141,16 +2145,11 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "The resolution creates a task force to improve enforcement against problem landlords and chronic building-code violations, which bears on tenant habitability and housing court coordination.",
-    "summary": "A City Council resolution would create a Problem Landlord and Housing Court Coordination Task Force to examine and recommend improvements to the City's response to chronic and repeat housing code violations. It would include Council, Mayor, Buildings, Law, and Circuit Court representatives and report within 180 days of its first meeting.",
+    "relevance_reason": "The resolution creates a task force on problem landlords and repeat building-code violations, which bears on habitability enforcement and tenant protections.",
+    "summary": "A substitute resolution would establish a Problem Landlord and Housing Court Coordination Task Force to recommend improvements to the City's response to chronic and repeat housing code violations and to coordinate with the Circuit Court of Cook County. It would include City Council members, the Mayor's Office, and several city departments, and report within 180 days.",
     "categories": [
      {
       "id": "healthy-homes",
-      "via": "model",
-      "detail": ""
-     },
-     {
-      "id": "housing-agenda",
       "via": "model",
       "detail": ""
      }
@@ -2160,7 +2159,9 @@
      "ward": null,
      "community_area": null
     },
-    "entities": [],
+    "entities": [
+     "Circuit Court of Cook County"
+    ],
     "figures": {
      "units": null,
      "affordable_units": null
@@ -2171,11 +2172,11 @@
     "zoning_to": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "14be36b7ac250da3",
+    "content_hash": "99100bb6d4dc0458",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-15T10:36:19.137772-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028463",
@@ -3208,7 +3209,7 @@
      }
     ],
     "geography": {
-     "address": "2142 W 18th Place",
+     "address": "2142 W 18th Pl",
      "ward": 25,
      "community_area": "Lower West Side"
     },
@@ -5034,7 +5035,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/50a018d5-756a-4f0e-a918-4d4f9a6962a6.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -5088,7 +5093,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T13:08:07.894365-05:00"
+   "last_changed_at": "2026-10-15T10:36:19.137772-05:00"
   },
   {
    "id": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5#O2026-0026950",
@@ -5110,7 +5115,7 @@
     }
    ],
    "outcome": {
-    "action": "Substituted",
+    "action": "Recommended to Pass",
     "date": "2026-10-13",
     "tally": null
    },
@@ -5142,7 +5147,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T13:08:07.894365-05:00"
+   "last_changed_at": "2026-10-15T10:36:19.137772-05:00"
   },
   {
    "id": "cdc:2026-10-13#1207-w-leland-ave",
@@ -7251,6 +7256,16 @@
    "type": "item_added",
    "ref_id": "clihtf:319068#new-business-tenant-outreach-initiative-presented-by-marlana-edwards-dir-079adf2",
    "at": "2026-10-14T13:08:07.894365-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5#O2026-0028750",
+   "at": "2026-10-15T10:36:19.137772-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5#O2026-0026950",
+   "at": "2026-10-15T10:36:19.137772-05:00"
   }
  ]
 }
