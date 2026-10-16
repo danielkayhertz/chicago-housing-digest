@@ -2810,7 +2810,7 @@
   "amount": null,
   "amount_kind": null,
   "categories": [],
-  "content_hash": "e173cc360bb81d02",
+  "content_hash": "4f7919b03d0acd98",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -2822,9 +2822,10 @@
    "ward": null
   },
   "housing_relevant": false,
+  "important": null,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The ordinance concerns permits for charitable solicitation on the public way and reassigns the permitting authority from the committee on finance to the Commissioner of Transportation, with no bearing on homes, housing, or residents' housing rights.",
+  "relevance_reason": "This ordinance only changes who issues charitable solicitation permits for the public way and related application procedures, which has no bearing on homes, housing finance, or residents' housing rights.",
   "source_quality": "none",
   "status": "screened_out",
   "summary": "",
@@ -2833,10 +2834,10 @@
  },
  "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5#O2026-0028750": {
   "amount": 11000000,
-  "amount_kind": "DOH multi-family loan",
+  "amount_kind": "city multi-family loan",
   "categories": [
    {
-    "detail": "Department of Housing",
+    "detail": "TIF",
     "id": "housing-agenda",
     "via": "keyword"
    },
@@ -2849,35 +2850,29 @@
     "detail": "",
     "id": "property-taxes",
     "via": "model"
-   },
-   {
-    "detail": "",
-    "id": "state-agenda",
-    "via": "model"
    }
   ],
-  "content_hash": "1d5e400b6ec35062",
+  "content_hash": "5f0e302926939d64",
   "entities": [
-   "Harvest Homes II Apartments, LLC",
-   "The People's Community Development Association of Chicago",
-   "Department of Housing"
+   "Harvest Homes II Apartments, LLC"
   ],
   "figures": {
    "affordable_units": 50,
    "units": 50
   },
   "geography": {
-   "address": "3415-3449 W Jackson Blvd and 3414-3456 W Fifth Ave",
+   "address": "3415-3449 West Jackson Blvd. and 3414-3456 West Fifth Ave.",
    "community_area": "East Garfield Park",
    "ward": 28
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The ordinance provides city loan funds, TIF assistance and city-owned land for a 50-unit affordable rental development.",
+  "relevance_reason": "The ordinance provides city loan funds, TIF assistance, and city-owned land for a 50-unit affordable rental development.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ordinance authorizing a Department of Housing multi-family loan of up to $11 million, up to $11.5 million in Midwest TIF funds, and sale of three city lots for $1 each to build a 50-unit affordable rental building. Harvest Homes II Apartments, LLC, with NHP Foundation and The People's Community Development Association of Chicago, is the developer.",
+  "summary": "Ordinance authorizing a DOH multi-family loan of up to $11 million to Harvest Homes II Apartments, LLC, up to $11.5 million in Midwest TIF funds to NHPF, and sale of three city lots to PCDAC for $1 per parcel, for a 50-unit affordable rental building.",
   "zoning_from": [],
   "zoning_to": null
  },

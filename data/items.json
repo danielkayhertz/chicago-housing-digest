@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-10-15T20:21:02.827576-05:00",
+ "generated_at": "2026-10-16T10:23:19.354323-05:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-10-15T20:21:02.827576-05:00",
+   "last_success_at": "2026-10-16T10:23:19.354323-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-10-15T20:21:02.827576-05:00",
+   "last_success_at": "2026-10-16T10:23:19.354323-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-10-15T20:21:02.827576-05:00",
+   "last_success_at": "2026-10-16T10:23:19.354323-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-10-15T20:21:02.827576-05:00",
+   "last_success_at": "2026-10-16T10:23:19.354323-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-10-15T20:21:02.827576-05:00",
+   "last_success_at": "2026-10-16T10:23:19.354323-05:00",
    "status": "stale",
    "message": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5: 1 numbered agenda entries have no record number and were skipped"
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-10-15T20:21:02.827576-05:00",
+   "last_success_at": "2026-10-16T10:23:19.354323-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-10-15T20:21:02.827576-05:00",
+   "last_success_at": "2026-10-16T10:23:19.354323-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-10-15T20:21:02.827576-05:00",
+   "last_success_at": "2026-10-16T10:23:19.354323-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-10-15T20:21:02.827576-05:00",
+   "last_success_at": "2026-10-16T10:23:19.354323-05:00",
    "status": "ok",
    "message": ""
   }
@@ -305,7 +305,7 @@
    "jurisdiction": "state",
    "start": "2026-10-16T09:30:00-05:00",
    "time_known": true,
-   "status": "scheduled",
+   "status": "held",
    "location": null,
    "agenda_url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf",
    "video_url": null,
@@ -315,7 +315,7 @@
    "item_count_total": 9,
    "item_count_relevant": 7,
    "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T14:45:41.871293-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "ihda:ihda-board:2026-10-16",
@@ -2552,7 +2552,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/85d641dd-7c8d-4e89-b153-8d8a0a3ed6d5.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -2593,7 +2597,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027173",
@@ -2659,7 +2663,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/c5bb2933-4c84-4065-9d81-850bceec5e7d.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -2699,7 +2707,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027667",
@@ -2712,7 +2720,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/10ad6d53-af53-4147-b4d6-85e64f96dc36.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -2752,7 +2764,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0025393",
@@ -2850,7 +2862,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/9b045884-cfe2-4a56-a414-838a83fa1c3e.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -2880,7 +2896,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027372",
@@ -2952,7 +2968,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/dd10f197-187a-47d9-984a-f11bca91f91c.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -2993,7 +3013,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028698",
@@ -3026,7 +3046,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d110f84b-0604-487c-8de9-5d0e6dddd340.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -3064,7 +3088,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028700",
@@ -3148,7 +3172,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/5f83adab-addf-4f83-bdd8-1b07892bfbf3.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -3189,7 +3217,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028738",
@@ -3222,7 +3250,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e54c319d-5d3b-4f66-a062-c96eccb14673.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -3262,7 +3294,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028740",
@@ -3563,7 +3595,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/62843840-225e-4203-86f1-a9e83c9c7870.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -3601,7 +3637,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028339",
@@ -3634,7 +3670,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/864ed6af-f95d-4090-83c9-e3e07ed30d42.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -3674,7 +3714,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028345",
@@ -3707,7 +3747,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/a506a55f-40ac-4849-beeb-e9b3ca001b75.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -3743,7 +3787,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028415",
@@ -3780,7 +3824,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/2229fc30-8034-4142-8055-9f67bf84abe0.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -3825,7 +3873,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028439",
@@ -4070,7 +4118,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/726b1924-2577-4663-98f4-4b23397eecb5.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -4100,7 +4152,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028670",
@@ -4133,7 +4185,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/bb05e7a1-6bc1-4ef4-b0ab-1d4d4c0c1590.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -4169,7 +4225,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028350",
@@ -4190,7 +4246,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/2e271682-eb24-48d0-858b-a61f327f71cb.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -4220,7 +4280,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028671",
@@ -4241,7 +4301,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/dbd64f22-0ec1-496f-b424-a6a1b291c2da.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -4281,7 +4345,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028689",
@@ -4449,7 +4513,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/93688e73-cf0b-4414-8ada-acda11f5df3f.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -4489,7 +4557,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028406",
@@ -4510,7 +4578,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/4182ccb0-eec4-47ea-8737-5f30deb3f16b.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -4551,7 +4623,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028726",
@@ -4588,7 +4660,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/501c7b98-5788-43a0-b43b-1fc134eff886.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -4631,7 +4707,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028704",
@@ -4664,7 +4740,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e610230f-f05a-44e8-87a8-11fc5a64ff81.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -4694,7 +4774,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028747",
@@ -4727,7 +4807,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/ca21157f-5448-4036-b71b-d88f8ab7bd0e.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -4767,7 +4851,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028730",
@@ -4804,7 +4888,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/ea2702f8-4f0a-4a5c-98d2-bbed81807705.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-10-13",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -4850,7 +4938,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028731",
@@ -5299,6 +5387,10 @@
     {
      "label": "O2026-0028750 Ex C RDA with subex A and B, C not attached",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/50a018d5-756a-4f0e-a918-4d4f9a6962a6.pdf"
+    },
+    {
+     "label": "O2026-0028750 C.L.",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/04d5245d-de5f-430d-88cd-29360b42c3ea.pdf"
     }
    ],
    "outcome": {
@@ -5311,13 +5403,13 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "The ordinance provides city loan funds, TIF assistance and city-owned land for a 50-unit affordable rental development.",
-    "summary": "Ordinance authorizing a Department of Housing multi-family loan of up to $11 million, up to $11.5 million in Midwest TIF funds, and sale of three city lots for $1 each to build a 50-unit affordable rental building. Harvest Homes II Apartments, LLC, with NHP Foundation and The People's Community Development Association of Chicago, is the developer.",
+    "relevance_reason": "The ordinance provides city loan funds, TIF assistance, and city-owned land for a 50-unit affordable rental development.",
+    "summary": "Ordinance authorizing a DOH multi-family loan of up to $11 million to Harvest Homes II Apartments, LLC, up to $11.5 million in Midwest TIF funds to NHPF, and sale of three city lots to PCDAC for $1 per parcel, for a 50-unit affordable rental building.",
     "categories": [
      {
       "id": "housing-agenda",
       "via": "keyword",
-      "detail": "Department of Housing"
+      "detail": "TIF"
      },
      {
       "id": "social-housing",
@@ -5328,39 +5420,32 @@
       "id": "property-taxes",
       "via": "model",
       "detail": ""
-     },
-     {
-      "id": "state-agenda",
-      "via": "model",
-      "detail": ""
      }
     ],
     "geography": {
-     "address": "3415-3449 W Jackson Blvd and 3414-3456 W Fifth Ave",
+     "address": "3415-3449 West Jackson Blvd. and 3414-3456 West Fifth Ave.",
      "ward": 28,
      "community_area": "East Garfield Park"
     },
     "entities": [
-     "Harvest Homes II Apartments, LLC",
-     "The People's Community Development Association of Chicago",
-     "Department of Housing"
+     "Harvest Homes II Apartments, LLC"
     ],
     "figures": {
      "units": 50,
      "affordable_units": 50
     },
     "amount": 11000000,
-    "amount_kind": "DOH multi-family loan",
+    "amount_kind": "city multi-family loan",
     "zoning_from": [],
     "zoning_to": null,
     "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "1d5e400b6ec35062",
+    "content_hash": "5f0e302926939d64",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-15T10:36:19.137772-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5#O2026-0026950",
@@ -5371,6 +5456,10 @@
     {
      "label": "Charitable Solicitation amendment v2 (1)",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/48e95ee2-4d0d-4f71-a067-69d1b1cc7b83.pdf"
+    },
+    {
+     "label": "SO2026-0026950 C.L.",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/388fa82e-2163-4002-9b31-b29d0bf0a652.pdf"
     },
     {
      "label": "SO2026-0026950 Substitute Ordinance",
@@ -5391,7 +5480,7 @@
    "enrichment": {
     "status": "screened_out",
     "housing_relevant": false,
-    "relevance_reason": "The ordinance concerns permits for charitable solicitation on the public way and reassigns the permitting authority from the committee on finance to the Commissioner of Transportation, with no bearing on homes, housing, or residents' housing rights.",
+    "relevance_reason": "This ordinance only changes who issues charitable solicitation permits for the public way and related application procedures, which has no bearing on homes, housing finance, or residents' housing rights.",
     "summary": "",
     "categories": [],
     "geography": {
@@ -5411,11 +5500,11 @@
     "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
-    "content_hash": "e173cc360bb81d02",
+    "content_hash": "4f7919b03d0acd98",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-15T10:36:19.137772-05:00"
+   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
   },
   {
    "id": "cdc:2026-10-13#1207-w-leland-ave",
@@ -7591,6 +7680,116 @@
    "type": "outcome_recorded",
    "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#Or2026-0028250",
    "at": "2026-10-15T20:21:02.827576-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028355",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027987",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027667",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027331",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028739",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028698",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028735",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028738",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028341",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028339",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028345",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028415",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028457",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028670",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028350",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028671",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028687",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028406",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028726",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028704",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028747",
+   "at": "2026-10-16T10:23:19.354323-05:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028730",
+   "at": "2026-10-16T10:23:19.354323-05:00"
   }
  ]
 }
