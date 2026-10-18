@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-10-17T20:03:10.722282-05:00",
+ "generated_at": "2026-10-18T09:35:16.093878-05:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-10-17T20:03:10.722282-05:00",
+   "last_success_at": "2026-10-18T09:35:16.093878-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-10-17T20:03:10.722282-05:00",
+   "last_success_at": "2026-10-18T09:35:16.093878-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-10-17T20:03:10.722282-05:00",
+   "last_success_at": "2026-10-18T09:35:16.093878-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-10-17T20:03:10.722282-05:00",
+   "last_success_at": "2026-10-18T09:35:16.093878-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-10-17T20:03:10.722282-05:00",
+   "last_success_at": "2026-10-18T09:35:16.093878-05:00",
    "status": "stale",
    "message": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5: 1 numbered agenda entries have no record number and were skipped"
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-10-17T20:03:10.722282-05:00",
+   "last_success_at": "2026-10-18T09:35:16.093878-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-10-17T20:03:10.722282-05:00",
+   "last_success_at": "2026-10-18T09:35:16.093878-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-10-17T20:03:10.722282-05:00",
+   "last_success_at": "2026-10-18T09:35:16.093878-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-10-17T20:03:10.722282-05:00",
+   "last_success_at": "2026-10-18T09:35:16.093878-05:00",
    "status": "ok",
    "message": ""
   }
@@ -456,6 +456,26 @@
    "item_count_relevant": 0,
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
    "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "cpc:2026-12-17",
+   "source_id": "cpc",
+   "body": "Chicago Plan Commission",
+   "body_id": "cpc",
+   "jurisdiction": "chicago",
+   "start": "2026-12-17T10:00:00-06:00",
+   "time_known": false,
+   "status": "scheduled",
+   "location": null,
+   "agenda_url": null,
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": "https://www.chicago.gov/content/city/en/depts/dcd/chicago-plan-commission/meetings--agendas---video-archives.html",
+   "needs_ai_extraction": false,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-10-18T09:35:16.093878-05:00",
+   "last_changed_at": "2026-10-18T09:35:16.093878-05:00"
   }
  ],
  "items": [
@@ -7887,6 +7907,11 @@
    "type": "meeting_new",
    "ref_id": "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55",
    "at": "2026-10-16T20:20:13.648413-05:00"
+  },
+  {
+   "type": "meeting_new",
+   "ref_id": "cpc:2026-12-17",
+   "at": "2026-10-18T09:35:16.093878-05:00"
   }
  ]
 }
