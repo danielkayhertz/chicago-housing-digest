@@ -4010,5 +4010,219 @@
   "summary": "IHDA released its draft 2027-2028 Low-Income Housing Tax Credit Qualified Allocation Plan for public comment. A hybrid public hearing is set for June 8, 2026, and written comments are due by 5:00 P.M. on June 15, 2026.",
   "zoning_from": [],
   "zoning_to": null
+ },
+ "watch:doh-home:34667633e840": {
+  "amount": 57500000,
+  "amount_kind": "total development cost",
+  "categories": [
+   {
+    "detail": "Department of Housing",
+    "id": "housing-agenda",
+    "via": "keyword"
+   },
+   {
+    "detail": "CHA",
+    "id": "cha",
+    "via": "keyword"
+   },
+   {
+    "detail": "",
+    "id": "state-agenda",
+    "via": "model"
+   }
+  ],
+  "content_hash": "0e3dde579fdeb907",
+  "entities": [
+   "Department of Housing",
+   "Preservation of Affordable Housing (POAH)",
+   "Far South Community Development Corporation (CDC)",
+   "Chicago Housing Authority (CHA)"
+  ],
+  "figures": {
+   "affordable_units": 70,
+   "units": 70
+  },
+  "geography": {
+   "address": "11400\u201311458 S. Halsted Street",
+   "community_area": "Morgan Park",
+   "ward": 21
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The Department of Housing is seeking City Council approval of financing ordinances for 70 new affordable rental units, using HOME funds, TIF, and LIHTC.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The Department of Housing seeks City Council approval of two financing ordinances for phase one of Morgan Park Commons, 70 affordable rental units in two buildings at 11400\u201311458 S. Halsted Street. Preservation of Affordable Housing (POAH) and Far South Community Development Corporation (CDC) are the proposers.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "watch:doh-home:782a04475fa0": {
+  "amount": 4000000,
+  "amount_kind": "acquisition financing",
+  "categories": [
+   {
+    "detail": "Department of Housing",
+    "id": "housing-agenda",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "1e9efdcef4423b78",
+  "entities": [
+   "Department of Housing",
+   "3301 W. Palmer LLC",
+   "Catalina Housing",
+   "Stocking Urban",
+   "Augusta Associates Limited Partnership",
+   "Hispanic Housing Development Corporation"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 37
+  },
+  "geography": {
+   "address": "3301 W. Palmer Place",
+   "community_area": "Logan Square",
+   "ward": 35
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The Department of Housing proposes acquisition financing to preserve affordability of a 37-unit income-restricted apartment property.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The Department of Housing seeks up to $4 million in acquisition financing to preserve affordability at 3301 W. Palmer Place, a 37-unit property. 3301 W. Palmer LLC, a Catalina Housing and Stocking Urban joint venture, would buy it from an affiliate of Hispanic Housing Development Corporation.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "watch:doh-home:839e51bda73d": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "Department of Housing",
+    "id": "housing-agenda",
+    "via": "keyword"
+   },
+   {
+    "detail": "",
+    "id": "social-housing",
+    "via": "model"
+   }
+  ],
+  "content_hash": "5c7487dae6110efc",
+  "entities": [
+   "Department of Housing",
+   "Inherentance NFP",
+   "City Lots for Working Families",
+   "Chicago Housing Trust"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 13
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The ordinance would sell six city-owned lots for new homes with long-term affordability restrictions under the City Lots for Working Families program.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The Department of Housing proposed an ordinance authorizing a City Lots for Working Families land sale and redevelopment agreement with Inherentance NFP for six city-owned lots in the 26th Ward. Six new homes, four in Humboldt Park and two in West Town, would carry long-term affordability restrictions through the Chicago Housing Trust.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "watch:doh-home:c8e4f6199e69": {
+  "amount": 1000000,
+  "amount_kind": "additional TIF assistance",
+  "categories": [
+   {
+    "detail": "Department of Housing",
+    "id": "housing-agenda",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "921caed5c9477285",
+  "entities": [
+   "Department of Housing",
+   "DOH",
+   "City Council",
+   "1539 N. Pulaski Elderly Apartments",
+   "Pioneer Arcade",
+   "HUD"
+  ],
+  "figures": {
+   "affordable_units": 60,
+   "units": null
+  },
+  "geography": {
+   "address": "1539 N. Pulaski",
+   "community_area": "Humboldt Park",
+   "ward": 26
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item seeks additional TIF funding for an affordable senior rental development in Humboldt Park.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The Department of Housing is asking City Council to amend a TIF Redevelopment Agreement with an extra $1 million for the 1539 N. Pulaski Elderly Apartments. The money would cover unforeseen structural rehabilitation costs at the historic Pioneer Arcade building. The project has 60 affordable senior units plus one manager's unit.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "watch:doh-home:fa230d0797e2": {
+  "amount": 16700000,
+  "amount_kind": "maximum TIF assistance",
+  "categories": [
+   {
+    "detail": "mixed-income",
+    "id": "social-housing",
+    "via": "keyword"
+   },
+   {
+    "detail": "Department of Housing",
+    "id": "housing-agenda",
+    "via": "keyword"
+   },
+   {
+    "detail": "CHA",
+    "id": "cha",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "4ea786fe4b4f11e8",
+  "entities": [
+   "Department of Housing",
+   "Chicago Housing Authority",
+   "City Council",
+   "Near North TIF district"
+  ],
+  "figures": {
+   "affordable_units": 54,
+   "units": 78
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "It seeks added TIF funding for a 78-unit mixed-income rental development on vacant CHA-owned land in Cabrini.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The Department of Housing is asking City Council to amend a TIF redevelopment agreement, raising assistance from $14 million to up to $16.7 million for the first phase of Oak and Larrabee. The building would have 78 mixed-income rental units, 54 of them affordable, on CHA-owned land.",
+  "zoning_from": [],
+  "zoning_to": null
  }
 }

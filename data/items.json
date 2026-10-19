@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-10-18T20:17:26.488361-05:00",
+ "generated_at": "2026-10-19T12:29:04.290827-05:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-10-18T20:17:26.488361-05:00",
+   "last_success_at": "2026-10-19T12:29:04.290827-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-10-18T20:17:26.488361-05:00",
+   "last_success_at": "2026-10-19T12:29:04.290827-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-10-18T20:17:26.488361-05:00",
+   "last_success_at": "2026-10-19T12:29:04.290827-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-10-18T20:17:26.488361-05:00",
+   "last_success_at": "2026-10-19T12:29:04.290827-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-10-18T20:17:26.488361-05:00",
+   "last_success_at": "2026-10-19T12:29:04.290827-05:00",
    "status": "stale",
    "message": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5: 1 numbered agenda entries have no record number and were skipped"
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-10-18T20:17:26.488361-05:00",
+   "last_success_at": "2026-10-19T12:29:04.290827-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-10-18T20:17:26.488361-05:00",
+   "last_success_at": "2026-10-19T12:29:04.290827-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-10-18T20:17:26.488361-05:00",
+   "last_success_at": "2026-10-19T12:29:04.290827-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-10-18T20:17:26.488361-05:00",
+   "last_success_at": "2026-10-19T12:29:04.290827-05:00",
    "status": "ok",
    "message": ""
   }
@@ -396,6 +396,26 @@
    "item_count_relevant": 0,
    "first_seen_at": "2026-10-16T20:20:13.648413-05:00",
    "last_changed_at": "2026-10-16T20:20:13.648413-05:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_id": "elms-zoning",
+   "body": "City Council Committee on Zoning",
+   "body_id": "ED9FC72B-B0D7-EC11-A7B4-001DD804F0C4",
+   "jurisdiction": "chicago",
+   "start": "2026-11-17T10:00:00-06:00",
+   "time_known": true,
+   "status": "scheduled",
+   "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
+   "agenda_url": null,
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": null,
+   "needs_ai_extraction": false,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-10-19T12:29:04.290827-05:00",
+   "last_changed_at": "2026-10-19T12:29:04.290827-05:00"
   },
   {
    "id": "cpc:2026-11-19",
@@ -7550,6 +7570,290 @@
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
    "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "watch:doh-home:34667633e840",
+   "source_id": "watch",
+   "body": "Chicago Department of Housing",
+   "kind": "page_change",
+   "title": "New on Department of Housing home: Department of Housing Proposes Financing for 70 Affordable Rental Units at Morgan Park Commons",
+   "url": "https://www.chicago.gov/content/city/en/depts/doh/provdrs/housing_resources/news/2026/october/department-of-housing-proposes-financing-for-70-affordable-renta.html",
+   "detail": "Department of Housing Proposes Financing for 70 Affordable Rental Units at Morgan Park Commons",
+   "new_link": true,
+   "posted_at": "2026-10-19T12:29:04.290827-05:00",
+   "deadline": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The Department of Housing is seeking City Council approval of financing ordinances for 70 new affordable rental units, using HOME funds, TIF, and LIHTC.",
+    "summary": "The Department of Housing seeks City Council approval of two financing ordinances for phase one of Morgan Park Commons, 70 affordable rental units in two buildings at 11400–11458 S. Halsted Street. Preservation of Affordable Housing (POAH) and Far South Community Development Corporation (CDC) are the proposers.",
+    "categories": [
+     {
+      "id": "housing-agenda",
+      "via": "keyword",
+      "detail": "Department of Housing"
+     },
+     {
+      "id": "cha",
+      "via": "keyword",
+      "detail": "CHA"
+     },
+     {
+      "id": "state-agenda",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "11400–11458 S. Halsted Street",
+     "ward": 21,
+     "community_area": "Morgan Park"
+    },
+    "entities": [
+     "Department of Housing",
+     "Preservation of Affordable Housing (POAH)",
+     "Far South Community Development Corporation (CDC)",
+     "Chicago Housing Authority (CHA)"
+    ],
+    "figures": {
+     "units": 70,
+     "affordable_units": 70
+    },
+    "amount": 57500000,
+    "amount_kind": "total development cost",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "0e3dde579fdeb907",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-19T12:29:04.290827-05:00",
+   "last_changed_at": "2026-10-19T12:29:04.290827-05:00"
+  },
+  {
+   "id": "watch:doh-home:782a04475fa0",
+   "source_id": "watch",
+   "body": "Chicago Department of Housing",
+   "kind": "page_change",
+   "title": "New on Department of Housing home: Department of Housing Proposes Funding to Preserve Fully Affordable Housing Near Palmer Square Park",
+   "url": "https://www.chicago.gov/content/city/en/depts/doh/provdrs/housing_resources/news/2026/october/department-of-housing-proposes-funding-to-preserve-fully-afforda.html",
+   "detail": "Department of Housing Proposes Funding to Preserve Fully Affordable Housing Near Palmer Square Park",
+   "new_link": true,
+   "posted_at": "2026-10-19T12:29:04.290827-05:00",
+   "deadline": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The Department of Housing proposes acquisition financing to preserve affordability of a 37-unit income-restricted apartment property.",
+    "summary": "The Department of Housing seeks up to $4 million in acquisition financing to preserve affordability at 3301 W. Palmer Place, a 37-unit property. 3301 W. Palmer LLC, a Catalina Housing and Stocking Urban joint venture, would buy it from an affiliate of Hispanic Housing Development Corporation.",
+    "categories": [
+     {
+      "id": "housing-agenda",
+      "via": "keyword",
+      "detail": "Department of Housing"
+     }
+    ],
+    "geography": {
+     "address": "3301 W. Palmer Place",
+     "ward": 35,
+     "community_area": "Logan Square"
+    },
+    "entities": [
+     "Department of Housing",
+     "3301 W. Palmer LLC",
+     "Catalina Housing",
+     "Stocking Urban",
+     "Augusta Associates Limited Partnership",
+     "Hispanic Housing Development Corporation"
+    ],
+    "figures": {
+     "units": 37,
+     "affordable_units": null
+    },
+    "amount": 4000000,
+    "amount_kind": "acquisition financing",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "1e9efdcef4423b78",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-19T12:29:04.290827-05:00",
+   "last_changed_at": "2026-10-19T12:29:04.290827-05:00"
+  },
+  {
+   "id": "watch:doh-home:839e51bda73d",
+   "source_id": "watch",
+   "body": "Chicago Department of Housing",
+   "kind": "page_change",
+   "title": "New on Department of Housing home: Department of Housing Seeks Council Approval for Sale of Six City-Owned Lots",
+   "url": "https://www.chicago.gov/content/city/en/depts/doh/provdrs/housing_resources/news/2026/october/department-of-housing-seeks-council-approval-for-sale-of-six-cit.html",
+   "detail": "Department of Housing Seeks Council Approval for Sale of Six City-Owned Lots",
+   "new_link": true,
+   "posted_at": "2026-10-19T12:29:04.290827-05:00",
+   "deadline": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The ordinance would sell six city-owned lots for new homes with long-term affordability restrictions under the City Lots for Working Families program.",
+    "summary": "The Department of Housing proposed an ordinance authorizing a City Lots for Working Families land sale and redevelopment agreement with Inherentance NFP for six city-owned lots in the 26th Ward. Six new homes, four in Humboldt Park and two in West Town, would carry long-term affordability restrictions through the Chicago Housing Trust.",
+    "categories": [
+     {
+      "id": "housing-agenda",
+      "via": "keyword",
+      "detail": "Department of Housing"
+     },
+     {
+      "id": "social-housing",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Department of Housing",
+     "Inherentance NFP",
+     "City Lots for Working Families",
+     "Chicago Housing Trust"
+    ],
+    "figures": {
+     "units": 13,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "5c7487dae6110efc",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-19T12:29:04.290827-05:00",
+   "last_changed_at": "2026-10-19T12:29:04.290827-05:00"
+  },
+  {
+   "id": "watch:doh-home:c8e4f6199e69",
+   "source_id": "watch",
+   "body": "Chicago Department of Housing",
+   "kind": "page_change",
+   "title": "New on Department of Housing home: Department of Housing Proposes Additional Funding for Affordable Senior Housing Development in Humboldt Park",
+   "url": "https://www.chicago.gov/content/city/en/depts/doh/provdrs/housing_resources/news/2026/october/department-of-housing-proposes-additional-funding-for-affordable.html",
+   "detail": "Department of Housing Proposes Additional Funding for Affordable Senior Housing Development in Humboldt Park",
+   "new_link": true,
+   "posted_at": "2026-10-19T12:29:04.290827-05:00",
+   "deadline": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item seeks additional TIF funding for an affordable senior rental development in Humboldt Park.",
+    "summary": "The Department of Housing is asking City Council to amend a TIF Redevelopment Agreement with an extra $1 million for the 1539 N. Pulaski Elderly Apartments. The money would cover unforeseen structural rehabilitation costs at the historic Pioneer Arcade building. The project has 60 affordable senior units plus one manager's unit.",
+    "categories": [
+     {
+      "id": "housing-agenda",
+      "via": "keyword",
+      "detail": "Department of Housing"
+     }
+    ],
+    "geography": {
+     "address": "1539 N. Pulaski",
+     "ward": 26,
+     "community_area": "Humboldt Park"
+    },
+    "entities": [
+     "Department of Housing",
+     "DOH",
+     "City Council",
+     "1539 N. Pulaski Elderly Apartments",
+     "Pioneer Arcade",
+     "HUD"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": 60
+    },
+    "amount": 1000000,
+    "amount_kind": "additional TIF assistance",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "921caed5c9477285",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-19T12:29:04.290827-05:00",
+   "last_changed_at": "2026-10-19T12:29:04.290827-05:00"
+  },
+  {
+   "id": "watch:doh-home:fa230d0797e2",
+   "source_id": "watch",
+   "body": "Chicago Department of Housing",
+   "kind": "page_change",
+   "title": "New on Department of Housing home: Department of Housing Seeks Council Approval for Additional Funding for Oak and Larrabee Mixed-Income Development",
+   "url": "https://www.chicago.gov/content/city/en/depts/doh/provdrs/housing_resources/news/2026/october/department-of-housing-seeks-council-approval-for-additional-fund.html",
+   "detail": "Department of Housing Seeks Council Approval for Additional Funding for Oak and Larrabee Mixed-Income Development",
+   "new_link": true,
+   "posted_at": "2026-10-19T12:29:04.290827-05:00",
+   "deadline": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "It seeks added TIF funding for a 78-unit mixed-income rental development on vacant CHA-owned land in Cabrini.",
+    "summary": "The Department of Housing is asking City Council to amend a TIF redevelopment agreement, raising assistance from $14 million to up to $16.7 million for the first phase of Oak and Larrabee. The building would have 78 mixed-income rental units, 54 of them affordable, on CHA-owned land.",
+    "categories": [
+     {
+      "id": "social-housing",
+      "via": "keyword",
+      "detail": "mixed-income"
+     },
+     {
+      "id": "housing-agenda",
+      "via": "keyword",
+      "detail": "Department of Housing"
+     },
+     {
+      "id": "cha",
+      "via": "keyword",
+      "detail": "CHA"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Department of Housing",
+     "Chicago Housing Authority",
+     "City Council",
+     "Near North TIF district"
+    ],
+    "figures": {
+     "units": 78,
+     "affordable_units": 54
+    },
+    "amount": 16700000,
+    "amount_kind": "maximum TIF assistance",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "4ea786fe4b4f11e8",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-19T12:29:04.290827-05:00",
+   "last_changed_at": "2026-10-19T12:29:04.290827-05:00"
   }
  ],
  "events": [
@@ -7912,6 +8216,36 @@
    "type": "meeting_new",
    "ref_id": "cpc:2026-12-17",
    "at": "2026-10-18T09:35:16.093878-05:00"
+  },
+  {
+   "type": "meeting_new",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "at": "2026-10-19T12:29:04.290827-05:00"
+  },
+  {
+   "type": "notice_new",
+   "ref_id": "watch:doh-home:c8e4f6199e69",
+   "at": "2026-10-19T12:29:04.290827-05:00"
+  },
+  {
+   "type": "notice_new",
+   "ref_id": "watch:doh-home:34667633e840",
+   "at": "2026-10-19T12:29:04.290827-05:00"
+  },
+  {
+   "type": "notice_new",
+   "ref_id": "watch:doh-home:782a04475fa0",
+   "at": "2026-10-19T12:29:04.290827-05:00"
+  },
+  {
+   "type": "notice_new",
+   "ref_id": "watch:doh-home:fa230d0797e2",
+   "at": "2026-10-19T12:29:04.290827-05:00"
+  },
+  {
+   "type": "notice_new",
+   "ref_id": "watch:doh-home:839e51bda73d",
+   "at": "2026-10-19T12:29:04.290827-05:00"
   }
  ]
 }

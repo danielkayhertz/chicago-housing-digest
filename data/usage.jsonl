@@ -552,3 +552,8 @@
 {"ts": "2026-10-16T15:25:03+00:00", "purpose": "screen", "model": "claude-haiku-5-5", "input_tokens": 3786, "output_tokens": 74}
 {"ts": "2026-10-16T15:25:07+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 14623, "output_tokens": 397}
 {"ts": "2026-10-16T15:25:10+00:00", "purpose": "screen", "model": "claude-haiku-5-5", "input_tokens": 1614, "output_tokens": 74}
+{"ts": "2026-10-19T17:30:49+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 5652, "output_tokens": 345}
+{"ts": "2026-10-19T17:30:52+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 5365, "output_tokens": 334}
+{"ts": "2026-10-19T17:30:55+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 5252, "output_tokens": 298}
+{"ts": "2026-10-19T17:30:59+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 5392, "output_tokens": 311}
+{"ts": "2026-10-19T17:31:02+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 5535, "output_tokens": 299}
