@@ -1190,7 +1190,7 @@
   "amount": null,
   "amount_kind": null,
   "categories": [],
-  "content_hash": "9f2a665f66904ef8",
+  "content_hash": "7b30c5ce10d91b1f",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -1205,7 +1205,7 @@
   "important": null,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The ordinance concerns cannabis dispensary operations and zoning standards for cannabis business establishments, with no dwelling units or residential use affected.",
+  "relevance_reason": "The ordinance concerns cannabis dispensary operations and zoning triggers for cannabis business establishments, with no bearing on dwelling units, residential use, or housing rights.",
   "source_quality": "none",
   "status": "screened_out",
   "summary": "",

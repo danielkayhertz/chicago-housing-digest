@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-10-20T10:39:35.280477-05:00",
+ "generated_at": "2026-10-20T15:35:49.893064-05:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-10-20T10:39:35.280477-05:00",
+   "last_success_at": "2026-10-20T15:35:49.893064-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-10-20T10:39:35.280477-05:00",
+   "last_success_at": "2026-10-20T15:35:49.893064-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-10-20T10:39:35.280477-05:00",
+   "last_success_at": "2026-10-20T15:35:49.893064-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-10-20T10:39:35.280477-05:00",
+   "last_success_at": "2026-10-20T15:35:49.893064-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-10-20T10:39:35.280477-05:00",
+   "last_success_at": "2026-10-20T15:35:49.893064-05:00",
    "status": "stale",
    "message": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5: 1 numbered agenda entries have no record number and were skipped"
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-10-20T10:39:35.280477-05:00",
+   "last_success_at": "2026-10-20T15:35:49.893064-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-10-20T10:39:35.280477-05:00",
+   "last_success_at": "2026-10-20T15:35:49.893064-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-10-20T10:39:35.280477-05:00",
+   "last_success_at": "2026-10-20T15:35:49.893064-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-10-20T10:39:35.280477-05:00",
+   "last_success_at": "2026-10-20T15:35:49.893064-05:00",
    "status": "ok",
    "message": ""
   }
@@ -416,6 +416,26 @@
    "item_count_relevant": 0,
    "first_seen_at": "2026-10-19T12:29:04.290827-05:00",
    "last_changed_at": "2026-10-19T12:29:04.290827-05:00"
+  },
+  {
+   "id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5",
+   "source_id": "elms-housing",
+   "body": "City Council Committee on Housing and Real Estate",
+   "body_id": "DB9FC72B-B0D7-EC11-A7B4-001DD804F0C4",
+   "jurisdiction": "chicago",
+   "start": "2026-11-17T10:30:00-06:00",
+   "time_known": true,
+   "status": "scheduled",
+   "location": "201A, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
+   "agenda_url": null,
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": null,
+   "needs_ai_extraction": false,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-10-20T15:35:49.893064-05:00",
+   "last_changed_at": "2026-10-20T15:35:49.893064-05:00"
   },
   {
    "id": "cpc:2026-11-19",
@@ -2277,7 +2297,7 @@
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028463",
    "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
    "source_ref": "SO2026-0028463",
-   "title": "Amendment of Municipal Code Section 17-9-0129 allowing lawful cannabis dispensaries to modify to include medical cannabis without triggering Section 17-9-0129.1",
+   "title": "Amendment of Municipal Code Section 17-9-0129 allowing lawful cannabis dispensaries to modify operations to include medical cannabis without triggering Section 17-9-0129.1",
    "attachments": [
     {
      "label": "Cannabis",
@@ -2298,7 +2318,7 @@
    "enrichment": {
     "status": "screened_out",
     "housing_relevant": false,
-    "relevance_reason": "The ordinance concerns cannabis dispensary operations and zoning standards for cannabis business establishments, with no dwelling units or residential use affected.",
+    "relevance_reason": "The ordinance concerns cannabis dispensary operations and zoning triggers for cannabis business establishments, with no bearing on dwelling units, residential use, or housing rights.",
     "summary": "",
     "categories": [],
     "geography": {
@@ -2318,11 +2338,11 @@
     "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
-    "content_hash": "9f2a665f66904ef8",
+    "content_hash": "7b30c5ce10d91b1f",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-15T20:21:02.827576-05:00"
+   "last_changed_at": "2026-10-20T15:35:49.893064-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0025391",
@@ -8246,6 +8266,11 @@
    "type": "notice_new",
    "ref_id": "watch:doh-home:839e51bda73d",
    "at": "2026-10-19T12:29:04.290827-05:00"
+  },
+  {
+   "type": "meeting_new",
+   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5",
+   "at": "2026-10-20T15:35:49.893064-05:00"
   }
  ]
 }
