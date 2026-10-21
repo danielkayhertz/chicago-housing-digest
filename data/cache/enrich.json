@@ -1620,14 +1620,14 @@
     "via": "model"
    }
   ],
-  "content_hash": "9588cb35040bc82b",
+  "content_hash": "55e10b5eab3b673e",
   "entities": [
    "Laurel Homes 1, Inc.",
    "Ashur Properties LLC"
   ],
   "figures": {
    "affordable_units": null,
-   "units": 2
+   "units": null
   },
   "geography": {
    "address": "2328-34 W. Montana St.",
@@ -1638,10 +1638,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A rezoning of vacant land from manufacturing to a residential district to build new two-unit homes adds housing.",
+  "relevance_reason": "A Type 1 rezoning from M1-2 to RT-4 of vacant parcels to build new two-unit residential buildings adds homes.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Laurel Homes 1, Inc. seeks to rezone three vacant parcels at 2328-34 W. Montana St. from M1-2 to RT-4 to build three 2-story, 2-unit residences. The owner is Ashur Properties LLC. The applicant marked the project as not subject to the ARO.",
+  "summary": "Laurel Homes 1, Inc. seeks to rezone three vacant parcels at 2328-34 W. Montana St. from M1-2 to RT-4 to build three 2-unit residential buildings. The owner is Ashur Properties LLC. The applicant says the project is not subject to the ARO.",
   "zoning_from": [
    "M1-2"
   ],

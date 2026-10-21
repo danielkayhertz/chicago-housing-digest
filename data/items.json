@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-10-20T20:36:10.527586-05:00",
+ "generated_at": "2026-10-21T10:58:15.344690-05:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-10-20T20:36:10.527586-05:00",
+   "last_success_at": "2026-10-21T10:58:15.344690-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-10-20T20:36:10.527586-05:00",
+   "last_success_at": "2026-10-21T10:58:15.344690-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-10-20T20:36:10.527586-05:00",
+   "last_success_at": "2026-10-21T10:58:15.344690-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-10-20T20:36:10.527586-05:00",
+   "last_success_at": "2026-10-21T10:58:15.344690-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-10-20T20:36:10.527586-05:00",
+   "last_success_at": "2026-10-21T10:58:15.344690-05:00",
    "status": "stale",
    "message": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5: 1 numbered agenda entries have no record number and were skipped"
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-10-20T20:36:10.527586-05:00",
+   "last_success_at": "2026-10-21T10:58:15.344690-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-10-20T20:36:10.527586-05:00",
+   "last_success_at": "2026-10-21T10:58:15.344690-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-10-20T20:36:10.527586-05:00",
+   "last_success_at": "2026-10-21T10:58:15.344690-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-10-20T20:36:10.527586-05:00",
+   "last_success_at": "2026-10-21T10:58:15.344690-05:00",
    "status": "ok",
    "message": ""
   }
@@ -4980,20 +4980,20 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/391c9c63-69ad-498c-9f14-20cf841601a3.pdf"
     },
     {
-     "label": "SO2026-0028730 Final Ordinance",
-     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/5cd61aa7-c98d-49c4-b950-6779bc74a616.pdf"
+     "label": "SO2026-0028730S Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/1547979f-583c-48e4-a1c8-edcf184c7221.pdf"
+    },
+    {
+     "label": "SO2026-0028730S Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/ec7fe0ec-2a8e-40f6-b467-a5d06e4890f4.pdf"
     },
     {
      "label": "O2026-0028730 Ordinance",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/49fbe917-cca7-42b7-9121-9d9cc840ea63.pdf"
     },
     {
-     "label": "SO2026-0028730 Final Narrative and Plans",
-     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f0e5badf-d4c1-4669-9ec3-e76860946ef5.pdf"
-    },
-    {
-     "label": "SO2026-0028730 Substitute Application",
-     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/ea2702f8-4f0a-4a5c-98d2-bbed81807705.pdf"
+     "label": "SO2026-0028730S Substitute Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/a5e505ef-ab6d-434d-9f3f-6204bf121cde.pdf"
     }
    ],
    "outcome": {
@@ -5006,8 +5006,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A rezoning of vacant land from manufacturing to a residential district to build new two-unit homes adds housing.",
-    "summary": "Laurel Homes 1, Inc. seeks to rezone three vacant parcels at 2328-34 W. Montana St. from M1-2 to RT-4 to build three 2-story, 2-unit residences. The owner is Ashur Properties LLC. The applicant marked the project as not subject to the ARO.",
+    "relevance_reason": "A Type 1 rezoning from M1-2 to RT-4 of vacant parcels to build new two-unit residential buildings adds homes.",
+    "summary": "Laurel Homes 1, Inc. seeks to rezone three vacant parcels at 2328-34 W. Montana St. from M1-2 to RT-4 to build three 2-unit residential buildings. The owner is Ashur Properties LLC. The applicant says the project is not subject to the ARO.",
     "categories": [
      {
       "id": "housing-agenda",
@@ -5030,7 +5030,7 @@
      "Ashur Properties LLC"
     ],
     "figures": {
-     "units": 2,
+     "units": null,
      "affordable_units": null
     },
     "amount": null,
@@ -5042,11 +5042,11 @@
     "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "9588cb35040bc82b",
+    "content_hash": "55e10b5eab3b673e",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
+   "last_changed_at": "2026-10-21T10:58:15.344690-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028731",
