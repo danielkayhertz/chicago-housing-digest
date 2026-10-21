@@ -1627,7 +1627,7 @@
   ],
   "figures": {
    "affordable_units": null,
-   "units": null
+   "units": 6
   },
   "geography": {
    "address": "2328-34 W. Montana St.",
@@ -4058,6 +4058,38 @@
   "zoning_from": [],
   "zoning_to": null
  },
+ "watch:doh-home:7603f674437b": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "Department of Housing",
+    "id": "housing-agenda",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "c3f99e3a0d9a3034",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The notice only points to the Department of Housing's TikTok account and does not concern building, financing, regulating, or occupying homes.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The Chicago Department of Housing website added a link to its TikTok account, titled \"DOH on TikTok.\"",
+  "zoning_from": [],
+  "zoning_to": null
+ },
  "watch:doh-home:782a04475fa0": {
   "amount": 4000000,
   "amount_kind": "acquisition financing",
@@ -4139,6 +4171,45 @@
   "zoning_from": [],
   "zoning_to": null
  },
+ "watch:doh-home:9eb0c8ca29ec": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "Department of Housing",
+    "id": "housing-agenda",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "be33e1939b4cbee1",
+  "entities": [
+   "Chicago Department of Housing",
+   "Mayor Brandon Johnson",
+   "DOH",
+   "HomeGrown",
+   "La Casa Norte",
+   "DFSS"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 99
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The Department of Housing's LinkedIn page highlights its homebuyer assistance program, affordable housing openings, and preservation work, though the item is a social media page rather than an agenda action.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The Chicago Department of Housing added its LinkedIn page to its website. Recent posts cover the HomeGrown homebuyer purchase assistance program, new affordable buildings in Back of the Yards and Cabrini Green, and an office-to-residential conversion.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
  "watch:doh-home:c8e4f6199e69": {
   "amount": 1000000,
   "amount_kind": "additional TIF assistance",
@@ -4175,6 +4246,38 @@
   "source_quality": "full",
   "status": "ok",
   "summary": "The Department of Housing is asking City Council to amend a TIF Redevelopment Agreement with an extra $1 million for the 1539 N. Pulaski Elderly Apartments. The money would cover unforeseen structural rehabilitation costs at the historic Pioneer Arcade building. The project has 60 affordable senior units plus one manager's unit.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "watch:doh-home:ce1621aa53ea": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "Department of Housing",
+    "id": "housing-agenda",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "759b86b3b40ee1fa",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The notice only points to the Department of Housing's Instagram page and does not concern any housing action, program, or policy.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The Chicago Department of Housing home page added a link to its Instagram account.",
   "zoning_from": [],
   "zoning_to": null
  },

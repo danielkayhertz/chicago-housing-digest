@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-10-21T10:58:15.344690-05:00",
+ "generated_at": "2026-10-21T15:38:23.736483-05:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-10-21T10:58:15.344690-05:00",
+   "last_success_at": "2026-10-21T15:38:23.736483-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-10-21T10:58:15.344690-05:00",
+   "last_success_at": "2026-10-21T15:38:23.736483-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-10-21T10:58:15.344690-05:00",
+   "last_success_at": "2026-10-21T15:38:23.736483-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-10-21T10:58:15.344690-05:00",
+   "last_success_at": "2026-10-21T15:38:23.736483-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-10-21T10:58:15.344690-05:00",
+   "last_success_at": "2026-10-21T15:38:23.736483-05:00",
    "status": "stale",
    "message": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5: 1 numbered agenda entries have no record number and were skipped"
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-10-21T10:58:15.344690-05:00",
+   "last_success_at": "2026-10-21T15:38:23.736483-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-10-21T10:58:15.344690-05:00",
+   "last_success_at": "2026-10-21T15:38:23.736483-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-10-21T10:58:15.344690-05:00",
+   "last_success_at": "2026-10-21T15:38:23.736483-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-10-21T10:58:15.344690-05:00",
+   "last_success_at": "2026-10-21T15:38:23.736483-05:00",
    "status": "ok",
    "message": ""
   }
@@ -5030,7 +5030,7 @@
      "Ashur Properties LLC"
     ],
     "figures": {
-     "units": null,
+     "units": 6,
      "affordable_units": null
     },
     "amount": null,
@@ -7874,6 +7874,151 @@
    },
    "first_seen_at": "2026-10-19T12:29:04.290827-05:00",
    "last_changed_at": "2026-10-19T12:29:04.290827-05:00"
+  },
+  {
+   "id": "watch:doh-home:7603f674437b",
+   "source_id": "watch",
+   "body": "Chicago Department of Housing",
+   "kind": "page_change",
+   "title": "New on Department of Housing home: DOH on TikTok",
+   "url": "https://www.tiktok.com/@chicagodoh",
+   "detail": "DOH on TikTok",
+   "new_link": true,
+   "posted_at": "2026-10-21T15:38:23.736483-05:00",
+   "deadline": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "The notice only points to the Department of Housing's TikTok account and does not concern building, financing, regulating, or occupying homes.",
+    "summary": "The Chicago Department of Housing website added a link to its TikTok account, titled \"DOH on TikTok.\"",
+    "categories": [
+     {
+      "id": "housing-agenda",
+      "via": "keyword",
+      "detail": "Department of Housing"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "c3f99e3a0d9a3034",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-21T15:38:23.736483-05:00",
+   "last_changed_at": "2026-10-21T15:38:23.736483-05:00"
+  },
+  {
+   "id": "watch:doh-home:9eb0c8ca29ec",
+   "source_id": "watch",
+   "body": "Chicago Department of Housing",
+   "kind": "page_change",
+   "title": "New on Department of Housing home: DOH on LinkedIn",
+   "url": "https://www.linkedin.com/company/chicagodoh/",
+   "detail": "DOH on LinkedIn",
+   "new_link": true,
+   "posted_at": "2026-10-21T15:38:23.736483-05:00",
+   "deadline": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The Department of Housing's LinkedIn page highlights its homebuyer assistance program, affordable housing openings, and preservation work, though the item is a social media page rather than an agenda action.",
+    "summary": "The Chicago Department of Housing added its LinkedIn page to its website. Recent posts cover the HomeGrown homebuyer purchase assistance program, new affordable buildings in Back of the Yards and Cabrini Green, and an office-to-residential conversion.",
+    "categories": [
+     {
+      "id": "housing-agenda",
+      "via": "keyword",
+      "detail": "Department of Housing"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Chicago Department of Housing",
+     "Mayor Brandon Johnson",
+     "DOH",
+     "HomeGrown",
+     "La Casa Norte",
+     "DFSS"
+    ],
+    "figures": {
+     "units": 99,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "be33e1939b4cbee1",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-21T15:38:23.736483-05:00",
+   "last_changed_at": "2026-10-21T15:38:23.736483-05:00"
+  },
+  {
+   "id": "watch:doh-home:ce1621aa53ea",
+   "source_id": "watch",
+   "body": "Chicago Department of Housing",
+   "kind": "page_change",
+   "title": "New on Department of Housing home: DOH on Instagram",
+   "url": "https://www.instagram.com/chicagodoh/",
+   "detail": "DOH on Instagram",
+   "new_link": true,
+   "posted_at": "2026-10-21T15:38:23.736483-05:00",
+   "deadline": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "The notice only points to the Department of Housing's Instagram page and does not concern any housing action, program, or policy.",
+    "summary": "The Chicago Department of Housing home page added a link to its Instagram account.",
+    "categories": [
+     {
+      "id": "housing-agenda",
+      "via": "keyword",
+      "detail": "Department of Housing"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "759b86b3b40ee1fa",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-21T15:38:23.736483-05:00",
+   "last_changed_at": "2026-10-21T15:38:23.736483-05:00"
   }
  ],
  "events": [
@@ -8271,6 +8416,21 @@
    "type": "meeting_new",
    "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5",
    "at": "2026-10-20T15:35:49.893064-05:00"
+  },
+  {
+   "type": "notice_new",
+   "ref_id": "watch:doh-home:9eb0c8ca29ec",
+   "at": "2026-10-21T15:38:23.736483-05:00"
+  },
+  {
+   "type": "notice_new",
+   "ref_id": "watch:doh-home:ce1621aa53ea",
+   "at": "2026-10-21T15:38:23.736483-05:00"
+  },
+  {
+   "type": "notice_new",
+   "ref_id": "watch:doh-home:7603f674437b",
+   "at": "2026-10-21T15:38:23.736483-05:00"
   }
  ]
 }
