@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-10-22T15:34:16.829426-05:00",
+ "generated_at": "2026-10-22T20:31:53.912189-05:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-10-22T15:34:16.829426-05:00",
+   "last_success_at": "2026-10-22T20:31:53.912189-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-10-22T15:34:16.829426-05:00",
+   "last_success_at": "2026-10-22T20:31:53.912189-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-10-22T15:34:16.829426-05:00",
+   "last_success_at": "2026-10-22T20:31:53.912189-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-10-22T15:34:16.829426-05:00",
+   "last_success_at": "2026-10-22T20:31:53.912189-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-10-22T15:34:16.829426-05:00",
+   "last_success_at": "2026-10-22T20:31:53.912189-05:00",
    "status": "stale",
    "message": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5: 1 numbered agenda entries have no record number and were skipped"
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-10-22T15:34:16.829426-05:00",
+   "last_success_at": "2026-10-22T20:31:53.912189-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-10-22T15:34:16.829426-05:00",
+   "last_success_at": "2026-10-22T20:31:53.912189-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-10-22T15:34:16.829426-05:00",
+   "last_success_at": "2026-10-22T20:31:53.912189-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-10-22T15:34:16.829426-05:00",
+   "last_success_at": "2026-10-22T20:31:53.912189-05:00",
    "status": "ok",
    "message": ""
   }
