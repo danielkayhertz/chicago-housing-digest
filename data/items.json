@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-10-26T12:23:47.770913-05:00",
+ "generated_at": "2026-10-26T21:05:15.303993-05:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-10-26T12:23:47.770913-05:00",
+   "last_success_at": "2026-10-26T21:05:15.303993-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-10-26T12:23:47.770913-05:00",
+   "last_success_at": "2026-10-26T21:05:15.303993-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
    "last_success_at": "2026-10-26T12:23:47.770913-05:00",
-   "status": "ok",
-   "message": ""
+   "status": "error",
+   "message": "FetchError: 403 https://clihtf.org/wp-json/tribe/events/v1/events?start_date=2026-10-12+00%3A00%3A00&end_date=2026-12-25+23%3A59%3A59&per_page=50&page=1"
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-10-26T12:23:47.770913-05:00",
+   "last_success_at": "2026-10-26T21:05:15.303993-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-10-26T12:23:47.770913-05:00",
+   "last_success_at": "2026-10-26T21:05:15.303993-05:00",
    "status": "stale",
    "message": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5: 1 numbered agenda entries have no record number and were skipped"
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-10-26T12:23:47.770913-05:00",
+   "last_success_at": "2026-10-26T21:05:15.303993-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-10-26T12:23:47.770913-05:00",
+   "last_success_at": "2026-10-26T21:05:15.303993-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-10-26T12:23:47.770913-05:00",
+   "last_success_at": "2026-10-26T21:05:15.303993-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-10-26T12:23:47.770913-05:00",
+   "last_success_at": "2026-10-26T21:05:15.303993-05:00",
    "status": "ok",
    "message": ""
   }
@@ -233,7 +233,7 @@
    "detail_url": null,
    "needs_ai_extraction": false,
    "item_count_total": 49,
-   "item_count_relevant": 35,
+   "item_count_relevant": 34,
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
    "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
   },
@@ -2625,7 +2625,7 @@
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028355",
    "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
    "source_ref": "O2026-0028355",
-   "title": "Zoning Reclassification Map Nos. 1-H and 3-H at 1600-1760 W Chicago Ave and 1601-1759 W Chicago Ave",
+   "title": "Zoning Reclassification Map Nos. 1-H and 3-H at 1600-1760 W Chicago Ave and 1601-1759 W Chicago Ave - App No. A-9146",
    "attachments": [
     {
      "label": "1601chicago_rezone",
@@ -2640,50 +2640,39 @@
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
-    "status": "ok",
-    "housing_relevant": true,
-    "relevance_reason": "A city-initiated-style rezoning along West Chicago Avenue moves parcels from B1 neighborhood shopping districts to B3 community shopping districts, which changes the zoning rules that govern residential and mixed-use development there.",
-    "summary": "Ald. Daniel La Spata (1st Ward) proposes rezoning parcels along 1600-1760 W Chicago Ave and 1601-1759 W Chicago Ave from B1-2 and B1-3 to B3-2 and B3-3 community shopping districts. Several parcels with other existing zoning are excluded.",
-    "categories": [
-     {
-      "id": "ahpaa",
-      "via": "keyword",
-      "detail": "rezoning"
-     }
-    ],
+    "status": "screened_out",
+    "housing_relevant": false,
+    "relevance_reason": "The ordinary rezoning changes only commercial shopping districts (B1-2 and B1-3 to B3-2 and B3-3) along Chicago Avenue, and the document does not mention adding, removing, or changing dwelling units or residential use.",
+    "summary": "",
+    "categories": [],
     "geography": {
-     "address": "1600-1760 W Chicago Ave and 1601-1759 W Chicago Ave",
-     "ward": 1,
-     "community_area": "West Town"
+     "address": null,
+     "ward": null,
+     "community_area": null
     },
-    "entities": [
-     "Daniel La Spata"
-    ],
+    "entities": [],
     "figures": {
      "units": null,
      "affordable_units": null
     },
     "amount": null,
     "amount_kind": null,
-    "zoning_from": [
-     "B1-2",
-     "B1-3"
-    ],
-    "zoning_to": "B3-2 and B3-3",
+    "zoning_from": [],
+    "zoning_to": null,
     "important": null,
-    "source_quality": "scanned",
-    "model": "claude-sonnet-5-5",
-    "content_hash": "5dd86bae85494683",
+    "source_quality": "none",
+    "model": "claude-haiku-5-5",
+    "content_hash": "e750f935f09da4da",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
+   "last_changed_at": "2026-10-26T21:05:15.303993-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027173",
    "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
    "source_ref": "O2026-0027173",
-   "title": "Zoning Reclassification Map No. 10-F at 4639-4643 S Wallace St",
+   "title": "Zoning Reclassification Map No. 10-F at 4639-4643 S Wallace St - App No. A-9144",
    "attachments": [
     {
      "label": "w15 - o27173",
@@ -2696,7 +2685,7 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A downzoning from a neighborhood mixed-use district to a single-unit detached house district changes the residential development capacity of the site.",
+    "relevance_reason": "A downzoning from a neighborhood mixed-use district to a single-unit detached house district changes the residential development allowed on the site.",
     "summary": "Ordinance sponsored by Ald. Raymond A. Lopez (15th Ward) would rezone 4639-43 S Wallace Street from B2-3 Neighborhood Mixed-Use District to RS-3 Residential Single Unit (Detached House) District on Map No. 10-F.",
     "categories": [
      {
@@ -2726,17 +2715,17 @@
     "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "b69b5d6f194293fb",
+    "content_hash": "cd32c9cd2f806507",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-26T21:05:15.303993-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027987",
    "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
    "source_ref": "O2026-0027987",
-   "title": "Zoning Reclassification Map No. 12-F at 5000-5046 S Wells St",
+   "title": "Zoning Reclassification Map No. 12-F at 5000-5046 S Wells St - App No. A-9150",
    "attachments": [
     {
      "label": "5000-5046 S. Wells - signed.docx",
@@ -2753,8 +2742,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "The rezoning changes a B1-1 shopping district to RS-3 single-unit residential, altering what homes can be built on the site.",
-    "summary": "Ordinance sponsored by Alderwoman Jeanette B. Taylor (20th Ward) would rezone the area at 5000-5046 S. Wells Street on Map No. 12-F from B1-1 Neighborhood Shopping District to RS-3 Residential Single-Unit (Detached House) District.",
+    "relevance_reason": "A rezoning from a neighborhood shopping district to a single-unit residential district changes the residential development allowed on the site.",
+    "summary": "Ordinance would rezone the area bounded by West 50th Street, South Wells Street, and the alley to the west, at 5000-5046 S. Wells St., from B1-1 Neighborhood Shopping District to RS-3 Residential Single-Unit (Detached House) District. Sponsored by Alderwoman Jeanette B. Taylor, 20th Ward.",
     "categories": [
      {
       "id": "ahpaa",
@@ -2783,17 +2772,17 @@
     "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
-    "content_hash": "6705aa344cb06589",
+    "content_hash": "8a16ad832b1d687f",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
+   "last_changed_at": "2026-10-26T21:05:15.303993-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027667",
    "meeting_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC",
    "source_ref": "O2026-0027667",
-   "title": "Zoning Reclassification Map No. 17-H at 1721 W Greenleaf Ave",
+   "title": "Zoning Reclassification Map No. 17-H at 1721 W Greenleaf Ave - App No. A-9149",
    "attachments": [
     {
      "label": "1721 W. Greenleaf Avenue",
@@ -2810,7 +2799,7 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "The rezoning would change a site from a residential two-flat, townhouse and multi-unit district to a community shopping district, which could remove residential zoning.",
+    "relevance_reason": "The rezoning would change a parcel from a residential two-flat/townhouse/multi-unit district to a commercial shopping district, which bears on residential land supply.",
     "summary": "Ordinance sponsored by Alderwoman Maria Hadden (49th Ward) would rezone the area at 1721 W. Greenleaf Avenue from RT-4 Residential Two-Flat, Townhouse and Multi-Unit District to B3-3 Community Shopping District.",
     "categories": [
      {
@@ -2840,11 +2829,11 @@
     "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
-    "content_hash": "5633372d52038487",
+    "content_hash": "7c45cb5b22f933d6",
     "overridden": false
    },
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
+   "last_changed_at": "2026-10-26T21:05:15.303993-05:00"
   },
   {
    "id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0025393",

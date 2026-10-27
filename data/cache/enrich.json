@@ -615,7 +615,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "b69b5d6f194293fb",
+  "content_hash": "cd32c9cd2f806507",
   "entities": [
    "Raymond A. Lopez"
   ],
@@ -629,9 +629,10 @@
    "ward": 15
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A downzoning from a neighborhood mixed-use district to a single-unit detached house district changes the residential development capacity of the site.",
+  "relevance_reason": "A downzoning from a neighborhood mixed-use district to a single-unit detached house district changes the residential development allowed on the site.",
   "source_quality": "scanned",
   "status": "ok",
   "summary": "Ordinance sponsored by Ald. Raymond A. Lopez (15th Ward) would rezone 4639-43 S Wallace Street from B2-3 Neighborhood Mixed-Use District to RS-3 Residential Single Unit (Detached House) District on Map No. 10-F.",
@@ -803,7 +804,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "5633372d52038487",
+  "content_hash": "7c45cb5b22f933d6",
   "entities": [
    "Maria Hadden"
   ],
@@ -817,9 +818,10 @@
    "ward": 49
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning would change a site from a residential two-flat, townhouse and multi-unit district to a community shopping district, which could remove residential zoning.",
+  "relevance_reason": "The rezoning would change a parcel from a residential two-flat/townhouse/multi-unit district to a commercial shopping district, which bears on residential land supply.",
   "source_quality": "full",
   "status": "ok",
   "summary": "Ordinance sponsored by Alderwoman Maria Hadden (49th Ward) would rezone the area at 1721 W. Greenleaf Avenue from RT-4 Residential Two-Flat, Townhouse and Multi-Unit District to B3-3 Community Shopping District.",
@@ -863,7 +865,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "6705aa344cb06589",
+  "content_hash": "8a16ad832b1d687f",
   "entities": [
    "Jeanette B. Taylor"
   ],
@@ -877,12 +879,13 @@
    "ward": 20
   },
   "housing_relevant": true,
+  "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning changes a B1-1 shopping district to RS-3 single-unit residential, altering what homes can be built on the site.",
+  "relevance_reason": "A rezoning from a neighborhood shopping district to a single-unit residential district changes the residential development allowed on the site.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "Ordinance sponsored by Alderwoman Jeanette B. Taylor (20th Ward) would rezone the area at 5000-5046 S. Wells Street on Map No. 12-F from B1-1 Neighborhood Shopping District to RS-3 Residential Single-Unit (Detached House) District.",
+  "summary": "Ordinance would rezone the area bounded by West 50th Street, South Wells Street, and the alley to the west, at 5000-5046 S. Wells St., from B1-1 Neighborhood Shopping District to RS-3 Residential Single-Unit (Detached House) District. Sponsored by Alderwoman Jeanette B. Taylor, 20th Ward.",
   "zoning_from": [
    "B1-1"
   ],
@@ -1018,38 +1021,28 @@
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028355": {
   "amount": null,
   "amount_kind": null,
-  "categories": [
-   {
-    "detail": "rezoning",
-    "id": "ahpaa",
-    "via": "keyword"
-   }
-  ],
-  "content_hash": "5dd86bae85494683",
-  "entities": [
-   "Daniel La Spata"
-  ],
+  "categories": [],
+  "content_hash": "e750f935f09da4da",
+  "entities": [],
   "figures": {
    "affordable_units": null,
    "units": null
   },
   "geography": {
-   "address": "1600-1760 W Chicago Ave and 1601-1759 W Chicago Ave",
-   "community_area": "West Town",
-   "ward": 1
+   "address": null,
+   "community_area": null,
+   "ward": null
   },
-  "housing_relevant": true,
-  "model": "claude-sonnet-5-5",
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "A city-initiated-style rezoning along West Chicago Avenue moves parcels from B1 neighborhood shopping districts to B3 community shopping districts, which changes the zoning rules that govern residential and mixed-use development there.",
-  "source_quality": "scanned",
-  "status": "ok",
-  "summary": "Ald. Daniel La Spata (1st Ward) proposes rezoning parcels along 1600-1760 W Chicago Ave and 1601-1759 W Chicago Ave from B1-2 and B1-3 to B3-2 and B3-3 community shopping districts. Several parcels with other existing zoning are excluded.",
-  "zoning_from": [
-   "B1-2",
-   "B1-3"
-  ],
-  "zoning_to": "B3-2 and B3-3"
+  "relevance_reason": "The ordinary rezoning changes only commercial shopping districts (B1-2 and B1-3 to B3-2 and B3-3) along Chicago Avenue, and the document does not mention adding, removing, or changing dwelling units or residential use.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028406": {
   "amount": null,
