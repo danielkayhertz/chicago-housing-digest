@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-10-28T12:10:22.969757-05:00",
+ "generated_at": "2026-10-28T16:40:03.598048-05:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-10-28T12:10:22.969757-05:00",
+   "last_success_at": "2026-10-28T16:40:03.598048-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-10-28T12:10:22.969757-05:00",
+   "last_success_at": "2026-10-28T16:40:03.598048-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-10-28T12:10:22.969757-05:00",
+   "last_success_at": "2026-10-28T16:40:03.598048-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-10-28T12:10:22.969757-05:00",
+   "last_success_at": "2026-10-28T16:40:03.598048-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-10-28T12:10:22.969757-05:00",
+   "last_success_at": "2026-10-28T16:40:03.598048-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-10-28T12:10:22.969757-05:00",
+   "last_success_at": "2026-10-28T16:40:03.598048-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-10-28T12:10:22.969757-05:00",
+   "last_success_at": "2026-10-28T16:40:03.598048-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-10-28T12:10:22.969757-05:00",
+   "last_success_at": "2026-10-28T16:40:03.598048-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-10-28T12:10:22.969757-05:00",
+   "last_success_at": "2026-10-28T16:40:03.598048-05:00",
    "status": "ok",
    "message": ""
   }
@@ -8011,176 +8011,6 @@
   }
  ],
  "events": [
-  {
-   "type": "item_added",
-   "ref_id": "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#A2026-0029000",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#A2026-0029001",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#A2026-0027377",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029008",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029007",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029020",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029009",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029010",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029012",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029011",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029016",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029017",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#O2026-0029018",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5#O2026-0028750",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5#O2026-0026950",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#a-proposed-order-authorizing-the-corporation-counsel-to-enter-into-and-e-ed66b79",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-an-intergovernmental-agreement-191a042",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-an-intergovernmental-agreement-616e994",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#a-substitute-ordinance-approving-the-execution-of-the-66th-amending-agre-7b92f60",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-a-redevelopment-agreement-with-e11e35b",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-a-redevelopment-agreement-with-690ee1e",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-a-redevelopment-agreement-with-e529a0d",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#one-1-proposed-order-authorizing-the-payment-of-various-small-claims-aga-7140ea7",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#one-1-proposed-orders-denying-the-payment-of-various-small-claims-agains-235e13b",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "meeting_new",
-   "ref_id": "ihda:ihda-board:2026-10-16",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "meeting_new",
-   "ref_id": "ihda:ihda-finance-committee:2026-10-16",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "clihtf:319068#president-s-update",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "clihtf:319068#reports",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "clihtf:319068#allocations-summary",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "clihtf:319068#ownership-change-of-6815-n-sheridan-from-patricia-johnson-to-teko-properties",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "clihtf:319068#financial-statements-as-of-september-30-2026",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "clihtf:319068#presentation-of-draft-2027-budget",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "clihtf:319068#outreach-committee-update-provided-by-board-vp-sam-paler-ponce",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "clihtf:319068#new-business-tenant-outreach-initiative-presented-by-marlana-edwards-dir-079adf2",
-   "at": "2026-10-14T13:08:07.894365-05:00"
-  },
   {
    "type": "outcome_recorded",
    "ref_id": "elms:63DD2BFA-6DBE-F111-AAAE-001DD80B58E5#O2026-0028750",
