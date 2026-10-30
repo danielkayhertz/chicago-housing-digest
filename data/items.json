@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-10-30T12:01:35.470389-05:00",
+ "generated_at": "2026-10-30T16:30:42.099549-05:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-10-30T12:01:35.470389-05:00",
+   "last_success_at": "2026-10-30T16:30:42.099549-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-10-30T12:01:35.470389-05:00",
+   "last_success_at": "2026-10-30T16:30:42.099549-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-10-30T12:01:35.470389-05:00",
+   "last_success_at": "2026-10-30T16:30:42.099549-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-10-30T12:01:35.470389-05:00",
+   "last_success_at": "2026-10-30T16:30:42.099549-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-10-30T12:01:35.470389-05:00",
+   "last_success_at": "2026-10-30T16:30:42.099549-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-10-30T12:01:35.470389-05:00",
+   "last_success_at": "2026-10-30T16:30:42.099549-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-10-30T12:01:35.470389-05:00",
+   "last_success_at": "2026-10-30T16:30:42.099549-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-10-30T12:01:35.470389-05:00",
+   "last_success_at": "2026-10-30T16:30:42.099549-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-10-30T12:01:35.470389-05:00",
+   "last_success_at": "2026-10-30T16:30:42.099549-05:00",
    "status": "ok",
    "message": ""
   }
@@ -456,6 +456,26 @@
    "item_count_relevant": 0,
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
    "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:5C971227-8CD4-F111-A05C-001DD80FDA55",
+   "source_id": "elms-finance",
+   "body": "City Council Committee on Finance",
+   "body_id": "D99FC72B-B0D7-EC11-A7B4-001DD804F0C4",
+   "jurisdiction": "chicago",
+   "start": "2026-11-30T10:30:00-06:00",
+   "time_known": true,
+   "status": "scheduled",
+   "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
+   "agenda_url": null,
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": null,
+   "needs_ai_extraction": false,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-10-30T16:30:42.099549-05:00",
+   "last_changed_at": "2026-10-30T16:30:42.099549-05:00"
   },
   {
    "id": "clihtf:10000840",
@@ -8012,46 +8032,6 @@
  ],
  "events": [
   {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028700",
-   "at": "2026-10-16T14:58:13.053678-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028734",
-   "at": "2026-10-16T14:58:13.053678-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028744",
-   "at": "2026-10-16T14:58:13.053678-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027299",
-   "at": "2026-10-16T14:58:13.053678-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028465",
-   "at": "2026-10-16T14:58:13.053678-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028689",
-   "at": "2026-10-16T14:58:13.053678-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028696",
-   "at": "2026-10-16T14:58:13.053678-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028731",
-   "at": "2026-10-16T14:58:13.053678-05:00"
-  },
-  {
    "type": "meeting_new",
    "ref_id": "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55",
    "at": "2026-10-16T20:20:13.648413-05:00"
@@ -8110,6 +8090,11 @@
    "type": "notice_new",
    "ref_id": "watch:doh-home:7603f674437b",
    "at": "2026-10-21T15:38:23.736483-05:00"
+  },
+  {
+   "type": "meeting_new",
+   "ref_id": "elms:5C971227-8CD4-F111-A05C-001DD80FDA55",
+   "at": "2026-10-30T16:30:42.099549-05:00"
   }
  ]
 }
