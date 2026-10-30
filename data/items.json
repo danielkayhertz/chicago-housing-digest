@@ -1,59 +1,59 @@
 {
- "generated_at": "2026-10-29T12:26:31.305400-05:00",
+ "generated_at": "2026-10-29T21:37:13.813526-05:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-10-29T12:26:31.305400-05:00",
+   "last_success_at": "2026-10-29T21:37:13.813526-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-10-29T12:26:31.305400-05:00",
+   "last_success_at": "2026-10-29T21:37:13.813526-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
    "last_success_at": "2026-10-29T12:26:31.305400-05:00",
-   "status": "ok",
-   "message": ""
+   "status": "error",
+   "message": "FetchError: None https://clihtf.org/wp-json/tribe/events/v1/events?start_date=2026-10-15+00%3A00%3A00&end_date=2026-12-28+23%3A59%3A59&per_page=50&page=1 invalid JSON: Expecting value: line 1 column 1 (char 0)"
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-10-29T12:26:31.305400-05:00",
+   "last_success_at": "2026-10-29T21:37:13.813526-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-10-29T12:26:31.305400-05:00",
+   "last_success_at": "2026-10-29T21:37:13.813526-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-10-29T12:26:31.305400-05:00",
+   "last_success_at": "2026-10-29T21:37:13.813526-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-10-29T12:26:31.305400-05:00",
+   "last_success_at": "2026-10-29T21:37:13.813526-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-10-29T12:26:31.305400-05:00",
+   "last_success_at": "2026-10-29T21:37:13.813526-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-10-29T12:26:31.305400-05:00",
-   "status": "ok",
-   "message": ""
+   "last_success_at": "2026-10-29T21:37:13.813526-05:00",
+   "status": "stale",
+   "message": "watch page clihtf-quarterly looks like a stub (only 58 chars of text); snapshot kept, no notices; watch page clihtf-annual looks like a stub (only 58 chars of text); snapshot kept, no notices; watch page clihtf-landlord looks like a stub (only 58 chars of text); snapshot kept, no notices"
   }
  ],
  "meetings": [
@@ -8011,26 +8011,6 @@
   }
  ],
  "events": [
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#R2026-0028815",
-   "at": "2026-10-15T20:21:02.827576-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028463",
-   "at": "2026-10-15T20:21:02.827576-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0025391",
-   "at": "2026-10-15T20:21:02.827576-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#Or2026-0028250",
-   "at": "2026-10-15T20:21:02.827576-05:00"
-  },
   {
    "type": "outcome_recorded",
    "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028355",
