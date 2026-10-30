@@ -1,59 +1,59 @@
 {
- "generated_at": "2026-10-29T21:37:13.813526-05:00",
+ "generated_at": "2026-10-30T12:01:35.470389-05:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-10-29T21:37:13.813526-05:00",
+   "last_success_at": "2026-10-30T12:01:35.470389-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-10-29T21:37:13.813526-05:00",
+   "last_success_at": "2026-10-30T12:01:35.470389-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-10-29T12:26:31.305400-05:00",
-   "status": "error",
-   "message": "FetchError: None https://clihtf.org/wp-json/tribe/events/v1/events?start_date=2026-10-15+00%3A00%3A00&end_date=2026-12-28+23%3A59%3A59&per_page=50&page=1 invalid JSON: Expecting value: line 1 column 1 (char 0)"
+   "last_success_at": "2026-10-30T12:01:35.470389-05:00",
+   "status": "ok",
+   "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-10-29T21:37:13.813526-05:00",
+   "last_success_at": "2026-10-30T12:01:35.470389-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-10-29T21:37:13.813526-05:00",
+   "last_success_at": "2026-10-30T12:01:35.470389-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-10-29T21:37:13.813526-05:00",
+   "last_success_at": "2026-10-30T12:01:35.470389-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-10-29T21:37:13.813526-05:00",
+   "last_success_at": "2026-10-30T12:01:35.470389-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-10-29T21:37:13.813526-05:00",
+   "last_success_at": "2026-10-30T12:01:35.470389-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-10-29T21:37:13.813526-05:00",
-   "status": "stale",
-   "message": "watch page clihtf-quarterly looks like a stub (only 58 chars of text); snapshot kept, no notices; watch page clihtf-annual looks like a stub (only 58 chars of text); snapshot kept, no notices; watch page clihtf-landlord looks like a stub (only 58 chars of text); snapshot kept, no notices"
+   "last_success_at": "2026-10-30T12:01:35.470389-05:00",
+   "status": "ok",
+   "message": ""
   }
  ],
  "meetings": [
@@ -8011,116 +8011,6 @@
   }
  ],
  "events": [
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028355",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027987",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027667",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0027331",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028739",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028698",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028735",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028738",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028341",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028339",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028345",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028415",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028457",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028670",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028350",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028671",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028687",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028406",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028726",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028704",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028747",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
-   "type": "outcome_recorded",
-   "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028730",
-   "at": "2026-10-16T10:23:19.354323-05:00"
-  },
   {
    "type": "outcome_recorded",
    "ref_id": "elms:3FC06450-8AB7-F111-AAAC-001DD80AA3CC#O2026-0028700",
