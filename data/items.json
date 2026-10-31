@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-10-30T16:30:42.099549-05:00",
+ "generated_at": "2026-10-30T21:23:45.629620-05:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-10-30T16:30:42.099549-05:00",
+   "last_success_at": "2026-10-30T21:23:45.629620-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-10-30T16:30:42.099549-05:00",
+   "last_success_at": "2026-10-30T21:23:45.629620-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-10-30T16:30:42.099549-05:00",
+   "last_success_at": "2026-10-30T21:23:45.629620-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-10-30T16:30:42.099549-05:00",
+   "last_success_at": "2026-10-30T21:23:45.629620-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-10-30T16:30:42.099549-05:00",
+   "last_success_at": "2026-10-30T21:23:45.629620-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-10-30T16:30:42.099549-05:00",
+   "last_success_at": "2026-10-30T21:23:45.629620-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-10-30T16:30:42.099549-05:00",
+   "last_success_at": "2026-10-30T21:23:45.629620-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-10-30T16:30:42.099549-05:00",
+   "last_success_at": "2026-10-30T21:23:45.629620-05:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-10-30T16:30:42.099549-05:00",
+   "last_success_at": "2026-10-30T21:23:45.629620-05:00",
    "status": "ok",
    "message": ""
   }
@@ -447,15 +447,15 @@
    "time_known": false,
    "status": "scheduled",
    "location": null,
-   "agenda_url": null,
+   "agenda_url": "https://www.chicago.gov/content/city/en/depts/dcd/supp_info/chicago_plan_commission/November_2026_Plan_Commission_Hearing.html",
    "video_url": null,
    "minutes_url": null,
-   "detail_url": "https://www.chicago.gov/content/city/en/depts/dcd/chicago-plan-commission/meetings--agendas---video-archives.html",
+   "detail_url": "https://www.chicago.gov/content/city/en/depts/dcd/supp_info/chicago_plan_commission/November_2026_Plan_Commission_Hearing.html",
    "needs_ai_extraction": false,
-   "item_count_total": 0,
-   "item_count_relevant": 0,
+   "item_count_total": 9,
+   "item_count_relevant": 6,
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
   },
   {
    "id": "elms:5C971227-8CD4-F111-A05C-001DD80FDA55",
@@ -7231,6 +7231,466 @@
    },
    "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
    "last_changed_at": "2026-10-14T13:08:07.894365-05:00"
+  },
+  {
+   "id": "cpc:2026-11-19#370-e-garfield-blvd",
+   "meeting_id": "cpc:2026-11-19",
+   "source_ref": "370 E. Garfield Blvd.",
+   "title": "A proposed Institutional Planned Development, submitted by Lake Park Associates, Inc., for the property generally located at 370 East Garfield Boulevard . The applicant proposes to rezone the site from the RS-3 Residential Single-Unit District to the C1-3 Neighborhood Commercial District and then to an Institutional Planned Development to allow construction of a multi-phase, mixed-use institutional development. Phase I includes a five-story University of Chicago Medical Center Pathology Laboratory, a six-story accessory parking garage, and a landscaped pedestrian plaza. The maximum overall FAR of the planned development will be 3.0.",
+   "attachments": [],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": "370 E. Garfield Blvd.",
+    "ward": 3,
+    "community_area": "Washington Park"
+   },
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "The item rezones a site for an institutional medical laboratory and parking development, with no homes stated as being built, preserved, or regulated.",
+    "summary": "Lake Park Associates, Inc. proposes rezoning 370 E. Garfield Blvd. from RS-3 to C1-3 and then to an Institutional Planned Development. Phase I would include a University of Chicago Medical Center pathology laboratory, a parking garage, and a plaza.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "body",
+      "detail": "Chicago Plan Commission"
+     }
+    ],
+    "geography": {
+     "address": "370 E. Garfield Blvd.",
+     "ward": 3,
+     "community_area": "Washington Park"
+    },
+    "entities": [
+     "Lake Park Associates, Inc.",
+     "University of Chicago Medical Center"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "RS-3"
+    ],
+    "zoning_to": "Institutional Planned Development",
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "b833d3640c4b2129",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
+   "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
+  },
+  {
+   "id": "cpc:2026-11-19#1200-s-dusable-lake-shore-dr",
+   "meeting_id": "cpc:2026-11-19",
+   "source_ref": "1200 S. DuSable Lake Shore Dr.",
+   "title": "A proposed Lakefront Protection Ordinance Application (No. 808), submitted by Shedd Aquarium Society, for the property generally located at 1200 S. DuSable Lake Shore Drive . The Applicant requests to modify the parking requirements by reconstructing existing regular parking spaces to relocate the 4 required ADA accessible parking spaces from their current location to the Inner Circle of the Circle Garden.",
+   "attachments": [],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": "1200 S. DuSable Lake Shore Dr.",
+    "ward": 4,
+    "community_area": "Near South Side"
+   },
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "The item concerns relocating ADA parking spaces at the Shedd Aquarium, a cultural institution, and does not involve homes or residents.",
+    "summary": "Shedd Aquarium Society seeks Lakefront Protection Ordinance approval (Application No. 808) at 1200 S. DuSable Lake Shore Drive to modify parking requirements by relocating the 4 required ADA accessible parking spaces to the Inner Circle of the Circle Garden.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "body",
+      "detail": "Chicago Plan Commission"
+     }
+    ],
+    "geography": {
+     "address": "1200 S. DuSable Lake Shore Dr.",
+     "ward": 4,
+     "community_area": "Near South Side"
+    },
+    "entities": [
+     "Shedd Aquarium Society"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "38f90658300ff7a0",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
+   "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
+  },
+  {
+   "id": "cpc:2026-11-19#3857-w-111th-st",
+   "meeting_id": "cpc:2026-11-19",
+   "source_ref": "3857 W. 111th St.",
+   "title": "A proposed amendment to Institutional Planned Development 542, as amended, submitted by the Chicago Board of Education for the City of Chicago, for the property generally located at 3857 W. 111 th Street . The applicant proposes to amend Planned Development 542 to add Utilities and Services, Minor, as an allowed use to all subareas in order to install ground-mounted solar panels in Subarea B. The maximum Floor Area Ratio (FAR) of the Planned Development will remain at 0.062.",
+   "attachments": [],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": "3857 W. 111th St.",
+    "ward": 19,
+    "community_area": "Mount Greenwood"
+   },
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "The amendment adds a minor utility use to an institutional planned development to allow ground-mounted solar panels, with no housing units involved.",
+    "summary": "The Chicago Board of Education seeks to amend Institutional Planned Development 542 at 3857 W. 111th St. to allow Utilities and Services, Minor in all subareas, so ground-mounted solar panels can be installed in Subarea B. Maximum FAR stays at 0.062.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "body",
+      "detail": "Chicago Plan Commission"
+     }
+    ],
+    "geography": {
+     "address": "3857 W. 111th St.",
+     "ward": 19,
+     "community_area": "Mount Greenwood"
+    },
+    "entities": [
+     "Chicago Board of Education"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "Institutional Planned Development 542"
+    ],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "02a0c1b25e0b412a",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
+   "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
+  },
+  {
+   "id": "cpc:2026-11-19#3939-3941-w-dickens-ave",
+   "meeting_id": "cpc:2026-11-19",
+   "source_ref": "3939-3941 W. Dickens Ave.",
+   "title": "A proposed Type 1 Map Amendment located within the Pulaski Industrial Corridor, submitted by Martha Gonzalez, for the property generally located at 3939-3941 W. Dickens Avenue . The applicant is proposing to rezone the site from M1-1 (Limited Manufacturing/ Business Park District) to B2-2 (Neighborhood Mixed Use District). The applicant proposes to construct 6-unit, 3-story residential building up to 38 feet in height, with 6 parking spaces and a floor area ratio (FAR) of 1.19.",
+   "attachments": [],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": "3939-3941 W. Dickens Ave.",
+    "ward": 26,
+    "community_area": "Hermosa"
+   },
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A rezoning from manufacturing to mixed-use to allow construction of a new 6-unit residential building.",
+    "summary": "Martha Gonzalez requests a Type 1 Map Amendment within the Pulaski Industrial Corridor to rezone 3939-3941 W. Dickens Avenue from M1-1 to B2-2. She proposes a 6-unit, 3-story residential building with 6 parking spaces.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "body",
+      "detail": "Chicago Plan Commission"
+     }
+    ],
+    "geography": {
+     "address": "3939-3941 W. Dickens Ave.",
+     "ward": 26,
+     "community_area": "Hermosa"
+    },
+    "entities": [
+     "Martha Gonzalez"
+    ],
+    "figures": {
+     "units": 6,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "M1-1"
+    ],
+    "zoning_to": "B2-2",
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "d64cde044b051436",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
+   "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
+  },
+  {
+   "id": "cpc:2026-11-19#2800-n-sheridan-rd",
+   "meeting_id": "cpc:2026-11-19",
+   "source_ref": "2800 N. Sheridan Rd.",
+   "title": "A proposed amendment to Planned Development No. 1019 submitted by 2800 Sheridan Land LLC, for the redevelopment of the property generally located at 2800 N. Sheridan Road . The properties that are the subject of the application are 2800-2844 N. Sheridan Road/331-359 W. Surf Street/2824-2844 N. Commonwealth Avenue and 2819-2937 N. Commonwealth Avenue/301-323 W. Oakdale Avenue/2820-2936 N. Lake Shore Drive and 400-418 W. Diversey Parkway. The Applicant proposes to remove Sub-Area 3 from the existing Planned Development No. 1019.",
+   "attachments": [],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": "2800 N. Sheridan Rd.",
+    "ward": 44,
+    "community_area": "Lake View"
+   },
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "An amendment to a residential-area planned development changes the boundaries of a site that covers multiple Lakeview/Lincoln Park addresses, which bears on zoning and housing supply.",
+    "summary": "2800 Sheridan Land LLC proposes to amend Planned Development No. 1019 for the property at 2800 N. Sheridan Road by removing Sub-Area 3 from the existing planned development.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "body",
+      "detail": "Chicago Plan Commission"
+     }
+    ],
+    "geography": {
+     "address": "2800 N. Sheridan Rd.",
+     "ward": 44,
+     "community_area": "Lake View"
+    },
+    "entities": [
+     "2800 Sheridan Land LLC"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "Planned Development No. 1019"
+    ],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "a96713f6e1c4d252",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
+   "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
+  },
+  {
+   "id": "cpc:2026-11-19#2800-n-sheridan-rd-2",
+   "meeting_id": "cpc:2026-11-19",
+   "source_ref": "2800 N. Sheridan Rd.",
+   "title": "A proposed Lakefront Protection Ordinance Application No. 805 and a proposed Residential Business Planned Development Application submitted by 2800 Sheridan Land LLC, for the redevelopment of the property generally located at 2800 N. Sheridan Road. The properties that are the subject of these applications are 2800-2828 N. Sheridan Road/400-418 W. Diversey Parkway and 2714-2750 N. Lakeview Avenue/401-419 W. Diversey Parkway. The new Planned Development is comprised of two sub-areas in abutting Wards with the property generally located at 2800 N. Sheridan Road to become Sub-Area A of the new Planned Development and incorporating the historic Elks National Memorial into the new Planned Development as Sub-Area B (43rd Ward). Sub-Area A is proposed to be improved with a 28-story mixed-use residential building containing 10,000 square feet of retail space, 50,000 square feet of fitness club space, 301 accessory car parking spaces and 345 bike parking spaces. The maximum number of dwelling units will be 345 and a maximum FAR of 5.0.",
+   "attachments": [],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": "2800 N. Sheridan Rd.",
+    "ward": 44,
+    "community_area": null
+   },
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The planned development would add up to 345 dwelling units in a new 28-story residential building, which is a rezoning with residential units.",
+    "summary": "2800 Sheridan Land LLC seeks Lakefront Protection Ordinance approval and a Residential Business Planned Development for 2800 N. Sheridan Road. Sub-Area A would have a 28-story mixed-use building with up to 345 dwelling units, retail and a fitness club. Sub-Area B incorporates the Elks National Memorial.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "body",
+      "detail": "Chicago Plan Commission"
+     }
+    ],
+    "geography": {
+     "address": "2800 N. Sheridan Rd.",
+     "ward": 44,
+     "community_area": "Lake View"
+    },
+    "entities": [
+     "2800 Sheridan Land LLC",
+     "Elks National Memorial"
+    ],
+    "figures": {
+     "units": 345,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": "Residential Business Planned Development",
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "19bdae6e514bffff",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
+   "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
+  },
+  {
+   "id": "cpc:2026-11-19#6124-6144-n-sheridan-rd",
+   "meeting_id": "cpc:2026-11-19",
+   "source_ref": "6124-6144 N. Sheridan Rd.",
+   "title": "A proposed Lake Michigan and Chicago Lakefront Protection Ordinance application, submitted by Kora Development LLC, for the property generally located 6124-44 North Sheridan Road . The property is zoned RM-5.5 and is within the Private-Use Zone of the Lake Michigan and Chicago Lakefront Protection District. The applicant proposes to redevelop the existing vacant lot with a five-story residential building containing 59 dwelling units, 59 parking spaces, and one loading berth. No zoning change is proposed.",
+   "attachments": [],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": "6124-6144 N. Sheridan Rd.",
+    "ward": 48,
+    "community_area": "Edgewater"
+   },
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The Lakefront Protection Ordinance application would allow a new 59-unit residential building on a vacant lot.",
+    "summary": "Kora Development LLC seeks Lakefront Protection Ordinance approval to build a five-story, 59-unit residential building with 59 parking spaces and one loading berth on a vacant lot at 6124-44 N. Sheridan Road. No zoning change is proposed.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "body",
+      "detail": "Chicago Plan Commission"
+     }
+    ],
+    "geography": {
+     "address": "6124-6144 N. Sheridan Rd.",
+     "ward": 48,
+     "community_area": "Edgewater"
+    },
+    "entities": [
+     "Kora Development LLC"
+    ],
+    "figures": {
+     "units": 59,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "6348650c74354118",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
+   "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
+  },
+  {
+   "id": "cpc:2026-11-19#931-n-halsted-st",
+   "meeting_id": "cpc:2026-11-19",
+   "source_ref": "931 N. Halsted St.",
+   "title": "A courtesy presentation of a proposed site plan review, submitted by Onni Halsted Street Chicago LLC, for the development within the Waterway Residential-Business Planned Development No. 1522, Subareas B, C, and D generally located at 931 N Halsted Street . The applicant proposes to construct two mixed-use buildings in Subareas B and C with ground-floor commercial space and are entitled for up to 1,134 and 1,052 dwelling units, respectively. In Subarea D, the applicant proposes to construct a hotel with up to 300 keys. The construction of these subareas will also include construction of a public riverwalk along the North Branch of the Chicago River and the North Branch Canal. The overall FAR of the development will not exceed 8.1.",
+   "attachments": [],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": "931 N. Halsted St.",
+    "ward": 27,
+    "community_area": "Near North Side"
+   },
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The site plan review covers two mixed-use buildings entitled for over 2,000 dwelling units within a residential-business planned development.",
+    "summary": "Onni Halsted Street Chicago LLC presents a courtesy site plan review for Waterway Residential-Business Planned Development No. 1522 at 931 N Halsted. It proposes two mixed-use buildings entitled for up to 1,134 and 1,052 units, a 300-key hotel, and a public riverwalk.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "body",
+      "detail": "Chicago Plan Commission"
+     }
+    ],
+    "geography": {
+     "address": "931 N. Halsted St.",
+     "ward": 27,
+     "community_area": "Near North Side"
+    },
+    "entities": [
+     "Onni Halsted Street Chicago LLC"
+    ],
+    "figures": {
+     "units": 1052,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "dc5b731c99c51567",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
+   "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
+  },
+  {
+   "id": "cpc:2026-11-19#item-9",
+   "meeting_id": "cpc:2026-11-19",
+   "source_ref": "Item 9",
+   "title": "A resolution seeking the adoption of the North Branch Framework Update for the Area South of Grand Avenue. Led by Department of Planning and Development, this framework update provides recommendations to guide future public and private projects in a manner consistent with the surrounding downtown development context for approximately 11 acres of the North Branch Industrial Corridor generally bounded by W. Grand Ave. on the north, the Union Pacific/Chicago North Western railroad tracks and portions of N. Jefferson Street on the east, W. Kinzie Street to the south and N. Desplaines Street to the west. The recommendations support mixed-used development at downtown density levels, multi-modal transportation including a transitway, and publicly accessible open spaces.",
+   "attachments": [],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": null,
+    "ward": 34,
+    "community_area": null
+   },
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A planning framework recommending mixed-use development at downtown density for an 11-acre area could shape future residential development and land use there.",
+    "summary": "The Department of Planning and Development seeks Plan Commission adoption of the North Branch Framework Update for the area south of Grand Avenue, about 11 acres. It recommends mixed-use development at downtown density, multi-modal transportation including a transitway, and public open spaces.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "body",
+      "detail": "Chicago Plan Commission"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": 34,
+     "community_area": null
+    },
+    "entities": [
+     "Department of Planning and Development"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "073bdd19e5e8f03e",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
+   "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
   }
  ],
  "notices": [
@@ -8033,11 +8493,6 @@
  "events": [
   {
    "type": "meeting_new",
-   "ref_id": "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55",
-   "at": "2026-10-16T20:20:13.648413-05:00"
-  },
-  {
-   "type": "meeting_new",
    "ref_id": "cpc:2026-12-17",
    "at": "2026-10-18T09:35:16.093878-05:00"
   },
@@ -8095,6 +8550,56 @@
    "type": "meeting_new",
    "ref_id": "elms:5C971227-8CD4-F111-A05C-001DD80FDA55",
    "at": "2026-10-30T16:30:42.099549-05:00"
+  },
+  {
+   "type": "agenda_posted",
+   "ref_id": "cpc:2026-11-19",
+   "at": "2026-10-30T21:23:45.629620-05:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "cpc:2026-11-19#370-e-garfield-blvd",
+   "at": "2026-10-30T21:23:45.629620-05:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "cpc:2026-11-19#1200-s-dusable-lake-shore-dr",
+   "at": "2026-10-30T21:23:45.629620-05:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "cpc:2026-11-19#3857-w-111th-st",
+   "at": "2026-10-30T21:23:45.629620-05:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "cpc:2026-11-19#3939-3941-w-dickens-ave",
+   "at": "2026-10-30T21:23:45.629620-05:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "cpc:2026-11-19#2800-n-sheridan-rd",
+   "at": "2026-10-30T21:23:45.629620-05:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "cpc:2026-11-19#2800-n-sheridan-rd-2",
+   "at": "2026-10-30T21:23:45.629620-05:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "cpc:2026-11-19#6124-6144-n-sheridan-rd",
+   "at": "2026-10-30T21:23:45.629620-05:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "cpc:2026-11-19#931-n-halsted-st",
+   "at": "2026-10-30T21:23:45.629620-05:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "cpc:2026-11-19#item-9",
+   "at": "2026-10-30T21:23:45.629620-05:00"
   }
  ]
 }
