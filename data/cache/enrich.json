@@ -467,7 +467,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "38f90658300ff7a0",
+  "content_hash": "ecd0bccf75e376ea",
   "entities": [
    "Shedd Aquarium Society"
   ],
@@ -484,10 +484,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The item concerns relocating ADA parking spaces at the Shedd Aquarium, a cultural institution, and does not involve homes or residents.",
-  "source_quality": "none",
+  "relevance_reason": "This is a Lakefront Protection Ordinance application to relocate accessible parking spaces at the Shedd Aquarium, a cultural institution, and involves no housing.",
+  "source_quality": "partial",
   "status": "ok",
-  "summary": "Shedd Aquarium Society seeks Lakefront Protection Ordinance approval (Application No. 808) at 1200 S. DuSable Lake Shore Drive to modify parking requirements by relocating the 4 required ADA accessible parking spaces to the Inner Circle of the Circle Garden.",
+  "summary": "Shedd Aquarium Society seeks Lakefront Protection Ordinance approval to modify parking requirements at 1200 S. DuSable Lake Shore Drive. It would reconstruct existing regular spaces to relocate the 4 required ADA accessible spaces to the Inner Circle of the Circle Garden.",
   "zoning_from": [],
   "zoning_to": null
  },
@@ -501,7 +501,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "a96713f6e1c4d252",
+  "content_hash": "4b8c7334a393e9f4",
   "entities": [
    "2800 Sheridan Land LLC"
   ],
@@ -518,10 +518,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "An amendment to a residential-area planned development changes the boundaries of a site that covers multiple Lakeview/Lincoln Park addresses, which bears on zoning and housing supply.",
-  "source_quality": "none",
+  "relevance_reason": "The amendment to a residential planned development along Sheridan Road and Commonwealth Avenue would change the development's boundaries by removing a sub-area, which bears on zoning and housing supply.",
+  "source_quality": "partial",
   "status": "ok",
-  "summary": "2800 Sheridan Land LLC proposes to amend Planned Development No. 1019 for the property at 2800 N. Sheridan Road by removing Sub-Area 3 from the existing planned development.",
+  "summary": "2800 Sheridan Land LLC proposes to amend Planned Development No. 1019 for the property at 2800 N. Sheridan Road. The amendment would remove Sub-Area 3 from the existing planned development.",
   "zoning_from": [
    "Planned Development No. 1019"
   ],
@@ -537,10 +537,9 @@
     "via": "body"
    }
   ],
-  "content_hash": "19bdae6e514bffff",
+  "content_hash": "59bc8984a10ce7c1",
   "entities": [
-   "2800 Sheridan Land LLC",
-   "Elks National Memorial"
+   "2800 Sheridan Land LLC"
   ],
   "figures": {
    "affordable_units": null,
@@ -555,10 +554,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The planned development would add up to 345 dwelling units in a new 28-story residential building, which is a rezoning with residential units.",
-  "source_quality": "none",
+  "relevance_reason": "A Residential Business Planned Development would allow a 28-story building with up to 345 dwelling units on the lakefront.",
+  "source_quality": "partial",
   "status": "ok",
-  "summary": "2800 Sheridan Land LLC seeks Lakefront Protection Ordinance approval and a Residential Business Planned Development for 2800 N. Sheridan Road. Sub-Area A would have a 28-story mixed-use building with up to 345 dwelling units, retail and a fitness club. Sub-Area B incorporates the Elks National Memorial.",
+  "summary": "2800 Sheridan Land LLC seeks Lakefront Protection Ordinance approval and a Residential Business Planned Development for 2800 N. Sheridan Road. Sub-Area A would have a 28-story mixed-use building with up to 345 dwelling units, retail and a fitness club; Sub-Area B incorporates the Elks National Memorial.",
   "zoning_from": [],
   "zoning_to": "Residential Business Planned Development"
  },
@@ -4317,6 +4316,38 @@
   "source_quality": "full",
   "status": "ok",
   "summary": "IHDA released its draft 2027-2028 Low-Income Housing Tax Credit Qualified Allocation Plan for public comment. A hybrid public hearing is set for June 8, 2026, and written comments are due by 5:00 P.M. on June 15, 2026.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "watch:doh-home:0ceb00eb10f5": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "Department of Housing",
+    "id": "housing-agenda",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "4322955f658863b6",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "A Chicago Department of Housing page now links a 2026 HOME Booklet, a housing program publication, though its contents are not shown.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "The Chicago Department of Housing posted a link to its English-language HOME Booklet, last updated July 2026.",
   "zoning_from": [],
   "zoning_to": null
  },

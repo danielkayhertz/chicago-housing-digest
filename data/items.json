@@ -1,122 +1,62 @@
 {
- "generated_at": "2026-11-01T20:32:10.912000-06:00",
+ "generated_at": "2026-11-02T14:47:05.111442-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-01T20:32:10.912000-06:00",
+   "last_success_at": "2026-11-02T14:47:05.111442-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-01T20:32:10.912000-06:00",
+   "last_success_at": "2026-11-02T14:47:05.111442-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-01T20:32:10.912000-06:00",
+   "last_success_at": "2026-11-02T14:47:05.111442-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-01T20:32:10.912000-06:00",
+   "last_success_at": "2026-11-02T14:47:05.111442-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-01T20:32:10.912000-06:00",
+   "last_success_at": "2026-11-02T14:47:05.111442-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-01T20:32:10.912000-06:00",
+   "last_success_at": "2026-11-02T14:47:05.111442-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-01T20:32:10.912000-06:00",
+   "last_success_at": "2026-11-02T14:47:05.111442-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-01T20:32:10.912000-06:00",
+   "last_success_at": "2026-11-02T14:47:05.111442-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-01T20:32:10.912000-06:00",
+   "last_success_at": "2026-11-02T14:47:05.111442-06:00",
    "status": "ok",
    "message": ""
   }
  ],
  "meetings": [
-  {
-   "id": "ihda:ihda-audit-committee:2026-09-18",
-   "source_id": "ihda",
-   "body": "IHDA Audit Committee",
-   "body_id": "ihda-audit-committee",
-   "jurisdiction": "state",
-   "start": "2026-09-18T09:00:00-05:00",
-   "time_known": true,
-   "status": "held",
-   "location": null,
-   "agenda_url": "https://www.ihda.org/wp-content/uploads/2026/09/Audit-Committee-Agenda-1.pdf",
-   "video_url": null,
-   "minutes_url": null,
-   "detail_url": "https://www.ihda.org/about-ihda/public-meetings-and-notices/",
-   "needs_ai_extraction": true,
-   "item_count_total": 0,
-   "item_count_relevant": 0,
-   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
-  },
-  {
-   "id": "ihda:ihda-finance-committee:2026-09-18",
-   "source_id": "ihda",
-   "body": "IHDA Finance Committee",
-   "body_id": "ihda-finance-committee",
-   "jurisdiction": "state",
-   "start": "2026-09-18T10:00:00-05:00",
-   "time_known": true,
-   "status": "held",
-   "location": null,
-   "agenda_url": "https://www.ihda.org/wp-content/uploads/2026/09/Finance-Committee-Agenda.pdf",
-   "video_url": null,
-   "minutes_url": null,
-   "detail_url": "https://www.ihda.org/about-ihda/public-meetings-and-notices/",
-   "needs_ai_extraction": true,
-   "item_count_total": 0,
-   "item_count_relevant": 0,
-   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
-  },
-  {
-   "id": "ihda:ihda-board:2026-09-18",
-   "source_id": "ihda",
-   "body": "IHDA Board",
-   "body_id": "ihda-board",
-   "jurisdiction": "state",
-   "start": "2026-09-18T11:00:00-05:00",
-   "time_known": true,
-   "status": "held",
-   "location": null,
-   "agenda_url": "https://www.ihda.org/wp-content/uploads/2026/09/0918-Agenda-Final.pdf",
-   "video_url": null,
-   "minutes_url": null,
-   "detail_url": "https://www.ihda.org/about-ihda/public-meetings-and-notices/",
-   "needs_ai_extraction": true,
-   "item_count_total": 0,
-   "item_count_relevant": 0,
-   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
-  },
   {
    "id": "elms:266A5A62-53B8-F111-AAAC-001DD80AA3CC",
    "source_id": "elms-finance",
@@ -7290,7 +7230,12 @@
    "meeting_id": "cpc:2026-11-19",
    "source_ref": "1200 S. DuSable Lake Shore Dr.",
    "title": "A proposed Lakefront Protection Ordinance Application (No. 808), submitted by Shedd Aquarium Society, for the property generally located at 1200 S. DuSable Lake Shore Drive . The Applicant requests to modify the parking requirements by reconstructing existing regular parking spaces to relocate the 4 required ADA accessible parking spaces from their current location to the Inner Circle of the Circle Garden.",
-   "attachments": [],
+   "attachments": [
+    {
+     "label": "LPO Application",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/1200_S_DuSable_Lake_Shore_Dr_Shedd_Aquarium_LPO_Application.pdf"
+    }
+   ],
    "outcome": null,
    "extraction": "structured",
    "geography_hint": {
@@ -7301,8 +7246,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": false,
-    "relevance_reason": "The item concerns relocating ADA parking spaces at the Shedd Aquarium, a cultural institution, and does not involve homes or residents.",
-    "summary": "Shedd Aquarium Society seeks Lakefront Protection Ordinance approval (Application No. 808) at 1200 S. DuSable Lake Shore Drive to modify parking requirements by relocating the 4 required ADA accessible parking spaces to the Inner Circle of the Circle Garden.",
+    "relevance_reason": "This is a Lakefront Protection Ordinance application to relocate accessible parking spaces at the Shedd Aquarium, a cultural institution, and involves no housing.",
+    "summary": "Shedd Aquarium Society seeks Lakefront Protection Ordinance approval to modify parking requirements at 1200 S. DuSable Lake Shore Drive. It would reconstruct existing regular spaces to relocate the 4 required ADA accessible spaces to the Inner Circle of the Circle Garden.",
     "categories": [
      {
       "id": "ahpaa",
@@ -7327,13 +7272,13 @@
     "zoning_from": [],
     "zoning_to": null,
     "important": null,
-    "source_quality": "none",
+    "source_quality": "partial",
     "model": "claude-sonnet-5-5",
-    "content_hash": "38f90658300ff7a0",
+    "content_hash": "ecd0bccf75e376ea",
     "overridden": false
    },
    "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
-   "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
+   "last_changed_at": "2026-11-02T14:47:05.111442-06:00"
   },
   {
    "id": "cpc:2026-11-19#3857-w-111th-st",
@@ -7444,7 +7389,12 @@
    "meeting_id": "cpc:2026-11-19",
    "source_ref": "2800 N. Sheridan Rd.",
    "title": "A proposed amendment to Planned Development No. 1019 submitted by 2800 Sheridan Land LLC, for the redevelopment of the property generally located at 2800 N. Sheridan Road . The properties that are the subject of the application are 2800-2844 N. Sheridan Road/331-359 W. Surf Street/2824-2844 N. Commonwealth Avenue and 2819-2937 N. Commonwealth Avenue/301-323 W. Oakdale Avenue/2820-2936 N. Lake Shore Drive and 400-418 W. Diversey Parkway. The Applicant proposes to remove Sub-Area 3 from the existing Planned Development No. 1019.",
-   "attachments": [],
+   "attachments": [
+    {
+     "label": "PD Amendment Application",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/2800_N_Sheridan_Rd_PD1019_As_Filed_Application_No_23118_FULL.pdf"
+    }
+   ],
    "outcome": null,
    "extraction": "structured",
    "geography_hint": {
@@ -7455,8 +7405,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "An amendment to a residential-area planned development changes the boundaries of a site that covers multiple Lakeview/Lincoln Park addresses, which bears on zoning and housing supply.",
-    "summary": "2800 Sheridan Land LLC proposes to amend Planned Development No. 1019 for the property at 2800 N. Sheridan Road by removing Sub-Area 3 from the existing planned development.",
+    "relevance_reason": "The amendment to a residential planned development along Sheridan Road and Commonwealth Avenue would change the development's boundaries by removing a sub-area, which bears on zoning and housing supply.",
+    "summary": "2800 Sheridan Land LLC proposes to amend Planned Development No. 1019 for the property at 2800 N. Sheridan Road. The amendment would remove Sub-Area 3 from the existing planned development.",
     "categories": [
      {
       "id": "ahpaa",
@@ -7483,20 +7433,29 @@
     ],
     "zoning_to": null,
     "important": null,
-    "source_quality": "none",
+    "source_quality": "partial",
     "model": "claude-sonnet-5-5",
-    "content_hash": "a96713f6e1c4d252",
+    "content_hash": "4b8c7334a393e9f4",
     "overridden": false
    },
    "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
-   "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
+   "last_changed_at": "2026-11-02T14:47:05.111442-06:00"
   },
   {
    "id": "cpc:2026-11-19#2800-n-sheridan-rd-2",
    "meeting_id": "cpc:2026-11-19",
    "source_ref": "2800 N. Sheridan Rd.",
    "title": "A proposed Lakefront Protection Ordinance Application No. 805 and a proposed Residential Business Planned Development Application submitted by 2800 Sheridan Land LLC, for the redevelopment of the property generally located at 2800 N. Sheridan Road. The properties that are the subject of these applications are 2800-2828 N. Sheridan Road/400-418 W. Diversey Parkway and 2714-2750 N. Lakeview Avenue/401-419 W. Diversey Parkway. The new Planned Development is comprised of two sub-areas in abutting Wards with the property generally located at 2800 N. Sheridan Road to become Sub-Area A of the new Planned Development and incorporating the historic Elks National Memorial into the new Planned Development as Sub-Area B (43rd Ward). Sub-Area A is proposed to be improved with a 28-story mixed-use residential building containing 10,000 square feet of retail space, 50,000 square feet of fitness club space, 301 accessory car parking spaces and 345 bike parking spaces. The maximum number of dwelling units will be 345 and a maximum FAR of 5.0.",
-   "attachments": [],
+   "attachments": [
+    {
+     "label": "LPO Application",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/2800_N_Sheridan_Rd_LF_No_805_As-Filed_Application_FULL.pdf"
+    },
+    {
+     "label": "PD Application",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/2800_N_Sheridan_Rd_PD_As_Filed_Application_No_23117_FULL.pdf"
+    }
+   ],
    "outcome": null,
    "extraction": "structured",
    "geography_hint": {
@@ -7507,8 +7466,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "The planned development would add up to 345 dwelling units in a new 28-story residential building, which is a rezoning with residential units.",
-    "summary": "2800 Sheridan Land LLC seeks Lakefront Protection Ordinance approval and a Residential Business Planned Development for 2800 N. Sheridan Road. Sub-Area A would have a 28-story mixed-use building with up to 345 dwelling units, retail and a fitness club. Sub-Area B incorporates the Elks National Memorial.",
+    "relevance_reason": "A Residential Business Planned Development would allow a 28-story building with up to 345 dwelling units on the lakefront.",
+    "summary": "2800 Sheridan Land LLC seeks Lakefront Protection Ordinance approval and a Residential Business Planned Development for 2800 N. Sheridan Road. Sub-Area A would have a 28-story mixed-use building with up to 345 dwelling units, retail and a fitness club; Sub-Area B incorporates the Elks National Memorial.",
     "categories": [
      {
       "id": "ahpaa",
@@ -7522,8 +7481,7 @@
      "community_area": "Lake View"
     },
     "entities": [
-     "2800 Sheridan Land LLC",
-     "Elks National Memorial"
+     "2800 Sheridan Land LLC"
     ],
     "figures": {
      "units": 345,
@@ -7534,13 +7492,13 @@
     "zoning_from": [],
     "zoning_to": "Residential Business Planned Development",
     "important": null,
-    "source_quality": "none",
+    "source_quality": "partial",
     "model": "claude-sonnet-5-5",
-    "content_hash": "19bdae6e514bffff",
+    "content_hash": "59bc8984a10ce7c1",
     "overridden": false
    },
    "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
-   "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
+   "last_changed_at": "2026-11-02T14:47:05.111442-06:00"
   },
   {
    "id": "cpc:2026-11-19#6124-6144-n-sheridan-rd",
@@ -8488,39 +8446,55 @@
    },
    "first_seen_at": "2026-10-21T15:38:23.736483-05:00",
    "last_changed_at": "2026-10-21T15:38:23.736483-05:00"
+  },
+  {
+   "id": "watch:doh-home:0ceb00eb10f5",
+   "source_id": "watch",
+   "body": "Chicago Department of Housing",
+   "kind": "page_change",
+   "title": "New on Department of Housing home: https://www.chicago.gov/content/dam/city/depts/doh/HomeBooklets/2026/HOME%20Booklet_English_Last%20Updated%20July%202026.pdf",
+   "url": "https://www.chicago.gov/content/dam/city/depts/doh/HomeBooklets/2026/HOME%20Booklet_English_Last%20Updated%20July%202026.pdf",
+   "detail": "https://www.chicago.gov/content/dam/city/depts/doh/HomeBooklets/2026/HOME%20Booklet_English_Last%20Updated%20July%202026.pdf",
+   "new_link": true,
+   "posted_at": "2026-11-02T14:47:05.111442-06:00",
+   "deadline": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A Chicago Department of Housing page now links a 2026 HOME Booklet, a housing program publication, though its contents are not shown.",
+    "summary": "The Chicago Department of Housing posted a link to its English-language HOME Booklet, last updated July 2026.",
+    "categories": [
+     {
+      "id": "housing-agenda",
+      "via": "keyword",
+      "detail": "Department of Housing"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "partial",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "4322955f658863b6",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-02T14:47:05.111442-06:00",
+   "last_changed_at": "2026-11-02T14:47:05.111442-06:00"
   }
  ],
  "events": [
-  {
-   "type": "meeting_new",
-   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
-   "at": "2026-10-19T12:29:04.290827-05:00"
-  },
-  {
-   "type": "notice_new",
-   "ref_id": "watch:doh-home:c8e4f6199e69",
-   "at": "2026-10-19T12:29:04.290827-05:00"
-  },
-  {
-   "type": "notice_new",
-   "ref_id": "watch:doh-home:34667633e840",
-   "at": "2026-10-19T12:29:04.290827-05:00"
-  },
-  {
-   "type": "notice_new",
-   "ref_id": "watch:doh-home:782a04475fa0",
-   "at": "2026-10-19T12:29:04.290827-05:00"
-  },
-  {
-   "type": "notice_new",
-   "ref_id": "watch:doh-home:fa230d0797e2",
-   "at": "2026-10-19T12:29:04.290827-05:00"
-  },
-  {
-   "type": "notice_new",
-   "ref_id": "watch:doh-home:839e51bda73d",
-   "at": "2026-10-19T12:29:04.290827-05:00"
-  },
   {
    "type": "meeting_new",
    "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5",
@@ -8595,6 +8569,11 @@
    "type": "item_added",
    "ref_id": "cpc:2026-11-19#item-9",
    "at": "2026-10-30T21:23:45.629620-05:00"
+  },
+  {
+   "type": "notice_new",
+   "ref_id": "watch:doh-home:0ceb00eb10f5",
+   "at": "2026-11-02T14:47:05.111442-06:00"
   }
  ]
 }
