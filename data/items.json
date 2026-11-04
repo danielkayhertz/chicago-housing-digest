@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-11-03T21:00:28.220931-06:00",
+ "generated_at": "2026-11-04T12:38:47.854562-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-03T21:00:28.220931-06:00",
+   "last_success_at": "2026-11-04T12:38:47.854562-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-03T21:00:28.220931-06:00",
+   "last_success_at": "2026-11-04T12:38:47.854562-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-03T21:00:28.220931-06:00",
+   "last_success_at": "2026-11-04T12:38:47.854562-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-03T21:00:28.220931-06:00",
+   "last_success_at": "2026-11-04T12:38:47.854562-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-03T21:00:28.220931-06:00",
+   "last_success_at": "2026-11-04T12:38:47.854562-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-03T21:00:28.220931-06:00",
+   "last_success_at": "2026-11-04T12:38:47.854562-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-03T21:00:28.220931-06:00",
+   "last_success_at": "2026-11-04T12:38:47.854562-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-03T21:00:28.220931-06:00",
+   "last_success_at": "2026-11-04T12:38:47.854562-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-03T21:00:28.220931-06:00",
+   "last_success_at": "2026-11-04T12:38:47.854562-06:00",
    "status": "ok",
    "message": ""
   }
@@ -7177,7 +7177,12 @@
    "meeting_id": "cpc:2026-11-19",
    "source_ref": "370 E. Garfield Blvd.",
    "title": "A proposed Institutional Planned Development, submitted by Lake Park Associates, Inc., for the property generally located at 370 East Garfield Boulevard . The applicant proposes to rezone the site from the RS-3 Residential Single-Unit District to the C1-3 Neighborhood Commercial District and then to an Institutional Planned Development to allow construction of a multi-phase, mixed-use institutional development. Phase I includes a five-story University of Chicago Medical Center Pathology Laboratory, a six-story accessory parking garage, and a landscaped pedestrian plaza. The maximum overall FAR of the planned development will be 3.0.",
-   "attachments": [],
+   "attachments": [
+    {
+     "label": "PD Application",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/370_E_Garfield_Blvd_As-filed_Application.pdf"
+    }
+   ],
    "outcome": null,
    "extraction": "structured",
    "geography_hint": {
@@ -7188,8 +7193,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": false,
-    "relevance_reason": "The item rezones a site for an institutional medical laboratory and parking development, with no homes stated as being built, preserved, or regulated.",
-    "summary": "Lake Park Associates, Inc. proposes rezoning 370 E. Garfield Blvd. from RS-3 to C1-3 and then to an Institutional Planned Development. Phase I would include a University of Chicago Medical Center pathology laboratory, a parking garage, and a plaza.",
+    "relevance_reason": "The item is an institutional planned development for a medical laboratory, parking garage and plaza, with no housing units stated.",
+    "summary": "Lake Park Associates, Inc. seeks to rezone 370 E. Garfield Blvd. from RS-3 to C1-3 and then to an Institutional Planned Development. Phase I would include a University of Chicago Medical Center pathology laboratory, a parking garage and a plaza.",
     "categories": [
      {
       "id": "ahpaa",
@@ -7217,13 +7222,13 @@
     ],
     "zoning_to": "Institutional Planned Development",
     "important": null,
-    "source_quality": "none",
+    "source_quality": "partial",
     "model": "claude-sonnet-5-5",
-    "content_hash": "b833d3640c4b2129",
+    "content_hash": "8167f02f6414cc55",
     "overridden": false
    },
    "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
-   "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
+   "last_changed_at": "2026-11-04T12:38:47.854562-06:00"
   },
   {
    "id": "cpc:2026-11-19#1200-s-dusable-lake-shore-dr",
@@ -7505,7 +7510,12 @@
    "meeting_id": "cpc:2026-11-19",
    "source_ref": "6124-6144 N. Sheridan Rd.",
    "title": "A proposed Lake Michigan and Chicago Lakefront Protection Ordinance application, submitted by Kora Development LLC, for the property generally located 6124-44 North Sheridan Road . The property is zoned RM-5.5 and is within the Private-Use Zone of the Lake Michigan and Chicago Lakefront Protection District. The applicant proposes to redevelop the existing vacant lot with a five-story residential building containing 59 dwelling units, 59 parking spaces, and one loading berth. No zoning change is proposed.",
-   "attachments": [],
+   "attachments": [
+    {
+     "label": "LPO Application",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/6130_N_Sheridan_LPO_Application.pdf"
+    }
+   ],
    "outcome": null,
    "extraction": "structured",
    "geography_hint": {
@@ -7516,8 +7526,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "The Lakefront Protection Ordinance application would allow a new 59-unit residential building on a vacant lot.",
-    "summary": "Kora Development LLC seeks Lakefront Protection Ordinance approval to build a five-story, 59-unit residential building with 59 parking spaces and one loading berth on a vacant lot at 6124-44 N. Sheridan Road. No zoning change is proposed.",
+    "relevance_reason": "The application would allow a new 59-unit residential building on a vacant lot in the Lakefront Protection District.",
+    "summary": "Kora Development LLC seeks Lakefront Protection Ordinance approval to build a five-story, 59-unit residential building with 59 parking spaces on a vacant lot at 6124-44 N. Sheridan Road. No zoning change is proposed.",
     "categories": [
      {
       "id": "ahpaa",
@@ -7542,13 +7552,13 @@
     "zoning_from": [],
     "zoning_to": null,
     "important": null,
-    "source_quality": "none",
+    "source_quality": "partial",
     "model": "claude-sonnet-5-5",
-    "content_hash": "6348650c74354118",
+    "content_hash": "1f323e8ac47da396",
     "overridden": false
    },
    "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
-   "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
+   "last_changed_at": "2026-11-04T12:38:47.854562-06:00"
   },
   {
    "id": "cpc:2026-11-19#931-n-halsted-st",

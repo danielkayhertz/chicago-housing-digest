@@ -571,7 +571,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "b833d3640c4b2129",
+  "content_hash": "8167f02f6414cc55",
   "entities": [
    "Lake Park Associates, Inc.",
    "University of Chicago Medical Center"
@@ -589,10 +589,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The item rezones a site for an institutional medical laboratory and parking development, with no homes stated as being built, preserved, or regulated.",
-  "source_quality": "none",
+  "relevance_reason": "The item is an institutional planned development for a medical laboratory, parking garage and plaza, with no housing units stated.",
+  "source_quality": "partial",
   "status": "ok",
-  "summary": "Lake Park Associates, Inc. proposes rezoning 370 E. Garfield Blvd. from RS-3 to C1-3 and then to an Institutional Planned Development. Phase I would include a University of Chicago Medical Center pathology laboratory, a parking garage, and a plaza.",
+  "summary": "Lake Park Associates, Inc. seeks to rezone 370 E. Garfield Blvd. from RS-3 to C1-3 and then to an Institutional Planned Development. Phase I would include a University of Chicago Medical Center pathology laboratory, a parking garage and a plaza.",
   "zoning_from": [
    "RS-3"
   ],
@@ -680,7 +680,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "6348650c74354118",
+  "content_hash": "1f323e8ac47da396",
   "entities": [
    "Kora Development LLC"
   ],
@@ -697,10 +697,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The Lakefront Protection Ordinance application would allow a new 59-unit residential building on a vacant lot.",
-  "source_quality": "none",
+  "relevance_reason": "The application would allow a new 59-unit residential building on a vacant lot in the Lakefront Protection District.",
+  "source_quality": "partial",
   "status": "ok",
-  "summary": "Kora Development LLC seeks Lakefront Protection Ordinance approval to build a five-story, 59-unit residential building with 59 parking spaces and one loading berth on a vacant lot at 6124-44 N. Sheridan Road. No zoning change is proposed.",
+  "summary": "Kora Development LLC seeks Lakefront Protection Ordinance approval to build a five-story, 59-unit residential building with 59 parking spaces on a vacant lot at 6124-44 N. Sheridan Road. No zoning change is proposed.",
   "zoning_from": [],
   "zoning_to": null
  },
