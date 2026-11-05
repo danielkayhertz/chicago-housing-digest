@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-11-04T21:29:57.749132-06:00",
+ "generated_at": "2026-11-05T12:45:34.093154-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-04T21:29:57.749132-06:00",
+   "last_success_at": "2026-11-05T12:45:34.093154-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-04T21:29:57.749132-06:00",
+   "last_success_at": "2026-11-05T12:45:34.093154-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-04T21:29:57.749132-06:00",
+   "last_success_at": "2026-11-05T12:45:34.093154-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-04T21:29:57.749132-06:00",
+   "last_success_at": "2026-11-05T12:45:34.093154-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-04T21:29:57.749132-06:00",
+   "last_success_at": "2026-11-05T12:45:34.093154-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-04T21:29:57.749132-06:00",
+   "last_success_at": "2026-11-05T12:45:34.093154-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-04T21:29:57.749132-06:00",
+   "last_success_at": "2026-11-05T12:45:34.093154-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-04T21:29:57.749132-06:00",
+   "last_success_at": "2026-11-05T12:45:34.093154-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-04T21:29:57.749132-06:00",
+   "last_success_at": "2026-11-05T12:45:34.093154-06:00",
    "status": "ok",
    "message": ""
   }
@@ -7290,7 +7290,12 @@
    "meeting_id": "cpc:2026-11-19",
    "source_ref": "3857 W. 111th St.",
    "title": "A proposed amendment to Institutional Planned Development 542, as amended, submitted by the Chicago Board of Education for the City of Chicago, for the property generally located at 3857 W. 111 th Street . The applicant proposes to amend Planned Development 542 to add Utilities and Services, Minor, as an allowed use to all subareas in order to install ground-mounted solar panels in Subarea B. The maximum Floor Area Ratio (FAR) of the Planned Development will remain at 0.062.",
-   "attachments": [],
+   "attachments": [
+    {
+     "label": "PD Amendment Application",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/3857_W_111th_St_Application_Full_As_Filed.pdf"
+    }
+   ],
    "outcome": null,
    "extraction": "structured",
    "geography_hint": {
@@ -7301,8 +7306,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": false,
-    "relevance_reason": "The amendment adds a minor utility use to an institutional planned development to allow ground-mounted solar panels, with no housing units involved.",
-    "summary": "The Chicago Board of Education seeks to amend Institutional Planned Development 542 at 3857 W. 111th St. to allow Utilities and Services, Minor in all subareas, so ground-mounted solar panels can be installed in Subarea B. Maximum FAR stays at 0.062.",
+    "relevance_reason": "The amendment adds a minor utilities use to an institutional planned development to allow ground-mounted solar panels, with no housing involved.",
+    "summary": "The Chicago Board of Education seeks to amend Institutional Planned Development 542 at 3857 W. 111th St. to allow Utilities and Services, Minor in all subareas, for ground-mounted solar panels in Subarea B. Maximum FAR stays at 0.062.",
     "categories": [
      {
       "id": "ahpaa",
@@ -7329,20 +7334,25 @@
     ],
     "zoning_to": null,
     "important": null,
-    "source_quality": "none",
+    "source_quality": "partial",
     "model": "claude-sonnet-5-5",
-    "content_hash": "02a0c1b25e0b412a",
+    "content_hash": "c72c9497da5dd7c4",
     "overridden": false
    },
    "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
-   "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
+   "last_changed_at": "2026-11-05T12:45:34.093154-06:00"
   },
   {
    "id": "cpc:2026-11-19#3939-3941-w-dickens-ave",
    "meeting_id": "cpc:2026-11-19",
    "source_ref": "3939-3941 W. Dickens Ave.",
    "title": "A proposed Type 1 Map Amendment located within the Pulaski Industrial Corridor, submitted by Martha Gonzalez, for the property generally located at 3939-3941 W. Dickens Avenue . The applicant is proposing to rezone the site from M1-1 (Limited Manufacturing/ Business Park District) to B2-2 (Neighborhood Mixed Use District). The applicant proposes to construct 6-unit, 3-story residential building up to 38 feet in height, with 6 parking spaces and a floor area ratio (FAR) of 1.19.",
-   "attachments": [],
+   "attachments": [
+    {
+     "label": "Map Amendment Application",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/3939-41_W_Dickens_docss_revised_to_a_B2-2_district.pdf"
+    }
+   ],
    "outcome": null,
    "extraction": "structured",
    "geography_hint": {
@@ -7353,8 +7363,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A rezoning from manufacturing to mixed-use to allow construction of a new 6-unit residential building.",
-    "summary": "Martha Gonzalez requests a Type 1 Map Amendment within the Pulaski Industrial Corridor to rezone 3939-3941 W. Dickens Avenue from M1-1 to B2-2. She proposes a 6-unit, 3-story residential building with 6 parking spaces.",
+    "relevance_reason": "A rezoning from manufacturing to neighborhood mixed-use to allow construction of a new 6-unit residential building.",
+    "summary": "Martha Gonzalez seeks a Type 1 Map Amendment in the Pulaski Industrial Corridor, rezoning 3939-3941 W. Dickens Avenue from M1-1 to B2-2. She proposes a 6-unit, 3-story residential building up to 38 feet tall with 6 parking spaces.",
     "categories": [
      {
       "id": "ahpaa",
@@ -7381,13 +7391,13 @@
     ],
     "zoning_to": "B2-2",
     "important": null,
-    "source_quality": "none",
+    "source_quality": "partial",
     "model": "claude-sonnet-5-5",
-    "content_hash": "d64cde044b051436",
+    "content_hash": "a320af5b0dd730b1",
     "overridden": false
    },
    "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
-   "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
+   "last_changed_at": "2026-11-05T12:45:34.093154-06:00"
   },
   {
    "id": "cpc:2026-11-19#2800-n-sheridan-rd",

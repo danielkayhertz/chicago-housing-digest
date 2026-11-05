@@ -608,7 +608,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "02a0c1b25e0b412a",
+  "content_hash": "c72c9497da5dd7c4",
   "entities": [
    "Chicago Board of Education"
   ],
@@ -625,10 +625,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The amendment adds a minor utility use to an institutional planned development to allow ground-mounted solar panels, with no housing units involved.",
-  "source_quality": "none",
+  "relevance_reason": "The amendment adds a minor utilities use to an institutional planned development to allow ground-mounted solar panels, with no housing involved.",
+  "source_quality": "partial",
   "status": "ok",
-  "summary": "The Chicago Board of Education seeks to amend Institutional Planned Development 542 at 3857 W. 111th St. to allow Utilities and Services, Minor in all subareas, so ground-mounted solar panels can be installed in Subarea B. Maximum FAR stays at 0.062.",
+  "summary": "The Chicago Board of Education seeks to amend Institutional Planned Development 542 at 3857 W. 111th St. to allow Utilities and Services, Minor in all subareas, for ground-mounted solar panels in Subarea B. Maximum FAR stays at 0.062.",
   "zoning_from": [
    "Institutional Planned Development 542"
   ],
@@ -644,7 +644,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "d64cde044b051436",
+  "content_hash": "a320af5b0dd730b1",
   "entities": [
    "Martha Gonzalez"
   ],
@@ -661,10 +661,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A rezoning from manufacturing to mixed-use to allow construction of a new 6-unit residential building.",
-  "source_quality": "none",
+  "relevance_reason": "A rezoning from manufacturing to neighborhood mixed-use to allow construction of a new 6-unit residential building.",
+  "source_quality": "partial",
   "status": "ok",
-  "summary": "Martha Gonzalez requests a Type 1 Map Amendment within the Pulaski Industrial Corridor to rezone 3939-3941 W. Dickens Avenue from M1-1 to B2-2. She proposes a 6-unit, 3-story residential building with 6 parking spaces.",
+  "summary": "Martha Gonzalez seeks a Type 1 Map Amendment in the Pulaski Industrial Corridor, rezoning 3939-3941 W. Dickens Avenue from M1-1 to B2-2. She proposes a 6-unit, 3-story residential building up to 38 feet tall with 6 parking spaces.",
   "zoning_from": [
    "M1-1"
   ],
