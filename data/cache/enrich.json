@@ -352,6 +352,230 @@
   "zoning_from": [],
   "zoning_to": null
  },
+ "clihtf:319089#allocations-report": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CLIHTF Board of Directors",
+    "id": "social-housing",
+    "via": "body"
+   }
+  ],
+  "content_hash": "83158af5768baba1",
+  "entities": [
+   "Chicago Low-Income Housing Trust Fund"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The Chicago Low-Income Housing Trust Fund board is receiving a report on its rental subsidy allocations, which fund affordable rental housing for low-income tenants.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The CLIHTF Board of Directors will receive the Allocations Committee's report, which lists an approved zero income waiver, at its November 10 meeting.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "clihtf:319089#approved-zero-income-waiver": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CLIHTF Board of Directors",
+    "id": "social-housing",
+    "via": "body"
+   },
+   {
+    "detail": "",
+    "id": "housing-agenda",
+    "via": "model"
+   }
+  ],
+  "content_hash": "daac4cba853a1356",
+  "entities": [
+   "Chicago Low-Income Housing Trust Fund",
+   "Allocations Committee"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The Chicago Low-Income Housing Trust Fund board is reporting an approved zero income waiver, an action within its rental subsidy program for low-income tenants.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The CLIHTF Board of Directors' Allocations Committee reports an approved zero income waiver at the November 10, 2026 meeting. The same agenda includes a vote on MAUI rent increases and the final 2027 budget.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "clihtf:319089#president-s-update": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CLIHTF Board of Directors",
+    "id": "social-housing",
+    "via": "body"
+   }
+  ],
+  "content_hash": "f3c440b5589a028f",
+  "entities": [
+   "Chicago Low-Income Housing Trust Fund"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The Chicago Low-Income Housing Trust Fund board meeting covers rental subsidy operations, including rent increases for long-term affordability units and the 2027 budget, though this specific item is only the president's update.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The CLIHTF Board of Directors will hear the President's Update, an agenda item at its November 10 meeting. The same meeting includes votes on December 2026 MAUI rent increases and the final 2027 budget.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "clihtf:319089#vote-to-appoint-isabel-kennon-as-outreach-chai": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CLIHTF Board of Directors",
+    "id": "social-housing",
+    "via": "body"
+   }
+  ],
+  "content_hash": "6e2fa64c4a7f9f72",
+  "entities": [
+   "Chicago Low-Income Housing Trust Fund",
+   "Isabel Kennon"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item is an internal board personnel appointment of an outreach committee chair, which does not itself affect building, financing, regulating, or tenant rights regarding homes.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The CLIHTF Board of Directors will vote on appointing Isabel Kennon as Outreach Committee Chair at its November 10 meeting.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "clihtf:319089#vote-to-approve-december-2026-rent-increases-for-maui-long-term-affordab-9d2a69c": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CLIHTF Board of Directors",
+    "id": "social-housing",
+    "via": "body"
+   },
+   {
+    "detail": "",
+    "id": "housing-agenda",
+    "via": "model"
+   }
+  ],
+  "content_hash": "89dfbc80c8b04c49",
+  "entities": [
+   "Chicago Low-Income Housing Trust Fund",
+   "CLIHTF",
+   "MAUI"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item is a vote by the Chicago Low-Income Housing Trust Fund board on rent increases for units supported by its MAUI Long-Term Operating Support program.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The CLIHTF Board of Directors will vote on approving December 2026 rent increases for MAUI Long-Term Affordability through Operating Support (LTOS). The Finance and Audit Committee brings the item.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "clihtf:319089#vote-to-approve-final-2027-budget": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CLIHTF Board of Directors",
+    "id": "social-housing",
+    "via": "body"
+   },
+   {
+    "detail": "",
+    "id": "housing-agenda",
+    "via": "model"
+   }
+  ],
+  "content_hash": "acfa79f42c97a418",
+  "entities": [
+   "Chicago Low-Income Housing Trust Fund",
+   "Finance and Audit Committee"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The Chicago Low-Income Housing Trust Fund's budget governs funding for its rental subsidy programs for low-income renters.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The CLIHTF Board of Directors will vote to approve the final 2027 budget, presented by the Finance and Audit Committee. The same agenda includes a vote on December 2026 rent increases for MAUI Long-Term Affordability through Operating Support.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
  "cpc:2026-10-15#1133-w-kinzie-st": {
   "amount": null,
   "amount_kind": null,
