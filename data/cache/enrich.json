@@ -3408,6 +3408,219 @@
   "zoning_from": [],
   "zoning_to": null
  },
+ "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029488": {
+  "amount": 240000,
+  "amount_kind": "sale price",
+  "categories": [
+   {
+    "detail": "ARO",
+    "id": "housing-agenda",
+    "via": "keyword"
+   },
+   {
+    "detail": "",
+    "id": "social-housing",
+    "via": "model"
+   }
+  ],
+  "content_hash": "9467c967bd6b0a57",
+  "entities": [
+   "Square Construction, Inc."
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "3756 S Lake Park Ave",
+   "community_area": "Oakland",
+   "ward": 4
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The ordinance sells a city-owned lot for construction of nine residential units under the ChiBlockBuilder program.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Ordinance would sell a City-owned 11,260 sq. ft. lot at 3756 S. Lake Park Ave. to Square Construction, Inc. for $240,000 to build three 3-unit residential buildings with garages. The project would not include ARO units.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029491": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "",
+    "id": "social-housing",
+    "via": "model"
+   },
+   {
+    "detail": "",
+    "id": "housing-agenda",
+    "via": "model"
+   }
+  ],
+  "content_hash": "4c3a9be4c8dbfbb3",
+  "entities": [
+   "Citizens Building a Better Community LLC"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 46
+  },
+  "geography": {
+   "address": "1855, 1903, 1916, 1925 and 1951 S Troy St, 1900, 1904, 1914, 1915, 1919, 1936, 2001, 2016, 2116 and 2118 S Albany Ave and 3059 W 19th St",
+   "community_area": "Near North Side",
+   "ward": 2
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "It is a sale of City-owned lots with existing residential buildings to a developer under the City Lots for Working Families program.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "Committee on Housing and Real Estate would approve sale of City-owned property at 15 addresses on S Troy St, S Albany Ave and W 19th St to Citizens Building a Better Community LLC under the City Lots for Working Families program. The attached lot list shows 23 buildings and 46 units.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029492": {
+  "amount": 6,
+  "amount_kind": "total sale price",
+  "categories": [
+   {
+    "detail": "",
+    "id": "social-housing",
+    "via": "model"
+   },
+   {
+    "detail": "",
+    "id": "housing-agenda",
+    "via": "model"
+   }
+  ],
+  "content_hash": "b09f11d9e677a1f9",
+  "entities": [
+   "Inherentance"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 13
+  },
+  "geography": {
+   "address": "1020 N Kedzie Ave, 1138 N Christiana Ave, 1256 N Artesian Ave, 1353 N Maplewood Ave, 1702 N Monticello Ave, 1728 N Drake Ave",
+   "community_area": "Humboldt Park",
+   "ward": 26
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "It authorizes sale of six City-owned vacant lots for construction of owner-occupied housing, at least half sold at affordable prices, under the City Lots for Working Families program.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "The City would sell six vacant City-owned lots for $1 each to Inherentance, a not-for-profit, to build 13 owner-occupied dwelling units under City Lots for Working Families. At least 50% of the buildings must be sold at an Affordable Price.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029493": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "",
+    "id": "social-housing",
+    "via": "model"
+   }
+  ],
+  "content_hash": "732eb905b65d2724",
+  "entities": [
+   "Department of Planning and Development",
+   "ChiBlockBuilder"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "5752 South Elizabeth Street, 2938 West Jackson Boulevard, 4435 South Ellis Avenue",
+   "community_area": "West Englewood",
+   "ward": 16
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "It approves the sale of vacant City-owned lots to neighboring owners through ChiBlockBuilder, a disposition of public land that returns vacant parcels to private ownership.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "The ordinance would approve sale of three vacant City-owned lots, at 5752 S Elizabeth St, 2938 W Jackson Blvd and 4435 S Ellis Ave, to adjacent owners as landscaped side yards via the Department of Planning and Development's ChiBlockBuilder platform. Buyers must keep the lots five years.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029494": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [],
+  "content_hash": "2482338dac2966af",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "The deed restricts the City land at 11954-11958 S. State St. to a public safety training and community resource center with no dwelling units, although the ChiBlockBuilder label suggests a residential program.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029496": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "",
+    "id": "social-housing",
+    "via": "model"
+   }
+  ],
+  "content_hash": "5ecf077565aedacf",
+  "entities": [
+   "Department of Planning and Development",
+   "ChiBlockBuilder"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": "3239 S Morgan St",
+   "community_area": "Bridgeport",
+   "ward": 11
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "It authorizes sale of City-owned vacant lots to adjacent owners under the ChiBlockBuilder side yard program, a disposition of public land.",
+  "source_quality": "scanned",
+  "status": "ok",
+  "summary": "The Committee on Housing and Real Estate would approve sale of City-owned lots at 13 addresses to various buyers under ChiBlockBuilder. Exhibit A lists adjacent neighbors buying side-yard lots at 10% of \"as is\" market value, through the Department of Planning and Development.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
  "ihda:ihda-board:2026-10-16#accounting-payments-reports": {
   "amount": null,
   "amount_kind": null,

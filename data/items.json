@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-11-08T20:39:57.834548-06:00",
+ "generated_at": "2026-11-09T15:26:35.571983-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-08T20:39:57.834548-06:00",
+   "last_success_at": "2026-11-09T15:26:35.571983-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-08T20:39:57.834548-06:00",
+   "last_success_at": "2026-11-09T15:26:35.571983-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-08T20:39:57.834548-06:00",
+   "last_success_at": "2026-11-09T15:26:35.571983-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-08T20:39:57.834548-06:00",
+   "last_success_at": "2026-11-09T15:26:35.571983-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-08T20:39:57.834548-06:00",
+   "last_success_at": "2026-11-09T15:26:35.571983-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-08T20:39:57.834548-06:00",
+   "last_success_at": "2026-11-09T15:26:35.571983-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-08T20:39:57.834548-06:00",
+   "last_success_at": "2026-11-09T15:26:35.571983-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-08T20:39:57.834548-06:00",
+   "last_success_at": "2026-11-09T15:26:35.571983-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-08T20:39:57.834548-06:00",
+   "last_success_at": "2026-11-09T15:26:35.571983-06:00",
    "status": "ok",
    "message": ""
   }
@@ -325,7 +325,7 @@
    "jurisdiction": "chicago",
    "start": "2026-11-10T13:30:00-06:00",
    "time_known": false,
-   "status": "scheduled",
+   "status": "cancelled",
    "location": null,
    "agenda_url": null,
    "video_url": null,
@@ -335,7 +335,7 @@
    "item_count_total": 0,
    "item_count_relevant": 0,
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+   "last_changed_at": "2026-11-09T15:26:35.571983-06:00"
   },
   {
    "id": "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55",
@@ -387,15 +387,15 @@
    "time_known": true,
    "status": "scheduled",
    "location": "201A, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
-   "agenda_url": null,
+   "agenda_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/5ee4d7ae-6854-4e99-a37f-5c2e5c1c34cb.pdf",
    "video_url": null,
    "minutes_url": null,
    "detail_url": null,
    "needs_ai_extraction": false,
-   "item_count_total": 0,
-   "item_count_relevant": 0,
+   "item_count_total": 6,
+   "item_count_relevant": 5,
    "first_seen_at": "2026-10-20T15:35:49.893064-05:00",
-   "last_changed_at": "2026-10-20T15:35:49.893064-05:00"
+   "last_changed_at": "2026-11-09T15:26:35.571983-06:00"
   },
   {
    "id": "cpc:2026-11-19",
@@ -7519,6 +7519,425 @@
    "last_changed_at": "2026-11-06T20:48:37.894659-06:00"
   },
   {
+   "id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029491",
+   "meeting_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029491",
+   "title": "Sale of City-owned property at 1855, 1903,1916, 1925 and 1951 S Troy St, 1900, 1904, 1914, 1915, 1919, 1936, 2001, 2016, 2116 and 2118 S Albany Ave and 3059 W 19th St to Citizens Building a Better Community LLC under City Lots for Working Families (CL4WF)",
+   "attachments": [
+    {
+     "label": "O2026-0029491 EDS_Redacted",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/0bc39c76-93e8-498f-a518-06702478215d.pdf"
+    },
+    {
+     "label": "O2026-0029491 Ex A",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/ae68d17d-9f7b-4036-9236-a95ad5d31030.pdf"
+    },
+    {
+     "label": "O2026-0029491 Ex C",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/02fd829a-b62f-4fb2-80de-f93994796f6d.pdf"
+    },
+    {
+     "label": "O2026-0029491 Ex B",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e6130bca-fa7f-4b20-b3c5-785ba4387b06.pdf"
+    },
+    {
+     "label": "O2026-0029491 Ex D RDA with subex A thru E and sub-subex A and B to subex D",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/05b099b4-bb4a-4980-877c-771784d1fc46.pdf"
+    },
+    {
+     "label": "O2026-0029491 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/a48b67c3-9ca5-47b4-ae8c-359664c618d8.pdf"
+    },
+    {
+     "label": "O2026-0029491 Myr Ltr",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/32b971d0-bc33-47d5-9795-99e8ee0c3d44.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "It is a sale of City-owned lots with existing residential buildings to a developer under the City Lots for Working Families program.",
+    "summary": "Committee on Housing and Real Estate would approve sale of City-owned property at 15 addresses on S Troy St, S Albany Ave and W 19th St to Citizens Building a Better Community LLC under the City Lots for Working Families program. The attached lot list shows 23 buildings and 46 units.",
+    "categories": [
+     {
+      "id": "social-housing",
+      "via": "model",
+      "detail": ""
+     },
+     {
+      "id": "housing-agenda",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "1855, 1903, 1916, 1925 and 1951 S Troy St, 1900, 1904, 1914, 1915, 1919, 1936, 2001, 2016, 2116 and 2118 S Albany Ave and 3059 W 19th St",
+     "ward": 2,
+     "community_area": "Near North Side"
+    },
+    "entities": [
+     "Citizens Building a Better Community LLC"
+    ],
+    "figures": {
+     "units": 46,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "4c3a9be4c8dbfbb3",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-09T15:26:35.571983-06:00",
+   "last_changed_at": "2026-11-09T15:26:35.571983-06:00"
+  },
+  {
+   "id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029492",
+   "meeting_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029492",
+   "title": "Sale of City-owned property at 1020 N Kedzie Ave, 1138 N Christiana Ave, 1256 N Artesian Ave, 1353 N Maplewood Ave, 1702 N Monticello Ave and 1728 N Drake Ave to Inherentance under City Lots for Working Families (CL4WF)",
+   "attachments": [
+    {
+     "label": "O2026-0029492 Ex B",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/1066ab1a-b797-432b-a5a8-fb2329255c32.pdf"
+    },
+    {
+     "label": "O2026-0029492 Ex D RDA with subex A thru E and sub-subsex A and B to subex D",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/2fc73936-0763-4868-b863-5471c6d9ea86.pdf"
+    },
+    {
+     "label": "O2026-0029492 EDS_Redacted",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/b636de06-4bbd-435e-bd24-021c4e07cbb9.pdf"
+    },
+    {
+     "label": "O2026-0029492 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/8081c949-15f5-4131-bf85-290d56ee1965.pdf"
+    },
+    {
+     "label": "O2026-0029492 Myr Ltr",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/7dfe7622-b675-466d-9078-0772312a3e74.pdf"
+    },
+    {
+     "label": "O2026-0029492 Ex C",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/8c626d54-7c98-45f7-9163-9fcd8e3f8cfe.pdf"
+    },
+    {
+     "label": "O2026-0029492 Ex A",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/0cac35df-be9e-48ad-ab79-cb5681791590.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "It authorizes sale of six City-owned vacant lots for construction of owner-occupied housing, at least half sold at affordable prices, under the City Lots for Working Families program.",
+    "summary": "The City would sell six vacant City-owned lots for $1 each to Inherentance, a not-for-profit, to build 13 owner-occupied dwelling units under City Lots for Working Families. At least 50% of the buildings must be sold at an Affordable Price.",
+    "categories": [
+     {
+      "id": "social-housing",
+      "via": "model",
+      "detail": ""
+     },
+     {
+      "id": "housing-agenda",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "1020 N Kedzie Ave, 1138 N Christiana Ave, 1256 N Artesian Ave, 1353 N Maplewood Ave, 1702 N Monticello Ave, 1728 N Drake Ave",
+     "ward": 26,
+     "community_area": "Humboldt Park"
+    },
+    "entities": [
+     "Inherentance"
+    ],
+    "figures": {
+     "units": 13,
+     "affordable_units": null
+    },
+    "amount": 6,
+    "amount_kind": "total sale price",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "b09f11d9e677a1f9",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-09T15:26:35.571983-06:00",
+   "last_changed_at": "2026-11-09T15:26:35.571983-06:00"
+  },
+  {
+   "id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029494",
+   "meeting_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029494",
+   "title": "Sale of City-owned property at 11954 - 11958 S State St to Rescue 8 Education & Training Division, Inc. under ChiBlockBuilder",
+   "attachments": [
+    {
+     "label": "O2026-0029494 Ex C with subex A",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/c2b77135-929f-4636-963c-ad7e9d15468d.pdf"
+    },
+    {
+     "label": "O2026-0029494 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e551934c-754f-41f8-ad6a-899989684b72.pdf"
+    },
+    {
+     "label": "O2026-0029494 Ex B",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/283040cd-7cf7-4622-9afa-ef8b1efa492d.pdf"
+    },
+    {
+     "label": "O2026-0029494 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/a6bd72d6-c3a5-43e8-8ad4-2da6be954743.pdf"
+    },
+    {
+     "label": "O2026-0029494 Myr Ltr",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/0c94091b-9df6-4c7d-a1c8-6ac04c4d9e23.pdf"
+    },
+    {
+     "label": "O2026-0029494 Ex A",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/c34e6a92-36ae-467b-b5d4-585353487ce1.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "screened_out",
+    "housing_relevant": false,
+    "relevance_reason": "The deed restricts the City land at 11954-11958 S. State St. to a public safety training and community resource center with no dwelling units, although the ChiBlockBuilder label suggests a residential program.",
+    "summary": "",
+    "categories": [],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-haiku-5-5",
+    "content_hash": "2482338dac2966af",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-09T15:26:35.571983-06:00",
+   "last_changed_at": "2026-11-09T15:26:35.571983-06:00"
+  },
+  {
+   "id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029488",
+   "meeting_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029488",
+   "title": "Sale of City-owned property at 3756 S Lake Park Ave to Square Construction, Inc. under ChiBlockBuilder",
+   "attachments": [
+    {
+     "label": "O2026-0029488 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/276b88b1-3f3a-42a3-bae7-856aea371f9a.pdf"
+    },
+    {
+     "label": "O2026-0029488 Myr Ltr",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/3901cfb0-b8b3-484d-b670-a62ebfccd1a4.pdf"
+    },
+    {
+     "label": "O2026-0029488 Ex A",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/caa886b9-a7df-4dc4-a7c0-888edf336c1e.pdf"
+    },
+    {
+     "label": "O2026-0029488 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/031102a8-0814-44cd-80de-f7b5e20d2b8f.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The ordinance sells a city-owned lot for construction of nine residential units under the ChiBlockBuilder program.",
+    "summary": "Ordinance would sell a City-owned 11,260 sq. ft. lot at 3756 S. Lake Park Ave. to Square Construction, Inc. for $240,000 to build three 3-unit residential buildings with garages. The project would not include ARO units.",
+    "categories": [
+     {
+      "id": "housing-agenda",
+      "via": "keyword",
+      "detail": "ARO"
+     },
+     {
+      "id": "social-housing",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "3756 S Lake Park Ave",
+     "ward": 4,
+     "community_area": "Oakland"
+    },
+    "entities": [
+     "Square Construction, Inc."
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 240000,
+    "amount_kind": "sale price",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "9467c967bd6b0a57",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-09T15:26:35.571983-06:00",
+   "last_changed_at": "2026-11-09T15:26:35.571983-06:00"
+  },
+  {
+   "id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029496",
+   "meeting_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029496",
+   "title": "Sale of City-owned property at 3239 S Morgan St, 514 N Avers Ave, 435 N Lawndale Ave, 2833 W Monroe St, 4237 S Champlain Ave, 5337 S Laflin St, 4917 S Forrestville Ave, 5631 S Lafayette Ave, 5725 S Bishop St, 5716 S Peoria St, 7715 S Eggleston Ave, 112 W 104th St and 9023 S Burley Ave to various buyers under ChiBlockBuilder Ave",
+   "attachments": [
+    {
+     "label": "O2026-0029496 Ex A",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e32e2f12-4db2-4ac7-b97a-a110c1e07d0b.pdf"
+    },
+    {
+     "label": "O2026-0029496 EDS_Redacted",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f504b5b4-4e9f-478f-8d0f-2524de118cf4.pdf"
+    },
+    {
+     "label": "O2026-0029496 Myr Ltr",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/bd678430-76a1-4a92-bdd0-700a3baabd68.pdf"
+    },
+    {
+     "label": "O2026-0029496 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f3ade84c-e3de-4565-a29f-03b3a33c7303.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "It authorizes sale of City-owned vacant lots to adjacent owners under the ChiBlockBuilder side yard program, a disposition of public land.",
+    "summary": "The Committee on Housing and Real Estate would approve sale of City-owned lots at 13 addresses to various buyers under ChiBlockBuilder. Exhibit A lists adjacent neighbors buying side-yard lots at 10% of \"as is\" market value, through the Department of Planning and Development.",
+    "categories": [
+     {
+      "id": "social-housing",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "3239 S Morgan St",
+     "ward": 11,
+     "community_area": "Bridgeport"
+    },
+    "entities": [
+     "Department of Planning and Development",
+     "ChiBlockBuilder"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "5ecf077565aedacf",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-09T15:26:35.571983-06:00",
+   "last_changed_at": "2026-11-09T15:26:35.571983-06:00"
+  },
+  {
+   "id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029493",
+   "meeting_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029493",
+   "title": "Sale of City-owned property at 5752 S Elizabeth St, 2938 W Jackson Blvd and 4435 S Ellis Ave to various buyers under ChiBlockBuilder",
+   "attachments": [
+    {
+     "label": "O2026-0029493 Ex A",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/8fed3a7f-f375-4936-9c3c-b5d8be6edb15.pdf"
+    },
+    {
+     "label": "O2026-0029493 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/70457f37-70a2-4cbc-aa81-3547efee8bda.pdf"
+    },
+    {
+     "label": "O2026-0029493 EDS_Redacted",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/b56ba1d7-7ed6-4dfb-b584-975aaa8a1797.pdf"
+    },
+    {
+     "label": "O2026-0029493 Myr Ltr",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e1bc5a1c-bc9e-4266-ad3d-e86ab55b3c7c.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "It approves the sale of vacant City-owned lots to neighboring owners through ChiBlockBuilder, a disposition of public land that returns vacant parcels to private ownership.",
+    "summary": "The ordinance would approve sale of three vacant City-owned lots, at 5752 S Elizabeth St, 2938 W Jackson Blvd and 4435 S Ellis Ave, to adjacent owners as landscaped side yards via the Department of Planning and Development's ChiBlockBuilder platform. Buyers must keep the lots five years.",
+    "categories": [
+     {
+      "id": "social-housing",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "5752 South Elizabeth Street, 2938 West Jackson Boulevard, 4435 South Ellis Avenue",
+     "ward": 16,
+     "community_area": "West Englewood"
+    },
+    "entities": [
+     "Department of Planning and Development",
+     "ChiBlockBuilder"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "732eb905b65d2724",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-09T15:26:35.571983-06:00",
+   "last_changed_at": "2026-11-09T15:26:35.571983-06:00"
+  },
+  {
    "id": "cpc:2026-11-19#370-e-garfield-blvd",
    "meeting_id": "cpc:2026-11-19",
    "source_ref": "370 E. Garfield Blvd.",
@@ -8925,6 +9344,46 @@
    "type": "meeting_new",
    "ref_id": "clihtf:319089",
    "at": "2026-11-06T20:48:37.894659-06:00"
+  },
+  {
+   "type": "agenda_posted",
+   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5",
+   "at": "2026-11-09T15:26:35.571983-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029491",
+   "at": "2026-11-09T15:26:35.571983-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029492",
+   "at": "2026-11-09T15:26:35.571983-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029494",
+   "at": "2026-11-09T15:26:35.571983-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029488",
+   "at": "2026-11-09T15:26:35.571983-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029496",
+   "at": "2026-11-09T15:26:35.571983-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029493",
+   "at": "2026-11-09T15:26:35.571983-06:00"
+  },
+  {
+   "type": "meeting_cancelled",
+   "ref_id": "cdc:2026-11-10",
+   "at": "2026-11-09T15:26:35.571983-06:00"
   }
  ]
 }
