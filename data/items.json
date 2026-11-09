@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-11-08T15:11:30.593493-06:00",
+ "generated_at": "2026-11-08T20:39:57.834548-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-08T15:11:30.593493-06:00",
+   "last_success_at": "2026-11-08T20:39:57.834548-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-08T15:11:30.593493-06:00",
+   "last_success_at": "2026-11-08T20:39:57.834548-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-08T15:11:30.593493-06:00",
+   "last_success_at": "2026-11-08T20:39:57.834548-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-08T15:11:30.593493-06:00",
+   "last_success_at": "2026-11-08T20:39:57.834548-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-08T15:11:30.593493-06:00",
+   "last_success_at": "2026-11-08T20:39:57.834548-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-08T15:11:30.593493-06:00",
+   "last_success_at": "2026-11-08T20:39:57.834548-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-08T15:11:30.593493-06:00",
+   "last_success_at": "2026-11-08T20:39:57.834548-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-08T15:11:30.593493-06:00",
+   "last_success_at": "2026-11-08T20:39:57.834548-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-08T15:11:30.593493-06:00",
+   "last_success_at": "2026-11-08T20:39:57.834548-06:00",
    "status": "ok",
    "message": ""
   }
