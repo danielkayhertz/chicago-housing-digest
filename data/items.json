@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-11-09T22:38:27.094262-06:00",
+ "generated_at": "2026-11-10T12:40:34.213714-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-09T22:38:27.094262-06:00",
+   "last_success_at": "2026-11-10T12:40:34.213714-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-09T22:38:27.094262-06:00",
+   "last_success_at": "2026-11-10T12:40:34.213714-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-09T22:38:27.094262-06:00",
+   "last_success_at": "2026-11-10T12:40:34.213714-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-09T22:38:27.094262-06:00",
+   "last_success_at": "2026-11-10T12:40:34.213714-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-09T22:38:27.094262-06:00",
+   "last_success_at": "2026-11-10T12:40:34.213714-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-09T22:38:27.094262-06:00",
+   "last_success_at": "2026-11-10T12:40:34.213714-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-09T22:38:27.094262-06:00",
+   "last_success_at": "2026-11-10T12:40:34.213714-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-09T22:38:27.094262-06:00",
+   "last_success_at": "2026-11-10T12:40:34.213714-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-09T22:38:27.094262-06:00",
+   "last_success_at": "2026-11-10T12:40:34.213714-06:00",
    "status": "ok",
    "message": ""
   }
@@ -305,7 +305,7 @@
    "jurisdiction": "chicago",
    "start": "2026-11-10T08:30:00-06:00",
    "time_known": true,
-   "status": "scheduled",
+   "status": "held",
    "location": null,
    "agenda_url": "https://clihtf.org/event/board-meeting-11-8/",
    "video_url": null,
@@ -315,7 +315,7 @@
    "item_count_total": 6,
    "item_count_relevant": 5,
    "first_seen_at": "2026-11-06T20:48:37.894659-06:00",
-   "last_changed_at": "2026-11-06T20:48:37.894659-06:00"
+   "last_changed_at": "2026-11-10T12:40:34.213714-06:00"
   },
   {
    "id": "cdc:2026-11-10",
