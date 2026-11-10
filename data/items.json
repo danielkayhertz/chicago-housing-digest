@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-11-09T15:26:35.571983-06:00",
+ "generated_at": "2026-11-09T22:38:27.094262-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-09T15:26:35.571983-06:00",
+   "last_success_at": "2026-11-09T22:38:27.094262-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-09T15:26:35.571983-06:00",
+   "last_success_at": "2026-11-09T22:38:27.094262-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-09T15:26:35.571983-06:00",
+   "last_success_at": "2026-11-09T22:38:27.094262-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-09T15:26:35.571983-06:00",
+   "last_success_at": "2026-11-09T22:38:27.094262-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-09T15:26:35.571983-06:00",
+   "last_success_at": "2026-11-09T22:38:27.094262-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-09T15:26:35.571983-06:00",
+   "last_success_at": "2026-11-09T22:38:27.094262-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-09T15:26:35.571983-06:00",
+   "last_success_at": "2026-11-09T22:38:27.094262-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-09T15:26:35.571983-06:00",
+   "last_success_at": "2026-11-09T22:38:27.094262-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-09T15:26:35.571983-06:00",
+   "last_success_at": "2026-11-09T22:38:27.094262-06:00",
    "status": "ok",
    "message": ""
   }
@@ -7793,7 +7793,7 @@
      "Square Construction, Inc."
     ],
     "figures": {
-     "units": null,
+     "units": 9,
      "affordable_units": null
     },
     "amount": 240000,
