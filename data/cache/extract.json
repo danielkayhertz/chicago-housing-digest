@@ -114,6 +114,55 @@
    }
   ]
  },
+ "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55": {
+  "hash": "bef6f43b85bb24c6",
+  "items": [
+   {
+    "number": "1",
+    "title": "An ordinance concerning the issuance of City\u2019s Second Lien Wastewater Transmission Revenue Bonds, Project and Refunding Series 2027."
+   },
+   {
+    "number": "2",
+    "title": "An ordinance approving Amendment No. 3 to the 119th and Halsted Tax Increment Financing Redevelopment Plan and Project Area."
+   },
+   {
+    "number": "3",
+    "title": "An ordinance approving Amendment No. 2 to the 119th/I-57 Tax Increment Financing Redevelopment Plan and Project Area."
+   },
+   {
+    "number": "4",
+    "title": "An ordinance approving Amendment No. 6 to the 47th/Ashland Redevelopment Project Area Redevelopment Plan and Project Area."
+   },
+   {
+    "number": "5",
+    "title": "An ordinance approving Amendment No. 3 to the 47th/Halsted Tax Increment Financing Redevelopment Plan and Project Area."
+   },
+   {
+    "number": "6",
+    "title": "An ordinance approving Amendment No. 1 to the 47th/King Drive Redevelopment Project Area Tax Increment Finance Program Redevelopment Plan and Project Area."
+   },
+   {
+    "number": "7",
+    "title": "An ordinance approving Amendment No. 1 to the 87th/Cottage Grove Redevelopment Project Area Tax Increment Financing District Eligibility Study, Redevelopment Plan and Project Area."
+   },
+   {
+    "number": "8",
+    "title": "One (1) proposed order authorizing Charitable Solicitation on the Public Way (Tag Day) permit:"
+   },
+   {
+    "number": "9",
+    "title": "One (1) proposed order amending the Charitable Solicitation on Public Way (Tag Day) permit for Plan International USA to change the end date of the permit to October 19, 2026."
+   },
+   {
+    "number": "10",
+    "title": "One (1) proposed order authorizing the payment of various small claims against the City of Chicago."
+   },
+   {
+    "number": "11",
+    "title": "One (1) proposed order denying the payment of various small claims against the City of Chicago."
+   }
+  ]
+ },
  "ihda:ihda-board:2026-10-16": {
   "hash": "d05b0c8bc2676a81",
   "items": [

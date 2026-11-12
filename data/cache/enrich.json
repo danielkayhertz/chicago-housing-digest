@@ -832,7 +832,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "c72c9497da5dd7c4",
+  "content_hash": "bda4566bc01380b6",
   "entities": [
    "Chicago Board of Education"
   ],
@@ -849,10 +849,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The amendment adds a minor utilities use to an institutional planned development to allow ground-mounted solar panels, with no housing involved.",
+  "relevance_reason": "The amendment adds a minor utilities use to a school-site planned development for ground-mounted solar panels and does not involve housing.",
   "source_quality": "partial",
   "status": "ok",
-  "summary": "The Chicago Board of Education seeks to amend Institutional Planned Development 542 at 3857 W. 111th St. to allow Utilities and Services, Minor in all subareas, for ground-mounted solar panels in Subarea B. Maximum FAR stays at 0.062.",
+  "summary": "The Chicago Board of Education proposes amending Institutional Planned Development 542 at 3857 W. 111th St. to allow Utilities and Services, Minor in all subareas, so ground-mounted solar panels can be installed in Subarea B. Maximum FAR stays at 0.062.",
   "zoning_from": [
    "Institutional Planned Development 542"
   ],
@@ -972,7 +972,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "073bdd19e5e8f03e",
+  "content_hash": "7796d9466c623266",
   "entities": [
    "Department of Planning and Development"
   ],
@@ -989,10 +989,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A planning framework recommending mixed-use development at downtown density for an 11-acre area could shape future residential development and land use there.",
-  "source_quality": "none",
+  "relevance_reason": "A planning framework update recommending mixed-use development at downtown density for an 11-acre area could guide future residential development and land use.",
+  "source_quality": "partial",
   "status": "ok",
-  "summary": "The Department of Planning and Development seeks Plan Commission adoption of the North Branch Framework Update for the area south of Grand Avenue, about 11 acres. It recommends mixed-use development at downtown density, multi-modal transportation including a transitway, and public open spaces.",
+  "summary": "The Department of Planning and Development seeks Plan Commission adoption of the North Branch Framework Update for the area south of Grand Avenue, about 11 acres. It recommends mixed-use development at downtown density, a transitway, and public open spaces.",
   "zoning_from": [],
   "zoning_to": null
  },
@@ -3408,6 +3408,316 @@
   "zoning_from": [],
   "zoning_to": null
  },
+ "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#an-ordinance-approving-amendment-no-1-to-the-47th-king-drive-redevelopme-a7eed5b": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "TIF",
+    "id": "housing-agenda",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "1ba687a9a5d866ad",
+  "entities": [
+   "Department of Planning and Development"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "A TIF plan amendment for a redevelopment area can change how city tax increment funds are used for development, including housing, though the material does not specify housing uses.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "The Finance Committee would consider an ordinance approving Amendment No. 1 to the 47th/King Drive Redevelopment Project Area TIF Redevelopment Plan and Project Area, covering the 3rd, 4th and 20th Wards. The Department of Planning and Development is the sponsoring department.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#an-ordinance-approving-amendment-no-1-to-the-87th-cottage-grove-redevelo-a1d46f6": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "TIF",
+    "id": "housing-agenda",
+    "via": "keyword"
+   }
+  ],
+  "content_hash": "edceec725b9cf715",
+  "entities": [
+   "Department of Planning and Development"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item amends a TIF district plan, and the material gives no residential, affordable housing, or housing-finance content.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "Ordinance approving Amendment No. 1 to the 87th/Cottage Grove Redevelopment Project Area TIF District Eligibility Study, Redevelopment Plan and Project Area, affecting the 5th, 6th and 8th Wards. Introduced directly by the Department of Planning and Development.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#an-ordinance-approving-amendment-no-2-to-the-119th-i-57-tax-increment-fi-f7de2d9": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [],
+  "content_hash": "fc0891a5194fbe2a",
+  "entities": [
+   "Department of Planning and Development"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item amends a TIF redevelopment plan and the retrieved text gives no housing-specific content such as units, affordability, or residential funding.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "Ordinance approving Amendment No. 2 to the 119th/I-57 Tax Increment Financing Redevelopment Plan and Project Area, covering the 19th and 21st Wards. Introduced directly by the Department of Planning and Development.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#an-ordinance-approving-amendment-no-3-to-the-119th-and-halsted-tax-incre-30cfdd9": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [],
+  "content_hash": "bdce939a47ed5183",
+  "entities": [
+   "Department of Planning and Development"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item amends a TIF redevelopment plan and project area, and the available text does not describe any housing component.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "Ordinance approving Amendment No. 3 to the 119th and Halsted Tax Increment Financing Redevelopment Plan and Project Area, introduced by the Department of Planning and Development for the 9th and 21st Wards.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#an-ordinance-approving-amendment-no-3-to-the-47th-halsted-tax-increment-5b571d5": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [],
+  "content_hash": "10c19c460bfa7b57",
+  "entities": [
+   "Department of Planning and Development"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item amends a TIF redevelopment plan and project area, and the material says nothing about housing, homes, or residential uses.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "An ordinance approving Amendment No. 3 to the 47th/Halsted Tax Increment Financing Redevelopment Plan and Project Area, covering the 3rd, 11th, 15th, 16th and 20th Wards. It is on the Finance Committee agenda as a Department of Planning and Development item.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#an-ordinance-approving-amendment-no-6-to-the-47th-ashland-redevelopment-ae65f40": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [],
+  "content_hash": "aa46912e585c0184",
+  "entities": [
+   "Department of Planning and Development"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item amends a TIF redevelopment plan and project area, and the material gives no housing-specific component such as units, affordable housing funding, or residential development.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "Ordinance approving Amendment No. 6 to the 47th/Ashland Redevelopment Project Area Redevelopment Plan and Project Area, directly introduced in the Committee on Finance. It covers the 11th, 12th, 15th, 16th and 20th Wards.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#an-ordinance-concerning-the-issuance-of-city-s-second-lien-wastewater-tr-68f5a48": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [],
+  "content_hash": "a9d8aead3c66d830",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "The item authorizes wastewater transmission revenue bonds, which finance sewer infrastructure rather than homes, residential units, or the rights of residents.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#one-1-proposed-order-amending-the-charitable-solicitation-on-public-way-e3b264b": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [],
+  "content_hash": "b03c8446c74e62f6",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "This item amends a charitable solicitation (tag day) permit for Plan International USA to change its end date, which has no bearing on building, financing, regulating, or taxing homes or tenants' rights.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#one-1-proposed-order-authorizing-charitable-solicitation-on-the-public-w-a5a8961": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [],
+  "content_hash": "f57c0c551df505fb",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "A Tag Day charitable solicitation permit for public-way fundraising by International Rescue Committee does not bear on building, financing, regulating, or taxing homes or tenant rights.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#one-1-proposed-order-authorizing-the-payment-of-various-small-claims-aga-7140ea7": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [],
+  "content_hash": "49d0aac08ab89a7c",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "Authorizing payment of various small claims against the City is a routine litigation settlement matter that does not concern building, financing, regulating, or the rights of residents in homes.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#one-1-proposed-order-denying-the-payment-of-various-small-claims-against-190cfde": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [],
+  "content_hash": "fcaf28ab7b61157e",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-haiku-5-5",
+  "overridden": false,
+  "relevance_reason": "Item 11 concerns denying payment of various small claims against the City, which does not bear on building, financing, regulating, or taxing homes or tenants' rights.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
+ },
  "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029488": {
   "amount": 240000,
   "amount_kind": "sale price",
@@ -4495,6 +4805,75 @@
   "zoning_from": [],
   "zoning_to": null
  },
+ "ihda:notice:10d930a22254": {
+  "amount": 750000000,
+  "amount_kind": "mortgage revenue bonds",
+  "categories": [
+   {
+    "detail": "IHDA",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "72207fc10188471b",
+  "entities": [
+   "Illinois Housing Development Authority"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The hearing concerns IHDA mortgage revenue bonds that finance home mortgage loans and down payment assistance for residences across Illinois.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "IHDA will hold a TEFRA public hearing on issuing up to $750,000,000 in mortgage revenue bonds over three years. Proceeds would fund qualifying mortgage loans, down payment and closing cost assistance, and refunding of prior bonds.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "ihda:notice:3972001d2d48": {
+  "amount": 20700000,
+  "amount_kind": "tax-exempt bonds",
+  "categories": [
+   {
+    "detail": "IHDA",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "dab0e1a74df85a07",
+  "entities": [
+   "Illinois Housing Development Authority",
+   "Rock Island Affordable Housing, LP"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 208
+  },
+  "geography": {
+   "address": "111 20th Street, 1020, 1024, 1028, 1032, 1036 3rd Ave; and 308, 310, 312, 314, 320 11th Street, Rock Island, IL 61201",
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "This is a TEFRA hearing on tax-exempt bonds to finance acquisition and rehabilitation of a 208-unit multifamily housing development.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "IHDA will hold a public hearing on issuing up to $20,700,000 in tax-exempt bonds for a new mortgage loan to Rock Island Affordable Housing, LP. Proceeds would finance acquisition, construction or rehabilitation of Spencer Towers and the 3rd and 11th Townhomes, 208 units in Rock Island.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
  "ihda:notice:49129a3b50c6": {
   "amount": null,
   "amount_kind": null,
@@ -4655,6 +5034,41 @@
   "zoning_from": [],
   "zoning_to": null
  },
+ "ihda:notice:ad71fe349c5c": {
+  "amount": 24311000,
+  "amount_kind": "tax-exempt bonds",
+  "categories": [
+   {
+    "detail": "IHDA",
+    "id": "state-agenda",
+    "via": "body"
+   }
+  ],
+  "content_hash": "532431e8ba1da040",
+  "entities": [
+   "Illinois Housing Development Authority",
+   "TTG Maple Ridge Limited Partnership"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": 162
+  },
+  "geography": {
+   "address": "3700 5th Street, Rock Island, IL 61201",
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "This is a TEFRA hearing on IHDA tax-exempt bonds to finance acquisition, construction or rehabilitation of a 162-unit multifamily development.",
+  "source_quality": "full",
+  "status": "ok",
+  "summary": "IHDA will hold a public hearing on issuing up to $24,311,000 in tax-exempt bonds for a mortgage loan to TTG Maple Ridge Limited Partnership. The loan would finance Maple Ridge Apartments, a 162-unit development at 3700 5th Street, Rock Island.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
  "ihda:notice:c8cf4b4ee245": {
   "amount": 51500000,
   "amount_kind": "tax-exempt bonds cap",
@@ -4753,6 +5167,866 @@
   "source_quality": "full",
   "status": "ok",
   "summary": "IHDA released its draft 2027-2028 Low-Income Housing Tax Credit Qualified Allocation Plan for public comment. A hybrid public hearing is set for June 8, 2026, and written comments are due by 5:00 P.M. on June 15, 2026.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1117#26-123": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Board of Commissioners",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "2ed6e3164e7d5113",
+  "entities": [
+   "AT&T Enterprises, LLC"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "This is a CHA administrative contract for network and telephone services, which does not concern building, financing, preserving, or regulating homes or tenant rights.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "The CHA Board of Commissioners would authorize awarding a contract for network and telephone services to AT&T Enterprises, LLC.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1117#26-124": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Board of Commissioners",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "38596aba4b2e5848",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item authorizes a contract for infrastructure upgrades at the ABLA Brooks Homes public housing site, which supports CHA redevelopment of that property.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "The CHA Board of Commissioners would authorize a contract for civil infrastructure upgrades at the ABLA Brooks Homes site.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1117#26-125": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Board of Commissioners",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "f62bfa9a547f53e8",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item concerns the CHA's Housing Choice Voucher Administrative Plan, which governs how rental assistance vouchers are administered.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "The CHA Board of Commissioners would approve an amended Housing Choice Voucher Administrative Plan. The retrieved text is unreadable, so only the title is available.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1117#26-126": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Board of Commissioners",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "947d526a59462e77",
+  "entities": [
+   "The Regenerator"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item authorizes CHA to enter into AHAP and HAP contracts, which are project-based housing assistance agreements for a specific development.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "CHA Board of Commissioners would authorize an agreement to enter into an Agreement to enter into a Housing Assistance Payments (AHAP) Contract and a Housing Assistance Payment (HAP) Contract for The Regenerator.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1117#26-127": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Board of Commissioners",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "9196e1e6381fe5cb",
+  "entities": [
+   "UCHP Senior Lofts"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item authorizes CHA to enter into AHAP and HAP contracts, which are project-based rental assistance agreements for a senior housing development, UCHP Senior Lofts.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "The CHA Board is asked to authorize an agreement to enter into an Agreement to enter into a Housing Assistance Payments (AHAP) Contract and a Housing Assistance Payments (HAP) Contract for UCHP Senior Lofts.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1117#26-128": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Board of Commissioners",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "afc92a39d4d0e78b",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The contract would audit, cure and standardize CHA tenant files, which bears on how CHA administers housing for the residents it serves.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "CHA Board of Commissioners would authorize a professional services contract for a tenant files audit, curing, and standardization. The retrieved document text is unreadable, so no vendor or contract amount is available.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1117#26-129": {
+  "amount": 12000000,
+  "amount_kind": "intergovernmental agreement funding",
+  "categories": [
+   {
+    "detail": "CHA Board of Commissioners",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "1f59f38feb55d420",
+  "entities": [
+   "City of Chicago",
+   "ABLA Brooks Homes"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item authorizes CHA funding of $12,000,000 through an agreement with the City for civil infrastructure at ABLA Brooks Homes, a public housing redevelopment site.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "CHA Board would authorize an Intergovernmental Agreement with the City of Chicago for $12,000,000 to support the ABLA Brooks Homes civil infrastructure project.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1117#26-131": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Board of Commissioners",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "7bc07152c43609fa",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item is a CHA professional services contract for accessibility consulting, and the retrievable text gives no detail on housing production, preservation, or tenant rights.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "CHA Board of Commissioners would authorize a professional service agreement for accessibility consulting services.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1117#26-132": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Board of Commissioners",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "9df7ce477214ad4a",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item authorizes security services contracts at CHA properties, which is an operational matter and does not involve building, financing, regulating or protecting homes.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "The CHA Board of Commissioners would authorize Professional Security Services Agreements to provide security services at various CHA properties.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1117#26-134": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Board of Commissioners",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "5b8006ca71cc8e5a",
+  "entities": [
+   "Chicago Department of Family and Support Services"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The title only describes an intergovernmental agreement between CHA and the Department of Family and Support Services, and the retrieved text is unreadable file data with no housing detail.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "The CHA Board of Commissioners would authorize execution of an Intergovernmental Agreement with the Chicago Department of Family and Support Services.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1117#26-136": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Board of Commissioners",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "c89e4fe54b36b063",
+  "entities": [
+   "Chicago Housing Authority",
+   "HUD"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The CHA's annual budget funds public housing operations, vouchers, and development, so approving it bears directly on public housing.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "The CHA Board is asked to authorize approval and submission to HUD of the Chicago Housing Authority's $1.5 billion budget for 2027.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1117#26-138": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Board of Commissioners",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "ec3e4728caf163ef",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item authorizes additional CHA funding for Oak & Larrabee Phase I, a CHA-supported housing development.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "The CHA Board of Commissioners would authorize an increase in CHA funds for Oak & Larrabee Phase I.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1117#26-141": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Board of Commissioners",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "59e4f54fd2f6bb6f",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "This is a routine CHA personnel actions item and does not concern building, financing, regulating, or tenancy of homes.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "CHA Board of Commissioners to approve personnel actions.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1117#26-144": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Board of Commissioners",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "9a755f5489c4f9b7",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item concerns internal records maintenance for CHA Board executive session minutes and verbatim records, not housing production, finance, regulation, or tenant rights.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "CHA Board of Commissioners is asked to approve general maintenance requirements for Executive Session Minutes and Verbatim Records.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1117#26-62": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Board of Commissioners",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "a1eb1ca2b9c8fd1a",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The CHA Admissions and Continued Occupancy Policy and residential lease govern who is admitted to and how residents keep occupying CHA public housing.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "The CHA Board of Commissioners would approve an Admissions and Continued Occupancy Policy and a Residential Lease Agreement, effective November 17, 2026.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1150#26-134": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Tenant Services Committee",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "5b8006ca71cc8e5a",
+  "entities": [
+   "Chicago Department of Family and Support Services"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": false,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The title only mentions an intergovernmental agreement with the Department of Family and Support Services, and the retrievable text is corrupted binary data, so no housing action can be identified.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "The CHA Tenant Services Committee would authorize execution of an Intergovernmental Agreement with the Chicago Department of Family and Support Services.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1151#26-124": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Real Estate Operations Development Committee",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "38596aba4b2e5848",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The contract funds civil infrastructure upgrades at the ABLA Brooks Homes public housing site, which bears on CHA redevelopment.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "The CHA Real Estate Operations Development Committee would authorize a contract for civil infrastructure upgrades at the ABLA Brooks Homes site.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1151#26-125": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Real Estate Operations Development Committee",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "f62bfa9a547f53e8",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item concerns the CHA's Housing Choice Voucher Administrative Plan, which governs how rental assistance vouchers are administered.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "The CHA Real Estate Operations Development Committee would authorize approval of the amended Housing Choice Voucher Administrative Plan.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1151#26-126": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Real Estate Operations Development Committee",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "947d526a59462e77",
+  "entities": [
+   "The Regenerator"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item authorizes CHA to enter AHAP and HAP contracts for a development called The Regenerator, which concerns subsidized rental housing.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "CHA's Real Estate Operations Development Committee would authorize an agreement to enter into an Agreement to enter into a Housing Assistance Payments (AHAP) Contract and a Housing Assistance Payment (HAP) Contract for The Regenerator.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1151#26-127": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Real Estate Operations Development Committee",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "9196e1e6381fe5cb",
+  "entities": [
+   "UCHP Senior Lofts"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item authorizes CHA to execute AHAP and HAP contracts for UCHP Senior Lofts, a project-based subsidy arrangement for a senior housing development.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "CHA's Real Estate Operations Development Committee would authorize an agreement to enter into an Agreement to enter into a Housing Assistance Payments (AHAP) Contract and a HAP Contract for UCHP Senior Lofts.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1151#26-128": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Real Estate Operations Development Committee",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "afc92a39d4d0e78b",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The contract would audit and standardize tenant files for the Chicago Housing Authority, which bears on administration of public housing and its residents' records.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "The CHA Real Estate Operations Development Committee is asked to authorize a professional services contract for tenant files audit, curing, and standardization. No vendor or contract amount is identified in the retrievable text.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1151#26-129": {
+  "amount": 12000000,
+  "amount_kind": "intergovernmental agreement funding",
+  "categories": [
+   {
+    "detail": "CHA Real Estate Operations Development Committee",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "1f59f38feb55d420",
+  "entities": [
+   "City of Chicago",
+   "ABLA Brooks Homes"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item funds civil infrastructure for the ABLA Brooks Homes public housing redevelopment through a $12 million agreement between CHA and the City.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "CHA committee would authorize an Intergovernmental Agreement with the City of Chicago for $12,000,000 to support the ABLA Brooks Homes civil infrastructure project.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1151#26-131": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Real Estate Operations Development Committee",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "7bc07152c43609fa",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The CHA committee is considering a professional services agreement for accessibility consulting, which bears on public housing operations and accessibility compliance.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "The CHA Real Estate Operations Development Committee is asked to authorize a professional service agreement for accessibility consulting services. No vendor or contract amount is identified in the retrievable text.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1151#26-132": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Real Estate Operations Development Committee",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "9df7ce477214ad4a",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item concerns security services contracts at CHA public housing properties, which bears on the operation of public housing.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "The CHA Real Estate Operations Development Committee would authorize Professional Security Services Agreements to provide security services at various CHA properties.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1151#26-138": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Real Estate Operations Development Committee",
+    "id": "cha",
+    "via": "body"
+   }
+  ],
+  "content_hash": "ec3e4728caf163ef",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item concerns an increase in CHA funding for Oak & Larrabee Phase I, a CHA-backed development.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "CHA Real Estate Operations Development Committee would authorize an increase of CHA funds for Oak & Larrabee Phase I. No further project details are legible in the retrieved document.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "legistar:thecha:1151#26-62": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CHA Real Estate Operations Development Committee",
+    "id": "cha",
+    "via": "body"
+   },
+   {
+    "detail": "",
+    "id": "healthy-homes",
+    "via": "model"
+   }
+  ],
+  "content_hash": "a1eb1ca2b9c8fd1a",
+  "entities": [],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The item approves the CHA's Admissions and Continued Occupancy Policy and the residential lease, which set rules for who is admitted to and may remain in public housing.",
+  "source_quality": "partial",
+  "status": "ok",
+  "summary": "The CHA Real Estate Operations Development Committee would authorize approval of the Chicago Housing Authority's Admissions and Continued Occupancy Policy and Residential Lease Agreement, effective November 17, 2026.",
   "zoning_from": [],
   "zoning_to": null
  },
