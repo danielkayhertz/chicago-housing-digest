@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-11-12T21:25:46.918799-06:00",
+ "generated_at": "2026-11-13T12:31:51.122734-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-12T21:25:46.918799-06:00",
+   "last_success_at": "2026-11-13T12:31:51.122734-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-12T21:25:46.918799-06:00",
+   "last_success_at": "2026-11-13T12:31:51.122734-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-12T21:25:46.918799-06:00",
+   "last_success_at": "2026-11-13T12:31:51.122734-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-12T21:25:46.918799-06:00",
+   "last_success_at": "2026-11-13T12:31:51.122734-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-12T21:25:46.918799-06:00",
+   "last_success_at": "2026-11-13T12:31:51.122734-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-12T21:25:46.918799-06:00",
+   "last_success_at": "2026-11-13T12:31:51.122734-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-12T21:25:46.918799-06:00",
+   "last_success_at": "2026-11-13T12:31:51.122734-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-12T21:25:46.918799-06:00",
+   "last_success_at": "2026-11-13T12:31:51.122734-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-12T21:25:46.918799-06:00",
+   "last_success_at": "2026-11-13T12:31:51.122734-06:00",
    "status": "ok",
    "message": ""
   }
@@ -427,15 +427,15 @@
    "time_known": true,
    "status": "scheduled",
    "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
-   "agenda_url": null,
+   "agenda_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/61b71d6c-fcac-4a80-900b-9616caadf4c1.pdf",
    "video_url": null,
    "minutes_url": null,
    "detail_url": null,
    "needs_ai_extraction": false,
-   "item_count_total": 0,
-   "item_count_relevant": 0,
+   "item_count_total": 41,
+   "item_count_relevant": 30,
    "first_seen_at": "2026-10-19T12:29:04.290827-05:00",
-   "last_changed_at": "2026-10-19T12:29:04.290827-05:00"
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
   },
   {
    "id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5",
@@ -518,6 +518,26 @@
    "last_changed_at": "2026-10-30T16:30:42.099549-05:00"
   },
   {
+   "id": "elms:F8691F79-75DF-F111-84EA-001DD80EFCF5",
+   "source_id": "elms-finance",
+   "body": "City Council Committee on Finance",
+   "body_id": "D99FC72B-B0D7-EC11-A7B4-001DD804F0C4",
+   "jurisdiction": "chicago",
+   "start": "2026-12-07T10:00:00-06:00",
+   "time_known": true,
+   "status": "scheduled",
+   "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
+   "agenda_url": null,
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": null,
+   "needs_ai_extraction": false,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
    "id": "clihtf:10000840",
    "source_id": "clihtf",
    "body": "CLIHTF Board of Directors",
@@ -556,6 +576,26 @@
    "item_count_relevant": 0,
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
    "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
+  },
+  {
+   "id": "elms:DE8DE804-76DF-F111-84EA-001DD80EFCF5",
+   "source_id": "elms-finance",
+   "body": "City Council Committee on Finance",
+   "body_id": "D99FC72B-B0D7-EC11-A7B4-001DD804F0C4",
+   "jurisdiction": "chicago",
+   "start": "2026-12-14T10:00:00-06:00",
+   "time_known": true,
+   "status": "scheduled",
+   "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
+   "agenda_url": null,
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": null,
+   "needs_ai_extraction": false,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
   },
   {
    "id": "cpc:2026-12-17",
@@ -9398,6 +9438,2470 @@
    "last_changed_at": "2026-11-12T12:56:29.415744-06:00"
   },
   {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0028305",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0028305",
+   "title": "Zoning Reclassification Map No. No. 8-E at 3500 S Giles Ave",
+   "attachments": [
+    {
+     "label": "3500 S Giles Ave. Zoning Change 091126",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/6cf6a680-54ea-455f-b743-541f4585cbdf.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A rezoning from a residential multi-unit district (RM5) and B1-3 to B2-2 mixed-use changes the zoning that governs whether homes can be built or kept on the site.",
+    "summary": "Ordinance introduced by Alderman Pat Dowell (3rd Ward) to rezone the area around 3500 South Giles Avenue from RM5 and B1-3 to B2-2, Neighborhood Mixed-Use District.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "3500 South Giles Avenue",
+     "ward": 3,
+     "community_area": "Douglas"
+    },
+    "entities": [
+     "Pat Dowell"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "RM5",
+     "B1-3"
+    ],
+    "zoning_to": "B2-2",
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "ee9f34ba1c223901",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027988",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0027988",
+   "title": "Zoning Reclassification Map No. 18-C at 1601-1817 E 71st St",
+   "attachments": [
+    {
+     "label": "7th Ward Rezoning Ordinance - 71st Street",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/94992d9f-66b9-42fd-aaa9-6a64245778a7.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A city-initiated-style rezoning of a commercial corridor to a Neighborhood Mixed-Use district, which allows residential uses and changes the rules governing housing development along 71st Street.",
+    "summary": "Ordinance sponsored by Alderman Gregory I. Mitchell (7th Ward) would rezone B3-2, B3-3 and C2-2 districts along 1601-1817 E. 71st Street on Map No. 18-C to B2-3, Neighborhood Mixed-Use District.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "1601-1817 E. 71st Street",
+     "ward": 7,
+     "community_area": "South Shore"
+    },
+    "entities": [
+     "Gregory I. Mitchell"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "B3-2",
+     "B3-3",
+     "C2-2"
+    ],
+    "zoning_to": "B2-3",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "d1de0178fc6ebefc",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0026028",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0026028",
+   "title": "Zoning Reclassification Map No. 18-D at 7621 S Cottage Grove Ave - App No. TBD",
+   "attachments": [
+    {
+     "label": "w8 - 7621 S. Cottage Grove Avenue",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/01fc74f9-f635-4581-8985-783e0c05febb.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A rezoning from a commercial district to a single-unit residential district changes the permitted residential use of a site.",
+    "summary": "Ordinance sponsored by Alderperson Michelle Harris (8th Ward) would rezone the area at 7621 S. Cottage Grove Avenue from C2-2 Motor Vehicle-Related Commercial District to RS-3 Residential Single-Unit (Detached House) District.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "7621 S. Cottage Grove Avenue",
+     "ward": 8,
+     "community_area": "Greater Grand Crossing"
+    },
+    "entities": [
+     "Michelle Harris"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "C2-2"
+    ],
+    "zoning_to": "RS-3",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "b26f110bf2ab3252",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027581",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0027581",
+   "title": "Zoning Reclassification Map No. 26-F at 10657-10659 S Wentworth Ave",
+   "attachments": [
+    {
+     "label": "10657-10659 S Wentworth Avenue",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/6451ac6e-d1e8-4d0c-8ebb-297bec368e51.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A rezoning from a commercial shopping district to a single-unit residential district changes the residential zoning at a site and bears on housing supply.",
+    "summary": "Ordinance sponsored by Ald. Anthony Beale (9th Ward) would rezone 10657-10659 S. Wentworth Avenue from B3-1 Community Shopping District to RS-2 Residential Single-Unit (Detached House) District.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "10657-10659 S. Wentworth Avenue",
+     "ward": 9,
+     "community_area": "Roseland"
+    },
+    "entities": [
+     "Anthony Beale"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "B3-1"
+    ],
+    "zoning_to": "RS-2",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "fb663f03c9f66a7c",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027580",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0027580",
+   "title": "Zoning Reclassification Map No. 28-E at 1-7 E 111th St",
+   "attachments": [
+    {
+     "label": "1 - 7 East 111th Street",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/548eb5d5-661f-4039-88cc-b278012294e3.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A downzoning from a business district to a single-unit residential district changes the type of housing permitted on the site.",
+    "summary": "Ordinance sponsored by Alderman Anthony Beale (9th Ward) would rezone the area at 1-7 East 111th Street on Map No. 28-E from B3-2 Community Shopping District to RS-2 Residential Single-Unit (Detached House) District.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "1-7 East 111th Street",
+     "ward": 9,
+     "community_area": "Roseland"
+    },
+    "entities": [
+     "Anthony Beale"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "B3-2"
+    ],
+    "zoning_to": "RS-2",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "7da8fccefd96b345",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027582",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0027582",
+   "title": "Zoning Reclassification Map No. 24-E at 520 E 103rd St",
+   "attachments": [
+    {
+     "label": "520 E 103rd Street",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e5419b3d-8b5d-4cb7-9c18-7cf9c9a5cf9b.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The ordinance rezones a commercial B3-2 parcel to RS-2 residential single-unit district, changing what can be built on the site.",
+    "summary": "Ordinance sponsored by Alderman Anthony Beale (9th Ward) would rezone the area at 520 East 103rd Street from B3-2 Community Shopping District to RS-2 Residential Single-Unit (Detached House) District on Map No. 24-E.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "520 East 103rd Street",
+     "ward": 9,
+     "community_area": "Roseland"
+    },
+    "entities": [
+     "Anthony Beale"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "B3-2"
+    ],
+    "zoning_to": "RS-2",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "8077cd573dbeac69",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029400",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029400",
+   "title": "Zoning Reclassification Map No. 16-D at - 6401-6557 S Woodlawn Ave, 6400-6554 S Kimbark Ave, 6401-6557 S Kimbark Ave, 6420-6556 S Kenwood Ave, 6409-6557 S Kenwood Ave, 6400-6538 S Dorchester Ave",
+   "attachments": [
+    {
+     "label": "6401-6557 S. Woodlawn - signed",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/9ce3b5d2-35c6-4f0c-a15f-f004e850935d.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A rezoning of multiple residential blocks in Woodlawn to RM-5 changes the allowed housing types and density, including in areas currently zoned for single-unit houses.",
+    "summary": "Ordinance sponsored by Alderwoman Jeanette B. Taylor (20th Ward) would rezone RS-2, RS-3, RT-4 and RM-5 areas on Map No. 16-D, along Woodlawn, Kimbark, Kenwood and Dorchester Avenues near East 64th Street, to RM-5 Residential Multi-Unit District.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "6401-6557 S Woodlawn Ave",
+     "ward": 20,
+     "community_area": "Woodlawn"
+    },
+    "entities": [
+     "Jeanette B. Taylor"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "RS-2",
+     "RS-3",
+     "RT-4",
+     "RM-5"
+    ],
+    "zoning_to": "RM-5",
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "53fbfa213649ab63",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027965",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0027965",
+   "title": "Zoning Reclassification Map No. 2-K at 4354 W Lexington St",
+   "attachments": [
+    {
+     "label": "Common Address 4354 W. Lexington",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/a1f79e41-cc8d-4987-ac29-0269bb4a410b.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A residential rezoning from single-unit detached to two-flat/townhouse/multi-unit district could change how many homes can be built on the site.",
+    "summary": "Ordinance sponsored by Alderwoman Monique L. Scott (24th Ward) would rezone the area at 4354 W. Lexington from RS-3 Residential Single-Unit (Detached House) to RT-4 Residential Two-Flat, Townhouse and Multi-Unit District.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "4354 W. Lexington",
+     "ward": 24,
+     "community_area": "West Garfield Park"
+    },
+    "entities": [
+     "Monique L. Scott"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "RS-3"
+    ],
+    "zoning_to": "RT-4",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "d014f9218aa04781",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027963",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0027963",
+   "title": "Zoning Reclassification Map No. 2-K at 4306 W Lexington St",
+   "attachments": [
+    {
+     "label": "Common Address 4306 W. Lexington",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/b551de6c-eb86-4e41-bf3c-beeba1d9b145.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A residential rezoning from single-unit to two-flat/townhouse/multi-unit district could allow more homes on the site.",
+    "summary": "Ordinance sponsored by Alderwoman Monique L. Scott (24th Ward) would rezone the area at 4306 W. Lexington from RS-3 Residential Single-Unit (Detached House) to RT-4 Residential Two-Flat, Townhouse and Multi-Unit District.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "4306 W. Lexington",
+     "ward": 24,
+     "community_area": "West Garfield Park"
+    },
+    "entities": [
+     "Monique L. Scott"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "RS-3"
+    ],
+    "zoning_to": "RT-4",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "a2088c6b7de44b8b",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0026237",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0026237",
+   "title": "Designation of segment of W Lawrence Ave right-of-way on Map Nos. 11-H, 11-G, 13-H, and 13-G as Transient Oriented Development (TOD) Street and amendment of Municipal Code Section 17-3-0602-F designating portion of W Lawrence Ave as Transient Oriented Development (TOD) Street",
+   "attachments": [
+    {
+     "label": "TOD Street -  Lawrence Avenue - Western to Clark",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/fe9417f7-fa2b-4178-be26-131fee433431.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "TOD street designation changes zoning rules (such as parking and density allowances) for residential and other development along W Lawrence Ave near transit.",
+    "summary": "Ordinance sponsored by Ald. Matthew J. Martin (47th Ward) would designate W Lawrence Ave from N Clark St to N Western Ave (1500–2400 W) as a Transit Oriented Development (TOD) Street and amend Municipal Code Section 17-3-0602-F accordingly.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "1500 – 2400 W. Lawrence Avenue",
+     "ward": 40,
+     "community_area": "Lincoln Square"
+    },
+    "entities": [
+     "Matthew J. Martin"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "18a63a8393c45011",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0025471",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0025471",
+   "title": "Zoning Reclassification Map No. 12-J at 4970 S Archer Ave",
+   "attachments": [
+    {
+     "label": "w14 - o25471",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/ed4123b3-fef1-4bc5-b731-1cf159714916.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A rezoning from a motor vehicle-related commercial district to a single-unit residential district changes what housing can be built on the site.",
+    "summary": "Ordinance introduced by Alderwoman Jeylu B. Gutierrez (14th Ward) to rezone the area at 4970 S. Archer Avenue from C2-1, Motor Vehicle-Related Commercial District, to RS-3, Residential Single-Unit (Detached House) District.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "4970 S. Archer Avenue",
+     "ward": 14,
+     "community_area": "Archer Heights"
+    },
+    "entities": [
+     "Jeylu B. Gutierrez"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "C2-1"
+    ],
+    "zoning_to": "RS-3",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "43aa29ec551acdf1",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029378",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029378",
+   "title": "Zoning Reclassification Map No. 7-I at 2525 N Milwaukee Ave - App No. 23189T1",
+   "attachments": [
+    {
+     "label": "O2026-0029378 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/a6c8171d-f2e7-4319-a9b7-940e02cdf28c.pdf"
+    },
+    {
+     "label": "O2026-0029378 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/3be6d22b-6157-4c5e-9da7-d9a799ef478b.pdf"
+    },
+    {
+     "label": "O2026-0029378 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/b6585ea5-d551-4a8e-9467-426e7380c3c1.pdf"
+    },
+    {
+     "label": "O2026-0029378 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/dd9b635e-64be-459a-bd20-a4d6b3941a2a.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The rezoning would allow a vacant former SRO hotel to be converted into 30 residential units and is subject to the ARO.",
+    "summary": "The Milshire Hotel LLC seeks a Type 1 rezoning of 2525 N Milwaukee Ave from C2-2 to B2-5 to rehabilitate a vacant four-story former SRO building into 30 residential units (9 dwelling, 21 efficiency) with ground-floor commercial space, and a bicycle parking reduction.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "keyword",
+      "detail": "rezoning"
+     },
+     {
+      "id": "housing-agenda",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "2525 N Milwaukee Ave",
+     "ward": 1,
+     "community_area": "Logan Square"
+    },
+    "entities": [
+     "The Milshire Hotel LLC"
+    ],
+    "figures": {
+     "units": 30,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "C2-2"
+    ],
+    "zoning_to": "B2-5",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "d43cd3de8e90f118",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029395",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029395",
+   "title": "Zoning Reclassification Map No. 5-G at 2230-2232 N Wayne Ave - App No. 23194T1",
+   "attachments": [
+    {
+     "label": "O2026-0029395 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f3027a19-539a-4e2e-8a0c-8f080bd8ea78.pdf"
+    },
+    {
+     "label": "O2026-0029395 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/362e615f-1f94-490d-99ac-0811c1951268.pdf"
+    },
+    {
+     "label": "O2026-0029395 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d900f506-9b6f-463f-8696-12d36d980923.pdf"
+    },
+    {
+     "label": "O2026-0029395 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/06182bef-cf65-4463-abe8-8e450e470918.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A residential rezoning that unifies the zoning of two single-family lots and allows an accessory dwelling unit in a new addition to an existing garage.",
+    "summary": "2232 Wayne LLC seeks to rezone 2230-32 N. Wayne Ave. from RS-3 and RT-4 to RT-4 to create uniform zoning. The plan removes the home at 2232, keeps the single-family home at 2230, and adds a one-story addition with an ADU to its garage.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "2230-32 North Wayne Avenue",
+     "ward": 2,
+     "community_area": "Lincoln Park"
+    },
+    "entities": [
+     "2232 Wayne LLC"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "RS-3",
+     "RT-4"
+    ],
+    "zoning_to": "RT-4",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "2a2567af1dbad3ef",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029398",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029398",
+   "title": "Zoning Reclassification Map No. 3-F at 864-868 N Orleans St - App No. 23195T1",
+   "attachments": [
+    {
+     "label": "O2026-0029398 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/fbc32b48-4ccb-4d39-befe-857f19fe92f1.pdf"
+    },
+    {
+     "label": "O2026-0029398 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/5bf9c1c4-e538-4221-a483-39873b57b826.pdf"
+    },
+    {
+     "label": "O2026-0029398 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/ea814b77-9233-4873-9a99-4f6a9cf8352d.pdf"
+    },
+    {
+     "label": "O2026-0029398 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/48badbd3-5aea-4f22-aeb5-2c5e57ca0f14.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "screened_out",
+    "housing_relevant": false,
+    "relevance_reason": "The rezoning to DX-5 covers a site for a five-story building with two retail units and 14 hotel rooms, and the narrative states 'No residential units proposed,' so it adds no dwelling units or residential use, though the site plan's '14 unit' label is ambiguous.",
+    "summary": "",
+    "categories": [],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-haiku-5-5",
+    "content_hash": "e3d10e0e32da6717",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029379",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029379",
+   "title": "Zoning Reclassification Map No. 12-E at 4901-4959 S Indiana Ave, 201-233 E 49th St and 4900-4928 S Prairie Ave - App No. 23190",
+   "attachments": [
+    {
+     "label": "O2026-0029379 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d65c73dc-c54d-4a1a-b53d-6cc4e536fea0.pdf"
+    },
+    {
+     "label": "O2026-0029379 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/82d9ccf7-6179-4ebf-85df-09f3ccc1d38e.pdf"
+    },
+    {
+     "label": "O2026-0029379 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/027b72dc-acee-4d89-8a71-fcbe8998dd01.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A rezoning from a business district to a residential multi-unit district on vacant land and a closed school would permit residential development.",
+    "summary": "Washington Park Development Group LLC seeks to rezone 4901-4959 S. Indiana Ave., 201-233 E. 49th St., and 4900-4928 S. Prairie Ave. from B3-2 to RM-5 to permit residential and accessory uses. The site is vacant land and two closed school buildings.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "4901-4959 S. Indiana Ave., 201-233 E. 49th St., and 4900-4928 S. Prairie Ave.",
+     "ward": 3,
+     "community_area": "Grand Boulevard"
+    },
+    "entities": [
+     "Washington Park Development Group LLC"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "B3-2"
+    ],
+    "zoning_to": "RM-5",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "49c6a0ea16aa519f",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029414",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029414",
+   "title": "Zoning Reclassification Map No. 18-F at 7215 S Union Ave - App No. 23199",
+   "attachments": [
+    {
+     "label": "O2026-0029414 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/79d70ed6-88b6-4b99-b6ec-85dea8b59279.pdf"
+    },
+    {
+     "label": "O2026-0029414 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/8792710d-83de-449a-94c1-f3f035ead9d1.pdf"
+    },
+    {
+     "label": "O2026-0029414 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/7857e3bd-e783-43e8-ac1f-2517426c693d.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A rezoning of a vacant lot from single-unit to multi-unit residential to allow a new four-unit building adds homes.",
+    "summary": "CT Premier Rentals LLC seeks to rezone vacant land at 7215 S. Union Avenue from RS-3 to RT-4 to build a four-story, four-unit multifamily building with three parking spaces. The applicant is not subject to the ARO.",
+    "categories": [
+     {
+      "id": "housing-agenda",
+      "via": "keyword",
+      "detail": "ARO"
+     },
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "7215 S. Union Avenue",
+     "ward": 6,
+     "community_area": "Englewood"
+    },
+    "entities": [
+     "CT Premier Rentals LLC"
+    ],
+    "figures": {
+     "units": 4,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "RS-3"
+    ],
+    "zoning_to": "RT-4",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "460d2375d5e60018",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029359",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029359",
+   "title": "Zoning Reclassification Map No. 4-F at 466 W Cermak Rd and 2106-2124 S Canal St - App No. 23180",
+   "attachments": [
+    {
+     "label": "O2026-0029359 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f831cc04-aed7-4333-86f7-57cdd657407a.pdf"
+    },
+    {
+     "label": "O2026-0029359 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/75e0d0ad-bfcf-4519-94e0-4bde3823594a.pdf"
+    },
+    {
+     "label": "O2026-0029359 Statments and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/398b5634-1162-4e24-8474-316faa696566.pdf"
+    },
+    {
+     "label": "O2026-0029359 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/3822a8dd-6e93-45f5-a7f0-da8cef6756c7.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "The planned development amendment permits only office, retail, eating and drinking, and similar commercial uses, with no residential units.",
+    "summary": "T2 Opportunity Fund 3 LLC seeks to amend Waterway Business Planned Development No. 1208 at 466 W Cermak Rd and 2106-2124 S Canal St, rezoning from PMD No. 11 Sub-District B. Permitted uses are commercial.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "keyword",
+      "detail": "rezoning"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "T2 OPPORTUNITY FUND 3 LLC"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "98e8bbdd1b28257d",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029394",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029394",
+   "title": "Zoning Reclassification Map No. 4-F at 2125-2127 S Archer Ave - App No. 23193T1",
+   "attachments": [
+    {
+     "label": "O2026-0029394 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/39b5c609-b673-41a0-acc1-ccb3381e2ab9.pdf"
+    },
+    {
+     "label": "O2026-0029394 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/67cf5217-018d-4875-9e96-05b73a26b185.pdf"
+    },
+    {
+     "label": "O2026-0029394 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/173dd3c6-21e1-4489-b46a-f195d998b90b.pdf"
+    },
+    {
+     "label": "O2026-0029394 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/079e42bc-3532-40cf-b878-fc3b63035c4c.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "screened_out",
+    "housing_relevant": false,
+    "relevance_reason": "This ordinance rezones 2125-27 S Archer Ave from M1-3 Limited Manufacturing to C2-5 Motor Vehicle-Related Commercial, with no dwelling units or residential use mentioned, so it is a commercial/industrial zoning change that does not add, remove, or alter homes.",
+    "summary": "",
+    "categories": [],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-haiku-5-5",
+    "content_hash": "65943d5bb4a1412b",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029377",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029377",
+   "title": "Zoning Reclassification Map No. 14-J at 5948 S Kedzie Ave - App No. 23188",
+   "attachments": [
+    {
+     "label": "O2026-0029377 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/1c3c429d-bddf-4547-8de6-2cc353f2f20d.pdf"
+    },
+    {
+     "label": "O2026-0029377 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/1643fa18-f52e-4a6d-bea5-f4bc6ef79614.pdf"
+    },
+    {
+     "label": "O2026-0029377 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/c016d1e2-a832-4fe9-9254-17ccda431648.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "screened_out",
+    "housing_relevant": false,
+    "relevance_reason": "The ordinance rezones 5948 S. Kedzie from one neighborhood commercial district (B1-1) to another (C1-1) with no stated change to dwelling units or residential use, so it does not add, remove, or alter homes on the site.",
+    "summary": "",
+    "categories": [],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-haiku-5-5",
+    "content_hash": "10eee45e00075c08",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029363",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029363",
+   "title": "Zoning Reclassification Map No. 28-J at 3857 W 111th St - App No. 23183",
+   "attachments": [
+    {
+     "label": "O2026-0029363 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/0072f592-7291-4b2e-b9ef-2c71ac41cb64.pdf"
+    },
+    {
+     "label": "O2026-0029363 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e97f1acb-6026-4b31-8013-99bc63476eeb.pdf"
+    },
+    {
+     "label": "O2026-0029363 Statements and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/85abaa62-43c6-4119-90c4-a17ef6333dd4.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "screened_out",
+    "housing_relevant": false,
+    "relevance_reason": "The rezoning of a CPS high school site at 3857 W. 111th St. is to allow ground-mounted solar panels and agricultural plantings, with no dwelling units or residential use added, removed, or changed.",
+    "summary": "",
+    "categories": [],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-haiku-5-5",
+    "content_hash": "510aa6ef0f89ff7e",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029362",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029362",
+   "title": "Zoning Reclassification Map No. 4-G at 826-908 W 18th St, 1600-1730 S Newberry Ave, 829-909 W 16th St, 1600-1728 S Peoria St and 1601-1729 S Peoria St - App No. 23182",
+   "attachments": [
+    {
+     "label": "O2026-0029362 Statements and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/ef5edfbe-9fcc-4f2e-bcf4-997ccdc0adcb.pdf"
+    },
+    {
+     "label": "O2026-0029362 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/20a59576-d1e7-478b-8907-297636d1aa9c.pdf"
+    },
+    {
+     "label": "O2026-0029362 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/8ec0e382-6f93-449e-a012-6aae4f48c5f4.pdf"
+    },
+    {
+     "label": "O2026-0029362 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e281a9af-5aed-4f97-af6d-54fa03dc527c.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The rezoning creates a Residential-Business Planned Development permitting dwelling units on a large site in Pilsen/Heart of Chicago area.",
+    "summary": "The Resurrection Project seeks to rezone about 272,669 square feet from M1-2 and B3-3 to a new Residential-Business Planned Development. Permitted uses include dwelling units above and on the ground floor, plus commercial, community and live/work space.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "keyword",
+      "detail": "planned development"
+     }
+    ],
+    "geography": {
+     "address": "826-908 W. 18th Street, 1600-1730 S. Newberry Avenue, 829-909 W. 16th Street, 1600-1728 S. Peoria Street, 1601-1729 S. Peoria Street",
+     "ward": 25,
+     "community_area": "Lower West Side"
+    },
+    "entities": [
+     "The Resurrection Project"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": "Residential-Business Planned Development",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "da5234c491725d76",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029375",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029375",
+   "title": "Zoning Reclassification Map No. 3-J at 3724 W Le Moyne St - App No. 23187T1",
+   "attachments": [
+    {
+     "label": "O2026-0029375 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/c99039ef-2a1e-4899-9e08-60bc9aaeeeb3.pdf"
+    },
+    {
+     "label": "O2026-0029375 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/8fadd9a4-90e8-4ea6-92e5-a5086d471a64.pdf"
+    },
+    {
+     "label": "O2026-0029375 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e6ac0efa-152c-4059-952a-c8b4b048d38b.pdf"
+    },
+    {
+     "label": "O2026-0029375 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/52efd64a-8024-437c-b620-ffe497b96703.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The rezoning would allow a new six-unit residential building on a vacant lot.",
+    "summary": "Here to Stay CLT, Inc. seeks to rezone 3724 W. LeMoyne Street from RS-3 to RM-5 to build a three-story, six-unit residential building with no parking on a vacant lot.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     },
+     {
+      "id": "social-housing",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "3724 W. LeMoyne Street",
+     "ward": 26,
+     "community_area": "Humboldt Park"
+    },
+    "entities": [
+     "Here to Stay CLT, Inc."
+    ],
+    "figures": {
+     "units": 6,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "RS-3"
+    ],
+    "zoning_to": "RM-5",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "b3da74777083ed17",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029361",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029361",
+   "title": "Zoning Reclassification Map No. 3-G at 1401-1459 N Magnolia Ave - App No. 23181",
+   "attachments": [
+    {
+     "label": "O2026-0029361 Statements and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/6610b4ed-a0d7-4259-a379-128b37f83f22.pdf"
+    },
+    {
+     "label": "O2026-0029361 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/760727a6-20ab-4234-8b3d-7f03d9fb44b5.pdf"
+    },
+    {
+     "label": "O2026-0029361 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/bb839c2b-cb41-4526-8e80-35cfacf0db5f.pdf"
+    },
+    {
+     "label": "O2026-0029361 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/fa858f9a-917a-41b9-8c9e-f6fdb280f5fb.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "screened_out",
+    "housing_relevant": false,
+    "relevance_reason": "The Planned Development's permitted uses list only commercial, office, artisan, entertainment, and light manufacturing uses with no dwelling units or residential use, and the excerpt describes a rehabilitation of an existing building rather than new or removed homes.",
+    "summary": "",
+    "categories": [],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-haiku-5-5",
+    "content_hash": "c6a26e4f9aa80eff",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029405",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029405",
+   "title": "Zoning Reclassification Map No. 1-J at 746-748 N Trumbull Ave - App No. 23198T1",
+   "attachments": [
+    {
+     "label": "O2026-0029405 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/76e00ac1-d818-47bb-bdd3-69101df96e95.pdf"
+    },
+    {
+     "label": "O2026-0029405 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/248416fb-2cee-4fcf-891e-c59cc7a19354.pdf"
+    },
+    {
+     "label": "O2026-0029405 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/5ba9e7fe-f57c-4d9b-a19e-eeccb08f48eb.pdf"
+    },
+    {
+     "label": "O2026-0029405 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/009f7b06-d90c-4203-9c80-65f3606a58cc.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The rezoning would allow a third dwelling unit to be added to an existing two-unit residential building.",
+    "summary": "Adriana and Alejandro Espinoza seek to rezone 746-48 N. Trumbull Ave. from B3-1 to RM-5 to add a third dwelling unit in the basement of an existing two-unit building. No building additions or parking are proposed.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "746-48 North Trumbull Avenue",
+     "ward": 27,
+     "community_area": "Humboldt Park"
+    },
+    "entities": [
+     "Alejandro Espinoza"
+    ],
+    "figures": {
+     "units": 3,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "B3-1"
+    ],
+    "zoning_to": "RM-5",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "9a3343f920367405",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029386",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029386",
+   "title": "Zoning Reclassification Map No. 2-I at 507-509 S California Ave - App No. 23191T1",
+   "attachments": [
+    {
+     "label": "O2026-0029386 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/b8395c19-232f-4aa0-8aad-876587e0efe6.pdf"
+    },
+    {
+     "label": "O2026-0029386 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/65079575-8cf7-4c77-9437-eccd4ba15095.pdf"
+    },
+    {
+     "label": "O2026-0029386 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/ce9ba995-a0be-492a-8d4d-d09aedf309fa.pdf"
+    },
+    {
+     "label": "O2026-0029386 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f074f286-d2eb-4273-bc80-009be2348e66.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "The rezoning from B3-3 to M1-1 would allow a gas station with convenience store on a vacant lot and involves no housing units.",
+    "summary": "511 California Property LLC seeks to rezone vacant land at 507-09 S. California Ave. from B3-3 to M1-1 to build a four-pump gas station with a one-story convenience store. The application says the ARO does not apply.",
+    "categories": [
+     {
+      "id": "housing-agenda",
+      "via": "keyword",
+      "detail": "ARO"
+     }
+    ],
+    "geography": {
+     "address": "507-09 South California Avenue",
+     "ward": 28,
+     "community_area": "East Garfield Park"
+    },
+    "entities": [
+     "511 California Property LLC"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "B3-3"
+    ],
+    "zoning_to": "M1-1",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "51e1f993880fc43c",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029425",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029425",
+   "title": "Zoning Reclassification Map No. 9-L at 5555 W Newport Ave - App No. 23202T1",
+   "attachments": [
+    {
+     "label": "O2026-0029425 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f231f228-05e7-4d3c-8942-a789e4528fc9.pdf"
+    },
+    {
+     "label": "O2026-0029425 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/a61a7527-bd61-4678-b32b-b29986013438.pdf"
+    },
+    {
+     "label": "O2026-0029425 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/b37813aa-91dc-44a9-af4e-9d5e703c6905.pdf"
+    },
+    {
+     "label": "O2026-0029425 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/73d276d4-9d2c-4f35-9fde-7968bf0014ad.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A rezoning of an existing three-story, four-unit mixed-use building from B3-1 to B3-2 to bring it into zoning compliance, with no change in dwelling units.",
+    "summary": "Rezones 5555 W Newport Ave from B3-1 to B3-2 Community Shopping District so the existing three-story, four-unit mixed-use building complies with the zoning ordinance. No increase in height, footprint, or dwelling units is planned; two parking spaces remain.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "5555 W. Newport Ave.",
+     "ward": 30,
+     "community_area": "Portage Park"
+    },
+    "entities": [],
+    "figures": {
+     "units": 4,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "B3-1"
+    ],
+    "zoning_to": "B3-2",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "d03594fb49f431c0",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029404",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029404",
+   "title": "Zoning Reclassification Map No. 5-H at 1959 W Cortland St - App No. 23197T1",
+   "attachments": [
+    {
+     "label": "O2026-0029404 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/727a2e76-9fca-49b5-ac3b-0f97d90e9c5a.pdf"
+    },
+    {
+     "label": "O2026-0029404 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/448e5a5f-5137-4c7c-99b1-672aabc57817.pdf"
+    },
+    {
+     "label": "O2026-0029404 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/905ee2b0-2353-43c3-8045-6b4592c38999.pdf"
+    },
+    {
+     "label": "O2026-0029404 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d0a0813d-4a25-4a30-bc95-6c2c2175cab6.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A zoning map amendment to allow a fourth-floor addition that would expand an existing third-floor dwelling unit in a mixed-use building.",
+    "summary": "Pitch Sweetwater LLC seeks to rezone 1959 W. Cortland Street from B3-2 to B3-3 Community Shopping District. The applicant proposes a fourth-floor addition to the 3-story mixed-use building to expand the third-floor dwelling unit.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "1959 W. Cortland Street",
+     "ward": 32,
+     "community_area": "Logan Square"
+    },
+    "entities": [
+     "Pitch Sweetwater LLC"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "bcd3a37a88a90c5d",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029422",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029422",
+   "title": "Zoning Reclassification Map No. 5-H at 2343-2349 N Damen Ave - App No. 23201T1",
+   "attachments": [
+    {
+     "label": "O2026-0029422 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/356519db-01eb-41ab-9b06-5cb9d244c170.pdf"
+    },
+    {
+     "label": "O2026-0029422 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e8c5d4e6-70b1-4047-84e3-1da7ec25ee1c.pdf"
+    },
+    {
+     "label": "O2026-0029422 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/eb3c84d8-6272-464a-8b43-15eff3713910.pdf"
+    },
+    {
+     "label": "O2026-0029422 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/51180994-a36a-4bc6-8aa6-c30c48458993.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The rezoning would allow demolition of an industrial building and construction of a 27-unit residential building, and the project is subject to the ARO.",
+    "summary": "Platinum Homes Development Corporation seeks to rezone 2343-49 N. Damen Ave. from M3-3 to B2-3 to demolish an industrial building and build a 4-story, 27-unit residential building with 16 parking spaces. The application says the project is subject to the ARO.",
+    "categories": [
+     {
+      "id": "housing-agenda",
+      "via": "keyword",
+      "detail": "ARO"
+     },
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "2343-49 N. Damen Avenue",
+     "ward": 32,
+     "community_area": "Logan Square"
+    },
+    "entities": [
+     "Platinum Homes Development Corporation"
+    ],
+    "figures": {
+     "units": 27,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "M3-3"
+    ],
+    "zoning_to": "B2-3",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "0167e36afb85a811",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029415",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029415",
+   "title": "Zoning Reclassification Map No. 5-J at 3853 W Palmer Ave - App No. 23200T1",
+   "attachments": [
+    {
+     "label": "O2026-0029415 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/df38b658-90cd-48ca-a561-4434f8651a76.pdf"
+    },
+    {
+     "label": "O2026-0029415 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/36c33689-a3e4-4dba-b82a-1458d7a04459.pdf"
+    },
+    {
+     "label": "O2026-0029415 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e053a812-6feb-473c-b932-0fd3584c3a01.pdf"
+    },
+    {
+     "label": "O2026-0029415 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/4ddac074-f9c5-4021-8c54-d0d946dec6e0.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A rezoning from RS-3 to RM-5 would allow two additional basement dwelling units in an existing four-unit residential building, increasing the number of homes.",
+    "summary": "3853 West Palmer St LLC seeks to rezone 3853 W. Palmer from RS-3 to RM-5 so it can lawfully add two basement dwelling units to a four-unit building, making six units. The application says the ARO does not apply.",
+    "categories": [
+     {
+      "id": "housing-agenda",
+      "via": "keyword",
+      "detail": "ARO"
+     },
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "3853 West Palmer Street",
+     "ward": 35,
+     "community_area": "Logan Square"
+    },
+    "entities": [
+     "3853 West Palmer St LLC"
+    ],
+    "figures": {
+     "units": 6,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "RS-3"
+    ],
+    "zoning_to": "RM-5",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "1954fb3c9f1b7336",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029356",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029356",
+   "title": "Zoning Reclassification Map No. 93-B at 1828 W Race Ave - App No. 23178T1",
+   "attachments": [
+    {
+     "label": "O2026-0029356 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/bb570125-694b-4d48-9bd9-a3a7e8f4cb0c.pdf"
+    },
+    {
+     "label": "O2026-0029356 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f71c3e17-6c92-4da6-8546-bda903bb9eaf.pdf"
+    },
+    {
+     "label": "O2026-0029356 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/81a585d3-b563-4997-9c11-3a356ff4190a.pdf"
+    },
+    {
+     "label": "O2026-0029356 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e56bfeb2-1f22-4f0e-86c3-e56f0c277331.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A rezoning of a residential lot from RS-3 to RT-3.5 to permit a rear addition to a single-family home is a zoning map change affecting residential regulation, though it adds no homes.",
+    "summary": "Amy Shah and Jai Patel seek to rezone 1828 W Race Ave from RS-3 to RT-3.5 to build a rear addition to their single-family home, with variations reducing the rear yard setback and rear open space. The home stays one unit.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "1828 W Race Ave",
+     "ward": 36,
+     "community_area": "West Town"
+    },
+    "entities": [
+     "Amy Shah",
+     "Jai Patel"
+    ],
+    "figures": {
+     "units": 1,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "RS-3"
+    ],
+    "zoning_to": "RT-3.5",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "64dd68fbc12a178f",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029435",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029435",
+   "title": "Zoning Reclassification Map No. 1-L at 4901 W Ferdinand St - App No. 23203T1",
+   "attachments": [
+    {
+     "label": "O2026-0029435 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/dc3ad4ac-7970-4c6a-83db-06098b80eae5.pdf"
+    },
+    {
+     "label": "O2026-0029435 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/18eb4e03-5f3e-4f13-aaf9-193cd0fcddbb.pdf"
+    },
+    {
+     "label": "O2026-0029435 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/3faae8b6-ed39-43f1-8d5d-de69bfe550e3.pdf"
+    },
+    {
+     "label": "O2026-0029435 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/9d80ef33-2598-436a-8124-0500287b26a1.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "The rezoning from RS-3 to RT-4 is sought only to build a new two-story religious assembly building with a sanctuary, and no dwelling units are proposed.",
+    "summary": "Jack Ingram, owner of the church property at 4901 W Ferdinand St, seeks to rezone it from RS-3 to RT-4 to build a new two-story religious assembly building. The request includes setback and rear-yard open space relief.",
+    "categories": [],
+    "geography": {
+     "address": "4901 West Ferdinand Street",
+     "ward": 37,
+     "community_area": "Austin"
+    },
+    "entities": [
+     "Jack Ingram"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "RS-3"
+    ],
+    "zoning_to": "RT-4",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "9986f3cda251f933",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029372",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029372",
+   "title": "Zoning Reclassification Map No. 7-G at 920-928 W Diversey Pkwy - App No. 23186T1",
+   "attachments": [
+    {
+     "label": "O2026-0029372 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/fa05c8a1-24a8-4ed1-a6e2-be154e767c40.pdf"
+    },
+    {
+     "label": "O2026-0029372 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/673ec3ff-996e-4717-8807-a1adf85ee3da.pdf"
+    },
+    {
+     "label": "O2026-0029372 EDS_Redacted",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/995587f4-3843-459b-8e51-d8e00d91f2d2.pdf"
+    },
+    {
+     "label": "O2026-0029372 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/44f32c60-77c8-4e08-a851-44f2092fa229.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The rezoning would allow a new 52-unit mixed-use residential building on a site currently used for single-story retail, and the project is subject to the ARO.",
+    "summary": "Skymaster, LLC seeks to rezone 920-928 W Diversey Parkway from B3-2 to B2-5 to build a 5-story, 65-foot mixed-use building with 52 residential units, 3,400 sq ft of commercial space and 8 parking spaces. The application also seeks reduced parking and rear setback relief.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     },
+     {
+      "id": "housing-agenda",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "920-928 West Diversey Parkway",
+     "ward": 44,
+     "community_area": "Lake View"
+    },
+    "entities": [
+     "Skymaster, LLC"
+    ],
+    "figures": {
+     "units": 52,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "1821fada36bae8d8",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029371",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029371",
+   "title": "Zoning Reclassification Map No. 7-F at 3127-3139 N Halsted St/749-759 W Briar Pl - App No. 23185T1",
+   "attachments": [
+    {
+     "label": "O2026-0029371 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/61a5855f-89b1-4a0f-84c1-5154f88feb3a.pdf"
+    },
+    {
+     "label": "O2026-0029371 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/19a0725e-b4bc-4829-86b2-649db1c9f034.pdf"
+    },
+    {
+     "label": "O2026-0029371 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/fb579d49-e8bc-4fba-a84d-35cea7e86fa5.pdf"
+    },
+    {
+     "label": "O2026-0029371 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/eb8cc01e-bd37-4d0f-b8e5-53b748cc6ac4.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The Type 1 zoning amendment would add one dwelling unit to a previously approved 67-unit mixed-use residential project subject to the ARO.",
+    "summary": "3133 N. Halsted LLC seeks a Type 1 amendment at 3127-3139 N Halsted St to raise a previously approved mixed-use project from 66 to 67 dwelling units. The B2-5 zoning stays the same, and the project is marked subject to the ARO.",
+    "categories": [
+     {
+      "id": "housing-agenda",
+      "via": "keyword",
+      "detail": "ARO"
+     },
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "3127-3139 North Halsted Street/749-759 West Briar Place",
+     "ward": 44,
+     "community_area": "Lake View"
+    },
+    "entities": [
+     "3133 N. Halsted LLC"
+    ],
+    "figures": {
+     "units": 67,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "B2-5"
+    ],
+    "zoning_to": "B2-5",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "ff6b94958d5b9d02",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029364",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029364",
+   "title": "Zoning Reclassification Map No. 9-G at 1429 W Irving Park Rd - App No. 23184T1",
+   "attachments": [
+    {
+     "label": "O2026-0029364 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d92b9fd4-76d3-4c73-b70f-094cb916b1fc.pdf"
+    },
+    {
+     "label": "O2026-0029364 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/77680d8a-1889-49e2-8e61-aee04d3d45ef.pdf"
+    },
+    {
+     "label": "O2026-0029364 Narrativbe and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/6729a0bf-4987-4a35-8c38-ce697ffe5a23.pdf"
+    },
+    {
+     "label": "O2026-0029364 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/04070f2c-8290-4018-99f7-13d127b6a534.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A rezoning to allow a new five-story mixed-use building with 36 dwelling units, including 7 ARO affordable units, on a parking lot.",
+    "summary": "Applicant Nikola Delic seeks to rezone 1429 W Irving Park Rd from B3-2 to B2-3 to build a five-story mixed-use building with ground-floor commercial space and 36 dwelling units, seven of them affordable under the ARO, plus 25 parking spaces.",
+    "categories": [
+     {
+      "id": "housing-agenda",
+      "via": "keyword",
+      "detail": "ARO"
+     },
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "1429 West Irving Park Road",
+     "ward": 46,
+     "community_area": "Lake View"
+    },
+    "entities": [
+     "Nikola Delic"
+    ],
+    "figures": {
+     "units": 36,
+     "affordable_units": 7
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "B3-2"
+    ],
+    "zoning_to": "B2-3",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "364c74c9bff641bd",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029387",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029387",
+   "title": "Zoning Reclassification Map No. 11-G at 4525-4531 N Clark St - App No. 23192T1",
+   "attachments": [
+    {
+     "label": "O2026-0029387 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/90143086-3099-47e5-acad-7c05e67edd1e.pdf"
+    },
+    {
+     "label": "O2026-0029387 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/90a62981-838c-4e48-a496-968987011df2.pdf"
+    },
+    {
+     "label": "O2026-0029387 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f19e5133-1a25-4c32-a326-f50167c31f66.pdf"
+    },
+    {
+     "label": "O2026-0029387 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f6110791-c3f9-4a32-9132-685057cea73c.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The rezoning would allow demolition of a partially vacant commercial building and construction of a four-story mixed-use building with nine dwelling units.",
+    "summary": "Platinum Homes Development Corporation seeks to rezone 4525-31 N Clark St from C1-2 to C1-3 to demolish a vacant commercial building and build a four-story mixed-use building with ground-floor commercial space and nine dwelling units. It also requests rear setback, window transparency and parking relief.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "4525-31 North Clark Street",
+     "ward": 46,
+     "community_area": "Uptown"
+    },
+    "entities": [
+     "Platinum Homes Development Corporation"
+    ],
+    "figures": {
+     "units": 9,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "C1-2"
+    ],
+    "zoning_to": "C1-3",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "6287ccd674c87d3d",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029403",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0029403",
+   "title": "Zoning Reclassification Map No. 13-G at 4940-4942 N Sheridan Rd - App No. 23196T1",
+   "attachments": [
+    {
+     "label": "O2026-0029403 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/c4c9ef4a-735a-4210-8213-f2bd20f65d6a.pdf"
+    },
+    {
+     "label": "O2026-0029403 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/33d1950a-f680-4277-b377-1fdfd247f72b.pdf"
+    },
+    {
+     "label": "O2026-0029403 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f0c86533-cc62-465c-8c87-5428f1d8a809.pdf"
+    },
+    {
+     "label": "O2026-0029403 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/2b98b221-10f7-4446-9817-6b87bfc49975.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The rezoning would convert ground-floor commercial space in a mixed-use building into residential units, increasing the home count from seven to thirteen.",
+    "summary": "North Sheridan LLC seeks to rezone 4940-42 N Sheridan Road from B3-2 to B2-3 to convert first-floor commercial space into six apartments, making a fully residential 13-unit building. The applicant also seeks zero off-street parking and a reduced rear setback.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "4940-42 North Sheridan Road",
+     "ward": 48,
+     "community_area": "Uptown"
+    },
+    "entities": [
+     "North Sheridan LLC"
+    ],
+    "figures": {
+     "units": 13,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "B3-2"
+    ],
+    "zoning_to": "B2-3",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "f3d3860be69a971b",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0028686",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0028686",
+   "title": "Zoning Reclassification Map No. 10-E at 4200 S Dr Martin Luther King, Jr. - App No. 23158T1",
+   "attachments": [
+    {
+     "label": "O2026-0028686 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f3427890-f217-4c15-af55-0a326125c083.pdf"
+    },
+    {
+     "label": "O2026-0028686 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/19c0b87d-77f6-42a9-ba4d-88f2402ed918.pdf"
+    },
+    {
+     "label": "O2026-0028686 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/0962fcbf-9769-4e93-9fb1-d2adf4338d35.pdf"
+    },
+    {
+     "label": "O2026-0028686 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/db1c647c-6b28-4097-be38-579afd2955fc.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "screened_out",
+    "housing_relevant": false,
+    "relevance_reason": "The rezoning covers a commercial building converted to a coin-operated laundromat with zero dwelling units and no residential use, so it does not add, remove, or change homes on the site.",
+    "summary": "",
+    "categories": [],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-haiku-5-5",
+    "content_hash": "7d7ce2c6a6e333b9",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0028740",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0028740",
+   "title": "Zoning Reclassification Map No. 4-H at 2142 W 18th Pl - App No. 23173T1",
+   "attachments": [
+    {
+     "label": "O2026-0028740 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/7defb000-8e56-4953-a2d8-0a4a3ae701fe.pdf"
+    },
+    {
+     "label": "O2026-0028740 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d9ea9ab2-e736-47eb-8010-51513f9736af.pdf"
+    },
+    {
+     "label": "O2026-0028740 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/fdad537e-34f0-4e45-beaa-923f48d31d90.pdf"
+    },
+    {
+     "label": "O2026-0028740 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/1655a80d-b68e-42e9-8c42-c906c8f0d9ca.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A residential rezoning at 2142 W 18th Pl would split a lot so an existing five-unit building can be legalized and a new three-unit building built on the vacant lot.",
+    "summary": "Coach House Properties LLC seeks to rezone 2142 W 18th Pl from RT-4 to RM-5 to split a lot, legalizing an existing five-unit building. A three-unit building with three parking spaces would be built on the vacant lot, which stays RT-4.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "2142 W 18th Place",
+     "ward": 25,
+     "community_area": "Lower West Side"
+    },
+    "entities": [
+     "Coach House Properties LLC"
+    ],
+    "figures": {
+     "units": 5,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "RT-4"
+    ],
+    "zoning_to": "RM-5",
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "b6917b63bf66d84d",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027130",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0027130",
+   "title": "Zoning Reclassification Map No. 1-G at 1133 W Kinzie St- App No. 23122",
+   "attachments": [
+    {
+     "label": "O2026-0027130 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/bb065e1c-b739-4b8d-ba3c-e1190bdcdcfc.pdf"
+    },
+    {
+     "label": "O2026-0027130 EDS",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/cec2d5ce-73e8-4b66-b264-48de3baa9b81.pdf"
+    },
+    {
+     "label": "O2026-0027130 Statements and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f61e8898-7dc9-4f16-8f1a-43605ea5feff.pdf"
+    },
+    {
+     "label": "O2026-0027130 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/2aae29b7-5178-4984-9efb-65dcaa4c4b81.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The rezoning would allow a 109-unit residential planned development on a vacant industrial-zoned lot, subject to the Affordable Requirements Ordinance.",
+    "summary": "MKR Owner LLC, contract purchaser, seeks to rezone 1133 W. Kinzie St. from M2-3 to DX-5 and then a Residential Planned Development for a 109-unit, five-story rental building with 35 parking spaces. The applicant plans 17 affordable units under the ARO.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "keyword",
+      "detail": "planned development"
+     },
+     {
+      "id": "housing-agenda",
+      "via": "keyword",
+      "detail": "ARO"
+     }
+    ],
+    "geography": {
+     "address": "1133 W. Kinzie Street",
+     "ward": 27,
+     "community_area": "West Town"
+    },
+    "entities": [
+     "MKR Owner LLC"
+    ],
+    "figures": {
+     "units": 109,
+     "affordable_units": 17
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "M2-3"
+    ],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "03e0ecbea6f90e36",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2025-0023279",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2025-0023279",
+   "title": "Common Address: 5351-5357 West Addison Street, 5551-5557 North Long Avenue",
+   "attachments": [],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "The item lists only a common address for a Zoning Committee matter, and nothing provided shows it involves residential units or a change affecting homes.",
+    "summary": "The City Council Committee on Zoning has an item (O2025-0023279) listed under the common address 5351-5357 West Addison Street and 5551-5557 North Long Avenue.",
+    "categories": [],
+    "geography": {
+     "address": "5351-5357 West Addison Street, 5551-5557 North Long Avenue",
+     "ward": 30,
+     "community_area": "Portage Park"
+    },
+    "entities": [],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "2be6fb21767bf495",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0023270",
+   "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "source_ref": "O2026-0023270",
+   "title": "Zoning Reclassification Map No. 9-G at 3700-3846 N Seminary Ave, 1100-1156 W Grace St and 3801-3851 N Racine Ave - App No. 23002",
+   "attachments": [
+    {
+     "label": "O2026-0023270 EDS_Redacted",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/c527dd0b-2b3b-4f82-abce-32dd296a5935.pdf"
+    },
+    {
+     "label": "O2026-0023270 Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d8efe561-638e-4913-ae78-f561a11e27f5.pdf"
+    },
+    {
+     "label": "O2026-0023270 Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/b9a6f5bd-d837-49dd-a108-07e884cecb11.pdf"
+    },
+    {
+     "label": "O2026-0023270 Application",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/6eb19e47-9705-4deb-a413-834d6d45b376.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "The planned development amendment covers Wrigley Field-area lots for entertainment, parking, park space and signage, with no new homes described.",
+    "summary": "Chicago Realty Ventures, LLC seeks a zoning reclassification and amendment to Institutional Planned Development No. 108 for lots at 3700-3846 N Seminary Ave, 1100-1156 W Grace St and 3801-3851 N Racine Ave. Uses include entertainment, parking and open space, with the Chicago Park District controlling one subarea.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "keyword",
+      "detail": "planned development"
+     }
+    ],
+    "geography": {
+     "address": "3700-3846 N Seminary Ave, 1100-1156 W Grace St and 3801-3851 N Racine Ave",
+     "ward": 44,
+     "community_area": "Lake View"
+    },
+    "entities": [
+     "Chicago Realty Ventures, LLC",
+     "Chicago Park District"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "scanned",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "a842b5d08a0ca598",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
    "id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029491",
    "meeting_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5",
    "source_ref": "O2026-0029491",
@@ -10223,7 +12727,12 @@
    "meeting_id": "cpc:2026-11-19",
    "source_ref": "931 N. Halsted St.",
    "title": "A courtesy presentation of a proposed site plan review, submitted by Onni Halsted Street Chicago LLC, for the development within the Waterway Residential-Business Planned Development No. 1522, Subareas B, C, and D generally located at 931 N Halsted Street . The applicant proposes to construct two mixed-use buildings in Subareas B and C with ground-floor commercial space and are entitled for up to 1,134 and 1,052 dwelling units, respectively. In Subarea D, the applicant proposes to construct a hotel with up to 300 keys. The construction of these subareas will also include construction of a public riverwalk along the North Branch of the Chicago River and the North Branch Canal. The overall FAR of the development will not exceed 8.1.",
-   "attachments": [],
+   "attachments": [
+    {
+     "label": "Presentation",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/931_N_Halsted_CPC_Draft_for_posting.pdf"
+    }
+   ],
    "outcome": null,
    "extraction": "structured",
    "geography_hint": {
@@ -10235,7 +12744,7 @@
     "status": "ok",
     "housing_relevant": true,
     "relevance_reason": "The site plan review covers two mixed-use buildings entitled for over 2,000 dwelling units within a residential-business planned development.",
-    "summary": "Onni Halsted Street Chicago LLC presents a courtesy site plan review for Waterway Residential-Business Planned Development No. 1522 at 931 N Halsted. It proposes two mixed-use buildings entitled for up to 1,134 and 1,052 units, a 300-key hotel, and a public riverwalk.",
+    "summary": "Onni Halsted Street Chicago LLC presents a courtesy site plan review for Waterway Residential-Business Planned Development No. 1522 at 931 N Halsted. It would build two mixed-use buildings entitled for up to 1,134 and 1,052 dwelling units, a 300-key hotel, and a public riverwalk.",
     "categories": [
      {
       "id": "ahpaa",
@@ -10260,13 +12769,13 @@
     "zoning_from": [],
     "zoning_to": null,
     "important": null,
-    "source_quality": "none",
+    "source_quality": "partial",
     "model": "claude-sonnet-5-5",
-    "content_hash": "dc5b731c99c51567",
+    "content_hash": "117095a69e36b25e",
     "overridden": false
    },
    "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
-   "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
+   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
   },
   {
    "id": "cpc:2026-11-19#item-9",
@@ -11528,6 +14037,226 @@
    "type": "agenda_posted",
    "ref_id": "legistar:thecha:1151",
    "at": "2026-11-12T21:25:46.918799-06:00"
+  },
+  {
+   "type": "agenda_posted",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0028305",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027988",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0026028",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027581",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027580",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027582",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029400",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027965",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027963",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0026237",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0025471",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029378",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029395",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029398",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029379",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029414",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029359",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029394",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029377",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029363",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029362",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029375",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029361",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029405",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029386",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029425",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029404",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029422",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029415",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029356",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029435",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029372",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029371",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029364",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029387",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029403",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0028686",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0028740",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027130",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2025-0023279",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0023270",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "meeting_new",
+   "ref_id": "elms:DE8DE804-76DF-F111-84EA-001DD80EFCF5",
+   "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "meeting_new",
+   "ref_id": "elms:F8691F79-75DF-F111-84EA-001DD80EFCF5",
+   "at": "2026-11-13T12:31:51.122734-06:00"
   }
  ]
 }

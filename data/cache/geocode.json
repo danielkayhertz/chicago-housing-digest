@@ -1,4 +1,8 @@
 {
+ "1 East 111th Street, Chicago, IL": [
+  -87.623026759142,
+  41.692528075289
+ ],
  "1001 S Campbell Ave, Chicago, IL": [
   -87.688467125698,
   41.869258180405
@@ -11,6 +15,10 @@
   -87.70676927681,
   41.89976745245
  ],
+ "10657 S. Wentworth Avenue, Chicago, IL": [
+  -87.628023978526,
+  41.700363594417
+ ],
  "111 E. Wacker, Suite 1000, Chicago, IL 60601, Chicago, IL": [
   -87.623816131427,
   41.888136033696
@@ -18,6 +26,10 @@
  "111 East Wacker Drive, Suite 1000, Chicago, Illinois 60601, Chicago, IL": [
   -87.623816131427,
   41.888136033696
+ ],
+ "1133 W. Kinzie Street, Chicago, IL": [
+  -87.6562091,
+  41.8890393
  ],
  "1140 N California Ave, Chicago, IL": [
   -87.696935317474,
@@ -55,6 +67,14 @@
   -87.664255773958,
   41.932411248433
  ],
+ "1429 West Irving Park Road, Chicago, IL": [
+  -87.665378041282,
+  41.954280680039
+ ],
+ "1500 \u2013 2400 W. Lawrence Avenue, Chicago, IL": [
+  -87.689578422652,
+  41.968666267718
+ ],
  "1509 E 67th Pl, Chicago, IL": [
   -87.588520755435,
   41.772344893333
@@ -79,6 +99,10 @@
   -87.667371092178,
   41.896129698919
  ],
+ "1601 E. 71st Street, Chicago, IL": [
+  -87.584696234702,
+  41.765935408374
+ ],
  "1644 N Winchester Ave, Chicago, IL": [
   -87.676342968496,
   41.911328341089
@@ -98,6 +122,10 @@
  "1807 West Augusta Boulevard, Chicago, IL": [
   -87.672576795507,
   41.899571695091
+ ],
+ "1828 W Race Ave, Chicago, IL": [
+  -87.672776498617,
+  41.891671963693
  ],
  "1855, Chicago, IL": [
   -87.6313941,
@@ -122,6 +150,10 @@
  "1948 W. 63rd Street, Chicago, IL": [
   -87.673096156109,
   41.779384891794
+ ],
+ "1959 W. Cortland Street, Chicago, IL": [
+  -87.676878163905,
+  41.91589626902
  ],
  "2054 W Warren Blvd to EGP Warren Apartments LLC under ChiBlockBuilder, Chicago, IL": [
   -87.67800119373,
@@ -155,6 +187,10 @@
   -87.623872323732,
   41.852408634737
  ],
+ "2230 North Wayne Avenue, Chicago, IL": [
+  -87.662076769916,
+  41.922202995452
+ ],
  "2249 W Cermak Rd, Chicago, IL": [
   -87.682326881028,
   41.852017813379
@@ -179,9 +215,17 @@
   -87.684705996496,
   41.877624389999
  ],
+ "2343 N. Damen Avenue, Chicago, IL": [
+  -87.677771889517,
+  41.924003467287
+ ],
  "2400 W Grenshaw St, Chicago, IL": [
   -87.686140059062,
   41.867578458062
+ ],
+ "2525 N Milwaukee Ave, Chicago, IL": [
+  -87.704226435826,
+  41.927197363111
  ],
  "2648 West Lawrence Avenue, Chicago, IL": [
   -87.695358658305,
@@ -190,6 +234,10 @@
  "2800 N. Sheridan Rd., Chicago, IL": [
   -87.639405070326,
   41.932976494744
+ ],
+ "3127 North Halsted Street, Chicago, IL": [
+  -87.649151621297,
+  41.938845309992
  ],
  "3239 S Morgan St, Chicago, IL": [
   -87.650995056171,
@@ -219,6 +267,10 @@
   -87.650907782807,
   41.831500132861
  ],
+ "3500 South Giles Avenue, Chicago, IL": [
+  -87.619413693976,
+  41.83102688953
+ ],
  "3600 \u2013 4859 N. Western Avenue, Chicago, IL": [
   -87.688872433328,
   41.969982425866
@@ -230,6 +282,14 @@
  "3700 5th Street, Rock Island, IL 61201": [
   -90.547833541089,
   41.507527026073
+ ],
+ "3700 N Seminary Ave, Chicago, IL": [
+  -87.65672526098,
+  41.949063388931
+ ],
+ "3724 W. LeMoyne Street, Chicago, IL": [
+  -87.71992324398,
+  41.908201440482
  ],
  "3729, 3731 and 3733 S Giles Ave, Chicago, IL": [
   -87.619161715423,
@@ -246,6 +306,10 @@
  "3800 S State St, Chicago, IL": [
   -87.626503418162,
   41.825481644651
+ ],
+ "3853 West Palmer Street, Chicago, IL": [
+  -87.72392752399,
+  41.920798476285
  ],
  "4001 N. Ravenswood Avenue, Chicago, IL": [
   -87.673716133549,
@@ -266,6 +330,18 @@
  "4301 W. Montrose Ave., Chicago, IL": [
   -87.737092950691,
   41.960789893409
+ ],
+ "4306 W. Lexington, Chicago, IL": [
+  -87.732926963235,
+  41.871641179685
+ ],
+ "4354 W. Lexington, Chicago, IL": [
+  -87.734051607119,
+  41.871625107812
+ ],
+ "4525 North Clark Street, Chicago, IL": [
+  -87.666374063887,
+  41.963933767802
  ],
  "4549 S Indiana Ave to Click Development LLC 4549 Indiana under ChiBlockBuilder, Chicago, IL": [
   -87.621208665878,
@@ -291,6 +367,14 @@
   -87.7472528,
   41.8949107
  ],
+ "4901 S. Indiana Ave., Chicago, IL": [
+  -87.621040571386,
+  41.805613884618
+ ],
+ "4901 West Ferdinand Street, Chicago, IL": [
+  -87.748141866474,
+  41.889487904201
+ ],
  "4927 S Forrestville Ave, Chicago, IL": [
   -87.612497961997,
   41.805294189646
@@ -303,9 +387,25 @@
   -87.645533,
   41.9545655
  ],
+ "4940 North Sheridan Road, Chicago, IL": [
+  -87.654978694904,
+  41.972296755303
+ ],
+ "4970 S. Archer Avenue, Chicago, IL": [
+  -87.722546910085,
+  41.802929674165
+ ],
  "5000 S. Wells Street, Chicago, IL": [
   -87.632308004232,
   41.803351946175
+ ],
+ "507 South California Avenue, Chicago, IL": [
+  -87.696046924481,
+  41.874779977838
+ ],
+ "520 East 103rd Street, Chicago, IL": [
+  -87.610811070828,
+  41.707415430801
  ],
  "5300 W 55th St, Chicago, IL": [
   -87.755053537192,
@@ -314,6 +414,10 @@
  "5312 S. Kenneth Avenue, Chicago, IL": [
   -87.734361060067,
   41.796601958618
+ ],
+ "5351 West Addison Street, Chicago, IL": [
+  -87.760628332631,
+  41.945898853461
  ],
  "537 West Oak Street, Chicago, IL": [
   -87.641499983046,
@@ -331,9 +435,17 @@
   -88.087100882323,
   41.783225390293
  ],
+ "5555 W. Newport Ave., Chicago, IL": [
+  -87.766125295551,
+  41.943087424531
+ ],
  "5752 South Elizabeth Street, Chicago, IL": [
   -87.656049083008,
   41.789545210126
+ ],
+ "6401 S Woodlawn Ave, Chicago, IL": [
+  -87.596081798682,
+  41.778653761058
  ],
  "6815 N Sheridan, Chicago, IL": [
   -87.660894684568,
@@ -343,6 +455,10 @@
   -87.713917825617,
   41.894324416121
  ],
+ "7215 S. Union Avenue, Chicago, IL": [
+  -87.641416089351,
+  41.7631289353
+ ],
  "7353 S Indiana Ave, Chicago, IL": [
   -87.619905604503,
   41.761003575413
@@ -351,9 +467,17 @@
   -87.619905604503,
   41.761003575413
  ],
+ "746 North Trumbull Avenue, Chicago, IL": [
+  -87.71270344,
+  41.894525723827
+ ],
  "758 E. 111th St., Chicago, IL": [
   -87.604948029995,
   41.692885220957
+ ],
+ "7621 S. Cottage Grove Avenue, Chicago, IL": [
+  -87.605257247085,
+  41.756352688136
  ],
  "814 W 69th St, Chicago, IL": [
   -87.64473768959,
@@ -363,9 +487,17 @@
   -87.64473768959,
   41.768891528551
  ],
+ "826 W. 18th Street, Chicago, IL": [
+  -87.647704865008,
+  41.858131175545
+ ],
  "920 S. Campbell Avenue, Chicago, IL": [
   -87.688635179758,
   41.86971641829
+ ],
+ "920 West Diversey Parkway, Chicago, IL": [
+  -87.652235367937,
+  41.932722204357
  ],
  "9200-9335 Hunter Drive, Orland Hills, 60487": [
   -87.846427499537,
