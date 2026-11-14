@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-11-13T12:31:51.122734-06:00",
+ "generated_at": "2026-11-13T21:15:53.265444-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_success_at": "2026-11-13T21:15:53.265444-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_success_at": "2026-11-13T21:15:53.265444-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_success_at": "2026-11-13T21:15:53.265444-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_success_at": "2026-11-13T21:15:53.265444-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_success_at": "2026-11-13T21:15:53.265444-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_success_at": "2026-11-13T21:15:53.265444-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_success_at": "2026-11-13T21:15:53.265444-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_success_at": "2026-11-13T21:15:53.265444-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-13T12:31:51.122734-06:00",
+   "last_success_at": "2026-11-13T21:15:53.265444-06:00",
    "status": "ok",
    "message": ""
   }
@@ -9441,7 +9441,7 @@
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0028305",
    "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
    "source_ref": "O2026-0028305",
-   "title": "Zoning Reclassification Map No. No. 8-E at 3500 S Giles Ave",
+   "title": "Zoning Reclassification Map No. No. 8-E at 3500 S Giles Ave - App No. A-9155",
    "attachments": [
     {
      "label": "3500 S Giles Ave. Zoning Change 091126",
@@ -9454,8 +9454,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A rezoning from a residential multi-unit district (RM5) and B1-3 to B2-2 mixed-use changes the zoning that governs whether homes can be built or kept on the site.",
-    "summary": "Ordinance introduced by Alderman Pat Dowell (3rd Ward) to rezone the area around 3500 South Giles Avenue from RM5 and B1-3 to B2-2, Neighborhood Mixed-Use District.",
+    "relevance_reason": "A rezoning from RM5 residential and B1-3 districts to B2-2 mixed-use changes the zoning that governs how many homes can be built on the site.",
+    "summary": "Ordinance sponsored by Alderman Pat Dowell (3rd Ward) to rezone an area at 3500 S Giles Ave from RM5 Residential Multi-Unit and B1-3 Neighborhood Shopping to B2-2 Neighborhood Mixed-Use District.",
     "categories": [
      {
       "id": "ahpaa",
@@ -9485,17 +9485,17 @@
     "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
-    "content_hash": "ee9f34ba1c223901",
+    "content_hash": "df3a8511496a654a",
     "overridden": false
    },
    "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
-   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+   "last_changed_at": "2026-11-13T21:15:53.265444-06:00"
   },
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027988",
    "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
    "source_ref": "O2026-0027988",
-   "title": "Zoning Reclassification Map No. 18-C at 1601-1817 E 71st St",
+   "title": "Zoning Reclassification Map No. 18-C at 1601-1817 E 71st St - App No. A-9154",
    "attachments": [
     {
      "label": "7th Ward Rezoning Ordinance - 71st Street",
@@ -9508,8 +9508,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A city-initiated-style rezoning of a commercial corridor to a Neighborhood Mixed-Use district, which allows residential uses and changes the rules governing housing development along 71st Street.",
-    "summary": "Ordinance sponsored by Alderman Gregory I. Mitchell (7th Ward) would rezone B3-2, B3-3 and C2-2 districts along 1601-1817 E. 71st Street on Map No. 18-C to B2-3, Neighborhood Mixed-Use District.",
+    "relevance_reason": "A city-sponsored rezoning of a commercial corridor to a Neighborhood Mixed-Use district changes the zoning rules that govern whether homes can be built there.",
+    "summary": "Ordinance sponsored by Alderman Gregory I. Mitchell (7th Ward) would rezone 1601-1817 E. 71st Street from B3-2, B3-3 and C2-2 commercial districts to B2-3 Neighborhood Mixed-Use District on Map No. 18-C.",
     "categories": [
      {
       "id": "ahpaa",
@@ -9540,17 +9540,17 @@
     "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "d1de0178fc6ebefc",
+    "content_hash": "e046e0e1f9b18762",
     "overridden": false
    },
    "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
-   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+   "last_changed_at": "2026-11-13T21:15:53.265444-06:00"
   },
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0026028",
    "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
    "source_ref": "O2026-0026028",
-   "title": "Zoning Reclassification Map No. 18-D at 7621 S Cottage Grove Ave - App No. TBD",
+   "title": "Zoning Reclassification Map No. 18-D at 7621 S Cottage Grove Ave - App No. A-9130",
    "attachments": [
     {
      "label": "w8 - 7621 S. Cottage Grove Avenue",
@@ -9563,8 +9563,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A rezoning from a commercial district to a single-unit residential district changes the permitted residential use of a site.",
-    "summary": "Ordinance sponsored by Alderperson Michelle Harris (8th Ward) would rezone the area at 7621 S. Cottage Grove Avenue from C2-2 Motor Vehicle-Related Commercial District to RS-3 Residential Single-Unit (Detached House) District.",
+    "relevance_reason": "A rezoning from a commercial district to a single-unit residential district changes what homes can be built on the site.",
+    "summary": "Ordinance sponsored by Alderperson Michelle Harris (8th Ward) would rezone the area at 7621 S. Cottage Grove Avenue from C2-2, Motor Vehicle-Related Commercial District, to RS-3, Residential Single-Unit (Detached House) District.",
     "categories": [
      {
       "id": "ahpaa",
@@ -9593,11 +9593,11 @@
     "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "b26f110bf2ab3252",
+    "content_hash": "8208e854ec1b7f71",
     "overridden": false
    },
    "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
-   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+   "last_changed_at": "2026-11-13T21:15:53.265444-06:00"
   },
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027581",
@@ -9656,7 +9656,7 @@
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027580",
    "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
    "source_ref": "O2026-0027580",
-   "title": "Zoning Reclassification Map No. 28-E at 1-7 E 111th St",
+   "title": "Zoning Reclassification Map No. 28-E at 1-7 E 111th St - App No. A-9148",
    "attachments": [
     {
      "label": "1 - 7 East 111th Street",
@@ -9669,8 +9669,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A downzoning from a business district to a single-unit residential district changes the type of housing permitted on the site.",
-    "summary": "Ordinance sponsored by Alderman Anthony Beale (9th Ward) would rezone the area at 1-7 East 111th Street on Map No. 28-E from B3-2 Community Shopping District to RS-2 Residential Single-Unit (Detached House) District.",
+    "relevance_reason": "A rezoning from a commercial shopping district to a single-unit detached house residential district changes the housing that can be built at the site.",
+    "summary": "Ordinance introduced by Alderman Anthony Beale (9th Ward) would rezone the area at 1-7 East 111th Street from B3-2 Community Shopping District to RS-2 Residential Single-Unit (Detached House) District.",
     "categories": [
      {
       "id": "ahpaa",
@@ -9699,17 +9699,17 @@
     "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "7da8fccefd96b345",
+    "content_hash": "19a7dd48b2ee9938",
     "overridden": false
    },
    "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
-   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+   "last_changed_at": "2026-11-13T21:15:53.265444-06:00"
   },
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027582",
    "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
    "source_ref": "O2026-0027582",
-   "title": "Zoning Reclassification Map No. 24-E at 520 E 103rd St",
+   "title": "Zoning Reclassification Map No. 24-E at 520 E 103rd St - App No. A-9151",
    "attachments": [
     {
      "label": "520 E 103rd Street",
@@ -9722,8 +9722,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "The ordinance rezones a commercial B3-2 parcel to RS-2 residential single-unit district, changing what can be built on the site.",
-    "summary": "Ordinance sponsored by Alderman Anthony Beale (9th Ward) would rezone the area at 520 East 103rd Street from B3-2 Community Shopping District to RS-2 Residential Single-Unit (Detached House) District on Map No. 24-E.",
+    "relevance_reason": "A rezoning from a commercial shopping district to a single-unit residential district changes the land use at the site to detached-house residential.",
+    "summary": "Ordinance sponsored by Ald. Anthony Beale (9th Ward) would rezone the area at 520 East 103rd Street on Map No. 24-E from B3-2 Community Shopping District to RS-2 Residential Single-Unit (Detached House) District.",
     "categories": [
      {
       "id": "ahpaa",
@@ -9752,17 +9752,17 @@
     "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "8077cd573dbeac69",
+    "content_hash": "8c789a16edf54ff4",
     "overridden": false
    },
    "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
-   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+   "last_changed_at": "2026-11-13T21:15:53.265444-06:00"
   },
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029400",
    "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
    "source_ref": "O2026-0029400",
-   "title": "Zoning Reclassification Map No. 16-D at - 6401-6557 S Woodlawn Ave, 6400-6554 S Kimbark Ave, 6401-6557 S Kimbark Ave, 6420-6556 S Kenwood Ave, 6409-6557 S Kenwood Ave, 6400-6538 S Dorchester Ave",
+   "title": "Zoning Reclassification Map No. 16-D at - 6401-6557 S Woodlawn Ave, 6400-6554 S Kimbark Ave, 6401-6557 S Kimbark Ave, 6420-6556 S Kenwood Ave, 6409-6557 S Kenwood Ave, 6400-6538 S Dorchester Ave - App No. A-9158",
    "attachments": [
     {
      "label": "6401-6557 S. Woodlawn - signed",
@@ -9775,8 +9775,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A rezoning of multiple residential blocks in Woodlawn to RM-5 changes the allowed housing types and density, including in areas currently zoned for single-unit houses.",
-    "summary": "Ordinance sponsored by Alderwoman Jeanette B. Taylor (20th Ward) would rezone RS-2, RS-3, RT-4 and RM-5 areas on Map No. 16-D, along Woodlawn, Kimbark, Kenwood and Dorchester Avenues near East 64th Street, to RM-5 Residential Multi-Unit District.",
+    "relevance_reason": "A multi-block rezoning of residential districts, including single-unit zones, to RM-5 multi-unit would change allowable housing density.",
+    "summary": "Ordinance sponsored by Ald. Jeanette B. Taylor (20th Ward) would rezone an area of RS-2, RS-3, RT-4 and RM-5 residential districts near East 64th Street, South Woodlawn, Kimbark, Kenwood and Dorchester Avenues to RM-5 Residential Multi-Unit District.",
     "categories": [
      {
       "id": "ahpaa",
@@ -9785,7 +9785,7 @@
      }
     ],
     "geography": {
-     "address": "6401-6557 S Woodlawn Ave",
+     "address": "6401-6557 S. Woodlawn Avenue",
      "ward": 20,
      "community_area": "Woodlawn"
     },
@@ -9808,17 +9808,17 @@
     "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
-    "content_hash": "53fbfa213649ab63",
+    "content_hash": "9f8f8b74991fffb6",
     "overridden": false
    },
    "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
-   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+   "last_changed_at": "2026-11-13T21:15:53.265444-06:00"
   },
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027965",
    "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
    "source_ref": "O2026-0027965",
-   "title": "Zoning Reclassification Map No. 2-K at 4354 W Lexington St",
+   "title": "Zoning Reclassification Map No. 2-K at 4354 W Lexington St - App No. A-9152",
    "attachments": [
     {
      "label": "Common Address 4354 W. Lexington",
@@ -9831,8 +9831,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A residential rezoning from single-unit detached to two-flat/townhouse/multi-unit district could change how many homes can be built on the site.",
-    "summary": "Ordinance sponsored by Alderwoman Monique L. Scott (24th Ward) would rezone the area at 4354 W. Lexington from RS-3 Residential Single-Unit (Detached House) to RT-4 Residential Two-Flat, Townhouse and Multi-Unit District.",
+    "relevance_reason": "A residential rezoning from single-unit detached to two-flat/townhouse/multi-unit district changes how many homes can be built on the site.",
+    "summary": "Ordinance sponsored by Alderwoman Monique L. Scott (24th Ward) would rezone 4354 W. Lexington from RS-3 Residential Single-Unit (Detached House) to RT-4 Residential Two-Flat, Townhouse and Multi-Unit District.",
     "categories": [
      {
       "id": "ahpaa",
@@ -9861,17 +9861,17 @@
     "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "d014f9218aa04781",
+    "content_hash": "668feddd48e69d23",
     "overridden": false
    },
    "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
-   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+   "last_changed_at": "2026-11-13T21:15:53.265444-06:00"
   },
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027963",
    "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
    "source_ref": "O2026-0027963",
-   "title": "Zoning Reclassification Map No. 2-K at 4306 W Lexington St",
+   "title": "Zoning Reclassification Map No. 2-K at 4306 W Lexington St - App No. A-9153",
    "attachments": [
     {
      "label": "Common Address 4306 W. Lexington",
@@ -9914,17 +9914,17 @@
     "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "a2088c6b7de44b8b",
+    "content_hash": "54fd97197ce99fea",
     "overridden": false
    },
    "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
-   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+   "last_changed_at": "2026-11-13T21:15:53.265444-06:00"
   },
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0026237",
    "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
    "source_ref": "O2026-0026237",
-   "title": "Designation of segment of W Lawrence Ave right-of-way on Map Nos. 11-H, 11-G, 13-H, and 13-G as Transient Oriented Development (TOD) Street and amendment of Municipal Code Section 17-3-0602-F designating portion of W Lawrence Ave as Transient Oriented Development (TOD) Street",
+   "title": "Designation of segment of W Lawrence Ave right-of-way on Map Nos. 11-H, 11-G, 13-H, and 13-G as Transient Oriented Development (TOD) Street and amendment of Municipal Code Section 17-3-0602-F designating portion of W Lawrence Ave as Transient Oriented Development (TOD) Street - A-9136",
    "attachments": [
     {
      "label": "TOD Street -  Lawrence Avenue - Western to Clark",
@@ -9937,8 +9937,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "TOD street designation changes zoning rules (such as parking and density allowances) for residential and other development along W Lawrence Ave near transit.",
-    "summary": "Ordinance sponsored by Ald. Matthew J. Martin (47th Ward) would designate W Lawrence Ave from N Clark St to N Western Ave (1500–2400 W) as a Transit Oriented Development (TOD) Street and amend Municipal Code Section 17-3-0602-F accordingly.",
+    "relevance_reason": "Designating a stretch of W Lawrence Ave as a TOD street changes zoning rules that govern density and parking for residential and mixed-use development along the corridor.",
+    "summary": "Ordinance sponsored by Alderman Matthew J. Martin (47th Ward) would designate W Lawrence Avenue between N Clark Street and N Western Avenue (1500W to 2400W) as a Transit Oriented Development Street, amending Municipal Code Section 17-3-0602-F.",
     "categories": [
      {
       "id": "ahpaa",
@@ -9965,17 +9965,17 @@
     "important": null,
     "source_quality": "full",
     "model": "claude-sonnet-5-5",
-    "content_hash": "18a63a8393c45011",
+    "content_hash": "35ac9324b9503440",
     "overridden": false
    },
    "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
-   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+   "last_changed_at": "2026-11-13T21:15:53.265444-06:00"
   },
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0025471",
    "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
    "source_ref": "O2026-0025471",
-   "title": "Zoning Reclassification Map No. 12-J at 4970 S Archer Ave",
+   "title": "Zoning Reclassification Map No. 12-J at 4970 S Archer Ave - App No. A-9125",
    "attachments": [
     {
      "label": "w14 - o25471",
@@ -9988,8 +9988,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A rezoning from a motor vehicle-related commercial district to a single-unit residential district changes what housing can be built on the site.",
-    "summary": "Ordinance introduced by Alderwoman Jeylu B. Gutierrez (14th Ward) to rezone the area at 4970 S. Archer Avenue from C2-1, Motor Vehicle-Related Commercial District, to RS-3, Residential Single-Unit (Detached House) District.",
+    "relevance_reason": "A rezoning from a motor vehicle-related commercial district to a single-unit residential district changes the allowed residential use of the site.",
+    "summary": "Ordinance sponsored by Alderwoman Jeylu B. Gutierrez (14th Ward) would rezone the area at 4970 S. Archer Avenue from C2-1 Motor Vehicle-Related Commercial District to RS-3 Residential Single-Unit (Detached House) District.",
     "categories": [
      {
       "id": "ahpaa",
@@ -10018,11 +10018,11 @@
     "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "43aa29ec551acdf1",
+    "content_hash": "fb7336cd4fa8acaa",
     "overridden": false
    },
    "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
-   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+   "last_changed_at": "2026-11-13T21:15:53.265444-06:00"
   },
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029378",
@@ -11703,7 +11703,7 @@
      }
     ],
     "geography": {
-     "address": "2142 W 18th Place",
+     "address": "2142 W 18th Pl",
      "ward": 25,
      "community_area": "Lower West Side"
     },
@@ -12321,6 +12321,122 @@
    "last_changed_at": "2026-11-09T15:26:35.571983-06:00"
   },
   {
+   "id": "cpc:2026-11-19#2800-n-sheridan-rd",
+   "meeting_id": "cpc:2026-11-19",
+   "source_ref": "2800 N. Sheridan Rd.",
+   "title": "A proposed amendment to Planned Development No. 1019 submitted by 2800 Sheridan Land LLC, for the redevelopment of the property generally located at 2800 N. Sheridan Road . The properties that are the subject of the application are 2800-2844 N. Sheridan Road/331-359 W. Surf Street/2824-2844 N. Commonwealth Avenue and 2819-2937 N. Commonwealth Avenue/301-323 W. Oakdale Avenue/2820-2936 N. Lake Shore Drive and 400-418 W. Diversey Parkway. The Applicant proposes to remove Sub-Area 3 from the existing Planned Development No. 1019.",
+   "attachments": [
+    {
+     "label": "PD Amendment Application",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/2800_N_Sheridan_Rd_PD1019_As_Filed_Application_No_23118_FULL.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": "2800 N. Sheridan Rd.",
+    "ward": 44,
+    "community_area": "Lake View"
+   },
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The amendment to a residential planned development along Sheridan Road and Commonwealth Avenue would change the development's boundaries by removing a sub-area, which bears on zoning and housing supply.",
+    "summary": "2800 Sheridan Land LLC proposes to amend Planned Development No. 1019 for the property at 2800 N. Sheridan Road. The amendment would remove Sub-Area 3 from the existing planned development.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "body",
+      "detail": "Chicago Plan Commission"
+     }
+    ],
+    "geography": {
+     "address": "2800 N. Sheridan Rd.",
+     "ward": 44,
+     "community_area": "Lake View"
+    },
+    "entities": [
+     "2800 Sheridan Land LLC"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [
+     "Planned Development No. 1019"
+    ],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "partial",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "4b8c7334a393e9f4",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
+   "last_changed_at": "2026-11-02T14:47:05.111442-06:00"
+  },
+  {
+   "id": "cpc:2026-11-19#2800-n-sheridan-rd-2",
+   "meeting_id": "cpc:2026-11-19",
+   "source_ref": "2800 N. Sheridan Rd.",
+   "title": "A proposed Lakefront Protection Ordinance Application No. 805 and a proposed Residential Business Planned Development Application submitted by 2800 Sheridan Land LLC, for the redevelopment of the property generally located at 2800 N. Sheridan Road. The properties that are the subject of these applications are 2800-2828 N. Sheridan Road/400-418 W. Diversey Parkway and 2714-2750 N. Lakeview Avenue/401-419 W. Diversey Parkway. The new Planned Development is comprised of two sub-areas in abutting Wards with the property generally located at 2800 N. Sheridan Road to become Sub-Area A of the new Planned Development and incorporating the historic Elks National Memorial into the new Planned Development as Sub-Area B (43rd Ward). Sub-Area A is proposed to be improved with a 28-story mixed-use residential building containing 10,000 square feet of retail space, 50,000 square feet of fitness club space, 301 accessory car parking spaces and 345 bike parking spaces. The maximum number of dwelling units will be 345 and a maximum FAR of 5.0.",
+   "attachments": [
+    {
+     "label": "LPO Application",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/2800_N_Sheridan_Rd_LF_No_805_As-Filed_Application_FULL.pdf"
+    },
+    {
+     "label": "PD Application",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/2800_N_Sheridan_Rd_PD_As_Filed_Application_No_23117_FULL.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": "2800 N. Sheridan Rd.",
+    "ward": 44,
+    "community_area": null
+   },
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A Residential Business Planned Development would allow a 28-story building with up to 345 dwelling units on the lakefront.",
+    "summary": "2800 Sheridan Land LLC seeks Lakefront Protection Ordinance approval and a Residential Business Planned Development for 2800 N. Sheridan Road. Sub-Area A would have a 28-story mixed-use building with up to 345 dwelling units, retail and a fitness club; Sub-Area B incorporates the Elks National Memorial.",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "body",
+      "detail": "Chicago Plan Commission"
+     }
+    ],
+    "geography": {
+     "address": "2800 N. Sheridan Rd.",
+     "ward": 44,
+     "community_area": "Lake View"
+    },
+    "entities": [
+     "2800 Sheridan Land LLC"
+    ],
+    "figures": {
+     "units": 345,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": "Residential Business Planned Development",
+    "important": null,
+    "source_quality": "partial",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "59bc8984a10ce7c1",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
+   "last_changed_at": "2026-11-02T14:47:05.111442-06:00"
+  },
+  {
    "id": "cpc:2026-11-19#370-e-garfield-blvd",
    "meeting_id": "cpc:2026-11-19",
    "source_ref": "370 E. Garfield Blvd.",
@@ -12550,122 +12666,6 @@
    },
    "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
    "last_changed_at": "2026-11-05T12:45:34.093154-06:00"
-  },
-  {
-   "id": "cpc:2026-11-19#2800-n-sheridan-rd",
-   "meeting_id": "cpc:2026-11-19",
-   "source_ref": "2800 N. Sheridan Rd.",
-   "title": "A proposed amendment to Planned Development No. 1019 submitted by 2800 Sheridan Land LLC, for the redevelopment of the property generally located at 2800 N. Sheridan Road . The properties that are the subject of the application are 2800-2844 N. Sheridan Road/331-359 W. Surf Street/2824-2844 N. Commonwealth Avenue and 2819-2937 N. Commonwealth Avenue/301-323 W. Oakdale Avenue/2820-2936 N. Lake Shore Drive and 400-418 W. Diversey Parkway. The Applicant proposes to remove Sub-Area 3 from the existing Planned Development No. 1019.",
-   "attachments": [
-    {
-     "label": "PD Amendment Application",
-     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/2800_N_Sheridan_Rd_PD1019_As_Filed_Application_No_23118_FULL.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "structured",
-   "geography_hint": {
-    "address": "2800 N. Sheridan Rd.",
-    "ward": 44,
-    "community_area": "Lake View"
-   },
-   "enrichment": {
-    "status": "ok",
-    "housing_relevant": true,
-    "relevance_reason": "The amendment to a residential planned development along Sheridan Road and Commonwealth Avenue would change the development's boundaries by removing a sub-area, which bears on zoning and housing supply.",
-    "summary": "2800 Sheridan Land LLC proposes to amend Planned Development No. 1019 for the property at 2800 N. Sheridan Road. The amendment would remove Sub-Area 3 from the existing planned development.",
-    "categories": [
-     {
-      "id": "ahpaa",
-      "via": "body",
-      "detail": "Chicago Plan Commission"
-     }
-    ],
-    "geography": {
-     "address": "2800 N. Sheridan Rd.",
-     "ward": 44,
-     "community_area": "Lake View"
-    },
-    "entities": [
-     "2800 Sheridan Land LLC"
-    ],
-    "figures": {
-     "units": null,
-     "affordable_units": null
-    },
-    "amount": null,
-    "amount_kind": null,
-    "zoning_from": [
-     "Planned Development No. 1019"
-    ],
-    "zoning_to": null,
-    "important": null,
-    "source_quality": "partial",
-    "model": "claude-sonnet-5-5",
-    "content_hash": "4b8c7334a393e9f4",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
-   "last_changed_at": "2026-11-02T14:47:05.111442-06:00"
-  },
-  {
-   "id": "cpc:2026-11-19#2800-n-sheridan-rd-2",
-   "meeting_id": "cpc:2026-11-19",
-   "source_ref": "2800 N. Sheridan Rd.",
-   "title": "A proposed Lakefront Protection Ordinance Application No. 805 and a proposed Residential Business Planned Development Application submitted by 2800 Sheridan Land LLC, for the redevelopment of the property generally located at 2800 N. Sheridan Road. The properties that are the subject of these applications are 2800-2828 N. Sheridan Road/400-418 W. Diversey Parkway and 2714-2750 N. Lakeview Avenue/401-419 W. Diversey Parkway. The new Planned Development is comprised of two sub-areas in abutting Wards with the property generally located at 2800 N. Sheridan Road to become Sub-Area A of the new Planned Development and incorporating the historic Elks National Memorial into the new Planned Development as Sub-Area B (43rd Ward). Sub-Area A is proposed to be improved with a 28-story mixed-use residential building containing 10,000 square feet of retail space, 50,000 square feet of fitness club space, 301 accessory car parking spaces and 345 bike parking spaces. The maximum number of dwelling units will be 345 and a maximum FAR of 5.0.",
-   "attachments": [
-    {
-     "label": "LPO Application",
-     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/2800_N_Sheridan_Rd_LF_No_805_As-Filed_Application_FULL.pdf"
-    },
-    {
-     "label": "PD Application",
-     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/2800_N_Sheridan_Rd_PD_As_Filed_Application_No_23117_FULL.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "structured",
-   "geography_hint": {
-    "address": "2800 N. Sheridan Rd.",
-    "ward": 44,
-    "community_area": null
-   },
-   "enrichment": {
-    "status": "ok",
-    "housing_relevant": true,
-    "relevance_reason": "A Residential Business Planned Development would allow a 28-story building with up to 345 dwelling units on the lakefront.",
-    "summary": "2800 Sheridan Land LLC seeks Lakefront Protection Ordinance approval and a Residential Business Planned Development for 2800 N. Sheridan Road. Sub-Area A would have a 28-story mixed-use building with up to 345 dwelling units, retail and a fitness club; Sub-Area B incorporates the Elks National Memorial.",
-    "categories": [
-     {
-      "id": "ahpaa",
-      "via": "body",
-      "detail": "Chicago Plan Commission"
-     }
-    ],
-    "geography": {
-     "address": "2800 N. Sheridan Rd.",
-     "ward": 44,
-     "community_area": "Lake View"
-    },
-    "entities": [
-     "2800 Sheridan Land LLC"
-    ],
-    "figures": {
-     "units": 345,
-     "affordable_units": null
-    },
-    "amount": null,
-    "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": "Residential Business Planned Development",
-    "important": null,
-    "source_quality": "partial",
-    "model": "claude-sonnet-5-5",
-    "content_hash": "59bc8984a10ce7c1",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
-   "last_changed_at": "2026-11-02T14:47:05.111442-06:00"
   },
   {
    "id": "cpc:2026-11-19#6124-6144-n-sheridan-rd",
@@ -13820,14 +13820,64 @@
    },
    "first_seen_at": "2026-11-12T12:56:29.415744-06:00",
    "last_changed_at": "2026-11-12T12:56:29.415744-06:00"
+  },
+  {
+   "id": "watch:clihtf-landlord:72b554eb0a37",
+   "source_id": "watch",
+   "body": "CLIHTF",
+   "kind": "page_change",
+   "title": "CLIHTF landlord notices page updated",
+   "url": "https://clihtf.org/for-owners/landlord-notices/",
+   "detail": "Important November 2026 Notice\nAs we approach the end of 2026 and prepare for the new year, the Chicago Low-Income Housing Trust Fund (CLIHTF) would like to share several important program updates and reminders. Please take a moment to review the following information regarding payment procedures, policy changes, rent increases, and compliance requirements to help ensure a smooth transition into 2027.\n1.) GETTING PAID BY TIPALTI: From November 16, the one-time code you use to sign in to Tipalti may arrive in WhatsApp instead of by text message. It will come from a Tipalti phone number and show Tipalti as the sender. How you sign in doesn't change. Only enter the code on the Tipalti sign-in page, and don't share it with anyone, including anyone who says they're from Tipalti.\n2.) SRO units and apartments with more than two bedrooms are now exempt from CLIHTF’s Attrition Policy.\n3.) If you received approval of a 2027 rent increase, remember the new rent does not take effect until each lease renews sometime in 2027. If you don’t know whether or not your 2027 Annual Rent Increase request was approved, please contact your Program Specialist.\n4.) Strive to provide updated Exhibit I/1-I-2 Tenant Income Verification forms with proof of income documentation (POI) sixty (60) days before lease renewal. Also please remember we give staff thirty (30) days to review new leases and POI so submitting early is the best way to get paid by CLIHTF on time!\n5.) Landlords in compliance with CLIHTF requirements are eligible for first quarter 2027 payments under the 2026 Rental Subsidy Agreement (RSA). We begin accepting payment requests on December 1, 2026.\nThe earliest we can pay first quarter 2027 subsidies on properties for which all 2026 inspections, leases and POI is current is January 8, 2027.\nAs we enter this season of giving thanks, please know we are thankful for you working with us to provide affordable housing in Chicago to the working poor as well as families exiting homelessne",
+   "new_link": false,
+   "posted_at": "2026-11-13T21:15:53.265444-06:00",
+   "deadline": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The notice sets payment, attrition policy, rent increase, and compliance rules for landlords receiving Chicago Low-Income Housing Trust Fund rental subsidies for affordable units.",
+    "summary": "CLIHTF updated its landlord notices page with November 2026 program reminders: Tipalti payment sign-in codes may arrive via WhatsApp, SRO and 3+ bedroom units are exempt from the Attrition Policy, and first quarter 2027 subsidy requests open December 1, 2026.",
+    "categories": [
+     {
+      "id": "social-housing",
+      "via": "body",
+      "detail": "CLIHTF"
+     },
+     {
+      "id": "housing-agenda",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Chicago Low-Income Housing Trust Fund",
+     "CLIHTF",
+     "Tipalti"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "bb64e33244250200",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-13T21:15:53.265444-06:00",
+   "last_changed_at": "2026-11-13T21:15:53.265444-06:00"
   }
  ],
  "events": [
-  {
-   "type": "meeting_new",
-   "ref_id": "elms:5C971227-8CD4-F111-A05C-001DD80FDA55",
-   "at": "2026-10-30T16:30:42.099549-05:00"
-  },
   {
    "type": "agenda_posted",
    "ref_id": "cpc:2026-11-19",
@@ -14257,6 +14307,11 @@
    "type": "meeting_new",
    "ref_id": "elms:F8691F79-75DF-F111-84EA-001DD80EFCF5",
    "at": "2026-11-13T12:31:51.122734-06:00"
+  },
+  {
+   "type": "notice_new",
+   "ref_id": "watch:clihtf-landlord:72b554eb0a37",
+   "at": "2026-11-13T21:15:53.265444-06:00"
   }
  ]
 }

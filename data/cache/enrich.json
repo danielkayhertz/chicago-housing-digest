@@ -4002,7 +4002,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "43aa29ec551acdf1",
+  "content_hash": "fb7336cd4fa8acaa",
   "entities": [
    "Jeylu B. Gutierrez"
   ],
@@ -4019,10 +4019,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A rezoning from a motor vehicle-related commercial district to a single-unit residential district changes what housing can be built on the site.",
+  "relevance_reason": "A rezoning from a motor vehicle-related commercial district to a single-unit residential district changes the allowed residential use of the site.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ordinance introduced by Alderwoman Jeylu B. Gutierrez (14th Ward) to rezone the area at 4970 S. Archer Avenue from C2-1, Motor Vehicle-Related Commercial District, to RS-3, Residential Single-Unit (Detached House) District.",
+  "summary": "Ordinance sponsored by Alderwoman Jeylu B. Gutierrez (14th Ward) would rezone the area at 4970 S. Archer Avenue from C2-1 Motor Vehicle-Related Commercial District to RS-3 Residential Single-Unit (Detached House) District.",
   "zoning_from": [
    "C2-1"
   ],
@@ -4038,7 +4038,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "b26f110bf2ab3252",
+  "content_hash": "8208e854ec1b7f71",
   "entities": [
    "Michelle Harris"
   ],
@@ -4055,10 +4055,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A rezoning from a commercial district to a single-unit residential district changes the permitted residential use of a site.",
+  "relevance_reason": "A rezoning from a commercial district to a single-unit residential district changes what homes can be built on the site.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ordinance sponsored by Alderperson Michelle Harris (8th Ward) would rezone the area at 7621 S. Cottage Grove Avenue from C2-2 Motor Vehicle-Related Commercial District to RS-3 Residential Single-Unit (Detached House) District.",
+  "summary": "Ordinance sponsored by Alderperson Michelle Harris (8th Ward) would rezone the area at 7621 S. Cottage Grove Avenue from C2-2, Motor Vehicle-Related Commercial District, to RS-3, Residential Single-Unit (Detached House) District.",
   "zoning_from": [
    "C2-2"
   ],
@@ -4074,7 +4074,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "18a63a8393c45011",
+  "content_hash": "35ac9324b9503440",
   "entities": [
    "Matthew J. Martin"
   ],
@@ -4091,10 +4091,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "TOD street designation changes zoning rules (such as parking and density allowances) for residential and other development along W Lawrence Ave near transit.",
+  "relevance_reason": "Designating a stretch of W Lawrence Ave as a TOD street changes zoning rules that govern density and parking for residential and mixed-use development along the corridor.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "Ordinance sponsored by Ald. Matthew J. Martin (47th Ward) would designate W Lawrence Ave from N Clark St to N Western Ave (1500\u20132400 W) as a Transit Oriented Development (TOD) Street and amend Municipal Code Section 17-3-0602-F accordingly.",
+  "summary": "Ordinance sponsored by Alderman Matthew J. Martin (47th Ward) would designate W Lawrence Avenue between N Clark Street and N Western Avenue (1500W to 2400W) as a Transit Oriented Development Street, amending Municipal Code Section 17-3-0602-F.",
   "zoning_from": [],
   "zoning_to": null
  },
@@ -4149,7 +4149,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "7da8fccefd96b345",
+  "content_hash": "19a7dd48b2ee9938",
   "entities": [
    "Anthony Beale"
   ],
@@ -4166,10 +4166,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A downzoning from a business district to a single-unit residential district changes the type of housing permitted on the site.",
+  "relevance_reason": "A rezoning from a commercial shopping district to a single-unit detached house residential district changes the housing that can be built at the site.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ordinance sponsored by Alderman Anthony Beale (9th Ward) would rezone the area at 1-7 East 111th Street on Map No. 28-E from B3-2 Community Shopping District to RS-2 Residential Single-Unit (Detached House) District.",
+  "summary": "Ordinance introduced by Alderman Anthony Beale (9th Ward) would rezone the area at 1-7 East 111th Street from B3-2 Community Shopping District to RS-2 Residential Single-Unit (Detached House) District.",
   "zoning_from": [
    "B3-2"
   ],
@@ -4221,7 +4221,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "8077cd573dbeac69",
+  "content_hash": "8c789a16edf54ff4",
   "entities": [
    "Anthony Beale"
   ],
@@ -4238,10 +4238,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The ordinance rezones a commercial B3-2 parcel to RS-2 residential single-unit district, changing what can be built on the site.",
+  "relevance_reason": "A rezoning from a commercial shopping district to a single-unit residential district changes the land use at the site to detached-house residential.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ordinance sponsored by Alderman Anthony Beale (9th Ward) would rezone the area at 520 East 103rd Street from B3-2 Community Shopping District to RS-2 Residential Single-Unit (Detached House) District on Map No. 24-E.",
+  "summary": "Ordinance sponsored by Ald. Anthony Beale (9th Ward) would rezone the area at 520 East 103rd Street on Map No. 24-E from B3-2 Community Shopping District to RS-2 Residential Single-Unit (Detached House) District.",
   "zoning_from": [
    "B3-2"
   ],
@@ -4257,7 +4257,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "a2088c6b7de44b8b",
+  "content_hash": "54fd97197ce99fea",
   "entities": [
    "Monique L. Scott"
   ],
@@ -4293,7 +4293,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "d014f9218aa04781",
+  "content_hash": "668feddd48e69d23",
   "entities": [
    "Monique L. Scott"
   ],
@@ -4310,10 +4310,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A residential rezoning from single-unit detached to two-flat/townhouse/multi-unit district could change how many homes can be built on the site.",
+  "relevance_reason": "A residential rezoning from single-unit detached to two-flat/townhouse/multi-unit district changes how many homes can be built on the site.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ordinance sponsored by Alderwoman Monique L. Scott (24th Ward) would rezone the area at 4354 W. Lexington from RS-3 Residential Single-Unit (Detached House) to RT-4 Residential Two-Flat, Townhouse and Multi-Unit District.",
+  "summary": "Ordinance sponsored by Alderwoman Monique L. Scott (24th Ward) would rezone 4354 W. Lexington from RS-3 Residential Single-Unit (Detached House) to RT-4 Residential Two-Flat, Townhouse and Multi-Unit District.",
   "zoning_from": [
    "RS-3"
   ],
@@ -4329,7 +4329,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "d1de0178fc6ebefc",
+  "content_hash": "e046e0e1f9b18762",
   "entities": [
    "Gregory I. Mitchell"
   ],
@@ -4346,10 +4346,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A city-initiated-style rezoning of a commercial corridor to a Neighborhood Mixed-Use district, which allows residential uses and changes the rules governing housing development along 71st Street.",
+  "relevance_reason": "A city-sponsored rezoning of a commercial corridor to a Neighborhood Mixed-Use district changes the zoning rules that govern whether homes can be built there.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ordinance sponsored by Alderman Gregory I. Mitchell (7th Ward) would rezone B3-2, B3-3 and C2-2 districts along 1601-1817 E. 71st Street on Map No. 18-C to B2-3, Neighborhood Mixed-Use District.",
+  "summary": "Ordinance sponsored by Alderman Gregory I. Mitchell (7th Ward) would rezone 1601-1817 E. 71st Street from B3-2, B3-3 and C2-2 commercial districts to B2-3 Neighborhood Mixed-Use District on Map No. 18-C.",
   "zoning_from": [
    "B3-2",
    "B3-3",
@@ -4367,7 +4367,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "ee9f34ba1c223901",
+  "content_hash": "df3a8511496a654a",
   "entities": [
    "Pat Dowell"
   ],
@@ -4384,10 +4384,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A rezoning from a residential multi-unit district (RM5) and B1-3 to B2-2 mixed-use changes the zoning that governs whether homes can be built or kept on the site.",
+  "relevance_reason": "A rezoning from RM5 residential and B1-3 districts to B2-2 mixed-use changes the zoning that governs how many homes can be built on the site.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "Ordinance introduced by Alderman Pat Dowell (3rd Ward) to rezone the area around 3500 South Giles Avenue from RM5 and B1-3 to B2-2, Neighborhood Mixed-Use District.",
+  "summary": "Ordinance sponsored by Alderman Pat Dowell (3rd Ward) to rezone an area at 3500 S Giles Ave from RM5 Residential Multi-Unit and B1-3 Neighborhood Shopping to B2-2 Neighborhood Mixed-Use District.",
   "zoning_from": [
    "RM5",
    "B1-3"
@@ -4439,7 +4439,7 @@
    "units": 5
   },
   "geography": {
-   "address": "2142 W 18th Place",
+   "address": "2142 W 18th Pl",
    "community_area": "Lower West Side",
    "ward": 25
   },
@@ -5049,7 +5049,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "53fbfa213649ab63",
+  "content_hash": "9f8f8b74991fffb6",
   "entities": [
    "Jeanette B. Taylor"
   ],
@@ -5058,7 +5058,7 @@
    "units": null
   },
   "geography": {
-   "address": "6401-6557 S Woodlawn Ave",
+   "address": "6401-6557 S. Woodlawn Avenue",
    "community_area": "Woodlawn",
    "ward": 20
   },
@@ -5066,10 +5066,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A rezoning of multiple residential blocks in Woodlawn to RM-5 changes the allowed housing types and density, including in areas currently zoned for single-unit houses.",
+  "relevance_reason": "A multi-block rezoning of residential districts, including single-unit zones, to RM-5 multi-unit would change allowable housing density.",
   "source_quality": "full",
   "status": "ok",
-  "summary": "Ordinance sponsored by Alderwoman Jeanette B. Taylor (20th Ward) would rezone RS-2, RS-3, RT-4 and RM-5 areas on Map No. 16-D, along Woodlawn, Kimbark, Kenwood and Dorchester Avenues near East 64th Street, to RM-5 Residential Multi-Unit District.",
+  "summary": "Ordinance sponsored by Ald. Jeanette B. Taylor (20th Ward) would rezone an area of RS-2, RS-3, RT-4 and RM-5 residential districts near East 64th Street, South Woodlawn, Kimbark, Kenwood and Dorchester Avenues to RM-5 Residential Multi-Unit District.",
   "zoning_from": [
    "RS-2",
    "RS-3",
@@ -7467,6 +7467,47 @@
   "source_quality": "partial",
   "status": "ok",
   "summary": "The CHA Real Estate Operations Development Committee would authorize approval of the Chicago Housing Authority's Admissions and Continued Occupancy Policy and Residential Lease Agreement, effective November 17, 2026.",
+  "zoning_from": [],
+  "zoning_to": null
+ },
+ "watch:clihtf-landlord:72b554eb0a37": {
+  "amount": null,
+  "amount_kind": null,
+  "categories": [
+   {
+    "detail": "CLIHTF",
+    "id": "social-housing",
+    "via": "body"
+   },
+   {
+    "detail": "",
+    "id": "housing-agenda",
+    "via": "model"
+   }
+  ],
+  "content_hash": "bb64e33244250200",
+  "entities": [
+   "Chicago Low-Income Housing Trust Fund",
+   "CLIHTF",
+   "Tipalti"
+  ],
+  "figures": {
+   "affordable_units": null,
+   "units": null
+  },
+  "geography": {
+   "address": null,
+   "community_area": null,
+   "ward": null
+  },
+  "housing_relevant": true,
+  "important": null,
+  "model": "claude-sonnet-5-5",
+  "overridden": false,
+  "relevance_reason": "The notice sets payment, attrition policy, rent increase, and compliance rules for landlords receiving Chicago Low-Income Housing Trust Fund rental subsidies for affordable units.",
+  "source_quality": "none",
+  "status": "ok",
+  "summary": "CLIHTF updated its landlord notices page with November 2026 program reminders: Tipalti payment sign-in codes may arrive via WhatsApp, SRO and 3+ bedroom units are exempt from the Attrition Policy, and first quarter 2027 subsidy requests open December 1, 2026.",
   "zoning_from": [],
   "zoning_to": null
  },
