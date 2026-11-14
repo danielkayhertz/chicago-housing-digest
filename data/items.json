@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-11-13T21:15:53.265444-06:00",
+ "generated_at": "2026-11-14T11:08:19.759995-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-13T21:15:53.265444-06:00",
+   "last_success_at": "2026-11-14T11:08:19.759995-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-13T21:15:53.265444-06:00",
+   "last_success_at": "2026-11-14T11:08:19.759995-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-13T21:15:53.265444-06:00",
+   "last_success_at": "2026-11-14T11:08:19.759995-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-13T21:15:53.265444-06:00",
+   "last_success_at": "2026-11-14T11:08:19.759995-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-13T21:15:53.265444-06:00",
+   "last_success_at": "2026-11-14T11:08:19.759995-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-13T21:15:53.265444-06:00",
+   "last_success_at": "2026-11-14T11:08:19.759995-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-13T21:15:53.265444-06:00",
+   "last_success_at": "2026-11-14T11:08:19.759995-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-13T21:15:53.265444-06:00",
+   "last_success_at": "2026-11-14T11:08:19.759995-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-13T21:15:53.265444-06:00",
+   "last_success_at": "2026-11-14T11:08:19.759995-06:00",
    "status": "ok",
    "message": ""
   }
@@ -13878,56 +13878,6 @@
   }
  ],
  "events": [
-  {
-   "type": "agenda_posted",
-   "ref_id": "cpc:2026-11-19",
-   "at": "2026-10-30T21:23:45.629620-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "cpc:2026-11-19#370-e-garfield-blvd",
-   "at": "2026-10-30T21:23:45.629620-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "cpc:2026-11-19#1200-s-dusable-lake-shore-dr",
-   "at": "2026-10-30T21:23:45.629620-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "cpc:2026-11-19#3857-w-111th-st",
-   "at": "2026-10-30T21:23:45.629620-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "cpc:2026-11-19#3939-3941-w-dickens-ave",
-   "at": "2026-10-30T21:23:45.629620-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "cpc:2026-11-19#2800-n-sheridan-rd",
-   "at": "2026-10-30T21:23:45.629620-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "cpc:2026-11-19#2800-n-sheridan-rd-2",
-   "at": "2026-10-30T21:23:45.629620-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "cpc:2026-11-19#6124-6144-n-sheridan-rd",
-   "at": "2026-10-30T21:23:45.629620-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "cpc:2026-11-19#931-n-halsted-st",
-   "at": "2026-10-30T21:23:45.629620-05:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "cpc:2026-11-19#item-9",
-   "at": "2026-10-30T21:23:45.629620-05:00"
-  },
   {
    "type": "notice_new",
    "ref_id": "watch:doh-home:0ceb00eb10f5",
