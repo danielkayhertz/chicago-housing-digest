@@ -691,7 +691,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "ecd0bccf75e376ea",
+  "content_hash": "d278fdaa2958d0b6",
   "entities": [
    "Shedd Aquarium Society"
   ],
@@ -711,7 +711,7 @@
   "relevance_reason": "This is a Lakefront Protection Ordinance application to relocate accessible parking spaces at the Shedd Aquarium, a cultural institution, and involves no housing.",
   "source_quality": "partial",
   "status": "ok",
-  "summary": "Shedd Aquarium Society seeks Lakefront Protection Ordinance approval to modify parking requirements at 1200 S. DuSable Lake Shore Drive. It would reconstruct existing regular spaces to relocate the 4 required ADA accessible spaces to the Inner Circle of the Circle Garden.",
+  "summary": "Shedd Aquarium Society seeks Lakefront Protection Ordinance approval (Application No. 808) at 1200 S. DuSable Lake Shore Drive. It would reconstruct existing parking spaces to relocate the 4 required ADA accessible spaces to the Inner Circle of the Circle Garden.",
   "zoning_from": [],
   "zoning_to": null
  },
@@ -725,7 +725,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "4b8c7334a393e9f4",
+  "content_hash": "fc87a5d309e93c8c",
   "entities": [
    "2800 Sheridan Land LLC"
   ],
@@ -742,10 +742,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The amendment to a residential planned development along Sheridan Road and Commonwealth Avenue would change the development's boundaries by removing a sub-area, which bears on zoning and housing supply.",
+  "relevance_reason": "Amending a planned development covering residential properties along Sheridan Road, Commonwealth Avenue and Lake Shore Drive bears on zoning and land use for existing homes.",
   "source_quality": "partial",
   "status": "ok",
-  "summary": "2800 Sheridan Land LLC proposes to amend Planned Development No. 1019 for the property at 2800 N. Sheridan Road. The amendment would remove Sub-Area 3 from the existing planned development.",
+  "summary": "2800 Sheridan Land LLC proposes to amend Planned Development No. 1019 for property at 2800 N. Sheridan Road by removing Sub-Area 3 from the existing planned development.",
   "zoning_from": [
    "Planned Development No. 1019"
   ],
@@ -761,9 +761,10 @@
     "via": "body"
    }
   ],
-  "content_hash": "59bc8984a10ce7c1",
+  "content_hash": "075e0e7762686e2a",
   "entities": [
-   "2800 Sheridan Land LLC"
+   "2800 Sheridan Land LLC",
+   "Elks National Memorial"
   ],
   "figures": {
    "affordable_units": null,
@@ -778,10 +779,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A Residential Business Planned Development would allow a 28-story building with up to 345 dwelling units on the lakefront.",
+  "relevance_reason": "A residential business planned development would allow up to 345 dwelling units in a new 28-story mixed-use building on the lakefront.",
   "source_quality": "partial",
   "status": "ok",
-  "summary": "2800 Sheridan Land LLC seeks Lakefront Protection Ordinance approval and a Residential Business Planned Development for 2800 N. Sheridan Road. Sub-Area A would have a 28-story mixed-use building with up to 345 dwelling units, retail and a fitness club; Sub-Area B incorporates the Elks National Memorial.",
+  "summary": "2800 Sheridan Land LLC seeks Lakefront Protection Ordinance approval and a Residential Business Planned Development for 2800 N. Sheridan Road. Sub-Area A would have a 28-story mixed-use building with up to 345 dwelling units, retail and fitness space; the Elks National Memorial would become Sub-Area B.",
   "zoning_from": [],
   "zoning_to": "Residential Business Planned Development"
  },
@@ -795,7 +796,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "8167f02f6414cc55",
+  "content_hash": "a206192ba2d2b2b9",
   "entities": [
    "Lake Park Associates, Inc.",
    "University of Chicago Medical Center"
@@ -813,12 +814,13 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The item is an institutional planned development for a medical laboratory, parking garage and plaza, with no housing units stated.",
+  "relevance_reason": "The item is a rezoning of a single-unit residential site for an institutional medical laboratory and parking development, with no homes stated as being built.",
   "source_quality": "partial",
   "status": "ok",
-  "summary": "Lake Park Associates, Inc. seeks to rezone 370 E. Garfield Blvd. from RS-3 to C1-3 and then to an Institutional Planned Development. Phase I would include a University of Chicago Medical Center pathology laboratory, a parking garage and a plaza.",
+  "summary": "Lake Park Associates, Inc. proposes rezoning 370 E. Garfield Blvd. from RS-3 to C1-3 and then to an Institutional Planned Development. Phase I would include a University of Chicago Medical Center pathology laboratory, a parking garage, and a plaza.",
   "zoning_from": [
-   "RS-3"
+   "RS-3",
+   "C1-3"
   ],
   "zoning_to": "Institutional Planned Development"
  },
@@ -868,7 +870,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "a320af5b0dd730b1",
+  "content_hash": "1d3ce3cc9c835f0e",
   "entities": [
    "Martha Gonzalez"
   ],
@@ -885,10 +887,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A rezoning from manufacturing to neighborhood mixed-use to allow construction of a new 6-unit residential building.",
+  "relevance_reason": "A rezoning from manufacturing to neighborhood mixed use to allow construction of a new 6-unit residential building.",
   "source_quality": "partial",
   "status": "ok",
-  "summary": "Martha Gonzalez seeks a Type 1 Map Amendment in the Pulaski Industrial Corridor, rezoning 3939-3941 W. Dickens Avenue from M1-1 to B2-2. She proposes a 6-unit, 3-story residential building up to 38 feet tall with 6 parking spaces.",
+  "summary": "Martha Gonzalez requests a Type 1 Map Amendment for 3939-3941 W. Dickens Ave. in the Pulaski Industrial Corridor, rezoning from M1-1 to B2-2 to build a 6-unit, 3-story residential building with 6 parking spaces.",
   "zoning_from": [
    "M1-1"
   ],
@@ -904,7 +906,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "1f323e8ac47da396",
+  "content_hash": "22eccada195d2e20",
   "entities": [
    "Kora Development LLC"
   ],
@@ -921,10 +923,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The application would allow a new 59-unit residential building on a vacant lot in the Lakefront Protection District.",
+  "relevance_reason": "The Lakefront Protection Ordinance application would allow a new 59-unit residential building on a vacant lot in Rogers Park/Edgewater.",
   "source_quality": "partial",
   "status": "ok",
-  "summary": "Kora Development LLC seeks Lakefront Protection Ordinance approval to build a five-story, 59-unit residential building with 59 parking spaces on a vacant lot at 6124-44 N. Sheridan Road. No zoning change is proposed.",
+  "summary": "Kora Development LLC seeks Lakefront Protection Ordinance approval to build a five-story, 59-unit residential building with 59 parking spaces and one loading berth on a vacant lot at 6124-44 N. Sheridan Road. No zoning change is proposed.",
   "zoning_from": [],
   "zoning_to": null
  },

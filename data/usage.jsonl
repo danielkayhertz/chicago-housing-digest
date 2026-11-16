@@ -752,3 +752,9 @@
 {"ts": "2026-11-14T03:17:47+00:00", "purpose": "screen", "model": "claude-haiku-5-5", "input_tokens": 2191, "output_tokens": 199}
 {"ts": "2026-11-14T03:17:49+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 3685, "output_tokens": 286}
 {"ts": "2026-11-14T03:17:53+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 2754, "output_tokens": 299}
+{"ts": "2026-11-16T21:03:36+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 2306, "output_tokens": 267}
+{"ts": "2026-11-16T21:03:40+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 2457, "output_tokens": 310}
+{"ts": "2026-11-16T21:03:44+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 2289, "output_tokens": 300}
+{"ts": "2026-11-16T21:03:48+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 2220, "output_tokens": 293}
+{"ts": "2026-11-16T21:03:52+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 2268, "output_tokens": 280}
+{"ts": "2026-11-16T21:03:56+00:00", "purpose": "summarize", "model": "claude-sonnet-5-5", "input_tokens": 2257, "output_tokens": 268}
