@@ -1,59 +1,59 @@
 {
- "generated_at": "2026-11-16T23:05:49.193960-06:00",
+ "generated_at": "2026-11-17T13:51:32.211777-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-16T23:05:49.193960-06:00",
+   "last_success_at": "2026-11-17T13:51:32.211777-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-16T23:05:49.193960-06:00",
+   "last_success_at": "2026-11-17T13:51:32.211777-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-16T15:02:20.175052-06:00",
-   "status": "error",
-   "message": "FetchError: None https://clihtf.org/wp-json/tribe/events/v1/events?start_date=2026-11-02+00%3A00%3A00&end_date=2027-01-15+23%3A59%3A59&per_page=50&page=1 invalid JSON: Expecting value: line 1 column 1 (char 0)"
+   "last_success_at": "2026-11-17T13:51:32.211777-06:00",
+   "status": "ok",
+   "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-16T23:05:49.193960-06:00",
+   "last_success_at": "2026-11-17T13:51:32.211777-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-16T23:05:49.193960-06:00",
+   "last_success_at": "2026-11-17T13:51:32.211777-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-16T23:05:49.193960-06:00",
+   "last_success_at": "2026-11-17T13:51:32.211777-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-16T23:05:49.193960-06:00",
+   "last_success_at": "2026-11-17T13:51:32.211777-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-16T23:05:49.193960-06:00",
+   "last_success_at": "2026-11-17T13:51:32.211777-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-16T23:05:49.193960-06:00",
-   "status": "stale",
-   "message": "watch page clihtf-quarterly looks like a stub (only 58 chars of text); snapshot kept, no notices; watch page clihtf-annual looks like a stub (only 58 chars of text); snapshot kept, no notices; watch page clihtf-landlord looks like a stub (only 58 chars of text); snapshot kept, no notices"
+   "last_success_at": "2026-11-17T13:51:32.211777-06:00",
+   "status": "ok",
+   "message": ""
   }
  ],
  "meetings": [
@@ -365,7 +365,7 @@
    "jurisdiction": "chicago",
    "start": "2026-11-17T08:30:00-06:00",
    "time_known": true,
-   "status": "scheduled",
+   "status": "held",
    "location": "CHA Corporate Offices",
    "agenda_url": "https://thecha.legistar1.com/thecha/meetings/2026/11/1117_A_Board_of_Commissioners_26-11-17_Agenda.pdf",
    "video_url": null,
@@ -375,7 +375,7 @@
    "item_count_total": 15,
    "item_count_relevant": 9,
    "first_seen_at": "2026-11-12T12:56:29.415744-06:00",
-   "last_changed_at": "2026-11-12T21:25:46.918799-06:00"
+   "last_changed_at": "2026-11-17T13:51:32.211777-06:00"
   },
   {
    "id": "legistar:thecha:1151",
@@ -385,7 +385,7 @@
    "jurisdiction": "chicago",
    "start": "2026-11-17T08:50:00-06:00",
    "time_known": true,
-   "status": "scheduled",
+   "status": "held",
    "location": "CHA Corporate Offices",
    "agenda_url": "https://thecha.legistar1.com/thecha/meetings/2026/11/1151_A_Real_Estate_Operations_Development_Committee_26-11-17_Agenda.pdf",
    "video_url": null,
@@ -395,7 +395,7 @@
    "item_count_total": 10,
    "item_count_relevant": 10,
    "first_seen_at": "2026-11-12T12:56:29.415744-06:00",
-   "last_changed_at": "2026-11-12T21:25:46.918799-06:00"
+   "last_changed_at": "2026-11-17T13:51:32.211777-06:00"
   },
   {
    "id": "legistar:thecha:1150",
@@ -405,7 +405,7 @@
    "jurisdiction": "chicago",
    "start": "2026-11-17T09:00:00-06:00",
    "time_known": true,
-   "status": "scheduled",
+   "status": "held",
    "location": "CHA Corporate Offices",
    "agenda_url": "https://thecha.legistar1.com/thecha/meetings/2026/11/1150_A_Tenant_Services_Committee_26-11-17_Agenda.pdf",
    "video_url": null,
@@ -415,7 +415,7 @@
    "item_count_total": 1,
    "item_count_relevant": 0,
    "first_seen_at": "2026-11-12T12:56:29.415744-06:00",
-   "last_changed_at": "2026-11-12T21:25:46.918799-06:00"
+   "last_changed_at": "2026-11-17T13:51:32.211777-06:00"
   },
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
@@ -425,17 +425,17 @@
    "jurisdiction": "chicago",
    "start": "2026-11-17T10:00:00-06:00",
    "time_known": true,
-   "status": "scheduled",
+   "status": "held",
    "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
    "agenda_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/61b71d6c-fcac-4a80-900b-9616caadf4c1.pdf",
-   "video_url": null,
+   "video_url": "https://vimeo.com/showcase/8928576?video=1247331158",
    "minutes_url": null,
    "detail_url": null,
    "needs_ai_extraction": false,
    "item_count_total": 41,
    "item_count_relevant": 30,
    "first_seen_at": "2026-10-19T12:29:04.290827-05:00",
-   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+   "last_changed_at": "2026-11-17T13:51:32.211777-06:00"
   },
   {
    "id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5",
@@ -445,17 +445,17 @@
    "jurisdiction": "chicago",
    "start": "2026-11-17T10:30:00-06:00",
    "time_known": true,
-   "status": "scheduled",
+   "status": "held",
    "location": "201A, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
    "agenda_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/5ee4d7ae-6854-4e99-a37f-5c2e5c1c34cb.pdf",
-   "video_url": null,
+   "video_url": "https://vimeo.com/showcase/8928563?video=1247332052",
    "minutes_url": null,
    "detail_url": null,
    "needs_ai_extraction": false,
    "item_count_total": 6,
    "item_count_relevant": 5,
    "first_seen_at": "2026-10-20T15:35:49.893064-05:00",
-   "last_changed_at": "2026-11-09T15:26:35.571983-06:00"
+   "last_changed_at": "2026-11-17T13:51:32.211777-06:00"
   },
   {
    "id": "cpc:2026-11-19",
@@ -12810,6 +12810,14 @@
    "title": "A resolution seeking the adoption of the North Branch Framework Update for the Area South of Grand Avenue. Led by Department of Planning and Development, this framework update provides recommendations to guide future public and private projects in a manner consistent with the surrounding downtown development context for approximately 11 acres of the North Branch Industrial Corridor generally bounded by W. Grand Ave. on the north, the Union Pacific/Chicago North Western railroad tracks and portions of N. Jefferson Street on the east, W. Kinzie Street to the south and N. Desplaines Street to the west. The recommendations support mixed-used development at downtown density levels, multi-modal transportation including a transitway, and publicly accessible open spaces.",
    "attachments": [
     {
+     "label": "North Branch Industrial Corridor: Area South of Grand Avenue (Informational webpage)",
+     "url": "http://chicago.gov/NorthBranchGrand"
+    },
+    {
+     "label": "Plan Draft Report",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/NBIC-South-of-Grand_CPC_Draft.pdf"
+    },
+    {
      "label": "Presentation",
      "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/NBIC_Grand_CPC_Adoption_111926_DRAFTPP.pdf"
     }
@@ -12824,8 +12832,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A planning framework update recommending mixed-use development at downtown density for an 11-acre area could guide future residential development and land use.",
-    "summary": "The Department of Planning and Development seeks Plan Commission adoption of the North Branch Framework Update for the area south of Grand Avenue, about 11 acres. It recommends mixed-use development at downtown density, a transitway, and public open spaces.",
+    "relevance_reason": "The framework update recommends mixed-use development at downtown density levels on about 11 acres, which guides future land use and potential residential development, though it does not itself rezone or specify housing.",
+    "summary": "The Department of Planning and Development seeks Plan Commission adoption of the North Branch Framework Update for about 11 acres south of Grand Avenue. It recommends mixed-use development at downtown density, a transitway, and public open spaces to guide future projects.",
     "categories": [
      {
       "id": "ahpaa",
@@ -12839,6 +12847,7 @@
      "community_area": null
     },
     "entities": [
+     "Chicago Plan Commission",
      "Department of Planning and Development"
     ],
     "figures": {
@@ -12852,11 +12861,11 @@
     "important": null,
     "source_quality": "partial",
     "model": "claude-sonnet-5-5",
-    "content_hash": "7796d9466c623266",
+    "content_hash": "27476d6983cffc3a",
     "overridden": false
    },
    "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
-   "last_changed_at": "2026-11-12T12:56:29.415744-06:00"
+   "last_changed_at": "2026-11-17T13:51:32.211777-06:00"
   }
  ],
  "notices": [
