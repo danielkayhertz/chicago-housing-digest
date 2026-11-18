@@ -163,6 +163,83 @@
    }
   ]
  },
+ "ihda:ihda-asset-management-committee:2026-11-20": {
+  "hash": "2adeaea9cc17954a",
+  "items": [
+   {
+    "number": "4",
+    "title": "Homeownership Overview as of September 30, 2026"
+   },
+   {
+    "number": "5",
+    "title": "Asset Management Overview as of September 30, 2026"
+   },
+   {
+    "number": "5.a",
+    "title": "Lake Shore Plaza Presentation"
+   },
+   {
+    "number": "5.b",
+    "title": "Decatur Affordable Housing - Loan Extension"
+   },
+   {
+    "number": "5.b",
+    "title": "Lakefront SRO/Bel-Ray Apartments - Loan Modification"
+   },
+   {
+    "number": "5.b",
+    "title": "Centreville Courts - Change in Ownership, Assignment and Assumption of EUA, and Release of the Regulatory Agreement"
+   },
+   {
+    "number": "5.b",
+    "title": "East Bank Pointe - Loan Modification, and Waiver of Escrow Delinquency, and Amendment of Regulatory Agreement"
+   },
+   {
+    "number": "5.b",
+    "title": "Brookshire Estates Apartments - Change in General Partnership & Loan Payoff"
+   },
+   {
+    "number": "5.b",
+    "title": "Little Egypt Estates - Loan Extension & Waiver of Qualified Contract"
+   },
+   {
+    "number": "5.b",
+    "title": "Heritage Landing - Change in Ownership, Property Management, Assignment and Assumption of Regulatory Agreement, EUA, Loan Agreements, and LTOS Agreement, and Waiver of Qualified Contract"
+   },
+   {
+    "number": "5.c",
+    "title": "Trevi Gardens Estates - Change in Owner and Property Manager, Assignment & Assumption of EUA, and Amendment of EUA to waive the Qualified Contract"
+   },
+   {
+    "number": "5.c",
+    "title": "Buena Vista Tower - Re-Subordination of a HOME Loan and Amendment of EUA to waive the Qualified Contract"
+   },
+   {
+    "number": "5.c",
+    "title": "Whispering Oaks Apartments \u2013 Subordination of the EUA and Amendment of EUA to waive the Qualified Contract"
+   },
+   {
+    "number": "5.c",
+    "title": "Parkway Estates - Change in Owner and Property Management, Assignment and Assumption of EUA & Regulatory Agreement, and Waiver of the Qualified Contract"
+   },
+   {
+    "number": "5.d",
+    "title": "Multifamily Mortgage Portfolio Overview"
+   },
+   {
+    "number": "5.e",
+    "title": "Loan Monitoring Portfolio Overview"
+   },
+   {
+    "number": "6",
+    "title": "Physical Inspections: Where We Stand and the Path Forward"
+   },
+   {
+    "number": "7",
+    "title": "IHDA Preservation 2.0 Status Update"
+   }
+  ]
+ },
  "ihda:ihda-board:2026-10-16": {
   "hash": "d05b0c8bc2676a81",
   "items": [
@@ -232,6 +309,187 @@
    }
   ]
  },
+ "ihda:ihda-board:2026-11-20": {
+  "hash": "3a032be14444a605",
+  "items": [
+   {
+    "number": "IV.B.1",
+    "title": "Resolution Authorizing Agreement with US Housing Consultants for Physical Inspection Services In an Amount Not to Exceed $2,122,855"
+   },
+   {
+    "number": "IV.B.2",
+    "title": "Resolution Authorizing Agreement with Emphasys Computer Solutions, Inc. for the Statewide Housing Locator In an Amount Not to Exceed $629,850"
+   },
+   {
+    "number": "IV.B.3",
+    "title": "Resolution Authorizing the Assignment of an Agreement with Denovo Ventures, LLC for Oracle Managed Services to Argano, LLC and an Amendment to that Agreement increasing the Not to Exceed Amount to $608,500"
+   },
+   {
+    "number": "IV.B.4",
+    "title": "Resolution Authorizing Third Renewal of Master Servicing Agreement In an Amount Not to Exceed $2,100,000"
+   },
+   {
+    "number": "IV.C.1",
+    "title": "Resolution Authorizing Section 811 Rental Assistance ($484,689) for 6104 Roosevelt (PID-12510)"
+   },
+   {
+    "number": "IV.C.2",
+    "title": "Resolution Authorizing Additional Low Income Housing Tax Credits (55,872) and Extension of Commitment for Financing for Oak and Larrabee Phase I (PID-11667)"
+   },
+   {
+    "number": "IV.C.3",
+    "title": "Resolution Authorizing a Change in the Trust Fund Loan's Lien Position for Abrams Intergenerational Village (PID-12032)"
+   },
+   {
+    "number": "IV.C.4.a",
+    "title": "Resolution Authorizing Subordinate Resource ($2,767,441) in connection with Award of Federal Tax Credits for El Arco (PID-12396)"
+   },
+   {
+    "number": "IV.C.4.b",
+    "title": "Resolution Authorizing Subordinate Resource ($3,217,600) in connection with Award of Federal Tax Credits for Sarah's on Sunnyside (PID-12199)"
+   },
+   {
+    "number": "IV.C.4.c",
+    "title": "Resolution Authorizing Subordinate Resource ($3,136,247) in connection with Award of Federal Tax Credits for Pulaski Senior Apartments (PID-12610)"
+   },
+   {
+    "number": "IV.C.4.d",
+    "title": "Resolution Authorizing Subordinate Resource ($4,400,000) in connection with Award of Federal Tax Credits and Updating Allocation of Resources for Liberty Lake Apartments (PID-12522 & 12584)"
+   },
+   {
+    "number": "IV.C.4.e",
+    "title": "Resolution Authorizing Subordinate Resource ($1,106,869) in connection with Award of Federal Tax Credits (245,639) for Lincoln Prairie at Briarwood (PID-12740)"
+   },
+   {
+    "number": "IV.C.4.f",
+    "title": "Resolution Authorizing Subordinate Resource ($3,164,752) in connection with Award of Federal Tax Credits for Hillside Landing (PID-12731)"
+   },
+   {
+    "number": "IV.C.4.g",
+    "title": "Resolution Authorizing Subordinate Resource ($3,136,444) in connection with Award of Federal Tax Credits for Valley Homes (PID-12142)"
+   },
+   {
+    "number": "IV.C.4.h",
+    "title": "Resolution Authorizing Subordinate Resource ($3,763,408) in connection with Award of Federal Tax Credits for Dr. Grant G. Henry Village (PID-12749)"
+   },
+   {
+    "number": "IV.C.4.i",
+    "title": "Resolution Authorizing Subordinate Resource ($3,886,740) in connection with Award of Federal Tax Credits for Macoupin Senior Homes (PID-12444)"
+   },
+   {
+    "number": "IV.C.4.j",
+    "title": "Resolution Authorizing Subordinate Resource ($3,697,045) in connection with Award of Federal Tax Credits for Burlington Terrace (PID-12606)"
+   },
+   {
+    "number": "IV.C.4.k",
+    "title": "Resolution Authorizing Subordinate Resource ($3,723,554) in connection with Award of Federal Tax Credits for The Meadows-Phase I (PID-12533)"
+   },
+   {
+    "number": "IV.D.1",
+    "title": "Resolution Regarding Freddie Mac Delegations"
+   },
+   {
+    "number": "IV.D.2",
+    "title": "Resolution Ratifying Establishment of Loan Loss Reserve"
+   },
+   {
+    "number": "IV.D.3",
+    "title": "Resolution of Intent to Issue Bonds of Revenue Obligations under Single Family and Multi-Family Bond Programs In an Aggregate Principal Amount Not to Exceed $1,800,000,000"
+   },
+   {
+    "number": "IV.E.1",
+    "title": "Resolution Authorizing a Loan Extension for Decatur Affordable Housing (30-381)"
+   },
+   {
+    "number": "IV.E.2",
+    "title": "Resolution Authorizing a Change in Ownership, Release of Regulatory Agreement and Assignment and Assumption of Extended Use Agreement for Centreville Courts (1305)"
+   },
+   {
+    "number": "IV.E.3",
+    "title": "Resolution Authorizing Loan Modifications And Amendment to the Regulatory Agreement for East Bank Pointe (30-2169)"
+   },
+   {
+    "number": "IV.E.4",
+    "title": "Resolution Authorizing a Transfer of Ownership Interests and Loan Payoff for Brookshire Estates Apartments (40-2058)"
+   },
+   {
+    "number": "IV.E.5",
+    "title": "Resolution Authorizing a Loan Extension for Lakefront SRO (aka Belray Apartments) (499)"
+   },
+   {
+    "number": "IV.E.6",
+    "title": "Resolution Authorizing a Change in Ownership, Assignment and Assumption of Documents, Change in Property Management and Waiver of Qualified Contract for Mt. Vernon Senior Building d/b/a Heritage Landing (2449)"
+   },
+   {
+    "number": "IV.E.7",
+    "title": "Resolution Authorizing a Loan Extension and Waiver of Qualified Contract for Little Egypt Estates (40-2046)"
+   },
+   {
+    "number": "IV.F.1",
+    "title": "Resolution Authorizing Amendments to the Fee for Service Agreements for the Cook County Mortgage Foreclosure Mediation Program"
+   },
+   {
+    "number": "IV.G.1",
+    "title": "Resolution Appointing Members to Board Committees"
+   },
+   {
+    "number": "V.A.1",
+    "title": "Resolution Authorizing State Tax Credits (500,000) for Highwood Community Land Trust Program (PID-12798)"
+   },
+   {
+    "number": "V.A.2",
+    "title": "Resolution Authorizing State Tax Credits (509,300) for EAP Phase XIII (PID-12821)"
+   },
+   {
+    "number": "V.B.1",
+    "title": "Resolution Authorizing the Issuance of Not to Exceed $750,000,000 Revenue Bonds 2027 Series ABCD and EFGH"
+   },
+   {
+    "number": "V.C.1",
+    "title": "Resolution Authorizing Agreements for Brokerage Services Related to Group Insurance Benefits and for the Provision of Certain Group Insurance Benefits"
+   },
+   {
+    "number": "V.D.1",
+    "title": "Resolution Authorizing a Conduit Loan ($24,311,000) for Maple Ridge Apartments (PID-12232)"
+   },
+   {
+    "number": "V.D.2",
+    "title": "Resolution Authorizing a Conduit Loan ($20,700,000) for Spencer Towers & 3rd and 11th Townhomes (PID-12770)"
+   },
+   {
+    "number": "V.E.1",
+    "title": "Resolution Authorizing Grants ($9,200,000) under the Strong Communities Program\u2013Round 3"
+   },
+   {
+    "number": "V.E.2",
+    "title": "Resolution Authorizing a Grant ($125,000) from the Trust Fund Program for the Chicago Rehab Network Technical Assistance Program Round 6"
+   },
+   {
+    "number": "VII.A",
+    "title": "Authority Financial Statements"
+   },
+   {
+    "number": "VII.B",
+    "title": "Accounting Payments Report"
+   },
+   {
+    "number": "VII.C",
+    "title": "Investment Holdings Report"
+   },
+   {
+    "number": "VII.D",
+    "title": "Communications Report"
+   },
+   {
+    "number": "VII.E",
+    "title": "External Relations Report"
+   },
+   {
+    "number": "VII.F",
+    "title": "Court-Based Rental Assistance Program"
+   }
+  ]
+ },
  "ihda:ihda-finance-committee:2026-10-16": {
   "hash": "d9a298f59acb30b7",
   "items": [
@@ -270,6 +528,43 @@
    {
     "number": "IV.B.1",
     "title": "Pheasant Ridge"
+   }
+  ]
+ },
+ "ihda:ihda-finance-committee:2026-11-20": {
+  "hash": "05e79f12b84f4316",
+  "items": [
+   {
+    "number": "II.A",
+    "title": "Presentation of Consolidated Interim Financial Statement"
+   },
+   {
+    "number": "II.B",
+    "title": "Multifamily Update"
+   },
+   {
+    "number": "II.C",
+    "title": "Single Family/Homeownership Update"
+   },
+   {
+    "number": "III.A.1",
+    "title": "Resolution Ratifying Establishment of Loan Loss Reserve"
+   },
+   {
+    "number": "III.A.2",
+    "title": "Resolution of Intent to Issue Single Family and Multifamily Bond Obligations"
+   },
+   {
+    "number": "III.A.3",
+    "title": "Revenue Bonds 2027 Series ABCD and EFGH"
+   },
+   {
+    "number": "III.B.1",
+    "title": "Maple Ridge Apartments"
+   },
+   {
+    "number": "III.B.2",
+    "title": "Spencer Towers & 3rd & 11th Townhomes"
    }
   ]
  }

@@ -1,59 +1,59 @@
 {
- "generated_at": "2026-11-17T22:21:36.369899-06:00",
+ "generated_at": "2026-11-18T13:24:37.488660-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-17T22:21:36.369899-06:00",
+   "last_success_at": "2026-11-18T13:24:37.488660-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-17T22:21:36.369899-06:00",
+   "last_success_at": "2026-11-18T13:24:37.488660-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
    "last_success_at": "2026-11-17T22:21:36.369899-06:00",
-   "status": "ok",
-   "message": ""
+   "status": "error",
+   "message": "FetchError: None https://clihtf.org/wp-json/tribe/events/v1/events?start_date=2026-11-04+00%3A00%3A00&end_date=2027-01-17+23%3A59%3A59&per_page=50&page=1 invalid JSON: Expecting value: line 1 column 1 (char 0)"
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-17T22:21:36.369899-06:00",
+   "last_success_at": "2026-11-18T13:24:37.488660-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-17T22:21:36.369899-06:00",
+   "last_success_at": "2026-11-18T13:24:37.488660-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-17T22:21:36.369899-06:00",
+   "last_success_at": "2026-11-18T13:24:37.488660-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-17T22:21:36.369899-06:00",
+   "last_success_at": "2026-11-18T13:24:37.488660-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-17T22:21:36.369899-06:00",
+   "last_success_at": "2026-11-18T13:24:37.488660-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-17T22:21:36.369899-06:00",
-   "status": "ok",
-   "message": ""
+   "last_success_at": "2026-11-18T13:24:37.488660-06:00",
+   "status": "stale",
+   "message": "watch page clihtf-quarterly looks like a stub (only 58 chars of text); snapshot kept, no notices; watch page clihtf-annual looks like a stub (only 58 chars of text); snapshot kept, no notices; watch page clihtf-landlord looks like a stub (only 58 chars of text); snapshot kept, no notices"
   }
  ],
  "meetings": [
@@ -449,13 +449,13 @@
    "location": "201A, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
    "agenda_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/5ee4d7ae-6854-4e99-a37f-5c2e5c1c34cb.pdf",
    "video_url": "https://vimeo.com/showcase/8928563?video=1247332052",
-   "minutes_url": null,
+   "minutes_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/f86b8102-761d-4af8-934d-cd7f4fdc7231.pdf",
    "detail_url": null,
    "needs_ai_extraction": false,
    "item_count_total": 6,
    "item_count_relevant": 5,
    "first_seen_at": "2026-10-20T15:35:49.893064-05:00",
-   "last_changed_at": "2026-11-17T13:51:32.211777-06:00"
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
   },
   {
    "id": "cpc:2026-11-19",
@@ -476,6 +476,66 @@
    "item_count_relevant": 6,
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
    "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
+  },
+  {
+   "id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "source_id": "ihda",
+   "body": "IHDA Asset Management Committee",
+   "body_id": "ihda-asset-management-committee",
+   "jurisdiction": "state",
+   "start": "2026-11-20T09:00:00-06:00",
+   "time_known": true,
+   "status": "scheduled",
+   "location": null,
+   "agenda_url": "https://www.ihda.org/wp-content/uploads/2026/11/Asset-Management-Committee-Meeting-Agenda.pdf",
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": "https://www.ihda.org/about-ihda/public-meetings-and-notices/",
+   "needs_ai_extraction": true,
+   "item_count_total": 18,
+   "item_count_relevant": 18,
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-11-20",
+   "source_id": "ihda",
+   "body": "IHDA Finance Committee",
+   "body_id": "ihda-finance-committee",
+   "jurisdiction": "state",
+   "start": "2026-11-20T10:00:00-06:00",
+   "time_known": true,
+   "status": "scheduled",
+   "location": null,
+   "agenda_url": "https://www.ihda.org/wp-content/uploads/2026/11/November-2026-Finance-Committee-Agenda.pdf",
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": "https://www.ihda.org/about-ihda/public-meetings-and-notices/",
+   "needs_ai_extraction": true,
+   "item_count_total": 8,
+   "item_count_relevant": 7,
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20",
+   "source_id": "ihda",
+   "body": "IHDA Board",
+   "body_id": "ihda-board",
+   "jurisdiction": "state",
+   "start": "2026-11-20T11:00:00-06:00",
+   "time_known": true,
+   "status": "scheduled",
+   "location": null,
+   "agenda_url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf",
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": "https://www.ihda.org/about-ihda/public-meetings-and-notices/",
+   "needs_ai_extraction": true,
+   "item_count_total": 44,
+   "item_count_relevant": 36,
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
   },
   {
    "id": "elms:482A33D0-AADE-F111-84EA-001DD80B58E5",
@@ -11936,7 +11996,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/32b971d0-bc33-47d5-9795-99e8ee0c3d44.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-11-17",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -11979,7 +12043,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-11-09T15:26:35.571983-06:00",
-   "last_changed_at": "2026-11-09T15:26:35.571983-06:00"
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
   },
   {
    "id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029492",
@@ -12016,7 +12080,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/0cac35df-be9e-48ad-ab79-cb5681791590.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-11-17",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -12059,7 +12127,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-11-09T15:26:35.571983-06:00",
-   "last_changed_at": "2026-11-09T15:26:35.571983-06:00"
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
   },
   {
    "id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029494",
@@ -12092,7 +12160,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/c34e6a92-36ae-467b-b5d4-585353487ce1.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-11-17",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -12122,7 +12194,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-11-09T15:26:35.571983-06:00",
-   "last_changed_at": "2026-11-09T15:26:35.571983-06:00"
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
   },
   {
    "id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029488",
@@ -12147,7 +12219,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/031102a8-0814-44cd-80de-f7b5e20d2b8f.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-11-17",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -12190,7 +12266,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-11-09T15:26:35.571983-06:00",
-   "last_changed_at": "2026-11-09T15:26:35.571983-06:00"
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
   },
   {
    "id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029496",
@@ -12215,7 +12291,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f3ade84c-e3de-4565-a29f-03b3a33c7303.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-11-17",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -12254,7 +12334,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-11-09T15:26:35.571983-06:00",
-   "last_changed_at": "2026-11-09T15:26:35.571983-06:00"
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
   },
   {
    "id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029493",
@@ -12279,7 +12359,11 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/e1bc5a1c-bc9e-4266-ad3d-e86ab55b3c7c.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "Recommended to Pass",
+    "date": "2026-11-17",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -12318,12 +12402,12 @@
     "overridden": false
    },
    "first_seen_at": "2026-11-09T15:26:35.571983-06:00",
-   "last_changed_at": "2026-11-09T15:26:35.571983-06:00"
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
   },
   {
-   "id": "cpc:2026-11-19#2800-n-sheridan-rd",
+   "id": "cpc:2026-11-19#2800-n-sheridan-road",
    "meeting_id": "cpc:2026-11-19",
-   "source_ref": "2800 N. Sheridan Rd.",
+   "source_ref": "2800 N. Sheridan Road",
    "title": "A proposed amendment to Planned Development No. 1019 submitted by 2800 Sheridan Land LLC, for the redevelopment of the property generally located at 2800 N. Sheridan Road . The properties that are the subject of the application are 2800-2844 N. Sheridan Road/331-359 W. Surf Street/2824-2844 N. Commonwealth Avenue and 2819-2937 N. Commonwealth Avenue/301-323 W. Oakdale Avenue/2820-2936 N. Lake Shore Drive and 400-418 W. Diversey Parkway. The Applicant proposes to remove Sub-Area 3 from the existing Planned Development No. 1019.",
    "attachments": [
     {
@@ -12338,15 +12422,15 @@
    "outcome": null,
    "extraction": "structured",
    "geography_hint": {
-    "address": "2800 N. Sheridan Rd.",
+    "address": "2800 N. Sheridan Road",
     "ward": 44,
     "community_area": "Lake View"
    },
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "Amending a planned development covering residential properties along Sheridan Road, Commonwealth Avenue and Lake Shore Drive bears on zoning and land use for existing homes.",
-    "summary": "2800 Sheridan Land LLC proposes to amend Planned Development No. 1019 for property at 2800 N. Sheridan Road by removing Sub-Area 3 from the existing planned development.",
+    "relevance_reason": "An amendment to a residential-area Planned Development changes the boundaries of an existing PD that governs redevelopment of properties along Sheridan Road, Commonwealth Avenue and Lake Shore Drive.",
+    "summary": "2800 Sheridan Land LLC proposes to amend Planned Development No. 1019 by removing Sub-Area 3 from the PD. The site is generally located at 2800 N. Sheridan Road.",
     "categories": [
      {
       "id": "ahpaa",
@@ -12355,7 +12439,7 @@
      }
     ],
     "geography": {
-     "address": "2800 N. Sheridan Rd.",
+     "address": "2800 N. Sheridan Road",
      "ward": 44,
      "community_area": "Lake View"
     },
@@ -12378,13 +12462,13 @@
     "content_hash": "fc87a5d309e93c8c",
     "overridden": false
    },
-   "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
-   "last_changed_at": "2026-11-16T15:02:20.175052-06:00"
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
   },
   {
-   "id": "cpc:2026-11-19#2800-n-sheridan-rd-2",
+   "id": "cpc:2026-11-19#2800-n-sheridan-road-2",
    "meeting_id": "cpc:2026-11-19",
-   "source_ref": "2800 N. Sheridan Rd.",
+   "source_ref": "2800 N. Sheridan Road",
    "title": "A proposed Lakefront Protection Ordinance Application No. 805 and a proposed Residential Business Planned Development Application submitted by 2800 Sheridan Land LLC, for the redevelopment of the property generally located at 2800 N. Sheridan Road. The properties that are the subject of these applications are 2800-2828 N. Sheridan Road/400-418 W. Diversey Parkway and 2714-2750 N. Lakeview Avenue/401-419 W. Diversey Parkway. The new Planned Development is comprised of two sub-areas in abutting Wards with the property generally located at 2800 N. Sheridan Road to become Sub-Area A of the new Planned Development and incorporating the historic Elks National Memorial into the new Planned Development as Sub-Area B (43rd Ward). Sub-Area A is proposed to be improved with a 28-story mixed-use residential building containing 10,000 square feet of retail space, 50,000 square feet of fitness club space, 301 accessory car parking spaces and 345 bike parking spaces. The maximum number of dwelling units will be 345 and a maximum FAR of 5.0.",
    "attachments": [
     {
@@ -12398,20 +12482,24 @@
     {
      "label": "Presentation",
      "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/2800_N_Sheridan_Rd_PD_and_LPO_CPC_Presentation.pdf"
+    },
+    {
+     "label": "Public Comments",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/Written_Comments/2800_N_Sheridan_comments.pdf"
     }
    ],
    "outcome": null,
    "extraction": "structured",
    "geography_hint": {
-    "address": "2800 N. Sheridan Rd.",
+    "address": "2800 N. Sheridan Road",
     "ward": 44,
     "community_area": null
    },
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A residential business planned development would allow up to 345 dwelling units in a new 28-story mixed-use building on the lakefront.",
-    "summary": "2800 Sheridan Land LLC seeks Lakefront Protection Ordinance approval and a Residential Business Planned Development for 2800 N. Sheridan Road. Sub-Area A would have a 28-story mixed-use building with up to 345 dwelling units, retail and fitness space; the Elks National Memorial would become Sub-Area B.",
+    "relevance_reason": "The Residential Business Planned Development would allow a 28-story mixed-use building with up to 345 dwelling units.",
+    "summary": "2800 Sheridan Land LLC seeks Lakefront Protection Ordinance approval and a Residential Business Planned Development at 2800 N. Sheridan Road. Sub-Area A would have a 28-story mixed-use building with up to 345 dwelling units, retail, and a fitness club. The historic Elks National Memorial would be added as Sub-Area B.",
     "categories": [
      {
       "id": "ahpaa",
@@ -12420,13 +12508,12 @@
      }
     ],
     "geography": {
-     "address": "2800 N. Sheridan Rd.",
+     "address": "2800 N. Sheridan Road",
      "ward": 44,
      "community_area": "Lake View"
     },
     "entities": [
-     "2800 Sheridan Land LLC",
-     "Elks National Memorial"
+     "2800 Sheridan Land LLC"
     ],
     "figures": {
      "units": 345,
@@ -12439,11 +12526,11 @@
     "important": null,
     "source_quality": "partial",
     "model": "claude-sonnet-5-5",
-    "content_hash": "075e0e7762686e2a",
+    "content_hash": "dd7e4db5d3cc1eec",
     "overridden": false
    },
-   "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
-   "last_changed_at": "2026-11-16T15:02:20.175052-06:00"
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
   },
   {
    "id": "cpc:2026-11-19#370-e-garfield-blvd",
@@ -12458,6 +12545,10 @@
     {
      "label": "Presentation",
      "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/370_E_Garfield_CPC_Presentation_Draft.pdf"
+    },
+    {
+     "label": "Public Comments",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/Written_Comments/370_E_Garfield_comments.pdf"
     }
    ],
    "outcome": null,
@@ -12470,8 +12561,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": false,
-    "relevance_reason": "The item is a rezoning of a single-unit residential site for an institutional medical laboratory and parking development, with no homes stated as being built.",
-    "summary": "Lake Park Associates, Inc. proposes rezoning 370 E. Garfield Blvd. from RS-3 to C1-3 and then to an Institutional Planned Development. Phase I would include a University of Chicago Medical Center pathology laboratory, a parking garage, and a plaza.",
+    "relevance_reason": "The item is an institutional planned development for a medical laboratory, parking garage, and plaza, with no homes stated; the rezoning is from a residential district but no housing is described.",
+    "summary": "Lake Park Associates, Inc. proposes rezoning 370 E. Garfield Blvd. from RS-3 to C1-3 and then to an Institutional Planned Development. Phase I would include a University of Chicago Medical Center pathology laboratory, parking garage, and pedestrian plaza, with a maximum FAR of 3.0.",
     "categories": [
      {
       "id": "ahpaa",
@@ -12495,18 +12586,17 @@
     "amount": null,
     "amount_kind": null,
     "zoning_from": [
-     "RS-3",
-     "C1-3"
+     "RS-3"
     ],
     "zoning_to": "Institutional Planned Development",
     "important": null,
     "source_quality": "partial",
     "model": "claude-sonnet-5-5",
-    "content_hash": "a206192ba2d2b2b9",
+    "content_hash": "e24eae5534bbf19c",
     "overridden": false
    },
    "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
-   "last_changed_at": "2026-11-16T15:02:20.175052-06:00"
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
   },
   {
    "id": "cpc:2026-11-19#1200-s-dusable-lake-shore-dr",
@@ -12641,6 +12731,10 @@
     {
      "label": "Presentation",
      "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/3939_W_Dickens_CPC_Presentation_Draft.pdf"
+    },
+    {
+     "label": "Public Comments",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/Written_Comments/3939_W_Dickens_comments.pdf"
     }
    ],
    "outcome": null,
@@ -12653,8 +12747,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A rezoning from manufacturing to neighborhood mixed use to allow construction of a new 6-unit residential building.",
-    "summary": "Martha Gonzalez requests a Type 1 Map Amendment for 3939-3941 W. Dickens Ave. in the Pulaski Industrial Corridor, rezoning from M1-1 to B2-2 to build a 6-unit, 3-story residential building with 6 parking spaces.",
+    "relevance_reason": "The rezoning would allow a new 6-unit residential building on land currently zoned for manufacturing.",
+    "summary": "Martha Gonzalez seeks a Type 1 Map Amendment for 3939-3941 W. Dickens Avenue in the Pulaski Industrial Corridor, rezoning from M1-1 to B2-2 to build a 3-story, 6-unit residential building with 6 parking spaces.",
     "categories": [
      {
       "id": "ahpaa",
@@ -12683,11 +12777,11 @@
     "important": null,
     "source_quality": "partial",
     "model": "claude-sonnet-5-5",
-    "content_hash": "1d3ce3cc9c835f0e",
+    "content_hash": "497d4c7e30533994",
     "overridden": false
    },
    "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
-   "last_changed_at": "2026-11-16T15:02:20.175052-06:00"
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
   },
   {
    "id": "cpc:2026-11-19#6124-6144-n-sheridan-rd",
@@ -12702,6 +12796,10 @@
     {
      "label": "Presentation",
      "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/6124-44_N_Sheridan_LPO_Draft_Presentation_Posting.pdf"
+    },
+    {
+     "label": "Public Comments",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/Written_Comments/6130_N_Sheridan_comments.pdf"
     }
    ],
    "outcome": null,
@@ -12714,7 +12812,7 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "The Lakefront Protection Ordinance application would allow a new 59-unit residential building on a vacant lot in Rogers Park/Edgewater.",
+    "relevance_reason": "The Lakefront Protection Ordinance application would allow a new 59-unit residential building on a vacant lot.",
     "summary": "Kora Development LLC seeks Lakefront Protection Ordinance approval to build a five-story, 59-unit residential building with 59 parking spaces and one loading berth on a vacant lot at 6124-44 N. Sheridan Road. No zoning change is proposed.",
     "categories": [
      {
@@ -12742,11 +12840,11 @@
     "important": null,
     "source_quality": "partial",
     "model": "claude-sonnet-5-5",
-    "content_hash": "22eccada195d2e20",
+    "content_hash": "9ddfd9eef5ac2665",
     "overridden": false
    },
    "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
-   "last_changed_at": "2026-11-16T15:02:20.175052-06:00"
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
   },
   {
    "id": "cpc:2026-11-19#931-n-halsted-st",
@@ -12757,6 +12855,10 @@
     {
      "label": "Presentation",
      "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/931_N_Halsted_CPC_Draft_for_posting.pdf"
+    },
+    {
+     "label": "Public Comments",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/Written_Comments/901_N_Halsted_comments.pdf"
     }
    ],
    "outcome": null,
@@ -12769,8 +12871,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "The site plan review covers two mixed-use buildings entitled for over 2,000 dwelling units within a residential-business planned development.",
-    "summary": "Onni Halsted Street Chicago LLC presents a courtesy site plan review for Waterway Residential-Business Planned Development No. 1522 at 931 N Halsted. It would build two mixed-use buildings entitled for up to 1,134 and 1,052 dwelling units, a 300-key hotel, and a public riverwalk.",
+    "relevance_reason": "The site plan review covers two mixed-use buildings entitled for over 2,100 dwelling units within a residential-business planned development.",
+    "summary": "Onni Halsted Street Chicago LLC presents a courtesy site plan review for Waterway Residential-Business Planned Development No. 1522, Subareas B, C, and D at 931 N Halsted. Plans include two mixed-use buildings entitled for up to 1,134 and 1,052 dwelling units, a 300-key hotel, and a public riverwalk.",
     "categories": [
      {
       "id": "ahpaa",
@@ -12797,11 +12899,11 @@
     "important": null,
     "source_quality": "partial",
     "model": "claude-sonnet-5-5",
-    "content_hash": "117095a69e36b25e",
+    "content_hash": "2a160d61706a030e",
     "overridden": false
    },
    "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
-   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
   },
   {
    "id": "cpc:2026-11-19#item-9",
@@ -12866,6 +12968,3697 @@
    },
    "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
    "last_changed_at": "2026-11-17T13:51:32.211777-06:00"
+  },
+  {
+   "id": "ihda:ihda-asset-management-committee:2026-11-20#homeownership-overview-as-of-september-30-2026",
+   "meeting_id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "source_ref": "4",
+   "title": "Homeownership Overview as of September 30, 2026",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/Asset-Management-Committee-Meeting-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "IHDA's Asset Management Committee reviews the state agency's homeownership program portfolio, which concerns financing and preserving homes.",
+    "summary": "The IHDA Asset Management Committee will receive a homeownership overview as of September 30, 2026. The agenda item is listed by title only, as part of the committee's November 20, 2026 meeting.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Asset Management Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "9f3c088e8ff88085",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-asset-management-committee:2026-11-20#asset-management-overview-as-of-september-30-2026",
+   "meeting_id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "source_ref": "5",
+   "title": "Asset Management Overview as of September 30, 2026",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/Asset-Management-Committee-Meeting-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item covers IHDA's oversight of its affordable multifamily portfolio, including loan modifications, ownership changes, and regulatory agreement amendments for affordable properties.",
+    "summary": "IHDA's Asset Management Committee will review its portfolio as of September 30, 2026, including a Lake Shore Plaza update and board items on loan extensions, modifications, ownership changes, and qualified contract waivers for properties such as Decatur Affordable Housing and Heritage Landing.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Asset Management Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Lake Shore Plaza",
+     "Decatur Affordable Housing",
+     "Lakefront SRO/Bel-Ray Apartments",
+     "Centreville Courts",
+     "East Bank Pointe",
+     "Brookshire Estates Apartments",
+     "Little Egypt Estates",
+     "Heritage Landing",
+     "Trevi Gardens Estates",
+     "Buena Vista Tower",
+     "Whispering Oaks Apartments",
+     "Parkway Estates"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "734c0c17c4873fc7",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-asset-management-committee:2026-11-20#lake-shore-plaza-presentation",
+   "meeting_id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "source_ref": "5.a",
+   "title": "Lake Shore Plaza Presentation",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/Asset-Management-Committee-Meeting-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "It is an IHDA asset management update on Lake Shore Plaza, an affordable multifamily property in IHDA's portfolio.",
+    "summary": "IHDA's Asset Management Committee will hear a summary update presentation on Lake Shore Plaza as part of its November 20, 2026 meeting.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Asset Management Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "90607493264f103c",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-asset-management-committee:2026-11-20#decatur-affordable-housing-loan-extension",
+   "meeting_id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "source_ref": "5.b",
+   "title": "Decatur Affordable Housing - Loan Extension",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/Asset-Management-Committee-Meeting-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "It is an IHDA asset management action extending a loan on an affordable housing property, which bears on state housing finance and preservation.",
+    "summary": "IHDA's Asset Management Committee will consider a loan extension for Decatur Affordable Housing as a board agenda item. The agenda gives no further details on the loan or property.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Asset Management Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Decatur Affordable Housing"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "d4681c56ffb706ee",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-asset-management-committee:2026-11-20#lakefront-sro-bel-ray-apartments-loan-modification",
+   "meeting_id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "source_ref": "5.b",
+   "title": "Lakefront SRO/Bel-Ray Apartments - Loan Modification",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/Asset-Management-Committee-Meeting-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A loan modification for Lakefront SRO/Bel-Ray Apartments, an IHDA-financed affordable rental property, bears on preserving affordable housing.",
+    "summary": "IHDA's Asset Management Committee will consider a loan modification for Lakefront SRO/Bel-Ray Apartments as one of several board agenda items on the November 20, 2026 agenda.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Asset Management Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Lakefront SRO/Bel-Ray Apartments"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "1e49d77f1ff61de0",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-asset-management-committee:2026-11-20#centreville-courts-change-in-ownership-assignment-and-assumption-of-eua-d0aed72",
+   "meeting_id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "source_ref": "5.b",
+   "title": "Centreville Courts - Change in Ownership, Assignment and Assumption of EUA, and Release of the Regulatory Agreement",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/Asset-Management-Committee-Meeting-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item concerns a change in ownership and release of the regulatory agreement on an IHDA-financed affordable rental property, Centreville Courts.",
+    "summary": "IHDA's Asset Management Committee will consider a change in ownership, assignment and assumption of the Extended Use Agreement (EUA), and release of the Regulatory Agreement for Centreville Courts.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Asset Management Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Centreville Courts"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "56eb09958c6f26f4",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-asset-management-committee:2026-11-20#east-bank-pointe-loan-modification-and-waiver-of-escrow-delinquency-and-da4964f",
+   "meeting_id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "source_ref": "5.b",
+   "title": "East Bank Pointe - Loan Modification, and Waiver of Escrow Delinquency, and Amendment of Regulatory Agreement",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/Asset-Management-Committee-Meeting-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item concerns an IHDA-financed multifamily property's loan terms, escrow delinquency, and regulatory agreement, which affect an affordable housing development's financing and preservation.",
+    "summary": "IHDA's Asset Management Committee will consider a loan modification, a waiver of escrow delinquency, and an amendment to the regulatory agreement for East Bank Pointe, listed as a Board agenda item.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Asset Management Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "East Bank Pointe"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "775991ffbad573ff",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-asset-management-committee:2026-11-20#brookshire-estates-apartments-change-in-general-partnership-loan-payoff",
+   "meeting_id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "source_ref": "5.b",
+   "title": "Brookshire Estates Apartments - Change in General Partnership & Loan Payoff",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/Asset-Management-Committee-Meeting-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "It concerns an IHDA-financed affordable apartment property's ownership change and loan payoff, which affects the preservation of regulated affordable housing.",
+    "summary": "IHDA's Asset Management Committee will consider a change in general partnership and a loan payoff for Brookshire Estates Apartments, listed as a Board agenda item.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Asset Management Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Brookshire Estates Apartments"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "1a22232ba45d40d8",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-asset-management-committee:2026-11-20#little-egypt-estates-loan-extension-waiver-of-qualified-contract",
+   "meeting_id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "source_ref": "5.b",
+   "title": "Little Egypt Estates - Loan Extension & Waiver of Qualified Contract",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/Asset-Management-Committee-Meeting-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item concerns an IHDA-financed affordable rental property's loan extension and waiver of the qualified contract, which affects how long affordability restrictions remain.",
+    "summary": "IHDA's Asset Management Committee is considering a loan extension and a waiver of the qualified contract for Little Egypt Estates, an IHDA-financed affordable multifamily property. The item is listed as a Board agenda item.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Asset Management Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Little Egypt Estates"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "10a7d95f53a9a8ec",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-asset-management-committee:2026-11-20#heritage-landing-change-in-ownership-property-management-assignment-and-f57ca05",
+   "meeting_id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "source_ref": "5.b",
+   "title": "Heritage Landing - Change in Ownership, Property Management, Assignment and Assumption of Regulatory Agreement, EUA, Loan Agreements, and LTOS Agreement, and Waiver of Qualified Contract",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/Asset-Management-Committee-Meeting-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item concerns ownership, management, and regulatory agreement changes, and a qualified contract waiver, for an IHDA-financed affordable rental property.",
+    "summary": "IHDA's Asset Management Committee will consider Heritage Landing: a change in ownership and property management, assignment and assumption of the regulatory agreement, EUA, loan agreements and LTOS agreement, and a waiver of the qualified contract.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Asset Management Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "408ea2272cff6ede",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-asset-management-committee:2026-11-20#trevi-gardens-estates-change-in-owner-and-property-manager-assignment-as-dc02fbf",
+   "meeting_id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "source_ref": "5.c",
+   "title": "Trevi Gardens Estates - Change in Owner and Property Manager, Assignment & Assumption of EUA, and Amendment of EUA to waive the Qualified Contract",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/Asset-Management-Committee-Meeting-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item concerns ownership and management changes and waiver of the Qualified Contract on an IHDA-regulated affordable rental property, which affects long-term affordability.",
+    "summary": "IHDA's Asset Management Committee will receive a report on Trevi Gardens Estates: a change in owner and property manager, assignment and assumption of the Extended Use Agreement (EUA), and an EUA amendment waiving the Qualified Contract.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Asset Management Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Trevi Gardens Estates"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "534f02d4f1a396d6",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-asset-management-committee:2026-11-20#buena-vista-tower-re-subordination-of-a-home-loan-and-amendment-of-eua-t-b1c7c8f",
+   "meeting_id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "source_ref": "5.c",
+   "title": "Buena Vista Tower - Re-Subordination of a HOME Loan and Amendment of EUA to waive the Qualified Contract",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/Asset-Management-Committee-Meeting-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item concerns re-subordination of a HOME loan and waiver of the Qualified Contract in the extended use agreement for an IHDA-monitored affordable rental property, which affects long-term affordability.",
+    "summary": "IHDA's Asset Management Committee will hear a report on Buena Vista Tower, involving re-subordination of a HOME loan and an amendment of the Extended Use Agreement (EUA) to waive the Qualified Contract.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Asset Management Committee"
+     },
+     {
+      "id": "housing-agenda",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Buena Vista Tower"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "7327b7c7d9159936",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-asset-management-committee:2026-11-20#whispering-oaks-apartments-subordination-of-the-eua-and-amendment-of-eua-2befa39",
+   "meeting_id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "source_ref": "5.c",
+   "title": "Whispering Oaks Apartments – Subordination of the EUA and Amendment of EUA to waive the Qualified Contract",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/Asset-Management-Committee-Meeting-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item concerns an IHDA-financed affordable rental property's extended use agreement, including subordination and waiver of the qualified contract, which affects the property's long-term affordability.",
+    "summary": "IHDA's Asset Management Committee will hear a report on Whispering Oaks Apartments, covering subordination of its Extended Use Agreement (EUA) and an amendment of the EUA to waive the Qualified Contract.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Asset Management Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Whispering Oaks Apartments"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "fb74f294ad6d20ca",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-asset-management-committee:2026-11-20#parkway-estates-change-in-owner-and-property-management-assignment-and-a-dfb933f",
+   "meeting_id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "source_ref": "5.c",
+   "title": "Parkway Estates - Change in Owner and Property Management, Assignment and Assumption of EUA & Regulatory Agreement, and Waiver of the Qualified Contract",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/Asset-Management-Committee-Meeting-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item concerns ownership and management changes and waiver of the Qualified Contract on an IHDA-regulated affordable rental property, which bears on preservation of affordability restrictions.",
+    "summary": "IHDA's Asset Management Committee will receive a multifamily report-out on Parkway Estates, covering a change in owner and property management, assignment and assumption of the EUA and Regulatory Agreement, and a waiver of the Qualified Contract.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Asset Management Committee"
+     },
+     {
+      "id": "housing-agenda",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Parkway Estates"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "7fe4b3756585c595",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-asset-management-committee:2026-11-20#multifamily-mortgage-portfolio-overview",
+   "meeting_id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "source_ref": "5.d",
+   "title": "Multifamily Mortgage Portfolio Overview",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/Asset-Management-Committee-Meeting-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item is IHDA's overview of its multifamily mortgage portfolio, which covers the financing and oversight of affordable rental housing.",
+    "summary": "IHDA's Asset Management Committee will receive an overview of the agency's multifamily mortgage portfolio as of September 30, 2026. The item sits within a meeting that also covers loan modifications, ownership changes and qualified contract waivers for specific affordable properties.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Asset Management Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "91bb165379cb5e47",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-asset-management-committee:2026-11-20#loan-monitoring-portfolio-overview",
+   "meeting_id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "source_ref": "5.e",
+   "title": "Loan Monitoring Portfolio Overview",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/Asset-Management-Committee-Meeting-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "IHDA's Asset Management Committee is reviewing the monitoring of its portfolio of loans financing affordable housing.",
+    "summary": "The IHDA Asset Management Committee will receive an overview of its loan monitoring portfolio as of September 30, 2026. The item sits within a broader asset management agenda covering IHDA-financed multifamily properties.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Asset Management Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "0af4ab9bcb773c98",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-asset-management-committee:2026-11-20#physical-inspections-where-we-stand-and-the-path-forward",
+   "meeting_id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "source_ref": "6",
+   "title": "Physical Inspections: Where We Stand and the Path Forward",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/Asset-Management-Committee-Meeting-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "IHDA's Asset Management Committee will discuss the status of physical inspections of its affordable housing portfolio, which bears on property condition and habitability.",
+    "summary": "IHDA's Asset Management Committee will review where physical inspections of its portfolio stand and the path forward. The item appears on the committee's November 20, 2026 agenda.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Asset Management Committee"
+     },
+     {
+      "id": "healthy-homes",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "c1761f46757ff0ea",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-asset-management-committee:2026-11-20#ihda-preservation-2-0-status-update",
+   "meeting_id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "source_ref": "7",
+   "title": "IHDA Preservation 2.0 Status Update",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/Asset-Management-Committee-Meeting-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "IHDA's Preservation 2.0 is a program for preserving affordable multifamily housing, and the item is a status update to the Asset Management Committee.",
+    "summary": "The IHDA Asset Management Committee will receive a status update on IHDA Preservation 2.0, listed as agenda item 7 at its November 20, 2026 meeting.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Asset Management Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "675024f9498e7f7d",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-11-20#presentation-of-consolidated-interim-financial-statement",
+   "meeting_id": "ihda:ihda-finance-committee:2026-11-20",
+   "source_ref": "II.A",
+   "title": "Presentation of Consolidated Interim Financial Statement",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/November-2026-Finance-Committee-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "This is a routine standing presentation of IHDA's interim financial statements and does not itself act on any housing development, financing, or policy.",
+    "summary": "IHDA's Finance Committee will hear a presentation of the Consolidated Interim Financial Statement as a standing monthly update, presented by V. Villegas.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Finance Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "f6efab4d45ef50c3",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-11-20#multifamily-update",
+   "meeting_id": "ihda:ihda-finance-committee:2026-11-20",
+   "source_ref": "II.B",
+   "title": "Multifamily Update",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/November-2026-Finance-Committee-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A standing IHDA Finance Committee update on multifamily affordable housing finance, which falls under state housing finance activity.",
+    "summary": "IHDA's Finance Committee will receive a standing monthly Multifamily Update, presented by S. Bannon, at its November 20, 2026 meeting.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Finance Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "e98081f1bb47597c",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-11-20#single-family-homeownership-update",
+   "meeting_id": "ihda:ihda-finance-committee:2026-11-20",
+   "source_ref": "II.C",
+   "title": "Single Family/Homeownership Update",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/November-2026-Finance-Committee-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A standing IHDA Finance Committee update on single family and homeownership programs bears on state housing finance.",
+    "summary": "The IHDA Finance Committee's November 20, 2026 agenda includes a standing monthly Single Family/Homeownership Update presented by K. Nestlehut. The agenda text provides no further detail on this item.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Finance Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "66606e1915994022",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-11-20#resolution-ratifying-establishment-of-loan-loss-reserve",
+   "meeting_id": "ihda:ihda-finance-committee:2026-11-20",
+   "source_ref": "III.A.1",
+   "title": "Resolution Ratifying Establishment of Loan Loss Reserve",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/November-2026-Finance-Committee-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "IHDA, the state housing finance agency, would ratify a loan loss reserve, a financial measure tied to its housing lending programs.",
+    "summary": "The IHDA Finance Committee would consider a resolution ratifying the establishment of a loan loss reserve, presented by V. Villegas. The agenda gives only the title for this item.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Finance Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "bf48c0184edb0177",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-11-20#resolution-of-intent-to-issue-single-family-and-multifamily-bond-obligations",
+   "meeting_id": "ihda:ihda-finance-committee:2026-11-20",
+   "source_ref": "III.A.2",
+   "title": "Resolution of Intent to Issue Single Family and Multifamily Bond Obligations",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/November-2026-Finance-Committee-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item concerns IHDA's intent to issue bonds that finance single family and multifamily housing.",
+    "summary": "IHDA's Finance Committee will consider a resolution of intent to issue single family and multifamily bond obligations, presented by M. Babcock. The agenda gives no bond amounts or project details.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Finance Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority",
+     "M. Babcock"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "22cc4c90fa877d3c",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-11-20#revenue-bonds-2027-series-abcd-and-efgh",
+   "meeting_id": "ihda:ihda-finance-committee:2026-11-20",
+   "source_ref": "III.A.3",
+   "title": "Revenue Bonds 2027 Series ABCD and EFGH",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/November-2026-Finance-Committee-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "IHDA revenue bond issuance finances single family and multifamily housing programs, falling under state housing finance.",
+    "summary": "The IHDA Finance Committee will consider Revenue Bonds 2027 Series ABCD and EFGH, presented by S. Jacobson, as new general finance business at its November 20, 2026 meeting.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Finance Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "040b78ea096195e3",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-11-20#maple-ridge-apartments",
+   "meeting_id": "ihda:ihda-finance-committee:2026-11-20",
+   "source_ref": "III.B.1",
+   "title": "Maple Ridge Apartments",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/November-2026-Finance-Committee-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "It is an IHDA Finance Committee multifamily finance item for Maple Ridge Apartments, a housing development.",
+    "summary": "The IHDA Finance Committee lists Maple Ridge Apartments under Multifamily Finance new business, presented by S. Bannon. The agenda gives no further detail on the project.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Finance Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "d47a106b78d5636c",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-11-20#spencer-towers-3rd-11th-townhomes",
+   "meeting_id": "ihda:ihda-finance-committee:2026-11-20",
+   "source_ref": "III.B.2",
+   "title": "Spencer Towers & 3rd & 11th Townhomes",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/November-2026-Finance-Committee-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "This is an IHDA Finance Committee multifamily finance item for the Spencer Towers & 3rd & 11th Townhomes residential developments.",
+    "summary": "IHDA's Finance Committee will consider a multifamily finance item titled Spencer Towers & 3rd & 11th Townhomes, presented by S. Bannon. The agenda gives no further detail on the financing.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Finance Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "3a28d11fbcfe36ef",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-agreement-with-us-housing-consultants-for-physica-69ae704",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.B.1",
+   "title": "Resolution Authorizing Agreement with US Housing Consultants for Physical Inspection Services In an Amount Not to Exceed $2,122,855",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The contract pays for physical inspections, which IHDA uses to monitor the condition of affordable housing it finances.",
+    "summary": "IHDA Board would authorize an agreement with US Housing Consultants for physical inspection services, in an amount not to exceed $2,122,855.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     },
+     {
+      "id": "healthy-homes",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Illinois Housing Development Authority",
+     "US Housing Consultants"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 2122855,
+    "amount_kind": "contract not-to-exceed",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "6d6b7b90e13f38ad",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-agreement-with-emphasys-computer-solutions-inc-fo-c09468c",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.B.2",
+   "title": "Resolution Authorizing Agreement with Emphasys Computer Solutions, Inc. for the Statewide Housing Locator In an Amount Not to Exceed $629,850",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item funds an IHDA contract for the Statewide Housing Locator, a statewide housing search tool for affordable and accessible rental listings.",
+    "summary": "IHDA Board would authorize an agreement with Emphasys Computer Solutions, Inc. for the Statewide Housing Locator, in an amount not to exceed $629,850.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Emphasys Computer Solutions, Inc."
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 629850,
+    "amount_kind": "contract not-to-exceed",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "d1c6fb39f7f671a9",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-the-assignment-of-an-agreement-with-denovo-ventur-2f04bd0",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.B.3",
+   "title": "Resolution Authorizing the Assignment of an Agreement with Denovo Ventures, LLC for Oracle Managed Services to Argano, LLC and an Amendment to that Agreement increasing the Not to Exceed Amount to $608,500",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "This is an IT vendor contract (Oracle managed services) for IHDA's internal operations and does not directly affect the building, financing, or regulation of homes.",
+    "summary": "IHDA's board would approve assigning its Oracle managed services agreement from Denovo Ventures, LLC to Argano, LLC and raise the not-to-exceed amount to $608,500.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Denovo Ventures, LLC",
+     "Argano, LLC"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 608500,
+    "amount_kind": "contract not-to-exceed",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "f1602163cf57a324",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-third-renewal-of-master-servicing-agreement-in-an-771b2ac",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.B.4",
+   "title": "Resolution Authorizing Third Renewal of Master Servicing Agreement In an Amount Not to Exceed $2,100,000",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A master servicing agreement for IHDA's loan portfolio supports administration of the state's housing finance programs, though the material gives no detail on the homes involved.",
+    "summary": "IHDA Board would authorize the third renewal of a Master Servicing Agreement in an amount not to exceed $2,100,000. The item is presented by A. Lockwood on the consent agenda.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 2100000,
+    "amount_kind": "servicing agreement cap",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "939715ff3c27eb82",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-section-811-rental-assistance-484-689-for-6104-ro-37cc117",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.C.1",
+   "title": "Resolution Authorizing Section 811 Rental Assistance ($484,689) for 6104 Roosevelt (PID-12510)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The resolution authorizes federal Section 811 rental assistance funding for a supportive affordable rental property, 6104 Roosevelt.",
+    "summary": "IHDA Board resolution authorizing $484,689 in Section 811 Rental Assistance for 6104 Roosevelt (PID-12510). Presented by T. Krouse on the consent agenda.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     },
+     {
+      "id": "housing-agenda",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": "6104 Roosevelt",
+     "ward": 34,
+     "community_area": "Loop"
+    },
+    "entities": [],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 484689,
+    "amount_kind": "Section 811 rental assistance",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "1f5afc8c583f27f6",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-additional-low-income-housing-tax-credits-55-872-8f60639",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.C.2",
+   "title": "Resolution Authorizing Additional Low Income Housing Tax Credits (55,872) and Extension of Commitment for Financing for Oak and Larrabee Phase I (PID-11667)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The resolution authorizes additional Low Income Housing Tax Credits and extends a financing commitment for an affordable rental development, Oak and Larrabee Phase I.",
+    "summary": "IHDA Board would authorize an additional 55,872 in Low Income Housing Tax Credits and extend the financing commitment for Oak and Larrabee Phase I (PID-11667). C. Dennis is the listed presenter.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 55872,
+    "amount_kind": "additional tax credits",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "7a982a93ea66d65c",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-a-change-in-the-trust-fund-loan-s-lien-position-f-ce94a30",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.C.3",
+   "title": "Resolution Authorizing a Change in the Trust Fund Loan's Lien Position for Abrams Intergenerational Village (PID-12032)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The IHDA Board is considering a change to the lien position of a Trust Fund loan for an affordable intergenerational housing development.",
+    "summary": "IHDA Board resolution authorizing a change in the Trust Fund loan's lien position for Abrams Intergenerational Village (PID-12032). It appears on the consent agenda under Multifamily Matters.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     },
+     {
+      "id": "housing-agenda",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority",
+     "Abrams Intergenerational Village"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "454596d786c74f33",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-subordinate-resource-2-767-441-in-connection-with-8cfcb29",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.C.4.a",
+   "title": "Resolution Authorizing Subordinate Resource ($2,767,441) in connection with Award of Federal Tax Credits for El Arco (PID-12396)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The IHDA Board is considering a subordinate financing resource tied to a federal tax credit award for El Arco, an affordable housing development.",
+    "summary": "IHDA Board resolution authorizing a $2,767,441 subordinate resource in connection with an award of federal tax credits for El Arco (PID-12396).",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "El Arco"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 2767441,
+    "amount_kind": "subordinate resource",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "4e3cdc5a2a7c467c",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-subordinate-resource-3-217-600-in-connection-with-a6b8397",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.C.4.b",
+   "title": "Resolution Authorizing Subordinate Resource ($3,217,600) in connection with Award of Federal Tax Credits for Sarah's on Sunnyside (PID-12199)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "IHDA is authorizing a $3,217,600 subordinate financing resource tied to a federal Low Income Housing Tax Credit award for the Sarah's on Sunnyside affordable housing development.",
+    "summary": "IHDA Board would authorize a $3,217,600 subordinate resource in connection with an award of federal tax credits for Sarah's on Sunnyside (PID-12199). The item is on the consent agenda under Multifamily Matters.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     },
+     {
+      "id": "housing-agenda",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 3217600,
+    "amount_kind": "subordinate resource",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "dc8a10a254c53351",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-subordinate-resource-3-136-247-in-connection-with-f6836b9",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.C.4.c",
+   "title": "Resolution Authorizing Subordinate Resource ($3,136,247) in connection with Award of Federal Tax Credits for Pulaski Senior Apartments (PID-12610)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item is an IHDA subordinate financing resource tied to a federal tax credit award for a senior apartment development.",
+    "summary": "IHDA Board would authorize a $3,136,247 subordinate resource in connection with an award of federal tax credits for Pulaski Senior Apartments (PID-12610).",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Pulaski Senior Apartments"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 3136247,
+    "amount_kind": "subordinate resource",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "e5cf70a6e0a6c7a6",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-subordinate-resource-4-400-000-in-connection-with-479975b",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.C.4.d",
+   "title": "Resolution Authorizing Subordinate Resource ($4,400,000) in connection with Award of Federal Tax Credits and Updating Allocation of Resources for Liberty Lake Apartments (PID-12522 & 12584)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item authorizes IHDA subordinate financing tied to a federal tax credit award for an affordable rental development, Liberty Lake Apartments.",
+    "summary": "IHDA Board would authorize a $4,400,000 subordinate resource in connection with a federal tax credit award for Liberty Lake Apartments (PID-12522 & 12584), and update the allocation of resources for the project.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 4400000,
+    "amount_kind": "subordinate resource",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "d1b4c9bf6346fd9a",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-subordinate-resource-1-106-869-in-connection-with-3926e45",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.C.4.e",
+   "title": "Resolution Authorizing Subordinate Resource ($1,106,869) in connection with Award of Federal Tax Credits (245,639) for Lincoln Prairie at Briarwood (PID-12740)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The resolution provides IHDA subordinate financing alongside federal housing tax credits for an affordable rental development.",
+    "summary": "IHDA Board would authorize a $1,106,869 subordinate resource tied to an award of $245,639 in federal tax credits for Lincoln Prairie at Briarwood (PID-12740).",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Lincoln Prairie at Briarwood"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 1106869,
+    "amount_kind": "subordinate resource",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "6218fa80558803e4",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-subordinate-resource-3-164-752-in-connection-with-d6187f8",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.C.4.f",
+   "title": "Resolution Authorizing Subordinate Resource ($3,164,752) in connection with Award of Federal Tax Credits for Hillside Landing (PID-12731)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "IHDA is authorizing a subordinate financing resource tied to a federal Low Income Housing Tax Credit award for an affordable rental development.",
+    "summary": "IHDA Board would authorize a $3,164,752 subordinate resource in connection with an award of federal tax credits for Hillside Landing (PID-12731). The item sits on the consent agenda among multifamily matters.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 3164752,
+    "amount_kind": "subordinate resource",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "9fbb87a1ee22ca08",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-subordinate-resource-3-136-444-in-connection-with-65819ee",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.C.4.g",
+   "title": "Resolution Authorizing Subordinate Resource ($3,136,444) in connection with Award of Federal Tax Credits for Valley Homes (PID-12142)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "IHDA would authorize a subordinate financing resource tied to a federal tax credit award for the Valley Homes affordable rental development.",
+    "summary": "IHDA Board would authorize a $3,136,444 subordinate resource in connection with an award of federal tax credits for Valley Homes (PID-12142). The item appears on the consent agenda under Multifamily Matters.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 3136444,
+    "amount_kind": "subordinate resource",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "e62af830b2e90d4d",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-subordinate-resource-3-763-408-in-connection-with-b6fd845",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.C.4.h",
+   "title": "Resolution Authorizing Subordinate Resource ($3,763,408) in connection with Award of Federal Tax Credits for Dr. Grant G. Henry Village (PID-12749)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item is an IHDA subordinate financing resolution tied to a federal Low Income Housing Tax Credit award for an affordable rental development.",
+    "summary": "IHDA Board would authorize a $3,763,408 subordinate resource in connection with an award of federal tax credits for Dr. Grant G. Henry Village (PID-12749). The agenda gives no further project details.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Illinois Housing Development Authority",
+     "Dr. Grant G. Henry Village"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 3763408,
+    "amount_kind": "subordinate resource",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "eb1903db578f1b04",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-subordinate-resource-3-886-740-in-connection-with-7a7aaf8",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.C.4.i",
+   "title": "Resolution Authorizing Subordinate Resource ($3,886,740) in connection with Award of Federal Tax Credits for Macoupin Senior Homes (PID-12444)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item is an IHDA subordinate financing resource tied to a federal Low Income Housing Tax Credit award for a senior affordable rental development.",
+    "summary": "IHDA Board would authorize a $3,886,740 subordinate resource in connection with an award of federal tax credits for Macoupin Senior Homes (PID-12444). The agenda gives no further details on the project.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     },
+     {
+      "id": "housing-agenda",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Illinois Housing Development Authority",
+     "Macoupin Senior Homes"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 3886740,
+    "amount_kind": "subordinate resource",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "771a31e06736f221",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-subordinate-resource-3-697-045-in-connection-with-6a48513",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.C.4.j",
+   "title": "Resolution Authorizing Subordinate Resource ($3,697,045) in connection with Award of Federal Tax Credits for Burlington Terrace (PID-12606)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The IHDA Board is authorizing a subordinate financing resource tied to a federal Low Income Housing Tax Credit award for an affordable rental development, Burlington Terrace.",
+    "summary": "IHDA Board resolution authorizing a $3,697,045 subordinate resource in connection with an award of federal tax credits for Burlington Terrace (PID-12606). Listed on the consent agenda under Multifamily Matters.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 3697045,
+    "amount_kind": "subordinate resource",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "9f378e383c53ed87",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-subordinate-resource-3-723-554-in-connection-with-e3a6e44",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.C.4.k",
+   "title": "Resolution Authorizing Subordinate Resource ($3,723,554) in connection with Award of Federal Tax Credits for The Meadows-Phase I (PID-12533)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The IHDA Board is considering a subordinate financing resource for a development receiving federal Low Income Housing Tax Credits.",
+    "summary": "IHDA Board resolution authorizing a $3,723,554 subordinate resource in connection with an award of federal tax credits for The Meadows-Phase I (PID-12533).",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 3723554,
+    "amount_kind": "subordinate resource",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "c67fb59c8199cfb0",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-regarding-freddie-mac-delegations",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.D.1",
+   "title": "Resolution Regarding Freddie Mac Delegations",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A Freddie Mac delegation resolution at the state housing finance agency relates to how IHDA finances multifamily housing, though the material gives no detail.",
+    "summary": "The IHDA Board will consider a resolution regarding Freddie Mac delegations, presented by S. Jacobson on the consent agenda under Finance Matters. The material gives only the title.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Freddie Mac"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "08248e0f304c7e19",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-ratifying-establishment-of-loan-loss-reserve",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.D.2",
+   "title": "Resolution Ratifying Establishment of Loan Loss Reserve",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A loan loss reserve ratified by the state housing finance agency relates to how IHDA finances housing lending, though the material gives few details.",
+    "summary": "The IHDA Board would ratify the establishment of a loan loss reserve (resolution 2026-11-IHDA-176), listed as a consent agenda finance matter presented by V. Villegas.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "3986f1c21a7f35a0",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-of-intent-to-issue-bonds-of-revenue-obligations-under-single-e783427",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.D.3",
+   "title": "Resolution of Intent to Issue Bonds of Revenue Obligations under Single Family and Multi-Family Bond Programs In an Aggregate Principal Amount Not to Exceed $1,800,000,000",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The resolution authorizes IHDA's intent to issue up to $1.8 billion in revenue bonds for single-family and multi-family housing finance programs.",
+    "summary": "IHDA Board would adopt a resolution of intent to issue revenue obligation bonds under its Single Family and Multi-Family Bond Programs, in an aggregate principal amount not to exceed $1,800,000,000.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 1800000000,
+    "amount_kind": "bond authorization cap",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "a4e936c599673e76",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-a-loan-extension-for-decatur-affordable-housing-30-381",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.E.1",
+   "title": "Resolution Authorizing a Loan Extension for Decatur Affordable Housing (30-381)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "IHDA is considering extending a loan for an affordable housing property in Decatur, which is a state housing finance action.",
+    "summary": "The IHDA Board would authorize a loan extension for Decatur Affordable Housing (30-381), an asset management item presented by K. Padgitt.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Decatur Affordable Housing"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "bf31c1c7bd799c09",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-a-change-in-ownership-release-of-regulatory-agree-4d28c41",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.E.2",
+   "title": "Resolution Authorizing a Change in Ownership, Release of Regulatory Agreement and Assignment and Assumption of Extended Use Agreement for Centreville Courts (1305)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The resolution concerns a change in ownership and release of the regulatory agreement and extended use agreement on Centreville Courts, an IHDA-financed affordable rental property.",
+    "summary": "IHDA Board would authorize a change in ownership, release of the regulatory agreement, and assignment and assumption of the extended use agreement for Centreville Courts (1305). Asset management staff member H. Le presents the item.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "55fe0450a4c08e44",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-loan-modifications-and-amendment-to-the-regulator-f50ed38",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.E.3",
+   "title": "Resolution Authorizing Loan Modifications And Amendment to the Regulatory Agreement for East Bank Pointe (30-2169)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item modifies loans and the regulatory agreement for East Bank Pointe, an IHDA-financed rental property, which affects how its affordable housing is financed and regulated.",
+    "summary": "IHDA Board would authorize loan modifications and an amendment to the regulatory agreement for East Bank Pointe (30-2169), an asset management matter presented by H. Le.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "82eb2a40412d12c9",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-a-transfer-of-ownership-interests-and-loan-payoff-4391d49",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.E.4",
+   "title": "Resolution Authorizing a Transfer of Ownership Interests and Loan Payoff for Brookshire Estates Apartments (40-2058)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item concerns an IHDA-financed affordable apartment property, involving a change in ownership interests and payoff of its loan.",
+    "summary": "IHDA Board resolution authorizing a transfer of ownership interests and a loan payoff for Brookshire Estates Apartments (40-2058), presented by H. Le on the consent agenda under Asset Management Matters.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "518d2b812e1fc747",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-a-loan-extension-for-lakefront-sro-aka-belray-apa-d6fe158",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.E.5",
+   "title": "Resolution Authorizing a Loan Extension for Lakefront SRO (aka Belray Apartments) (499)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item extends an IHDA loan on Lakefront SRO (Belray Apartments), an existing affordable single-room-occupancy housing property.",
+    "summary": "IHDA Board would authorize a loan extension for Lakefront SRO, also known as Belray Apartments (asset 499). The item appears on the consent agenda under Asset Management Matters, presented by P. Walker.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     },
+     {
+      "id": "housing-agenda",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Lakefront SRO",
+     "Belray Apartments"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "bd33004992d4c627",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-a-change-in-ownership-assignment-and-assumption-o-dca778f",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.E.6",
+   "title": "Resolution Authorizing a Change in Ownership, Assignment and Assumption of Documents, Change in Property Management and Waiver of Qualified Contract for Mt. Vernon Senior Building d/b/a Heritage Landing (2449)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "It concerns IHDA approval of an ownership change, new property management, and waiver of the qualified contract for an existing affordable senior rental property.",
+    "summary": "IHDA Board would authorize a change in ownership, assignment and assumption of documents, a change in property management, and a waiver of qualified contract for Mt. Vernon Senior Building d/b/a Heritage Landing (2449).",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Mt. Vernon Senior Building d/b/a Heritage Landing"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "c44290ed20101a95",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-a-loan-extension-and-waiver-of-qualified-contract-576081e",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.E.7",
+   "title": "Resolution Authorizing a Loan Extension and Waiver of Qualified Contract for Little Egypt Estates (40-2046)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The IHDA Board is considering a loan extension and waiver of the qualified contract for Little Egypt Estates, an IHDA-financed affordable rental property.",
+    "summary": "IHDA Board resolution authorizing a loan extension and waiver of the qualified contract for Little Egypt Estates (40-2046). Asset Management staff member S. White is listed as presenter.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Little Egypt Estates"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "e9ade17d6a928701",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-amendments-to-the-fee-for-service-agreements-for-6e2dba8",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.F.1",
+   "title": "Resolution Authorizing Amendments to the Fee for Service Agreements for the Cook County Mortgage Foreclosure Mediation Program",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item amends agreements funding the Cook County Mortgage Foreclosure Mediation Program, which helps homeowners facing foreclosure.",
+    "summary": "The IHDA Board would authorize amendments to the fee for service agreements for the Cook County Mortgage Foreclosure Mediation Program. The item is presented by R. Garcia as resolution 2026-11-IHDA-185.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     },
+     {
+      "id": "healthy-homes",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority",
+     "Cook County Mortgage Foreclosure Mediation Program"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "07fe798228304c52",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-appointing-members-to-board-committees",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "IV.G.1",
+   "title": "Resolution Appointing Members to Board Committees",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "This is an internal administrative resolution appointing members to IHDA board committees and does not directly bear on building, financing, regulating, or preserving homes.",
+    "summary": "Resolution appointing members to IHDA Board committees, on the consent agenda of the November 20, 2026 IHDA Board meeting under Community Affairs matters, presented by K. Faust.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "409cdf5c4110f8f7",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-state-tax-credits-500-000-for-highwood-community-5214320",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "V.A.1",
+   "title": "Resolution Authorizing State Tax Credits (500,000) for Highwood Community Land Trust Program (PID-12798)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item authorizes state tax credits for a community land trust program, which is a state-financed affordable housing action.",
+    "summary": "IHDA Board resolution authorizing $500,000 in State Tax Credits for the Highwood Community Land Trust Program (PID-12798).",
+    "categories": [
+     {
+      "id": "social-housing",
+      "via": "keyword",
+      "detail": "land trust"
+     },
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Highwood Community Land Trust Program"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 500000,
+    "amount_kind": "state tax credits",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "ee4ed4fefc9fa647",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-state-tax-credits-509-300-for-eap-phase-xiii-pid-12821",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "V.A.2",
+   "title": "Resolution Authorizing State Tax Credits (509,300) for EAP Phase XIII (PID-12821)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The IHDA Board is acting on a resolution authorizing state tax credits for an affordable housing project, EAP Phase XIII.",
+    "summary": "The IHDA Board would authorize state tax credits of $509,300 for EAP Phase XIII (PID-12821). The item is a main-agenda multifamily matter presented by J. Braford.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 509300,
+    "amount_kind": "state tax credits",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "49204b7f14ddf7af",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-the-issuance-of-not-to-exceed-750-000-000-revenue-a93b406",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "V.B.1",
+   "title": "Resolution Authorizing the Issuance of Not to Exceed $750,000,000 Revenue Bonds 2027 Series ABCD and EFGH",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "IHDA revenue bonds finance housing programs, so the issuance bears on state housing finance.",
+    "summary": "The IHDA Board will consider a resolution authorizing issuance of Revenue Bonds 2027 Series ABCD and EFGH, in an amount not to exceed $750,000,000. The resolution is presented by S. Jacobson.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 750000000,
+    "amount_kind": "revenue bond cap",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "aedde923a7087f65",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-agreements-for-brokerage-services-related-to-grou-5d9f36c",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "V.C.1",
+   "title": "Resolution Authorizing Agreements for Brokerage Services Related to Group Insurance Benefits and for the Provision of Certain Group Insurance Benefits",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "This is an internal IHDA human resources item on brokerage and group insurance benefits for staff, with no bearing on housing production, finance, or tenants.",
+    "summary": "The IHDA Board would authorize agreements for brokerage services related to group insurance benefits and for the provision of certain group insurance benefits. The item is presented by P. Murry under Human Resources.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "c29634cd2ddc5592",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-a-conduit-loan-24-311-000-for-maple-ridge-apartme-ca0695a",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "V.D.1",
+   "title": "Resolution Authorizing a Conduit Loan ($24,311,000) for Maple Ridge Apartments (PID-12232)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item authorizes an IHDA conduit loan to finance Maple Ridge Apartments, a multifamily housing development.",
+    "summary": "IHDA Board would approve a $24,311,000 conduit loan for Maple Ridge Apartments (PID-12232). The item is presented by C. Dennis in the Multifamily Finance section of the main agenda.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 24311000,
+    "amount_kind": "conduit loan",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "eb15eb6e7fce6f59",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-a-conduit-loan-20-700-000-for-spencer-towers-3rd-408a81c",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "V.D.2",
+   "title": "Resolution Authorizing a Conduit Loan ($20,700,000) for Spencer Towers & 3rd and 11th Townhomes (PID-12770)",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "It authorizes an IHDA conduit loan to finance a multifamily affordable housing development, Spencer Towers & 3rd and 11th Townhomes.",
+    "summary": "The IHDA Board would authorize a $20,700,000 conduit loan for Spencer Towers & 3rd and 11th Townhomes (PID-12770). The item appears on the main agenda under Multifamily Finance, with T. Krouse listed as presenter.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     },
+     {
+      "id": "housing-agenda",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Illinois Housing Development Authority",
+     "T. Krouse"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 20700000,
+    "amount_kind": "conduit loan",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "345761b2ec08e3dd",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-grants-9-200-000-under-the-strong-communities-pro-ded3f13",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "V.E.1",
+   "title": "Resolution Authorizing Grants ($9,200,000) under the Strong Communities Program–Round 3",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The IHDA Board is considering $9.2 million in Strong Communities Program grants, a state housing finance program.",
+    "summary": "The IHDA Board would authorize $9,200,000 in grants under Round 3 of the Strong Communities Program. The item is presented by S. Koo under Community Affairs Matters.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority",
+     "Strong Communities Program"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 9200000,
+    "amount_kind": "program grants",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "73abfea5e683e701",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#resolution-authorizing-a-grant-125-000-from-the-trust-fund-program-for-t-91f1303",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "V.E.2",
+   "title": "Resolution Authorizing a Grant ($125,000) from the Trust Fund Program for the Chicago Rehab Network Technical Assistance Program Round 6",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "The item is a state Trust Fund grant that funds technical assistance for the Chicago Rehab Network, which supports affordable housing development in Chicago.",
+    "summary": "The IHDA Board would authorize a $125,000 grant from the Trust Fund Program for the Chicago Rehab Network's Technical Assistance Program, Round 6.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     },
+     {
+      "id": "housing-agenda",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "Illinois Housing Development Authority",
+     "Chicago Rehab Network"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": 125000,
+    "amount_kind": "Trust Fund grant",
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "5c55847cb2cb3552",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#authority-financial-statements",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "VII.A",
+   "title": "Authority Financial Statements",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "The item is a routine informational presentation of the agency's financial statements and does not itself act on specific homes, financing deals, or tenant protections.",
+    "summary": "IHDA Board new business item presenting the Authority Financial Statements, listed under reports at the November 20, 2026 board meeting.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "71cffe2cdf6cba69",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#accounting-payments-report",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "VII.B",
+   "title": "Accounting Payments Report",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "This is an informational written report on IHDA's internal accounting payments, with no specific housing development, financing, or policy action.",
+    "summary": "Informational written report on Accounting Payments, listed under Written Reports on the IHDA Board's November 20, 2026 agenda.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "29b67e04264a339b",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#investment-holdings-report",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "VII.C",
+   "title": "Investment Holdings Report",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "This is an informational written report on IHDA's investment holdings, which concerns the agency's finances and not any specific housing development, program, or tenant protection.",
+    "summary": "Informational written report on the Illinois Housing Development Authority's investment holdings, listed under Written Reports on the November 20, 2026 board agenda and presented by S. Martin.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "3bc087d8dc7f009f",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#communications-report",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "VII.D",
+   "title": "Communications Report",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "This is an informational written communications report from IHDA staff, and the retrieved text is the full board agenda, which contains no details on the report itself.",
+    "summary": "IHDA Board's Communications Report (J. Frevert) is listed among informational written reports for the November 20, 2026 board meeting.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA",
+     "J. Frevert"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "b6480e11a73914fd",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#external-relations-report",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "VII.E",
+   "title": "External Relations Report",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "This is an informational External Relations Report on the IHDA Board agenda, and the retrieved text contains only the full meeting agenda, with no specific housing action described for this item.",
+    "summary": "IHDA Board written report titled External Relations Report, presented by B. Kiley, listed as an informational item for the November 20, 2026 board meeting.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "d9a590f5aea93f21",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "ihda:ihda-board:2026-11-20#court-based-rental-assistance-program",
+   "meeting_id": "ihda:ihda-board:2026-11-20",
+   "source_ref": "VII.F",
+   "title": "Court-Based Rental Assistance Program",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/11/1120-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A court-based rental assistance program supports tenants facing eviction, which bears on renters' housing stability.",
+    "summary": "The IHDA Board's November 20, 2026 agenda lists a written report, for information only, on the Court-Based Rental Assistance Program, presented by P. Sellke.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Board"
+     },
+     {
+      "id": "healthy-homes",
+      "via": "model",
+      "detail": ""
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "IHDA"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "9d5d3218d6521f82",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
+   "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
   }
  ],
  "notices": [
@@ -14292,6 +18085,61 @@
    "type": "notice_new",
    "ref_id": "watch:clihtf-landlord:72b554eb0a37",
    "at": "2026-11-13T21:15:53.265444-06:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029491",
+   "at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029492",
+   "at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029494",
+   "at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029488",
+   "at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029496",
+   "at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029493",
+   "at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "cpc:2026-11-19#2800-n-sheridan-road",
+   "at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "cpc:2026-11-19#2800-n-sheridan-road-2",
+   "at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "type": "meeting_new",
+   "ref_id": "ihda:ihda-board:2026-11-20",
+   "at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "type": "meeting_new",
+   "ref_id": "ihda:ihda-finance-committee:2026-11-20",
+   "at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "type": "meeting_new",
+   "ref_id": "ihda:ihda-asset-management-committee:2026-11-20",
+   "at": "2026-11-18T13:24:37.488660-06:00"
   }
  ]
 }
