@@ -1,122 +1,62 @@
 {
- "generated_at": "2026-11-18T22:12:11.363180-06:00",
+ "generated_at": "2026-11-19T13:29:35.719333-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-18T22:12:11.363180-06:00",
+   "last_success_at": "2026-11-19T13:29:35.719333-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-18T22:12:11.363180-06:00",
+   "last_success_at": "2026-11-19T13:29:35.719333-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-18T22:12:11.363180-06:00",
+   "last_success_at": "2026-11-19T13:29:35.719333-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-18T22:12:11.363180-06:00",
+   "last_success_at": "2026-11-19T13:29:35.719333-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-18T22:12:11.363180-06:00",
+   "last_success_at": "2026-11-19T13:29:35.719333-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-18T22:12:11.363180-06:00",
+   "last_success_at": "2026-11-19T13:29:35.719333-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-18T22:12:11.363180-06:00",
+   "last_success_at": "2026-11-19T13:29:35.719333-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-18T22:12:11.363180-06:00",
+   "last_success_at": "2026-11-19T13:29:35.719333-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-18T22:12:11.363180-06:00",
+   "last_success_at": "2026-11-19T13:29:35.719333-06:00",
    "status": "ok",
    "message": ""
   }
  ],
  "meetings": [
-  {
-   "id": "elms:266A5A62-53B8-F111-AAAC-001DD80AA3CC",
-   "source_id": "elms-finance",
-   "body": "City Council Committee on Finance",
-   "body_id": "D99FC72B-B0D7-EC11-A7B4-001DD804F0C4",
-   "jurisdiction": "chicago",
-   "start": "2026-10-05T10:00:00-05:00",
-   "time_known": true,
-   "status": "held",
-   "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
-   "agenda_url": null,
-   "video_url": "https://vimeo.com/manage/videos/1232129590",
-   "minutes_url": null,
-   "detail_url": null,
-   "needs_ai_extraction": false,
-   "item_count_total": 0,
-   "item_count_relevant": 0,
-   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
-  },
-  {
-   "id": "elms:30125FE9-53B8-F111-AAAC-001DD80AA3CC",
-   "source_id": "elms-finance",
-   "body": "City Council Committee on Finance",
-   "body_id": "D99FC72B-B0D7-EC11-A7B4-001DD804F0C4",
-   "jurisdiction": "chicago",
-   "start": "2026-10-05T10:00:00-05:00",
-   "time_known": true,
-   "status": "held",
-   "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
-   "agenda_url": null,
-   "video_url": "https://vimeo.com/manage/videos/1232129590",
-   "minutes_url": null,
-   "detail_url": null,
-   "needs_ai_extraction": false,
-   "item_count_total": 0,
-   "item_count_relevant": 0,
-   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-14T09:54:55.014387-05:00"
-  },
-  {
-   "id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3",
-   "source_id": "elms-finance",
-   "body": "City Council Committee on Finance",
-   "body_id": "D99FC72B-B0D7-EC11-A7B4-001DD804F0C4",
-   "jurisdiction": "chicago",
-   "start": "2026-10-05T10:00:00-05:00",
-   "time_known": true,
-   "status": "held",
-   "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
-   "agenda_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/d3f3d5d3-da10-4a65-9367-b00e89dd4023.pdf",
-   "video_url": "https://vimeo.com/manage/videos/1232129590",
-   "minutes_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/68f30283-6de3-4941-b068-5540b9e288b5.pdf",
-   "detail_url": null,
-   "needs_ai_extraction": true,
-   "item_count_total": 9,
-   "item_count_relevant": 1,
-   "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-15T15:21:23.549669-05:00"
-  },
   {
    "id": "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC",
    "source_id": "elms-housing",
@@ -429,13 +369,13 @@
    "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
    "agenda_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/61b71d6c-fcac-4a80-900b-9616caadf4c1.pdf",
    "video_url": "https://vimeo.com/showcase/8928576?video=1247331158",
-   "minutes_url": null,
+   "minutes_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/e4b7a09f-9fa0-4ef0-a4c2-8b9f74612fd8.pdf",
    "detail_url": null,
    "needs_ai_extraction": false,
    "item_count_total": 41,
    "item_count_relevant": 30,
    "first_seen_at": "2026-10-19T12:29:04.290827-05:00",
-   "last_changed_at": "2026-11-17T13:51:32.211777-06:00"
+   "last_changed_at": "2026-11-19T13:29:35.719333-06:00"
   },
   {
    "id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5",
@@ -465,7 +405,7 @@
    "jurisdiction": "chicago",
    "start": "2026-11-19T10:00:00-06:00",
    "time_known": false,
-   "status": "scheduled",
+   "status": "held",
    "location": null,
    "agenda_url": "https://www.chicago.gov/content/city/en/depts/dcd/supp_info/chicago_plan_commission/November_2026_Plan_Commission_Hearing.html",
    "video_url": null,
@@ -475,7 +415,7 @@
    "item_count_total": 9,
    "item_count_relevant": 6,
    "first_seen_at": "2026-10-14T09:54:55.014387-05:00",
-   "last_changed_at": "2026-10-30T21:23:45.629620-05:00"
+   "last_changed_at": "2026-11-19T13:29:35.719333-06:00"
   },
   {
    "id": "ihda:ihda-asset-management-committee:2026-11-20",
@@ -658,6 +598,26 @@
    "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
   },
   {
+   "id": "elms:E47D115D-3DE4-F111-84EA-001DD80AA3CC",
+   "source_id": "elms-zoning",
+   "body": "City Council Committee on Zoning",
+   "body_id": "ED9FC72B-B0D7-EC11-A7B4-001DD804F0C4",
+   "jurisdiction": "chicago",
+   "start": "2026-12-15T10:00:00-06:00",
+   "time_known": true,
+   "status": "scheduled",
+   "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
+   "agenda_url": null,
+   "video_url": null,
+   "minutes_url": null,
+   "detail_url": null,
+   "needs_ai_extraction": false,
+   "item_count_total": 0,
+   "item_count_relevant": 0,
+   "first_seen_at": "2026-11-19T13:29:35.719333-06:00",
+   "last_changed_at": "2026-11-19T13:29:35.719333-06:00"
+  },
+  {
    "id": "cpc:2026-12-17",
    "source_id": "cpc",
    "body": "Chicago Plan Commission",
@@ -679,426 +639,6 @@
   }
  ],
  "items": [
-  {
-   "id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#a-proposed-order-authorizing-the-corporation-counsel-to-enter-into-and-e-ed66b79",
-   "meeting_id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3",
-   "source_ref": "1",
-   "title": "A proposed order authorizing the Corporation Counsel to enter into and execute a Settlement Order in the following sixteen (16) cases",
-   "attachments": [
-    {
-     "label": "Agenda",
-     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/d3f3d5d3-da10-4a65-9367-b00e89dd4023.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "ai_extracted",
-   "geography_hint": null,
-   "enrichment": {
-    "status": "screened_out",
-    "housing_relevant": false,
-    "relevance_reason": "This item authorizes settlement of sixteen lawsuits against city personnel with a payout of $260,814,000, which does not involve building, financing, regulating, or taxing homes or tenants' rights.",
-    "summary": "",
-    "categories": [],
-    "geography": {
-     "address": null,
-     "ward": null,
-     "community_area": null
-    },
-    "entities": [],
-    "figures": {
-     "units": null,
-     "affordable_units": null
-    },
-    "amount": null,
-    "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
-    "important": null,
-    "source_quality": "none",
-    "model": "claude-haiku-5-5",
-    "content_hash": "2541c58405f5a3fe",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-an-intergovernmental-agreement-191a042",
-   "meeting_id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3",
-   "source_ref": "2",
-   "title": "An ordinance authorizing the execution of an intergovernmental agreement with the Chicago Board of Education to provide TIF funds for improvements at Harriet Beecher Stowe Elementary School, located at 3444 W. Wabansia Avenue.",
-   "attachments": [
-    {
-     "label": "Agenda",
-     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/d3f3d5d3-da10-4a65-9367-b00e89dd4023.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "ai_extracted",
-   "geography_hint": null,
-   "enrichment": {
-    "status": "screened_out",
-    "housing_relevant": false,
-    "relevance_reason": "The item provides TIF funds for improvements at an elementary school, which is a public institutional use with no housing built, financed, preserved, regulated, or demolished.",
-    "summary": "",
-    "categories": [
-     {
-      "id": "housing-agenda",
-      "via": "keyword",
-      "detail": "TIF"
-     }
-    ],
-    "geography": {
-     "address": null,
-     "ward": null,
-     "community_area": null
-    },
-    "entities": [],
-    "figures": {
-     "units": null,
-     "affordable_units": null
-    },
-    "amount": null,
-    "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
-    "important": null,
-    "source_quality": "none",
-    "model": "claude-haiku-5-5",
-    "content_hash": "d4e4778d6c9a95c7",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-an-intergovernmental-agreement-616e994",
-   "meeting_id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3",
-   "source_ref": "3",
-   "title": "An ordinance authorizing the execution of an intergovernmental agreement with the Chicago Board of Education to provide TIF funds for improvements at Suder Montessori Magnet Elementary School, located at 2022 W. Washington Boulevard.",
-   "attachments": [
-    {
-     "label": "Agenda",
-     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/d3f3d5d3-da10-4a65-9367-b00e89dd4023.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "ai_extracted",
-   "geography_hint": null,
-   "enrichment": {
-    "status": "screened_out",
-    "housing_relevant": false,
-    "relevance_reason": "The item provides TIF funds for capital improvements at a public elementary school, which is an educational facility and not about homes, housing finance, or residential rights.",
-    "summary": "",
-    "categories": [
-     {
-      "id": "housing-agenda",
-      "via": "keyword",
-      "detail": "TIF"
-     }
-    ],
-    "geography": {
-     "address": null,
-     "ward": null,
-     "community_area": null
-    },
-    "entities": [],
-    "figures": {
-     "units": null,
-     "affordable_units": null
-    },
-    "amount": null,
-    "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
-    "important": null,
-    "source_quality": "none",
-    "model": "claude-haiku-5-5",
-    "content_hash": "db32d8e34079cd88",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#a-substitute-ordinance-approving-the-execution-of-the-66th-amending-agre-7b92f60",
-   "meeting_id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3",
-   "source_ref": "4",
-   "title": "A substitute ordinance approving the execution of the 66th amending agreement with SomerCor 504, Inc. to increase the amount of grant funds available in various redevelopment project areas, amend the Small Business Improvement Fund (SBIF) program rules, and authorize SomerCor 504, Inc. to continue providing administrative services for the program.",
-   "attachments": [
-    {
-     "label": "Agenda",
-     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/d3f3d5d3-da10-4a65-9367-b00e89dd4023.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "ai_extracted",
-   "geography_hint": null,
-   "enrichment": {
-    "status": "screened_out",
-    "housing_relevant": false,
-    "relevance_reason": "The SBIF program provides grants to small businesses for storefront and commercial property improvements in redevelopment areas, not to homes or residents' housing rights, so it does not bear on housing.",
-    "summary": "",
-    "categories": [],
-    "geography": {
-     "address": null,
-     "ward": null,
-     "community_area": null
-    },
-    "entities": [],
-    "figures": {
-     "units": null,
-     "affordable_units": null
-    },
-    "amount": null,
-    "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
-    "important": null,
-    "source_quality": "none",
-    "model": "claude-haiku-5-5",
-    "content_hash": "9cc02658a605ef95",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-a-redevelopment-agreement-with-e11e35b",
-   "meeting_id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3",
-   "source_ref": "5",
-   "title": "An ordinance authorizing the execution of a Redevelopment Agreement with BTH Development, NFP to provide Housing and Economic Development Bond (HED) funds for redevelopment of Altgeld Gardens Youth Center project at 13122 S. Ellis Avenue.",
-   "attachments": [
-    {
-     "label": "Agenda",
-     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/d3f3d5d3-da10-4a65-9367-b00e89dd4023.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "ai_extracted",
-   "geography_hint": null,
-   "enrichment": {
-    "status": "ok",
-    "housing_relevant": false,
-    "relevance_reason": "The item funds a youth center redevelopment at Altgeld Gardens, a community facility, and the material describes no housing units or housing activity.",
-    "summary": "Ordinance authorizing a Redevelopment Agreement with BTH Development, NFP for up to $7,300,000 in Housing and Economic Development Bond (HED) funds to redevelop the Altgeld Gardens Youth Center at 13122 S. Ellis Avenue (10th Ward).",
-    "categories": [],
-    "geography": {
-     "address": "13122 S. Ellis Avenue",
-     "ward": 10,
-     "community_area": "Riverdale"
-    },
-    "entities": [
-     "BTH Development, NFP",
-     "Department of Planning and Development"
-    ],
-    "figures": {
-     "units": null,
-     "affordable_units": null
-    },
-    "amount": 7300000,
-    "amount_kind": "HED bond funds",
-    "zoning_from": [],
-    "zoning_to": null,
-    "important": null,
-    "source_quality": "full",
-    "model": "claude-sonnet-5-5",
-    "content_hash": "358264b80b69cc6e",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-a-redevelopment-agreement-with-690ee1e",
-   "meeting_id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3",
-   "source_ref": "6",
-   "title": "An ordinance authorizing the execution of a Redevelopment Agreement with North Lawndale Catalyst Initiative, NFP to provide Housing and Economic Development (HED) funds and tax increment financing (TIF) assistance for the Filmore Linen Services project at 920-922 S. Campbell Avenue.",
-   "attachments": [
-    {
-     "label": "Agenda",
-     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/d3f3d5d3-da10-4a65-9367-b00e89dd4023.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "ai_extracted",
-   "geography_hint": null,
-   "enrichment": {
-    "status": "ok",
-    "housing_relevant": false,
-    "relevance_reason": "The item funds a Filmore Linen Services project, which appears to be a commercial or economic development project, and the material mentions no housing.",
-    "summary": "Ordinance authorizing a Redevelopment Agreement with North Lawndale Catalyst Initiative, NFP for up to $5,000,000 in HED funds and up to $5,000,000 in TIF assistance for the Filmore Linen Services project at 920-922 S. Campbell Avenue (28th Ward).",
-    "categories": [
-     {
-      "id": "housing-agenda",
-      "via": "keyword",
-      "detail": "TIF"
-     }
-    ],
-    "geography": {
-     "address": "920-922 S. Campbell Avenue",
-     "ward": 28,
-     "community_area": "Near West Side"
-    },
-    "entities": [
-     "North Lawndale Catalyst Initiative, NFP",
-     "Department of Planning and Development"
-    ],
-    "figures": {
-     "units": null,
-     "affordable_units": null
-    },
-    "amount": null,
-    "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
-    "important": null,
-    "source_quality": "full",
-    "model": "claude-sonnet-5-5",
-    "content_hash": "6cfd223efe0d0dd9",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#an-ordinance-authorizing-the-execution-of-a-redevelopment-agreement-with-e529a0d",
-   "meeting_id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3",
-   "source_ref": "7",
-   "title": "An ordinance authorizing the execution of a Redevelopment Agreement with Hudson Michigan Avenue Owner LLC to provide Housing and Economic Development (HED) funds for the Hudson House project at 2222 S. Michigan Avenue.",
-   "attachments": [
-    {
-     "label": "Agenda",
-     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/d3f3d5d3-da10-4a65-9367-b00e89dd4023.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "ai_extracted",
-   "geography_hint": null,
-   "enrichment": {
-    "status": "ok",
-    "housing_relevant": true,
-    "relevance_reason": "The ordinance would provide City HED loan and grant funds to a project called Hudson House, which appears to be a housing development financed by the City.",
-    "summary": "Ordinance authorizing a Redevelopment Agreement with Hudson Michigan Avenue Owner LLC for Housing and Economic Development (HED) funds for the Hudson House project at 2222 S. Michigan Avenue: up to $5,000,000 as a City loan and up to $10,000,000 as a City grant.",
-    "categories": [
-     {
-      "id": "housing-agenda",
-      "via": "model",
-      "detail": ""
-     }
-    ],
-    "geography": {
-     "address": "2222 S. Michigan Avenue",
-     "ward": 3,
-     "community_area": "Near South Side"
-    },
-    "entities": [
-     "Hudson Michigan Avenue Owner LLC",
-     "Department of Planning and Development"
-    ],
-    "figures": {
-     "units": null,
-     "affordable_units": null
-    },
-    "amount": null,
-    "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
-    "important": null,
-    "source_quality": "full",
-    "model": "claude-sonnet-5-5",
-    "content_hash": "156bcc2c06afa363",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#one-1-proposed-order-authorizing-the-payment-of-various-small-claims-aga-7140ea7",
-   "meeting_id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3",
-   "source_ref": "8",
-   "title": "One (1) proposed order authorizing the payment of various small claims against the City of Chicago.",
-   "attachments": [
-    {
-     "label": "Agenda",
-     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/d3f3d5d3-da10-4a65-9367-b00e89dd4023.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "ai_extracted",
-   "geography_hint": null,
-   "enrichment": {
-    "status": "screened_out",
-    "housing_relevant": false,
-    "relevance_reason": "This item authorizes payments to settle lawsuits against the City, such as the Guevara-related cases, and does not build, finance, regulate, tax, or demolish homes or affect tenants' rights.",
-    "summary": "",
-    "categories": [],
-    "geography": {
-     "address": null,
-     "ward": null,
-     "community_area": null
-    },
-    "entities": [],
-    "figures": {
-     "units": null,
-     "affordable_units": null
-    },
-    "amount": null,
-    "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
-    "important": null,
-    "source_quality": "none",
-    "model": "claude-haiku-5-5",
-    "content_hash": "da2795220a47fb93",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T13:08:07.894365-05:00"
-  },
-  {
-   "id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3#one-1-proposed-orders-denying-the-payment-of-various-small-claims-agains-235e13b",
-   "meeting_id": "elms:531B4778-99B7-F111-AAAC-001DD80FDAD3",
-   "source_ref": "9",
-   "title": "One (1) proposed orders denying the payment of various small claims against the City of Chicago.",
-   "attachments": [
-    {
-     "label": "Agenda",
-     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/d3f3d5d3-da10-4a65-9367-b00e89dd4023.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "ai_extracted",
-   "geography_hint": null,
-   "enrichment": {
-    "status": "screened_out",
-    "housing_relevant": false,
-    "relevance_reason": "The item denies payment of various small claims against the City and does not concern homes, housing finance, tax, regulation, or residents' rights in housing.",
-    "summary": "",
-    "categories": [],
-    "geography": {
-     "address": null,
-     "ward": null,
-     "community_area": null
-    },
-    "entities": [],
-    "figures": {
-     "units": null,
-     "affordable_units": null
-    },
-    "amount": null,
-    "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
-    "important": null,
-    "source_quality": "none",
-    "model": "claude-haiku-5-5",
-    "content_hash": "4161655d6bda3a99",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T13:08:07.894365-05:00"
-  },
   {
    "id": "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC#A2026-0029000",
    "meeting_id": "elms:4C6D0E57-8EB7-F111-AAAC-001DD80AA3CC",
@@ -13028,6 +12568,10 @@
     {
      "label": "Presentation",
      "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/NBIC_Grand_CPC_Adoption_111926_DRAFTPP.pdf"
+    },
+    {
+     "label": "Public Comments",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/11_2026/Written_Comments/North_Branch_Framework_Update_comments.pdf"
     }
    ],
    "outcome": null,
@@ -13040,8 +12584,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "The framework update recommends mixed-use development at downtown density levels on about 11 acres, which guides future land use and potential residential development, though it does not itself rezone or specify housing.",
-    "summary": "The Department of Planning and Development seeks Plan Commission adoption of the North Branch Framework Update for about 11 acres south of Grand Avenue. It recommends mixed-use development at downtown density, a transitway, and public open spaces to guide future projects.",
+    "relevance_reason": "The framework update recommends mixed-use development at downtown density levels on about 11 acres of the North Branch corridor, guiding future land use and development that could include housing.",
+    "summary": "The Department of Planning and Development seeks Plan Commission adoption of the North Branch Framework Update for about 11 acres south of Grand Avenue. It recommends mixed-use development at downtown density, a transitway, and public open spaces to guide future public and private projects.",
     "categories": [
      {
       "id": "ahpaa",
@@ -13069,11 +12613,11 @@
     "important": null,
     "source_quality": "partial",
     "model": "claude-sonnet-5-5",
-    "content_hash": "27476d6983cffc3a",
+    "content_hash": "faa80a01273c3f3a",
     "overridden": false
    },
    "first_seen_at": "2026-10-30T21:23:45.629620-05:00",
-   "last_changed_at": "2026-11-17T13:51:32.211777-06:00"
+   "last_changed_at": "2026-11-19T13:29:35.719333-06:00"
   },
   {
    "id": "ihda:ihda-asset-management-committee:2026-11-20#homeownership-overview-as-of-september-30-2026",
@@ -18246,6 +17790,11 @@
    "type": "meeting_new",
    "ref_id": "ihda:ihda-asset-management-committee:2026-11-20",
    "at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "type": "meeting_new",
+   "ref_id": "elms:E47D115D-3DE4-F111-84EA-001DD80AA3CC",
+   "at": "2026-11-19T13:29:35.719333-06:00"
   }
  ]
 }

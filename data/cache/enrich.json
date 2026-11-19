@@ -1043,7 +1043,7 @@
     "via": "body"
    }
   ],
-  "content_hash": "27476d6983cffc3a",
+  "content_hash": "faa80a01273c3f3a",
   "entities": [
    "Chicago Plan Commission",
    "Department of Planning and Development"
@@ -1061,10 +1061,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The framework update recommends mixed-use development at downtown density levels on about 11 acres, which guides future land use and potential residential development, though it does not itself rezone or specify housing.",
+  "relevance_reason": "The framework update recommends mixed-use development at downtown density levels on about 11 acres of the North Branch corridor, guiding future land use and development that could include housing.",
   "source_quality": "partial",
   "status": "ok",
-  "summary": "The Department of Planning and Development seeks Plan Commission adoption of the North Branch Framework Update for about 11 acres south of Grand Avenue. It recommends mixed-use development at downtown density, a transitway, and public open spaces to guide future projects.",
+  "summary": "The Department of Planning and Development seeks Plan Commission adoption of the North Branch Framework Update for about 11 acres south of Grand Avenue. It recommends mixed-use development at downtown density, a transitway, and public open spaces to guide future public and private projects.",
   "zoning_from": [],
   "zoning_to": null
  },
