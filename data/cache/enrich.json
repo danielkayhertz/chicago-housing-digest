@@ -4030,39 +4030,8 @@
   "zoning_to": null
  },
  "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0023270": {
-  "amount": null,
-  "amount_kind": null,
-  "categories": [
-   {
-    "detail": "planned development",
-    "id": "ahpaa",
-    "via": "keyword"
-   }
-  ],
-  "content_hash": "a842b5d08a0ca598",
-  "entities": [
-   "Chicago Realty Ventures, LLC",
-   "Chicago Park District"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": "3700-3846 N Seminary Ave, 1100-1156 W Grace St and 3801-3851 N Racine Ave",
-   "community_area": "Lake View",
-   "ward": 44
-  },
-  "housing_relevant": false,
-  "important": null,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The planned development amendment covers Wrigley Field-area lots for entertainment, parking, park space and signage, with no new homes described.",
-  "source_quality": "scanned",
-  "status": "ok",
-  "summary": "Chicago Realty Ventures, LLC seeks a zoning reclassification and amendment to Institutional Planned Development No. 108 for lots at 3700-3846 N Seminary Ave, 1100-1156 W Grace St and 3801-3851 N Racine Ave. Uses include entertainment, parking and open space, with the Chicago Park District controlling one subarea.",
-  "zoning_from": [],
-  "zoning_to": null
+  "content_hash": "892a6272a5a6481f",
+  "failed_attempts": 1
  },
  "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0025471": {
   "amount": null,
@@ -4146,7 +4115,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "35ac9324b9503440",
+  "content_hash": "4c7a480bb3f7a78b",
   "entities": [
    "Matthew J. Martin"
   ],
@@ -4155,61 +4124,24 @@
    "units": null
   },
   "geography": {
-   "address": "1500 \u2013 2400 W. Lawrence Avenue",
-   "community_area": "Lincoln Square",
-   "ward": 40
+   "address": null,
+   "community_area": null,
+   "ward": null
   },
   "housing_relevant": true,
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "Designating a stretch of W Lawrence Ave as a TOD street changes zoning rules that govern density and parking for residential and mixed-use development along the corridor.",
-  "source_quality": "full",
+  "relevance_reason": "TOD street designations under the Chicago Zoning Ordinance change zoning rules that govern residential density and parking requirements along these corridors.",
+  "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ordinance sponsored by Alderman Matthew J. Martin (47th Ward) would designate W Lawrence Avenue between N Clark Street and N Western Avenue (1500W to 2400W) as a Transit Oriented Development Street, amending Municipal Code Section 17-3-0602-F.",
+  "summary": "Substitute ordinance by Ald. Matthew J. Martin (47th Ward) would designate W. Lawrence Ave. from Clark to Western, and W. Belmont Ave. from Western to Campbell, as Transit Oriented Development streets by amending Section 17-3-0602-F of the Zoning Ordinance.",
   "zoning_from": [],
   "zoning_to": null
  },
  "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027130": {
-  "amount": null,
-  "amount_kind": null,
-  "categories": [
-   {
-    "detail": "planned development",
-    "id": "ahpaa",
-    "via": "keyword"
-   },
-   {
-    "detail": "ARO",
-    "id": "housing-agenda",
-    "via": "keyword"
-   }
-  ],
-  "content_hash": "03e0ecbea6f90e36",
-  "entities": [
-   "MKR Owner LLC"
-  ],
-  "figures": {
-   "affordable_units": 17,
-   "units": 109
-  },
-  "geography": {
-   "address": "1133 W. Kinzie Street",
-   "community_area": "West Town",
-   "ward": 27
-  },
-  "housing_relevant": true,
-  "important": null,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The rezoning would allow a 109-unit residential planned development on a vacant industrial-zoned lot, subject to the Affordable Requirements Ordinance.",
-  "source_quality": "scanned",
-  "status": "ok",
-  "summary": "MKR Owner LLC, contract purchaser, seeks to rezone 1133 W. Kinzie St. from M2-3 to DX-5 and then a Residential Planned Development for a 109-unit, five-story rental building with 35 parking spaces. The applicant plans 17 affordable units under the ARO.",
-  "zoning_from": [
-   "M2-3"
-  ],
-  "zoning_to": null
+  "content_hash": "d519dfe8a5ea14f2",
+  "failed_attempts": 1
  },
  "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027580": {
   "amount": null,
@@ -4396,12 +4328,12 @@
   "amount_kind": null,
   "categories": [
    {
-    "detail": "",
+    "detail": "rezoning",
     "id": "ahpaa",
-    "via": "model"
+    "via": "keyword"
    }
   ],
-  "content_hash": "e046e0e1f9b18762",
+  "content_hash": "124bcb9e264bae0a",
   "entities": [
    "Gregory I. Mitchell"
   ],
@@ -4418,10 +4350,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A city-sponsored rezoning of a commercial corridor to a Neighborhood Mixed-Use district changes the zoning rules that govern whether homes can be built there.",
+  "relevance_reason": "A city-initiated-style corridor rezoning from commercial districts to a Neighborhood Mixed-Use district along E. 71st Street changes zoning rules that can allow residential uses.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Ordinance sponsored by Alderman Gregory I. Mitchell (7th Ward) would rezone 1601-1817 E. 71st Street from B3-2, B3-3 and C2-2 commercial districts to B2-3 Neighborhood Mixed-Use District on Map No. 18-C.",
+  "summary": "Ald. Gregory I. Mitchell (7th Ward) proposes rezoning B3-2, B3-3 (and in the original version C2-2) districts along 1601-1817 E. 71st Street to B2-3 Neighborhood Mixed-Use District. A substitute ordinance narrows the area and drops C2-2.",
   "zoning_from": [
    "B3-2",
    "B3-3",
@@ -4511,7 +4443,7 @@
    "units": 5
   },
   "geography": {
-   "address": "2142 W 18th Place",
+   "address": "2142 W 18th Pl",
    "community_area": "Lower West Side",
    "ward": 25
   },
@@ -4538,7 +4470,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "64dd68fbc12a178f",
+  "content_hash": "899242b341e9e2ca",
   "entities": [
    "Amy Shah",
    "Jai Patel"
@@ -4556,10 +4488,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A rezoning of a residential lot from RS-3 to RT-3.5 to permit a rear addition to a single-family home is a zoning map change affecting residential regulation, though it adds no homes.",
+  "relevance_reason": "A rezoning of a single-family residential lot from RS-3 to RT-3.5 to permit a rear addition to an existing home, a zoning map change affecting residential development standards.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Amy Shah and Jai Patel seek to rezone 1828 W Race Ave from RS-3 to RT-3.5 to build a rear addition to their single-family home, with variations reducing the rear yard setback and rear open space. The home stays one unit.",
+  "summary": "Applicants Amy Shah and Jai Patel seek to rezone 1828 W Race Ave from RS-3 to RT-3.5 to build a rear addition to their 2-story single-family home, with variations reducing rear setback and open space. No new units would be added.",
   "zoning_from": [
    "RS-3"
   ],
@@ -4727,45 +4659,8 @@
   "zoning_to": "B2-3"
  },
  "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029371": {
-  "amount": null,
-  "amount_kind": null,
-  "categories": [
-   {
-    "detail": "ARO",
-    "id": "housing-agenda",
-    "via": "keyword"
-   },
-   {
-    "detail": "",
-    "id": "ahpaa",
-    "via": "model"
-   }
-  ],
-  "content_hash": "ff6b94958d5b9d02",
-  "entities": [
-   "3133 N. Halsted LLC"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": 67
-  },
-  "geography": {
-   "address": "3127-3139 North Halsted Street/749-759 West Briar Place",
-   "community_area": "Lake View",
-   "ward": 44
-  },
-  "housing_relevant": true,
-  "important": null,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The Type 1 zoning amendment would add one dwelling unit to a previously approved 67-unit mixed-use residential project subject to the ARO.",
-  "source_quality": "scanned",
-  "status": "ok",
-  "summary": "3133 N. Halsted LLC seeks a Type 1 amendment at 3127-3139 N Halsted St to raise a previously approved mixed-use project from 66 to 67 dwelling units. The B2-5 zoning stays the same, and the project is marked subject to the ARO.",
-  "zoning_from": [
-   "B2-5"
-  ],
-  "zoning_to": "B2-5"
+  "content_hash": "b26d92fa7b606e82",
+  "failed_attempts": 1
  },
  "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029372": {
   "amount": null,
@@ -4972,40 +4867,8 @@
   "zoning_to": null
  },
  "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029387": {
-  "amount": null,
-  "amount_kind": null,
-  "categories": [
-   {
-    "detail": "",
-    "id": "ahpaa",
-    "via": "model"
-   }
-  ],
-  "content_hash": "6287ccd674c87d3d",
-  "entities": [
-   "Platinum Homes Development Corporation"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": 9
-  },
-  "geography": {
-   "address": "4525-31 North Clark Street",
-   "community_area": "Uptown",
-   "ward": 46
-  },
-  "housing_relevant": true,
-  "important": null,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The rezoning would allow demolition of a partially vacant commercial building and construction of a four-story mixed-use building with nine dwelling units.",
-  "source_quality": "scanned",
-  "status": "ok",
-  "summary": "Platinum Homes Development Corporation seeks to rezone 4525-31 N Clark St from C1-2 to C1-3 to demolish a vacant commercial building and build a four-story mixed-use building with ground-floor commercial space and nine dwelling units. It also requests rear setback, window transparency and parking relief.",
-  "zoning_from": [
-   "C1-2"
-  ],
-  "zoning_to": "C1-3"
+  "content_hash": "93a50a5542d451e2",
+  "failed_attempts": 1
  },
  "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029394": {
   "amount": null,
@@ -5043,7 +4906,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "2a2567af1dbad3ef",
+  "content_hash": "22d42634335d0aa2",
   "entities": [
    "2232 Wayne LLC"
   ],
@@ -5060,10 +4923,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A residential rezoning that unifies the zoning of two single-family lots and allows an accessory dwelling unit in a new addition to an existing garage.",
+  "relevance_reason": "A residential rezoning that would unify RS-3 and RT-4 lots into RT-4 and allow an accessory dwelling unit with a garage addition at a site with existing single-family homes.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "2232 Wayne LLC seeks to rezone 2230-32 N. Wayne Ave. from RS-3 and RT-4 to RT-4 to create uniform zoning. The plan removes the home at 2232, keeps the single-family home at 2230, and adds a one-story addition with an ADU to its garage.",
+  "summary": "2232 Wayne LLC seeks to rezone 2230-32 N. Wayne Ave. from RS-3 and RT-4 to RT-4 to create a uniform district. It would demolish the home at 2232, keep the home at 2230, and add a one-story ADU addition to the garage.",
   "zoning_from": [
    "RS-3",
    "RT-4"
@@ -5136,40 +4999,8 @@
   "zoning_to": "RM-5"
  },
  "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029403": {
-  "amount": null,
-  "amount_kind": null,
-  "categories": [
-   {
-    "detail": "",
-    "id": "ahpaa",
-    "via": "model"
-   }
-  ],
-  "content_hash": "f3d3860be69a971b",
-  "entities": [
-   "North Sheridan LLC"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": 13
-  },
-  "geography": {
-   "address": "4940-42 North Sheridan Road",
-   "community_area": "Uptown",
-   "ward": 48
-  },
-  "housing_relevant": true,
-  "important": null,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "The rezoning would convert ground-floor commercial space in a mixed-use building into residential units, increasing the home count from seven to thirteen.",
-  "source_quality": "scanned",
-  "status": "ok",
-  "summary": "North Sheridan LLC seeks to rezone 4940-42 N Sheridan Road from B3-2 to B2-3 to convert first-floor commercial space into six apartments, making a fully residential 13-unit building. The applicant also seeks zero off-street parking and a reduced rear setback.",
-  "zoning_from": [
-   "B3-2"
-  ],
-  "zoning_to": "B2-3"
+  "content_hash": "7cba0082926fc05d",
+  "failed_attempts": 1
  },
  "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029404": {
   "amount": null,
@@ -5181,7 +5012,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "bcd3a37a88a90c5d",
+  "content_hash": "0878e03e3e760dca",
   "entities": [
    "Pitch Sweetwater LLC"
   ],
@@ -5198,12 +5029,14 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A zoning map amendment to allow a fourth-floor addition that would expand an existing third-floor dwelling unit in a mixed-use building.",
+  "relevance_reason": "The rezoning would allow a fourth-floor addition to expand an existing third-floor dwelling unit in a mixed-use building.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Pitch Sweetwater LLC seeks to rezone 1959 W. Cortland Street from B3-2 to B3-3 Community Shopping District. The applicant proposes a fourth-floor addition to the 3-story mixed-use building to expand the third-floor dwelling unit.",
-  "zoning_from": [],
-  "zoning_to": null
+  "summary": "Pitch Sweetwater LLC seeks to rezone 1959 W. Cortland Street from B3-2 to B3-3 Community Shopping District. The applicant plans to add a fourth floor to the 3-story mixed-use building to expand the third-floor dwelling unit.",
+  "zoning_from": [
+   "B3-2"
+  ],
+  "zoning_to": "B3-3"
  },
  "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029405": {
   "amount": null,
@@ -5215,8 +5048,9 @@
     "via": "model"
    }
   ],
-  "content_hash": "9a3343f920367405",
+  "content_hash": "c9e26acb599ef05d",
   "entities": [
+   "Adriana Espinoza",
    "Alejandro Espinoza"
   ],
   "figures": {
@@ -5232,10 +5066,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning would allow a third dwelling unit to be added to an existing two-unit residential building.",
+  "relevance_reason": "The rezoning from B3-1 to RM-5 would allow a third dwelling unit (a basement ADU) in an existing two-unit residential building.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Adriana and Alejandro Espinoza seek to rezone 746-48 N. Trumbull Ave. from B3-1 to RM-5 to add a third dwelling unit in the basement of an existing two-unit building. No building additions or parking are proposed.",
+  "summary": "Adriana Espinoza and Alejandro Espinoza seek to rezone 746-48 N Trumbull Ave from B3-1 Community Shopping District to RM-5 Residential Multi-Unit District to add a basement dwelling unit to a two-unit building, for three total. No additions or parking are proposed.",
   "zoning_from": [
    "B3-1"
   ],
@@ -5287,26 +5121,19 @@
   "amount_kind": null,
   "categories": [
    {
-    "detail": "ARO",
-    "id": "housing-agenda",
-    "via": "keyword"
-   },
-   {
     "detail": "",
     "id": "ahpaa",
     "via": "model"
    }
   ],
-  "content_hash": "1954fb3c9f1b7336",
-  "entities": [
-   "3853 West Palmer St LLC"
-  ],
+  "content_hash": "80f8a7e8ca91a570",
+  "entities": [],
   "figures": {
    "affordable_units": null,
-   "units": 6
+   "units": null
   },
   "geography": {
-   "address": "3853 West Palmer Street",
+   "address": "3853 West Palmer Avenue",
    "community_area": "Logan Square",
    "ward": 35
   },
@@ -5314,10 +5141,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A rezoning from RS-3 to RM-5 would allow two additional basement dwelling units in an existing four-unit residential building, increasing the number of homes.",
+  "relevance_reason": "A residential rezoning from single-unit detached to multi-unit district could allow more homes on the site.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "3853 West Palmer St LLC seeks to rezone 3853 W. Palmer from RS-3 to RM-5 so it can lawfully add two basement dwelling units to a four-unit building, making six units. The application says the ARO does not apply.",
+  "summary": "Ordinance would rezone the area at 3853 W Palmer Ave on Map No. 5-J from RS-3 Residential Single-Unit (Detached House) to RM-5 Residential Multi-Unit District. Application No. 23200T1 is before the Committee on Zoning.",
   "zoning_from": [
    "RS-3"
   ],
@@ -5338,9 +5165,10 @@
     "via": "model"
    }
   ],
-  "content_hash": "0167e36afb85a811",
+  "content_hash": "742d0ac223a1f95d",
   "entities": [
-   "Platinum Homes Development Corporation"
+   "Platinum Homes Development Corporation",
+   "2343 Damen LLC"
   ],
   "figures": {
    "affordable_units": null,
@@ -5355,10 +5183,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning would allow demolition of an industrial building and construction of a 27-unit residential building, and the project is subject to the ARO.",
+  "relevance_reason": "The rezoning would replace an industrial building with a new 27-unit residential building and is subject to the Affordable Requirements Ordinance.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Platinum Homes Development Corporation seeks to rezone 2343-49 N. Damen Ave. from M3-3 to B2-3 to demolish an industrial building and build a 4-story, 27-unit residential building with 16 parking spaces. The application says the project is subject to the ARO.",
+  "summary": "Platinum Homes Development Corporation seeks to rezone 2343-49 N. Damen Ave. from M3-3 to B2-3 to demolish an industrial building and build a 4-story, 27-unit residential building with 16 parking spaces. Owner is 2343 Damen LLC; the project is subject to the ARO.",
   "zoning_from": [
    "M3-3"
   ],
@@ -5374,7 +5202,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "d03594fb49f431c0",
+  "content_hash": "cd17d532f4321c44",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -5389,10 +5217,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A rezoning of an existing three-story, four-unit mixed-use building from B3-1 to B3-2 to bring it into zoning compliance, with no change in dwelling units.",
+  "relevance_reason": "A rezoning of a mixed-use building containing four existing dwelling units, with the narrative stating no change to the number of units.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Rezones 5555 W Newport Ave from B3-1 to B3-2 Community Shopping District so the existing three-story, four-unit mixed-use building complies with the zoning ordinance. No increase in height, footprint, or dwelling units is planned; two parking spaces remain.",
+  "summary": "Rezones 5555 W Newport Ave from B3-1 to B3-2 Community Shopping District to bring the existing three-story, four-unit mixed-use building into zoning compliance. No increase in height, footprint, or dwelling units is planned; two parking spaces remain.",
   "zoning_from": [
    "B3-1"
   ],
@@ -5402,16 +5230,16 @@
   "amount": null,
   "amount_kind": null,
   "categories": [],
-  "content_hash": "9986f3cda251f933",
+  "content_hash": "11a8d8f5fa85059a",
   "entities": [
-   "Jack Ingram"
+   "Gospel Gates Church"
   ],
   "figures": {
    "affordable_units": null,
    "units": null
   },
   "geography": {
-   "address": "4901 West Ferdinand Street",
+   "address": "4901 W Ferdinand St",
    "community_area": "Austin",
    "ward": 37
   },
@@ -5419,14 +5247,12 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning from RS-3 to RT-4 is sought only to build a new two-story religious assembly building with a sanctuary, and no dwelling units are proposed.",
+  "relevance_reason": "The rezoning from RS-3 to RT-4 would only allow a new church building and no dwelling units are proposed.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Jack Ingram, owner of the church property at 4901 W Ferdinand St, seeks to rezone it from RS-3 to RT-4 to build a new two-story religious assembly building. The request includes setback and rear-yard open space relief.",
-  "zoning_from": [
-   "RS-3"
-  ],
-  "zoning_to": "RT-4"
+  "summary": "Zoning reclassification of 4901 W Ferdinand St from RS-3 to RT-4 to allow a new two-story church building for Gospel Gates Church. No dwelling units are proposed.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "ihda:ihda-asset-management-committee:2026-11-20#asset-management-overview-as-of-september-30-2026": {
   "amount": null,
