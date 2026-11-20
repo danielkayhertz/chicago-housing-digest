@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-11-19T13:29:35.719333-06:00",
+ "generated_at": "2026-11-19T21:58:40.099230-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-19T13:29:35.719333-06:00",
+   "last_success_at": "2026-11-19T21:58:40.099230-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-19T13:29:35.719333-06:00",
+   "last_success_at": "2026-11-19T21:58:40.099230-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-19T13:29:35.719333-06:00",
+   "last_success_at": "2026-11-19T21:58:40.099230-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-19T13:29:35.719333-06:00",
+   "last_success_at": "2026-11-19T21:58:40.099230-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-19T13:29:35.719333-06:00",
+   "last_success_at": "2026-11-19T21:58:40.099230-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-19T13:29:35.719333-06:00",
+   "last_success_at": "2026-11-19T21:58:40.099230-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-19T13:29:35.719333-06:00",
+   "last_success_at": "2026-11-19T21:58:40.099230-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-19T13:29:35.719333-06:00",
+   "last_success_at": "2026-11-19T21:58:40.099230-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-19T13:29:35.719333-06:00",
+   "last_success_at": "2026-11-19T21:58:40.099230-06:00",
    "status": "ok",
    "message": ""
   }
@@ -9733,9 +9733,13 @@
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029378",
    "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
-   "source_ref": "O2026-0029378",
+   "source_ref": "SO2026-0029378",
    "title": "Zoning Reclassification Map No. 7-I at 2525 N Milwaukee Ave - App No. 23189T1",
    "attachments": [
+    {
+     "label": "SO2026-0029378 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/83ec8514-c7d7-42e8-942e-05f937d82ab7.pdf"
+    },
     {
      "label": "O2026-0029378 Narrative and Plans",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/a6c8171d-f2e7-4319-a9b7-940e02cdf28c.pdf"
@@ -9751,6 +9755,10 @@
     {
      "label": "O2026-0029378 Ordinance",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/dd9b635e-64be-459a-bd20-a4d6b3941a2a.pdf"
+    },
+    {
+     "label": "SO2026-0029378 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/b7a63e69-95a9-45cd-be2c-fcdd4639ba39.pdf"
     }
    ],
    "outcome": null,
@@ -9759,16 +9767,11 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "The rezoning would allow a vacant former SRO hotel to be converted into 30 residential units and is subject to the ARO.",
-    "summary": "The Milshire Hotel LLC seeks a Type 1 rezoning of 2525 N Milwaukee Ave from C2-2 to B2-5 to rehabilitate a vacant four-story former SRO building into 30 residential units (9 dwelling, 21 efficiency) with ground-floor commercial space, and a bicycle parking reduction.",
+    "relevance_reason": "The rezoning would allow a vacant former SRO hotel to be converted into 30 residential units.",
+    "summary": "Milshire Hotel LLC seeks to rezone 2525 N Milwaukee Ave from C2-2 to B2-5 to rehabilitate the vacant 4-story former SRO hotel (33 units) into 30 residential units (9 dwelling, 21 efficiency) plus ground-floor commercial space.",
     "categories": [
      {
       "id": "ahpaa",
-      "via": "keyword",
-      "detail": "rezoning"
-     },
-     {
-      "id": "housing-agenda",
       "via": "model",
       "detail": ""
      }
@@ -9779,7 +9782,7 @@
      "community_area": "Logan Square"
     },
     "entities": [
-     "The Milshire Hotel LLC"
+     "Milshire Hotel LLC"
     ],
     "figures": {
      "units": 30,
@@ -9787,18 +9790,16 @@
     },
     "amount": null,
     "amount_kind": null,
-    "zoning_from": [
-     "C2-2"
-    ],
-    "zoning_to": "B2-5",
+    "zoning_from": [],
+    "zoning_to": null,
     "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "d43cd3de8e90f118",
+    "content_hash": "e0b76057053d0b77",
     "overridden": false
    },
    "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
-   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+   "last_changed_at": "2026-11-19T21:58:40.099230-06:00"
   },
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029395",
@@ -10130,8 +10131,16 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/173dd3c6-21e1-4489-b46a-f195d998b90b.pdf"
     },
     {
+     "label": "O2026-0029394 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/af4c42e8-d5c8-4ad3-a017-62c5c6adddfb.pdf"
+    },
+    {
      "label": "O2026-0029394 Narrative and Plans",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/079e42bc-3532-40cf-b878-fc3b63035c4c.pdf"
+    },
+    {
+     "label": "O2026-0029394 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f7de01cb-5e3e-485a-a8ba-c9c5d5e6d0b0.pdf"
     }
    ],
    "outcome": null,
@@ -10140,7 +10149,7 @@
    "enrichment": {
     "status": "screened_out",
     "housing_relevant": false,
-    "relevance_reason": "This ordinance rezones 2125-27 S Archer Ave from M1-3 Limited Manufacturing to C2-5 Motor Vehicle-Related Commercial, with no dwelling units or residential use mentioned, so it is a commercial/industrial zoning change that does not add, remove, or alter homes.",
+    "relevance_reason": "The ordinance rezones 2125-27 S Archer Ave from M1-3 Limited Manufacturing to C2-5 Motor Vehicle-Related Commercial, a commercial and industrial change with no mention of dwelling units or residential use.",
     "summary": "",
     "categories": [],
     "geography": {
@@ -10160,11 +10169,11 @@
     "important": null,
     "source_quality": "none",
     "model": "claude-haiku-5-5",
-    "content_hash": "65943d5bb4a1412b",
+    "content_hash": "31069704e67d6ea8",
     "overridden": false
    },
    "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
-   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+   "last_changed_at": "2026-11-19T21:58:40.099230-06:00"
   },
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029377",
@@ -10524,9 +10533,13 @@
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029386",
    "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
-   "source_ref": "O2026-0029386",
+   "source_ref": "SO2026-0029386",
    "title": "Zoning Reclassification Map No. 2-I at 507-509 S California Ave - App No. 23191T1",
    "attachments": [
+    {
+     "label": "SO2026-0029386 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/9373f4c4-d991-497a-b830-2812890ee8e9.pdf"
+    },
     {
      "label": "O2026-0029386 Ordinance",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/b8395c19-232f-4aa0-8aad-876587e0efe6.pdf"
@@ -10540,6 +10553,10 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/ce9ba995-a0be-492a-8d4d-d09aedf309fa.pdf"
     },
     {
+     "label": "SO2026-0029386 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/14734b1f-cba9-4322-8b30-b5be21e08beb.pdf"
+    },
+    {
      "label": "O2026-0029386 Narrative and Plans",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/f074f286-d2eb-4273-bc80-009be2348e66.pdf"
     }
@@ -10548,43 +10565,33 @@
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
-    "status": "ok",
+    "status": "screened_out",
     "housing_relevant": false,
-    "relevance_reason": "The rezoning from B3-3 to M1-1 would allow a gas station with convenience store on a vacant lot and involves no housing units.",
-    "summary": "511 California Property LLC seeks to rezone vacant land at 507-09 S. California Ave. from B3-3 to M1-1 to build a four-pump gas station with a one-story convenience store. The application says the ARO does not apply.",
-    "categories": [
-     {
-      "id": "housing-agenda",
-      "via": "keyword",
-      "detail": "ARO"
-     }
-    ],
+    "relevance_reason": "The rezoning from B3-1 to M1-1 at 507-509 S. California Ave permits a gas station with a convenience store and explicitly proposes no dwelling units, so it does not add, remove, or change homes there.",
+    "summary": "",
+    "categories": [],
     "geography": {
-     "address": "507-09 South California Avenue",
-     "ward": 28,
-     "community_area": "East Garfield Park"
+     "address": null,
+     "ward": null,
+     "community_area": null
     },
-    "entities": [
-     "511 California Property LLC"
-    ],
+    "entities": [],
     "figures": {
      "units": null,
      "affordable_units": null
     },
     "amount": null,
     "amount_kind": null,
-    "zoning_from": [
-     "B3-3"
-    ],
-    "zoning_to": "M1-1",
+    "zoning_from": [],
+    "zoning_to": null,
     "important": null,
-    "source_quality": "scanned",
-    "model": "claude-sonnet-5-5",
-    "content_hash": "51e1f993880fc43c",
+    "source_quality": "none",
+    "model": "claude-haiku-5-5",
+    "content_hash": "ba2f53c08aaed92a",
     "overridden": false
    },
    "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
-   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+   "last_changed_at": "2026-11-19T21:58:40.099230-06:00"
   },
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029425",
@@ -10980,7 +10987,7 @@
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029372",
    "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
-   "source_ref": "O2026-0029372",
+   "source_ref": "SO2026-0029372",
    "title": "Zoning Reclassification Map No. 7-G at 920-928 W Diversey Pkwy - App No. 23186T1",
    "attachments": [
     {
@@ -10990,6 +10997,14 @@
     {
      "label": "O2026-0029372 Application",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/673ec3ff-996e-4717-8807-a1adf85ee3da.pdf"
+    },
+    {
+     "label": "SO2026-0029372 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/00084645-2098-46c5-b252-c0c28177e0e0.pdf"
+    },
+    {
+     "label": "SO2026-0029372 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/38bd9c38-f123-47be-b63b-2c86c16011d6.pdf"
     },
     {
      "label": "O2026-0029372 EDS_Redacted",
@@ -11006,8 +11021,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "The rezoning would allow a new 52-unit mixed-use residential building on a site currently used for single-story retail, and the project is subject to the ARO.",
-    "summary": "Skymaster, LLC seeks to rezone 920-928 W Diversey Parkway from B3-2 to B2-5 to build a 5-story, 65-foot mixed-use building with 52 residential units, 3,400 sq ft of commercial space and 8 parking spaces. The application also seeks reduced parking and rear setback relief.",
+    "relevance_reason": "The rezoning would allow a new 52-unit mixed-use building with residential units on a site now used for single-story retail, and the project is subject to the ARO.",
+    "summary": "Skymaster, LLC seeks to rezone 920-928 W Diversey Pkwy from B3-2 to B2-5 to build a 5-story, 65-foot mixed-use building with 52 residential units, 3,400 sq ft of commercial space and 8 parking spaces. The application also asks to cut required parking from 26 spaces to 8 and the rear setback from 30 feet to 8.8 feet.",
     "categories": [
      {
       "id": "ahpaa",
@@ -11034,16 +11049,18 @@
     },
     "amount": null,
     "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
+    "zoning_from": [
+     "B3-2"
+    ],
+    "zoning_to": "B2-5",
     "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "1821fada36bae8d8",
+    "content_hash": "5f8f101315366e97",
     "overridden": false
    },
    "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
-   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+   "last_changed_at": "2026-11-19T21:58:40.099230-06:00"
   },
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029371",
@@ -11373,7 +11390,7 @@
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0028740",
    "meeting_id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5",
-   "source_ref": "O2026-0028740",
+   "source_ref": "SO2026-0028740",
    "title": "Zoning Reclassification Map No. 4-H at 2142 W 18th Pl - App No. 23173T1",
    "attachments": [
     {
@@ -11385,8 +11402,16 @@
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/d9ea9ab2-e736-47eb-8010-51513f9736af.pdf"
     },
     {
+     "label": "SO2026-0028740 Final Narrative and Plans",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/79e6e1f1-8336-48db-a1ff-9db0611890da.pdf"
+    },
+    {
      "label": "O2026-0028740 Application",
      "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/fdad537e-34f0-4e45-beaa-923f48d31d90.pdf"
+    },
+    {
+     "label": "SO2026-0028740 Final Ordinance",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/4343d4d4-f6ce-417a-86bc-c3bd3450d6d2.pdf"
     },
     {
      "label": "O2026-0028740 EDS",
@@ -11399,8 +11424,8 @@
    "enrichment": {
     "status": "ok",
     "housing_relevant": true,
-    "relevance_reason": "A residential rezoning at 2142 W 18th Pl would split a lot so an existing five-unit building can be legalized and a new three-unit building built on the vacant lot.",
-    "summary": "Coach House Properties LLC seeks to rezone 2142 W 18th Pl from RT-4 to RM-5 to split a lot, legalizing an existing five-unit building. A three-unit building with three parking spaces would be built on the vacant lot, which stays RT-4.",
+    "relevance_reason": "A rezoning at 2142 W 18th Place would legalize an existing five-unit residential building and allow a new three-unit building on an adjacent vacant lot.",
+    "summary": "Coach House Properties LLC seeks to rezone 2142 W 18th Place from RT-4 to RM-5 to split two parcels. This would legalize the existing five-unit building, and the vacant lot would stay RT-4 for a new three-unit building.",
     "categories": [
      {
       "id": "ahpaa",
@@ -11409,7 +11434,7 @@
      }
     ],
     "geography": {
-     "address": "2142 W 18th Pl",
+     "address": "2142 W 18th Place",
      "ward": 25,
      "community_area": "Lower West Side"
     },
@@ -11429,11 +11454,11 @@
     "important": null,
     "source_quality": "scanned",
     "model": "claude-sonnet-5-5",
-    "content_hash": "b6917b63bf66d84d",
+    "content_hash": "24f9a41433f4222e",
     "overridden": false
    },
    "first_seen_at": "2026-11-13T12:31:51.122734-06:00",
-   "last_changed_at": "2026-11-13T12:31:51.122734-06:00"
+   "last_changed_at": "2026-11-19T21:58:40.099230-06:00"
   },
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0027130",

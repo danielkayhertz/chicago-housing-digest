@@ -4502,7 +4502,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "b6917b63bf66d84d",
+  "content_hash": "24f9a41433f4222e",
   "entities": [
    "Coach House Properties LLC"
   ],
@@ -4511,7 +4511,7 @@
    "units": 5
   },
   "geography": {
-   "address": "2142 W 18th Pl",
+   "address": "2142 W 18th Place",
    "community_area": "Lower West Side",
    "ward": 25
   },
@@ -4519,10 +4519,10 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "A residential rezoning at 2142 W 18th Pl would split a lot so an existing five-unit building can be legalized and a new three-unit building built on the vacant lot.",
+  "relevance_reason": "A rezoning at 2142 W 18th Place would legalize an existing five-unit residential building and allow a new three-unit building on an adjacent vacant lot.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Coach House Properties LLC seeks to rezone 2142 W 18th Pl from RT-4 to RM-5 to split a lot, legalizing an existing five-unit building. A three-unit building with three parking spaces would be built on the vacant lot, which stays RT-4.",
+  "summary": "Coach House Properties LLC seeks to rezone 2142 W 18th Place from RT-4 to RM-5 to split two parcels. This would legalize the existing five-unit building, and the vacant lot would stay RT-4 for a new three-unit building.",
   "zoning_from": [
    "RT-4"
   ],
@@ -4782,7 +4782,7 @@
     "via": "model"
    }
   ],
-  "content_hash": "1821fada36bae8d8",
+  "content_hash": "5f8f101315366e97",
   "entities": [
    "Skymaster, LLC"
   ],
@@ -4799,12 +4799,14 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning would allow a new 52-unit mixed-use residential building on a site currently used for single-story retail, and the project is subject to the ARO.",
+  "relevance_reason": "The rezoning would allow a new 52-unit mixed-use building with residential units on a site now used for single-story retail, and the project is subject to the ARO.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "Skymaster, LLC seeks to rezone 920-928 W Diversey Parkway from B3-2 to B2-5 to build a 5-story, 65-foot mixed-use building with 52 residential units, 3,400 sq ft of commercial space and 8 parking spaces. The application also seeks reduced parking and rear setback relief.",
-  "zoning_from": [],
-  "zoning_to": null
+  "summary": "Skymaster, LLC seeks to rezone 920-928 W Diversey Pkwy from B3-2 to B2-5 to build a 5-story, 65-foot mixed-use building with 52 residential units, 3,400 sq ft of commercial space and 8 parking spaces. The application also asks to cut required parking from 26 spaces to 8 and the rear setback from 30 feet to 8.8 feet.",
+  "zoning_from": [
+   "B3-2"
+  ],
+  "zoning_to": "B2-5"
  },
  "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029375": {
   "amount": null,
@@ -4878,19 +4880,14 @@
   "amount_kind": null,
   "categories": [
    {
-    "detail": "rezoning",
-    "id": "ahpaa",
-    "via": "keyword"
-   },
-   {
     "detail": "",
-    "id": "housing-agenda",
+    "id": "ahpaa",
     "via": "model"
    }
   ],
-  "content_hash": "d43cd3de8e90f118",
+  "content_hash": "e0b76057053d0b77",
   "entities": [
-   "The Milshire Hotel LLC"
+   "Milshire Hotel LLC"
   ],
   "figures": {
    "affordable_units": null,
@@ -4905,14 +4902,12 @@
   "important": null,
   "model": "claude-sonnet-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning would allow a vacant former SRO hotel to be converted into 30 residential units and is subject to the ARO.",
+  "relevance_reason": "The rezoning would allow a vacant former SRO hotel to be converted into 30 residential units.",
   "source_quality": "scanned",
   "status": "ok",
-  "summary": "The Milshire Hotel LLC seeks a Type 1 rezoning of 2525 N Milwaukee Ave from C2-2 to B2-5 to rehabilitate a vacant four-story former SRO building into 30 residential units (9 dwelling, 21 efficiency) with ground-floor commercial space, and a bicycle parking reduction.",
-  "zoning_from": [
-   "C2-2"
-  ],
-  "zoning_to": "B2-5"
+  "summary": "Milshire Hotel LLC seeks to rezone 2525 N Milwaukee Ave from C2-2 to B2-5 to rehabilitate the vacant 4-story former SRO hotel (33 units) into 30 residential units (9 dwelling, 21 efficiency) plus ground-floor commercial space.",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029379": {
   "amount": null,
@@ -4953,38 +4948,28 @@
  "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029386": {
   "amount": null,
   "amount_kind": null,
-  "categories": [
-   {
-    "detail": "ARO",
-    "id": "housing-agenda",
-    "via": "keyword"
-   }
-  ],
-  "content_hash": "51e1f993880fc43c",
-  "entities": [
-   "511 California Property LLC"
-  ],
+  "categories": [],
+  "content_hash": "ba2f53c08aaed92a",
+  "entities": [],
   "figures": {
    "affordable_units": null,
    "units": null
   },
   "geography": {
-   "address": "507-09 South California Avenue",
-   "community_area": "East Garfield Park",
-   "ward": 28
+   "address": null,
+   "community_area": null,
+   "ward": null
   },
   "housing_relevant": false,
   "important": null,
-  "model": "claude-sonnet-5-5",
+  "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "The rezoning from B3-3 to M1-1 would allow a gas station with convenience store on a vacant lot and involves no housing units.",
-  "source_quality": "scanned",
-  "status": "ok",
-  "summary": "511 California Property LLC seeks to rezone vacant land at 507-09 S. California Ave. from B3-3 to M1-1 to build a four-pump gas station with a one-story convenience store. The application says the ARO does not apply.",
-  "zoning_from": [
-   "B3-3"
-  ],
-  "zoning_to": "M1-1"
+  "relevance_reason": "The rezoning from B3-1 to M1-1 at 507-509 S. California Ave permits a gas station with a convenience store and explicitly proposes no dwelling units, so it does not add, remove, or change homes there.",
+  "source_quality": "none",
+  "status": "screened_out",
+  "summary": "",
+  "zoning_from": [],
+  "zoning_to": null
  },
  "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0029387": {
   "amount": null,
@@ -5026,7 +5011,7 @@
   "amount": null,
   "amount_kind": null,
   "categories": [],
-  "content_hash": "65943d5bb4a1412b",
+  "content_hash": "31069704e67d6ea8",
   "entities": [],
   "figures": {
    "affordable_units": null,
@@ -5041,7 +5026,7 @@
   "important": null,
   "model": "claude-haiku-5-5",
   "overridden": false,
-  "relevance_reason": "This ordinance rezones 2125-27 S Archer Ave from M1-3 Limited Manufacturing to C2-5 Motor Vehicle-Related Commercial, with no dwelling units or residential use mentioned, so it is a commercial/industrial zoning change that does not add, remove, or alter homes.",
+  "relevance_reason": "The ordinance rezones 2125-27 S Archer Ave from M1-3 Limited Manufacturing to C2-5 Motor Vehicle-Related Commercial, a commercial and industrial change with no mention of dwelling units or residential use.",
   "source_quality": "none",
   "status": "screened_out",
   "summary": "",
