@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-11-20T13:06:27.255333-06:00",
+ "generated_at": "2026-11-20T21:58:29.855544-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-20T13:06:27.255333-06:00",
+   "last_success_at": "2026-11-20T21:58:29.855544-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-20T13:06:27.255333-06:00",
+   "last_success_at": "2026-11-20T21:58:29.855544-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-20T13:06:27.255333-06:00",
+   "last_success_at": "2026-11-20T21:58:29.855544-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-20T13:06:27.255333-06:00",
+   "last_success_at": "2026-11-20T21:58:29.855544-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-20T13:06:27.255333-06:00",
+   "last_success_at": "2026-11-20T21:58:29.855544-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-20T13:06:27.255333-06:00",
+   "last_success_at": "2026-11-20T21:58:29.855544-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-20T13:06:27.255333-06:00",
+   "last_success_at": "2026-11-20T21:58:29.855544-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-20T13:06:27.255333-06:00",
+   "last_success_at": "2026-11-20T21:58:29.855544-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-20T13:06:27.255333-06:00",
+   "last_success_at": "2026-11-20T21:58:29.855544-06:00",
    "status": "ok",
    "message": ""
   }
@@ -312,8 +312,8 @@
    "minutes_url": null,
    "detail_url": "https://thecha.legistar.com/MeetingDetail.aspx?LEGID=1117&GID=838&G=9E17A909-A693-4C13-A0CF-308CBFEDE385",
    "needs_ai_extraction": false,
-   "item_count_total": 15,
-   "item_count_relevant": 12,
+   "item_count_total": 16,
+   "item_count_relevant": 13,
    "first_seen_at": "2026-11-12T12:56:29.415744-06:00",
    "last_changed_at": "2026-11-17T13:51:32.211777-06:00"
   },
@@ -8221,7 +8221,11 @@
      "url": "https://thecha.legistar1.com/thecha/attachments/caefe76f-fe04-460f-a9f1-4bf97a8a72d8.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "approved",
+    "date": "2026-11-17",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -8259,7 +8263,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-11-12T12:56:29.415744-06:00",
-   "last_changed_at": "2026-11-18T22:12:11.363180-06:00"
+   "last_changed_at": "2026-11-20T21:58:29.855544-06:00"
   },
   {
    "id": "legistar:thecha:1117#26-124",
@@ -8542,6 +8546,59 @@
    "last_changed_at": "2026-11-18T22:12:11.363180-06:00"
   },
   {
+   "id": "legistar:thecha:1117#26-132-2",
+   "meeting_id": "legistar:thecha:1117",
+   "source_ref": "26-132",
+   "title": "Authorization to enter into Professional Security Services Agreements to provide security services at various CHA properties.",
+   "attachments": [
+    {
+     "label": "Approved Professional Security Services Agreements Brd.Ltr. & Resolution No.54",
+     "url": "https://thecha.legistar1.com/thecha/attachments/4070f883-4f24-4f0c-af4a-4a91248ab194.pdf"
+    }
+   ],
+   "outcome": {
+    "action": "approved",
+    "date": "2026-11-17",
+    "tally": null
+   },
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "failed",
+    "housing_relevant": false,
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChFQRpftbxAjtd4cgjHdm'}",
+    "summary": "",
+    "categories": [
+     {
+      "id": "cha",
+      "via": "body",
+      "detail": "CHA Board of Commissioners"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "5db200283a5c73f9",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-20T21:58:29.855544-06:00",
+   "last_changed_at": "2026-11-20T21:58:29.855544-06:00"
+  },
+  {
    "id": "legistar:thecha:1151#26-62",
    "meeting_id": "legistar:thecha:1151",
    "source_ref": "26-62",
@@ -8552,7 +8609,11 @@
      "url": "https://thecha.legistar1.com/thecha/attachments/392f20b0-e554-4429-bbbd-ed7afba6713e.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "approved",
+    "date": "2026-11-17",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -8598,7 +8659,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-11-12T12:56:29.415744-06:00",
-   "last_changed_at": "2026-11-18T22:12:11.363180-06:00"
+   "last_changed_at": "2026-11-20T21:58:29.855544-06:00"
   },
   {
    "id": "legistar:thecha:1151#26-125",
@@ -8611,7 +8672,11 @@
      "url": "https://thecha.legistar1.com/thecha/attachments/6975c764-b9a9-4409-9416-19bde2bf5af0.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "approved",
+    "date": "2026-11-17",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -8657,7 +8722,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-11-12T12:56:29.415744-06:00",
-   "last_changed_at": "2026-11-18T22:12:11.363180-06:00"
+   "last_changed_at": "2026-11-20T21:58:29.855544-06:00"
   },
   {
    "id": "legistar:thecha:1151#26-126",
@@ -8670,7 +8735,11 @@
      "url": "https://thecha.legistar1.com/thecha/attachments/0f3d1fdb-5531-4f03-8e7c-6ae7899f1971.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "approved",
+    "date": "2026-11-17",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -8713,7 +8782,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-11-12T12:56:29.415744-06:00",
-   "last_changed_at": "2026-11-18T22:12:11.363180-06:00"
+   "last_changed_at": "2026-11-20T21:58:29.855544-06:00"
   },
   {
    "id": "legistar:thecha:1151#26-127",
@@ -8726,7 +8795,11 @@
      "url": "https://thecha.legistar1.com/thecha/attachments/210f19c6-665a-4bfd-a7cf-1ee3320bd1a4.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "approved",
+    "date": "2026-11-17",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -8770,7 +8843,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-11-12T12:56:29.415744-06:00",
-   "last_changed_at": "2026-11-18T22:12:11.363180-06:00"
+   "last_changed_at": "2026-11-20T21:58:29.855544-06:00"
   },
   {
    "id": "legistar:thecha:1151#26-131",
@@ -8783,7 +8856,11 @@
      "url": "https://thecha.legistar1.com/thecha/attachments/cf24ae82-2c45-45ab-930b-96cc135dbe7a.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "approved",
+    "date": "2026-11-17",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -8821,7 +8898,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-11-12T12:56:29.415744-06:00",
-   "last_changed_at": "2026-11-18T22:12:11.363180-06:00"
+   "last_changed_at": "2026-11-20T21:58:29.855544-06:00"
   },
   {
    "id": "legistar:thecha:1151#26-132",
@@ -8834,7 +8911,11 @@
      "url": "https://thecha.legistar1.com/thecha/attachments/4070f883-4f24-4f0c-af4a-4a91248ab194.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "approved",
+    "date": "2026-11-17",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -8870,7 +8951,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-11-12T12:56:29.415744-06:00",
-   "last_changed_at": "2026-11-18T22:12:11.363180-06:00"
+   "last_changed_at": "2026-11-20T21:58:29.855544-06:00"
   },
   {
    "id": "legistar:thecha:1151#26-138",
@@ -8883,7 +8964,11 @@
      "url": "https://thecha.legistar1.com/thecha/attachments/a20bc89a-842a-4020-8033-db1ba30e564a.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "approved",
+    "date": "2026-11-17",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -8926,7 +9011,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-11-12T12:56:29.415744-06:00",
-   "last_changed_at": "2026-11-18T22:12:11.363180-06:00"
+   "last_changed_at": "2026-11-20T21:58:29.855544-06:00"
   },
   {
    "id": "legistar:thecha:1151#26-124",
@@ -8939,7 +9024,11 @@
      "url": "https://thecha.legistar1.com/thecha/attachments/410612f6-50f2-4cbf-afa9-a6cd78616079.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "approved",
+    "date": "2026-11-17",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -8982,7 +9071,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-11-12T12:56:29.415744-06:00",
-   "last_changed_at": "2026-11-18T22:12:11.363180-06:00"
+   "last_changed_at": "2026-11-20T21:58:29.855544-06:00"
   },
   {
    "id": "legistar:thecha:1151#26-129",
@@ -8995,7 +9084,11 @@
      "url": "https://thecha.legistar1.com/thecha/attachments/3a66301b-2e43-427e-bed5-51295a2df5f0.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "approved",
+    "date": "2026-11-17",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -9039,7 +9132,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-11-12T12:56:29.415744-06:00",
-   "last_changed_at": "2026-11-18T22:12:11.363180-06:00"
+   "last_changed_at": "2026-11-20T21:58:29.855544-06:00"
   },
   {
    "id": "legistar:thecha:1151#26-128",
@@ -9052,7 +9145,11 @@
      "url": "https://thecha.legistar1.com/thecha/attachments/5256ec11-9c38-42b1-a2bc-ae24c61a6b40.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "approved",
+    "date": "2026-11-17",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -9090,7 +9187,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-11-12T12:56:29.415744-06:00",
-   "last_changed_at": "2026-11-18T22:12:11.363180-06:00"
+   "last_changed_at": "2026-11-20T21:58:29.855544-06:00"
   },
   {
    "id": "legistar:thecha:1150#26-134",
@@ -9103,7 +9200,11 @@
      "url": "https://thecha.legistar1.com/thecha/attachments/caefe76f-fe04-460f-a9f1-4bf97a8a72d8.pdf"
     }
    ],
-   "outcome": null,
+   "outcome": {
+    "action": "approved",
+    "date": "2026-11-17",
+    "tally": null
+   },
    "extraction": "structured",
    "geography_hint": null,
    "enrichment": {
@@ -9141,7 +9242,7 @@
     "overridden": false
    },
    "first_seen_at": "2026-11-12T12:56:29.415744-06:00",
-   "last_changed_at": "2026-11-18T22:12:11.363180-06:00"
+   "last_changed_at": "2026-11-20T21:58:29.855544-06:00"
   },
   {
    "id": "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2026-0028305",
@@ -11170,7 +11271,7 @@
    "enrichment": {
     "status": "failed",
     "housing_relevant": false,
-    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChEhxArPf6qZmipBJKJY4'}",
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChFQRvYMxrmb9HTKCH2rB'}",
     "summary": "",
     "categories": [],
     "geography": {
@@ -11303,7 +11404,7 @@
    "enrichment": {
     "status": "failed",
     "housing_relevant": false,
-    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChEhxLMdohp2h9y6kL2rD'}",
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChFQS64qvryBgJcs2i4qD'}",
     "summary": "",
     "categories": [],
     "geography": {
@@ -11366,7 +11467,7 @@
    "enrichment": {
     "status": "failed",
     "housing_relevant": false,
-    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChEhxVfypWwYeSMumYfSe'}",
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChFQSFLTY4AP9LWzTogBc'}",
     "summary": "",
     "categories": [],
     "geography": {
@@ -11557,7 +11658,7 @@
    "enrichment": {
     "status": "failed",
     "housing_relevant": false,
-    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChEhxfXJw4q6sMpDEArBn'}",
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChFQSR2cWfnhQQszZ95kK'}",
     "summary": "",
     "categories": [],
     "geography": {
@@ -11658,7 +11759,7 @@
    "enrichment": {
     "status": "failed",
     "housing_relevant": false,
-    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChEhxpkS8oePMjvnES3HY'}",
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChFQSaUdsCCaJ4cERzN4g'}",
     "summary": "",
     "categories": [],
     "geography": {
@@ -17434,11 +17535,6 @@
  ],
  "events": [
   {
-   "type": "meeting_new",
-   "ref_id": "clihtf:319089",
-   "at": "2026-11-06T20:48:37.894659-06:00"
-  },
-  {
    "type": "agenda_posted",
    "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5",
    "at": "2026-11-09T15:26:35.571983-06:00"
@@ -17872,6 +17968,71 @@
    "type": "meeting_new",
    "ref_id": "elms:E47D115D-3DE4-F111-84EA-001DD80AA3CC",
    "at": "2026-11-19T13:29:35.719333-06:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "legistar:thecha:1117#26-134",
+   "at": "2026-11-20T21:58:29.855544-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "legistar:thecha:1117#26-132-2",
+   "at": "2026-11-20T21:58:29.855544-06:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "legistar:thecha:1150#26-134",
+   "at": "2026-11-20T21:58:29.855544-06:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "legistar:thecha:1151#26-62",
+   "at": "2026-11-20T21:58:29.855544-06:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "legistar:thecha:1151#26-125",
+   "at": "2026-11-20T21:58:29.855544-06:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "legistar:thecha:1151#26-126",
+   "at": "2026-11-20T21:58:29.855544-06:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "legistar:thecha:1151#26-127",
+   "at": "2026-11-20T21:58:29.855544-06:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "legistar:thecha:1151#26-131",
+   "at": "2026-11-20T21:58:29.855544-06:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "legistar:thecha:1151#26-132",
+   "at": "2026-11-20T21:58:29.855544-06:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "legistar:thecha:1151#26-138",
+   "at": "2026-11-20T21:58:29.855544-06:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "legistar:thecha:1151#26-124",
+   "at": "2026-11-20T21:58:29.855544-06:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "legistar:thecha:1151#26-129",
+   "at": "2026-11-20T21:58:29.855544-06:00"
+  },
+  {
+   "type": "outcome_recorded",
+   "ref_id": "legistar:thecha:1151#26-128",
+   "at": "2026-11-20T21:58:29.855544-06:00"
   }
  ]
 }
