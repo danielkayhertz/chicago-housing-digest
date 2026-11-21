@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-11-20T21:58:29.855544-06:00",
+ "generated_at": "2026-11-21T11:58:08.858206-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-20T21:58:29.855544-06:00",
+   "last_success_at": "2026-11-21T11:58:08.858206-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-20T21:58:29.855544-06:00",
+   "last_success_at": "2026-11-21T11:58:08.858206-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-20T21:58:29.855544-06:00",
+   "last_success_at": "2026-11-21T11:58:08.858206-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-20T21:58:29.855544-06:00",
+   "last_success_at": "2026-11-21T11:58:08.858206-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-20T21:58:29.855544-06:00",
+   "last_success_at": "2026-11-21T11:58:08.858206-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-20T21:58:29.855544-06:00",
+   "last_success_at": "2026-11-21T11:58:08.858206-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-20T21:58:29.855544-06:00",
+   "last_success_at": "2026-11-21T11:58:08.858206-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-20T21:58:29.855544-06:00",
+   "last_success_at": "2026-11-21T11:58:08.858206-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-20T21:58:29.855544-06:00",
+   "last_success_at": "2026-11-21T11:58:08.858206-06:00",
    "status": "ok",
    "message": ""
   }
@@ -8566,7 +8566,7 @@
    "enrichment": {
     "status": "failed",
     "housing_relevant": false,
-    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChFQRpftbxAjtd4cgjHdm'}",
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGWTXDupDjkHE4URAFWq'}",
     "summary": "",
     "categories": [
      {
@@ -11271,7 +11271,7 @@
    "enrichment": {
     "status": "failed",
     "housing_relevant": false,
-    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChFQRvYMxrmb9HTKCH2rB'}",
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGWTca7mV3xpgzB5SaNL'}",
     "summary": "",
     "categories": [],
     "geography": {
@@ -11404,7 +11404,7 @@
    "enrichment": {
     "status": "failed",
     "housing_relevant": false,
-    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChFQS64qvryBgJcs2i4qD'}",
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGWTnALeLYCEoEDrBBAY'}",
     "summary": "",
     "categories": [],
     "geography": {
@@ -11467,7 +11467,7 @@
    "enrichment": {
     "status": "failed",
     "housing_relevant": false,
-    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChFQSFLTY4AP9LWzTogBc'}",
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGWTwRgshDdzb3b8jZ7k'}",
     "summary": "",
     "categories": [],
     "geography": {
@@ -11658,7 +11658,7 @@
    "enrichment": {
     "status": "failed",
     "housing_relevant": false,
-    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChFQSR2cWfnhQQszZ95kK'}",
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGWU6xvhz4Q8Q9vBvMUP'}",
     "summary": "",
     "categories": [],
     "geography": {
@@ -11759,7 +11759,7 @@
    "enrichment": {
     "status": "failed",
     "housing_relevant": false,
-    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChFQSaUdsCCaJ4cERzN4g'}",
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGWUGaNadc6APhE1quqi'}",
     "summary": "",
     "categories": [],
     "geography": {
