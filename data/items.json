@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-11-22T21:43:51.619980-06:00",
+ "generated_at": "2026-11-23T16:39:12.057085-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-22T21:43:51.619980-06:00",
+   "last_success_at": "2026-11-23T16:39:12.057085-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-22T21:43:51.619980-06:00",
+   "last_success_at": "2026-11-23T16:39:12.057085-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-22T21:43:51.619980-06:00",
+   "last_success_at": "2026-11-23T16:39:12.057085-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-22T21:43:51.619980-06:00",
+   "last_success_at": "2026-11-23T16:39:12.057085-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-22T21:43:51.619980-06:00",
+   "last_success_at": "2026-11-23T16:39:12.057085-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-22T21:43:51.619980-06:00",
+   "last_success_at": "2026-11-23T16:39:12.057085-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-22T21:43:51.619980-06:00",
+   "last_success_at": "2026-11-23T16:39:12.057085-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-22T21:43:51.619980-06:00",
+   "last_success_at": "2026-11-23T16:39:12.057085-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-22T21:43:51.619980-06:00",
+   "last_success_at": "2026-11-23T16:39:12.057085-06:00",
    "status": "ok",
    "message": ""
   }
@@ -158,44 +158,44 @@
    "last_changed_at": "2026-10-15T10:36:19.137772-05:00"
   },
   {
-   "id": "ihda:ihda-finance-committee:2026-10-16",
-   "source_id": "ihda",
-   "body": "IHDA Finance Committee",
-   "body_id": "ihda-finance-committee",
-   "jurisdiction": "state",
-   "start": "2026-10-16T09:30:00-05:00",
-   "time_known": true,
-   "status": "held",
-   "location": null,
-   "agenda_url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf",
-   "video_url": null,
-   "minutes_url": null,
-   "detail_url": "https://www.ihda.org/about-ihda/public-meetings-and-notices/",
-   "needs_ai_extraction": true,
-   "item_count_total": 9,
-   "item_count_relevant": 7,
-   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-16T10:23:19.354323-05:00"
-  },
-  {
    "id": "ihda:ihda-board:2026-10-16",
    "source_id": "ihda",
    "body": "IHDA Board",
    "body_id": "ihda-board",
    "jurisdiction": "state",
-   "start": "2026-10-16T11:00:00-05:00",
-   "time_known": true,
+   "start": "2026-10-16T00:00:00-05:00",
+   "time_known": false,
    "status": "held",
    "location": null,
-   "agenda_url": "https://www.ihda.org/wp-content/uploads/2026/10/1016-Agenda.pdf",
+   "agenda_url": null,
    "video_url": null,
-   "minutes_url": null,
+   "minutes_url": "https://www.ihda.org/wp-content/uploads/2026/11/2026-11-IHDA-166-Minutes-Passed.pdf",
    "detail_url": "https://www.ihda.org/about-ihda/public-meetings-and-notices/",
-   "needs_ai_extraction": true,
+   "needs_ai_extraction": false,
    "item_count_total": 16,
    "item_count_relevant": 9,
    "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-16T14:58:13.053678-05:00"
+   "last_changed_at": "2026-11-23T16:39:12.057085-06:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-10-16",
+   "source_id": "ihda",
+   "body": "IHDA Finance Committee",
+   "body_id": "ihda-finance-committee",
+   "jurisdiction": "state",
+   "start": "2026-10-16T00:00:00-05:00",
+   "time_known": false,
+   "status": "held",
+   "location": null,
+   "agenda_url": null,
+   "video_url": null,
+   "minutes_url": "https://www.ihda.org/wp-content/uploads/2026/11/October-2026-Finance-Committee-Minutes.pdf",
+   "detail_url": "https://www.ihda.org/about-ihda/public-meetings-and-notices/",
+   "needs_ai_extraction": false,
+   "item_count_total": 9,
+   "item_count_relevant": 7,
+   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
+   "last_changed_at": "2026-11-23T16:39:12.057085-06:00"
   },
   {
    "id": "clihtf:10000839",
@@ -4733,466 +4733,6 @@
    "last_changed_at": "2026-10-14T20:29:16.698038-05:00"
   },
   {
-   "id": "ihda:ihda-finance-committee:2026-10-16#information-technology-update",
-   "meeting_id": "ihda:ihda-finance-committee:2026-10-16",
-   "source_ref": "II.A",
-   "title": "Information Technology Update",
-   "attachments": [
-    {
-     "label": "Agenda",
-     "url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "ai_extracted",
-   "geography_hint": null,
-   "enrichment": {
-    "status": "ok",
-    "housing_relevant": false,
-    "relevance_reason": "This is an internal IHDA information technology update with no bearing on building, financing, regulating, or occupying specific homes.",
-    "summary": "IHDA's Finance Committee will receive an Information Technology Update, presented by F. Ghauri, as part of its October 16, 2026 meeting agenda.",
-    "categories": [
-     {
-      "id": "state-agenda",
-      "via": "body",
-      "detail": "IHDA Finance Committee"
-     }
-    ],
-    "geography": {
-     "address": null,
-     "ward": null,
-     "community_area": null
-    },
-    "entities": [
-     "Illinois Housing Development Authority"
-    ],
-    "figures": {
-     "units": null,
-     "affordable_units": null
-    },
-    "amount": null,
-    "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
-    "important": null,
-    "source_quality": "full",
-    "model": "claude-sonnet-5-5",
-    "content_hash": "e85c1f0e62391e3e",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T14:45:41.871293-05:00"
-  },
-  {
-   "id": "ihda:ihda-finance-committee:2026-10-16#security-update",
-   "meeting_id": "ihda:ihda-finance-committee:2026-10-16",
-   "source_ref": "II.B",
-   "title": "Security Update",
-   "attachments": [
-    {
-     "label": "Agenda",
-     "url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "ai_extracted",
-   "geography_hint": null,
-   "enrichment": {
-    "status": "ok",
-    "housing_relevant": false,
-    "relevance_reason": "This is an IHDA IT security briefing, an internal operational item with no bearing on housing production, finance, or tenants.",
-    "summary": "IHDA Finance Committee agenda item II.B, a Security Update presented by T. Hardrick, part of the IT update section of the October 16, 2026 meeting.",
-    "categories": [
-     {
-      "id": "state-agenda",
-      "via": "body",
-      "detail": "IHDA Finance Committee"
-     }
-    ],
-    "geography": {
-     "address": null,
-     "ward": null,
-     "community_area": null
-    },
-    "entities": [
-     "Illinois Housing Development Authority"
-    ],
-    "figures": {
-     "units": null,
-     "affordable_units": null
-    },
-    "amount": null,
-    "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
-    "important": null,
-    "source_quality": "full",
-    "model": "claude-sonnet-5-5",
-    "content_hash": "25ce0e1a5f65e1b2",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T14:45:41.871293-05:00"
-  },
-  {
-   "id": "ihda:ihda-finance-committee:2026-10-16#presentation-of-consolidated-interim-financial-statement",
-   "meeting_id": "ihda:ihda-finance-committee:2026-10-16",
-   "source_ref": "III.A",
-   "title": "Presentation of Consolidated Interim Financial Statement",
-   "attachments": [
-    {
-     "label": "Agenda",
-     "url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "ai_extracted",
-   "geography_hint": null,
-   "enrichment": {
-    "status": "ok",
-    "housing_relevant": true,
-    "relevance_reason": "This is a standing monthly financial update at the Illinois Housing Development Authority, the state's housing finance agency, but it is a general financial statement with no specific housing deal.",
-    "summary": "The IHDA Finance Committee will hear a presentation of the consolidated interim financial statement from M. Jalaluddin as a standing monthly update at its October 16, 2026 meeting.",
-    "categories": [
-     {
-      "id": "state-agenda",
-      "via": "body",
-      "detail": "IHDA Finance Committee"
-     }
-    ],
-    "geography": {
-     "address": null,
-     "ward": null,
-     "community_area": null
-    },
-    "entities": [
-     "Illinois Housing Development Authority"
-    ],
-    "figures": {
-     "units": null,
-     "affordable_units": null
-    },
-    "amount": null,
-    "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
-    "important": null,
-    "source_quality": "full",
-    "model": "claude-sonnet-5-5",
-    "content_hash": "05e4cda765a66a89",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T14:45:41.871293-05:00"
-  },
-  {
-   "id": "ihda:ihda-finance-committee:2026-10-16#multifamily-update",
-   "meeting_id": "ihda:ihda-finance-committee:2026-10-16",
-   "source_ref": "III.B",
-   "title": "Multifamily Update",
-   "attachments": [
-    {
-     "label": "Agenda",
-     "url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "ai_extracted",
-   "geography_hint": null,
-   "enrichment": {
-    "status": "ok",
-    "housing_relevant": true,
-    "relevance_reason": "A standing multifamily update to the IHDA Finance Committee covers the state housing finance agency's multifamily lending and financing activity.",
-    "summary": "Standing monthly Multifamily Update presented by S. Bannon at the IHDA Finance Committee meeting on October 16, 2026.",
-    "categories": [
-     {
-      "id": "state-agenda",
-      "via": "body",
-      "detail": "IHDA Finance Committee"
-     }
-    ],
-    "geography": {
-     "address": null,
-     "ward": null,
-     "community_area": null
-    },
-    "entities": [
-     "Illinois Housing Development Authority"
-    ],
-    "figures": {
-     "units": null,
-     "affordable_units": null
-    },
-    "amount": null,
-    "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
-    "important": null,
-    "source_quality": "full",
-    "model": "claude-sonnet-5-5",
-    "content_hash": "802dc4fd369f8f2b",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T14:45:41.871293-05:00"
-  },
-  {
-   "id": "ihda:ihda-finance-committee:2026-10-16#single-family-homeownership-update",
-   "meeting_id": "ihda:ihda-finance-committee:2026-10-16",
-   "source_ref": "III.C",
-   "title": "Single Family/Homeownership Update",
-   "attachments": [
-    {
-     "label": "Agenda",
-     "url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "ai_extracted",
-   "geography_hint": null,
-   "enrichment": {
-    "status": "ok",
-    "housing_relevant": true,
-    "relevance_reason": "A standing IHDA Finance Committee update on single-family and homeownership programs bears on state housing finance.",
-    "summary": "IHDA's Finance Committee receives a standing monthly Single Family/Homeownership Update, presented by K. Nestlehut, at its October 16, 2026 meeting.",
-    "categories": [
-     {
-      "id": "state-agenda",
-      "via": "body",
-      "detail": "IHDA Finance Committee"
-     }
-    ],
-    "geography": {
-     "address": null,
-     "ward": null,
-     "community_area": null
-    },
-    "entities": [
-     "Illinois Housing Development Authority"
-    ],
-    "figures": {
-     "units": null,
-     "affordable_units": null
-    },
-    "amount": null,
-    "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
-    "important": null,
-    "source_quality": "full",
-    "model": "claude-sonnet-5-5",
-    "content_hash": "d70173e0469f4481",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T14:45:41.871293-05:00"
-  },
-  {
-   "id": "ihda:ihda-finance-committee:2026-10-16#resolution-ratifying-permitted-financial-activities",
-   "meeting_id": "ihda:ihda-finance-committee:2026-10-16",
-   "source_ref": "IV.A.1",
-   "title": "Resolution Ratifying Permitted Financial Activities",
-   "attachments": [
-    {
-     "label": "Agenda",
-     "url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "ai_extracted",
-   "geography_hint": null,
-   "enrichment": {
-    "status": "ok",
-    "housing_relevant": true,
-    "relevance_reason": "It is an IHDA Finance Committee action on the authority's financial activities, which fund affordable housing, though the material gives no specifics.",
-    "summary": "The IHDA Finance Committee will consider a resolution ratifying permitted financial activities, presented by S. Bhimani at its October 16, 2026 meeting.",
-    "categories": [
-     {
-      "id": "state-agenda",
-      "via": "body",
-      "detail": "IHDA Finance Committee"
-     }
-    ],
-    "geography": {
-     "address": null,
-     "ward": null,
-     "community_area": null
-    },
-    "entities": [
-     "Illinois Housing Development Authority"
-    ],
-    "figures": {
-     "units": null,
-     "affordable_units": null
-    },
-    "amount": null,
-    "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
-    "important": null,
-    "source_quality": "full",
-    "model": "claude-sonnet-5-5",
-    "content_hash": "bfed7a3397323860",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T14:45:41.871293-05:00"
-  },
-  {
-   "id": "ihda:ihda-finance-committee:2026-10-16#sbpa-amendment-extension-for-housing-bonds-series-2017-a-2",
-   "meeting_id": "ihda:ihda-finance-committee:2026-10-16",
-   "source_ref": "IV.A.2",
-   "title": "SBPA Amendment/Extension for Housing Bonds Series 2017 A-2",
-   "attachments": [
-    {
-     "label": "Agenda",
-     "url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "ai_extracted",
-   "geography_hint": null,
-   "enrichment": {
-    "status": "ok",
-    "housing_relevant": true,
-    "relevance_reason": "It concerns an amendment and extension of a standby bond purchase agreement supporting IHDA Housing Bonds, which are used to finance housing.",
-    "summary": "The IHDA Finance Committee will consider amending and extending a standby bond purchase agreement (SBPA) for Housing Bonds Series 2017 A-2. M. Babcock is listed as presenter.",
-    "categories": [
-     {
-      "id": "state-agenda",
-      "via": "body",
-      "detail": "IHDA Finance Committee"
-     }
-    ],
-    "geography": {
-     "address": null,
-     "ward": null,
-     "community_area": null
-    },
-    "entities": [
-     "Illinois Housing Development Authority",
-     "M. Babcock"
-    ],
-    "figures": {
-     "units": null,
-     "affordable_units": null
-    },
-    "amount": null,
-    "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
-    "important": null,
-    "source_quality": "full",
-    "model": "claude-sonnet-5-5",
-    "content_hash": "3b8f04405e6f7d39",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T14:45:41.871293-05:00"
-  },
-  {
-   "id": "ihda:ihda-finance-committee:2026-10-16#resolution-authorizing-revenue-bonds-2026-series-lmno",
-   "meeting_id": "ihda:ihda-finance-committee:2026-10-16",
-   "source_ref": "IV.A.3",
-   "title": "Resolution Authorizing Revenue Bonds, 2026 Series LMNO",
-   "attachments": [
-    {
-     "label": "Agenda",
-     "url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "ai_extracted",
-   "geography_hint": null,
-   "enrichment": {
-    "status": "ok",
-    "housing_relevant": true,
-    "relevance_reason": "IHDA is considering a resolution authorizing revenue bonds, a state housing finance action.",
-    "summary": "The IHDA Finance Committee will consider a resolution authorizing Revenue Bonds, 2026 Series LMNO. The agenda lists M. Babcock as presenter.",
-    "categories": [
-     {
-      "id": "state-agenda",
-      "via": "body",
-      "detail": "IHDA Finance Committee"
-     }
-    ],
-    "geography": {
-     "address": null,
-     "ward": null,
-     "community_area": null
-    },
-    "entities": [
-     "Illinois Housing Development Authority"
-    ],
-    "figures": {
-     "units": null,
-     "affordable_units": null
-    },
-    "amount": null,
-    "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
-    "important": null,
-    "source_quality": "full",
-    "model": "claude-sonnet-5-5",
-    "content_hash": "0a8d516bb52d38b1",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T14:45:41.871293-05:00"
-  },
-  {
-   "id": "ihda:ihda-finance-committee:2026-10-16#pheasant-ridge",
-   "meeting_id": "ihda:ihda-finance-committee:2026-10-16",
-   "source_ref": "IV.B.1",
-   "title": "Pheasant Ridge",
-   "attachments": [
-    {
-     "label": "Agenda",
-     "url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf"
-    }
-   ],
-   "outcome": null,
-   "extraction": "ai_extracted",
-   "geography_hint": null,
-   "enrichment": {
-    "status": "ok",
-    "housing_relevant": true,
-    "relevance_reason": "A multifamily finance item before IHDA's Finance Committee concerns financing for a housing development called Pheasant Ridge.",
-    "summary": "The IHDA Finance Committee agenda lists Pheasant Ridge under Multifamily Finance, presented by S. Bannon. No further details on the financing or development are given.",
-    "categories": [
-     {
-      "id": "state-agenda",
-      "via": "body",
-      "detail": "IHDA Finance Committee"
-     }
-    ],
-    "geography": {
-     "address": null,
-     "ward": null,
-     "community_area": null
-    },
-    "entities": [
-     "Illinois Housing Development Authority"
-    ],
-    "figures": {
-     "units": null,
-     "affordable_units": null
-    },
-    "amount": null,
-    "amount_kind": null,
-    "zoning_from": [],
-    "zoning_to": null,
-    "important": null,
-    "source_quality": "full",
-    "model": "claude-sonnet-5-5",
-    "content_hash": "b72513adff2256ef",
-    "overridden": false
-   },
-   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
-   "last_changed_at": "2026-10-14T14:45:41.871293-05:00"
-  },
-  {
    "id": "ihda:ihda-board:2026-10-16#resolution-authorizing-agreement-with-mythics-inc-for-business-process-c-c706ea5",
    "meeting_id": "ihda:ihda-board:2026-10-16",
    "source_ref": "IV.B.1",
@@ -6025,6 +5565,466 @@
    },
    "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
    "last_changed_at": "2026-10-14T13:08:07.894365-05:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-10-16#information-technology-update",
+   "meeting_id": "ihda:ihda-finance-committee:2026-10-16",
+   "source_ref": "II.A",
+   "title": "Information Technology Update",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "This is an internal IHDA information technology update with no bearing on building, financing, regulating, or occupying specific homes.",
+    "summary": "IHDA's Finance Committee will receive an Information Technology Update, presented by F. Ghauri, as part of its October 16, 2026 meeting agenda.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Finance Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "e85c1f0e62391e3e",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
+   "last_changed_at": "2026-10-14T14:45:41.871293-05:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-10-16#security-update",
+   "meeting_id": "ihda:ihda-finance-committee:2026-10-16",
+   "source_ref": "II.B",
+   "title": "Security Update",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": false,
+    "relevance_reason": "This is an IHDA IT security briefing, an internal operational item with no bearing on housing production, finance, or tenants.",
+    "summary": "IHDA Finance Committee agenda item II.B, a Security Update presented by T. Hardrick, part of the IT update section of the October 16, 2026 meeting.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Finance Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "25ce0e1a5f65e1b2",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
+   "last_changed_at": "2026-10-14T14:45:41.871293-05:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-10-16#presentation-of-consolidated-interim-financial-statement",
+   "meeting_id": "ihda:ihda-finance-committee:2026-10-16",
+   "source_ref": "III.A",
+   "title": "Presentation of Consolidated Interim Financial Statement",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "This is a standing monthly financial update at the Illinois Housing Development Authority, the state's housing finance agency, but it is a general financial statement with no specific housing deal.",
+    "summary": "The IHDA Finance Committee will hear a presentation of the consolidated interim financial statement from M. Jalaluddin as a standing monthly update at its October 16, 2026 meeting.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Finance Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "05e4cda765a66a89",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
+   "last_changed_at": "2026-10-14T14:45:41.871293-05:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-10-16#multifamily-update",
+   "meeting_id": "ihda:ihda-finance-committee:2026-10-16",
+   "source_ref": "III.B",
+   "title": "Multifamily Update",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A standing multifamily update to the IHDA Finance Committee covers the state housing finance agency's multifamily lending and financing activity.",
+    "summary": "Standing monthly Multifamily Update presented by S. Bannon at the IHDA Finance Committee meeting on October 16, 2026.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Finance Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "802dc4fd369f8f2b",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
+   "last_changed_at": "2026-10-14T14:45:41.871293-05:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-10-16#single-family-homeownership-update",
+   "meeting_id": "ihda:ihda-finance-committee:2026-10-16",
+   "source_ref": "III.C",
+   "title": "Single Family/Homeownership Update",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A standing IHDA Finance Committee update on single-family and homeownership programs bears on state housing finance.",
+    "summary": "IHDA's Finance Committee receives a standing monthly Single Family/Homeownership Update, presented by K. Nestlehut, at its October 16, 2026 meeting.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Finance Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "d70173e0469f4481",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
+   "last_changed_at": "2026-10-14T14:45:41.871293-05:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-10-16#resolution-ratifying-permitted-financial-activities",
+   "meeting_id": "ihda:ihda-finance-committee:2026-10-16",
+   "source_ref": "IV.A.1",
+   "title": "Resolution Ratifying Permitted Financial Activities",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "It is an IHDA Finance Committee action on the authority's financial activities, which fund affordable housing, though the material gives no specifics.",
+    "summary": "The IHDA Finance Committee will consider a resolution ratifying permitted financial activities, presented by S. Bhimani at its October 16, 2026 meeting.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Finance Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "bfed7a3397323860",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
+   "last_changed_at": "2026-10-14T14:45:41.871293-05:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-10-16#sbpa-amendment-extension-for-housing-bonds-series-2017-a-2",
+   "meeting_id": "ihda:ihda-finance-committee:2026-10-16",
+   "source_ref": "IV.A.2",
+   "title": "SBPA Amendment/Extension for Housing Bonds Series 2017 A-2",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "It concerns an amendment and extension of a standby bond purchase agreement supporting IHDA Housing Bonds, which are used to finance housing.",
+    "summary": "The IHDA Finance Committee will consider amending and extending a standby bond purchase agreement (SBPA) for Housing Bonds Series 2017 A-2. M. Babcock is listed as presenter.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Finance Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority",
+     "M. Babcock"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "3b8f04405e6f7d39",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
+   "last_changed_at": "2026-10-14T14:45:41.871293-05:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-10-16#resolution-authorizing-revenue-bonds-2026-series-lmno",
+   "meeting_id": "ihda:ihda-finance-committee:2026-10-16",
+   "source_ref": "IV.A.3",
+   "title": "Resolution Authorizing Revenue Bonds, 2026 Series LMNO",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "IHDA is considering a resolution authorizing revenue bonds, a state housing finance action.",
+    "summary": "The IHDA Finance Committee will consider a resolution authorizing Revenue Bonds, 2026 Series LMNO. The agenda lists M. Babcock as presenter.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Finance Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "0a8d516bb52d38b1",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
+   "last_changed_at": "2026-10-14T14:45:41.871293-05:00"
+  },
+  {
+   "id": "ihda:ihda-finance-committee:2026-10-16#pheasant-ridge",
+   "meeting_id": "ihda:ihda-finance-committee:2026-10-16",
+   "source_ref": "IV.B.1",
+   "title": "Pheasant Ridge",
+   "attachments": [
+    {
+     "label": "Agenda",
+     "url": "https://www.ihda.org/wp-content/uploads/2026/10/October-2026-Finance-Committee-Agenda.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "ai_extracted",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "ok",
+    "housing_relevant": true,
+    "relevance_reason": "A multifamily finance item before IHDA's Finance Committee concerns financing for a housing development called Pheasant Ridge.",
+    "summary": "The IHDA Finance Committee agenda lists Pheasant Ridge under Multifamily Finance, presented by S. Bannon. No further details on the financing or development are given.",
+    "categories": [
+     {
+      "id": "state-agenda",
+      "via": "body",
+      "detail": "IHDA Finance Committee"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [
+     "Illinois Housing Development Authority"
+    ],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "full",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "b72513adff2256ef",
+    "overridden": false
+   },
+   "first_seen_at": "2026-10-14T13:08:07.894365-05:00",
+   "last_changed_at": "2026-10-14T14:45:41.871293-05:00"
   },
   {
    "id": "clihtf:319089#president-s-update",
@@ -16649,46 +16649,6 @@
  ],
  "events": [
   {
-   "type": "agenda_posted",
-   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5",
-   "at": "2026-11-09T15:26:35.571983-06:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029491",
-   "at": "2026-11-09T15:26:35.571983-06:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029492",
-   "at": "2026-11-09T15:26:35.571983-06:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029494",
-   "at": "2026-11-09T15:26:35.571983-06:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029488",
-   "at": "2026-11-09T15:26:35.571983-06:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029496",
-   "at": "2026-11-09T15:26:35.571983-06:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029493",
-   "at": "2026-11-09T15:26:35.571983-06:00"
-  },
-  {
-   "type": "meeting_cancelled",
-   "ref_id": "cdc:2026-11-10",
-   "at": "2026-11-09T15:26:35.571983-06:00"
-  },
-  {
    "type": "meeting_new",
    "ref_id": "elms:482A33D0-AADE-F111-84EA-001DD80B58E5",
    "at": "2026-11-12T12:56:29.415744-06:00"
@@ -17147,6 +17107,16 @@
    "type": "outcome_recorded",
    "ref_id": "legistar:thecha:1151#26-128",
    "at": "2026-11-20T21:58:29.855544-06:00"
+  },
+  {
+   "type": "meeting_rescheduled",
+   "ref_id": "ihda:ihda-board:2026-10-16",
+   "at": "2026-11-23T16:39:12.057085-06:00"
+  },
+  {
+   "type": "meeting_rescheduled",
+   "ref_id": "ihda:ihda-finance-committee:2026-10-16",
+   "at": "2026-11-23T16:39:12.057085-06:00"
   }
  ]
 }
