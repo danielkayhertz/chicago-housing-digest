@@ -3969,39 +3969,8 @@
   "zoning_to": null
  },
  "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029496": {
-  "amount": null,
-  "amount_kind": null,
-  "categories": [
-   {
-    "detail": "",
-    "id": "social-housing",
-    "via": "model"
-   }
-  ],
-  "content_hash": "5ecf077565aedacf",
-  "entities": [
-   "Department of Planning and Development",
-   "ChiBlockBuilder"
-  ],
-  "figures": {
-   "affordable_units": null,
-   "units": null
-  },
-  "geography": {
-   "address": "3239 S Morgan St",
-   "community_area": "Bridgeport",
-   "ward": 11
-  },
-  "housing_relevant": true,
-  "important": null,
-  "model": "claude-sonnet-5-5",
-  "overridden": false,
-  "relevance_reason": "It authorizes sale of City-owned vacant lots to adjacent owners under the ChiBlockBuilder side yard program, a disposition of public land.",
-  "source_quality": "scanned",
-  "status": "ok",
-  "summary": "The Committee on Housing and Real Estate would approve sale of City-owned lots at 13 addresses to various buyers under ChiBlockBuilder. Exhibit A lists adjacent neighbors buying side-yard lots at 10% of \"as is\" market value, through the Department of Planning and Development.",
-  "zoning_from": [],
-  "zoning_to": null
+  "content_hash": "eeceeff6f48b77a9",
+  "failed_attempts": 1
  },
  "elms:C3D059C8-D0CB-F111-A05C-001DD80B58E5#O2025-0023279": {
   "amount": null,
