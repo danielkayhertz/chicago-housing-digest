@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-11-24T23:26:10.520037-06:00",
+ "generated_at": "2026-11-25T14:28:47.770352-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-24T23:26:10.520037-06:00",
+   "last_success_at": "2026-11-25T14:28:47.770352-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-24T23:26:10.520037-06:00",
+   "last_success_at": "2026-11-25T14:28:47.770352-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-24T23:26:10.520037-06:00",
+   "last_success_at": "2026-11-25T14:28:47.770352-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-24T23:26:10.520037-06:00",
+   "last_success_at": "2026-11-25T14:28:47.770352-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-24T23:26:10.520037-06:00",
-   "status": "ok",
-   "message": ""
+   "last_success_at": "2026-11-25T14:28:47.770352-06:00",
+   "status": "stale",
+   "message": "elms:5C971227-8CD4-F111-A05C-001DD80FDA55: 7 numbered agenda entries have no record number and were skipped"
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-24T23:26:10.520037-06:00",
+   "last_success_at": "2026-11-25T14:28:47.770352-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-24T23:26:10.520037-06:00",
+   "last_success_at": "2026-11-25T14:28:47.770352-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-24T23:26:10.520037-06:00",
+   "last_success_at": "2026-11-25T14:28:47.770352-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-24T23:26:10.520037-06:00",
+   "last_success_at": "2026-11-25T14:28:47.770352-06:00",
    "status": "ok",
    "message": ""
   }
@@ -487,15 +487,15 @@
    "time_known": true,
    "status": "scheduled",
    "location": "City Council Chamber, 2nd Floor, City Hall, 121 North LaSalle Street - Chicago, IL 60602",
-   "agenda_url": null,
+   "agenda_url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/meetingattachmentspublic/987d964b-1c7b-4f6d-86f7-4c2d18f4ad67.pdf",
    "video_url": null,
    "minutes_url": null,
    "detail_url": null,
    "needs_ai_extraction": false,
-   "item_count_total": 0,
-   "item_count_relevant": 0,
+   "item_count_total": 1,
+   "item_count_relevant": 1,
    "first_seen_at": "2026-10-30T16:30:42.099549-05:00",
-   "last_changed_at": "2026-10-30T16:30:42.099549-05:00"
+   "last_changed_at": "2026-11-25T14:28:47.770352-06:00"
   },
   {
    "id": "elms:F8691F79-75DF-F111-84EA-001DD80EFCF5",
@@ -11239,7 +11239,7 @@
    "enrichment": {
     "status": "failed",
     "housing_relevant": false,
-    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChP6MFoXbcjnNxxAC8655'}",
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChQHBf5GRBb9PGfwqzQ1r'}",
     "summary": "",
     "categories": [],
     "geography": {
@@ -15592,6 +15592,53 @@
    },
    "first_seen_at": "2026-11-18T13:24:37.488660-06:00",
    "last_changed_at": "2026-11-18T13:24:37.488660-06:00"
+  },
+  {
+   "id": "elms:5C971227-8CD4-F111-A05C-001DD80FDA55#SO2026-0027231",
+   "meeting_id": "elms:5C971227-8CD4-F111-A05C-001DD80FDA55",
+   "source_ref": "SO2026-0027231",
+   "title": "Amendment of Municipal Code Section 11-12-532 allowing transferees of properties covered by Utility Billing Relief Program to remain in program if meeting certain requirements",
+   "attachments": [
+    {
+     "label": "SO2026-0027231 v7 final clean (2)",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/96502f17-f741-4018-9046-f138742da54e.pdf"
+    },
+    {
+     "label": "w21others - o27231",
+     "url": "https://occprodstoragev1.blob.core.usgovcloudapi.net/matterattachmentspublic/57b2d8ca-9701-48c5-b078-be2fd6bc4f9d.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": null,
+   "enrichment": {
+    "status": "failed",
+    "housing_relevant": false,
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChQHBmRGArWbeGoZsEioW'}",
+    "summary": "",
+    "categories": [],
+    "geography": {
+     "address": null,
+     "ward": null,
+     "community_area": null
+    },
+    "entities": [],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "66b75becff10469e",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-25T14:28:47.770352-06:00",
+   "last_changed_at": "2026-11-25T14:28:47.770352-06:00"
   }
  ],
  "notices": [
@@ -17108,6 +17155,16 @@
    "type": "meeting_rescheduled",
    "ref_id": "ihda:ihda-finance-committee:2026-10-16",
    "at": "2026-11-23T16:39:12.057085-06:00"
+  },
+  {
+   "type": "agenda_posted",
+   "ref_id": "elms:5C971227-8CD4-F111-A05C-001DD80FDA55",
+   "at": "2026-11-25T14:28:47.770352-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "elms:5C971227-8CD4-F111-A05C-001DD80FDA55#SO2026-0027231",
+   "at": "2026-11-25T14:28:47.770352-06:00"
   }
  ]
 }
