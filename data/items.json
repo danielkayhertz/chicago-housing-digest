@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-11-25T23:04:17.784360-06:00",
+ "generated_at": "2026-11-26T14:11:37.356964-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-25T23:04:17.784360-06:00",
+   "last_success_at": "2026-11-26T14:11:37.356964-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-25T23:04:17.784360-06:00",
+   "last_success_at": "2026-11-26T14:11:37.356964-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-25T23:04:17.784360-06:00",
+   "last_success_at": "2026-11-26T14:11:37.356964-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-25T23:04:17.784360-06:00",
+   "last_success_at": "2026-11-26T14:11:37.356964-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-25T23:04:17.784360-06:00",
+   "last_success_at": "2026-11-26T14:11:37.356964-06:00",
    "status": "stale",
    "message": "elms:5C971227-8CD4-F111-A05C-001DD80FDA55: 7 numbered agenda entries have no record number and were skipped"
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-25T23:04:17.784360-06:00",
+   "last_success_at": "2026-11-26T14:11:37.356964-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-25T23:04:17.784360-06:00",
+   "last_success_at": "2026-11-26T14:11:37.356964-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-25T23:04:17.784360-06:00",
+   "last_success_at": "2026-11-26T14:11:37.356964-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-25T23:04:17.784360-06:00",
+   "last_success_at": "2026-11-26T14:11:37.356964-06:00",
    "status": "ok",
    "message": ""
   }
@@ -15614,7 +15614,7 @@
    "enrichment": {
     "status": "failed",
     "housing_relevant": false,
-    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChQxVXBngiv8LNP98Y6Fg'}",
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChS9gXeAabSx15ZZNyJ56'}",
     "summary": "",
     "categories": [],
     "geography": {
@@ -16686,101 +16686,6 @@
   }
  ],
  "events": [
-  {
-   "type": "meeting_new",
-   "ref_id": "elms:482A33D0-AADE-F111-84EA-001DD80B58E5",
-   "at": "2026-11-12T12:56:29.415744-06:00"
-  },
-  {
-   "type": "agenda_posted",
-   "ref_id": "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55",
-   "at": "2026-11-12T12:56:29.415744-06:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#an-ordinance-concerning-the-issuance-of-city-s-second-lien-wastewater-tr-68f5a48",
-   "at": "2026-11-12T12:56:29.415744-06:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#an-ordinance-approving-amendment-no-3-to-the-119th-and-halsted-tax-incre-30cfdd9",
-   "at": "2026-11-12T12:56:29.415744-06:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#an-ordinance-approving-amendment-no-2-to-the-119th-i-57-tax-increment-fi-f7de2d9",
-   "at": "2026-11-12T12:56:29.415744-06:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#an-ordinance-approving-amendment-no-6-to-the-47th-ashland-redevelopment-ae65f40",
-   "at": "2026-11-12T12:56:29.415744-06:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#an-ordinance-approving-amendment-no-3-to-the-47th-halsted-tax-increment-5b571d5",
-   "at": "2026-11-12T12:56:29.415744-06:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#an-ordinance-approving-amendment-no-1-to-the-47th-king-drive-redevelopme-a7eed5b",
-   "at": "2026-11-12T12:56:29.415744-06:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#an-ordinance-approving-amendment-no-1-to-the-87th-cottage-grove-redevelo-a1d46f6",
-   "at": "2026-11-12T12:56:29.415744-06:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#one-1-proposed-order-authorizing-charitable-solicitation-on-the-public-w-a5a8961",
-   "at": "2026-11-12T12:56:29.415744-06:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#one-1-proposed-order-amending-the-charitable-solicitation-on-public-way-e3b264b",
-   "at": "2026-11-12T12:56:29.415744-06:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#one-1-proposed-order-authorizing-the-payment-of-various-small-claims-aga-7140ea7",
-   "at": "2026-11-12T12:56:29.415744-06:00"
-  },
-  {
-   "type": "item_added",
-   "ref_id": "elms:7F0B31CB-9CC9-F111-AAAE-001DD80FDA55#one-1-proposed-order-denying-the-payment-of-various-small-claims-against-190cfde",
-   "at": "2026-11-12T12:56:29.415744-06:00"
-  },
-  {
-   "type": "meeting_new",
-   "ref_id": "legistar:thecha:1117",
-   "at": "2026-11-12T12:56:29.415744-06:00"
-  },
-  {
-   "type": "meeting_new",
-   "ref_id": "legistar:thecha:1150",
-   "at": "2026-11-12T12:56:29.415744-06:00"
-  },
-  {
-   "type": "meeting_new",
-   "ref_id": "legistar:thecha:1151",
-   "at": "2026-11-12T12:56:29.415744-06:00"
-  },
-  {
-   "type": "notice_new",
-   "ref_id": "ihda:notice:10d930a22254",
-   "at": "2026-11-12T12:56:29.415744-06:00"
-  },
-  {
-   "type": "notice_new",
-   "ref_id": "ihda:notice:ad71fe349c5c",
-   "at": "2026-11-12T12:56:29.415744-06:00"
-  },
-  {
-   "type": "notice_new",
-   "ref_id": "ihda:notice:3972001d2d48",
-   "at": "2026-11-12T12:56:29.415744-06:00"
-  },
   {
    "type": "agenda_posted",
    "ref_id": "legistar:thecha:1117",
