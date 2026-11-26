@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-11-25T14:28:47.770352-06:00",
+ "generated_at": "2026-11-25T23:04:17.784360-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-25T14:28:47.770352-06:00",
+   "last_success_at": "2026-11-25T23:04:17.784360-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-25T14:28:47.770352-06:00",
+   "last_success_at": "2026-11-25T23:04:17.784360-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-25T14:28:47.770352-06:00",
+   "last_success_at": "2026-11-25T23:04:17.784360-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-25T14:28:47.770352-06:00",
+   "last_success_at": "2026-11-25T23:04:17.784360-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-25T14:28:47.770352-06:00",
+   "last_success_at": "2026-11-25T23:04:17.784360-06:00",
    "status": "stale",
    "message": "elms:5C971227-8CD4-F111-A05C-001DD80FDA55: 7 numbered agenda entries have no record number and were skipped"
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-25T14:28:47.770352-06:00",
+   "last_success_at": "2026-11-25T23:04:17.784360-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-25T14:28:47.770352-06:00",
+   "last_success_at": "2026-11-25T23:04:17.784360-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-25T14:28:47.770352-06:00",
+   "last_success_at": "2026-11-25T23:04:17.784360-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-25T14:28:47.770352-06:00",
+   "last_success_at": "2026-11-25T23:04:17.784360-06:00",
    "status": "ok",
    "message": ""
   }
@@ -11239,7 +11239,7 @@
    "enrichment": {
     "status": "failed",
     "housing_relevant": false,
-    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChQHBf5GRBb9PGfwqzQ1r'}",
+    "relevance_reason": "enrichment failed 3 times; not retrying until the content changes",
     "summary": "",
     "categories": [],
     "geography": {
@@ -15614,7 +15614,7 @@
    "enrichment": {
     "status": "failed",
     "housing_relevant": false,
-    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChQHBmRGArWbeGoZsEioW'}",
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChQxVXBngiv8LNP98Y6Fg'}",
     "summary": "",
     "categories": [],
     "geography": {
