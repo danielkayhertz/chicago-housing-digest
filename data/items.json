@@ -1,57 +1,57 @@
 {
- "generated_at": "2026-11-27T13:57:08.669662-06:00",
+ "generated_at": "2026-11-27T22:44:50.306819-06:00",
  "sources": [
   {
    "source_id": "cdc",
-   "last_success_at": "2026-11-27T13:57:08.669662-06:00",
+   "last_success_at": "2026-11-27T22:44:50.306819-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cha",
-   "last_success_at": "2026-11-27T13:57:08.669662-06:00",
+   "last_success_at": "2026-11-27T22:44:50.306819-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "clihtf",
-   "last_success_at": "2026-11-27T13:57:08.669662-06:00",
+   "last_success_at": "2026-11-27T22:44:50.306819-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "cpc",
-   "last_success_at": "2026-11-27T13:57:08.669662-06:00",
+   "last_success_at": "2026-11-27T22:44:50.306819-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-finance",
-   "last_success_at": "2026-11-27T13:57:08.669662-06:00",
+   "last_success_at": "2026-11-27T22:44:50.306819-06:00",
    "status": "stale",
    "message": "elms:5C971227-8CD4-F111-A05C-001DD80FDA55: 7 numbered agenda entries have no record number and were skipped"
   },
   {
    "source_id": "elms-housing",
-   "last_success_at": "2026-11-27T13:57:08.669662-06:00",
+   "last_success_at": "2026-11-27T22:44:50.306819-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "elms-zoning",
-   "last_success_at": "2026-11-27T13:57:08.669662-06:00",
+   "last_success_at": "2026-11-27T22:44:50.306819-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "ihda",
-   "last_success_at": "2026-11-27T13:57:08.669662-06:00",
+   "last_success_at": "2026-11-27T22:44:50.306819-06:00",
    "status": "ok",
    "message": ""
   },
   {
    "source_id": "watch",
-   "last_success_at": "2026-11-27T13:57:08.669662-06:00",
+   "last_success_at": "2026-11-27T22:44:50.306819-06:00",
    "status": "ok",
    "message": ""
   }
@@ -527,15 +527,15 @@
    "time_known": false,
    "status": "scheduled",
    "location": null,
-   "agenda_url": null,
+   "agenda_url": "https://www.chicago.gov/content/city/en/depts/dcd/supp_info/chicago_plan_commission/December_2026_Plan_Commission_Hearing.html",
    "video_url": null,
    "minutes_url": null,
-   "detail_url": "https://www.chicago.gov/content/city/en/depts/dcd/chicago-plan-commission/meetings--agendas---video-archives.html",
+   "detail_url": "https://www.chicago.gov/content/city/en/depts/dcd/supp_info/chicago_plan_commission/December_2026_Plan_Commission_Hearing.html",
    "needs_ai_extraction": false,
-   "item_count_total": 0,
-   "item_count_relevant": 0,
+   "item_count_total": 4,
+   "item_count_relevant": 4,
    "first_seen_at": "2026-10-18T09:35:16.093878-05:00",
-   "last_changed_at": "2026-10-18T09:35:16.093878-05:00"
+   "last_changed_at": "2026-11-27T22:44:50.306819-06:00"
   }
  ],
  "items": [
@@ -11645,6 +11645,207 @@
    },
    "first_seen_at": "2026-11-25T14:28:47.770352-06:00",
    "last_changed_at": "2026-11-25T14:28:47.770352-06:00"
+  },
+  {
+   "id": "cpc:2026-12-17#5946-5962-and-5937-5965-n-sheridan-rd",
+   "meeting_id": "cpc:2026-12-17",
+   "source_ref": "5946-5962 and 5937-5965 N. Sheridan Rd.",
+   "title": "A proposed Planned Development and Chicago Lakefront Protection Ordinance application, submitted by Sheridan Thorndale Partners LLC, for the properties generally located at 5946-5962 and 5937-5965 N Sheridan Road. The applicant proposes to rezone the subject properties from the RM-5.5 Residential Multi-Unit District and RS-1 Residential Single-Unit District to the B3-5 Community Shopping District and then to a Planned Development to allow the construction of a multi-phase, mixed-use development containing 603 dwelling units, retail and commercial uses, a religious assembly space, a community center, and accessory uses. The first phase would include the construction of a 65-unit residential building with 15 parking spaces on the west side of Sheridan Road. The maximum overall FAR of the planned development will be 5.0.",
+   "attachments": [
+    {
+     "label": "LPO Application",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/12_2026/5959_N_Sheridan_LPO_Application_Scanned.pdf"
+    },
+    {
+     "label": "PD Application",
+     "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Planning_and_Policy/Agendas/cpc_materials/12_2026/5959_N_Sheridan_PD_As_Filed_Application.pdf"
+    }
+   ],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": "5946-5962 and 5937-5965 N. Sheridan Rd.",
+    "ward": 48,
+    "community_area": "Edgewater"
+   },
+   "enrichment": {
+    "status": "failed",
+    "housing_relevant": false,
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChUidKxiVhiuByek6py8w'}",
+    "summary": "",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "body",
+      "detail": "Chicago Plan Commission"
+     }
+    ],
+    "geography": {
+     "address": "5946-5962 and 5937-5965 N. Sheridan Rd.",
+     "ward": 48,
+     "community_area": "Edgewater"
+    },
+    "entities": [],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "e20e6d3d337fd483",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-27T22:44:50.306819-06:00",
+   "last_changed_at": "2026-11-27T22:44:50.306819-06:00"
+  },
+  {
+   "id": "cpc:2026-12-17#822-w-wilson-ave",
+   "meeting_id": "cpc:2026-12-17",
+   "source_ref": "822 W. Wilson Ave.",
+   "title": "A proposed Lakefront Protection Ordinance No. 811, submitted by Tapestry 360 Health, for the property generally located at 822 W. Wilson Avenue. The Applicant proposes to renovate an existing warehouse and construct a new 2-story, 15,895 square foot health center building in Subarea C of Planned Development No. 37 which has a maximum floor-area ratio of 6.0. No increase in FAR is being requested.",
+   "attachments": [],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": "822 W. Wilson Ave.",
+    "ward": 46,
+    "community_area": "Uptown"
+   },
+   "enrichment": {
+    "status": "failed",
+    "housing_relevant": false,
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChUidLk6j7CE1i4E8k6Ke'}",
+    "summary": "",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "body",
+      "detail": "Chicago Plan Commission"
+     }
+    ],
+    "geography": {
+     "address": "822 W. Wilson Ave.",
+     "ward": 46,
+     "community_area": "Uptown"
+    },
+    "entities": [],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "53d5c912d1308b0a",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-27T22:44:50.306819-06:00",
+   "last_changed_at": "2026-11-27T22:44:50.306819-06:00"
+  },
+  {
+   "id": "cpc:2026-12-17#1229-w-concord-pl",
+   "meeting_id": "cpc:2026-12-17",
+   "source_ref": "1229 W. Concord Pl.",
+   "title": "A courtesy presentation of a proposed site plan review and minor change for development within Waterway Residential-Business Planned Development No. 1438, generally located at 1229 W. Concord Place. The applicant proposes to establish an interim outdoor spectator sports venue with a seating capacity of up to 4,500 ticketed attendees, together with outdoor fan experience areas and support areas, and accessory parking. The venue would utilize the existing former firehouse within the PD. Field, spectator, fan experience, and outdoor support areas would consist of demountable/modular and other temporary facilities and equipment.",
+   "attachments": [],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": "1229 W. Concord Pl.",
+    "ward": 32,
+    "community_area": "West Town"
+   },
+   "enrichment": {
+    "status": "failed",
+    "housing_relevant": false,
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChUidMH5v6pXLK9bfZdp9'}",
+    "summary": "",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "body",
+      "detail": "Chicago Plan Commission"
+     }
+    ],
+    "geography": {
+     "address": "1229 W. Concord Pl.",
+     "ward": 32,
+     "community_area": "West Town"
+    },
+    "entities": [],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "b83645fda3062c50",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-27T22:44:50.306819-06:00",
+   "last_changed_at": "2026-11-27T22:44:50.306819-06:00"
+  },
+  {
+   "id": "cpc:2026-12-17#item-4",
+   "meeting_id": "cpc:2026-12-17",
+   "source_ref": "Item 4",
+   "title": "A resolution proposing adoption of the South Branch Action Plan. Led by the Department of Planning and Development, the plan consolidates 25 years of planning efforts by community partners, city departments, and sister agencies along the South Branch of the Chicago River, Bubbly Creek, and the Sanitary and Ship Canal into a unified framework for implementation. The plan includes actions to improve community programming, economic development, land use, environment, urban ecology, and multimodal connectivity. These actions primarily affect the confluence of the South Branch and Bubbly Creek, with indirect impacts on the Sanitary and Ship Canal. The plan seeks to eliminate redundancies, resolve inconsistencies, and guide future riverfront and connectivity improvements through a coordinated set of goals, strategies, and implementation actions.",
+   "attachments": [],
+   "outcome": null,
+   "extraction": "structured",
+   "geography_hint": {
+    "address": null,
+    "ward": 25,
+    "community_area": null
+   },
+   "enrichment": {
+    "status": "failed",
+    "housing_relevant": false,
+    "relevance_reason": "enrichment failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChUidMqpmqnV6aZ3cxp3o'}",
+    "summary": "",
+    "categories": [
+     {
+      "id": "ahpaa",
+      "via": "body",
+      "detail": "Chicago Plan Commission"
+     }
+    ],
+    "geography": {
+     "address": null,
+     "ward": 25,
+     "community_area": null
+    },
+    "entities": [],
+    "figures": {
+     "units": null,
+     "affordable_units": null
+    },
+    "amount": null,
+    "amount_kind": null,
+    "zoning_from": [],
+    "zoning_to": null,
+    "important": null,
+    "source_quality": "none",
+    "model": "claude-sonnet-5-5",
+    "content_hash": "0aa36ebffce95946",
+    "overridden": false
+   },
+   "first_seen_at": "2026-11-27T22:44:50.306819-06:00",
+   "last_changed_at": "2026-11-27T22:44:50.306819-06:00"
   }
  ],
  "notices": [
@@ -12693,11 +12894,6 @@
  ],
  "events": [
   {
-   "type": "notice_new",
-   "ref_id": "watch:clihtf-landlord:72b554eb0a37",
-   "at": "2026-11-13T21:15:53.265444-06:00"
-  },
-  {
    "type": "outcome_recorded",
    "ref_id": "elms:86AB53B2-BCCC-F111-A05C-001DD80B58E5#O2026-0029491",
    "at": "2026-11-18T13:24:37.488660-06:00"
@@ -12841,6 +13037,31 @@
    "type": "item_added",
    "ref_id": "elms:5C971227-8CD4-F111-A05C-001DD80FDA55#SO2026-0027231",
    "at": "2026-11-25T14:28:47.770352-06:00"
+  },
+  {
+   "type": "agenda_posted",
+   "ref_id": "cpc:2026-12-17",
+   "at": "2026-11-27T22:44:50.306819-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "cpc:2026-12-17#5946-5962-and-5937-5965-n-sheridan-rd",
+   "at": "2026-11-27T22:44:50.306819-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "cpc:2026-12-17#822-w-wilson-ave",
+   "at": "2026-11-27T22:44:50.306819-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "cpc:2026-12-17#1229-w-concord-pl",
+   "at": "2026-11-27T22:44:50.306819-06:00"
+  },
+  {
+   "type": "item_added",
+   "ref_id": "cpc:2026-12-17#item-4",
+   "at": "2026-11-27T22:44:50.306819-06:00"
   }
  ]
 }
